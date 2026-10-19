@@ -2764,7 +2764,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2913202"
+		(property "LCSC" "C2913204"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "e16a0f83-56b1-4260-a30f-146f401ddb63")
@@ -7909,7 +7909,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23982"
+		(property "LCSC" "C35449"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "66d2e795-fa70-4b9a-a234-379831ccaa21")
@@ -9286,7 +9286,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C334912"
+		(property "LCSC" "C72496"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "5f99fc4e-1889-4e22-b578-9dea8d191d99")
@@ -14014,7 +14014,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C137393"
+		(property "LCSC" "C840621"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "8442acba-8d11-4c2e-b17d-c8348d3a81f6")
@@ -16290,7 +16290,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23982"
+		(property "LCSC" "C35449"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "d6e6dda1-f575-446b-aa13-d32dbbccf7cb")
@@ -18015,7 +18015,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C137393"
+		(property "LCSC" "C840621"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "b15ab489-36ed-4fb4-8c13-6c12921b4713")
@@ -49312,7 +49312,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C334912"
+		(property "LCSC" "C72496"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "67836584-9d43-40e0-a8e0-70530b7ced7d")
