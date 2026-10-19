@@ -1,0 +1,16 @@
+{
+  "snapshot": "/tmp/abx-1632-20261019_163616",
+  "output": "/home/daniel/Documents/kicad/abx-motion/validation/revision-1632-20261019_163616",
+  "hashes": {
+    "MCU.kicad_sch": "7e2790076b911bccf57d350a56ffdc2dc1ca21fe7e4897916a8152f39c40bebc",
+    "abx-motion.kicad_pcb": "023bf9dfafd3a1f2a517cff681d42f6bee2eae2852ffa61c6f90115011db9a90",
+    "abx-symbols.kicad_sym": "94aa9792595cd525ceeaea343ad27522a55453bca2c38123823d6e7416a9f394",
+    "Power.kicad_sch": "2d2ed00294cb00c319156fc3c6a762f670bc47f6b4bcad663270d3bb2f1f9bf6",
+    "Steppers_Relays.kicad_sch": "804e1606c2e864cb1026fc935926c037ff71c7e79520082f2b17575d4051a1d1",
+    "abx-motion.kicad_sch": "e4c8f5ecf002b96f4c9cabd93700bb07ad2ce40fe5c43e44f8907299ab604e3f",
+    "abx-motion.kicad_pro": "eedd17618fe28db9453066f3fa8c5c7b5ac2e4029340d61e3a08401fc42c4fbe",
+    "Motor_Channel.kicad_sch": "5389c1ae6d04eaed22cc3314de26b90c4aacd28b1788d20d89a0c45fbf3667f4",
+    "fp-lib-table": "1a56162efe16b4cacddc1e89cb3c807f7129eab726e33b406658221185564c1c",
+    "sym-lib-table": "565b6efa99f2177cd745351877363f4ab13185bcdb9bc954d92d75f16207fcf1"
+  }
+}

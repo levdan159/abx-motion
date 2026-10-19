@@ -1,0 +1,15 @@
+{
+  "abx-motion-F_Paste.gtp": true,
+  "abx-motion-B_Cu.gbl": true,
+  "abx-motion-F_Cu.gtl": true,
+  "abx-motion-F_Mask.gts": true,
+  "abx-motion-B_Mask.gbs": true,
+  "abx-motion-Edge_Cuts.gm1": true,
+  "abx-motion-B_Silkscreen.gbo": true,
+  "abx-motion-B_Paste.gbp": true,
+  "abx-motion-In1_Cu.g1": true,
+  "abx-motion-In2_Cu.g2": true,
+  "abx-motion-F_Silkscreen.gto": true,
+  "abx-motion-PTH.drl": true,
+  "abx-motion-NPTH.drl": true
+}

@@ -37680,7 +37680,7 @@
 			)
 		)
 	)
-	(footprint "Fuse:Fuse_Blade_ATO_directSolder"
+	(footprint "abx-footprints:Fuseholder_Keystone_3557-2"
 		(layer "F.Cu")
 		(uuid "76cfe70b-2d9b-4e09-8567-e8dee9b794be")
 		(at 167.55 54)
@@ -37824,7 +37824,7 @@
 			(uuid "af08aedc-e1fc-4e75-a6bc-f412ce89bb48")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_Blade_Mini_Keystone_3568.step"
+		(model "${KIPRJMOD}/3dmodels/Fuseholder_Keystone_3557-2.step"
 			(offset
 				(xyz 0 0 0)
 			)

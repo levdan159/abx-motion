@@ -4446,7 +4446,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_Blade_ATO_directSolder"
+		(property "Footprint" "abx-footprints:Fuseholder_Keystone_3557-2"
 			(at 71.12 71.12 0)
 			(effects
 				(font

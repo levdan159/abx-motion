@@ -725,7 +725,7 @@ def build_power_sheet(cache: SymbolLibraryCache):
     sb.stub_net(j1, "1", "V_RAW_IN")
     sb.stub_power(j1, "2", "GND")
 
-    f1 = sb.place_sym("Device:Fuse", "F1", "25A", "Fuse:Fuse_Blade_ATO_directSolder", 71.12, 71.12, 90)
+    f1 = sb.place_sym("Device:Fuse", "F1", "25A", "abx-footprints:Fuseholder_Keystone_3557-2", 71.12, 71.12, 90)
     sb.stub_net(f1, "1", "V_RAW_IN")
     sb.stub_net(f1, "2", "V_FUSED")
 

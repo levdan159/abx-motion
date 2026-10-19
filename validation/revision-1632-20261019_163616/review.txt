@@ -1,0 +1,72 @@
+Independent verification of revision 20261019_1632 — 19 October 2026
+
+Result: three claimed fixes verified, one partially completed, one does not
+resolve the electrical protection requirement. Suitable for consideration as a
+controlled low-power prototype; not approved here for 32 V / full-current use.
+No design or production files changed by this review.
+
+Fresh KiCad checks on the saved-file snapshot:
+- ERC: zero violations.
+- DRC with zone refill and schematic parity: zero errors, zero unconnected
+  items, zero parity discrepancies; 23 warnings (13 library footprint
+  mismatches, nine silk/edge warnings, one mirrored reference warning).
+- All 11 fabrication artwork layers and both PTH/NPTH drill files in the
+  exported Gerber ZIP match fresh exports, ignoring metadata.
+- BOM: 61 rows / 190 unique placement references; CPL: same 190 references.
+- Source file hashes remained unchanged during the review.
+
+1. F1: verified physical pad change and supplier identity.
+   Four round holes at x=160.815/174.285, y=52.3/55.7 mm, with 1.80 mm drills.
+   Each vertical pair belongs to one fuse terminal. Right pair connects J1+
+   V_RAW_IN; left pair connects V_FUSED. Selected SKU C352820 is Keystone
+   3557-2. Manufacturer mounting dimensions are approximately 13.47 x 3.40 mm.
+   The slots from the earlier direct-solder design are gone in the fresh drills.
+   Remaining maintenance issue: PCB/schematic footprint identifier still says
+   Fuse:Fuse_Blade_ATO_directSolder, although embedded pads are custom. Save it
+   under an accurate project-library name to avoid a future library refresh
+   restoring the old geometry. Exact assembly orientation still needs approval.
+
+2. D2: the claimed 32 V protection fix is not valid.
+   C310046 is Brightking SMCJ30A/TR13, with 30 V standoff and specified 48.4 V
+   clamp at 31 A. DRV8701 VM absolute maximum is 47 V. Breakdown beginning
+   at 33.3 V does not mean the rail is clamped at 33.3 V during a surge.
+   In addition, 32 V normal input is above the 30 V standoff specification.
+   Define maximum normal battery voltage, surge current/energy, temperature,
+   wiring overshoot and regeneration before selecting the protection. Do not
+   claim a 32 V protected design from this substitution. Lower-voltage bench
+   operation is a separate, restricted use case and does not validate protection.
+
+3. Snubber: component identity and power-budget improvement verified.
+   C310/C410 are now 2.2 nF / 100 V, C107136; R310/R410 select Vishay
+   CRCW080510R0FKEAHP, C844598, 10 ohm / 0.5 W. Estimated C*V^2*f loss at
+   32 V / 20 kHz is 45.1 mW. This is a rating comparison, not measured thermal
+   margin or proof of damping. Reducing capacitance changes damping, so tune
+   from actual switching-node ringing and check pulse derating.
+
+4. Stepper winding widths verified; Kelvin sensing remains incomplete.
+   STEP1_A1/A2/B1/B2 and STEP2_A2 are 0.50 mm; STEP2_A1/B1/B2 are 0.45 mm.
+   Both DRV8701 SN pins still connect via a 1.1375 mm local F.Cu ground trace
+   into the driver ground region. They were not given dedicated shunt-terminal
+   return connections. Widening SP does not establish Kelvin routing. Route
+   separate SP and SN sense connections to the corresponding shunt terminals,
+   avoiding shared motor-current copper before relying on accurate limiting.
+
+5. Drill archive cleanup verified.
+   Gerber ZIP contains separate plated/nonplated drills with no combined drill
+   or drill maps. It also contains the Gerber job metadata file. Artwork/drills
+   have been independently compared to this PCB revision.
+
+Earlier unresolved prototype limits still apply: Q1 dissipation at high current,
+AP2112 heating, bulk capacitor ripple capability, external STEP_ENABLE behavior
+under E-stop, and final component/polarity placement approval. Begin at 12 V,
+with reduced motor hardware limits and temperature/waveform measurement.
+
+Sources:
+https://www.keystone-europe.com/wp-content/uploads/2025/08/fuse-clips-contacts-holders.pdf
+https://www.lcsc.com/product-detail/TVS_Brightking-Elec-TAIWAN-SMCJ30A_C310046.html
+https://www.ti.com/lit/gpn/DRV8701
+https://www.lcsc.com/product-detail/C107136.html
+https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Vishay-Intertech-CRCW080510R0FKEAHP_C844598.html
+
+Evidence: manifest.json, erc.json, drc.json, changed-components.json, tracks.json,
+and export-comparison.json in this directory. GitHub remote push was not audited.
