@@ -1,0 +1,57 @@
+{
+  "abx-motion-F_Paste.gtp": {
+    "matches": true
+  },
+  "abx-motion-job.gbrjob": {
+    "matches": false,
+    "diff_sample": [
+      "--- \n",
+      "+++ \n",
+      "@@ -5,7 +5,7 @@\n",
+      "       \"Application\": \"Pcbnew\",",
+      "       \"Version\": \"10.0.7-10.0.7~ubuntu24.04.1\"",
+      "     },",
+      "-    \"CreationDate\": \"2026-10-19T15:19:12+03:00\"",
+      "+    \"CreationDate\": \"2026-10-19T15:40:38+03:00\"",
+      "   },",
+      "   \"GeneralSpecs\": {",
+      "     \"ProjectId\": {"
+    ]
+  },
+  "abx-motion-B_Cu.gbl": {
+    "matches": true
+  },
+  "abx-motion-F_Cu.gtl": {
+    "matches": true
+  },
+  "abx-motion-F_Mask.gts": {
+    "matches": true
+  },
+  "abx-motion-B_Mask.gbs": {
+    "matches": true
+  },
+  "abx-motion-Edge_Cuts.gm1": {
+    "matches": true
+  },
+  "abx-motion-B_Silkscreen.gbo": {
+    "matches": true
+  },
+  "abx-motion-B_Paste.gbp": {
+    "matches": true
+  },
+  "abx-motion-In1_Cu.g1": {
+    "matches": true
+  },
+  "abx-motion-In2_Cu.g2": {
+    "matches": true
+  },
+  "abx-motion-F_Silkscreen.gto": {
+    "matches": true
+  },
+  "abx-motion-PTH.drl": {
+    "matches": true
+  },
+  "abx-motion-NPTH.drl": {
+    "matches": true
+  }
+}

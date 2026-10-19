@@ -1,0 +1,43 @@
+ABX-MOTION JLCPCB MATCHING REVIEW
+2026-10-19T15:29:07.276115+03:00
+
+FILE INTEGRITY
+Latest manufacturing export: 20261019_1522.
+Original BOM: 76 rows / 189 placements. CPL: 189 unique matching placements. No blank supplier codes, duplicate designators, or missing counterparts.
+Grouped BOM: 60 rows / identical 189 reference-to-supplier assignments. No part substitutions.
+The grouped Comments use catalogue MPNs for identified connectors/buttons/relay/shunts/ESP32 instead of circuit-function labels such as CAN_BUS and RESET. This improves identification, but is not a guarantee of automatic matching.
+The accompanying CPL is an unchanged copy; this work does not validate or correct placement rotations/centroids.
+
+JLC ORDER STATUS
+User confirmed Standard PCBA. The Economic-versus-Standard restriction is not the explanation for this order.
+Public catalogue listings support Standard assembly of representative through-hole parts: C72334 three-position terminal block, C2718488 OLED socket, C116963 Omron relay, C42431840 StepStick socket strips, C98733 XT60 connector. This does not establish order-specific stock, fixture approval or mechanical compatibility.
+User confirmed the warning says multiple BOM lines have matched the same component. JLC documents this as a confirmation warning that unchecks the affected components. It does not itself indicate an inventory shortage. The grouped BOM contains each supplier code exactly once, removing that cause. Other package/model or mixed-reference-prefix confirmation warnings can remain.
+For No part selected: search and select the C-code in parts-lookup.csv using the public JLCPCB catalogue source.
+For Shortfall: check quantity including attrition and order size; use verified replacement, pre-order, global sourcing or consignment as appropriate.
+Parts left unselected will not be assembled. A public catalogue entry or LCSC inventory listing does not prove that a part is selected and available in your PCBA order.
+
+PUBLIC EVIDENCE
+JLC matching explanations: https://jlcpcb.com/help/article/common-bom-and-cpl-matching-issues-and-explanations
+JLC selected-parts policy: https://jlcpcb.com/help/article/common-pcba-after-sales-issues-and-faq
+Terminal block: https://jlcpcb.com/partdetail/73443-WJ500V_5_08_03P_1400A/C72334
+OLED socket: https://jlcpcb.com/partdetail/2834502-C2718488/C2718488
+Relay: https://jlcpcb.com/partdetail/OmronElectronics-G5LE_145VDC/C116963
+StepStick socket strips: https://jlcpcb.com/partdetail/JXTCONN-PM2_54_1X8PMH85/C42431840
+XT60: https://jlcpcb.com/partdetail/XT60/C98733
+
+SEPARATE PURCHASE/FIT ITEMS
+F1 is absent from the latest JLC BOM/CPL. The 25A blade fuse must be sourced/fitted separately unless deliberately added with a mechanically verified part.
+OLED display and plug-in StepStick driver modules are not supplied by the socket/header entries.
+Mechanical mounting holes, logos and test-point copper do not require purchased assembly components.
+
+DELIVERABLES
+jlcpcb-bom-grouped.csv: simplified matching import, same parts.
+jlcpcb-cpl.csv: unchanged paired placement file.
+parts-lookup.csv: all 60 C-codes, references and per-board quantities.
+No board or existing production files were edited. Source changes during preparation: [].
+
+CONFIRMED WARNING AND RESOLUTION
+The repeated-part rows (connectors, jumper headers, LEDs and buttons) are grouped by exact supplier code and footprint. 76 rows become 60 while all 189 reference/supplier assignments are preserved.
+Upload jlcpcb-bom-grouped.csv with the accompanying unchanged jlcpcb-cpl.csv, then review and select any remaining package/model warnings. No stock substitutions were made.
+The pre-existing green LED row combines D and LED prefixes; JLC may ask for confirmation of component type.
+Source: https://jlcpcb.com/help/article/common-bom-and-cpl-matching-issues-and-explanations

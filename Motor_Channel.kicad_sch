@@ -6768,7 +6768,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "2.2nF"
 			(at 345.44 87.63 0)
 			(effects
 				(font

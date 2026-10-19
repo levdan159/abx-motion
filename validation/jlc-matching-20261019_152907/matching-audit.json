@@ -1,0 +1,32 @@
+{
+  "source_bom": "abx-motion-manufacturing_20261019_1522/abx-motion-jlcpcb-bom_20261019_1522.csv",
+  "source_cpl": "abx-motion-manufacturing_20261019_1522/abx-motion-jlcpcb-cpl_20261019_1522.csv",
+  "source_rows": 76,
+  "grouped_rows": 60,
+  "placements": 189,
+  "cpl_rows": 189,
+  "missing_in_cpl": [],
+  "missing_in_bom": [],
+  "blank_supplier_codes": 0,
+  "duplicate_designators": [],
+  "reference_to_supplier_mapping_identical": true,
+  "copied_cpl_identical": true,
+  "source_hashes": {
+    "abx-motion-manufacturing_20261019_1522/abx-motion-jlcpcb-bom_20261019_1522.csv": "a188edd663c0c939da88c5edc6824c8212cddbe90f52dda6872e114d6a7b9a40",
+    "abx-motion-manufacturing_20261019_1522/abx-motion-jlcpcb-cpl_20261019_1522.csv": "b1c3c5cf41aa146aae5d1a30fcf4723feff84da06a054bf647c9e2942304fcca",
+    "abx-motion.kicad_pcb": "976d6157ca4ddfdf9ebc6379b8e7fea50d5441aa70370be80b71c164b0236249"
+  },
+  "source_changes_during_review": [],
+  "assembly_service": "Standard PCBA",
+  "order_status_access": "User supplied warning text; no signed-in account access",
+  "stock_or_fit_signoff": false,
+  "production_files_modified": false,
+  "reported_jlc_warning": "Multiple BOM lines have been matched to the same component",
+  "diagnosis": "Repeated supplier parts on separate BOM rows cause confirmation warnings and automatic deselection; this message does not itself indicate missing inventory.",
+  "repeated_supplier_codes_in_grouped_bom": [],
+  "preserved_mixed_prefix_row": {
+    "code": "C12624",
+    "designators": "D502,D504,LED_PWR_3V3_1,LED_PWR_5V1,LED_PWR_BATT1",
+    "note": "The existing green LED row includes D and LED reference prefixes; JLC may still ask for component-type confirmation. No references were renamed."
+  }
+}

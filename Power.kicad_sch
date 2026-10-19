@@ -4865,7 +4865,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "SMCJ28A"
+		(property "Value" "SMCJ30A"
 			(at 144.78 72.39 0)
 			(effects
 				(font

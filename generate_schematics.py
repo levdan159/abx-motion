@@ -743,7 +743,7 @@ def build_power_sheet(cache: SymbolLibraryCache):
     sb.stub_net(r1, "1", "Q1_GATE")
     sb.stub_power(r1, "2", "GND")
 
-    d2 = sb.place_sym("Device:D_TVS", "D2", "SMCJ28A", "Diode_SMD:D_SMC", 142.24, 71.12, 270)
+    d2 = sb.place_sym("Device:D_TVS", "D2", "SMCJ30A", "Diode_SMD:D_SMC", 142.24, 71.12, 270)
     sb.stub_power(d2, "1", "+BATT")
     sb.stub_power(d2, "2", "GND")
 
@@ -1481,14 +1481,14 @@ def build_motor_channel_sheet(cache: SymbolLibraryCache):
         sb.stub_power(cb, "1", "+BATT")
         sb.stub_power(cb, "2", "GND")
 
-    # 5. RC Snubber (R10 10 Ohm 0805 + C10 10nF 100V 0805) & Motor Terminal Block J01
+    # 5. RC Snubber (R10 10 Ohm 0805 + C10 2.2nF 100V 0805) & Motor Terminal Block J01
     r, alt = mref("R10")
     r_snub = sb.place_sym("Device:R", r, "10", "Resistor_SMD:R_0805_2012Metric", 342.9, 55.88, 0, alt_refs=alt)
     sb.stub_net(r_snub, "1", "MOT_OUT1")
     sb.stub_net(r_snub, "2", "SNUB_MID")
 
     r, alt = mref("C10")
-    c_snub = sb.place_sym("Device:C", r, "10nF", "Capacitor_SMD:C_0805_2012Metric", 342.9, 86.36, 0, alt_refs=alt)
+    c_snub = sb.place_sym("Device:C", r, "2.2nF", "Capacitor_SMD:C_0805_2012Metric", 342.9, 86.36, 0, alt_refs=alt)
     sb.stub_net(c_snub, "1", "SNUB_MID")
     sb.stub_net(c_snub, "2", "MOT_OUT2")
 

@@ -1,0 +1,128 @@
+{
+  "/Steppers_and_Relays/STEP2_A2": {
+    "length_mm": 32.40528,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.06384766025142856,
+    "loss_at_2A_W": 0.25539064100571424,
+    "loss_at_10A_W": 6.384766025142856
+  },
+  "/Steppers_and_Relays/STEP2_A1": {
+    "length_mm": 30.60792,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.060306347519999984,
+    "loss_at_2A_W": 0.24122539007999994,
+    "loss_at_10A_W": 6.030634751999998
+  },
+  "/Steppers_and_Relays/STEP2_B1": {
+    "length_mm": 26.28975,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.051798318857142846,
+    "loss_at_2A_W": 0.20719327542857138,
+    "loss_at_10A_W": 5.179831885714284
+  },
+  "/Steppers_and_Relays/STEP2_B2": {
+    "length_mm": 22.42132,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.044176406491428566,
+    "loss_at_2A_W": 0.17670562596571426,
+    "loss_at_10A_W": 4.417640649142856
+  },
+  "/Steppers_and_Relays/RLY1_COM": {
+    "length_mm": 29.32264,
+    "width_mm": [
+      0.8
+    ],
+    "resistance_ohm_20C_35um_copper": 0.01805436834285714,
+    "loss_at_2A_W": 0.07221747337142856,
+    "loss_at_10A_W": 1.8054368342857139
+  },
+  "/Steppers_and_Relays/RLY1_NO": {
+    "length_mm": 15.45685,
+    "width_mm": [
+      0.8
+    ],
+    "resistance_ohm_20C_35um_copper": 0.009517003357142855,
+    "loss_at_2A_W": 0.03806801342857142,
+    "loss_at_10A_W": 0.9517003357142855
+  },
+  "/Steppers_and_Relays/RLY1_NC": {
+    "length_mm": 14.78843,
+    "width_mm": [
+      0.8
+    ],
+    "resistance_ohm_20C_35um_copper": 0.009105447614285712,
+    "loss_at_2A_W": 0.03642179045714285,
+    "loss_at_10A_W": 0.9105447614285712
+  },
+  "/Steppers_and_Relays/RLY2_COM": {
+    "length_mm": 29.32264,
+    "width_mm": [
+      0.8
+    ],
+    "resistance_ohm_20C_35um_copper": 0.01805436834285714,
+    "loss_at_2A_W": 0.07221747337142856,
+    "loss_at_10A_W": 1.8054368342857139
+  },
+  "/Steppers_and_Relays/RLY2_NO": {
+    "length_mm": 15.45685,
+    "width_mm": [
+      0.8
+    ],
+    "resistance_ohm_20C_35um_copper": 0.009517003357142855,
+    "loss_at_2A_W": 0.03806801342857142,
+    "loss_at_10A_W": 0.9517003357142855
+  },
+  "/Steppers_and_Relays/RLY2_NC": {
+    "length_mm": 14.78843,
+    "width_mm": [
+      0.8
+    ],
+    "resistance_ohm_20C_35um_copper": 0.009105447614285712,
+    "loss_at_2A_W": 0.03642179045714285,
+    "loss_at_10A_W": 0.9105447614285712
+  },
+  "/Steppers_and_Relays/STEP1_A1": {
+    "length_mm": 35.47188,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.06988973842285713,
+    "loss_at_2A_W": 0.2795589536914285,
+    "loss_at_10A_W": 6.988973842285713
+  },
+  "/Steppers_and_Relays/STEP1_A2": {
+    "length_mm": 36.976350000000004,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.07285397417142855,
+    "loss_at_2A_W": 0.2914158966857142,
+    "loss_at_10A_W": 7.285397417142855
+  },
+  "/Steppers_and_Relays/STEP1_B1": {
+    "length_mm": 30.56792,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.06022753609142856,
+    "loss_at_2A_W": 0.24091014436571423,
+    "loss_at_10A_W": 6.022753609142856
+  },
+  "/Steppers_and_Relays/STEP1_B2": {
+    "length_mm": 27.57817,
+    "width_mm": [
+      0.25
+    ],
+    "resistance_ohm_20C_35um_copper": 0.054336874377142845,
+    "loss_at_2A_W": 0.21734749750857138,
+    "loss_at_10A_W": 5.433687437714284
+  }
+}

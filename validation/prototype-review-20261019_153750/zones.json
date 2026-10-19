@@ -1,0 +1,254 @@
+[
+  {
+    "net": "+BATT",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_2/MOT_OUT2",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_1/MOT_OUT1",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_1/SHUNT_SP",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_2/MOT_OUT1",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_2/MOT_OUT1",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_2/MOT_OUT2",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "+BATT",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_2/SHUNT_SP",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_2/SHUNT_SP",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_1/MOT_OUT1",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "+BATT",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_1/MOT_OUT2",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_1/SHUNT_SP",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "+BATT",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "+BATT",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "+BATT",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/DC_Motor_1/MOT_OUT2",
+    "layers": [
+      "F.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/Power_Supply/V_FUSED",
+    "layers": [
+      "F.Cu",
+      "B.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "/Power_Supply/V_RAW_IN",
+    "layers": [
+      "F.Cu",
+      "B.Cu"
+    ],
+    "clearance": 0.2,
+    "thermal_gap": 0.5,
+    "thermal_spoke": 0.5,
+    "connection": 2
+  },
+  {
+    "net": "GND",
+    "layers": [
+      "B.Cu"
+    ],
+    "clearance": 0.22,
+    "thermal_gap": 0.25,
+    "thermal_spoke": 0.35,
+    "connection": 2
+  },
+  {
+    "net": "GND",
+    "layers": [
+      "In1.Cu"
+    ],
+    "clearance": 0.22,
+    "thermal_gap": 0.25,
+    "thermal_spoke": 0.35,
+    "connection": 2
+  },
+  {
+    "net": "+5V",
+    "layers": [
+      "In2.Cu"
+    ],
+    "clearance": 0.22,
+    "thermal_gap": 0.25,
+    "thermal_spoke": 0.35,
+    "connection": 2
+  },
+  {
+    "net": "+BATT",
+    "layers": [
+      "In2.Cu"
+    ],
+    "clearance": 0.25,
+    "thermal_gap": 0.25,
+    "thermal_spoke": 0.35,
+    "connection": 2
+  },
+  {
+    "net": "+3V3",
+    "layers": [
+      "In2.Cu"
+    ],
+    "clearance": 0.22,
+    "thermal_gap": 0.25,
+    "thermal_spoke": 0.35,
+    "connection": 2
+  }
+]

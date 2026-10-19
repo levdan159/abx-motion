@@ -1,0 +1,747 @@
+[
+  {
+    "code": "C14663",
+    "references": [
+      "C1",
+      "C4",
+      "C6",
+      "C202",
+      "C203",
+      "C204",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C302",
+      "C309",
+      "C402",
+      "C409"
+    ],
+    "original_comments": [
+      "100nF"
+    ],
+    "grouped_comment": "100nF"
+  },
+  {
+    "code": "C29823",
+    "references": [
+      "C2",
+      "C3",
+      "C307",
+      "C308",
+      "C407",
+      "C408"
+    ],
+    "original_comments": [
+      "4.7uF"
+    ],
+    "grouped_comment": "4.7uF"
+  },
+  {
+    "code": "C15849",
+    "references": [
+      "C5",
+      "C9",
+      "C301",
+      "C303",
+      "C304",
+      "C401",
+      "C403",
+      "C404"
+    ],
+    "original_comments": [
+      "1uF"
+    ],
+    "grouped_comment": "1uF"
+  },
+  {
+    "code": "C12891",
+    "references": [
+      "C7",
+      "C8"
+    ],
+    "original_comments": [
+      "22uF"
+    ],
+    "grouped_comment": "22uF"
+  },
+  {
+    "code": "C15850",
+    "references": [
+      "C10",
+      "C201"
+    ],
+    "original_comments": [
+      "10uF"
+    ],
+    "grouped_comment": "10uF"
+  },
+  {
+    "code": "C1588",
+    "references": [
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "original_comments": [
+      "1nF"
+    ],
+    "grouped_comment": "1nF"
+  },
+  {
+    "code": "C57112",
+    "references": [
+      "C305",
+      "C405"
+    ],
+    "original_comments": [
+      "10nF"
+    ],
+    "grouped_comment": "10nF"
+  },
+  {
+    "code": "C72499",
+    "references": [
+      "C306",
+      "C406"
+    ],
+    "original_comments": [
+      "220uF"
+    ],
+    "grouped_comment": "220uF"
+  },
+  {
+    "code": "C107135",
+    "references": [
+      "C310",
+      "C410"
+    ],
+    "original_comments": [
+      "10nF"
+    ],
+    "grouped_comment": "10nF"
+  },
+  {
+    "code": "C72480",
+    "references": [
+      "C501",
+      "C502"
+    ],
+    "original_comments": [
+      "100uF"
+    ],
+    "grouped_comment": "100uF"
+  },
+  {
+    "code": "C14643",
+    "references": [
+      "D1"
+    ],
+    "original_comments": [
+      "BZT52C12S"
+    ],
+    "grouped_comment": "BZT52C12S"
+  },
+  {
+    "code": "C224047",
+    "references": [
+      "D2"
+    ],
+    "original_comments": [
+      "SMCJ28A"
+    ],
+    "grouped_comment": "SMCJ28A"
+  },
+  {
+    "code": "C78428",
+    "references": [
+      "D201"
+    ],
+    "original_comments": [
+      "SMBJ6.5CA"
+    ],
+    "grouped_comment": "SMBJ6.5CA"
+  },
+  {
+    "code": "C8598",
+    "references": [
+      "D202"
+    ],
+    "original_comments": [
+      "B5819W"
+    ],
+    "grouped_comment": "B5819W"
+  },
+  {
+    "code": "C2128",
+    "references": [
+      "D501",
+      "D503"
+    ],
+    "original_comments": [
+      "1N4148WS"
+    ],
+    "grouped_comment": "1N4148WS"
+  },
+  {
+    "code": "C12624",
+    "references": [
+      "D502",
+      "D504",
+      "LED_PWR_3V3_1",
+      "LED_PWR_5V1",
+      "LED_PWR_BATT1"
+    ],
+    "original_comments": [
+      "LED_GRN"
+    ],
+    "grouped_comment": "LED_GRN"
+  },
+  {
+    "code": "C2984676",
+    "references": [
+      "F2",
+      "F3"
+    ],
+    "original_comments": [
+      "500mA_PTC"
+    ],
+    "grouped_comment": "500mA_PTC"
+  },
+  {
+    "code": "C20798",
+    "references": [
+      "F4"
+    ],
+    "original_comments": [
+      "250mA_PTC"
+    ],
+    "grouped_comment": "250mA_PTC"
+  },
+  {
+    "code": "C98733",
+    "references": [
+      "J1"
+    ],
+    "original_comments": [
+      "XT60_BAT"
+    ],
+    "grouped_comment": "XT60-M."
+  },
+  {
+    "code": "C8465",
+    "references": [
+      "J102",
+      "J301",
+      "J401"
+    ],
+    "original_comments": [
+      "E_STOP",
+      "MOTOR_OUT"
+    ],
+    "grouped_comment": "WJ500V-5.08-2P"
+  },
+  {
+    "code": "C165948",
+    "references": [
+      "J201"
+    ],
+    "original_comments": [
+      "USB-C"
+    ],
+    "grouped_comment": "USB-C"
+  },
+  {
+    "code": "C566014",
+    "references": [
+      "J202",
+      "J203",
+      "J209",
+      "J501",
+      "J502",
+      "J503",
+      "J504"
+    ],
+    "original_comments": [
+      "ENC1_CONN",
+      "ENC2_CONN",
+      "I2C_EXP",
+      "STEP1_MOTOR",
+      "STEP1_EXT",
+      "STEP2_MOTOR",
+      "STEP2_EXT"
+    ],
+    "grouped_comment": "B4B-XH-A-E(LF)(SN)"
+  },
+  {
+    "code": "C492401",
+    "references": [
+      "J204",
+      "J206"
+    ],
+    "original_comments": [
+      "CAN_TERM",
+      "RS485_TERM"
+    ],
+    "grouped_comment": "PZ254V-11-02P"
+  },
+  {
+    "code": "C72334",
+    "references": [
+      "J205",
+      "J207",
+      "J505",
+      "J506"
+    ],
+    "original_comments": [
+      "CAN_BUS",
+      "RS485_BUS",
+      "RELAY1_OUT",
+      "RELAY2_OUT"
+    ],
+    "grouped_comment": "WJ500V-5.08-03P-14-00A"
+  },
+  {
+    "code": "C2718488",
+    "references": [
+      "J208"
+    ],
+    "original_comments": [
+      "OLED_I2C"
+    ],
+    "grouped_comment": "2.54-1*4PFemale"
+  },
+  {
+    "code": "C116963",
+    "references": [
+      "K501",
+      "K502"
+    ],
+    "original_comments": [
+      "G5LE-14-DC5"
+    ],
+    "grouped_comment": "G5LE-14 5VDC"
+  },
+  {
+    "code": "C177243",
+    "references": [
+      "L1"
+    ],
+    "original_comments": [
+      "15uH"
+    ],
+    "grouped_comment": "15uH"
+  },
+  {
+    "code": "C2287",
+    "references": [
+      "LED201",
+      "LED202"
+    ],
+    "original_comments": [
+      "LED_YEL_CAN",
+      "LED_YEL_485"
+    ],
+    "grouped_comment": "LED_YEL_CAN"
+  },
+  {
+    "code": "C2288",
+    "references": [
+      "LED203"
+    ],
+    "original_comments": [
+      "LED_BLU_STAT"
+    ],
+    "grouped_comment": "LED_BLU_STAT"
+  },
+  {
+    "code": "C2286",
+    "references": [
+      "LED_FLT1",
+      "LED_FLT2"
+    ],
+    "original_comments": [
+      "LED_RED_FLT"
+    ],
+    "grouped_comment": "LED_RED_FLT"
+  },
+  {
+    "code": "C3289501",
+    "references": [
+      "Q1"
+    ],
+    "original_comments": [
+      "SQJ459EP-T1_GE3"
+    ],
+    "grouped_comment": "SQJ459EP-T1_GE3"
+  },
+  {
+    "code": "C86513",
+    "references": [
+      "Q301",
+      "Q302",
+      "Q303",
+      "Q304",
+      "Q401",
+      "Q402",
+      "Q403",
+      "Q404"
+    ],
+    "original_comments": [
+      "CSD18540Q5B"
+    ],
+    "grouped_comment": "CSD18540Q5B"
+  },
+  {
+    "code": "C20917",
+    "references": [
+      "Q501",
+      "Q502"
+    ],
+    "original_comments": [
+      "AO3400A"
+    ],
+    "grouped_comment": "AO3400A"
+  },
+  {
+    "code": "C25819",
+    "references": [
+      "R1"
+    ],
+    "original_comments": [
+      "47k"
+    ],
+    "grouped_comment": "47k"
+  },
+  {
+    "code": "C25803",
+    "references": [
+      "R2",
+      "R4"
+    ],
+    "original_comments": [
+      "100k"
+    ],
+    "grouped_comment": "100k"
+  },
+  {
+    "code": "C25804",
+    "references": [
+      "R3",
+      "R6",
+      "R9",
+      "R203",
+      "R204",
+      "R205",
+      "R206",
+      "R207",
+      "R208",
+      "R209",
+      "R210",
+      "R227",
+      "R228",
+      "R229",
+      "R231",
+      "R232",
+      "R303",
+      "R403",
+      "R505",
+      "R506"
+    ],
+    "original_comments": [
+      "10k"
+    ],
+    "grouped_comment": "10k"
+  },
+  {
+    "code": "C25962",
+    "references": [
+      "R5"
+    ],
+    "original_comments": [
+      "24.9k"
+    ],
+    "grouped_comment": "24.9k"
+  },
+  {
+    "code": "C21190",
+    "references": [
+      "R7",
+      "R8",
+      "R212",
+      "R214",
+      "R216",
+      "R218",
+      "R220",
+      "R224",
+      "R230",
+      "R304",
+      "R311",
+      "R404",
+      "R411",
+      "R502",
+      "R504"
+    ],
+    "original_comments": [
+      "1k"
+    ],
+    "grouped_comment": "1k"
+  },
+  {
+    "code": "C23186",
+    "references": [
+      "R201",
+      "R202"
+    ],
+    "original_comments": [
+      "5.1k"
+    ],
+    "grouped_comment": "5.1k"
+  },
+  {
+    "code": "C23162",
+    "references": [
+      "R211",
+      "R213",
+      "R215",
+      "R217",
+      "R225",
+      "R226"
+    ],
+    "original_comments": [
+      "4.7k"
+    ],
+    "grouped_comment": "4.7k"
+  },
+  {
+    "code": "C22787",
+    "references": [
+      "R219",
+      "R221"
+    ],
+    "original_comments": [
+      "120"
+    ],
+    "grouped_comment": "120"
+  },
+  {
+    "code": "C23138",
+    "references": [
+      "R222",
+      "R223"
+    ],
+    "original_comments": [
+      "330R"
+    ],
+    "grouped_comment": "330R"
+  },
+  {
+    "code": "C25810",
+    "references": [
+      "R301",
+      "R401"
+    ],
+    "original_comments": [
+      "18k"
+    ],
+    "grouped_comment": "18k"
+  },
+  {
+    "code": "C22984",
+    "references": [
+      "R302",
+      "R402"
+    ],
+    "original_comments": [
+      "30k"
+    ],
+    "grouped_comment": "30k"
+  },
+  {
+    "code": "C22859",
+    "references": [
+      "R305",
+      "R306",
+      "R307",
+      "R308",
+      "R405",
+      "R406",
+      "R407",
+      "R408"
+    ],
+    "original_comments": [
+      "10"
+    ],
+    "grouped_comment": "10"
+  },
+  {
+    "code": "C840621",
+    "references": [
+      "R309",
+      "R409"
+    ],
+    "original_comments": [
+      "10mR_3W"
+    ],
+    "grouped_comment": "CRA2512-FZ-R010ELF"
+  },
+  {
+    "code": "C17415",
+    "references": [
+      "R310",
+      "R410"
+    ],
+    "original_comments": [
+      "10"
+    ],
+    "grouped_comment": "10"
+  },
+  {
+    "code": "C25811",
+    "references": [
+      "R312",
+      "R412"
+    ],
+    "original_comments": [
+      "200k"
+    ],
+    "grouped_comment": "200k"
+  },
+  {
+    "code": "C22775",
+    "references": [
+      "R501",
+      "R503"
+    ],
+    "original_comments": [
+      "100"
+    ],
+    "grouped_comment": "100"
+  },
+  {
+    "code": "C231329",
+    "references": [
+      "SW201",
+      "SW202",
+      "SW203",
+      "SW204",
+      "SW205"
+    ],
+    "original_comments": [
+      "RESET",
+      "BOOT",
+      "BTN_BACK",
+      "BTN_NEXT",
+      "BTN_HOME"
+    ],
+    "grouped_comment": "B3U-1000P"
+  },
+  {
+    "code": "C319040",
+    "references": [
+      "SW501",
+      "SW502"
+    ],
+    "original_comments": [
+      "MICROSTEP_CFG"
+    ],
+    "grouped_comment": "MICROSTEP_CFG"
+  },
+  {
+    "code": "C1858395",
+    "references": [
+      "U1"
+    ],
+    "original_comments": [
+      "LMR36520FADDA"
+    ],
+    "grouped_comment": "LMR36520FADDA"
+  },
+  {
+    "code": "C51118",
+    "references": [
+      "U2"
+    ],
+    "original_comments": [
+      "AP2112K-3.3"
+    ],
+    "grouped_comment": "AP2112K-3.3"
+  },
+  {
+    "code": "C2913204",
+    "references": [
+      "U3"
+    ],
+    "original_comments": [
+      "ESP32-S3-WROOM-1-N8R2"
+    ],
+    "grouped_comment": "ESP32-S3-WROOM-1-N8R2"
+  },
+  {
+    "code": "C133541",
+    "references": [
+      "U4"
+    ],
+    "original_comments": [
+      "74LVC14A"
+    ],
+    "grouped_comment": "74LVC14A"
+  },
+  {
+    "code": "C7519",
+    "references": [
+      "U201"
+    ],
+    "original_comments": [
+      "USBLC6-2SC6"
+    ],
+    "grouped_comment": "USBLC6-2SC6"
+  },
+  {
+    "code": "C132550",
+    "references": [
+      "U202"
+    ],
+    "original_comments": [
+      "TCAN1042V-Q1"
+    ],
+    "grouped_comment": "TCAN1042V-Q1"
+  },
+  {
+    "code": "C2671361",
+    "references": [
+      "U203"
+    ],
+    "original_comments": [
+      "THVD1450DR"
+    ],
+    "grouped_comment": "THVD1450DR"
+  },
+  {
+    "code": "C90964",
+    "references": [
+      "U301",
+      "U401"
+    ],
+    "original_comments": [
+      "DRV8701ERGER"
+    ],
+    "grouped_comment": "DRV8701ERGER"
+  },
+  {
+    "code": "C42431840",
+    "references": [
+      "U501_L",
+      "U501_R",
+      "U502_L",
+      "U502_R"
+    ],
+    "original_comments": [
+      "PinSocket_1x08"
+    ],
+    "grouped_comment": "PM2.54-1X8PM-H85"
+  }
+]
