@@ -1,0 +1,62 @@
+ABX-MOTION VALIDATION
+Snapshot: 2026-10-19T13:07:16.641366+03:00
+KiCad CLI 10.0.7
+
+OUTCOME: ERC and copper/connectivity rule checks pass. Assembly release fails because supplier codes select incorrect parts.
+
+AUTOMATED CHECKS
+ERC: 0 violations across six sheet instances (five unique schematic files).
+DRC: 0 errors; 420 warnings; 0 unconnected items; 0 schematic parity violations.
+Warnings: 199 silk overlaps, 199 silk/solder-mask conflicts, 9 silk/edge conflicts, 1 mirrored front-layer reference, 12 library-footprint differences.
+Library differences: H5, H6, U3, U301, U401 and seven test points; review intended custom geometry before updating from libraries.
+Current global min_clearance and min_track_width are 0.0; Default netclass clearance is 0.15 mm.
+Independent snapshot rerun with both global minima set to 0.15 mm: 0 errors, same 420 warnings. This is not a power-current-width calculation.
+Existing DRC ignores retained: missing_courtyard, track_not_centered_on_via, tuning_profile_track_geometries, footprint_filters_mismatch, pth_inside_courtyard, npth_inside_courtyard, footprint_type_mismatch.
+203 footprints; no missing/extra schematic components or component value/footprint differences.
+No non-GND track segments on In1.Cu.
+
+CRITICAL CONNECTION CHECKS
+Both DRV8701 channels: EN pin 14 and PH pin 15 match the intended PWM nets.
+R312/R412: 200k from IDRIVE pin 12 to GND on both channels.
+USB main D+ length: 36.922765 mm; D-: 36.810927 mm; difference: 0.111838 mm.
+USB main and connector data routing: all F.Cu, no vias. Connector-side totals include branches, not end-to-end electrical path lengths.
+Board stackup is present: 35 um copper, 0.48 mm dielectric per gap, FR4 Er 4.5. Fabricator stackup/controlled impedance has not been verified.
+
+MANUFACTURING EXPORT CONSISTENCY
+Latest ZIP checked: abx-motion-manufacturing_20261019_1308.zip. Its inner Gerber ZIP is byte-identical to the 1253 archive.
+All four copper layers, both masks, both pastes, bottom silk and outline match a fresh export after excluding creation metadata.
+Front silk differs from both fresh default export and stored-board-plot-settings export; reconcile intended labeling/export before release.
+Combined drill tool/hit data matches current board after excluding comment metadata.
+Refilling zones changes none of the exported Gerber layers.
+Generic BOM and CPL: 199 rows each, no value/footprint or position/rotation/side mismatches among exported components.
+Generic exports omit H5/H6 and both logos. JLC exports contain 188 components, omit holes/logos/testpoints and normalize descriptive value labels.
+
+CONFIRMED SUPPLIER BOM FAILURES
+Q1: C2681533
+  Expected: SQJ459EP-T1_GE3 P-channel MOSFET
+  Supplier entry: SHOU HAN 1.5-2P WT connector
+  Source: https://www.lcsc.com/product-detail/C2681533.html
+R309, R409: C137393
+  Expected: 10 mOhm, 3 W, 2512 current shunt
+  Supplier entry: YAGEO RC1206FR-07100KL, 100 kOhm, 250 mW, 1206 resistor
+  Source: https://www.lcsc.com/product-detail/C137393.html
+U203: C2863664
+  Expected: THVD1450DR RS-485 transceiver, SOIC-8
+  Supplier entry: TI INA331IDGKR instrumentation amplifier, VSSOP-8
+  Source: https://www.lcsc.com/product-detail/instrumentation-amplifiers_ti-ina331idgkr_C2863664.html
+U3: C2913202
+  Expected: ESP32-S3-WROOM-1-N8R2
+  Supplier entry: ESP32-S3-WROOM-1-N16R8
+  Source: https://www.lcsc.com/product-detail/C2913202.html
+Supplier checks are a critical-part spot check, not verification of all 61 grouped purchasing rows. D2/U1/DRV8701 codes could not be resolved during this run. Treat remaining supplier mappings as unverified.
+These purchasing mistakes do not appear as schematic-to-PCB mismatches because both design files can agree while the assembly BOM selects a different component.
+
+ENGINEERING ITEMS OUTSIDE ERC/DRC SIGNOFF
+D2 remains SMCJ28A while the board claims operation up to 32 V. The 28 V standoff selection and transient/clamp margin require resolution; a clean DRC does not establish protection coordination.
+Q1, shunts, LDO, connectors, and PCB copper require thermal/load testing at intended simultaneous motor currents. No continuous-current rating is established here.
+External STEP_ENABLE remains MCU controlled on J502/J504 and is separate from the E-stop-switched driver sleep/reset supply; confirm required external-driver stop behavior.
+OLED H5/H6 are 2.2 mm holes at (67.85,105.30)/(91.15,105.30), 23.30 mm apart. Actual module header-to-hole fit and stack height are not mechanically validated.
+
+SOURCE INTEGRITY
+No source files changed since snapshot: True. PCB, schematics and project settings were not modified by validation.
+Raw ERC/DRC JSON, netlist, export comparisons, supplier evidence and machine-readable results are in this directory.

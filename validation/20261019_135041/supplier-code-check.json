@@ -1,0 +1,82 @@
+{
+  "scope": "Targeted recheck of previous findings and updated critical supplier codes; not a complete audit of all 60 grouped BOM rows.",
+  "checked_at": "2026-10-19T13:53:03.242993+03:00",
+  "identity_matches": [
+    {
+      "refs": "Q1",
+      "lcsc": "C3289501",
+      "part": "SQJ459EP-T1_GE3",
+      "url": "https://www.lcsc.com/product-detail/C3289501.html"
+    },
+    {
+      "refs": "U203",
+      "lcsc": "C2671361",
+      "part": "THVD1450DR",
+      "url": "https://www.lcsc.com/product-detail/C2671361.html"
+    },
+    {
+      "refs": "U301/U401",
+      "lcsc": "C90964",
+      "part": "DRV8701ERGER",
+      "url": "https://www.lcsc.com/product-detail/C90964.html"
+    },
+    {
+      "refs": "U1",
+      "lcsc": "C1858395",
+      "part": "LMR36520FADDAR",
+      "url": "https://www.lcsc.com/product-detail/C1858395.html"
+    },
+    {
+      "refs": "D2",
+      "lcsc": "C224047",
+      "part": "SMCJ28A",
+      "url": "https://www.lcsc.com/product-detail/C224047.html"
+    },
+    {
+      "refs": "U202",
+      "lcsc": "C132550",
+      "part": "TCAN1042HGVDRQ1",
+      "url": "https://www.lcsc.com/product-detail/C132550.html"
+    },
+    {
+      "refs": "R312/R412",
+      "lcsc": "C25811",
+      "part": "200 kOhm 0603",
+      "url": "https://www.lcsc.com/product-detail/C25811.html"
+    }
+  ],
+  "failures": [
+    {
+      "refs": [
+        "R309",
+        "R409"
+      ],
+      "present_code": "C137393",
+      "present_part": "YAGEO RC1206FR-07100KL, 100 kOhm, 0.25 W, 1206",
+      "required_part": "BOURNS CRA2512-FZ-R010ELF, 10 mOhm, 3 W, 2512",
+      "correct_code": "C840621",
+      "present_url": "https://www.lcsc.com/product-detail/C137393.html",
+      "correct_url": "https://www.lcsc.com/product-detail/C840621.html"
+    },
+    {
+      "refs": [
+        "U3"
+      ],
+      "present_code": "C2913202",
+      "present_part": "ESP32-S3-WROOM-1-N16R8",
+      "required_part": "ESP32-S3-WROOM-1-N8R2",
+      "correct_code": "C2913204",
+      "present_url": "https://www.lcsc.com/product-detail/C2913202.html",
+      "correct_url": "https://www.lcsc.com/product-detail/C2913204.html",
+      "impact": "The current circuit uses GPIO35 for RS485_DIR, GPIO36 for BTN_BACK, GPIO37 for BTN_NEXT. These pins are occupied by octal PSRAM on the N16R8 variant.",
+      "manufacturer_source": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html"
+    }
+  ],
+  "supplier_field_disagreements": [
+    {
+      "ref": "L1",
+      "pcb_lcsc": "C408412",
+      "packaged_bom_lcsc": "C2045384"
+    }
+  ]
+}

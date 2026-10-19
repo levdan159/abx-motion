@@ -1,0 +1,1184 @@
+** Drc report for abx-motion.kicad_pcb **
+** Created on 2026-10-19T12:33:25 **
+** Report includes: Errors, Warnings **
+
+** Found 351 DRC violations **
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(135.2500 mm, 84.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(129.2500 mm, 78.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(165.0000 mm, 110.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 93.7500 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(122.5000 mm, 67.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(122.5000 mm, 68.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(134.0000 mm, 58.4000 mm): Via [/M1_PWM_PH] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(93.6000 mm, 58.6000 mm): Via [/M1_PWM_PH] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(171.4000 mm, 79.6000 mm): Via [/M1_PWM_PH] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(156.4000 mm, 64.6000 mm): Via [/M1_PWM_PH] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(155.8000 mm, 64.0000 mm): Via [/M1_PWM_PH] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(90.0000 mm, 65.5000 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(93.5000 mm, 64.7500 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(93.5000 mm, 71.2500 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(90.0000 mm, 67.7500 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(89.2500 mm, 73.5000 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(57.0000 mm, 124.5000 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(107.2500 mm, 74.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(97.7500 mm, 74.0000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(95.0000 mm, 67.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(134.0000 mm, 91.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(124.7500 mm, 82.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(98.5000 mm, 74.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(95.0000 mm, 68.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 105.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(99.5000 mm, 71.2500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(156.7500 mm, 94.2500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1993 mm)
+    Local override; error
+    @(63.2000 mm, 119.6000 mm): Track [/MCU_and_Encoders/+5V_ENC] on F.Cu, length 2.2000 mm
+    @(57.5000 mm, 122.5000 mm): Track [/MCU_and_Encoders/ENC2_A] on F.Cu, length 11.3137 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(158.6750 mm, 111.4000 mm): Pad 1 [/DC_Motor_2/DRV_VREF] of R402 on F.Cu
+    @(158.0000 mm, 110.7500 mm): Track [/DC_Motor_2/DRV_AVDD] on F.Cu, length 1.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(59.0000 mm, 110.6000 mm): Track [/MCU_and_Encoders/+3V3_EXT] on F.Cu, length 1.1000 mm
+    @(58.3250 mm, 110.4000 mm): Pad 2 [/MCU_and_Encoders/RS485_A] of R222 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(63.2000 mm, 110.6000 mm): Track [/MCU_and_Encoders/+3V3_EXT] on F.Cu, length 4.2000 mm
+    @(58.3250 mm, 110.4000 mm): Pad 2 [/MCU_and_Encoders/RS485_A] of R222 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(53.5000 mm, 109.0000 mm): Track [/MCU_and_Encoders/I2C_SCL] on B.Cu, length 33.2340 mm
+    @(69.0000 mm, 94.0000 mm): Track [/MCU_and_Encoders/I2C_SDA] on B.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1757 mm)
+    Local override; error
+    @(112.0000 mm, 58.0000 mm): Via [/MCU_and_Encoders/I2C_SDA] on F.Cu - B.Cu
+    @(134.0000 mm, 58.4000 mm): Track [/M1_PWM_PH] on B.Cu, length 21.6000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(59.5000 mm, 105.5000 mm): Track [/MCU_and_Encoders/I2C_SDA] on B.Cu, length 2.0000 mm
+    @(53.5000 mm, 109.0000 mm): Track [/MCU_and_Encoders/I2C_SCL] on B.Cu, length 33.2340 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1657 mm)
+    Local override; error
+    @(83.6000 mm, 59.6000 mm): Via [+3V3] on F.Cu - B.Cu
+    @(87.0000 mm, 57.0000 mm): Track [/MCU_and_Encoders/I2C_SDA] on B.Cu, length 7.7782 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1600 mm)
+    Local override; error
+    @(144.5000 mm, 93.7500 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+    @(136.5000 mm, 94.2500 mm): Track [/M2_PWM_EN] on F.Cu, length 20.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(129.2500 mm, 78.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+    @(126.0000 mm, 78.0000 mm): Track [/M1_nFAULT] on B.Cu, length 32.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(164.7500 mm, 110.5000 mm): Track [/M2_nFAULT] on F.Cu, length 0.7071 mm
+    @(165.0000 mm, 111.2500 mm): Track [/DC_Motor_2/DRV_DVDD] on F.Cu, length 2.7500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(165.2500 mm, 111.0000 mm): Track [/M2_nFAULT] on F.Cu, length 1.2500 mm
+    @(165.0000 mm, 111.2500 mm): Track [/DC_Motor_2/DRV_DVDD] on F.Cu, length 2.7500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(57.3250 mm, 94.3650 mm): Pad 2 [/MCU_and_Encoders/RS485_DIR] of U203 on F.Cu
+    @(56.0000 mm, 92.5000 mm): Track [/MCU_and_Encoders/RS485_A] on F.Cu, length 2.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1600 mm)
+    Local override; error
+    @(57.3250 mm, 94.3650 mm): Pad 2 [/MCU_and_Encoders/RS485_DIR] of U203 on F.Cu
+    @(56.0000 mm, 95.0000 mm): Track [/MCU_and_Encoders/RS485_A] on F.Cu, length 6.2750 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)
+    Local override; error
+    @(164.7500 mm, 107.9375 mm): Track [/M2_nFAULT] on F.Cu, length 2.5625 mm
+    @(164.2500 mm, 110.5000 mm): Track [/DC_Motor_2/DRV_DVDD] on F.Cu, length 1.0607 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1600 mm)
+    Local override; error
+    @(62.2750 mm, 94.3650 mm): Pad 7 [/MCU_and_Encoders/RS485_B] of U203 on F.Cu
+    @(62.2750 mm, 95.0000 mm): Track [/MCU_and_Encoders/RS485_A] on F.Cu, length 0.6350 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(59.5000 mm, 95.6350 mm): Track [/MCU_and_Encoders/RS485_A] on F.Cu, length 5.9650 mm
+    @(58.7250 mm, 100.0000 mm): Pad 1 [+3V3] of C211 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1834 mm)
+    Local override; error
+    @(167.4000 mm, 80.2000 mm): Track [/M1_PWM_PH] on F.Cu, length 0.5657 mm
+    @(166.9375 mm, 79.7500 mm): Pad 16 [GND] of U301 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1757 mm)
+    Local override; error
+    @(112.4000 mm, 58.4000 mm): Track [/M1_PWM_PH] on B.Cu, length 0.2828 mm
+    @(112.0000 mm, 58.0000 mm): Via [/MCU_and_Encoders/I2C_SDA] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1828 mm)
+    Local override; error
+    @(165.0000 mm, 80.0000 mm): Pad 25 [GND] of U301 on B.Cu
+    @(161.0000 mm, 73.5000 mm): Track [/M1_PWM_EN] on B.Cu, length 9.8995 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(122.0000 mm, 73.5000 mm): Track [/M1_PWM_EN] on B.Cu, length 39.0000 mm
+    @(118.7500 mm, 70.7500 mm): Track [/M1_nFAULT] on B.Cu, length 10.2530 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(108.5000 mm, 60.0000 mm): Track [/M1_PWM_EN] on B.Cu, length 19.0919 mm
+    @(102.7500 mm, 70.7500 mm): Track [/M1_nFAULT] on B.Cu, length 16.0000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(118.7500 mm, 70.7500 mm): Track [/M1_nFAULT] on B.Cu, length 10.2530 mm
+    @(108.5000 mm, 60.0000 mm): Track [/M1_PWM_EN] on B.Cu, length 19.0919 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1803 mm)
+    Local override; error
+    @(96.0000 mm, 74.0000 mm): Track [/MCU_and_Encoders/ENC1_A] on B.Cu, length 6.0104 mm
+    @(99.5000 mm, 71.2500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1600 mm)
+    Local override; error
+    @(93.2500 mm, 71.5000 mm): Track [/MCU_and_Encoders/ENC1_B] on F.Cu, length 0.5000 mm
+    @(92.2500 mm, 71.2500 mm): Pad 14 [/MCU_and_Encoders/USB_DP] of U3 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1600 mm)
+    Local override; error
+    @(93.5000 mm, 71.2500 mm): Track [/MCU_and_Encoders/ENC1_B] on F.Cu, length 0.3536 mm
+    @(92.2500 mm, 71.2500 mm): Pad 14 [/MCU_and_Encoders/USB_DP] of U3 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(57.0000 mm, 124.5000 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+    @(57.5000 mm, 127.0000 mm): Track [/MCU_and_Encoders/ENC2_A] on F.Cu, length 4.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)
+    Local override; error
+    @(101.0000 mm, 71.5000 mm): Track [/M2_PWM_PH] on F.Cu, length 7.7782 mm
+    @(97.7500 mm, 68.7500 mm): Track [/M2_PWM_EN] on F.Cu, length 2.4749 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1690 mm)
+    Local override; error
+    @(93.2500 mm, 72.0000 mm): Track [/MCU_and_Encoders/ENC1_B] on F.Cu, length 2.5000 mm
+    @(93.5000 mm, 72.5000 mm): Via [/MCU_and_Encoders/LED_STAT] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(109.7500 mm, 71.2500 mm): Pad 27 [/MCU_and_Encoders/ESP_BOOT] of U3 on F.Cu
+    @(108.7500 mm, 72.0000 mm): Track [/M2_PWM_PH] on F.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(101.6350 mm, 72.5000 mm): Pad 21 [/STEP2_PUL] of U3 on F.Cu
+    @(108.7500 mm, 71.5000 mm): Track [/M2_PWM_PH] on F.Cu, length 7.7500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1828 mm)
+    Local override; error
+    @(165.0000 mm, 106.0000 mm): Pad 25 [GND] of U401 on B.Cu
+    @(167.7500 mm, 106.2500 mm): Track [/M2_PWM_PH] on B.Cu, length 22.2739 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1989 mm)
+    Local override; error
+    @(168.6000 mm, 106.8000 mm): Track [/M2_PWM_EN] on F.Cu, length 3.6770 mm
+    @(168.5000 mm, 107.2500 mm): Track [/DC_Motor_2/DRV_nSLEEP] on F.Cu, length 3.5355 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1989 mm)
+    Local override; error
+    @(171.6750 mm, 109.4000 mm): Track [/M2_PWM_EN] on F.Cu, length 0.4750 mm
+    @(168.5000 mm, 107.2500 mm): Track [/DC_Motor_2/DRV_nSLEEP] on F.Cu, length 3.5355 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1690 mm)
+    Local override; error
+    @(96.2500 mm, 68.5000 mm): Track [/M2_PWM_EN] on F.Cu, length 0.3536 mm
+    @(96.5000 mm, 68.0000 mm): Via [/M2_CS] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)
+    Local override; error
+    @(169.0000 mm, 106.2500 mm): Track [/M2_PWM_EN] on F.Cu, length 1.0000 mm
+    @(168.5000 mm, 107.2500 mm): Track [/DC_Motor_2/DRV_nSLEEP] on F.Cu, length 3.5355 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1600 mm)
+    Local override; error
+    @(167.4000 mm, 106.8000 mm): Track [/M2_PWM_EN] on F.Cu, length 1.2000 mm
+    @(167.7500 mm, 106.2500 mm): Via [/M2_PWM_PH] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)
+    Local override; error
+    @(96.5000 mm, 68.7500 mm): Track [/M2_PWM_EN] on F.Cu, length 1.2500 mm
+    @(101.0000 mm, 71.5000 mm): Track [/M2_PWM_PH] on F.Cu, length 7.7782 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)
+    Local override; error
+    @(169.0000 mm, 107.2000 mm): Track [/M2_PWM_EN] on F.Cu, length 0.0500 mm
+    @(168.5000 mm, 107.2500 mm): Track [/DC_Motor_2/DRV_nSLEEP] on F.Cu, length 3.5355 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1898 mm)
+    Local override; error
+    @(136.2125 mm, 95.0000 mm): Pad 1 [GND] of LED_PWR_5V1 on F.Cu
+    @(136.5000 mm, 94.2500 mm): Track [/M2_PWM_EN] on F.Cu, length 20.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1898 mm)
+    Local override; error
+    @(136.2125 mm, 95.0000 mm): Pad 1 [GND] of LED_PWR_5V1 on F.Cu
+    @(134.0000 mm, 91.7500 mm): Track [/M2_PWM_EN] on F.Cu, length 3.5355 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1800 mm)
+    Local override; error
+    @(124.7500 mm, 82.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+    @(125.3050 mm, 82.5000 mm): Track [/Steppers_and_Relays/STEP2_M0] on F.Cu, length 4.1950 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1850 mm)
+    Local override; error
+    @(107.2500 mm, 74.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+    @(106.7150 mm, 72.5000 mm): Track [/RELAY_2] on F.Cu, length 3.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(95.0000 mm, 68.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+    @(94.5000 mm, 68.7100 mm): Track [/M2_CS] on F.Cu, length 0.7100 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1803 mm)
+    Local override; error
+    @(98.5000 mm, 74.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+    @(102.5000 mm, 70.0000 mm): Track [/MCU_and_Encoders/BTN_NEXT] on B.Cu, length 14.1421 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1803 mm)
+    Local override; error
+    @(97.7500 mm, 74.0000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+    @(102.5000 mm, 70.0000 mm): Track [/MCU_and_Encoders/BTN_NEXT] on B.Cu, length 14.1421 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(115.5000 mm, 68.0000 mm): Track [/M2_CS] on F.Cu, length 8.0000 mm
+    @(122.5000 mm, 67.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(94.5000 mm, 68.0000 mm): Track [/M2_CS] on F.Cu, length 2.0000 mm
+    @(95.0000 mm, 67.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1923 mm)
+    Local override; error
+    @(92.2500 mm, 68.7100 mm): Track [/M2_CS] on F.Cu, length 2.2500 mm
+    @(95.0000 mm, 68.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1690 mm)
+    Local override; error
+    @(96.5000 mm, 68.0000 mm): Via [/M2_CS] on F.Cu - B.Cu
+    @(95.0000 mm, 68.5000 mm): Track [/M2_PWM_EN] on F.Cu, length 1.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1795 mm)
+    Local override; error
+    @(83.3150 mm, 68.6000 mm): Track [/MCU_and_Encoders/USB_DN] on F.Cu, length 5.3050 mm
+    @(78.2000 mm, 64.0500 mm): Track [/MCU_and_Encoders/USB_DP] on F.Cu, length 7.0004 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1795 mm)
+    Local override; error
+    @(78.3650 mm, 63.6500 mm): Track [/MCU_and_Encoders/USB_DN] on F.Cu, length 7.0004 mm
+    @(78.2000 mm, 64.0500 mm): Track [/MCU_and_Encoders/USB_DP] on F.Cu, length 7.0004 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1800 mm)
+    Local override; error
+    @(63.2000 mm, 64.5000 mm): Track [/MCU_and_Encoders/USB_DP] on F.Cu, length 0.6364 mm
+    @(62.1000 mm, 63.6500 mm): Track [/MCU_and_Encoders/USB_DN] on F.Cu, length 16.2650 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1800 mm)
+    Local override; error
+    @(63.6500 mm, 64.0500 mm): Track [/MCU_and_Encoders/USB_DP] on F.Cu, length 14.5500 mm
+    @(62.1000 mm, 63.6500 mm): Track [/MCU_and_Encoders/USB_DN] on F.Cu, length 16.2650 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1800 mm)
+    Local override; error
+    @(78.2000 mm, 64.0500 mm): Track [/MCU_and_Encoders/USB_DP] on F.Cu, length 7.0004 mm
+    @(62.1000 mm, 63.6500 mm): Track [/MCU_and_Encoders/USB_DN] on F.Cu, length 16.2650 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1993 mm)
+    Local override; error
+    @(57.5000 mm, 122.5000 mm): Track [/MCU_and_Encoders/ENC2_A] on F.Cu, length 11.3137 mm
+    @(61.0000 mm, 119.6000 mm): Track [/MCU_and_Encoders/+5V_ENC] on F.Cu, length 0.4000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1803 mm)
+    Local override; error
+    @(97.0000 mm, 74.0000 mm): Track [/MCU_and_Encoders/ENC2_B] on F.Cu, length 0.7071 mm
+    @(97.7500 mm, 74.0000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1550 mm)
+    Local override; error
+    @(96.5550 mm, 72.5000 mm): Track [/MCU_and_Encoders/ENC2_A] on F.Cu, length 3.5000 mm
+    @(96.0000 mm, 74.7500 mm): Via [/MCU_and_Encoders/ENC1_A] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(97.8250 mm, 73.5000 mm): Track [/MCU_and_Encoders/ENC2_B] on F.Cu, length 0.3250 mm
+    @(97.7500 mm, 74.0000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1556 mm)
+    Local override; error
+    @(97.8250 mm, 72.5000 mm): Track [/MCU_and_Encoders/ENC2_B] on F.Cu, length 1.0000 mm
+    @(97.7500 mm, 74.0000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1950 mm)
+    Local override; error
+    @(62.4750 mm, 78.4050 mm): Pad 5 [+3V3] of U202 on F.Cu
+    @(61.0000 mm, 79.0000 mm): Track [/MCU_and_Encoders/CAN_RX] on F.Cu, length 9.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(75.5000 mm, 74.0000 mm): Track [/MCU_and_Encoders/CAN_RX] on F.Cu, length 17.5000 mm
+    @(89.2500 mm, 73.5000 mm): Via [/MCU_and_Encoders/ENC1_B] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1614 mm)
+    Local override; error
+    @(61.0000 mm, 79.0000 mm): Via [/MCU_and_Encoders/CAN_RX] on F.Cu - B.Cu
+    @(59.6500 mm, 79.4500 mm): Track [/MCU_and_Encoders/CAN_L] on F.Cu, length 1.9799 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(95.5000 mm, 71.5000 mm): Track [/MCU_and_Encoders/CAN_RX] on B.Cu, length 3.5000 mm
+    @(95.0000 mm, 68.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(76.0000 mm, 77.5000 mm): Track [/MCU_and_Encoders/RS485_RX] on B.Cu, length 26.1630 mm
+    @(86.0000 mm, 68.0000 mm): Track [/MCU_and_Encoders/CAN_TX] on B.Cu, length 2.0000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1553 mm)
+    Local override; error
+    @(132.0000 mm, 87.0000 mm): Track [+BATT] on F.Cu, length 5.6569 mm
+    @(135.2500 mm, 84.5000 mm): Via [/M2_nFAULT] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1800 mm)
+    Local override; error
+    @(125.3050 mm, 81.4600 mm): Track [/Steppers_and_Relays/STEP2_M0] on F.Cu, length 1.0400 mm
+    @(124.7500 mm, 82.5000 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(171.0000 mm, 83.7500 mm): Track [/DC_Motor_1/DRV_nSLEEP] on F.Cu, length 1.2500 mm
+    @(171.6750 mm, 84.2000 mm): Pad 1 [/M1_PWM_EN] of R204 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(164.7500 mm, 101.0000 mm): Track [/DC_Motor_2/MOT_OUT2] on F.Cu, length 0.7071 mm
+    @(164.7500 mm, 104.0625 mm): Track [/DC_Motor_2/GL2_RAW] on F.Cu, length 2.5625 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(158.6750 mm, 85.4000 mm): Pad 1 [/DC_Motor_1/DRV_VREF] of R302 on F.Cu
+    @(158.0000 mm, 84.7500 mm): Track [/DC_Motor_1/DRV_AVDD] on F.Cu, length 1.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.5000 mm, 105.7500 mm): Track [/DC_Motor_2/DRV_CPH] on F.Cu, length 0.7071 mm
+    @(163.0625 mm, 105.2500 mm): Track [/DC_Motor_2/DRV_VCP] on F.Cu, length 0.5625 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.0000 mm, 105.2500 mm): Track [/DC_Motor_2/DRV_CPH] on F.Cu, length 2.7500 mm
+    @(162.2500 mm, 103.7500 mm): Track [/DC_Motor_2/DRV_VCP] on F.Cu, length 1.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(160.2750 mm, 106.0000 mm): Track [/DC_Motor_2/DRV_CPL] on F.Cu, length 1.9750 mm
+    @(162.5000 mm, 105.7500 mm): Track [/DC_Motor_2/DRV_CPH] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.2500 mm, 106.0000 mm): Track [/DC_Motor_2/DRV_CPL] on F.Cu, length 0.2500 mm
+    @(162.5000 mm, 105.7500 mm): Track [/DC_Motor_2/DRV_CPH] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(166.9375 mm, 105.2500 mm): Track [/DC_Motor_2/GH1_RAW] on F.Cu, length 2.8125 mm
+    @(169.5000 mm, 105.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1803 mm)
+    Local override; error
+    @(169.7500 mm, 105.2500 mm): Track [/DC_Motor_2/GH1_RAW] on F.Cu, length 2.1213 mm
+    @(169.5000 mm, 105.7500 mm): Via [/M2_PWM_EN] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(164.7500 mm, 75.0000 mm): Track [/DC_Motor_1/MOT_OUT2] on F.Cu, length 0.7071 mm
+    @(163.7500 mm, 75.5000 mm): Track [/DC_Motor_1/GH2_RAW] on F.Cu, length 1.0607 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(168.0000 mm, 75.0000 mm): Track [/DC_Motor_1/MOT_OUT2] on F.Cu, length 3.2500 mm
+    @(163.7500 mm, 75.5000 mm): Track [/DC_Motor_1/GH2_RAW] on F.Cu, length 1.0607 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(164.2500 mm, 78.0625 mm): Track [/DC_Motor_1/MOT_OUT2] on F.Cu, length 2.5625 mm
+    @(163.7500 mm, 75.5000 mm): Track [/DC_Motor_1/GH2_RAW] on F.Cu, length 1.0607 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(63.5000 mm, 134.9000 mm): Track [/MCU_and_Encoders/ENC2_A_FILT] on F.Cu, length 3.4000 mm
+    @(62.8250 mm, 132.5000 mm): Pad 2 [/MCU_and_Encoders/ENC2_A_RAW] of R215 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(170.2500 mm, 105.2500 mm): Track [/DC_Motor_2/MOT_OUT1] on F.Cu, length 0.7071 mm
+    @(166.9375 mm, 105.2500 mm): Track [/DC_Motor_2/GH1_RAW] on F.Cu, length 2.8125 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(175.0000 mm, 105.2500 mm): Track [/DC_Motor_2/MOT_OUT1] on F.Cu, length 4.7500 mm
+    @(169.7500 mm, 105.2500 mm): Track [/DC_Motor_2/GH1_RAW] on F.Cu, length 2.1213 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1900 mm)
+    Local override; error
+    @(173.3250 mm, 78.2000 mm): Track [/DC_Motor_1/GL1_GATE] on F.Cu, length 3.1750 mm
+    @(175.6000 mm, 77.6350 mm): Pad 3 [/DC_Motor_1/MOT_OUT1] of Q301 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(170.0000 mm, 79.0000 mm): Track [/DC_Motor_1/MOT_OUT1] on F.Cu, length 0.3536 mm
+    @(169.7500 mm, 79.2500 mm): Track [/DC_Motor_1/GH1_RAW] on F.Cu, length 2.1213 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(172.2500 mm, 79.0000 mm): Track [/DC_Motor_1/MOT_OUT1] on F.Cu, length 2.2500 mm
+    @(166.9375 mm, 79.2500 mm): Track [/DC_Motor_1/GH1_RAW] on F.Cu, length 2.8125 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1821 mm)
+    Local override; error
+    @(176.5000 mm, 76.5000 mm): Via [/DC_Motor_1/MOT_OUT1] on F.Cu - B.Cu
+    @(174.5000 mm, 75.5000 mm): Track [/DC_Motor_1/GL2_GATE] on B.Cu, length 11.3137 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.5000 mm, 79.7500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 0.7071 mm
+    @(162.2500 mm, 80.0000 mm): Track [/DC_Motor_1/DRV_CPL] on F.Cu, length 0.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(160.2750 mm, 80.0000 mm): Track [/DC_Motor_1/DRV_CPL] on F.Cu, length 1.9750 mm
+    @(162.5000 mm, 79.7500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)
+    Local override; error
+    @(164.2500 mm, 110.5000 mm): Track [/DC_Motor_2/DRV_DVDD] on F.Cu, length 1.0607 mm
+    @(164.7500 mm, 110.5000 mm): Track [/M2_nFAULT] on F.Cu, length 0.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.2500 mm, 80.0000 mm): Track [/DC_Motor_1/DRV_CPL] on F.Cu, length 0.2500 mm
+    @(163.0625 mm, 79.7500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 0.5625 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(160.2750 mm, 80.0000 mm): Pad 2 [/DC_Motor_1/DRV_CPL] of C302 on F.Cu
+    @(162.0000 mm, 79.2500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 2.7500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1970 mm)
+    Local override; error
+    @(53.0000 mm, 64.0000 mm): Track [/MCU_and_Encoders/VBUS_USB] on F.Cu, length 1.4142 mm
+    @(53.5450 mm, 63.2500 mm): Pad B5 [/MCU_and_Encoders/USB_CC2] of J201 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1970 mm)
+    Local override; error
+    @(52.0000 mm, 60.0000 mm): Track [/MCU_and_Encoders/VBUS_USB] on F.Cu, length 1.4142 mm
+    @(53.5450 mm, 59.7500 mm): Pad B8 [unconnected-(J201-SBU2-PadB8)] of J201 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)
+    Local override; error
+    @(171.6750 mm, 110.2000 mm): Pad 1 [/M2_PWM_EN] of R205 on F.Cu
+    @(171.0000 mm, 109.7500 mm): Track [/DC_Motor_2/DRV_nSLEEP] on F.Cu, length 1.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(169.7500 mm, 79.2500 mm): Track [/DC_Motor_1/GH1_RAW] on F.Cu, length 2.1213 mm
+    @(172.2500 mm, 79.0000 mm): Track [/DC_Motor_1/MOT_OUT1] on F.Cu, length 2.2500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(164.7500 mm, 78.0625 mm): Track [/DC_Motor_1/GL2_RAW] on F.Cu, length 2.5625 mm
+    @(164.7500 mm, 75.0000 mm): Track [/DC_Motor_1/MOT_OUT2] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.2500 mm, 79.0000 mm): Track [/DC_Motor_1/DRV_VCP] on F.Cu, length 0.3536 mm
+    @(162.5000 mm, 79.7500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(163.0625 mm, 79.2500 mm): Track [/DC_Motor_1/DRV_VCP] on F.Cu, length 0.5625 mm
+    @(162.5000 mm, 79.7500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.2500 mm, 77.7500 mm): Track [/DC_Motor_1/DRV_VCP] on F.Cu, length 1.2500 mm
+    @(162.0000 mm, 79.2500 mm): Track [/DC_Motor_1/DRV_CPH] on F.Cu, length 2.7500 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1536 mm)
+    Local override; error
+    @(162.2500 mm, 105.0000 mm): Track [/DC_Motor_2/DRV_VCP] on F.Cu, length 0.3536 mm
+    @(162.5000 mm, 105.7500 mm): Track [/DC_Motor_2/DRV_CPH] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1590 mm)
+    Local override; error
+    @(166.7500 mm, 103.7500 mm): Track [/DC_Motor_2/GL1_RAW] on F.Cu, length 0.7071 mm
+    @(165.7500 mm, 103.0000 mm): Via [/DC_Motor_2/SHUNT_SP] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1590 mm)
+    Local override; error
+    @(166.2500 mm, 104.0625 mm): Track [/DC_Motor_2/GL1_RAW] on F.Cu, length 0.8125 mm
+    @(165.7500 mm, 103.0000 mm): Via [/DC_Motor_2/SHUNT_SP] on F.Cu - B.Cu
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(82.0000 mm, 144.3000 mm): PCB text 'A1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(84.5000 mm, 144.3000 mm): PCB text 'A2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(87.0000 mm, 144.3000 mm): PCB text 'B1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(89.5000 mm, 144.3000 mm): PCB text 'B2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(96.0000 mm, 144.3000 mm): PCB text 'EN' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(98.5000 mm, 144.3000 mm): PCB text 'PU' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(101.0000 mm, 144.3000 mm): PCB text 'DR' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.5000 mm, 144.3000 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(110.0000 mm, 144.3000 mm): PCB text 'A1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(112.5000 mm, 144.3000 mm): PCB text 'A2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(115.0000 mm, 144.3000 mm): PCB text 'B1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(117.5000 mm, 144.3000 mm): PCB text 'B2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.0000 mm, 144.3000 mm): PCB text 'EN' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(126.5000 mm, 144.3000 mm): PCB text 'PU' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(129.0000 mm, 144.3000 mm): PCB text 'DR' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(131.5000 mm, 144.3000 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(94.1500 mm, 81.4600 mm): PCB text 'M0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(94.1500 mm, 84.0000 mm): PCB text 'M1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(94.1500 mm, 86.5400 mm): PCB text 'M2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 105.0000 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 107.5000 mm): PCB text '3V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 110.0000 mm): PCB text 'C' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 112.5000 mm): PCB text 'D' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 119.5000 mm): PCB text '5V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 122.0000 mm): PCB text 'A' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 124.5000 mm): PCB text 'B' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 127.0000 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 134.0000 mm): PCB text '5V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 136.5000 mm): PCB text 'A' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 139.0000 mm): PCB text 'B' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(53.6000 mm, 141.5000 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6600 mm)
+    Rule: board setup constraints silk text height; warning
+    @(141.5000 mm, 82.7000 mm): PCB text 'M0-M1-M2: 000=1/1  100=1/2  010=1/4' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6600 mm)
+    Rule: board setup constraints silk text height; warning
+    @(141.5000 mm, 85.2000 mm): PCB text 'MICROSTP: 110=1/8  001=1/16 111=1/32' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 115.5000 mm): PCB text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 118.0400 mm): PCB text 'FLT' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 120.5800 mm): PCB text 'A2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 123.1200 mm): PCB text 'A1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 125.6600 mm): PCB text 'B1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 128.2000 mm): PCB text 'B2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 130.7400 mm): PCB text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.7000 mm, 133.2800 mm): PCB text 'VM' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 115.5000 mm): PCB text 'DIR' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 118.0400 mm): PCB text 'STP' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 120.5800 mm): PCB text 'SLP' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 123.1200 mm): PCB text 'RST' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 125.6600 mm): PCB text 'M2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 128.2000 mm): PCB text 'M1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 130.7400 mm): PCB text 'M0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(109.6500 mm, 133.2800 mm): PCB text 'EN' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 115.5000 mm): PCB text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 118.0400 mm): PCB text 'FLT' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 120.5800 mm): PCB text 'A2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 123.1200 mm): PCB text 'A1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 125.6600 mm): PCB text 'B1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 128.2000 mm): PCB text 'B2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 130.7400 mm): PCB text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.2000 mm, 133.2800 mm): PCB text 'VM' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 115.5000 mm): PCB text 'DIR' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 118.0400 mm): PCB text 'STP' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 120.5800 mm): PCB text 'SLP' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 123.1200 mm): PCB text 'RST' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 125.6600 mm): PCB text 'M2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 128.2000 mm): PCB text 'M1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 130.7400 mm): PCB text 'M0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(130.1500 mm, 133.2800 mm): PCB text 'EN' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(50.5000 mm, 115.8000 mm): PCB text 'J202 ENC1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(50.5000 mm, 130.3000 mm): PCB text 'J203 ENC2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(55.5000 mm, 102.5000 mm): PCB text 'J209 I2C' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(85.7500 mm, 142.5000 mm): PCB text 'J501 STEP1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(99.7500 mm, 142.5000 mm): PCB text 'J502 EXT1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(113.7500 mm, 142.5000 mm): PCB text 'J503 STEP2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.7500 mm, 142.5000 mm): PCB text 'J504 EXT2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(146.0000 mm, 141.1000 mm): PCB text 'NO' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(151.0800 mm, 141.1000 mm): PCB text 'COM' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(165.0000 mm, 141.1000 mm): PCB text 'NO' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(170.0800 mm, 141.1000 mm): PCB text 'COM' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(106.8500 mm, 131.9000 mm): PCB text 'VMOT !' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.3500 mm, 131.9000 mm): PCB text 'VMOT !' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.3000 mm, 85.5000 mm): PCB text 'A' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.3000 mm, 91.8000 mm): PCB text 'B' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.4000 mm, 71.0000 mm): PCB text 'H' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.4000 mm, 76.0800 mm): PCB text 'L' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.4000 mm, 81.1600 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.4000 mm, 98.1600 mm): PCB text 'G' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(59.5000 mm, 69.2000 mm): PCB text 'J205 CAN' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(189.8000 mm, 80.5000 mm): PCB text 'M1-' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(189.8000 mm, 111.5000 mm): PCB text 'M2-' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(190.4000 mm, 64.9200 mm): PCB text 'EN' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(190.4000 mm, 71.3000 mm): PCB text '3V3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(190.4000 mm, 89.0000 mm): PCB text 'M1+' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(190.4000 mm, 119.0000 mm): PCB text 'M2+' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(154.0000 mm, 143.5000 mm): PCB text 'NC' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(60.0000 mm, 101.2000 mm): PCB text 'J207 485' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(106.8500 mm, 113.1000 mm): PCB text 'U501 STEPSTICK 1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(114.2000 mm, 81.4600 mm): PCB text 'M0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(114.2000 mm, 84.0000 mm): PCB text 'M1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(114.2000 mm, 86.5400 mm): PCB text 'M2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(116.0000 mm, 53.5000 mm): PCB text '+BATT' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(121.5000 mm, 53.5000 mm): PCB text '+5V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.0000 mm, 53.5000 mm): PCB text '+3V3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.3500 mm, 113.1000 mm): PCB text 'U502 STEPSTICK 2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(132.5000 mm, 53.5000 mm): PCB text 'GND1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(138.0000 mm, 53.5000 mm): PCB text 'GND2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(143.5000 mm, 53.5000 mm): PCB text 'CS1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(149.0000 mm, 53.5000 mm): PCB text 'CS2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(181.8000 mm, 58.2000 mm): PCB text '-GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(189.0000 mm, 58.2000 mm): PCB text '+BATT' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(196.5000 mm, 60.7200 mm): PCB text 'J102 E-STOP' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(196.5000 mm, 79.7200 mm): PCB text 'J301 MOT1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(196.5000 mm, 109.7200 mm): PCB text 'J401 MOT2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(82.0000 mm, 145.4000 mm): PCB text 'A1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(84.5000 mm, 145.4000 mm): PCB text 'A2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(87.0000 mm, 145.4000 mm): PCB text 'B1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(89.5000 mm, 145.4000 mm): PCB text 'B2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(96.0000 mm, 145.4000 mm): PCB text 'EN' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(98.5000 mm, 145.4000 mm): PCB text 'PU' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(101.0000 mm, 145.4000 mm): PCB text 'DR' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(103.5000 mm, 145.4000 mm): PCB text 'G' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(110.0000 mm, 145.4000 mm): PCB text 'A1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(112.5000 mm, 145.4000 mm): PCB text 'A2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(115.0000 mm, 145.4000 mm): PCB text 'B1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(117.5000 mm, 145.4000 mm): PCB text 'B2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(124.0000 mm, 145.4000 mm): PCB text 'EN' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(126.5000 mm, 145.4000 mm): PCB text 'PU' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(129.0000 mm, 145.4000 mm): PCB text 'DR' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(131.5000 mm, 145.4000 mm): PCB text 'G' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(75.6900 mm, 79.3000 mm): PCB text 'G' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(78.2300 mm, 79.3000 mm): PCB text '3V' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(80.7700 mm, 79.3000 mm): PCB text 'C' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(83.3100 mm, 79.3000 mm): PCB text 'D' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(146.0000 mm, 145.4000 mm): PCB text 'NO' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(151.0800 mm, 145.4000 mm): PCB text 'COM' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(156.1600 mm, 145.4000 mm): PCB text 'NC' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(165.0000 mm, 145.4000 mm): PCB text 'NO' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(170.0800 mm, 145.4000 mm): PCB text 'COM' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(175.1600 mm, 145.4000 mm): PCB text 'NC' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 68.2000 mm): PCB text 'VBAT (J1 XT60): 12-32V (25A Fuse, Rev-Prot, SMCJ28A)' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 71.8000 mm): PCB text 'Rails: +5V 2A Buck | +3.3V LDO | 3x PTC Polyfuses' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 75.4000 mm): PCB text 'E-Stop (J102): Loops +3V3 to +3V3_DRV_EN' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 79.0000 mm): PCB text 'DC Servo 1&2: 2x 100W H-Bridge (DRV8701E, 15A)' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 82.6000 mm): PCB text 'Encoders 1&2: 5V Supply, 74LVC14A Schmitt (3.3V)' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 86.2000 mm): PCB text 'Steppers 1&2: StepStick (<=36V) + J501-J504' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 89.8000 mm): PCB text 'Relays (J505/506): 2x Omron G5LE SPDT (10A)' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(122.0000 mm, 93.4000 mm): PCB text 'Buses: CAN (J205) | RS-485 (J207) | I2C OLED' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 105.0000 mm): PCB text 'GND' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 107.5000 mm): PCB text '3V3' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 110.0000 mm): PCB text 'SCL' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 112.5000 mm): PCB text 'SDA' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 119.5000 mm): PCB text '5V' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 122.0000 mm): PCB text 'A' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 124.5000 mm): PCB text 'B' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 127.0000 mm): PCB text 'GND' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 134.0000 mm): PCB text '5V' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 136.5000 mm): PCB text 'A' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 139.0000 mm): PCB text 'B' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.0000 mm, 141.5000 mm): PCB text 'GND' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.5000 mm, 71.0000 mm): PCB text 'H' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.5000 mm, 76.0800 mm): PCB text 'L' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.5000 mm, 81.1600 mm): PCB text 'GND' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.5000 mm, 88.0000 mm): PCB text 'A' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.5000 mm, 93.0800 mm): PCB text 'B' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(54.5000 mm, 98.1600 mm): PCB text 'GND' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(116.0000 mm, 53.5000 mm): PCB text '+BATT' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(121.5000 mm, 53.5000 mm): PCB text '+5V' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.0000 mm, 53.5000 mm): PCB text '+3V3' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(132.5000 mm, 53.5000 mm): PCB text 'GND1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(138.0000 mm, 53.5000 mm): PCB text 'GND2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(143.5000 mm, 53.5000 mm): PCB text 'CS1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(149.0000 mm, 53.5000 mm): PCB text 'CS2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(85.7500 mm, 143.0000 mm): PCB text 'J501 STEP1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(99.7500 mm, 143.0000 mm): PCB text 'J502 EXT1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(113.7500 mm, 143.0000 mm): PCB text 'J503 STEP2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(127.7500 mm, 143.0000 mm): PCB text 'J504 EXT2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(151.0800 mm, 143.0000 mm): PCB text 'J505 RELAY 1' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(170.0800 mm, 143.0000 mm): PCB text 'J506 RELAY 2' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(90.5000 mm, 71.4000 mm): Reference field of U3
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(149.0000 mm, 60.8000 mm): Reference field of L1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(146.0000 mm, 118.2000 mm): Reference field of K501
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(65.2000 mm, 112.0000 mm): Reference field of F4
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(186.5000 mm, 111.5000 mm): Reference field of Q404
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(86.0800 mm, 81.5000 mm): Reference field of J208
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(165.0000 mm, 118.2000 mm): Reference field of K502
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(58.0000 mm, 130.2000 mm): Reference field of U4
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(178.5000 mm, 104.5000 mm): Reference field of Q401
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(178.5000 mm, 80.5000 mm): Reference field of Q302
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(186.5000 mm, 80.5000 mm): Reference field of Q304
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6200 mm)
+    Rule: board setup constraints silk text height; warning
+    @(138.0000 mm, 76.2000 mm): Reference field of U2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(65.2000 mm, 121.0000 mm): Reference field of F3
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(58.6200 mm, 81.2000 mm): Reference field of J204
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(166.6500 mm, 50.1000 mm): Reference field of F1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(139.5000 mm, 61.5000 mm): Reference field of U1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(165.0000 mm, 60.0000 mm): Reference field of Q1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(186.5000 mm, 73.5000 mm): Reference field of Q303
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(178.5000 mm, 111.5000 mm): Reference field of Q402
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(186.5000 mm, 103.5000 mm): Reference field of Q403
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(58.0000 mm, 52.6700 mm): Reference field of F2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(182.0000 mm, 67.3000 mm): Reference field of D2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(165.0000 mm, 76.6700 mm): Reference field of U301
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6800 mm)
+    Rule: board setup constraints silk text height; warning
+    @(165.0000 mm, 102.6700 mm): Reference field of U401
+[lib_footprint_mismatch]: Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'
+    Local override; warning
+    @(67.8500 mm, 105.3000 mm): Footprint H5
+[lib_footprint_mismatch]: Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'
+    Local override; warning
+    @(91.1500 mm, 105.3000 mm): Footprint H6
+[lib_footprint_mismatch]: Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'
+    Local override; warning
+    @(101.0000 mm, 60.0000 mm): Footprint U3
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(121.5000 mm, 50.4000 mm): Footprint TP_5V1
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(127.0000 mm, 50.4000 mm): Footprint TP_3V3_1
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(149.0000 mm, 50.4000 mm): Footprint TP_CS2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'abx-footprints'
+    Local override; warning
+    @(79.5000 mm, 131.0000 mm): Footprint LOGO1
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(143.5000 mm, 50.4000 mm): Footprint TP_CS1
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(116.0000 mm, 50.4000 mm): Footprint TP_BATT1
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(138.0000 mm, 50.4000 mm): Footprint TP_GND2
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(132.5000 mm, 50.4000 mm): Footprint TP_GND1
+[lib_footprint_mismatch]: Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'
+    Local override; warning
+    @(165.0000 mm, 80.0000 mm): Footprint U301
+[lib_footprint_mismatch]: Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'
+    Local override; warning
+    @(165.0000 mm, 106.0000 mm): Footprint U401
+[lib_footprint_issues]: The current configuration does not include the footprint library 'abx-footprints'
+    Local override; warning
+    @(77.5000 mm, 120.0000 mm): Footprint LOGO2
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(45.0000 mm, 48.0000 mm): Segment on Edge.Cuts
+    @(91.8000 mm, 47.1000 mm): Segment of U3 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(45.0000 mm, 48.0000 mm): Segment on Edge.Cuts
+    @(110.2000 mm, 47.1000 mm): Segment of U3 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(202.0000 mm, 153.0000 mm): Segment on Edge.Cuts
+    @(146.0000 mm, 152.7200 mm): Polygon of J505 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(202.0000 mm, 48.0000 mm): Segment on Edge.Cuts
+    @(201.7200 mm, 70.0000 mm): Polygon of J102 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(202.0000 mm, 48.0000 mm): Segment on Edge.Cuts
+    @(201.7200 mm, 89.0000 mm): Polygon of J301 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(45.0000 mm, 153.0000 mm): Segment on Edge.Cuts
+    @(45.2800 mm, 88.0000 mm): Polygon of J207 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(45.0000 mm, 153.0000 mm): Segment on Edge.Cuts
+    @(45.2800 mm, 71.0000 mm): Polygon of J205 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(202.0000 mm, 153.0000 mm): Segment on Edge.Cuts
+    @(165.0000 mm, 152.7200 mm): Polygon of J506 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(202.0000 mm, 48.0000 mm): Segment on Edge.Cuts
+    @(201.7200 mm, 119.0000 mm): Polygon of J401 on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

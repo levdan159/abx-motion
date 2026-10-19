@@ -1,0 +1,32 @@
+{
+  "status": "NOT_READY_FOR_ASSEMBLY",
+  "snapshot_time": "2026-10-19T13:50:41.037175+03:00",
+  "erc_violations": 0,
+  "drc_errors": 0,
+  "drc_warnings": 420,
+  "warning_types": {
+    "mirrored_text_on_front_layer": 1,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "lib_footprint_mismatch": 12,
+    "silk_edge_clearance": 9
+  },
+  "unconnected_items": 0,
+  "schematic_parity_violations": 0,
+  "remaining_prior_supplier_mapping_failures": 2,
+  "supplier_field_disagreements": [
+    {
+      "ref": "L1",
+      "pcb_lcsc": "C408412",
+      "packaged_bom_lcsc": "C2045384"
+    }
+  ],
+  "gerbers_matching": 10,
+  "gerbers_total": 11,
+  "drill_matches": true,
+  "track_and_pad_geometry_unchanged": true,
+  "source_changes_since_snapshot": [],
+  "manufacturing_zip": "abx-motion-manufacturing_20261019_1308.zip",
+  "manufacturing_zip_sha256": "06749f492ea7e81d5f08240db7e18dc6e975e706da0457bb66a2deb1e9b050b5",
+  "design_modified_by_validation": false
+}

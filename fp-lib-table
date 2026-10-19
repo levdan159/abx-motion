@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "abx-footprints")(type "KiCad")(uri "${KIPRJMOD}/abx-footprints.pretty")(options "")(descr "ABX Custom Branding & Hardware Footprints"))
+)

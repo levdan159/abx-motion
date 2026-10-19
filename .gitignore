@@ -1,0 +1,13 @@
+# KiCad temporary, lock, and backup files
+*.lck
+~*.lck
+_autosave-*
+*-backups/
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+
+# Python cache
+__pycache__/
+*.pyc

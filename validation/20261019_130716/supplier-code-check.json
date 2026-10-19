@@ -1,0 +1,65 @@
+{
+  "status": "FAIL",
+  "scope": "Critical-part spot check, not exhaustive verification of all 61 supplier BOM rows.",
+  "confirmed_wrong_mappings": [
+    {
+      "references": [
+        "Q1"
+      ],
+      "expected": "SQJ459EP-T1_GE3 P-channel MOSFET",
+      "lcsc": "C2681533",
+      "actual": "SHOU HAN 1.5-2P WT connector",
+      "url": "https://www.lcsc.com/product-detail/C2681533.html"
+    },
+    {
+      "references": [
+        "R309",
+        "R409"
+      ],
+      "expected": "10 mOhm, 3 W, 2512 current shunt",
+      "lcsc": "C137393",
+      "actual": "YAGEO RC1206FR-07100KL, 100 kOhm, 250 mW, 1206 resistor",
+      "url": "https://www.lcsc.com/product-detail/C137393.html"
+    },
+    {
+      "references": [
+        "U203"
+      ],
+      "expected": "THVD1450DR RS-485 transceiver, SOIC-8",
+      "lcsc": "C2863664",
+      "actual": "TI INA331IDGKR instrumentation amplifier, VSSOP-8",
+      "url": "https://www.lcsc.com/product-detail/instrumentation-amplifiers_ti-ina331idgkr_C2863664.html"
+    },
+    {
+      "references": [
+        "U3"
+      ],
+      "expected": "ESP32-S3-WROOM-1-N8R2",
+      "lcsc": "C2913202",
+      "actual": "ESP32-S3-WROOM-1-N16R8",
+      "url": "https://www.lcsc.com/product-detail/C2913202.html"
+    }
+  ],
+  "unresolved_lookups": [
+    {
+      "refs": [
+        "D2"
+      ],
+      "code": "C134785"
+    },
+    {
+      "refs": [
+        "U301",
+        "U401"
+      ],
+      "code": "C476574"
+    },
+    {
+      "refs": [
+        "U1"
+      ],
+      "code": "C2871819"
+    }
+  ],
+  "checked_at": "2026-10-19T13:12:24.025102+03:00"
+}

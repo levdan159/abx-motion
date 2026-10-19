@@ -1,0 +1,33 @@
+{
+  "status": "ELECTRICAL_RULE_CHECKS_PASS_ASSEMBLY_RELEASE_FAIL",
+  "snapshot_time": "2026-10-19T13:07:16.641366+03:00",
+  "kicad_version": "10.0.7",
+  "erc_violations": 0,
+  "drc_errors": 0,
+  "drc_warnings": 420,
+  "warning_types": {
+    "mirrored_text_on_front_layer": 1,
+    "silk_overlap": 199,
+    "silk_over_copper": 199,
+    "lib_footprint_mismatch": 12,
+    "silk_edge_clearance": 9
+  },
+  "unconnected_items": 0,
+  "schematic_parity_violations": 0,
+  "minimum_rules_drc_errors": 0,
+  "minimum_rules_mm": {
+    "clearance": 0.15,
+    "track_width": 0.15
+  },
+  "manufacturing_zip": "abx-motion-manufacturing_20261019_1308.zip",
+  "manufacturing_zip_sha256": "d745413c61491fd4841148fdd4d3f702f11daeca8a69df09c8891c72fb78f864",
+  "matching_gerber_layers": 10,
+  "checked_gerber_layers": 11,
+  "different_gerber_layer": "F.Silkscreen",
+  "packaged_drill_matches": true,
+  "zone_refill_changes": false,
+  "board_plot_settings_silkscreen_matches_package": false,
+  "confirmed_wrong_supplier_mappings": 4,
+  "source_changes_since_snapshot": [],
+  "design_files_modified_by_validation": false
+}

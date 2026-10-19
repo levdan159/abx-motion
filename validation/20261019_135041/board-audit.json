@@ -1,0 +1,210 @@
+{
+  "track_geometry_and_nets_unchanged": true,
+  "footprint_geometry_changes": [],
+  "field_changes": [
+    {
+      "ref": "R312",
+      "field": "LCSC",
+      "old": "C25812",
+      "new": "C25811"
+    },
+    {
+      "ref": "R412",
+      "field": "LCSC",
+      "old": "C25812",
+      "new": "C25811"
+    },
+    {
+      "ref": "D502",
+      "field": "LCSC",
+      "old": "C72043",
+      "new": "C12624"
+    },
+    {
+      "ref": "L1",
+      "field": "LCSC",
+      "old": "C169395",
+      "new": "C408412"
+    },
+    {
+      "ref": "LED_PWR_BATT1",
+      "field": "LCSC",
+      "old": "C72043",
+      "new": "C12624"
+    },
+    {
+      "ref": "SW502",
+      "field": "LCSC",
+      "old": "C2847953",
+      "new": "C319040"
+    },
+    {
+      "ref": "SW501",
+      "field": "LCSC",
+      "old": "C2847953",
+      "new": "C319040"
+    },
+    {
+      "ref": "D201",
+      "field": "LCSC",
+      "old": "C78383",
+      "new": "C113979"
+    },
+    {
+      "ref": "Q404",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "U202",
+      "field": "LCSC",
+      "old": "C2684523",
+      "new": "C132550"
+    },
+    {
+      "ref": "LED203",
+      "field": "LCSC",
+      "old": "C72041",
+      "new": "C2288"
+    },
+    {
+      "ref": "J208",
+      "field": "LCSC",
+      "old": "C225420",
+      "new": "C2718488"
+    },
+    {
+      "ref": "D504",
+      "field": "LCSC",
+      "old": "C72043",
+      "new": "C12624"
+    },
+    {
+      "ref": "U4",
+      "field": "LCSC",
+      "old": "C6159",
+      "new": "C133541"
+    },
+    {
+      "ref": "Q401",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "Q302",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "Q304",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "LED_PWR_3V3_1",
+      "field": "LCSC",
+      "old": "C72043",
+      "new": "C12624"
+    },
+    {
+      "ref": "U1",
+      "field": "LCSC",
+      "old": "C2871819",
+      "new": "C1858395"
+    },
+    {
+      "ref": "U203",
+      "field": "LCSC",
+      "old": "C2863664",
+      "new": "C2671361"
+    },
+    {
+      "ref": "Q1",
+      "field": "LCSC",
+      "old": "C2681533",
+      "new": "C3289501"
+    },
+    {
+      "ref": "Q303",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "Q402",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "LED_PWR_5V1",
+      "field": "LCSC",
+      "old": "C72043",
+      "new": "C12624"
+    },
+    {
+      "ref": "Q403",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    },
+    {
+      "ref": "LED201",
+      "field": "LCSC",
+      "old": "C72038",
+      "new": "C2287"
+    },
+    {
+      "ref": "LED202",
+      "field": "LCSC",
+      "old": "C72038",
+      "new": "C2287"
+    },
+    {
+      "ref": "D2",
+      "field": "LCSC",
+      "old": "C134785",
+      "new": "C224047"
+    },
+    {
+      "ref": "U301",
+      "field": "LCSC",
+      "old": "C476574",
+      "new": "C90964"
+    },
+    {
+      "ref": "U401",
+      "field": "LCSC",
+      "old": "C476574",
+      "new": "C90964"
+    },
+    {
+      "ref": "Q301",
+      "field": "LCSC",
+      "old": "C475754",
+      "new": "C86513"
+    }
+  ],
+  "pcb_supplier_vs_packaged_bom": [
+    {
+      "ref": "L1",
+      "pcb_lcsc": "C408412",
+      "packaged_bom_lcsc": "C2045384"
+    }
+  ],
+  "cpl_comparison": {
+    "abx-motion-manufacturing_20261019_1308/abx-motion-cpl_20261019_1308.csv": {
+      "rows": 199,
+      "placement_mismatches": []
+    },
+    "abx-motion-manufacturing_20261019_1308/abx-motion-jlcpcb-cpl_20261019_1308.csv": {
+      "rows": 186,
+      "placement_mismatches": []
+    }
+  },
+  "source_changes_since_snapshot": []
+}

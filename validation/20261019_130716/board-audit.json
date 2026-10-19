@@ -1,0 +1,2013 @@
+{
+  "board_version": "10.0.7",
+  "footprints": 203,
+  "tracks_and_vias": 2133,
+  "zones": 25,
+  "copper_layers": 4,
+  "in1_signal_tracks": [],
+  "critical_components": {
+    "U301": {
+      "value": "DRV8701ERGER",
+      "footprint": "Package_DFN_QFN:Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias",
+      "position_mm": [
+        165.0,
+        80.0
+      ],
+      "pads": {
+        "": {
+          "net": "",
+          "position_mm": [
+            165.525,
+            80.525
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "1": {
+          "net": "+BATT",
+          "position_mm": [
+            163.0625,
+            78.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "/DC_Motor_1/DRV_VCP",
+          "position_mm": [
+            163.0625,
+            79.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "/DC_Motor_1/DRV_CPH",
+          "position_mm": [
+            163.0625,
+            79.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "/DC_Motor_1/DRV_CPL",
+          "position_mm": [
+            163.0625,
+            80.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "GND",
+          "position_mm": [
+            163.0625,
+            80.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "/DC_Motor_1/DRV_VREF",
+          "position_mm": [
+            163.0625,
+            81.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "net": "/DC_Motor_1/DRV_AVDD",
+          "position_mm": [
+            163.75,
+            81.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "8": {
+          "net": "/DC_Motor_1/DRV_DVDD",
+          "position_mm": [
+            164.25,
+            81.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "9": {
+          "net": "/M1_nFAULT",
+          "position_mm": [
+            164.75,
+            81.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "net": "unconnected-(U301-SNSOUT-Pad10)",
+          "position_mm": [
+            165.25,
+            81.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "11": {
+          "net": "/DC_Motor_1/SO_RAW",
+          "position_mm": [
+            165.75,
+            81.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "12": {
+          "net": "/DC_Motor_1/DRV_IDRIVE",
+          "position_mm": [
+            166.25,
+            81.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "13": {
+          "net": "/DC_Motor_1/DRV_nSLEEP",
+          "position_mm": [
+            166.9375,
+            81.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "14": {
+          "net": "/M1_PWM_EN",
+          "position_mm": [
+            166.9375,
+            80.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "15": {
+          "net": "/M1_PWM_PH",
+          "position_mm": [
+            166.9375,
+            80.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "16": {
+          "net": "GND",
+          "position_mm": [
+            166.9375,
+            79.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "17": {
+          "net": "/DC_Motor_1/GH1_RAW",
+          "position_mm": [
+            166.9375,
+            79.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "18": {
+          "net": "/DC_Motor_1/MOT_OUT1",
+          "position_mm": [
+            166.9375,
+            78.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "19": {
+          "net": "/DC_Motor_1/GL1_RAW",
+          "position_mm": [
+            166.25,
+            78.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "20": {
+          "net": "GND",
+          "position_mm": [
+            165.75,
+            78.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "21": {
+          "net": "/DC_Motor_1/SHUNT_SP",
+          "position_mm": [
+            165.25,
+            78.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "22": {
+          "net": "/DC_Motor_1/GL2_RAW",
+          "position_mm": [
+            164.75,
+            78.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "23": {
+          "net": "/DC_Motor_1/MOT_OUT2",
+          "position_mm": [
+            164.25,
+            78.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "24": {
+          "net": "/DC_Motor_1/GH2_RAW",
+          "position_mm": [
+            163.75,
+            78.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "25": {
+          "net": "GND",
+          "position_mm": [
+            165.8,
+            80.8
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ]
+        }
+      }
+    },
+    "U401": {
+      "value": "DRV8701ERGER",
+      "footprint": "Package_DFN_QFN:Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias",
+      "position_mm": [
+        165.0,
+        106.0
+      ],
+      "pads": {
+        "": {
+          "net": "",
+          "position_mm": [
+            165.525,
+            106.525
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "1": {
+          "net": "+BATT",
+          "position_mm": [
+            163.0625,
+            104.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "/DC_Motor_2/DRV_VCP",
+          "position_mm": [
+            163.0625,
+            105.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "/DC_Motor_2/DRV_CPH",
+          "position_mm": [
+            163.0625,
+            105.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "/DC_Motor_2/DRV_CPL",
+          "position_mm": [
+            163.0625,
+            106.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "GND",
+          "position_mm": [
+            163.0625,
+            106.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "/DC_Motor_2/DRV_VREF",
+          "position_mm": [
+            163.0625,
+            107.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "net": "/DC_Motor_2/DRV_AVDD",
+          "position_mm": [
+            163.75,
+            107.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "8": {
+          "net": "/DC_Motor_2/DRV_DVDD",
+          "position_mm": [
+            164.25,
+            107.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "9": {
+          "net": "/M2_nFAULT",
+          "position_mm": [
+            164.75,
+            107.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "10": {
+          "net": "unconnected-(U401-SNSOUT-Pad10)",
+          "position_mm": [
+            165.25,
+            107.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "11": {
+          "net": "/DC_Motor_2/SO_RAW",
+          "position_mm": [
+            165.75,
+            107.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "12": {
+          "net": "/DC_Motor_2/DRV_IDRIVE",
+          "position_mm": [
+            166.25,
+            107.9375
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "13": {
+          "net": "/DC_Motor_2/DRV_nSLEEP",
+          "position_mm": [
+            166.9375,
+            107.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "14": {
+          "net": "/M2_PWM_EN",
+          "position_mm": [
+            166.9375,
+            106.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "15": {
+          "net": "/M2_PWM_PH",
+          "position_mm": [
+            166.9375,
+            106.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "16": {
+          "net": "GND",
+          "position_mm": [
+            166.9375,
+            105.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "17": {
+          "net": "/DC_Motor_2/GH1_RAW",
+          "position_mm": [
+            166.9375,
+            105.25
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "18": {
+          "net": "/DC_Motor_2/MOT_OUT1",
+          "position_mm": [
+            166.9375,
+            104.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "19": {
+          "net": "/DC_Motor_2/GL1_RAW",
+          "position_mm": [
+            166.25,
+            104.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "20": {
+          "net": "GND",
+          "position_mm": [
+            165.75,
+            104.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "21": {
+          "net": "/DC_Motor_2/SHUNT_SP",
+          "position_mm": [
+            165.25,
+            104.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "22": {
+          "net": "/DC_Motor_2/GL2_RAW",
+          "position_mm": [
+            164.75,
+            104.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "23": {
+          "net": "/DC_Motor_2/MOT_OUT2",
+          "position_mm": [
+            164.25,
+            104.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "24": {
+          "net": "/DC_Motor_2/GH2_RAW",
+          "position_mm": [
+            163.75,
+            104.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "25": {
+          "net": "GND",
+          "position_mm": [
+            165.8,
+            106.8
+          ],
+          "drill_mm": [
+            0.3,
+            0.3
+          ]
+        }
+      }
+    },
+    "R312": {
+      "value": "200k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "position_mm": [
+        168.5,
+        83.8
+      ],
+      "pads": {
+        "1": {
+          "net": "/DC_Motor_1/DRV_IDRIVE",
+          "position_mm": [
+            167.675,
+            83.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "position_mm": [
+            169.325,
+            83.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "R412": {
+      "value": "200k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "position_mm": [
+        168.2,
+        109.42
+      ],
+      "pads": {
+        "1": {
+          "net": "/DC_Motor_2/DRV_IDRIVE",
+          "position_mm": [
+            167.375,
+            109.42
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "position_mm": [
+            169.025,
+            109.42
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "Q1": {
+      "value": "SQJ459EP-T1_GE3",
+      "footprint": "Package_TO_SOT_SMD:TDSON-8-1",
+      "position_mm": [
+        165.0,
+        63.5
+      ],
+      "pads": {
+        "": {
+          "net": "",
+          "position_mm": [
+            167.905,
+            65.405
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "1": {
+          "net": "+BATT",
+          "position_mm": [
+            162.1,
+            61.595
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "+BATT",
+          "position_mm": [
+            162.1,
+            62.865
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "+BATT",
+          "position_mm": [
+            162.1,
+            64.135
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "/Power_Supply/Q1_GATE",
+          "position_mm": [
+            162.1,
+            65.405
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "/Power_Supply/V_FUSED",
+          "position_mm": [
+            166.05,
+            63.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "D2": {
+      "value": "SMCJ28A",
+      "footprint": "Diode_SMD:D_SMC",
+      "position_mm": [
+        182.0,
+        63.5
+      ],
+      "pads": {
+        "1": {
+          "net": "+BATT",
+          "position_mm": [
+            178.6,
+            63.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "position_mm": [
+            185.4,
+            63.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "U203": {
+      "value": "THVD1450DR",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "position_mm": [
+        59.8,
+        95.0
+      ],
+      "pads": {
+        "1": {
+          "net": "/MCU_and_Encoders/RS485_RX",
+          "position_mm": [
+            57.325,
+            93.095
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "/MCU_and_Encoders/RS485_DIR",
+          "position_mm": [
+            57.325,
+            94.365
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "3": {
+          "net": "/MCU_and_Encoders/RS485_DIR",
+          "position_mm": [
+            57.325,
+            95.635
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "4": {
+          "net": "/MCU_and_Encoders/RS485_TX",
+          "position_mm": [
+            57.325,
+            96.905
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "5": {
+          "net": "GND",
+          "position_mm": [
+            62.275,
+            96.905
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "6": {
+          "net": "/MCU_and_Encoders/RS485_A",
+          "position_mm": [
+            62.275,
+            95.635
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "7": {
+          "net": "/MCU_and_Encoders/RS485_B",
+          "position_mm": [
+            62.275,
+            94.365
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "8": {
+          "net": "+3V3",
+          "position_mm": [
+            62.275,
+            93.095
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "R222": {
+      "value": "330R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "position_mm": [
+        57.5,
+        110.4
+      ],
+      "pads": {
+        "1": {
+          "net": "+3V3",
+          "position_mm": [
+            56.675,
+            110.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "/MCU_and_Encoders/RS485_A",
+          "position_mm": [
+            58.325,
+            110.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "R223": {
+      "value": "330R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "position_mm": [
+        57.5,
+        112.8
+      ],
+      "pads": {
+        "1": {
+          "net": "/MCU_and_Encoders/RS485_B",
+          "position_mm": [
+            56.675,
+            112.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "position_mm": [
+            58.325,
+            112.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "R309": {
+      "value": "10mR_3W",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "position_mm": [
+        178.5,
+        90.5
+      ],
+      "pads": {
+        "1": {
+          "net": "/DC_Motor_1/SHUNT_SP",
+          "position_mm": [
+            175.5375,
+            90.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "position_mm": [
+            181.4625,
+            90.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "R409": {
+      "value": "10mR_3W",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "position_mm": [
+        178.5,
+        121.5
+      ],
+      "pads": {
+        "1": {
+          "net": "/DC_Motor_2/SHUNT_SP",
+          "position_mm": [
+            175.5375,
+            121.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "2": {
+          "net": "GND",
+          "position_mm": [
+            181.4625,
+            121.5
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "H5": {
+      "value": "M2_OLED",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2",
+      "position_mm": [
+        67.85,
+        105.3
+      ],
+      "pads": {
+        "": {
+          "net": "",
+          "position_mm": [
+            67.85,
+            105.3
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        }
+      }
+    },
+    "H6": {
+      "value": "M2_OLED",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2",
+      "position_mm": [
+        91.15,
+        105.3
+      ],
+      "pads": {
+        "": {
+          "net": "",
+          "position_mm": [
+            91.15,
+            105.3
+          ],
+          "drill_mm": [
+            2.2,
+            2.2
+          ]
+        }
+      }
+    },
+    "J208": {
+      "value": "OLED_I2C",
+      "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical",
+      "position_mm": [
+        75.69,
+        81.5
+      ],
+      "pads": {
+        "1": {
+          "net": "GND",
+          "position_mm": [
+            75.69,
+            81.5
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ]
+        },
+        "2": {
+          "net": "+3V3",
+          "position_mm": [
+            78.23,
+            81.5
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ]
+        },
+        "3": {
+          "net": "/MCU_and_Encoders/I2C_SCL",
+          "position_mm": [
+            80.77,
+            81.5
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ]
+        },
+        "4": {
+          "net": "/MCU_and_Encoders/I2C_SDA",
+          "position_mm": [
+            83.31,
+            81.5
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "J102": {
+      "value": "E_STOP",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "position_mm": [
+        197.0,
+        70.0
+      ],
+      "pads": {
+        "1": {
+          "net": "+3V3",
+          "position_mm": [
+            197.0,
+            70.0
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ]
+        },
+        "2": {
+          "net": "/+3V3_DRV_EN",
+          "position_mm": [
+            197.0,
+            64.92
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ]
+        }
+      }
+    },
+    "J502": {
+      "value": "STEP1_EXT",
+      "footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "position_mm": [
+        96.0,
+        148.0
+      ],
+      "pads": {
+        "1": {
+          "net": "/STEP_ENABLE",
+          "position_mm": [
+            96.0,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        },
+        "2": {
+          "net": "/STEP1_PUL",
+          "position_mm": [
+            98.5,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        },
+        "3": {
+          "net": "/STEP1_DIR",
+          "position_mm": [
+            101.0,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        },
+        "4": {
+          "net": "GND",
+          "position_mm": [
+            103.5,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        }
+      }
+    },
+    "J504": {
+      "value": "STEP2_EXT",
+      "footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "position_mm": [
+        124.0,
+        148.0
+      ],
+      "pads": {
+        "1": {
+          "net": "/STEP_ENABLE",
+          "position_mm": [
+            124.0,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        },
+        "2": {
+          "net": "/STEP2_PUL",
+          "position_mm": [
+            126.5,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        },
+        "3": {
+          "net": "/STEP2_DIR",
+          "position_mm": [
+            129.0,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        },
+        "4": {
+          "net": "GND",
+          "position_mm": [
+            131.5,
+            148.0
+          ],
+          "drill_mm": [
+            0.95,
+            0.95
+          ]
+        }
+      }
+    }
+  },
+  "usb": {
+    "/MCU_and_Encoders/USB_DP": {
+      "total_track_mm": 36.922765,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.22
+      ]
+    },
+    "/MCU_and_Encoders/USB_DN": {
+      "total_track_mm": 36.810927,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.22
+      ]
+    },
+    "/MCU_and_Encoders/USB_CONN_DP": {
+      "total_track_mm": 6.111949,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.2,
+        0.22
+      ]
+    },
+    "/MCU_and_Encoders/USB_CONN_DN": {
+      "total_track_mm": 6.491264,
+      "vias": 0,
+      "layers": [
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.2,
+        0.22
+      ]
+    }
+  },
+  "component_parity": {
+    "missing_pcb": [],
+    "extra_pcb": [],
+    "mismatches": []
+  },
+  "control_nets": {
+    "/+3V3_DRV_EN": [
+      {
+        "ref": "J102",
+        "pin": "2",
+        "pinfunction": "Pin_2_2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R303",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R403",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R505",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R506",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R9",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "/M1_PWM_EN": [
+      {
+        "ref": "R204",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "5",
+        "pinfunction": "IO5_5",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U301",
+        "pin": "14",
+        "pinfunction": "EN_14",
+        "pintype": "input"
+      }
+    ],
+    "/M1_PWM_PH": [
+      {
+        "ref": "U3",
+        "pin": "4",
+        "pinfunction": "IO4_4",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U301",
+        "pin": "15",
+        "pinfunction": "PH_15",
+        "pintype": "input"
+      }
+    ],
+    "/M2_PWM_EN": [
+      {
+        "ref": "R205",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "11",
+        "pinfunction": "IO18_11",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U401",
+        "pin": "14",
+        "pinfunction": "EN_14",
+        "pintype": "input"
+      }
+    ],
+    "/M2_PWM_PH": [
+      {
+        "ref": "U3",
+        "pin": "10",
+        "pinfunction": "IO17_10",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U401",
+        "pin": "15",
+        "pinfunction": "PH_15",
+        "pintype": "input"
+      }
+    ],
+    "/STEP_ENABLE": [
+      {
+        "ref": "J502",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "J504",
+        "pin": "1",
+        "pinfunction": "Pin_1_1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R206",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "23",
+        "pinfunction": "IO21_23",
+        "pintype": "bidirectional"
+      },
+      {
+        "ref": "U501",
+        "pin": "9",
+        "pinfunction": "~{EN}_9",
+        "pintype": "input"
+      },
+      {
+        "ref": "U502",
+        "pin": "9",
+        "pinfunction": "~{EN}_9",
+        "pintype": "input"
+      }
+    ]
+  },
+  "package_csv": {
+    "abx-motion-manufacturing_20261019_1308/abx-motion-cpl_20261019_1308.csv": {
+      "rows": 199,
+      "mismatches": [],
+      "unique_refs": 199,
+      "pcb_refs_absent": [
+        "H5",
+        "H6",
+        "LOGO1",
+        "LOGO2"
+      ]
+    },
+    "abx-motion-manufacturing_20261019_1308/abx-motion-jlcpcb-cpl_20261019_1308.csv": {
+      "rows": 188,
+      "unique_refs": 188,
+      "pcb_refs_absent": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "LOGO1",
+        "LOGO2",
+        "TP_3V3_1",
+        "TP_5V1",
+        "TP_BATT1",
+        "TP_CS1",
+        "TP_CS2",
+        "TP_GND1",
+        "TP_GND2"
+      ],
+      "raw_value_label_differences": [
+        [
+          "J102",
+          "value",
+          "TB_1x02_P5.08mm",
+          "E_STOP"
+        ],
+        [
+          "J202",
+          "value",
+          "B4B-XH-A",
+          "ENC1_CONN"
+        ],
+        [
+          "J203",
+          "value",
+          "B4B-XH-A",
+          "ENC2_CONN"
+        ],
+        [
+          "J204",
+          "value",
+          "PinHeader_1x02_P2.54mm",
+          "CAN_TERM"
+        ],
+        [
+          "J205",
+          "value",
+          "TB_1x03_P5.08mm",
+          "CAN_BUS"
+        ],
+        [
+          "J206",
+          "value",
+          "PinHeader_1x02_P2.54mm",
+          "RS485_TERM"
+        ],
+        [
+          "J207",
+          "value",
+          "TB_1x03_P5.08mm",
+          "RS485_BUS"
+        ],
+        [
+          "J208",
+          "value",
+          "PinSocket_1x04_P2.54mm",
+          "OLED_I2C"
+        ],
+        [
+          "J209",
+          "value",
+          "B4B-XH-A",
+          "I2C_EXP"
+        ],
+        [
+          "J301",
+          "value",
+          "TB_1x02_P5.08mm",
+          "MOTOR_OUT"
+        ],
+        [
+          "J401",
+          "value",
+          "TB_1x02_P5.08mm",
+          "MOTOR_OUT"
+        ],
+        [
+          "J501",
+          "value",
+          "B4B-XH-A",
+          "STEP1_MOTOR"
+        ],
+        [
+          "J502",
+          "value",
+          "B4B-XH-A",
+          "STEP1_EXT"
+        ],
+        [
+          "J503",
+          "value",
+          "B4B-XH-A",
+          "STEP2_MOTOR"
+        ],
+        [
+          "J504",
+          "value",
+          "B4B-XH-A",
+          "STEP2_EXT"
+        ],
+        [
+          "J505",
+          "value",
+          "TB_1x03_P5.08mm",
+          "RELAY1_OUT"
+        ],
+        [
+          "J506",
+          "value",
+          "TB_1x03_P5.08mm",
+          "RELAY2_OUT"
+        ],
+        [
+          "LED201",
+          "value",
+          "LED_YEL",
+          "LED_YEL_CAN"
+        ],
+        [
+          "LED202",
+          "value",
+          "LED_YEL",
+          "LED_YEL_485"
+        ],
+        [
+          "LED203",
+          "value",
+          "LED_BLU",
+          "LED_BLU_STAT"
+        ],
+        [
+          "LED_FLT1",
+          "value",
+          "LED_RED",
+          "LED_RED_FLT"
+        ],
+        [
+          "LED_FLT2",
+          "value",
+          "LED_RED",
+          "LED_RED_FLT"
+        ],
+        [
+          "R219",
+          "value",
+          "120R",
+          "120"
+        ],
+        [
+          "R221",
+          "value",
+          "120R",
+          "120"
+        ],
+        [
+          "R305",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R306",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R307",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R308",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R310",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R405",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R406",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R407",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R408",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R410",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R501",
+          "value",
+          "100R",
+          "100"
+        ],
+        [
+          "R503",
+          "value",
+          "100R",
+          "100"
+        ],
+        [
+          "SW201",
+          "value",
+          "B3U-1000P",
+          "RESET"
+        ],
+        [
+          "SW202",
+          "value",
+          "B3U-1000P",
+          "BOOT"
+        ],
+        [
+          "SW203",
+          "value",
+          "B3U-1000P",
+          "BTN_BACK"
+        ],
+        [
+          "SW204",
+          "value",
+          "B3U-1000P",
+          "BTN_NEXT"
+        ],
+        [
+          "SW205",
+          "value",
+          "B3U-1000P",
+          "BTN_HOME"
+        ],
+        [
+          "U501",
+          "value",
+          "StepStick_2x1x8_Female_Header",
+          "StepStick_DRV8825"
+        ],
+        [
+          "U502",
+          "value",
+          "StepStick_2x1x8_Female_Header",
+          "StepStick_DRV8825"
+        ]
+      ],
+      "interpretation": "Value labels are normalized to procurement names/resistance notation; this comparison does not verify the LCSC codes. Supplier-code-check.json contains separately verified purchasing errors."
+    },
+    "abx-motion-manufacturing_20261019_1308/abx-motion-jlcpcb-bom_20261019_1308.csv": {
+      "rows": 61,
+      "unique_refs": 188,
+      "pcb_refs_absent": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "LOGO1",
+        "LOGO2",
+        "TP_3V3_1",
+        "TP_5V1",
+        "TP_BATT1",
+        "TP_CS1",
+        "TP_CS2",
+        "TP_GND1",
+        "TP_GND2"
+      ],
+      "raw_value_label_differences": [
+        [
+          "J102",
+          "value",
+          "TB_1x02_P5.08mm",
+          "E_STOP"
+        ],
+        [
+          "J301",
+          "value",
+          "TB_1x02_P5.08mm",
+          "MOTOR_OUT"
+        ],
+        [
+          "J401",
+          "value",
+          "TB_1x02_P5.08mm",
+          "MOTOR_OUT"
+        ],
+        [
+          "J202",
+          "value",
+          "B4B-XH-A",
+          "ENC1_CONN"
+        ],
+        [
+          "J203",
+          "value",
+          "B4B-XH-A",
+          "ENC2_CONN"
+        ],
+        [
+          "J209",
+          "value",
+          "B4B-XH-A",
+          "I2C_EXP"
+        ],
+        [
+          "J501",
+          "value",
+          "B4B-XH-A",
+          "STEP1_MOTOR"
+        ],
+        [
+          "J502",
+          "value",
+          "B4B-XH-A",
+          "STEP1_EXT"
+        ],
+        [
+          "J503",
+          "value",
+          "B4B-XH-A",
+          "STEP2_MOTOR"
+        ],
+        [
+          "J504",
+          "value",
+          "B4B-XH-A",
+          "STEP2_EXT"
+        ],
+        [
+          "J204",
+          "value",
+          "PinHeader_1x02_P2.54mm",
+          "CAN_TERM"
+        ],
+        [
+          "J206",
+          "value",
+          "PinHeader_1x02_P2.54mm",
+          "RS485_TERM"
+        ],
+        [
+          "J205",
+          "value",
+          "TB_1x03_P5.08mm",
+          "CAN_BUS"
+        ],
+        [
+          "J207",
+          "value",
+          "TB_1x03_P5.08mm",
+          "RS485_BUS"
+        ],
+        [
+          "J505",
+          "value",
+          "TB_1x03_P5.08mm",
+          "RELAY1_OUT"
+        ],
+        [
+          "J506",
+          "value",
+          "TB_1x03_P5.08mm",
+          "RELAY2_OUT"
+        ],
+        [
+          "J208",
+          "value",
+          "PinSocket_1x04_P2.54mm",
+          "OLED_I2C"
+        ],
+        [
+          "LED201",
+          "value",
+          "LED_YEL",
+          "LED_YEL_CAN"
+        ],
+        [
+          "LED202",
+          "value",
+          "LED_YEL",
+          "LED_YEL_485"
+        ],
+        [
+          "LED203",
+          "value",
+          "LED_BLU",
+          "LED_BLU_STAT"
+        ],
+        [
+          "LED_FLT1",
+          "value",
+          "LED_RED",
+          "LED_RED_FLT"
+        ],
+        [
+          "LED_FLT2",
+          "value",
+          "LED_RED",
+          "LED_RED_FLT"
+        ],
+        [
+          "R219",
+          "value",
+          "120R",
+          "120"
+        ],
+        [
+          "R221",
+          "value",
+          "120R",
+          "120"
+        ],
+        [
+          "R305",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R306",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R307",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R308",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R405",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R406",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R407",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R408",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R310",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R410",
+          "value",
+          "10R",
+          "10"
+        ],
+        [
+          "R501",
+          "value",
+          "100R",
+          "100"
+        ],
+        [
+          "R503",
+          "value",
+          "100R",
+          "100"
+        ],
+        [
+          "SW201",
+          "value",
+          "B3U-1000P",
+          "RESET"
+        ],
+        [
+          "SW202",
+          "value",
+          "B3U-1000P",
+          "BOOT"
+        ],
+        [
+          "SW203",
+          "value",
+          "B3U-1000P",
+          "BTN_BACK"
+        ],
+        [
+          "SW204",
+          "value",
+          "B3U-1000P",
+          "BTN_NEXT"
+        ],
+        [
+          "SW205",
+          "value",
+          "B3U-1000P",
+          "BTN_HOME"
+        ],
+        [
+          "U501",
+          "value",
+          "StepStick_2x1x8_Female_Header",
+          "StepStick_DRV8825"
+        ],
+        [
+          "U502",
+          "value",
+          "StepStick_2x1x8_Female_Header",
+          "StepStick_DRV8825"
+        ]
+      ],
+      "interpretation": "Value labels are normalized to procurement names/resistance notation; this comparison does not verify the LCSC codes. Supplier-code-check.json contains separately verified purchasing errors."
+    },
+    "abx-motion-manufacturing_20261019_1308/abx-motion-bom_20261019_1308.csv": {
+      "rows": 199,
+      "mismatches": [],
+      "unique_refs": 199,
+      "pcb_refs_absent": [
+        "H5",
+        "H6",
+        "LOGO1",
+        "LOGO2"
+      ]
+    }
+  },
+  "packaged_drill_matches_current": true,
+  "source_changes_since_snapshot": []
+}

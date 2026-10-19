@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "kicad": {
+      "command": "node",
+      "args": ["/home/daniel/Documents/KiCAD-MCP-Server/dist/index.js"],
+      "env": {
+        "PYTHONPATH": "/usr/lib/python3/dist-packages:/usr/lib/kicad/lib/python3/dist-packages"
+      }
+    }
+  }
+}

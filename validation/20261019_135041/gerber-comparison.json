@@ -1,0 +1,49 @@
+{
+  "comparisons": [
+    {
+      "layer_file": "abx-motion-B_Cu.gbl",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-B_Mask.gbs",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-B_Paste.gbp",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-B_Silkscreen.gbo",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-Edge_Cuts.gm1",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-F_Cu.gtl",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-F_Mask.gts",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-F_Paste.gtp",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-F_Silkscreen.gto",
+      "matches": false
+    },
+    {
+      "layer_file": "abx-motion-In1_Cu.g1",
+      "matches": true
+    },
+    {
+      "layer_file": "abx-motion-In2_Cu.g2",
+      "matches": true
+    }
+  ],
+  "drill_matches": true
+}

@@ -1,0 +1,651 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "f9149098-3f23-438d-bdc2-2e278b5ca35b")
+	(paper "A4")
+	(lib_symbols)
+	(wire (pts (xy 76.2 38.1) (xy 83.82 38.1)) (stroke (width 0) (type default)) (uuid "946a69f2-b870-534c-b572-c535a7ce9b57"))
+	(wire (pts (xy 76.2 43.18) (xy 83.82 43.18)) (stroke (width 0) (type default)) (uuid "6a4532c4-9251-5fae-bf09-e8579d21a9a9"))
+	(wire (pts (xy 124.46 38.1) (xy 116.84 38.1)) (stroke (width 0) (type default)) (uuid "bb4469b8-3a4c-54b4-aa11-58810c323152"))
+	(wire (pts (xy 124.46 43.18) (xy 116.84 43.18)) (stroke (width 0) (type default)) (uuid "0e4c1716-5f5b-5826-83af-4214f3163f0d"))
+	(wire (pts (xy 124.46 48.26) (xy 116.84 48.26)) (stroke (width 0) (type default)) (uuid "b9422198-8d65-5f0e-9b76-9590b450e6d4"))
+	(wire (pts (xy 124.46 53.34) (xy 116.84 53.34)) (stroke (width 0) (type default)) (uuid "a5bb10d5-164f-50e0-8ff2-899b219f11b3"))
+	(wire (pts (xy 124.46 58.42) (xy 116.84 58.42)) (stroke (width 0) (type default)) (uuid "89aa8673-3d38-57cc-9728-7239ba88d250"))
+	(wire (pts (xy 180.34 38.1) (xy 187.96 38.1)) (stroke (width 0) (type default)) (uuid "88184062-b62d-5616-930c-c2a64aea1a21"))
+	(wire (pts (xy 180.34 43.18) (xy 187.96 43.18)) (stroke (width 0) (type default)) (uuid "c0c71ca2-3f5d-5131-b711-1224f73aeb47"))
+	(wire (pts (xy 180.34 48.26) (xy 187.96 48.26)) (stroke (width 0) (type default)) (uuid "878be374-e3db-540e-a9da-042a4f39b1b5"))
+	(wire (pts (xy 180.34 53.34) (xy 187.96 53.34)) (stroke (width 0) (type default)) (uuid "ec91c7ec-a6fc-5604-8149-5e6e8174167f"))
+	(wire (pts (xy 180.34 58.42) (xy 187.96 58.42)) (stroke (width 0) (type default)) (uuid "12b60577-ef54-556d-ba67-d17a3a07abc7"))
+	(wire (pts (xy 180.34 63.5) (xy 187.96 63.5)) (stroke (width 0) (type default)) (uuid "71d113ec-14e0-5123-92fc-ed7a59fba01f"))
+	(wire (pts (xy 180.34 68.58) (xy 187.96 68.58)) (stroke (width 0) (type default)) (uuid "cb201d59-de1c-5818-9039-c6ba81000a5d"))
+	(wire (pts (xy 180.34 73.66) (xy 187.96 73.66)) (stroke (width 0) (type default)) (uuid "23ba50c1-8d34-5e4f-9c07-4f7d83532c88"))
+	(wire (pts (xy 180.34 78.74) (xy 187.96 78.74)) (stroke (width 0) (type default)) (uuid "1ecdc9bc-e8b9-525f-8226-356fe0e06808"))
+	(wire (pts (xy 180.34 83.82) (xy 187.96 83.82)) (stroke (width 0) (type default)) (uuid "d74171d3-b363-56bb-ad26-a01719446d08"))
+	(wire (pts (xy 180.34 88.9) (xy 187.96 88.9)) (stroke (width 0) (type default)) (uuid "c36e1b20-95eb-54f1-834a-d0c8cb57ddb4"))
+	(wire (pts (xy 220.98 38.1) (xy 213.36 38.1)) (stroke (width 0) (type default)) (uuid "3ffadeab-7568-50d5-88f8-cfe2f749c317"))
+	(wire (pts (xy 220.98 43.18) (xy 213.36 43.18)) (stroke (width 0) (type default)) (uuid "942fa29e-cecd-565f-8fb5-214b4ad79a62"))
+	(wire (pts (xy 220.98 48.26) (xy 213.36 48.26)) (stroke (width 0) (type default)) (uuid "d5b1f002-550f-59d5-aafb-c1c6085a6295"))
+	(wire (pts (xy 276.86 38.1) (xy 284.48 38.1)) (stroke (width 0) (type default)) (uuid "b826fc74-f77f-5860-bc36-7241f65e6d13"))
+	(wire (pts (xy 276.86 43.18) (xy 284.48 43.18)) (stroke (width 0) (type default)) (uuid "f3b40d02-2024-5066-b080-f78914931672"))
+	(wire (pts (xy 220.98 104.14) (xy 213.36 104.14)) (stroke (width 0) (type default)) (uuid "021c2964-5355-5d63-9f22-b1813691dfed"))
+	(wire (pts (xy 220.98 109.22) (xy 213.36 109.22)) (stroke (width 0) (type default)) (uuid "ae774495-f70a-5cbb-95d0-619da581c233"))
+	(wire (pts (xy 220.98 114.3) (xy 213.36 114.3)) (stroke (width 0) (type default)) (uuid "37e062f1-bca3-5875-8960-f531c627cd0e"))
+	(wire (pts (xy 276.86 104.14) (xy 284.48 104.14)) (stroke (width 0) (type default)) (uuid "3e9654de-6dd7-596e-9217-34e037f4005c"))
+	(wire (pts (xy 276.86 109.22) (xy 284.48 109.22)) (stroke (width 0) (type default)) (uuid "3001a9ce-6b31-5439-a3fb-62397eb4d561"))
+	(wire (pts (xy 76.2 104.14) (xy 83.82 104.14)) (stroke (width 0) (type default)) (uuid "bbda7263-3ed3-5f72-bc55-91eee4836531"))
+	(wire (pts (xy 76.2 109.22) (xy 83.82 109.22)) (stroke (width 0) (type default)) (uuid "35e504a3-6d9c-5c84-baa2-a8d726def0d6"))
+	(wire (pts (xy 76.2 114.3) (xy 83.82 114.3)) (stroke (width 0) (type default)) (uuid "1199c568-ee50-5fdc-8738-d5cf2b7a8b5c"))
+	(wire (pts (xy 76.2 119.38) (xy 83.82 119.38)) (stroke (width 0) (type default)) (uuid "0d1a6810-bfdd-5a55-b9b4-c5c54ec6ac54"))
+	(wire (pts (xy 76.2 124.46) (xy 83.82 124.46)) (stroke (width 0) (type default)) (uuid "4c3b40be-14d1-5523-827d-3b468dd8d3d1"))
+	(wire (pts (xy 76.2 129.54) (xy 83.82 129.54)) (stroke (width 0) (type default)) (uuid "b513a980-3015-5fa4-9a7c-baa035c60e9c"))
+	(wire (pts (xy 76.2 134.62) (xy 83.82 134.62)) (stroke (width 0) (type default)) (uuid "a3403953-72b3-5d39-813b-f64819e7c23b"))
+	(wire (pts (xy 76.2 139.7) (xy 83.82 139.7)) (stroke (width 0) (type default)) (uuid "9086ee94-63fb-533f-9b2b-34466dd3961d"))
+	(label "VBAT_SENSE" (at 83.82 38.1 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2d6ac0d5-9642-5097-83a5-8203e1dde52a"))
+	(label "+3V3_DRV_EN" (at 83.82 43.18 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b42798cb-d8fc-5142-95f0-92fc633f1afa"))
+	(label "VBAT_SENSE" (at 116.84 38.1 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d2345401-0da1-5d95-b4ec-62f341ca6187"))
+	(label "M1_CS" (at 116.84 43.18 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f9374428-c546-5968-8972-188306c06a11"))
+	(label "M1_nFAULT" (at 116.84 48.26 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fa7c2313-2699-53a8-8234-ec6f47cba2de"))
+	(label "M2_CS" (at 116.84 53.34 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "863b6756-3fb8-5a52-bf0f-52875608912c"))
+	(label "M2_nFAULT" (at 116.84 58.42 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "498a921b-cdbe-5c1a-99b1-474e6b614f71"))
+	(label "M1_PWM_PH" (at 187.96 38.1 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c3ce563d-9139-5485-a305-f2894e330ed7"))
+	(label "M1_PWM_EN" (at 187.96 43.18 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5d603eeb-bff9-5467-8929-2e7196d26c3f"))
+	(label "M2_PWM_PH" (at 187.96 48.26 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "dd8dddc4-5079-5510-8ae6-019e3251997c"))
+	(label "M2_PWM_EN" (at 187.96 53.34 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "419fb879-aacd-52fb-ac07-8554d274b2bf"))
+	(label "STEP1_PUL" (at 187.96 58.42 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "313bf32c-d45e-52d7-8d3c-0fe1f6f9177d"))
+	(label "STEP1_DIR" (at 187.96 63.5 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "450267f9-a8f7-5c3c-b108-eb3255be002c"))
+	(label "STEP2_PUL" (at 187.96 68.58 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6e589a13-adf7-5318-b705-c54f9e63254b"))
+	(label "STEP2_DIR" (at 187.96 73.66 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9bba2057-dd45-5234-8dc4-8c990524baff"))
+	(label "STEP_ENABLE" (at 187.96 78.74 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cce7b1c5-6f28-5e13-b6c9-a4f3906b8311"))
+	(label "RELAY_1" (at 187.96 83.82 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5216017d-0281-5b6c-ba3e-2c90b127434b"))
+	(label "RELAY_2" (at 187.96 88.9 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2bd48e6d-60e5-5040-8f84-a42135bf8a98"))
+	(label "M1_PWM_PH" (at 213.36 38.1 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "474603c6-abd7-55da-aec5-e4cdf7412d1c"))
+	(label "M1_PWM_EN" (at 213.36 43.18 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8570f2bc-9db7-5da4-ac81-29ca3c2e0b94"))
+	(label "+3V3_DRV_EN" (at 213.36 48.26 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6f48f690-ed57-5f6d-8c8f-189117cde301"))
+	(label "M1_CS" (at 284.48 38.1 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5285a612-71e2-57dc-b861-a918ee74e381"))
+	(label "M1_nFAULT" (at 284.48 43.18 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bc00cb07-2e54-5808-8218-095856798d90"))
+	(label "M2_PWM_PH" (at 213.36 104.14 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b6651956-11ce-5112-ab18-d1b156e00374"))
+	(label "M2_PWM_EN" (at 213.36 109.22 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "89ae0898-30b4-58fd-ab3f-8caafe830b76"))
+	(label "+3V3_DRV_EN" (at 213.36 114.3 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0b9f83cc-0f8d-57c7-bbb2-20fc20e518b5"))
+	(label "M2_CS" (at 284.48 104.14 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2bd6933d-7276-535a-8ea9-a1a49c6ec8c3"))
+	(label "M2_nFAULT" (at 284.48 109.22 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3f7b2c36-fa7b-582b-9473-d91e70fd1322"))
+	(label "+3V3_DRV_EN" (at 83.82 104.14 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8166e9e3-9f96-5ce8-98de-09951ba3852e"))
+	(label "STEP1_PUL" (at 83.82 109.22 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "70d904c6-6f19-5843-9a39-c7791c92d9da"))
+	(label "STEP1_DIR" (at 83.82 114.3 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e3dea145-1805-5508-b49d-2c65b01ad1f3"))
+	(label "STEP2_PUL" (at 83.82 119.38 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "034bfcba-96c7-54c8-ade4-643e83d8b6c9"))
+	(label "STEP2_DIR" (at 83.82 124.46 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "320c75c7-ebd1-5e00-a319-26739f378679"))
+	(label "STEP_ENABLE" (at 83.82 129.54 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "01f1cec2-045c-5914-b220-e447ba36f7dc"))
+	(label "RELAY_1" (at 83.82 134.62 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "af08f04d-b1dd-5df6-9a1b-666379f32e21"))
+	(label "RELAY_2" (at 83.82 139.7 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "41fee9a3-6057-5d16-b7d9-1ce6823a3b8e"))
+	(sheet
+		(at 20.32 30.48)
+		(size 55.88 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "383ff9ef-8565-4c62-b17f-0912fd19804f")
+		(property "Sheetname" "Power_Supply"
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT_SENSE" output
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5cff9367-a0a0-5074-904e-f32bf33480a9")
+		)
+		(pin "+3V3_DRV_EN" output
+			(at 76.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3ca862dd-cd01-5f8b-9d62-b53187bb5f58")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 30.48)
+		(size 55.88 66.04)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c81c9d86-49aa-496e-8f70-b852842466ca")
+		(property "Sheetname" "MCU_and_Encoders"
+			(at 124.46 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 124.46 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT_SENSE" input
+			(at 124.46 38.1 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ae14912d-22e4-57ee-a1c6-eefd944b8482")
+		)
+		(pin "M1_CS" input
+			(at 124.46 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9563e1ea-608e-5470-b157-32bd7e83f370")
+		)
+		(pin "M1_nFAULT" input
+			(at 124.46 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c5eec620-0ac1-5943-b1da-0ce6b4515bd4")
+		)
+		(pin "M2_CS" input
+			(at 124.46 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3ed7b630-0511-5763-bd7c-d1bc0d0e2720")
+		)
+		(pin "M2_nFAULT" input
+			(at 124.46 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "17315434-f370-503d-8f48-78d742f69620")
+		)
+		(pin "M1_PWM_PH" output
+			(at 180.34 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "59e399a0-792b-5514-8933-2bb547eb999b")
+		)
+		(pin "M1_PWM_EN" output
+			(at 180.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e3f34d24-c71c-5771-be43-fc6fa576fdf6")
+		)
+		(pin "M2_PWM_PH" output
+			(at 180.34 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "63e71c8b-272c-552b-8f79-0b522c139aca")
+		)
+		(pin "M2_PWM_EN" output
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "417a7f8c-42fd-5721-a9a7-f0d90c9f51d1")
+		)
+		(pin "STEP1_PUL" output
+			(at 180.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3bcb8eca-54d2-59a3-9ec0-58a101cb90a2")
+		)
+		(pin "STEP1_DIR" output
+			(at 180.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e695af90-5ef7-577e-9604-386f7a8b3295")
+		)
+		(pin "STEP2_PUL" output
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "68b43e47-6954-5b56-adcc-a7c6f9692b6d")
+		)
+		(pin "STEP2_DIR" output
+			(at 180.34 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "df487e47-c269-593c-964c-114bb1a6b674")
+		)
+		(pin "STEP_ENABLE" output
+			(at 180.34 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "06cb067b-508b-5bf8-8b08-c0d80260278b")
+		)
+		(pin "RELAY_1" output
+			(at 180.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2dfd45b7-820d-50a5-b977-db901ac99668")
+		)
+		(pin "RELAY_2" output
+			(at 180.34 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "01c18e5b-5fcb-535c-a58d-fd7293f2541b")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 220.98 30.48)
+		(size 55.88 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "92b8d963-008c-44ee-80dc-a4ddc2493923")
+		(property "Sheetname" "DC_Motor_1"
+			(at 220.98 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Motor_Channel.kicad_sch"
+			(at 220.98 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM_PH" input
+			(at 220.98 38.1 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "45a424ea-220b-5c55-bb35-14236326d513")
+		)
+		(pin "PWM_EN" input
+			(at 220.98 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9ecc0af6-98af-50f8-a272-3f39d95415e2")
+		)
+		(pin "+3V3_DRV_EN" input
+			(at 220.98 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0001a052-ab15-57f8-997c-e2725b70ac4b")
+		)
+		(pin "CS" output
+			(at 276.86 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0c8ee58b-20d8-5233-82c8-4a4776a193cc")
+		)
+		(pin "nFAULT" output
+			(at 276.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0482121e-32f2-5a64-914f-a1b68a407920")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 220.98 96.52)
+		(size 55.88 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "40d2ba13-688c-4a36-ae2b-0996c3aab01d")
+		(property "Sheetname" "DC_Motor_2"
+			(at 220.98 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Motor_Channel.kicad_sch"
+			(at 220.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM_PH" input
+			(at 220.98 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9219e5c7-971c-5a46-bcbd-ffb422cac74e")
+		)
+		(pin "PWM_EN" input
+			(at 220.98 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d1b82d7c-e98f-57a4-b9b0-056e6fc082b5")
+		)
+		(pin "+3V3_DRV_EN" input
+			(at 220.98 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8c5b78f3-e23c-56e1-b1e0-01fdf2f00126")
+		)
+		(pin "CS" output
+			(at 276.86 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9a17e3bc-55f6-5199-908e-aac0203e50ed")
+		)
+		(pin "nFAULT" output
+			(at 276.86 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6327d763-0282-5217-a48a-80fc3ccb8f96")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20.32 96.52)
+		(size 55.88 50.8)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4a23d317-7151-447b-a577-c4acfecd7f3f")
+		(property "Sheetname" "Steppers_and_Relays"
+			(at 20.32 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Steppers_Relays.kicad_sch"
+			(at 20.32 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V3_DRV_EN" input
+			(at 76.2 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "761c9039-7dd0-5df4-94da-1cc5df43b6ee")
+		)
+		(pin "STEP1_PUL" input
+			(at 76.2 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "67aa41d8-81cb-5451-8be9-3d5b4659c0ae")
+		)
+		(pin "STEP1_DIR" input
+			(at 76.2 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c1dd50e7-4f81-52e7-8e0d-2556ae21d3df")
+		)
+		(pin "STEP2_PUL" input
+			(at 76.2 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3740bbd7-db75-5e09-8eb7-883d1ab021ad")
+		)
+		(pin "STEP2_DIR" input
+			(at 76.2 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "67527ca0-1852-5626-afa0-95b9d127fdfc")
+		)
+		(pin "STEP_ENABLE" input
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "41bec027-8188-5925-9daa-e663ba996984")
+		)
+		(pin "RELAY_1" input
+			(at 76.2 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fe2a2d0b-6728-5eae-a680-09753a25d35d")
+		)
+		(pin "RELAY_2" input
+			(at 76.2 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f6020299-f1cf-50c3-81ab-d262c03c4f3a")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+		(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
+			(page "2")
+		)
+		(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/c81c9d86-49aa-496e-8f70-b852842466ca"
+			(page "3")
+		)
+		(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/92b8d963-008c-44ee-80dc-a4ddc2493923"
+			(page "4")
+		)
+		(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/40d2ba13-688c-4a36-ae2b-0996c3aab01d"
+			(page "5")
+		)
+		(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/4a23d317-7151-447b-a577-c4acfecd7f3f"
+			(page "6")
+		)
+	)
+	(embedded_fonts no)
+)

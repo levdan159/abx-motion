@@ -1,0 +1,57 @@
+[
+  {
+    "file": "abx-motion-B_Cu.gbl",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-B_Mask.gbs",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-B_Paste.gbp",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-B_Silkscreen.gbo",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-Edge_Cuts.gm1",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-F_Cu.gtl",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-F_Mask.gts",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-F_Paste.gtp",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-F_Silkscreen.gto",
+    "present": true,
+    "matches": false
+  },
+  {
+    "file": "abx-motion-In1_Cu.g1",
+    "present": true,
+    "matches": true
+  },
+  {
+    "file": "abx-motion-In2_Cu.g2",
+    "present": true,
+    "matches": true
+  }
+]

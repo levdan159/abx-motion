@@ -1,0 +1,22 @@
+{
+  "track_geometry_and_nets_unchanged": true,
+  "footprint_geometry_changes": [],
+  "pcb_supplier_vs_packaged_bom": [
+    {
+      "ref": "L1",
+      "pcb_lcsc": "C408412",
+      "packaged_bom_lcsc": "C2045384"
+    }
+  ],
+  "cpl_comparison": {
+    "abx-motion-manufacturing_20261019_1308/abx-motion-cpl_20261019_1308.csv": {
+      "rows": 199,
+      "placement_mismatches": []
+    },
+    "abx-motion-manufacturing_20261019_1308/abx-motion-jlcpcb-cpl_20261019_1308.csv": {
+      "rows": 186,
+      "placement_mismatches": []
+    }
+  },
+  "source_changes_since_snapshot": []
+}

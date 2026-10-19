@@ -1,0 +1,56 @@
+ABX-MOTION FOLLOW-UP VALIDATION
+Snapshot: 2026-10-19T13:50:41.037175+03:00
+Outcome: Electrical rule checks pass; assembly release remains blocked by two wrong supplier mappings.
+
+WHAT CHANGED
+PCB changes since previous snapshot are supplier fields/text serialization. Track geometry, track nets, via geometry, component placements and pad geometry are unchanged.
+All schematic and project-rule files are unchanged since the previous run.
+
+VERIFIED CORRECTED SUPPLIER IDENTITIES
+Q1: C3289501 -> SQJ459EP-T1_GE3 (https://www.lcsc.com/product-detail/C3289501.html)
+U203: C2671361 -> THVD1450DR (https://www.lcsc.com/product-detail/C2671361.html)
+U301/U401: C90964 -> DRV8701ERGER (https://www.lcsc.com/product-detail/C90964.html)
+U1: C1858395 -> LMR36520FADDAR (https://www.lcsc.com/product-detail/C1858395.html)
+D2: C224047 -> SMCJ28A (https://www.lcsc.com/product-detail/C224047.html)
+U202: C132550 -> TCAN1042HGVDRQ1 (https://www.lcsc.com/product-detail/C132550.html)
+R312/R412: C25811 -> 200 kOhm 0603 (https://www.lcsc.com/product-detail/C25811.html)
+
+REMAINING PRIOR BLOCKERS
+R309,R409: C137393 selects YAGEO RC1206FR-07100KL, 100 kOhm, 0.25 W, 1206
+  Intended: BOURNS CRA2512-FZ-R010ELF, 10 mOhm, 3 W, 2512
+  Verified intended supplier code: C840621
+  Current source: https://www.lcsc.com/product-detail/C137393.html
+  Correct part source: https://www.lcsc.com/product-detail/C840621.html
+U3: C2913202 selects ESP32-S3-WROOM-1-N16R8
+  Intended: ESP32-S3-WROOM-1-N8R2
+  Verified intended supplier code: C2913204
+  Current source: https://www.lcsc.com/product-detail/C2913202.html
+  Correct part source: https://www.lcsc.com/product-detail/C2913204.html
+  Circuit impact: The current circuit uses GPIO35 for RS485_DIR, GPIO36 for BTN_BACK, GPIO37 for BTN_NEXT. These pins are occupied by octal PSRAM on the N16R8 variant.
+  Manufacturer: https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html
+
+SOURCE/EXPORT DISAGREEMENT
+L1 PCB LCSC field is C408412, but the packaged assembly BOM selects C2045384 (BOURNS SRP7050TA-150M). Reconcile this to one verified part.
+C2045384 identity source: https://www.lcsc.com/product-detail/C2045384.html
+An inductor substitution still needs pad-pattern, height, current rating and saturation checks; no incompatible fit is asserted here.
+
+FRESH KI CAD CHECKS
+ERC: 0 violations.
+DRC with schematic parity and zone refill: 0 errors; 420 warnings; 0 unconnected items; 0 parity issues.
+Warnings unchanged: 199 silk overlaps; 199 silk/solder-mask conflicts; 9 silk/edge conflicts; 1 mirrored front-layer text; 12 footprint/library differences.
+Existing saved rules and severity settings were retained. Minimum-rule supplementary run in the previous report used the same geometry and project settings.
+
+FABRICATION AND ASSEMBLY EXPORTS
+All four copper layers, both masks, both paste layers, bottom silk and board outline match a fresh zone-checked Gerber export after removing metadata.
+Front silkscreen still differs from the packaged export.
+Drill tool/hit data matches after removing comment metadata.
+Generic CPL has 199 entries, JLC CPL has 186; both match board placements, rotations and sides.
+Critical supplier identity checks are targeted; all 60 BOM rows have not been fully audited.
+
+UNRESOLVED ENGINEERING MARGINS
+D2 still specifies SMCJ28A while the board states up to 32 V input; the previous protection-coordination concern remains.
+This run does not establish continuous current/thermal capacity, transient survival, or physical OLED fit. See previous report for these findings.
+
+SOURCE INTEGRITY
+Changed during this validation: []
+No PCB, schematic, or project edits were made by this review.
