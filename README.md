@@ -1,4 +1,4 @@
-# ABX-Motion Robotics Controller (KiCad 9.0)
+# ABX-Motion Robotics Controller (KiCad 10.0)
 
 **12V–32V Battery-Powered ESP32-S3 Industrial & Mobile Robotics Motherboard**
 
@@ -14,6 +14,6 @@
 - **4-Layer PCB (`160 x 110 mm`):** `F.Cu` (Signals + High-Current Power Pours), `In1.Cu` (100% Unbroken Solid `GND` Reference Plane), `In2.Cu` (`+BATT` / `+5V` / `+3V3` Power Planes), `B.Cu` (Signals + Input Power Pours).
 
 ## Repository Structure
-- `abx-motion.kicad_pro`, `abx-motion.kicad_sch`, `abx-motion.kicad_pcb`: Main KiCad 9.0 project, hierarchical schematics (`Power.kicad_sch`, `MCU.kicad_sch`, `Motor_Channel.kicad_sch`, `Steppers_Relays.kicad_sch`), and routed 4-layer PCB (`0` DRC errors, `0` ERC errors).
+- `abx-motion.kicad_pro`, `abx-motion.kicad_sch`, `abx-motion.kicad_pcb`: Main KiCad 10.0 project, hierarchical schematics (`Power.kicad_sch`, `MCU.kicad_sch`, `Motor_Channel.kicad_sch`, `Steppers_Relays.kicad_sch`), and routed 4-layer PCB (`0` DRC errors, `0` ERC errors).
 - `production/`: Ready-to-manufacture Gerbers, Excellon drill files, JLCPCB BOM (100% verified in-stock LCSC `C-numbers`), Pick-and-Place (`CPL`), and PDFs.
 - `renders/`: High-resolution 2D/3D board and schematic renders.
