@@ -22,6 +22,7 @@ SHEET_UUIDS = {
     "Motor1": "92b8d963-008c-44ee-80dc-a4ddc2493923",
     "Motor2": "40d2ba13-688c-4a36-ae2b-0996c3aab01d",
     "Steppers": "4a23d317-7151-447b-a577-c4acfecd7f3f",
+    "Industrial_IO": "5b34e428-8262-458c-b688-d5bdfede8a4e",
 }
 
 FILE_UUIDS = {
@@ -29,6 +30,7 @@ FILE_UUIDS = {
     "MCU.kicad_sch": "2b5f8e12-41c8-4a9b-9e12-7c8d9e0f1a2b",
     "Motor_Channel.kicad_sch": "3c6a9f23-52d9-4b0c-8f23-8d9e0f1a2b3c",
     "Steppers_Relays.kicad_sch": "4d7b0a34-63ea-4c1d-9a34-9e0f1a2b3c4d",
+    "Industrial_IO.kicad_sch": "5e8c1b45-74fb-4d2e-8b45-af102b3c4d5e",
 }
 
 
@@ -160,6 +162,9 @@ class SymbolLibraryCache:
                         pang = float(at[3][1])
                         pnum = num[1][1]
                         pname = name[1][1]
+                        if lib_id == "Interface_Expansion:PCA9555PW" and pnum in {"17", "18", "19", "20"}:
+                            item[1] = ("sym", "input")
+                            ptype = "input"
                         pins_by_unit.setdefault(unit_num, {})[pnum] = {
                             "num": pnum,
                             "name": pname,
@@ -934,15 +939,15 @@ def build_mcu_sheet(cache: SymbolLibraryCache):
     sb.stub_net(u3, "11", "M2_PWM_EN", length=7.62, hier_shape="output")
     sb.stub_net(u3, "13", "USB_DN", length=7.62)
     sb.stub_net(u3, "14", "USB_DP", length=7.62)
-    sb.stub_net(u3, "23", "STEP_ENABLE", length=7.62, hier_shape="output")
+    sb.stub_net(u3, "23", "BTN_BACK", length=7.62)      # GPIO 21 (moved from GPIO 36)
     sb.stub_net(u3, "28", "RS485_DIR", length=7.62)     # GPIO 35
-    sb.stub_net(u3, "29", "BTN_BACK", length=7.62)      # GPIO 36
+    sb.stub_net(u3, "29", "IO_INT_N", length=7.62, hier_shape="input")  # GPIO 36 (~INT from PCA9555PW)
     sb.stub_net(u3, "30", "BTN_NEXT", length=7.62)      # GPIO 37
     sb.stub_net(u3, "31", "CAN_TX", length=7.62)        # GPIO 38
     sb.stub_net(u3, "32", "CAN_RX", length=7.62)        # GPIO 39
     sb.stub_net(u3, "33", "BTN_HOME", length=7.62)      # GPIO 40
-    sb.stub_net(u3, "34", "I2C_SDA", length=7.62)       # GPIO 41
-    sb.stub_net(u3, "35", "I2C_SCL", length=7.62)       # GPIO 42
+    sb.stub_net(u3, "34", "I2C_SDA", length=7.62, hier_shape="bidirectional")  # GPIO 41
+    sb.stub_net(u3, "35", "I2C_SCL", length=7.62, hier_shape="output")         # GPIO 42
     sb.no_conn(u3, "26")                                # IO45 strapping pin unused
     sb.no_conn(u3, "16")                                # IO46 strapping pin unused
     sb.stub_net(u3, "24", "RELAY_1", length=7.62, hier_shape="output")
@@ -1030,7 +1035,7 @@ def build_mcu_sheet(cache: SymbolLibraryCache):
     pull_configs = [
         ("R204", "10k", "M1_PWM_EN", "GND"),
         ("R205", "10k", "M2_PWM_EN", "GND"),
-        ("R206", "10k", "STEP_ENABLE", "+3V3"),
+        ("R206", "10k", "IO_INT_N", "+3V3"),
         ("R207", "10k", "RELAY_1", "GND"),
         ("R208", "10k", "RELAY_2", "GND"),
         ("R209", "10k", "M1_nFAULT", "+3V3"),
@@ -1549,7 +1554,7 @@ def build_steppers_relays_sheet(cache: SymbolLibraryCache):
         sb.no_conn(u_step, "2")  # ~FLT
         sb.stub_net(u_step, "13", f"STEP{ch}_nSLP_RST", length=6.35)  # ~RST
         sb.stub_net(u_step, "14", f"STEP{ch}_nSLP_RST", length=6.35)  # ~SLP
-        sb.stub_net(u_step, "9", "STEP_ENABLE", length=6.35, hier_shape="input" if ch == 1 else None)
+        sb.stub_net(u_step, "9", f"STEP{ch}_EN_GATED", length=6.35)
         sb.stub_net(u_step, "15", f"STEP{ch}_PUL", length=6.35, hier_shape="input")
         sb.stub_net(u_step, "16", f"STEP{ch}_DIR", length=6.35, hier_shape="input")
         sb.stub_net(u_step, "10", f"STEP{ch}_M0", length=6.35)  # M0
@@ -1568,6 +1573,32 @@ def build_steppers_relays_sheet(cache: SymbolLibraryCache):
         )
         sb.stub_net(r_slp, "1", "+3V3_DRV_EN", hier_shape="input" if ch == 1 else None)
         sb.stub_net(r_slp, "2", f"STEP{ch}_nSLP_RST")
+
+        # Hardware E-Stop Gating Pass-FET Q503/Q504 (AO3400A) + 10k Pull-up R507/R508 on STEP{ch}_EN_GATED (Drain side)
+        q_en = sb.place_sym(
+            "Transistor_FET:Q_NMOS_GSD",
+            f"Q50{2 + ch}",
+            "AO3400A",
+            "Package_TO_SOT_SMD:SOT-23",
+            ux - 60.96,
+            uy - 25.4,
+            0,
+        )
+        sb.stub_net(q_en, "1", "+3V3_DRV_EN")
+        sb.stub_net(q_en, "2", f"STEP{ch}_EN", hier_shape="input")
+        sb.stub_net(q_en, "3", f"STEP{ch}_EN_GATED")
+
+        r_en_pu = sb.place_sym(
+            "Device:R",
+            f"R50{6 + ch}",
+            "10k",
+            "Resistor_SMD:R_0603_1608Metric",
+            ux - 60.96,
+            uy + 5.08,
+            0,
+        )
+        sb.stub_power(r_en_pu, "1", "+3V3")
+        sb.stub_net(r_en_pu, "2", f"STEP{ch}_EN_GATED")
 
         # 3-channel DIP switch SW501/SW502 on M0, M1, M2 to +3V3 for user-selectable microstepping (up to 1/32)
         sw_dip = sb.place_sym(
@@ -1631,7 +1662,7 @@ def build_steppers_relays_sheet(cache: SymbolLibraryCache):
             uy + 33.02,
             0,
         )
-        sb.stub_net(j_ext, "1", "STEP_ENABLE")
+        sb.stub_net(j_ext, "1", f"STEP{ch}_EN_GATED")
         sb.stub_net(j_ext, "2", f"STEP{ch}_PUL")
         sb.stub_net(j_ext, "3", f"STEP{ch}_DIR")
         sb.stub_power(j_ext, "4", "GND")
@@ -1729,6 +1760,142 @@ def build_steppers_relays_sheet(cache: SymbolLibraryCache):
         sb.stub_net(j_rly, "1", f"RLY{ch}_NO")
         sb.stub_net(j_rly, "2", f"RLY{ch}_COM")
         sb.stub_net(j_rly, "3", f"RLY{ch}_NC")
+
+    sb.save()
+
+
+
+def build_industrial_io_sheet(cache: SymbolLibraryCache):
+    path = f"/{ROOT_UUID}/{SHEET_UUIDS['Industrial_IO']}"
+    sb = SchematicBuilder("Industrial_IO.kicad_sch", cache, [(path, 0)], paper="A3")
+    sb.add_text("SHEET 5: 6x 3-PIN JST-PH INDUSTRIAL I/O (8x LIMIT/GPIO + 2x 5V/500mA DC OUTPUTS) & PCA9555PW EXPANDER", 25.4, 17.78, 3.0)
+
+    # 1. U601: PCA9555PW,118 (Address 0x20: A0=A1=A2=GND)
+    u601 = sb.place_sym(
+        "Interface_Expansion:PCA9555PW",
+        "U601",
+        "PCA9555PW,118",
+        "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+        215.9,
+        127.0,
+        0,
+    )
+    sb.stub_power(u601, "24", "+3V3", length=6.35)
+    sb.stub_power(u601, "12", "GND", length=6.35)
+    sb.stub_power(u601, "21", "GND", length=6.35)  # A0
+    sb.stub_power(u601, "2", "GND", length=6.35)   # A1
+    sb.stub_power(u601, "3", "GND", length=6.35)   # A2
+    sb.stub_net(u601, "22", "I2C_SCL", length=7.62, hier_shape="input")
+    sb.stub_net(u601, "23", "I2C_SDA", length=7.62, hier_shape="bidirectional")
+    sb.stub_net(u601, "1", "IO_INT_N", length=7.62, hier_shape="output")
+
+    # C601: 100nF Decoupling for U601
+    c601 = sb.place_sym("Device:C", "C601", "100nF", "Capacitor_SMD:C_0603_1608Metric", 177.8, 127.0, 0)
+    sb.stub_power(c601, "1", "+3V3")
+    sb.stub_power(c601, "2", "GND")
+
+    # 2. J601-J604: 4x 3-Pin JST-PH Limit / Digital I/O Sockets (8 Channels feeding IO0_0..IO0_7)
+    lim_connectors = [
+        ("J601", "B3B-PH-K-S", "M1_MIN", "M1_MAX", 1, 2, "4", "5", 40.64),
+        ("J602", "B3B-PH-K-S", "M2_MIN", "M2_MAX", 3, 4, "6", "7", 101.6),
+        ("J603", "B3B-PH-K-S", "S1_MIN", "S1_MAX", 5, 6, "8", "9", 162.56),
+        ("J604", "B3B-PH-K-S", "S2_MIN", "S2_MAX", 7, 8, "10", "11", 223.52),
+    ]
+    for jref, jval, ch_a, ch_b, idx_a, idx_b, pin_a, pin_b, jy in lim_connectors:
+        j_lim = sb.place_sym(
+            "Connector:Conn_01x03_Pin",
+            jref,
+            jval,
+            "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+            40.64,
+            jy,
+            0,
+        )
+        sb.stub_net(j_lim, "1", f"{ch_a}_RAW")
+        sb.stub_power(j_lim, "2", "GND")
+        sb.stub_net(j_lim, "3", f"{ch_b}_RAW")
+
+        for ch_name, ch_idx, u_pin, dy in [(ch_a, idx_a, pin_a, -12.7), (ch_b, idx_b, pin_b, 12.7)]:
+            cy = round(jy + dy, 2)
+            r_pu = sb.place_sym("Device:R", f"R60{ch_idx}", "4.7k", "Resistor_SMD:R_0603_1608Metric", 76.2, cy, 0)
+            sb.stub_power(r_pu, "1", "+3V3")
+            sb.stub_net(r_pu, "2", f"{ch_name}_RAW")
+
+            r_ser = sb.place_sym("Device:R", f"R6{ch_idx + 8:02d}", "1k", "Resistor_SMD:R_0603_1608Metric", 106.68, cy, 90)
+            sb.stub_net(r_ser, "1", f"{ch_name}_RAW")
+            sb.stub_net(r_ser, "2", f"{ch_name}_IN")
+
+            c_flt = sb.place_sym("Device:C", f"C60{ch_idx + 1}", "10nF", "Capacitor_SMD:C_0603_1608Metric", 137.16, cy, 0)
+            sb.stub_net(c_flt, "1", f"{ch_name}_IN")
+            sb.stub_power(c_flt, "2", "GND")
+
+            sb.stub_net(u601, u_pin, f"{ch_name}_IN", length=7.62)
+
+    # 3. J605, J606: 2x 3-Pin JST-PH Protected 5V / 500mA DC Outputs
+    # F5: 500mA 1206 PTC from +5V to +5V_OUT
+    f5 = sb.place_sym("Device:Polyfuse", "F5", "500mA_PTC", "Fuse:Fuse_1206_3216Metric", 284.48, 40.64, 90)
+    sb.stub_power(f5, "1", "+5V")
+    sb.stub_net(f5, "2", "+5V_OUT")
+
+    dc_outs = [
+        (1, "J605", "B3B-PH-K-S", "13", "R617", "R619", "Q601", "D601", 88.9),
+        (2, "J606", "B3B-PH-K-S", "14", "R618", "R620", "Q602", "D602", 165.1),
+    ]
+    for ch, jref, jval, u_pin, r_pd_ref, r_g_ref, q_ref, d_ref, oy in dc_outs:
+        sb.stub_net(u601, u_pin, f"OUT{ch}_CMD", length=7.62)
+
+        # 1k gate pull-down to GND (overcomes PCA9555 internal 100k pull-up at boot)
+        r_pd = sb.place_sym("Device:R", r_pd_ref, "1k", "Resistor_SMD:R_0603_1608Metric", 279.4, oy + 15.24, 0)
+        sb.stub_net(r_pd, "1", f"OUT{ch}_CMD")
+        sb.stub_power(r_pd, "2", "GND")
+
+        # 100R gate resistor
+        r_g = sb.place_sym("Device:R", r_g_ref, "100", "Resistor_SMD:R_0603_1608Metric", 304.8, oy, 90)
+        sb.stub_net(r_g, "1", f"OUT{ch}_CMD")
+        sb.stub_net(r_g, "2", f"OUT{ch}_GATE")
+
+        # AO3400A N-MOSFET
+        q_sw = sb.place_sym("Transistor_FET:Q_NMOS_GSD", q_ref, "AO3400A", "Package_TO_SOT_SMD:SOT-23", 335.28, oy, 0)
+        sb.stub_net(q_sw, "1", f"OUT{ch}_GATE")
+        sb.stub_power(q_sw, "2", "GND")
+        sb.stub_net(q_sw, "3", f"OUT{ch}_SW")
+
+        # B5819W 1A Schottky Flyback Diode (SOD-123: Pin 1 Cathode = +5V_OUT, Pin 2 Anode = OUTx_SW)
+        d_fb = sb.place_sym("Device:D_Schottky", d_ref, "B5819W", "Diode_SMD:D_SOD-123", 360.68, oy - 12.7, 270)
+        sb.stub_net(d_fb, "1", "+5V_OUT")
+        sb.stub_net(d_fb, "2", f"OUT{ch}_SW")
+
+        # 3-Pin JST-PH Output Connector: Pin 1 = +5V_OUT, Pin 2 = GND, Pin 3 = OUTx_SW
+        j_out = sb.place_sym(
+            "Connector:Conn_01x03_Pin",
+            jref,
+            jval,
+            "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+            391.16,
+            oy,
+            0,
+        )
+        sb.stub_net(j_out, "1", "+5V_OUT")
+        sb.stub_power(j_out, "2", "GND")
+        sb.stub_net(j_out, "3", f"OUT{ch}_SW")
+
+    # 4. Independent Stepper Enables (IO1_2=Pin 15 -> STEP1_EN, IO1_3=Pin 16 -> STEP2_EN) with 10k pull-ups R621, R622 to +3V3 & ESTOP_SENSE (IO1_4=Pin 17)
+    sb.stub_net(u601, "15", "STEP1_EN", length=7.62, hier_shape="output")
+    sb.stub_net(u601, "16", "STEP2_EN", length=7.62, hier_shape="output")
+
+    r621 = sb.place_sym("Device:R", "R621", "10k", "Resistor_SMD:R_0603_1608Metric", 279.4, 215.9, 0)
+    sb.stub_power(r621, "1", "+3V3")
+    sb.stub_net(r621, "2", "STEP1_EN")
+
+    r622 = sb.place_sym("Device:R", "R622", "10k", "Resistor_SMD:R_0603_1608Metric", 304.8, 215.9, 0)
+    sb.stub_power(r622, "1", "+3V3")
+    sb.stub_net(r622, "2", "STEP2_EN")
+
+    sb.stub_net(u601, "17", "+3V3_DRV_EN", length=7.62, hier_shape="input")
+
+    # Tie unused IO1_5..IO1_7 (Pins 18, 19, 20) to GND
+    for upin in ["18", "19", "20"]:
+        sb.stub_power(u601, upin, "GND", length=6.35)
 
     sb.save()
 
@@ -1865,9 +2032,11 @@ def build_root_sheet():
                 ("STEP1_DIR", "output", "STEP1_DIR"),
                 ("STEP2_PUL", "output", "STEP2_PUL"),
                 ("STEP2_DIR", "output", "STEP2_DIR"),
-                ("STEP_ENABLE", "output", "STEP_ENABLE"),
                 ("RELAY_1", "output", "RELAY_1"),
                 ("RELAY_2", "output", "RELAY_2"),
+                ("I2C_SDA", "bidirectional", "I2C_SDA"),
+                ("I2C_SCL", "output", "I2C_SCL"),
+                ("IO_INT_N", "input", "IO_INT_N"),
             ],
         ),
         make_sheet(
@@ -1918,9 +2087,28 @@ def build_root_sheet():
                 ("STEP1_DIR", "input", "STEP1_DIR"),
                 ("STEP2_PUL", "input", "STEP2_PUL"),
                 ("STEP2_DIR", "input", "STEP2_DIR"),
-                ("STEP_ENABLE", "input", "STEP_ENABLE"),
+                ("STEP1_EN", "input", "STEP1_EN"),
+                ("STEP2_EN", "input", "STEP2_EN"),
                 ("RELAY_1", "input", "RELAY_1"),
                 ("RELAY_2", "input", "RELAY_2"),
+            ],
+        ),
+        make_sheet(
+            "Industrial_IO",
+            "Industrial_IO.kicad_sch",
+            SHEET_UUIDS["Industrial_IO"],
+            "7",
+            124.46,
+            116.84,
+            [
+                ("I2C_SDA", "bidirectional", "I2C_SDA"),
+                ("I2C_SCL", "input", "I2C_SCL"),
+                ("+3V3_DRV_EN", "input", "+3V3_DRV_EN"),
+            ],
+            [
+                ("IO_INT_N", "output", "IO_INT_N"),
+                ("STEP1_EN", "output", "STEP1_EN"),
+                ("STEP2_EN", "output", "STEP2_EN"),
             ],
         ),
     ]
@@ -1953,6 +2141,9 @@ def build_root_sheet():
 		)
 		(path "/{ROOT_UUID}/{SHEET_UUIDS['Steppers']}"
 			(page "6")
+		)
+		(path "/{ROOT_UUID}/{SHEET_UUIDS['Industrial_IO']}"
+			(page "7")
 		)
 	)
 	(embedded_fonts no)
@@ -2002,6 +2193,7 @@ def main():
     build_mcu_sheet(cache)
     build_motor_channel_sheet(cache)
     build_steppers_relays_sheet(cache)
+    build_industrial_io_sheet(cache)
     build_root_sheet()
     print("Successfully generated all 5 schematic sheets and abx-symbols.kicad_sym!")
     audit_symbol_pins_to_footprint_pads()
