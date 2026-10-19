@@ -1,0 +1,54 @@
+ABX-MOTION JLCPCB PREVIEW REVIEW
+Reviewed: 2026-10-19T14:39:52.194680+03:00
+Sources: supplied JLCPCB screenshot, current saved PCB and production BOM/CPL.
+
+OUTCOME
+Hold assembly submission. Four BOM groups select incompatible or inadequately rated components; placement corrections alone cannot resolve them.
+
+CONFIRMED SUPPLIER SELECTION ERRORS
+C306,C406 / C72496
+  Selected: ROQANG RVT1C221M0607: 220uF,16V,6.3mm diameter,7.7mm height
+  Needed: Battery-rail capacitor rated above maximum supply/transients; verify 50V or higher candidate and exact 10mm land pattern, ripple and ESR
+  Consequence: Both are across +BATT/GND. 16V is unsuitable for the stated 12-32V range. Selected package also differs from CP_Elec_10x10.5 footprint.
+  Supplier evidence: https://www.lcsc.com/product-detail/C72496.html
+  Candidate/next action: 
+F1 / C2897423
+  Selected: HCTL PM254-2-03-W-8.5: six-pin right-angle female socket,2.54mm pitch
+  Needed: 25A ATO blade fuse compatible with the direct-solder blade slots
+  Consequence: Wrong component category and incompatible lead count/geometry. Rotating the socket cannot make it a fuse.
+  Supplier evidence: https://www.lcsc.com/product-detail/C2897423.html
+  Candidate/next action: Select an exact blade fuse by mechanical drawing, or omit F1 from factory assembly and fit the verified fuse separately.
+J205,J207,J505,J506 / C8466
+  Selected: KANGNEX WJ15EDGK-3.81-02P-14-00A: two-position,3.81mm free-hanging pluggable connector
+  Needed: Three-position 5.08mm through-hole terminal block
+  Consequence: Wrong number of contacts, pitch and connector style for three PCB holes spaced 5.08mm.
+  Supplier evidence: https://www.lcsc.com/product-detail/C8466.html
+  Candidate/next action: C72334: WJ500V-5.08-03P-14-00A is a three-position 5.08mm candidate. Verify full drawing, pin diameter, body/entry direction and ratings against the Phoenix footprint before substituting. https://www.lcsc.com/product-detail/C72334.html
+SW201,SW202,SW203,SW204,SW205 / C110221
+  Selected: Shikues 1N4148WS diode
+  Needed: OMRON B3U-1000P pushbutton
+  Consequence: The diode is not a pushbutton despite the BOM Comment and Footprint labels.
+  Supplier evidence: https://www.lcsc.com/product-detail/C110221.html
+  Candidate/next action: C231329 is listed as OMRON B3U-1000P. https://www.lcsc.com/product-detail/C231329.html
+
+PLACEMENT AND ROTATION REVIEW
+The supplied screenshot suggests U1 and D2 are rotated across their board pad directions, and U3 is displaced. These visual observations require model/pin matching before applying numerical corrections.
+The current CPL already applies many per-footprint rotations and centre shifts: U1/U301/Q301/D2=270deg, C306=180deg, J102=270deg, JST left-edge connectors=90deg, bottom JST connectors=180deg, relay=270deg.
+Some such corrections may be correct for a particular JLC library model. Do not apply a global angle reset or copy the same offset across all parts in a package family.
+For each part, compare supplier pin geometry, PCB pad geometry, polarity and connector facing. Then encode verified offsets keyed to the actual supplier part, and re-upload the same BOM/CPL pair.
+JLC requires component centroid X/Y and counterclockwise-positive rotation; these requirements alone do not establish the zero orientation or model origin for each particular part.
+JLC reference: https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly
+JLC orientation reference: https://jlcpcb.com/blog/files-needed-for-pcb-assembly
+
+RELAY SUBSTITUTION
+C35449 selects Songle SRD-05VDC-SL-C, while K501/K502 retain Omron G5LE-14-DC5 value/footprint. This is a confirmed identity difference, not proof of mechanical/electrical incompatibility. Verify the alternative by function and geometry, including coil and COM/NO/NC assignment.
+https://www.lcsc.com/product-detail/C35449.html
+
+PREVIOUS CORRECTIONS
+R309/R409 now use C840621 (Bourns CRA2512-FZ-R010ELF). U3 now uses C2913204 (N8R2). L1 supplier fields and BOM now both use C408412; that part identity was not independently resolved during this review.
+
+SCOPE AND INTEGRITY
+This is a targeted BOM/preview review, not a signoff of all 60 BOM rows or a fresh DRC run. Exact numerical rotation/translation corrections were not inferred from body outlines alone.
+No PCB, schematic, production BOM or production CPL was modified.
+Source changes since review snapshot: []
+Detailed rows: confirmed-bom-errors.csv and placement-review.csv.

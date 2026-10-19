@@ -1,0 +1,9 @@
+{
+  "time_local": "2026-10-19T14:38:17.856593+03:00",
+  "source_hashes": {
+    "abx-motion.kicad_pcb": "3366e2300aa5116bdac3141460b2d34c852f728bb790c784f5801dbf2c196528",
+    "production/abx-motion-jlcpcb-bom.csv": "d030c87206432c12a07336561d2c56f3dc9b04282c48906b83a71892400a48c6",
+    "production/abx-motion-jlcpcb-cpl.csv": "95249b6429e6e1043e52db479f1db3cd2ec16467b12b7acf2066e834cebdfafc",
+    "abx-motion-manufacturing_20261019_1308.zip": "896a9347740c70f427f5feae7fc32c6bd4c524d852739e6e8bca09fa1380a2cc"
+  }
+}

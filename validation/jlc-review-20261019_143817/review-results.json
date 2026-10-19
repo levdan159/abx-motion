@@ -1,0 +1,8 @@
+{
+  "status": "ASSEMBLY_HOLD",
+  "confirmed_incompatible_or_underrated_bom_groups": 4,
+  "affected_references": 12,
+  "source_changed_during_review": [],
+  "production_files_modified": false,
+  "exact_rotation_corrections_verified": false
+}
