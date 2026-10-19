@@ -7468,7 +7468,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "500mA_PTC"
+		(property "Value" "1206L050/15YR"
 			(at 284.48 44.45 0)
 			(effects
 				(font

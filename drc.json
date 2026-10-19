@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-20T00:48:30",
+    "date": "2026-10-20T01:47:32",
     "ignored_checks": [
         {
             "description": "Footprint has no courtyard defined",
@@ -34,7 +34,8 @@
     ],
     "included_severities": [
         "error",
-        "warning"
+        "warning",
+        "exclusion"
     ],
     "kicad_version": "10.0.7",
     "schematic_parity": [],
@@ -117,6 +118,21 @@
             "type": "lib_footprint_mismatch"
         },
         {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J505",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 148.0
+                    },
+                    "uuid": "4dba6bd5-0c9b-4766-b5cb-2bf60e57037b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
             "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
             "items": [
                 {
@@ -126,6 +142,21 @@
                         "y": 50.4
                     },
                     "uuid": "563d9f0b-70e4-4354-9a6c-f58b3ed79cf2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J102",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 70.0
+                    },
+                    "uuid": "65d70fc2-b7a5-4544-8d66-185460f52b90"
                 }
             ],
             "severity": "warning",
@@ -147,6 +178,36 @@
             "type": "lib_footprint_mismatch"
         },
         {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J301",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 89.0
+                    },
+                    "uuid": "8c11dc03-06b3-48d6-b672-895978a21c42"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J207",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 88.0
+                    },
+                    "uuid": "937bbac6-6ac1-4cdc-b8a2-ac20155a092a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
             "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
             "items": [
                 {
@@ -162,6 +223,36 @@
             "type": "lib_footprint_mismatch"
         },
         {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J205",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 71.0
+                    },
+                    "uuid": "98b93ff8-55cd-40dc-8d22-d2914bbf0af8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J506",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 148.0
+                    },
+                    "uuid": "a12c3fa1-52f7-4f02-a3f3-d67cba2eab24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
             "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
             "items": [
                 {
@@ -171,6 +262,21 @@
                         "y": 50.4
                     },
                     "uuid": "a1e72a92-ad8d-4f69-bcea-566ffd3af708"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J401",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 119.0
+                    },
+                    "uuid": "a3969c34-5d46-4ff5-abd4-2c888130f80b"
                 }
             ],
             "severity": "warning",
@@ -220,213 +326,6 @@
             ],
             "severity": "warning",
             "type": "lib_footprint_mismatch"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 45.0,
-                        "y": 48.0
-                    },
-                    "uuid": "36e936f8-0314-45f1-987c-eba17099d7c2"
-                },
-                {
-                    "description": "Segment of U3 on F.Silkscreen",
-                    "pos": {
-                        "x": 91.8,
-                        "y": 47.1
-                    },
-                    "uuid": "904074d5-f5da-4c05-ba5b-e02b20a4744a"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 45.0,
-                        "y": 48.0
-                    },
-                    "uuid": "36e936f8-0314-45f1-987c-eba17099d7c2"
-                },
-                {
-                    "description": "Segment of U3 on F.Silkscreen",
-                    "pos": {
-                        "x": 110.2,
-                        "y": 47.1
-                    },
-                    "uuid": "83ef4c8f-a4bf-4741-b3e2-7abbc9bff413"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 202.0,
-                        "y": 153.0
-                    },
-                    "uuid": "69a5d6d8-3787-4302-a8da-07023486f6d9"
-                },
-                {
-                    "description": "Polygon of J505 on F.Silkscreen",
-                    "pos": {
-                        "x": 146.0,
-                        "y": 152.72
-                    },
-                    "uuid": "b82632e6-c249-4f4e-bcd7-978adf9f4edc"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 202.0,
-                        "y": 48.0
-                    },
-                    "uuid": "8e90179c-fccf-4366-97c9-d4a659255ca5"
-                },
-                {
-                    "description": "Polygon of J102 on F.Silkscreen",
-                    "pos": {
-                        "x": 201.72,
-                        "y": 70.0
-                    },
-                    "uuid": "944a07aa-d3fb-4f68-ac4d-8cf437bcb97a"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 202.0,
-                        "y": 48.0
-                    },
-                    "uuid": "8e90179c-fccf-4366-97c9-d4a659255ca5"
-                },
-                {
-                    "description": "Polygon of J301 on F.Silkscreen",
-                    "pos": {
-                        "x": 201.72,
-                        "y": 89.0
-                    },
-                    "uuid": "6df16dd0-75a5-4ed3-aa66-d886dd292d9b"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 45.0,
-                        "y": 153.0
-                    },
-                    "uuid": "fce5c326-bee5-4edb-86a6-c5df79b642c9"
-                },
-                {
-                    "description": "Polygon of J207 on F.Silkscreen",
-                    "pos": {
-                        "x": 45.28,
-                        "y": 88.0
-                    },
-                    "uuid": "1934511e-e709-4722-ae70-ce850258df5c"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 45.0,
-                        "y": 153.0
-                    },
-                    "uuid": "fce5c326-bee5-4edb-86a6-c5df79b642c9"
-                },
-                {
-                    "description": "Polygon of J205 on F.Silkscreen",
-                    "pos": {
-                        "x": 45.28,
-                        "y": 71.0
-                    },
-                    "uuid": "b4497c1d-6086-4a4d-ab64-bc348258f38c"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 202.0,
-                        "y": 153.0
-                    },
-                    "uuid": "69a5d6d8-3787-4302-a8da-07023486f6d9"
-                },
-                {
-                    "description": "Polygon of J506 on F.Silkscreen",
-                    "pos": {
-                        "x": 165.0,
-                        "y": 152.72
-                    },
-                    "uuid": "397518f9-002b-4b6b-9e2b-b80f1c1c568c"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
-        },
-        {
-            "description": "Silkscreen clipped by board edge",
-            "items": [
-                {
-                    "description": "Segment on Edge.Cuts",
-                    "pos": {
-                        "x": 202.0,
-                        "y": 48.0
-                    },
-                    "uuid": "8e90179c-fccf-4366-97c9-d4a659255ca5"
-                },
-                {
-                    "description": "Polygon of J401 on F.Silkscreen",
-                    "pos": {
-                        "x": 201.72,
-                        "y": 119.0
-                    },
-                    "uuid": "4f96ab9d-525b-418e-9160-02b2644f978e"
-                }
-            ],
-            "severity": "warning",
-            "type": "silk_edge_clearance"
         }
     ]
 }

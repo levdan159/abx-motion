@@ -130,7 +130,13 @@ def apply(board):
                 "J501 STEP1", "J502 EXT1", "J503 STEP2", "J504 EXT2"}:
             item.SetPosition(point(x, 143.1))
         elif item.GetLayer() == pcbnew.B_SilkS:
-            if text.startswith("J601-J604 ("):
+            if text.startswith("ABX-MOTION V1.1"):
+                item.SetText("ABX-MOTION V1.1 — SPECS & I/O (DESIGN TARGETS)")
+            elif text.startswith("VBAT (J1 XT60):"):
+                item.SetText("VBAT (J1 XT60): 12-32V target (25A Fuse, SMCJ30A)")
+            elif text.startswith("DC Servo 1&2:"):
+                item.SetText("DC Servo 1&2: 2x 100W target (DRV8701E, 15A Chop)")
+            elif text.startswith("J601-J604 ("):
                 item.SetText("LIMITS J601-J604: 8x dry contact / 3V3 logic ONLY")
             elif text.startswith("J605-J606 ("):
                 item.SetText("AUX J605-J606: 5V / G / SW, 0.5A shared supply")
@@ -168,10 +174,33 @@ def apply(board):
                 field.SetVisible(False)
 
     back_logo = footprints["LOGO2"]
-    if any(g.GetLayer() in (pcbnew.B_Cu, pcbnew.B_Mask)
-           for g in back_logo.GraphicalItems()):
-        raise RuntimeError("Back logo must remain silkscreen only")
-    return logo, removed_items
+    back_origin = back_logo.GetPosition()
+    back_width = pcbnew.ToMM(back_logo.GetBoundingBox(False, False).GetWidth())
+    if abs(back_width - 17.5) > 0.2:
+        factor = 17.5 / back_width
+        resize_logo(back_logo, 17.5)
+        for item in back_logo.GraphicalItems():
+            if isinstance(item, pcbnew.PCB_TEXT):
+                p = item.GetPosition()
+                item.SetPosition(pcbnew.VECTOR2I(
+                    back_origin.x + round((p.x - back_origin.x) * factor),
+                    back_origin.y + round((p.y - back_origin.y) * factor)))
+                sz = item.GetTextSize()
+                item.SetTextSize(pcbnew.VECTOR2I(round(sz.x * factor), round(sz.y * factor)))
+                item.SetTextThickness(round(item.GetTextThickness() * factor))
+    back_logo.SetPosition(point(186.0, 138.0))
+    back_logo.Reference().SetVisible(False)
+    back_logo.Value().SetVisible(False)
+    has_b_mask = any(isinstance(g, pcbnew.PCB_SHAPE) and g.GetLayer() == pcbnew.B_Mask
+                     for g in back_logo.GraphicalItems())
+    for item in list(back_logo.GraphicalItems()):
+        if isinstance(item, pcbnew.PCB_SHAPE) and item.GetLayer() == pcbnew.B_SilkS:
+            item.SetLayer(pcbnew.B_Cu)
+            if not has_b_mask:
+                mask_item = pcbnew.Cast_to_PCB_SHAPE(item.Duplicate())
+                mask_item.SetLayer(pcbnew.B_Mask)
+                back_logo.Add(mask_item)
+    return logo, back_logo, removed_items
 
 
 def main():
@@ -181,16 +210,20 @@ def main():
     parser.add_argument("--library-dir", required=True, type=Path)
     args = parser.parse_args()
     board = pcbnew.LoadBoard(str(args.input.resolve()))
-    logo, removed_items = apply(board)
+    logo, back_logo, removed_items = apply(board)
     pcbnew.ZONE_FILLER(board).Fill(board.Zones())
     args.output.parent.mkdir(parents=True, exist_ok=True)
     pcbnew.SaveBoard(str(args.output.resolve()), board)
-    library_logo = pcbnew.Cast_to_FOOTPRINT(logo.Duplicate(False))
-    library_logo.SetPosition(point(0, 0))
-    pcbnew.FootprintSave(str(args.library_dir.resolve()), library_logo)
+    for fp, flip_to_front in [(logo, False), (back_logo, True)]:
+        lib_fp = pcbnew.Cast_to_FOOTPRINT(fp.Duplicate(False))
+        lib_fp.SetPosition(point(0, 0))
+        if flip_to_front and lib_fp.IsFlipped():
+            lib_fp.Flip(point(0, 0), False)
+        pcbnew.FootprintSave(str(args.library_dir.resolve()), lib_fp)
     print(f"Saved aesthetic candidate: {args.output}")
     print("Check fresh DRC before replacing the working board.")
 
 
 if __name__ == "__main__":
     main()
+

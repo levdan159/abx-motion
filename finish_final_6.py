@@ -804,7 +804,8 @@ def main():
             for _, val, desigs, pkg, lcsc in bom_rows:
                 w.writerow([val, desigs, pkg, lcsc])
 
-    # Generate EasyEDA pad-verified JLCPCB_CPL.csv
+    # Preserve existing placement data; final supplier placement review is still
+    # required. Package-name angle guesses below are not pad verification.
     old_cpl = {}
     if os.path.exists("production/abx-motion-jlcpcb-cpl.csv"):
         with open("production/abx-motion-jlcpcb-cpl.csv") as f:
@@ -836,10 +837,17 @@ def main():
         fx, fy = pcbnew.ToMM(p_pos.x), pcbnew.ToMM(p_pos.y)
         krot = fp.GetOrientationDegrees() % 360.0
 
-        # If component was already verified in old_cpl and hasn't moved/rotated, preserve its exact verified centroid & rotation
+        # Existing rows are historical placement data, not proof of approval.
         if ref in old_cpl and ref not in ("C203", "C204", "C212", "C213", "C214", "R206", "R227", "R228", "R229", "SW201", "SW202", "SW203", "SW204", "SW205"):
             old_r = old_cpl[ref]
-            cpl_rows.append((ref, val, pkg, old_r["Mid X"], old_r["Mid Y"], old_r["Rotation"], old_r["Layer"]))
+            rotation = old_r["Rotation"]
+            # Supplier pad-1 and keyed-outline audit, 2026-10-20. Do not carry
+            # the former reversed LED / XT60 angles into another export.
+            if ref == "J1":
+                rotation = f"{krot:.1f}"
+            elif ref in ("LED201", "LED202", "LED_FLT1", "LED_FLT2"):
+                rotation = f"{(krot + 180.0) % 360.0:.1f}"
+            cpl_rows.append((ref, val, pkg, old_r["Mid X"], old_r["Mid Y"], rotation, old_r["Layer"]))
             continue
 
         # Compute pad midpoint centroid
@@ -849,7 +857,11 @@ def main():
         my = (min(ys) + max(ys)) * 0.5
 
         # EasyEDA rotation mapping for new/moved parts
-        if "SOT-23" in pkg:
+        if ref == "J1":
+            erot = krot
+        elif ref in ("LED201", "LED202", "LED_FLT1", "LED_FLT2"):
+            erot = (krot + 180.0) % 360.0
+        elif "SOT-23" in pkg:
             erot = (krot + 180.0) % 360.0
             mx += 0.0208
         elif "TSSOP-24" in pkg:

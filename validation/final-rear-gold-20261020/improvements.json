@@ -1,0 +1,16 @@
+{
+  "changes": [
+    "LOGO2 moved from (164.0, 80.0) to (186.0, 138.0) in lower-left rear view (high-X, high-Y PCB coordinates) and scaled to 17.50 x 16.323 mm (0.75x preview proportions)",
+    "LOGO2 535 gear polygons converted from B.SilkS to exposed B.Cu + matching B.Mask openings for ENIG gold finish",
+    "LOGO2 AUTOBOTIX and ABX-Motion V1.1 text retained in mirrored white B.SilkS below the gears",
+    "Synchronized abx-footprints.pretty/ABX_Text_Gold.kicad_mod with placed LOGO2 instance (0 lib_footprint_mismatch on LOGO1/LOGO2)",
+    "Updated rear B.SilkS spec table header and VBAT/DC Servo rows to explicitly state DESIGN TARGETS / target",
+    "Refilled B.Cu GND zone around LOGO2 with 0.221 mm copper clearance while preserving F.Cu, In1.Cu, and In2.Cu zone fills unchanged"
+  ],
+  "pad_geometry_unchanged": true,
+  "all_tracks_unchanged": true,
+  "all_vias_unchanged": true,
+  "In1_signal_tracks": 0,
+  "back_logo_gears_exposed_copper_gold": true,
+  "back_logo_text_silkscreen_white": true
+}

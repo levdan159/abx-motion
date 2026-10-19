@@ -1833,7 +1833,7 @@ def build_industrial_io_sheet(cache: SymbolLibraryCache):
 
     # 3. J605, J606: 2x 3-Pin JST-PH Protected 5V / 500mA DC Outputs
     # F5: 500mA 1206 PTC from +5V to +5V_OUT
-    f5 = sb.place_sym("Device:Polyfuse", "F5", "500mA_PTC", "Fuse:Fuse_1206_3216Metric", 284.48, 40.64, 90)
+    f5 = sb.place_sym("Device:Polyfuse", "F5", "1206L050/15YR", "Fuse:Fuse_1206_3216Metric", 284.48, 40.64, 90)
     sb.stub_power(f5, "1", "+5V")
     sb.stub_net(f5, "2", "+5V_OUT")
 
