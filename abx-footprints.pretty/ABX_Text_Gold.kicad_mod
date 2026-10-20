@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Autobotix 22mm Back Logo + ABX-Motion V1.0 (B.Mask + B.SilkS)")
+	(descr "Autobotix rear copper gears and silkscreen text - Rev 1.1d")
 	(tags "autobotix logo branding gears")
 	(property "Reference" "LOGO2"
 		(at 0 11.94 180)
@@ -12906,7 +12906,7 @@
 		(layer "F.CrtYd")
 		(uuid "13f45310-5324-4100-a4ac-56b0dc6ae410")
 	)
-	(fp_text user "ABX-Motion V1.1"
+	(fp_text user "ABX-Motion Rev 1.1d"
 		(at 0 -7.112903 180)
 		(layer "F.SilkS")
 		(uuid "41459f1b-d1fa-4111-bf45-9ba4194d123c")

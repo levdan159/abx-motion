@@ -1,0 +1,202 @@
+ABX-Motion: inspection of the cancelled Argon run and applied aesthetic pass
+20 October 2026, Asia/Jerusalem
+
+RESULT
+
+The saved working PCB at the START of this inspection was exactly the compact
+recovery checkpoint, SHA-256:
+8ec851d7639b256a545cc928b624a82d2242ff2cbd9337505cb07efa359bfab4.
+It was not the zero-open candidate described by the older drc.json. That report
+was from 23:49 on 19 October and had 43 electrical/manufacturing errors.
+The saved board had subsequently been restored to the compact checkpoint.
+
+Fresh checks on that initial checkpoint:
+  ERC: 0 violations.
+  DRC: 4 errors, 5 missing connections, 0 schematic-parity findings.
+  Warnings: 35, including 3 overlapping same-net drill pairs.
+
+During the inspection a late background save replaced that board with a newer
+Argon checkpoint (SHA-256 99ff18a45f252ad81391ddd19bca8452fcb81c00e78b2e06856da061e35a6892).
+That save resolved the four copper errors and three overlapping drill pairs,
+but the encoder crossing repair left another connection open: six opens in
+total. The user then confirmed all background jobs were stopped and KiCad was
+not saving. The aesthetic pass was merged onto this NEWER checkpoint.
+
+Final merged checks:
+  ERC: 0 violations.
+  DRC: 0 copper/clearance errors, 6 missing connections, 0 parity findings.
+  Drill collisions: 0.
+  Warnings: 30 (12 library differences, 9 silk/edge, 3 dangling tracks,
+                6 dangling vias).
+
+The aesthetic pass preserves those six existing opens and all component pad
+positions/nets. It adds no electrical errors or missing connections. The
+temporary logo/library mismatch in the late Argon save is also resolved.
+The resulting board is still NOT manufacturing-ready because of the six opens.
+
+The source and validation artifacts are in aesthetic_pass.py and this folder.
+Top/bottom renders were updated in renders/pcb_3d_top.png and
+renders/pcb_3d_bottom.png. No schematic, project rules, manufacturing exports,
+power layout, USB routing, or Git history was changed by this pass.
+
+WHAT HAPPENED DURING THE RUN
+
+The earlier broad rip-up run removed unrelated legal tracks, including USB,
+power and motor circuitry. Its completed candidate had 141 copper/mask errors
+and 45 missing connections. Those changes are absent from the current saved
+board because the compact recovery checkpoint was restored.
+
+Two later repair helpers remain in the project:
+- apply_localized_repairs.py
+- test_astar_5.py
+
+Both copy /tmp/checkpoint_base.kicad_pcb over the working PCB at startup. The
+A* helper then performs repairs in memory and saves only after its searches
+finish. Cancelling during search can therefore leave the original checkpoint
+on disk and discard the in-memory partial progress. The late background save
+confirmed that more than one writer was still active. Neither helper provides
+a safe incremental repair history.
+
+The newer A* checker does improve on the older router: it checks other-net
+clearance at endpoints, rejects endpoints outside the search box, and attempts
+to enforce same-net drill spacing. However, it still uses approximate pad
+rectangles and node/midpoint checks, does not account for all artwork/keepouts
+and zone geometry, and scans large pad/track lists while searching. Its main
+search loop has no runtime or expansion cap. This explains why it can spend
+a long time on the last dense connections without saving useful progress.
+
+The hard-coded local repair helper also contains unchecked trace paths and
+orphan-removal operations. Its presence on disk is not evidence that those
+operations passed DRC or survived cancellation. Do not invoke either helper
+on the working aesthetic board without changing its reset behavior.
+
+run_stage3.py still invokes run_stage2.py, which restores the V1.0 PCB before
+rebuilding. These scripts remain unsuitable for resuming local board edits.
+Keep the cancelled run and earlier failed candidates as evidence, rather than
+using them as a fabrication source.
+
+ELECTRICAL REPAIR STATUS
+
+The initial four DRC errors came from two conflict locations:
+1. M1_MAX_IN via/escape versus ENC2_A near (65.8,114.22). The short and two
+   clearance findings are three reports of this one local conflict.
+2. ENC2_B crossing ENC1_A on B.Cu near (97.5,73.1).
+Both locations are clear in the final merged DRC. The second repair left
+ENC2_B disconnected, so the absence of the short is not a completed repair.
+
+Six missing connections remain:
+- ENC2_B, between the MCU-side escape and the encoder route, near
+  (97.7,72.3) and (94.1,79.1).
+- BTN_HOME / OK button local network to the MCU.
+- M1_MIN_RAW connector/input network.
+- M2_MAX_IN.
+- S1_MIN_IN.
+- S1_MAX_IN.
+
+Three originally overlapping same-net drill pairs are resolved in the newer
+checkpoint and remain resolved after the aesthetic merge:
+- ESP_BOOT: (74.5,68.7)/(74.7,68.7).
+- M2_MIN_IN: (66.9,114.88)/(66.7,114.9).
+- S2_MAX_IN: (65.7,118.3)/(65.8,118.12).
+
+Final warnings are 12 existing library differences, 9 existing silk/edge
+findings, 3 dangling tracks and 6 dangling vias. Clean up confirmed orphans
+after the required nets are connected. Do not remove required connectivity
+merely to reduce warning counts.
+
+The fresh netlist's 742 connected pin assignments match the previously audited
+netlist exactly. The twenty prior functional assertions therefore still apply
+to the MCU buttons/interrupt/I2C, eight RC input channels, two output circuits,
+independent stepper enables, E-stop sense and DRV8701 pin assignments. This is
+a schematic connectivity result, not a bench qualification.
+
+AESTHETIC IMPLEMENTATION
+
+The user selected the horizontal logo arrangement between the steppers:
+- Existing gold gears resized to an 8.5mm artwork/footprint envelope and
+  placed at (104.5,108.0).
+- White AUTOBOTIX wordmark starts at (110.8,107.0), 1.35mm text height.
+- White ABX-Motion V1.1 starts at (110.8,109.6), 0.95mm text height.
+- Existing back logo retained unchanged as silkscreen only, at (164,80).
+
+Two old F.Cu STEP1_DIR segments crossed the selected gold-artwork area. They
+were replaced by five segments detouring above and to its right, retaining
+the original 0.20mm width and original endpoints. No vias were added. The
+remaining track/via geometry is unchanged. An explicit native-geometry check
+found no front pad/track/via conflicts with the gold artwork at 0.15mm clearance.
+
+Only LOGO1 moved. Component pad positions and net assignments remain identical
+throughout the board. No signal tracks were added to In1.Cu. No components
+were moved to accommodate the branding. The badge stays between the nominal
+capacitor/carrier courtyards; real populated-module visibility remains a final
+mechanical review item.
+
+Connector headers and legends were rebuilt consistently on both faces:
+- J601-J604: individual MIN / G / MAX labels at the actual pad X positions.
+- J605-J606: individual 5V / G / SW labels at the actual pad X positions.
+- Each back-side label is mirrored separately, giving the correct bottom-view
+  MAX / G / MIN and SW / G / 5V physical order.
+- Thirty-six pad/label position and mirroring assertions passed.
+- The long footer became LIMITS 3V3 ONLY | OUT 5V / 0.5A TOTAL.
+- Bottom motor-connector front titles shifted slightly to separate them from
+  the new footer. Dense component values/LCSC fields remain hidden.
+- Two back reference-table rows now describe the limits and shared output
+  supply directly, without implying reversed physical pin order.
+
+The project gold footprint was synchronized to its embedded PCB geometry so a
+library refresh does not restore the previous size. The new aesthetic script
+requires explicit input/output/library paths, does not reset or regenerate the
+project, and refuses an unknown STEP1_DIR geometry. A second application was
+checked to leave track geometry and label contents/positions unchanged.
+
+REMAINING QUALIFICATION / ASSEMBLY ITEMS
+
+The existing back-side 12-32V and 100W text is a design target, not validated
+performance. This aesthetic pass did not re-rate the hardware. The earlier
+review's unresolved transient coordination, Q1 thermal losses, shunt pickup,
+regulator heating, capacitor ripple and motor-current-limit concerns remain.
+SMCJ30A's 30V standoff and 48.4V rated clamp do not substantiate a protected
+normal 32V input for the 47V-absolute-maximum DRV8701.
+
+The input section is for dry contacts/3.3V logic, not 12/24V sensors. The E-stop
+driver disable is distinct from software-read homing/limits; it does not cut
+all auxiliary/relay power. Firmware needs safe output-latch-before-direction
+initialization, no automatic restart on E-stop release, and tests of MCU reset
+while the PCA9555 remains powered.
+
+OLED hole centers remain 23.3mm apart, versus the user's stated 23.0mm pattern;
+confirm the exact physical module and header offset before ordering. Confirm
+the two-row connector bank with plugged cables, installed StepStick modules,
+and mounting hardware. The AUX PTC supplier identity C70125 is still not
+independently verified. Existing production BOM/CPL/Gerbers are stale for V1.1
+and must not be mixed with the newly saved PCB. An actual gold-colored logo
+also depends on the selected fabrication finish, such as ENIG.
+
+NEXT ENGINEERING WORK
+
+Preserve the newly saved checkpoint. Finish the six named nets with a fresh
+DRC after each group. Avoid changing logo-space STEP1_DIR, USB, power or motor
+routes unnecessarily. Keep repair helpers incremental and make them save
+bounded, reviewable checkpoints rather than restarting the whole board.
+
+Before fabrication export: zero ERC violations, zero DRC errors/opens/parity,
+no drill collisions, reviewed remaining warnings, correct component and socket
+assembly mappings, and exact board/report/export hashes. The current board
+is a reviewed work-in-progress with the aesthetic pass implemented.
+
+Supporting files:
+before/ and before-manifest.json: original compact pre-pass checkpoint.
+after-argon/ and after-argon-manifest.json: newer late-background-save checkpoint.
+before-drc.json and erc.json: fresh initial checks.
+merged-drc.json and final-drc.json: checks on the final merged state.
+aesthetic-checks.json: initial geometry/label assertions, including 36 pin labels.
+merged-aesthetic-checks.json: final geometry and connectivity preservation.
+functional-netlist-checks.json: current netlist comparison.
+applied-manifest.json: board/library/render checksums after application.
+aesthetic-top.png and aesthetic-bottom.png: inspected native KiCad renders.
+../recovery-review-20261019/review.txt: earlier complete electrical/recovery review.
+
+Primary component references for the unchanged qualification items:
+https://www.ti.com/lit/ds/symlink/drv8701.pdf
+https://brightking.yageo.com/uploadfiles/file/tvs/2022062122285628567520.pdf
+https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf

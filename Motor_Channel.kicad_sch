@@ -4,6 +4,7 @@
 	(generator_version "10.0")
 	(uuid "3c6a9f23-52d9-4b0c-8f23-8d9e0f1a2b3c")
 	(paper "A3")
+	(title_block (title "ABX-Motion") (rev "1.1d"))
 	(lib_symbols
 		(symbol "abx:DRV8701ERGER"
 			(pin_names
@@ -4698,7 +4699,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "30k"
+		(property "Value" "12k"
 			(at 144.78 166.37 0)
 			(effects
 				(font
@@ -7072,4 +7073,174 @@
 		)
 	)
 	(embedded_fonts no)
+	(text "ADC protection: R304/R404 + R313/R413 divide SO by 2; rescale firmware."
+		(exclude_from_sim no)
+		(at 193.04 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "71a3e0ba-7594-5d6b-bfe7-a420334044d5")
+	)
+	(wire
+		(pts
+			(xy 254 171.45) (xy 254 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8ed3f1d-fde0-51e1-9fdf-0090934b00bf")
+	)
+	(wire
+		(pts
+			(xy 254 179.07) (xy 254 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c1abef-6266-56fd-8c6d-3b7337111d44")
+	)
+	(label "CS"
+		(at 254 166.37 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b3e8cf0-354a-5404-a0f9-10283331e1e4")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 254 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b06b2479-3f8e-5c00-9a5f-8d025e6ff355")
+		(property "Reference" "R313"
+			(at 256.54 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide no)
+			)
+		)
+		(property "Value" "1k"
+			(at 256.54 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bc1c58a-c43a-5db9-b9d4-313f6fdf8c9e")
+		)
+		(pin "2"
+			(uuid "f62c6a28-9f14-586d-b25d-99b24648ea7e")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/92b8d963-008c-44ee-80dc-a4ddc2493923"
+					(reference "R313")
+					(unit 1)
+				)
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/40d2ba13-688c-4a36-ae2b-0996c3aab01d"
+					(reference "R413")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a531a1a9-d0dc-5c23-8d5f-3be250562548")
+		(property "Reference" "#PWR9000"
+			(at 254 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19765058-b8b2-50e3-b3ec-d6cdf971ee7c")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/92b8d963-008c-44ee-80dc-a4ddc2493923"
+					(reference "#PWR9000")
+					(unit 1)
+				)
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/40d2ba13-688c-4a36-ae2b-0996c3aab01d"
+					(reference "#PWR9500")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

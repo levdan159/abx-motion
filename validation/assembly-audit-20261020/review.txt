@@ -1,0 +1,127 @@
+ABX-Motion V1.1 — supplier placement and fabrication audit
+20 October 2026
+
+RELEASE STATUS: HOLD — protection selection unresolved; relay alignment requires assembler review.
+
+The saved PCB is unchanged in this audit. No second TVS has been added.
+PCB SHA256: 0625cd61f3970adfcf98d8586c776f4bc83c87c669794b3f35ddb2c3129c7920
+
+PLACEMENT CHECK
+
+239 unique BOM/CPL placements, 66 supplier part numbers, exact reference-set
+agreement. Current public supplier footprint SVGs were obtained for all 66
+SKUs through links on LCSC product pages. The blocked EasyEDA JSON endpoint
+is no longer the source of the earlier D2/U601/PH orientation uncertainty.
+Raw SVGs and reproducible read-only audit code are archived alongside this
+report. The conversion is one consistent transform: supplier coordinates
+(use screen Y down) rotated by minus CPL angle, then translated to the CPL
+X / negative CPL Y. No per-part choice of rotation sign is used.
+
+Supplier pad centers land on corresponding PCB copper for 237 placements.
+The two relay placements have matching rotation but an inconsistent supplier
+hole drawing, discussed below. Large MOSFET drain leads 5–8 map to the PCB's
+single same-net drain pad 5. USB combined supplier pin names and four shell
+legs map to the corresponding native pins and S1. Unpolarized fuse-holder
+and socket-strip pin renumbering is explicitly handled. This is a geometry
+and numbering audit; it is not a claim that every supplier CAD pin label is
+infallible or that an actual assembly order has been reviewed or approved.
+
+Verified directions in TOP view, XT60 at upper-right:
+- D2, C2863624, CPL180: physical pin1 lower-right; left 4/5/6 +BATT;
+  right 1/2/3 and center EP7 GND. The TI recommended land pattern uses
+  1.95 mm row centers; supplier lands use about 2.057 mm. Orientation agrees
+  and supplier pad centers overlap the manufacturer's native PCB lands.
+- U601, C128392, CPL270: pin1 upper-left, pin12 lower-left, pin24 upper-right.
+- J601–J606, C131339, CPL180: pin1 left, ground middle, pin3 right.
+  Pin1 = MIN on J601–604, +5V on J605–606. Supplier zero-angle pin1 is right.
+- J1, C98733, CPL180: supplier pin1 aligns board +BATT at right;
+  pin2 GND at left. The earlier polarity correction remains preserved.
+- XH connectors J202/203/209 CPL270 and J501–504 CPL0: numbered pins match
+  the PCB at the existing positions. Terminal-block pins match; edge-facing
+  connector positions and housing directions are retained.
+- LEDs, diodes, Q1, bridge MOSFETs, SOT23s, remaining ICs, DIP switches and
+  polarized electrolytics have the matching numbered supplier-pad orientation.
+  Existing polarity/centroid corrections were retained, not regenerated from
+  KiCad angles alone. Four C27438 socket strips retain their separate centers
+  and CPL90; these straight unkeyed strips have no electrical polarity.
+
+RELAY EXCEPTION
+
+K501/K502 use Omron G5LE-14 DC5, C116963. Omron specifies 2.00 mm between
+common pin1 and the coil-pin row; PCB matches that manufacturer drawing.
+Supplier preview instead has 2.55 mm. Current supplier-to-PCB residual is
+about 0.440 mm for common pin1, and 0.110 mm for the other four pins. Rotation
+270 is consistent with coil/contact placement, but this malformed CAD cannot
+certify the physical insertion origin. Do not change PCB holes to fit it.
+Have the assembler align the real relay to the official Omron hole drawing:
+K501: 1=(146,122), 2=(140,124), 3=(140,136.2), 4=(152,136.2), 5=(152,124) mm.
+K502: same pattern translated +19 mm in X.
+Hole diameter is 1.3 mm. Read drawings as bottom view where specified; the
+coordinates above are PCB top view. Coil is pins2/5; COM1, NO3, NC4.
+
+D2 CLOSE-UP / SOLDERING
+
+The small package on the large patch is intentional: D2 is a 2x2 mm WSON,
+replacing an SMC diode. Existing supply copper was preserved under solder
+mask. Fresh fabrication outputs match all 13 files in the prior package
+geometrically, excluding generation timestamps. D2's F.Mask section contains
+exactly the six new small lead lands and the EP opening; F.Paste contains
+six lead apertures plus two reduced EP apertures. The old SMC solder lands
+are absent. Large underlying copper is not a large stencil opening and does
+not create a solder bridge. The package's size alone does not establish its
+surge-energy suitability.
+
+PROTECTION DECISION — DO NOT ORDER THE CURRENT CANDIDATE YET
+
+TVS3300DRVR: 33 V standoff; up to 40 V clamp for TI's specified 8/20 us pulse;
+35 A at 8/20 us, but only 3.5 A / 125 W at 10/1000 us in the SON package.
+Old SMCJ30A family: 30 V standoff; nominal 1500 W at 10/1000 us; maximum
+specified clamp 48.4 V at its rated current. That exceeds DRV8701's 47 V
+absolute maximum, and 30 V standoff does not cover the requested normal 32 V.
+Neither option establishes unrestricted regenerative-energy protection.
+
+The user offered room for both. Populating two unequal clamps directly in
+parallel does not guarantee useful current/energy sharing: the lower-clamp
+part can absorb most of the event. TI explicitly cautions against assuming
+parallel ratings add. No second diode or unvalidated sharing network was
+added. The earlier replacement is therefore a candidate requiring a deliberate
+protection decision, not a released robustness fix for unknown motor loads.
+
+Retaining a large-TVS footprint as a build/rework option is possible, but
+that is distinct from approving both parts populated. A coordinated clamp
+needs a defined surge current/duration and supply impedance. Sustained motor
+energy must return to a battery/BMS able to accept it or a sized braking path;
+adding a second surge diode does not qualify that behavior. The >=30 A pack
+rating describes source capability, not an allowed TVS or PCB load current.
+Keep the existing successful layout while resolving the local protection
+choice. No claim of 32 V/full-current or arbitrary-peripheral qualification
+is made by these static checks.
+
+FRESH CHECKS
+
+ERC 0 violations including warnings. DRC 0 errors, 0 unconnected items,
+0 schematic parity discrepancies. 19 existing lib_footprint_mismatch warnings
+remain disclosed. No constraints or severities changed. Full board bytes,
+CPL bytes and BOM bytes are unchanged in this audit. Prior 751 pin/net and
+77 functional checks continue to apply to the identical saved PCB/source.
+157x105 mm, four layers, existing routing/branding/connector locations retained.
+The actual user's JLC order/cart is not accessible from this workspace; final
+manufacturer placement approval cannot be inferred from the supplied old renders.
+
+FILES
+
+placement-overlays.html: 90 supplier/native overlay panels (all connectors,
+plus each distinct SKU/rotation).
+placements.csv / placements.json: every placement, pin-center residual,
+source evidence, mapping and exception.
+export-comparison.json: all 13 Gerber/drill files match the prior candidate.
+Fresh ERC/DRC and source/package hashes included. Manufacturing files remain
+review candidates until the protection and relay assembly issues are resolved.
+
+PRIMARY REFERENCES
+https://www.ti.com/lit/ds/symlink/tvs3300.pdf
+https://www.ti.com/lit/ds/symlink/drv8701.pdf
+https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smcj_datasheet.pdf.pdf
+https://e2e.ti.com/support/interface-group/interface/f/interface-forum/907713/tvs3300-using-tvs3300-for-10-350us-surge-protection-applications
+https://components.omron.com/us-en/system/files/2025-01/datasheet_pdf/K100-E1.pdf
+Supplier SVG source URLs: supplier/downloads.json and archived product HTML.

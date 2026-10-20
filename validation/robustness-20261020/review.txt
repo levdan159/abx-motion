@@ -1,0 +1,160 @@
+ABX-Motion V1.1 — incremental robustness revision and manufacturing review
+20 October 2026
+
+RESULT
+
+Static checks pass. This is a prototype fabrication candidate, subject to
+assembler pin-1/polarity approval. It is not a qualification of arbitrary
+motors, unrestricted regenerative energy, or the printed continuous-power
+targets. The intended supply is conventional 7S lithium ion (29.4 V full)
+with a 32 V normal ceiling. No first-power success guarantee is possible from
+CAD checks alone. The changes below address specific identified weaknesses
+while preserving the completed board.
+
+CHANGES MADE
+
+1. Added R313/R413, 1k / 1% / 0603 / C21190, from each current-sense ADC net
+   to GND. Existing R304/R404 remain 1k in series, forming 1:2 dividers.
+   A nominal 4.8 V amplifier output now yields 2.4 V at the ESP32 rather than
+   4.8 V. Even a conservative assumed 5.5 V SO bound gives 2.778 V with
+   worst-case 1% divider tolerances. The nominal ADC RC time constant is now
+   approximately 5 us. Hardware current-chopping references are unchanged.
+   R313 is at (171,90) mm; R413 is at (156.5,101.5) mm. New routes are short
+   branches into existing current-sense vias, with local ground-plane vias.
+
+2. R2 changed 100k -> 150k / C22807, retaining its footprint and every track.
+   R3 remains 10k: ADC voltage is now nominally VBAT/16. At 32 V it is 2.0 V;
+   at a 40 V clamped pulse it is 2.5 V. Worst-case 1% resistors give 2.993 V
+   even at 47 V. That calculation is input-divider margin, not permission
+   to operate the drivers at their 47 V absolute maximum.
+
+3. R6 changed 10k -> 22k / C31850 in the same footprint. At 32 V and a
+   nominal 2.1 V LED, dissipation falls from about 89 mW to 41 mW. LED current
+   becomes approximately 1.36 mA; brightness will be lower.
+
+4. D2 changed from SMCJ30A to TI TVS3300DRVR / C2863624, at the same
+   (182,63.5) mm center. The new local footprint follows TI's DRV0006A land
+   pattern: six 0.45 x 0.30 mm lands, 0.65 mm pitch, 1.95 mm column centers,
+   1.0 x 1.6 mm ground exposed pad. GND is pins 1/2/3/EP7; IN is pins 4/5/6.
+   All six leads are connected, with short local power/ground fanout and
+   three extra ground vias outside the solder lands. There are no new holes
+   in its exposed solder pad. The manufacturer datasheet is archived here.
+   A project-local symbol and matching generator definitions retain the
+   actual pin numbers. One existing spec-table string now says TVS3300.
+
+   The device has 33 V standoff and a maximum 40 V clamp under TI's specified
+   8/20 us test conditions, providing voltage headroom below DRV8701's
+   45 V recommended and 47 V absolute maxima. Board parasitic overshoot must
+   still be measured. This is pulse protection, not a sustained bus regulator.
+
+IMPORTANT PROTECTION TRADEOFF / SYSTEM LIMIT
+
+The new clamp trades the SMCJ package's greater long-pulse energy capability
+for tighter voltage clamping. Its SON rating is 35 A for 8/20 us, but ONLY
+3.5 A for the specified 10/1000 us waveform; DC breakdown current is limited
+to 10 mA. Those values must not be confused with a 30 A continuous rating.
+The former SMCJ30A was not guaranteed to protect the drivers' voltage limit.
+The new part fixes voltage coordination for its rated short-surge envelope,
+not an unknown motor braking-energy budget. It must not be used to absorb
+sustained motor regeneration or to clear a battery overvoltage through F1.
+
+Different peripherals are supported within electrical limits, not by assuming
+all driver carriers and mechanical loads are interchangeable. A regenerative
+load needs a battery/BMS capable of accepting the charging current, or a
+separately sized braking-energy sink that operates before damaging bus rise.
+Full-charge or BMS-disconnected braking needs particular attention. If the
+application requires the PCB alone to survive such cases with unspecified
+loads, this revision is NOT a complete solution; a specified braking/clamp
+design is still required. No onboard braking infrastructure was added.
+
+PRESERVATION AND FINAL CHECKS
+
+Fresh KiCad ERC: 0 violations including warnings.
+Fresh DRC: 0 errors, 0 unconnected items, 0 schematic-parity discrepancies.
+19 disclosed lib_footprint_mismatch warnings remain, identical in kind to
+the baseline. No rules or warning severities were weakened. The minimum
+track width / clearance remains 0.15 mm.
+
+All 751 schematic pin/net assignments match the saved PCB. The established
+77 functional net assertions pass for the eight limit inputs, two AUX
+outputs, expander address/interrupt and E-stop-gated independent enables.
+Every pre-existing pin/net assignment except the replaced D2 is preserved.
+All 2,774 original track/via objects are byte-equivalent in geometry, layer,
+width, drill and net. Only 28 local track/via objects were added. No existing
+route was ripped up. Every old component center remains fixed. All old pads
+are preserved except D2's deliberately replaced land pattern. Outline,
+connectors, StepStick sockets, logos and board settings remain unchanged.
+In1.Cu has no signal tracks. The four-layer 157 x 105 mm format is retained.
+
+The BOM has 66 unique supplier/footprint groups and 239 placements. The CPL
+has exactly the same reference set. Every unchanged CPL row is retained;
+R2/R6 values are updated, D2 is replaced and R313/R413 are added. Four C27438
+socket strips and their 1.0 mm holes remain correct. No temperature-sensor
+socket substitution was reintroduced. F1 remains the Keystone 3557-2 HOLDER;
+a separate appropriately rated physical blade fuse is required.
+
+Gerbers, separate PTH/NPTH drills, BOM, CPL, schematic PDF and both 3D renders
+were regenerated from the saved design. The fabrication archive contains
+exactly 11 layer files and 2 drills. The review bundle includes native source,
+local libraries, robustness_support.py, evidence, datasheet and source hashes.
+
+ASSEMBLER ACTION BEFORE ORDERING
+
+Supplier CAD access for the new clamp returned HTTP 403. Accordingly, do NOT
+treat its provisional CPL angle of 180 degrees as supplier-pad verified.
+The authoritative required placement is: viewed from the TOP of the PCB with
+the XT60 at the upper-right, D2 physical pin 1 is at the LOWER-RIGHT corner,
+(182.975,64.150) mm. The three LEFT leads (4/5/6) are +BATT; the three RIGHT
+leads (1/2/3) and center exposed pad are GND. See assembly-D2-pinmap.svg.
+Confirm the actual package pin-1 mark in JLC's placement editor and correct
+the editor rotation if necessary before approving assembly. Do not approve
+an old SMC diode or the former D2 footprint. Also retain U601 pin-1/keying
+checks and the usual XT60, diode and electrolytic polarity checks from the
+previous review. Current live JLC assembly stock/order state is not accessible
+to this local review. Catalogue identity does not establish stock or rotation.
+
+FIRMWARE / FIRST POWER
+
+Use VBAT = 16*Vadc nominally, calibrated for ADC and resistor errors. Use
+Ishunt = (2*Vadc - calibrated_SO_offset)/(20*0.010), with measured gain/offset
+calibration and appropriate ADC sampling/filtering. Sampling SO in recirculating
+brake mode does not measure winding current. No application firmware was
+created or claimed tested in this hardware pass.
+
+Before connecting a high-current battery without instrumentation, validate
+initial power at the intended voltage with controlled fault energy/current,
+motors and plug-in carriers disconnected. A 12 V bring-up is not required.
+Check rails, USB-only and dual-source behavior, sustained radio/LDO stability,
+expander cold/warm-reset defaults, all limits, outputs and E-stop. Then test
+one compatible unloaded motor/carrier at reduced current, observing bus
+overshoot, regenerative voltage and temperatures before adding load.
+
+Q1 conduction losses, LDO dissipation, capacitor ripple rating and shunt Kelvin
+accuracy remain hardware-qualification limits. The pack's >=30 A capability
+does not make this PCB a 30 A continuous controller. The 25 A fuse / nominal
+15 A chopping / 100 W printed targets are not measured board ratings.
+DRV8825 is the carrier pinout basis; TMC2209's 29 V operating maximum does
+not cover 7S full charge or the 32 V target. Confirm actual OLED mounting:
+23.30 mm board hole spacing / 23.80 mm below its header remains unchanged.
+Hardware E-stop gates drivers, but does not remove relay/AUX power. Limits
+remain dry-contact/3.3 V only. Preserve grounded PCA bits as inputs and
+initialize output latches on every boot, including warm MCU-only resets.
+
+FILES TO REVIEW / UPLOAD TOGETHER
+
+production/robustness-20261020/abx-motion-gerbers.zip
+production/robustness-20261020/abx-motion-jlcpcb-bom.csv
+production/robustness-20261020/abx-motion-jlcpcb-cpl.csv
+production/robustness-20261020/abx-motion-review-bundle.zip
+
+PRIMARY REFERENCES
+
+https://www.ti.com/lit/ds/symlink/tvs3300.pdf
+https://www.ti.com/lit/ds/symlink/drv8701.pdf
+https://www.lcsc.com/product-detail/C2863624.html
+https://www.lcsc.com/product-detail/C22807.html
+https://www.lcsc.com/product-detail/C31850.html
+https://docs.espressif.com/projects/esp-faq/en/latest/hardware-related/hardware-design.html#what-is-the-voltage-tolerance-of-gpios-of-esp-chips
+
+Detailed evidence: audit.json, erc.json, drc.json, netlist.xml,
+sensing-changes.json, clamp-changes.json, manifest.json and datasheets/tvs3300.pdf.

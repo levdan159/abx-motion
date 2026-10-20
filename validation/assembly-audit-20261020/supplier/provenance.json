@@ -1,0 +1,464 @@
+[
+  {
+    "sku": "C14663",
+    "page": "https://www.lcsc.com/product-detail/C14663.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/f8151fdc728a41ebbc304e11d39e5437.svg?t=1785199256",
+    "local": "C14663-1.svg",
+    "sha256": "aa8a181389328035373985926eb78efeb864f9bcbf5166213e7c3e7c0139c5a0"
+  },
+  {
+    "sku": "C15850",
+    "page": "https://www.lcsc.com/product-detail/C15850.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/2ee8eb13a0124a108e622ce40c0c25a8.svg?t=1722013312",
+    "local": "C15850-1.svg",
+    "sha256": "ee2a5a02dbd849d289acc052e9c70d234419a20f2c4e83d2692c6f7a9046a9c9"
+  },
+  {
+    "sku": "C29823",
+    "page": "https://www.lcsc.com/product-detail/C29823.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/7bdec8012728462a85919a4d0d033579.svg?t=1742389239",
+    "local": "C29823-1.svg",
+    "sha256": "3e9618832a238577c7d78eda1c4b8f254e3b15cd792b9ba7224c6d5dac6adb8c"
+  },
+  {
+    "sku": "C1588",
+    "page": "https://www.lcsc.com/product-detail/C1588.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/f8151fdc728a41ebbc304e11d39e5437.svg?t=1698205597",
+    "local": "C1588-1.svg",
+    "sha256": "aa8a181389328035373985926eb78efeb864f9bcbf5166213e7c3e7c0139c5a0"
+  },
+  {
+    "sku": "C15849",
+    "page": "https://www.lcsc.com/product-detail/C15849.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/f8151fdc728a41ebbc304e11d39e5437.svg?t=1732101053",
+    "local": "C15849-1.svg",
+    "sha256": "aa8a181389328035373985926eb78efeb864f9bcbf5166213e7c3e7c0139c5a0"
+  },
+  {
+    "sku": "C57112",
+    "page": "https://www.lcsc.com/product-detail/C57112.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/f8151fdc728a41ebbc304e11d39e5437.svg?t=1701239953",
+    "local": "C57112-1.svg",
+    "sha256": "aa8a181389328035373985926eb78efeb864f9bcbf5166213e7c3e7c0139c5a0"
+  },
+  {
+    "sku": "C72499",
+    "page": "https://www.lcsc.com/product-detail/C72499.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/46471eb7c1f4441abf3e509b847487d3.svg?t=1742385093",
+    "local": "C72499-1.svg",
+    "sha256": "6456fb06e1e669dda79dc847be1c7bc9b83a33cddd875f67841f351f16bb56e2"
+  },
+  {
+    "sku": "C107136",
+    "page": "https://www.lcsc.com/product-detail/C107136.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/2ee8eb13a0124a108e622ce40c0c25a8.svg?t=1678238751",
+    "local": "C107136-1.svg",
+    "sha256": "ee2a5a02dbd849d289acc052e9c70d234419a20f2c4e83d2692c6f7a9046a9c9"
+  },
+  {
+    "sku": "C72480",
+    "page": "https://www.lcsc.com/product-detail/C72480.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/e639687977d3435d86c43a66dc16c6af.svg?t=1742385085",
+    "local": "C72480-1.svg",
+    "sha256": "e05039eab0ca06cca88f0e9f177897b7441496626bbc350fa2a9ce6623be842c"
+  },
+  {
+    "sku": "C12891",
+    "page": "https://www.lcsc.com/product-detail/C12891.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/7bdec8012728462a85919a4d0d033579.svg?t=1732099919",
+    "local": "C12891-1.svg",
+    "sha256": "3e9618832a238577c7d78eda1c4b8f254e3b15cd792b9ba7224c6d5dac6adb8c"
+  },
+  {
+    "sku": "C14643",
+    "page": "https://www.lcsc.com/product-detail/C14643.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/dd3cfd4941c4479cb7f2c598e6fde06c.svg?t=1735206911",
+    "local": "C14643-1.svg",
+    "sha256": "58791a913c94d2d4074f1df09592f8654a4a6ff16a5cad726b6945cd0dfc988e"
+  },
+  {
+    "sku": "C2863624",
+    "page": "https://www.lcsc.com/product-detail/C2863624.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/2fd3b96824b74067965fed5f1675aa2e.svg?t=1716195029",
+    "local": "C2863624-1.svg",
+    "sha256": "0229ce41841b0b1fd109bb7eee8b5983e218b9a9f387abc1e32db0eecbfa3d71"
+  },
+  {
+    "sku": "C78428",
+    "page": "https://www.lcsc.com/product-detail/C78428.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/a431816ae3864202a7b131e14a4ace45.svg?t=1709026804",
+    "local": "C78428-1.svg",
+    "sha256": "4c37747c22398222ac092b97fc4aaa26ed73c2989af4eb17c771565f37eba6e8"
+  },
+  {
+    "sku": "C8598",
+    "page": "https://www.lcsc.com/product-detail/C8598.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/bbf2d74717914929b5e52e3caa0392b2.svg?t=1716345901",
+    "local": "C8598-1.svg",
+    "sha256": "f052dffcecf33ad41adeea2f2ac65e0f162d365bc74d5b720675db19d8ef6314"
+  },
+  {
+    "sku": "C2128",
+    "page": "https://www.lcsc.com/product-detail/C2128.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/dd3cfd4941c4479cb7f2c598e6fde06c.svg?t=1733712008",
+    "local": "C2128-1.svg",
+    "sha256": "58791a913c94d2d4074f1df09592f8654a4a6ff16a5cad726b6945cd0dfc988e"
+  },
+  {
+    "sku": "C12624",
+    "page": "https://www.lcsc.com/product-detail/C12624.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/7335dfa67b564d7988d09a073a20aa42.svg?t=1729150251",
+    "local": "C12624-1.svg",
+    "sha256": "97c39d3730de9b428dc57712506952ce7fa307ebe21906e28dbc92cf57a0c434"
+  },
+  {
+    "sku": "C352820",
+    "page": "https://www.lcsc.com/product-detail/C352820.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/dba378600fb8499ba5c1c526381d2ebb.svg?t=1732874402",
+    "local": "C352820-1.svg",
+    "sha256": "c00fe7a5018b7d6b41436cb03e1698a92662f3d8ff8d7c1af5578e30839bb61c"
+  },
+  {
+    "sku": "C2984676",
+    "page": "https://www.lcsc.com/product-detail/C2984676.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/c74a5ddd0add4500b745ecf0d59ab737.svg?t=1756230621",
+    "local": "C2984676-1.svg",
+    "sha256": "6d7af5b76884c94e1aa24d91838e7a80166643654bd09470841442f89f57de66"
+  },
+  {
+    "sku": "C20798",
+    "page": "https://www.lcsc.com/product-detail/C20798.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/c74a5ddd0add4500b745ecf0d59ab737.svg?t=1704422704",
+    "local": "C20798-1.svg",
+    "sha256": "6d7af5b76884c94e1aa24d91838e7a80166643654bd09470841442f89f57de66"
+  },
+  {
+    "sku": "C151162",
+    "page": "https://www.lcsc.com/product-detail/C151162.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/c74a5ddd0add4500b745ecf0d59ab737.svg?t=1730974239",
+    "local": "C151162-1.svg",
+    "sha256": "6d7af5b76884c94e1aa24d91838e7a80166643654bd09470841442f89f57de66"
+  },
+  {
+    "sku": "C98733",
+    "page": "https://www.lcsc.com/product-detail/C98733.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/05accc143e0c48448ed64424c0bb6784.svg?t=1753426203",
+    "local": "C98733-1.svg",
+    "sha256": "883e3d1d681267cb13f81917ff02190e5bc8742cf95c7a7015a5d1faa0a3fce5"
+  },
+  {
+    "sku": "C8465",
+    "page": "https://www.lcsc.com/product-detail/C8465.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/2127145c93364200a59baa001c0fca39.svg?t=1727573215",
+    "local": "C8465-1.svg",
+    "sha256": "0d4f8ae092d54a689b2660808e7ce0ac0deaeea6b0412f269e2ffa00299866bc"
+  },
+  {
+    "sku": "C165948",
+    "page": "https://www.lcsc.com/product-detail/C165948.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/d556fcebb18d4647a249a7d49ea0c41d.svg?t=1757297676",
+    "local": "C165948-1.svg",
+    "sha256": "a1867cf5070def52b3ea6176c3553034adfb0024a618d27e19ccc1b50dc29b84"
+  },
+  {
+    "sku": "C566014",
+    "page": "https://www.lcsc.com/product-detail/C566014.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/82cb6e897cc0465fbed5e1712c2b9d9f.svg?t=1721209803",
+    "local": "C566014-1.svg",
+    "sha256": "05d4ac221ff961fea8f552104e6adaefc7c47de606dec2029212b4c1b3bfe044"
+  },
+  {
+    "sku": "C492401",
+    "page": "https://www.lcsc.com/product-detail/C492401.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/e6b180e1316a4d0690f78b72797504c2.svg?t=1741163718",
+    "local": "C492401-1.svg",
+    "sha256": "af584625328b2bddec366eccb269110f3f2f633fd0053765ab443bf38aeffb1f"
+  },
+  {
+    "sku": "C72334",
+    "page": "https://www.lcsc.com/product-detail/C72334.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/6f34dc26095642d5b9cc3f798b89f8cf.svg?t=1766727667",
+    "local": "C72334-1.svg",
+    "sha256": "00d6f3be70a97f0ab6733e16bd4b07bc87a3cb9c09f002926bef989b655eb0bb"
+  },
+  {
+    "sku": "C2718488",
+    "page": "https://www.lcsc.com/product-detail/C2718488.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/8f78b31c15d54ef69278fa188fb193ea.svg?t=1697189109",
+    "local": "C2718488-1.svg",
+    "sha256": "fa2438372f91b40504d88548b36778b169cfe968df8eaab4cdff16b92ee93e3f"
+  },
+  {
+    "sku": "C131339",
+    "page": "https://www.lcsc.com/product-detail/C131339.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/9c26eefbc9fa41238c429ab64a956037.svg?t=1744220029",
+    "local": "C131339-1.svg",
+    "sha256": "d7f674e0f9a91ce92bf28105a652b2062b3552765e37647362d27a4311c6e870"
+  },
+  {
+    "sku": "C116963",
+    "page": "https://www.lcsc.com/product-detail/C116963.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/635e0d46f6894553849c90bf3234d727.svg?t=1751091412",
+    "local": "C116963-1.svg",
+    "sha256": "fdce211e7fc0a800cf57fc39af531dd5c9f82f464b31f6bc8ee6f21b4fe25e80"
+  },
+  {
+    "sku": "C177243",
+    "page": "https://www.lcsc.com/product-detail/C177243.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/f5272fe0a0804ff48ea93ff7f6756040.svg?t=1722235212",
+    "local": "C177243-1.svg",
+    "sha256": "6990e5a74d9df0677f546a29d5cbd943ac481a47a55134456fe7d0aacf854b4d"
+  },
+  {
+    "sku": "C2287",
+    "page": "https://www.lcsc.com/product-detail/C2287.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/50dc3b6111d549ddb6686d77ab1ebdd8.svg?t=1729150216",
+    "local": "C2287-1.svg",
+    "sha256": "dd8475c72f672dec4cbbe201b5bc39e79a2d1d7a753b649f77a2ecd49919b92a"
+  },
+  {
+    "sku": "C2288",
+    "page": "https://www.lcsc.com/product-detail/C2288.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/7335dfa67b564d7988d09a073a20aa42.svg?t=1688451302",
+    "local": "C2288-1.svg",
+    "sha256": "97c39d3730de9b428dc57712506952ce7fa307ebe21906e28dbc92cf57a0c434"
+  },
+  {
+    "sku": "C2286",
+    "page": "https://www.lcsc.com/product-detail/C2286.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/5294e4298d7a4d9d966148b3893abd7c.svg?t=1778891420",
+    "local": "C2286-1.svg",
+    "sha256": "e5f5626e9fa53ad5141ecc034c8ca5fa3d05f8964c6d56fd27a5c29a54925a7d"
+  },
+  {
+    "sku": "C3289501",
+    "page": "https://www.lcsc.com/product-detail/C3289501.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/b4a5a219293a4699b9ff6608407d4633.svg?t=1732214718",
+    "local": "C3289501-1.svg",
+    "sha256": "f10484c5d8d5ae5fe37890e17379aa45710f6107c90533a7347082453a9929a7"
+  },
+  {
+    "sku": "C86513",
+    "page": "https://www.lcsc.com/product-detail/C86513.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/bbdded9929b7434e9b2eb36986393925.svg?t=1742838481",
+    "local": "C86513-1.svg",
+    "sha256": "68466854356cb82da3d85bb65189399f28111f02cfd07c7640964c5be75d4406"
+  },
+  {
+    "sku": "C20917",
+    "page": "https://www.lcsc.com/product-detail/C20917.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/bade90667a6e4731855e9a223387b8a6.svg?t=1742922124",
+    "local": "C20917-1.svg",
+    "sha256": "4cf8988ac25e44838397117d9f4fa5f92c6302ada82f5b71d240e9425135e82d"
+  },
+  {
+    "sku": "C25819",
+    "page": "https://www.lcsc.com/product-detail/C25819.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700721337",
+    "local": "C25819-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C22807",
+    "page": "https://www.lcsc.com/product-detail/C22807.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1723568488",
+    "local": "C22807-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C23186",
+    "page": "https://www.lcsc.com/product-detail/C23186.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1762842932",
+    "local": "C23186-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C25804",
+    "page": "https://www.lcsc.com/product-detail/C25804.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1704977706",
+    "local": "C25804-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C23162",
+    "page": "https://www.lcsc.com/product-detail/C23162.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1742060978",
+    "local": "C23162-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C21190",
+    "page": "https://www.lcsc.com/product-detail/C21190.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1730984720",
+    "local": "C21190-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C22787",
+    "page": "https://www.lcsc.com/product-detail/C22787.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700719264",
+    "local": "C22787-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C23138",
+    "page": "https://www.lcsc.com/product-detail/C23138.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1732256403",
+    "local": "C23138-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C25810",
+    "page": "https://www.lcsc.com/product-detail/C25810.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1743011310",
+    "local": "C25810-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C22984",
+    "page": "https://www.lcsc.com/product-detail/C22984.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700616908",
+    "local": "C22984-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C22859",
+    "page": "https://www.lcsc.com/product-detail/C22859.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700721920",
+    "local": "C22859-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C840621",
+    "page": "https://www.lcsc.com/product-detail/C840621.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/fb95bdea7e4c47178f8936f7bcf0994e.svg?t=1719554201",
+    "local": "C840621-1.svg",
+    "sha256": "79c3f9d56d44c1ad78fe352004184cdd86413ba9d524e3b739403227b30b063c"
+  },
+  {
+    "sku": "C844598",
+    "page": "https://www.lcsc.com/product-detail/C844598.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/b60f399a7a7e41848b2be1eb49c79141.svg?t=1744294019",
+    "local": "C844598-1.svg",
+    "sha256": "12b55ae76e8d8bfefb1fb5c9b616271c04892c74272029a975caa2adf6c9adb9"
+  },
+  {
+    "sku": "C25811",
+    "page": "https://www.lcsc.com/product-detail/C25811.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700721055",
+    "local": "C25811-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C25803",
+    "page": "https://www.lcsc.com/product-detail/C25803.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1713800144",
+    "local": "C25803-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C25962",
+    "page": "https://www.lcsc.com/product-detail/C25962.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1712858142",
+    "local": "C25962-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C22775",
+    "page": "https://www.lcsc.com/product-detail/C22775.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700720440",
+    "local": "C22775-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C31850",
+    "page": "https://www.lcsc.com/product-detail/C31850.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/398691f1f785460098bbe5ee6590333c.svg?t=1700721941",
+    "local": "C31850-1.svg",
+    "sha256": "6b1a20daf89203674f8f556ce57c9483a58dd97a2221f90d7b1dfbeb17aad5cb"
+  },
+  {
+    "sku": "C231329",
+    "page": "https://www.lcsc.com/product-detail/C231329.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/ae8401fad3d345eb87e9bb360bc4f571.svg?t=1743097596",
+    "local": "C231329-1.svg",
+    "sha256": "e013d3ee190cad194028cf3d93616000b14c771335610c05f827cecb6078aeee"
+  },
+  {
+    "sku": "C319040",
+    "page": "https://www.lcsc.com/product-detail/C319040.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/697743bfd2a44a359499d28225ceebaa.svg?t=1757385016",
+    "local": "C319040-1.svg",
+    "sha256": "d2b0b31889176be2fbfe330c3ec1cb3ac8ba31e7e89188ed84b109981f2c51bf"
+  },
+  {
+    "sku": "C1858395",
+    "page": "https://www.lcsc.com/product-detail/C1858395.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/ebe4f0fa8722453ca1294bacc7302acc.svg?t=1710234055",
+    "local": "C1858395-1.svg",
+    "sha256": "3ce93202b097683db96e6152c8720bb853a3c1b7250499267fce63380680197b"
+  },
+  {
+    "sku": "C51118",
+    "page": "https://www.lcsc.com/product-detail/C51118.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/7ec9305c6bfd40199d1dde43ba8e9df2.svg?t=1732275701",
+    "local": "C51118-1.svg",
+    "sha256": "2b641c5c6ddeaa095237caab66019f0b01c15143e7fea5f8285630dfe19496de"
+  },
+  {
+    "sku": "C7519",
+    "page": "https://www.lcsc.com/product-detail/C7519.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/9a066f903e65476fa74739d5e9b0ceb9.svg?t=1709545275",
+    "local": "C7519-1.svg",
+    "sha256": "a9d58369aa47497fa369bf4da1d91564a91fe19f39619b960e58ff9a8ca01432"
+  },
+  {
+    "sku": "C132550",
+    "page": "https://www.lcsc.com/product-detail/C132550.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/806a55eb4d3c40ab838f70f86785d85e.svg?t=1735284002",
+    "local": "C132550-1.svg",
+    "sha256": "63369423b4b41ea59b1c1b66fb9e40d8e3c2a463a59f1556b432bdc1402077b4"
+  },
+  {
+    "sku": "C2671361",
+    "page": "https://www.lcsc.com/product-detail/C2671361.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/806a55eb4d3c40ab838f70f86785d85e.svg?t=1677552908",
+    "local": "C2671361-1.svg",
+    "sha256": "63369423b4b41ea59b1c1b66fb9e40d8e3c2a463a59f1556b432bdc1402077b4"
+  },
+  {
+    "sku": "C2913204",
+    "page": "https://www.lcsc.com/product-detail/C2913204.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/40128f2916484a71b10e367662746d66.svg?t=1732011648",
+    "local": "C2913204-1.svg",
+    "sha256": "aada3652e1f367546ee91f39ee644dbbd6618714e9b9d759681d62bf3a86141c"
+  },
+  {
+    "sku": "C90964",
+    "page": "https://www.lcsc.com/product-detail/C90964.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/d56def05a535450289530ba9f929e422.svg?t=1718788237",
+    "local": "C90964-1.svg",
+    "sha256": "2f9e77281828cfc78f4b92e7d4518344bd21149253272ab40e815e2cf464cf71"
+  },
+  {
+    "sku": "C133541",
+    "page": "https://www.lcsc.com/product-detail/C133541.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/0f2364c02f094100b1b3205c9d829099.svg?t=1710235545",
+    "local": "C133541-1.svg",
+    "sha256": "b9789fecab249fb4cc868d805943f108fc15bb86c2ebf2620842d56fe0943991"
+  },
+  {
+    "sku": "C27438",
+    "page": "https://www.lcsc.com/product-detail/C27438.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/b716fa3700784db29b7ad404bc6e6844.svg?t=1772156594",
+    "local": "C27438-1.svg",
+    "sha256": "d09c51989c92932c7b6ee0814d431eb5c8c76cb152f8584afa32401fd7f5b6e8"
+  },
+  {
+    "sku": "C128392",
+    "page": "https://www.lcsc.com/product-detail/C128392.html",
+    "footprint_svg": "https://image.easyeda.com/component_svgs/prod/b23a3cd50ffb4bd580712ba1d52d77dd.svg?t=1713800808",
+    "local": "C128392-1.svg",
+    "sha256": "a4c1fab750b0ee510784d0ab45925545fbb3b6d05ceb6fbd71b7acafbc7b8da1"
+  }
+]

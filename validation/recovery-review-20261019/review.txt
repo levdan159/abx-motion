@@ -1,0 +1,241 @@
+ABX-Motion compact V1.1: independent review and recovery plan
+19 October 2026, Asia/Jerusalem
+
+DECISION
+
+Keep the compact architecture and recover the earlier compact PCB. Do not
+continue repairing the globally ripped-up board, enlarge the PCB, or restart
+the schematic. The main failure is in the routing workflow, not evidence that
+the six-connector addition cannot fit.
+
+This review did not modify the shared PCB, schematics, generators, libraries,
+project rules, manufacturing files, or Git history. It prepared isolated
+snapshots and a recoverable project copy. The recovery copy is NOT ready for
+fabrication: its remaining errors are listed below.
+
+FRESH CHECKPOINT COMPARISON
+
+All counts below come from new KiCad DRC runs with schematic parity checking,
+zone refill for checking, and all configured severities included. Missing
+connections and parity findings are separate from the errors column.
+
+Checkpoint                    Errors  Missing connections  Parity  Warnings
+Earlier compact snapshot          4           5               0       35
+GUI autosave                      3          44               0       34
+Broad-rip-up intermediate          0         136               0      159
+Broad-rip-up routed result       141          45               0      111
+Freshly extracted V1.0 Git tag     0           0              25       22
+
+The preferred compact snapshot is the board saved at 23:08 and captured in
+/tmp/abx-fix-20261019-231017. Its SHA-256 is
+8ec851d7639b256a545cc928b624a82d2242ff2cbd9337505cb07efa359bfab4.
+The current routed result was saved around 23:25. Earlier drc.json files must
+not be used as validation of that later board.
+
+The compact snapshot also returns the same four errors and five missing
+connections when a separate copy enforces 0.15mm global minimum track width
+and clearance. Existing rule severities match the release project. Zero
+In1.Cu signal tracks were found in the compact snapshot.
+
+The historical tag is not a fully self-consistent schematic/PCB recovery
+project: the fresh extraction has 25 parity findings, including PH/EN and
+IDRIVE discrepancies, missing/extra footprint instances, supply-net naming,
+and component values. Do not replace the updated schematic with the tagged
+schematic merely because the tag is called production. Use its copper as a
+regression reference, and use the matching compact snapshot for recovery.
+
+WHAT CAN BE KEPT
+
+The fresh revised schematic passes ERC with zero violations. Twenty separate
+functional netlist assertions passed, covering the following:
+- BACK is connected to ESP32 GPIO21; PCA9555 INT reaches GPIO36 through the
+  intended pulled-up interrupt net.
+- I2C SDA/SCL reach GPIO41/42, with the existing pull-ups.
+- All eight connector/pull-up/series-resistor/filter/expander input chains.
+- Both auxiliary command, pull-down, gate, low-side-switch and flyback paths.
+- Shared fused 5V feed and ground on the two auxiliary connectors.
+- Independent stepper command enables, pass-FET source/gate/drain mapping,
+  command-side and driver-side pull-ups, and both onboard/external enables.
+- E-stop sense, the R9 pull-down, expander address, power and unused pins.
+- DRV8701E PH/EN and configurable IDRIVE connections.
+
+These are connectivity assertions, not physical bench measurements.
+
+The compact snapshot has 250 footprints, versus 203 in the release PCB.
+The checked supply components, shunts, snubbers, fuse footprint, and OLED
+mounting-hole positions/values/footprint IDs are preserved. Exact geometry
+comparisons found no removed or added track/via items on the checked USB
+DP/DN, raw/fused input, buck switching, motor-output or shunt-positive nets
+relative to the release. This is why preserving this checkpoint is valuable.
+
+The single PCA9555 and six 3-pin connectors remain reasonable for a concept
+board. The inputs are dry-contact/3.3V logic interfaces, not 12/24V industrial
+sensor inputs. They implement firmware-read limits; there is no independent
+hardware overtravel latch in this revision. The E-stop path is separate.
+
+WHY THE ROUTING FAILED
+
+1. The new global removal rule uses every pad on the board and a fixed 0.25mm
+   threshold, despite normal net clearance being 0.15mm. Approximate pad
+   boxes/circumscribed geometry adds false positives. Consequently it removes
+   unrelated, previously legal routing far beyond the modified I/O area.
+2. The router only searches X=46.5..138mm. Removed motor and power routes
+   extend well to the right of that range. Endpoint coordinates are clamped
+   onto the limited search grid instead of being rejected as out of range.
+3. Most nets default to 0.22mm width. The latest board contains new 0.22mm
+   tracks on battery and motor-output nets, and its USB pair was rerouted as
+   independent ordinary signals. DRC connectivity does not establish current
+   capability or differential-pair quality.
+4. The router bypasses obstacle checking near endpoints. That is exactly
+   where neighboring pins, escape tracks, and vias need careful checking.
+5. Its via checker ignores same-net drill spacing. Electrical continuity does
+   not make overlapping mechanical drill holes acceptable.
+6. Stage 3 invokes Stage 2, which restores the V1.0 PCB before rebuilding.
+   Re-running it destroys board-only repair progress unless every correction
+   has also been encoded into the generator.
+7. The routing obstacle implementation still substitutes a hardcoded antenna
+   box and omits some copper/zone artwork geometry. Another blanket run is
+   not a dependable way to finish the few remaining connections.
+
+RECOVERY ORDER
+
+A. Stop all writers before any replacement of the live project. Preserve the
+   latest failed board, scripts, reports, and autosave as forensic checkpoints.
+   Do not run git reset --hard or a generation script as part of recovery.
+B. Open the isolated recovery-project supplied with this review. It contains
+   the earlier compact PCB and its matching current schematics, libraries and
+   models. Re-run DRC to establish the recorded four-error/five-open baseline.
+C. Freeze component placement while finishing the electrical repair. Keep the
+   six-connector bank, UI buttons, original power section and board outline.
+D. Fix the two actual copper conflict locations first:
+   - ENC2_A versus M1_MAX_IN around (65.8,114.22). Three reported findings
+     come from this one local conflict. Prefer a short revised expander escape
+     into free space, preserving the unrelated encoder route if practical.
+   - ENC2_B versus ENC1_A on B.Cu near (97.5,73.1). Repair the affected encoder
+     escape locally; do not rip up the encoder system or adjacent USB pair.
+E. Merge or relocate the three overlapping same-net via pairs, reconnecting
+   their incident tracks and checking drill spacing after each change:
+   ESP_BOOT (74.5,68.7)/(74.7,68.7);
+   M2_MIN_IN (66.9,114.88)/(66.7,114.9);
+   S2_MAX_IN (65.7,118.3)/(65.8,118.12).
+F. Finish the five missing connections: BTN_HOME/OK to the MCU, M1_MIN_RAW,
+   M2_MAX_IN, S1_MIN_IN and S1_MAX_IN. Use local, rule-checked routing; the
+   remaining work does not justify a complete automatic reroute. A few extra
+   signal vias are preferable to disturbing power or USB geometry. Preserve
+   In1.Cu as ground. Keep any In2 signal use local and inspect its power-plane
+   clearances after refill.
+G. Remove confirmed orphan stubs/vias only after connectivity is complete.
+   Save a checkpoint and fresh DRC after each local repair group. Do not count
+   a report with zero copper errors but remaining opens as a finished board.
+H. Correct labeling, then add final branding once routing is stable. Any gold
+   placement that changes copper must be followed by another zone refill/DRC.
+I. Audit and regenerate assembly/fabrication files from that final board. The
+   existing V1.0 production files do not include the 47 added footprints.
+
+LABELS, MECHANICS AND BRANDING
+
+The bottom pin legends are currently whole mirrored strings. That reverses
+their physical word positions relative to pad nets. Generate a separate label
+at each pad X position, then mirror each label individually. With the current
+connector orientation, the bottom view reads MX|G|MN and SW|G|5V from left to
+right. Pin 1 is physically MIN or 5V; do not change the wiring to match the
+incorrect legend. Apply individual pad alignment on the front too.
+
+Keep limit and output connector groups visibly distinct and mark 3.3V ONLY
+and 5V SHARED SUPPLY. The shared 500mA PTC is not a precise active current
+limiter, nor an independent 500mA allowance for each output. The two-row bank
+needs a real plugged-cable access check; empty connector courtyards alone do
+not prove finger/latch access. Check with StepStick modules and OLED fitted.
+
+The back logo is silkscreen only and can remain at its current location.
+Do not reserve a copper routing exclusion underneath ordinary silkscreen;
+keep its ink away from exposed pads/open vias. For the front, the central
+stepper gap is visually strongest but contains existing traces. To minimize
+recovery risk, the bottom-right blank area is the easier gold-logo option,
+subject to capacitor and screw/washer clearance. Use white AUTOBOTIX and
+ABX-Motion V1.1 text; do not move power components to accommodate artwork.
+Actual gold-colored exposed copper requires the corresponding board finish,
+such as ENIG; a gold-colored 3D preview does not choose the fabrication finish.
+
+The actual OLED hole geometry remains a mechanical qualification item. The
+preserved centers are (67.85,105.30) and (91.15,105.30), 23.30mm apart, not the
+23.00mm pattern described by the user. The header midpoint is (79.5,81.5),
+23.80mm above that row. Confirm with the purchased module or a dimensioned
+drawing before moving holes; generic SSD1306 module names are insufficient.
+
+ELECTRICAL ITEMS DISTINCT FROM ROUTING
+
+- SMCJ30A has 30V standoff and a specified 48.4V clamp at 31A. The DRV8701 VM
+  absolute maximum is 47V. Therefore this selection does not substantiate a
+  protected normal 32V input. Breakdown beginning at 33.3V is not a 33.3V
+  surge clamp. Preserve the component while recovering routing, but do not
+  interpret that preservation as electrical approval. Use a defined low-
+  voltage first-prototype test envelope, or redesign/validate coordination
+  before claiming 32V operation.
+- Q1's 18mOhm rating at the specified gate drive gives cold I-squared-R loss
+  of 1.8W at 10A and 4.05W at 15A. The 52A case-rated current does not rate
+  this PCB for that current. Monitor heating before increasing load.
+- Shunt sensing remains partly shared with the bridge current/ground copper.
+  The 3W shunt and wider sense trace do not establish Kelvin sensing. Inspect
+  dedicated SP and SN pickup locations before trusting full-current limiting.
+- AP2112 heating, bulk-capacitor ripple, motor regeneration and switching-node
+  overshoot still require bench characterization. The 5V rail is shared by
+  the MCU supply path and other loads; the new outputs do not add regulator
+  capacity. Keep initial loads small and watch regulator temperature/brownout.
+- A nominal 15A hardware chop setting is excessive for a casual small-motor
+  first test. Select a deliberately lower hardware limit for bring-up. PWM
+  duty or bench-supply current limiting alone does not establish the winding
+  current limit during recirculation and transients.
+- The new AUX F5 supplier code C70125 could not be independently verified in
+  this review. Confirm its actual manufacturer part, hold/trip currents,
+  voltage, package and footprint before placing an assembly order.
+
+FIRMWARE AND PROTOTYPE ACCEPTANCE
+
+No firmware project was found among the inspected source files. Hardware
+programmability and completed motion firmware are separate deliverables.
+
+For the present PCA9555 pin assignment, start with port 0 as inputs (config
+0xFF). Write port 1 output latch 0x0C before configuring its directions to
+0xF0: AUX commands low, stepper commands high/disabled, E-stop and grounded
+unused bits as inputs. Read the input registers and verify interrupts before
+allowing motion. This follows the device's separate output/config registers;
+power-on output latches default high even while pins are inputs.
+
+An ESP32-only reset does not itself power-cycle the expander. Test reset,
+reflashing and I2C failure with the expander previously commanding a load or
+enabled stepper. The hardware E-stop must work independently of those states.
+Avoid automatic motion on E-stop release or communications recovery.
+
+Implement direction-aware limits: block further travel into an active limit,
+allow deliberate slow retreat, and reject ambiguous/both-active states. NC
+contacts can make a disconnected cable look like a limit, if firmware is
+configured accordingly. Limit responses are still subject to I2C/firmware
+latency; begin homing slowly and do not equate this with hardware overtravel
+protection. Test E-stop on the actual external drivers, whose enable inputs
+must be compatible with the board's 3.3V active-low interface.
+
+Before assembly release: zero ERC violations, zero DRC errors, zero opens,
+zero parity findings, no overlapping drills, preserved protected-net geometry,
+reviewed warnings, and a pin/part/orientation audit. Match BOM/CPL reference
+sets and explicitly account for the physical StepStick socket rows. Export
+only one consistent plated/nonplated drill set. Record checksums and make no
+board edits between final validation and fabrication export.
+
+First bring-up after the board meets those checks: no motors/modules/loads,
+E-stop open, current-limited 12V supply, rail/current/temperature measurements;
+then USB programming, expander identity, every input/output, and E-stop tests.
+Only then add one low-current motor channel at a time. Characterize power
+margins separately before increasing voltage/current or connecting machinery.
+
+PRIMARY REFERENCES
+https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf
+https://www.ti.com/lit/ds/symlink/drv8701.pdf
+https://brightking.yageo.com/uploadfiles/file/tvs/2022062122285628567520.pdf
+https://www.vishay.com/docs/66963/sqj459ep.pdf
+https://www.aosmd.com/res/data_sheets/AO3400A.pdf
+https://jlcpcb.com/help/article/jlcpcb-surface-finish
+
+Detailed raw checks, manifests and the non-production recovery project are
+included alongside this report. The recovery copy has not yet had the local
+routing/label repairs applied and is not an assembly-ready release.

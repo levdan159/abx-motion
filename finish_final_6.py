@@ -773,6 +773,7 @@ def main():
     def nat_key(s):
         return [int(t) if t.isdigit() else t for t in re.split(r"(\d+)", s)]
 
+    assembly_comments = {'C8465': 'WJ500V-5.08-2P', 'C566014': 'B4B-XH-A-E(LF)(SN)', 'C492401': 'PZ254V-11-02P', 'C72334': 'WJ500V-5.08-3P-14-00A', 'C2287': 'KT-0603Y', 'C231329': 'B3U-1000P', 'C27438': '2.54-1*8P', 'C12624': 'KT-0603G'}
     bom_groups = {}  # (val, pkg, lcsc) -> [refs]
     for fp in board.GetFootprints():
         ref = fp.GetReference()
@@ -785,9 +786,11 @@ def main():
             if fld.GetName() == "LCSC":
                 lcsc = fld.GetText().strip()
         assert lcsc, f"Missing LCSC part number on {ref} ({val}, {pkg})"
+        val = assembly_comments.get(lcsc, val)
         if ref in ("U501", "U502"):
-            # Each StepStick socket uses 2x 8-pin female header strips (C2718489)
-            bom_groups.setdefault(("PinSocket_1x08", "PinSocket_1x08_P2.54mm_Vertical", lcsc), []).extend([f"{ref}_L", f"{ref}_R"])
+            # Each StepStick socket uses 2x C27438 female strips; 1.0mm drills.
+            assert lcsc == "C27438", "Wrong StepStick socket supplier code"
+            bom_groups.setdefault(("2.54-1*8P", "PinSocket_1x08_P2.54mm_Vertical", lcsc), []).extend([f"{ref}_L", f"{ref}_R"])
         else:
             bom_groups.setdefault((val, pkg, lcsc), []).append(ref)
 

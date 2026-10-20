@@ -1,0 +1,77 @@
+** Drc report for abx-motion.kicad_pcb **
+** Created on 2026-10-20T01:10:39 **
+** Report includes: Errors, Warnings **
+
+** Found 19 DRC violations **
+[lib_footprint_mismatch]: Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'
+    Local override; warning
+    @(67.8500 mm, 105.3000 mm): Footprint H5
+[lib_footprint_mismatch]: Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'
+    Local override; warning
+    @(91.1500 mm, 105.3000 mm): Footprint H6
+[lib_footprint_mismatch]: Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'
+    Local override; warning
+    @(101.0000 mm, 60.0000 mm): Footprint U3
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(121.5000 mm, 50.4000 mm): Footprint TP_5V1
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(127.0000 mm, 50.4000 mm): Footprint TP_3V3_1
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(146.0000 mm, 148.0000 mm): Footprint J505
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(149.0000 mm, 50.4000 mm): Footprint TP_CS2
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(197.0000 mm, 70.0000 mm): Footprint J102
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(143.5000 mm, 50.4000 mm): Footprint TP_CS1
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(197.0000 mm, 89.0000 mm): Footprint J301
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(50.0000 mm, 88.0000 mm): Footprint J207
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(116.0000 mm, 50.4000 mm): Footprint TP_BATT1
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(50.0000 mm, 71.0000 mm): Footprint J205
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(165.0000 mm, 148.0000 mm): Footprint J506
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(138.0000 mm, 50.4000 mm): Footprint TP_GND2
+[lib_footprint_mismatch]: Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'
+    Local override; warning
+    @(197.0000 mm, 119.0000 mm): Footprint J401
+[lib_footprint_mismatch]: Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'
+    Local override; warning
+    @(132.5000 mm, 50.4000 mm): Footprint TP_GND1
+[lib_footprint_mismatch]: Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'
+    Local override; warning
+    @(165.0000 mm, 80.0000 mm): Footprint U301
+[lib_footprint_mismatch]: Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'
+    Local override; warning
+    @(165.0000 mm, 106.0000 mm): Footprint U401
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

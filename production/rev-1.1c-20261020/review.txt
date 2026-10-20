@@ -1,0 +1,164 @@
+ABX-Motion Rev 1.1c — final design robustness review
+20 October 2026
+
+RESULT
+
+The design checks pass after a small current-limit reduction. This is NOT a
+powered robustness-test pass: no physical motor, stall, short, thermal or
+regeneration test was performed. The saved CAD is a prototype fabrication
+candidate; physical qualification requires the first boards. Confirm relay
+alignment with the assembler before assembly. Full-power operation and the
+return-energy/protection envelope remain unqualified until bench testing.
+The matching candidate is production/rev-1.1c-20261020/.
+
+D2 COPPER AREA
+
+The broad solder-mask-covered copper beside D2 is retained from the former
+SMC diode layout and connected to the local power/ground paths. It is not
+an enlarged exposed solder land or stencil aperture. The new package has
+its own matching contacts and paste openings. Retain this copper; cosmetic
+shrinking is unnecessary and does not improve the clamp energy rating.
+
+ACTUAL FIX
+
+R302/R402 change from 30k / C22984 to 12k / C22790 (UNI-ROYAL 0603WAF1202T5E,
+12k,1%,100mW,75V,0603). R301/R401 remain 18k; shunts remain 10 mΩ/3W.
+VREF becomes nominal 1.92V; with gain 20 and 50mV typical offset, current
+chopping is 9.35A nominal instead of 14.75A. The current loop remains the
+existing DRV8701 hardware loop; ADC scaling and topology are unchanged.
+No components were moved and no tracks, vias, holes or pads were changed.
+Revision text/title blocks and the rear chop-current legend are updated to
+Rev 1.1c /9.4A to identify the changed build. No second TVS was added.
+
+WHY THIS HELPS
+
+For the user's two 150W electrical/one-second motor peaks, combined input is
+300W: approximately 12.5A at 24V,10.20A at 29.4V,9.375A at 32V before controller
+losses. These are bus currents. Motor winding current may be higher under PWM.
+The old 15A nominal chopping setting allowed considerable extra startup/stall
+stress. Reducing the hardware threshold lowers that stress and shunt heating.
+This is not a150W power limiter and may reduce available torque for a low-
+voltage motor operated through PWM. It does not establish continuous ratings.
+
+ANALYTICAL CORNERS — ESTIMATES, NOT GUARANTEED MOTOR-CURRENT LIMITS
+
+64 parameter combinations per resistor selection (128 total): AVDD 4.4–5.2V,
+gain 18–22, divider/shunt initial tolerances 1%, offset model 0–250mV.
+TI specifies offset 50mV typical/250mV maximum without a minimum; zero is a
+modelling floor here. Do not treat this sweep as a guaranteed device bound.
+
+                     Nominal I    Static-model range    Max shunt power
+Old 18k/30k           14.75A        11.16–18.37A           3.342W
+New 18k/12k            9.35A         6.70–11.81A           1.381W
+
+The old model can exceed the shunt's nominal 3W rating; the new model provides
+more margin. This excludes resistor temperature drift, ground/Kelvin errors,
+current-ramp overshoot and thermal derating. The PCB sense return remains a
+shared ground connection, not a newly implemented dedicated Kelvin pair.
+DRV8701 ignores current sense during 2us blanking. At 32V, an ideal no-back-EMF
+ramp adds about 0.64A over 2us with 100uH, but 6.4A with 10uH. Extra comparator/
+switching delay adds further overshoot. Unknown low-inductance motors and
+output shorts are therefore not made safe merely by choosing 12k resistors.
+
+At 12.5A total input, Q1 dissipates about 2.81W using 18 mΩ cold resistance;
+a2x-resistance sensitivity case gives 5.63W. These are loss calculations,
+not a predicted safe junction temperature. A bridge's two-FET cold conduction
+loss at 6.25A is about 0.258W using 3.3 mΩ per FET; PWM winding RMS current,
+switching loss, temperature and actual copper cooling still matter.
+The nominal 25mA gate-current setting charges the MOSFET's53nC maximum
+10V gate charge in about 2.12us as a simple estimate. Actual gate transitions
+and ringing must be observed; this is not a transistor switching simulation.
+
+FAILURE-MODE REVIEW
+
+Normal 32V supply: component voltage selections are consistent with the normal
+ceiling. The specified 40V short-pulse clamp is below the DRV8701's45V operating
+ceiling / 47 V absolute maximum and below 50V bulk/60V power FET ratings. Actual
+local overshoot is unmeasured. Do not infer protection for arbitrary pulses.
+
+Startup/stall: lower hardware chopping is implemented. Safe for unrestricted
+stall or prolonged repeated peaks is NOT established. Firmware must impose
+bounded commands and measured power/thermal limits; no such application
+firmware was implemented or tested here.
+
+Output short/gate fault: DRV8701 has OCP/predriver fault protection, but it
+retries after approximately 3ms. A fuse and the driver's own thermal shutdown
+are not guaranteed protection for Q1/external FETs during every battery short.
+No battery-powered intentional-short test is authorized by this procedure.
+
+Brake/stop: DRV8701E EN low turns on the low-side brake path; it is NOT a
+high-impedance disconnect. SO does not measure brake recirculating current.
+Opening J102 pulls nSLEEP low and provides the high-Z hardware disable path.
+A normal coast does not necessarily dump all motor energy into the bus;
+forced backdrive, reversal and a disconnected/non-accepting BMS need separate
+attention. The existing hardware stop does not cut relay/AUX power.
+
+Returned-energy case: if the motor specification also requires 150W returned
+per channel for 1s, that is 300J. The nominal 640uF motor bulk capacitors can
+store only 0.235J additional energy from 29.4 to 40V, or 0.184J from 32 to 40V.
+TVS3300 is specified for short surges, not a300J/one-second dump. A verified
+battery return path or sized external brake is required for that separate
+case. Two unequal TVS devices in direct parallel do not establish sharing.
+
+Hot-plug/dual power: cable inductance and inrush can create local ringing.
+Use precharge/limited fault energy for first power at the intended voltage.
+USB-only buck backfeed and reverse-polarity behavior with another source
+connected have not been characterized on hardware; do not deliberately
+reverse a high-current battery to find out. Validate normal USB-only,
+battery-only and correct-polarity dual-power behavior first.
+
+Reset/fault handling: EN has external pulldowns, fault lines have 3.3V pullups,
+and the expander defaults/net routing were checked. MCU warm reset does not
+reset the expander. Existing PCA output states can persist. A firmware fault
+latch is not interchangeable with the driver's automatic retry mechanism.
+
+Peripherals: this 150W case covers the two brushed DC channels. StepStick
+supply/current limits belong to the actual carrier; TMC2209 is unsuitable
+for 7S full charge. Limit inputs remain dry-contact/3.3V-only. No universal
+motor, current, mains or industrial input qualification is implied.
+
+FRESH ELECTRICAL/PLACEMENT CHECKS
+
+ERC:0 violations, including warnings.
+DRC:0 errors,0 unconnected items,0 schematic parity discrepancies.
+19 existing lib_footprint_mismatch warnings remain; no rules were weakened.
+751 schematic pin/net assignments match PCB and the prior validated netlist.
+150 functional assertions cover compact IO, enables/E-stop, DC power stages,
+charge-pump connections, shunts, VREF, gate-current settings and fault signals.
+All 2802 track/via objects match the prior saved PCB exactly. All pad positions,
+net assignments, drills, component locations and footprint rotations match.
+No signal traces on In 1.Cu. Board remains 157x105mm, four copper layers.
+
+BOM/CPL:66 groups,239 placements; only R302/R402 catalogue/value data changed.
+New resistor supplier SVG numbered pads match the unchanged CPL and native
+lands. All other supplier orientation corrections and connector centroids
+are retained byte-for-byte. D2/U601/PH directions remain supplier verified.
+K501/K502 supplier COM-to-coil-row geometry conflicts with Omron's2.00mm
+pattern. PCB follows Omron; the assembler must align real relays to that
+pattern rather than changing PCB holes to the incorrect supplier preview.
+
+NEXT TEST
+
+Follow bench-procedure.txt at the intended battery voltage with fault energy
+limited first; use 100ms low-energy commands before progressing toward 150W/1s.
+Use measured phase current, signed input power, gate/VM waveforms and component
+temperatures. Set up a verified return-energy path before high-speed stopping.
+Every physical test entry in bench-results.csv is presently NOT RUN. No
+bench measurements, operating-temperature result or no-failure guarantee
+has been invented. The hardware revision is saved locally and is not pushed
+to GitHub; committed branch heads were last verified atfc 0f218.
+
+PRIMARY REFERENCES
+
+TI DRV8701 datasheet: current regulation, SO limits, control table, faults,
+blanking and automatic retry, charge pump and voltage limits:
+https://www.ti.com/lit/ds/symlink/drv 8701.pdf
+TI CSD18540Q5B: RDS(on), gate charge and voltage limits:
+https://www.ti.com/lit/ds/symlink/csd 18540q5b.pdf
+Vishay SQJ 459EP: resistance/thermal/voltage data:
+https://www.vishay.com/docs/66963/sqj 459ep.pdf
+TI TVS3300 pulse ratings:
+https://www.ti.com/lit/ds/symlink/tvs 3300.pdf
+Resistor identity:
+https://www.lcsc.com/product-detail/C22790.html
+https://www.lcsc.com/product-detail/C840621.html

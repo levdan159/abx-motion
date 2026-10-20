@@ -1,0 +1,3 @@
+Reviewed aesthetic pass, 2026-10-20. NOT FOR FABRICATION.
+4 existing copper errors, 5 existing missing connections, and 3 overlapping via-drill pairs remain.
+See review.txt and the final DRC/ ERC reports in the archive root.

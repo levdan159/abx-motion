@@ -1,0 +1,4 @@
+This is the compact checkpoint BEFORE broad rip-up. NOT FOR FABRICATION.
+It has 4 DRC errors, 5 missing connections and 3 overlapping via pairs.
+See ../review.txt and ../repair-brief.txt. No repair has been applied yet.
+Unsafe generator/routing scripts are intentionally excluded from this project.

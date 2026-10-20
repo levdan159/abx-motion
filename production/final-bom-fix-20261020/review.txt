@@ -1,0 +1,63 @@
+ABX-Motion V1.1 — JLCPCB matching / StepStick socket correction
+20 October 2026
+
+Use production/final-bom-fix-20261020/. Upload all three matching files:
+  abx-motion-gerbers.zip
+  abx-motion-jlcpcb-bom.csv
+  abx-motion-jlcpcb-cpl.csv
+The earlier final-rear-gold package contains the wrong socket supplier code.
+
+CORRECTIONS
+The StepStick socket row incorrectly specified C145755, displayed by JLCPCB
+as TC622VOA (SOIC-8 temperature sensor). This was an exported BOM/source-field
+error; it was not a valid socket or a simple stock shortage. Earlier checks
+verified references and geometry, but missed this part-identity error.
+
+U501/U502 now select BOOMELE C27438, MPN 2.54-1*8P: straight, top-entry,
+1x8 female socket, 2.54mm pitch, 8.5mm housing height, 3.2mm solder tails.
+Four strips are needed per board: U501_L/U501_R/U502_L/U502_R.
+The supplier drawing specifies 0.64 x 0.40mm tails and 1.0mm PCB holes.
+All 32 socket holes were enlarged from 0.8mm to 1.0mm. Copper pads remain
+1.6mm wide, leaving 0.30mm nominal annular width. Positions, pad sizes,
+nets and all tracks/vias were preserved. A project-local socket footprint
+and the two schematic instances/generator now agree with the physical board.
+CPL row centers and rotations are byte-identical to the previous export;
+these unkeyed individual socket strips are mechanically symmetric.
+
+The BOM is consolidated by exact supplier SKU and footprint: 80 rows become
+64, with all 237 placements preserved. Only the four socket placement SKUs
+change. Shared connector, yellow-LED and button function-label rows now use
+one catalogue-part row per SKU; green LEDs also use the catalogue MPN.
+This removes duplicate-SKU rows that prompted repeated-part confirmation.
+Any remaining JLCPCB warning still needs individual review. Catalogue identity
+and mechanical checks are not a guarantee of current JLC assembly stock.
+
+FRESH CHECKS
+ERC: 0 violations.
+DRC: 0 errors, 0 unconnected items, 0 schematic-parity discrepancies.
+19 existing stock-library mismatch warnings remain; no new socket warnings.
+All 1463 track segments and 198 vias unchanged.
+No signal tracks on In1.Cu. Electrical design rules unchanged (0.15mm minimum
+track width / clearance). Zone fills recomputed after changing the holes.
+Native source, BOM, CPL, Gerbers/drills, schematic PDF and renders are matched.
+The fabrication ZIP contains 11 layer files plus separate PTH/NPTH drills.
+
+BEFORE ORDERING / PROTOTYPE LIMITS
+Confirm U601 and connector orientation/keying, component polarity and socket
+fit in the assembler's preview. Check that the four socket strips are selected;
+do not approve a temperature sensor for these designators. Other unchecked
+rows need their displayed warning read and reviewed before selection.
+
+The unchanged OLED fit check remains: holes are 23.30mm apart and 23.80mm below
+the header row, whereas the earlier module description specified 23.0mm.
+Keep the existing spec-sheet silkscreen and rear copper logo unchanged.
+
+Start bring-up at current-limited 12V with motors disconnected. 32V/full-current
+operation remains unqualified: TVS/driver voltage coordination, Q1/LDO heating,
+current-sense routing and bulk-capacitor ripple require bench verification.
+Limit ports are dry-contact/3.3V only; auxiliary outputs share the 500mA PTC.
+Relays and auxiliary outputs remain powered when the hardware E-stop is open.
+
+SOURCE
+https://www.lcsc.com/product-detail/C27438.html
+Supplier drawing archived as C27438-drawing.pdf in the validation directory.

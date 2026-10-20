@@ -1,0 +1,11 @@
+{
+  "24V_two_150W_bus_A": 12.5,
+  "Q1_cold_loss_W_at_12_5A": 2.8125,
+  "Q1_loss_W_assuming_2x_cold_Rds_for_sensitivity": 5.625,
+  "Hbridge_two_FET_conduction_W_at_6_25A_using_3_3mOhm": 0.2578125,
+  "shunt_W_at_6_25A": 0.390625,
+  "gate_Qmax_10V_nC": 53,
+  "gate_nominal_25mA_charge_time_us": 2.1199999999999997,
+  "gate_drive_time_us": 2.5,
+  "scope": "Loss estimates, not junction-temperature qualification; use phase current rather than battery current under PWM. Switching losses are not included in conduction estimates."
+}

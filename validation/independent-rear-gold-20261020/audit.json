@@ -1,0 +1,22 @@
+{
+  "manifest_files_verified": 46,
+  "all_pads_tracks_vias_unchanged": true,
+  "rear_copper_polygons": 535,
+  "mask_polygons_match": true,
+  "rear_text_mirrored_silkscreen": true,
+  "ground_fill_clearance_at_least_mm": 0.2,
+  "BOM_groups": 80,
+  "matched_placements": 237,
+  "source_sha256": "e1f8f2d22bbcab3249c1c6cc9651cc647994e0839d8db9801f93779711c5c19e",
+  "fresh_DRC_errors": 0,
+  "fresh_unconnected_items": 0,
+  "fresh_parity_findings": 0,
+  "fresh_ERC_violations": 0,
+  "fresh_DRC_warnings": 19,
+  "fabrication_files_matched": 13,
+  "changed_layers": [
+    "abx-motion-B_Cu.gbl",
+    "abx-motion-B_Mask.gbs",
+    "abx-motion-B_Silkscreen.gbo"
+  ]
+}

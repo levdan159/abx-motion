@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.915mm" height="21.844mm" viewBox="3970.6 2957 109.9 86"><title></title><style type="text/css">
+*[layerid="1"] {stroke:#FF0000;fill:#FF0000;}
+*[layerid="2"] {stroke:#0000FF;fill:#0000FF;}
+*[layerid="3"] {stroke:#FFCC00;fill:#FFCC00;}
+*[layerid="4"] {stroke:#66CC33;fill:#66CC33;}
+*[layerid="5"] {stroke:#808080;fill:#808080;}
+*[layerid="6"] {stroke:#800000;fill:#800000;}
+*[layerid="7"] {stroke:#800080;fill:#800080;stroke-opacity:0.7;fill-opacity:0.7;}
+*[layerid="8"] {stroke:#AA00FF;fill:#AA00FF;stroke-opacity:0.7;fill-opacity:0.7;}
+*[layerid="9"] {stroke:#6464FF;fill:#6464FF;}
+*[layerid="10"] {stroke:#FF00FF;fill:#FF00FF;}
+*[layerid="11"] {stroke:#FFFFFF;fill:#FFFFFF;stroke-opacity:0.5;fill-opacity:0.5;}
+*[layerid="12"] {stroke:#FFFFFF;fill:#FFFFFF;}
+*[layerid="13"] {stroke:#33CC99;fill:#33CC99;}
+*[layerid="14"] {stroke:#5555FF;fill:#5555FF;}
+*[layerid="15"] {stroke:#F022F0;fill:#F022F0;}
+*[layerid="19"] {stroke:#66CCFF;fill:#66CCFF;}
+*[layerid="21"] {stroke:#800000;fill:#800000;}
+*[layerid="22"] {stroke:#008000;fill:#008000;}
+*[layerid="23"] {stroke:#00FF00;fill:#00FF00;}
+*[layerid="24"] {stroke:#BC8E00;fill:#BC8E00;}
+*[layerid="25"] {stroke:#70DBFA;fill:#70DBFA;}
+*[layerid="26"] {stroke:#00CC66;fill:#00CC66;}
+*[layerid="27"] {stroke:#9966FF;fill:#9966FF;}
+*[layerid="28"] {stroke:#800080;fill:#800080;}
+*[layerid="29"] {stroke:#008080;fill:#008080;}
+*[layerid="30"] {stroke:#15935F;fill:#15935F;}
+*[layerid="31"] {stroke:#000080;fill:#000080;}
+*[layerid="32"] {stroke:#00B400;fill:#00B400;}
+*[layerid="33"] {stroke:#2E4756;fill:#2E4756;}
+*[layerid="34"] {stroke:#99842F;fill:#99842F;}
+*[layerid="35"] {stroke:#FFFFAA;fill:#FFFFAA;}
+*[layerid="36"] {stroke:#99842F;fill:#99842F;}
+*[layerid="37"] {stroke:#2E4756;fill:#2E4756;}
+*[layerid="38"] {stroke:#3535FF;fill:#3535FF;}
+*[layerid="39"] {stroke:#8000BC;fill:#8000BC;}
+*[layerid="40"] {stroke:#43AE5F;fill:#43AE5F;}
+*[layerid="41"] {stroke:#C3ECCE;fill:#C3ECCE;}
+*[layerid="42"] {stroke:#728978;fill:#728978;}
+*[layerid="43"] {stroke:#39503F;fill:#39503F;}
+*[layerid="44"] {stroke:#0C715D;fill:#0C715D;}
+*[layerid="45"] {stroke:#5A8A80;fill:#5A8A80;}
+*[layerid="46"] {stroke:#2B937E;fill:#2B937E;}
+*[layerid="47"] {stroke:#23999D;fill:#23999D;}
+*[layerid="48"] {stroke:#45B4E3;fill:#45B4E3;}
+*[layerid="49"] {stroke:#215DA1;fill:#215DA1;}
+*[layerid="50"] {stroke:#4564D7;fill:#4564D7;}
+*[layerid="51"] {stroke:#6969E9;fill:#6969E9;}
+*[layerid="52"] {stroke:#9069E9;fill:#9069E9;}
+*[layerid="99"] {stroke:#00CCCC;fill:#00CCCC;}
+*[layerid="100"] {stroke:#CC9999;fill:#CC9999;}
+*[layerid="101"] {stroke:#66FFCC;fill:#66FFCC;}
+*[layerid="Hole"] {stroke:#222222;fill:#222222;}
+*[layerid="DRCError"] {stroke:#FAD609;fill:#FAD609;}
+*[fill="none"] {fill: none;}
+*[stroke="none"] {stroke: none;}
+path, polyline, polygon, line {stroke-linecap:round;}
+g[c_partid="part_pad"][layerid="1"] ellipse:not([c_padid]) {fill:#FF0000;}
+g[c_partid="part_pad"][layerid="1"]  polygon:not([c_padid]) {fill:#FF0000;}
+g[c_partid="part_pad"][layerid="1"]  polyline:not([c_padid]) {stroke:#FF0000;}
+g[c_partid="part_pad"][layerid="1"]  circle {fill:#FF0000;}
+g[c_partid="part_pad"][layerid="2"]  ellipse:not([c_padid]) {fill:#0000FF;}
+g[c_partid="part_pad"][layerid="2"]  polygon:not([c_padid]) {fill:#0000FF;}
+g[c_partid="part_pad"][layerid="2"]  polyline:not([c_padid]) {stroke:#0000FF;}
+g[c_partid="part_pad"][layerid="2"]  circle {fill:#0000FF;}
+g[c_partid="part_pad"][layerid="11"]  ellipse:not([c_padid]) {fill:#FFFFFF;}
+g[c_partid="part_pad"][layerid="11"]  polygon:not([c_padid]) {fill:#FFFFFF;}
+g[c_partid="part_pad"][layerid="11"]  polyline:not([c_padid]) {stroke:#FFFFFF;}
+g[c_partid="part_pad"][layerid="11"]  circle {fill:#FFFFFF;}
+g[c_partid="part_pad"][layerid] > circle[c_padhole] {fill: #222222;}
+g[c_partid="part_pad"][layerid] > polyline[c_padhole] {stroke:#222222;}
+g[c_partid="part_via"][layerid] > * + circle {fill: #222222;}
+g[c_partid="part_pad"] > polygon[c_padid] {stroke-linejoin: miter;stroke-miterlimit: 100;}
+g[c_partid="part_hole"] > circle {fill: #222222;}path, polyline, polygon {stroke-linejoin:round;}
+rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges;}
+</style>
+<rect x="3970.6" y="2957" width="109.9" height="86" fill="#000000" stroke="none"/><g c_origin="4018.996,3000" c_para="package`RELAY-TH_G5LE-14-XX`pre`U?`Contributor`&#x7acb;&#x521b;EDA&#x5b98;&#x65b9;&#x5c01;&#x88c5;&#x5e93;`link`https://item.szlcsc.com/164036.html`3DModel`RELAY-TH_G5LE-14-XX`" c_transformList=""  xmlns="http://www.w3.org/2000/svg"><g c_partid="part_pad" c_etype="pinpart" c_origin="3989.96,3000" layerid="11" number="1" net="" plated ="Y" c_shapetype="group" id="gge5" locked="0" c_rotation="0" c_width="9.0551" c_height="9.0551" title="" c_shape="ELLIPSE" pasteExpansion="0" solderExpansion="0.4"><ellipse cx="3989.96" cy="3000" rx="4.92755" ry="4.92755" layerid="8" stroke-width="0" c_padid="gge5" /><ellipse cx="3989.96" cy="3000" rx="4.92755" ry="4.92755" layerid="7" stroke-width="0" c_padid="gge5" /><ellipse cx="3989.96" cy="3000" rx="4.52755" ry="4.52755" stroke-width="0" /><circle c_padhole="1" cx="3989.962" cy="3000" r="2.9528" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4000,3023.62" layerid="11" number="2" net="" plated ="Y" c_shapetype="group" id="gge8" locked="0" c_rotation="0" c_width="9.0551" c_height="9.0551" title="" c_shape="ELLIPSE" pasteExpansion="0" solderExpansion="0.4"><ellipse cx="4000" cy="3023.62" rx="4.92755" ry="4.92755" layerid="8" stroke-width="0" c_padid="gge8" /><ellipse cx="4000" cy="3023.62" rx="4.92755" ry="4.92755" layerid="7" stroke-width="0" c_padid="gge8" /><ellipse cx="4000" cy="3023.62" rx="4.52755" ry="4.52755" stroke-width="0" /><circle c_padhole="1" cx="4000" cy="3023.622" r="2.9528" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4048.03,3023.62" layerid="11" number="3" net="" plated ="Y" c_shapetype="group" id="gge11" locked="0" c_rotation="0" c_width="9.0551" c_height="9.0551" title="" c_shape="ELLIPSE" pasteExpansion="0" solderExpansion="0.4"><ellipse cx="4048.03" cy="3023.62" rx="4.92755" ry="4.92755" layerid="8" stroke-width="0" c_padid="gge11" /><ellipse cx="4048.03" cy="3023.62" rx="4.92755" ry="4.92755" layerid="7" stroke-width="0" c_padid="gge11" /><ellipse cx="4048.03" cy="3023.62" rx="4.52755" ry="4.52755" stroke-width="0" /><circle c_padhole="1" cx="4048.03" cy="3023.622" r="2.9528" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4048.03,2976.38" layerid="11" number="4" net="" plated ="Y" c_shapetype="group" id="gge14" locked="0" c_rotation="0" c_width="9.0551" c_height="9.0551" title="" c_shape="ELLIPSE" pasteExpansion="0" solderExpansion="0.4"><ellipse cx="4048.03" cy="2976.38" rx="4.92755" ry="4.92755" layerid="8" stroke-width="0" c_padid="gge14" /><ellipse cx="4048.03" cy="2976.38" rx="4.92755" ry="4.92755" layerid="7" stroke-width="0" c_padid="gge14" /><ellipse cx="4048.03" cy="2976.38" rx="4.52755" ry="4.52755" stroke-width="0" /><circle c_padhole="1" cx="4048.03" cy="2976.378" r="2.9528" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4000,2976.38" layerid="11" number="5" net="" plated ="Y" c_shapetype="group" id="gge17" locked="0" c_rotation="0" c_width="9.0551" c_height="9.0551" title="" c_shape="ELLIPSE" pasteExpansion="0" solderExpansion="0.4"><ellipse cx="4000" cy="2976.38" rx="4.92755" ry="4.92755" layerid="8" stroke-width="0" c_padid="gge17" /><ellipse cx="4000" cy="2976.38" rx="4.92755" ry="4.92755" layerid="7" stroke-width="0" c_padid="gge17" /><ellipse cx="4000" cy="2976.38" rx="4.52755" ry="4.52755" stroke-width="0" /><circle c_padhole="1" cx="4000" cy="2976.378" r="2.9528" stroke-width="0" /></g><polyline points="4069.96 2967.52 4069.96 3032.48" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge20" /><polyline points="4070 2967.52 3981.102 2967.52" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge22" /><polyline points="3981.102 3032.48 3981.102 2967.52" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge24" /><polyline points="3981.1 3032.48 4069.96 3032.48" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge25" /><polyline points="3999.996 2982 4000 2990" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge28" /><polyline points="4000 3011 3999.996 3018" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge33" /><polyline points="3996 3000 4040 3000 4056 2995" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge37" /><polyline points="4047.996 2982 4048 2997 4050 2995" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge39" /><polyline points="4048 2997 4046 2995" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge41" /><polyline points="4047.996 3018 4048 3010 4046 3012" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge43" /><polyline points="4048 3010 4050 3012" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge45" /><polyline points="3981.102 2992.098 3987 2992.098" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge48" /><polyline points="3987 2992 3987 2995.442" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge50" /><polyline points="3987 3004.558 3987 3008" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge51" /><polyline points="3987 3008 3981.102 3008" stroke-width="1" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge53" /><path d="M 4000 2990 A 3.5 3.5 0 0 1 4000 2997" c_shapetype="line" fill="none" stroke-width="1" c_helper_type="arc2" net="" layerid="3" id="gge30" /><path d="M 4000 2997 A 3.5 3.5 0 0 1 4000 3004" c_shapetype="line" fill="none" stroke-width="1" c_helper_type="arc2" net="" layerid="3" id="gge31" /><path d="M 4000 3004 A 3.5 3.5 0 0 1 4000 3011" c_shapetype="line" fill="none" stroke-width="1" c_helper_type="arc2" net="" layerid="3" id="gge32" /></g></svg>

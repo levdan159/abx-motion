@@ -4,6 +4,7 @@
 	(generator_version "10.0")
 	(uuid "8cc4c544-296c-46c1-9686-d35546713905")
 	(paper "A3")
+	(title_block (title "ABX-Motion") (rev "1.1d"))
 	(lib_symbols
 		(symbol "power:+BATT"
 			(power)
@@ -2809,6 +2810,189 @@
 			(symbol "ABX_Logo_1_1")
 			(embedded_fonts no)
 		)
+			(symbol "abx:TVS3300DRVR"
+			(pin_names
+				(offset 0.5)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TVS3300DRVR"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "abx-footprints:TVS3300_DRV0006A_2x2mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tvs3300.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TVS3300DRVR_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TVS3300DRVR_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "EP_GND"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.0 1.0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "SHEET 1: BATTERY INPUT, REVERSE POLARITY PROTECTION, 5V BUCK & 3.3V LDO"
 		(exclude_from_sim no)
@@ -2970,26 +3154,8 @@
 		)
 		(uuid "55a82c56-91b4-53cc-90e9-c8cad0da9b05")
 	)
-	(wire
-		(pts
-			(xy 142.24 67.31) (xy 142.24 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db96385a-fcab-559f-812b-ba0d9a7c54ef")
-	)
-	(wire
-		(pts
-			(xy 142.24 74.93) (xy 142.24 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32f5e86f-632b-546c-86c4-e1ffabc4a5a4")
-	)
+	
+	
 	(wire
 		(pts
 			(xy 167.64 62.23) (xy 167.64 58.42)
@@ -4845,182 +5011,9 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 142.24 71.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "806de307-3498-5dd2-b41c-733bf062c79f")
-		(property "Reference" "D2"
-			(at 144.78 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide no)
-			)
-		)
-		(property "Value" "SMCJ30A"
-			(at 144.78 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMC"
-			(at 142.24 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4b50200-a0e0-524a-86ff-4b0e78041cf5")
-		)
-		(pin "2"
-			(uuid "96fbf771-eeda-5da3-9fa6-dc803633f64c")
-		)
-		(instances
-			(project "abx-motion"
-				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 142.24 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c56f9a03-71c5-5299-9e6e-255101917263")
-		(property "Reference" "#PWR011"
-			(at 142.24 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 142.24 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e4c1b8b6-111c-52b0-ba87-61160620a88e")
-		)
-		(instances
-			(project "abx-motion"
-				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 142.24 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73d74a29-55b8-5750-98c6-86199b8924e2")
-		(property "Reference" "#PWR012"
-			(at 142.24 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45006026-686e-585b-bf9e-11b0e8f1bfef")
-		)
-		(instances
-			(project "abx-motion"
-				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
+	
+	
+	
 	(symbol
 		(lib_id "Device:R")
 		(at 167.64 66.04 0)
@@ -5041,7 +5034,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "150k"
 			(at 170.18 67.31 0)
 			(effects
 				(font
@@ -7719,7 +7712,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "22k"
 			(at 43.18 212.09 0)
 			(effects
 				(font
@@ -9804,4 +9797,402 @@
 		)
 	)
 	(embedded_fonts no)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	(text "D2: 33V standoff; 40V max at specified 8/20us pulse. No continuous braking-energy rating."
+		(exclude_from_sim no)
+		(at 25.4 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ee65ab6-4498-5b28-8b69-9cfa874da1e9")
+	)
+	(wire
+		(pts
+			(xy 134.62 68.58) (xy 130.81 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c5904c6-fbff-5145-83ef-856a3880c8c6")
+	)
+	(wire
+		(pts
+			(xy 134.62 71.12) (xy 130.81 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1b8b33-e3bc-5f21-b8d1-96141cf7c638")
+	)
+	(wire
+		(pts
+			(xy 134.62 73.66) (xy 130.81 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00717d07-b961-5d2d-aa3d-ff6e73c479a8")
+	)
+	(wire
+		(pts
+			(xy 130.81 68.58) (xy 130.81 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4479aab7-d1ff-50e5-b508-16ba65dedb6d")
+	)
+	(wire
+		(pts
+			(xy 130.81 68.58) (xy 130.81 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a599feec-60e9-5230-a46c-595df1c1edca")
+	)
+	(wire
+		(pts
+			(xy 149.86 68.58) (xy 153.67 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7a4f49-c86c-524f-9de5-ba48f706309d")
+	)
+	(wire
+		(pts
+			(xy 149.86 71.12) (xy 153.67 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eea5ddd8-0535-53a3-b35b-3e617e2dd6f0")
+	)
+	(wire
+		(pts
+			(xy 149.86 73.66) (xy 153.67 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5f55493-b8db-507d-a53d-63694a524a66")
+	)
+	(wire
+		(pts
+			(xy 153.67 68.58) (xy 153.67 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "078caa18-4416-55fc-b5ed-e8f594e291ff")
+	)
+	(wire
+		(pts
+			(xy 153.67 73.66) (xy 153.67 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da92ce9e-8293-523f-b525-31f7d0a792bf")
+	)
+	(wire
+		(pts
+			(xy 142.24 78.74) (xy 142.24 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "737afa1a-abca-5bc4-b200-3d09d79e89cf")
+	)
+	(symbol
+		(lib_id "abx:TVS3300DRVR")
+		(at 142.24 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "806de307-3498-5dd2-b41c-733bf062c79f")
+		(property "Reference" "D2"
+			(at 142.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide no)
+			)
+		)
+		(property "Value" "TVS3300DRVR"
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "abx-footprints:TVS3300_DRV0006A_2x2mm"
+			(at 142.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7630f3d3-2bb8-559d-afbf-275c8a71cd9a")
+		)
+		(pin "2"
+			(uuid "04e2a399-9342-5caf-b616-95d131d73300")
+		)
+		(pin "3"
+			(uuid "0d0f368e-4eb2-503b-a8d5-982a31535d89")
+		)
+		(pin "4"
+			(uuid "a2e05ad1-900e-5001-b7ac-e028e7983168")
+		)
+		(pin "5"
+			(uuid "13d2c6b2-73ed-5ef9-8ccd-46d8bb8d6d41")
+		)
+		(pin "6"
+			(uuid "33b47d05-fb88-5a7a-acad-0017a2865441")
+		)
+		(pin "7"
+			(uuid "06869fb8-ad38-5db2-a778-78eaa79610a4")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 130.81 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94274d5b-5640-5992-bf4b-88a3039deb3b")
+		(property "Reference" "#PWR9100"
+			(at 130.81 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 130.81 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40fc3c21-b17e-598b-ac22-d3a0eed5b312")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
+					(reference "#PWR9100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "481e2a48-222f-5d46-9837-723e28790920")
+		(property "Reference" "#PWR9101"
+			(at 153.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ede348a1-6a23-55a2-86bc-117da3229069")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
+					(reference "#PWR9101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2432674-bc58-587f-aa4c-65bc1115b530")
+		(property "Reference" "#PWR9102"
+			(at 142.24 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6390b25c-a5e7-56bf-9a1d-3606c447f85f")
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f"
+					(reference "#PWR9102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(junction
+		(at 130.81 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "177de66f-b511-5791-9b9f-cc82728a0172")
+	)
+	(junction
+		(at 153.67 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c7b3b83-4d32-5453-8184-16dbb7c24f90")
+	)
 )

@@ -1,0 +1,8 @@
+from pathlib import Path
+import shutil
+R=Path(__file__).resolve().parents[2];O=Path(__file__).resolve().parent;P=R/'production/rev-1.1d-20261020';P.mkdir(exist_ok=True);(P/'gerbers').mkdir(exist_ok=True)
+old=R/'production/rev-1.1c-20261020'
+for n in ['abx-motion-jlcpcb-bom.csv','abx-motion-jlcpcb-cpl.csv','placements.json','placements.csv','placement-overlays.html','placement-summary.svg','placement-summary.png','assembly-D2-pinmap.svg','bench-procedure.txt','bench-results.csv','current-corners.json','blanking-sensitivity.json','loss-estimates.json']:
+ shutil.copy2(old/n,P/n)
+f=R/'README.md';s=f.read_text().replace('**ABX-Motion Rev 1.1c**','**ABX-Motion Rev 1.1d**').replace('production/rev-1.1c-20261020/','production/rev-1.1d-20261020/')
+s+='''\n## Thermal layout revision — Rev 1.1d\n\nLocal net-specific thermal vias and backside copper spread heat from Q1\nand the motor bridge MOSFETs. A grounded top copper spreader connects the\nESP32 module centre pad to its surroundings, retaining its twelve existing\nplated thermal holes and antenna keepout. U2 gains a small grounded spreader;\nits SOT-23 package still limits continuous dissipation. Existing buck and\ngate-driver thermal arrays remain unchanged. No component positions, lead\npads, original routing, electrical values or connector orientations change.\nSee `validation/thermal-20261020/review.txt` for checked scope and limitations.\nMOSFET drain copper is electrically live; a common metal heatsink requires\nan electrically insulating thermal interface. Added vias are outside solder\nlands and tented on both faces. This is a heat-path improvement, not a\nmeasured temperature or continuous-current qualification.\n''';f.write_text(s)

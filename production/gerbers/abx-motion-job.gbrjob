@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.7-10.0.7~ubuntu24.04.1"
     },
-    "CreationDate": "2026-10-20T01:47:32+03:00"
+    "CreationDate": "2026-10-20T13:40:09+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "abx-motion",
       "GUID": "6162782d-6d6f-4746-996f-6e2e6b696361",
-      "Revision": "rev?"
+      "Revision": "1.1d"
     },
     "Size": {
       "X": 157.15,

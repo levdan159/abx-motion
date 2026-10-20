@@ -1,0 +1,16 @@
+{
+  "revision": "1.1b",
+  "label": "ABX-Motion Rev 1.1b",
+  "board_changes": [
+    "front revision text",
+    "rear revision text",
+    "rear spec-table header, font 1.05 to 0.95 mm",
+    "PCB title-block metadata",
+    "rear footprint description"
+  ],
+  "PCB_other_bytes_identical": true,
+  "schematic_changes": "title-block metadata only",
+  "git_local_HEAD": "fc0f218bbfa59e0c1e870612c8e356da72eb1b0a",
+  "git_remote_v1_1_final": "fc0f218bbfa59e0c1e870612c8e356da72eb1b0a",
+  "new_work_committed": false
+}

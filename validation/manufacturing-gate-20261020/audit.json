@@ -1,0 +1,215 @@
+{
+  "decision": "HOLD for direct 7S battery use with a 32 V operating target",
+  "review_scope": "Static source, netlist, layout, package and datasheet review; no hardware tests or live JLC order access",
+  "target": {
+    "chemistry": "Lithium ion, assumed conventional 4.2 V maximum per cell",
+    "series_cells": 7,
+    "full_charge_V": 29.4,
+    "requested_operating_ceiling_V": 32,
+    "battery_continuous_capability_A": 30,
+    "motor_load_and_stepstick_model": "Not supplied; battery capability is not board load"
+  },
+  "KiCad_version": "10.0.7",
+  "DRC_errors": 0,
+  "DRC_warnings": 19,
+  "DRC_warning_types": {
+    "lib_footprint_mismatch": 19
+  },
+  "unconnected_items": 0,
+  "schematic_parity_discrepancies": 0,
+  "ERC_violations": 0,
+  "schematic_pins_matched_to_PCB": 742,
+  "pin_parity_errors": [],
+  "BOM_groups": 64,
+  "BOM_unique_supplier_codes": 64,
+  "placements": 237,
+  "BOM_CPL_references_match": true,
+  "BOM_supplier_fields_match_saved_PCB": true,
+  "all_package_manifest_hashes_match": true,
+  "review_bundle_contains_current_PCB": true,
+  "gerber_zip_files": [
+    "abx-motion-B_Cu.gbl",
+    "abx-motion-B_Mask.gbs",
+    "abx-motion-B_Paste.gbp",
+    "abx-motion-B_Silkscreen.gbo",
+    "abx-motion-Edge_Cuts.gm1",
+    "abx-motion-F_Cu.gtl",
+    "abx-motion-F_Mask.gts",
+    "abx-motion-F_Paste.gtp",
+    "abx-motion-F_Silkscreen.gto",
+    "abx-motion-In1_Cu.g1",
+    "abx-motion-In2_Cu.g2",
+    "abx-motion-NPTH.drl",
+    "abx-motion-PTH.drl"
+  ],
+  "track_segments": 2299,
+  "vias": 475,
+  "In1_signal_tracks": 0,
+  "copper_layers": 4,
+  "stepper_net_widths_mm": {
+    "/Steppers_and_Relays/STEP1_A1": [
+      0.5
+    ],
+    "/Steppers_and_Relays/STEP1_A2": [
+      0.5
+    ],
+    "/Steppers_and_Relays/STEP1_B1": [
+      0.5
+    ],
+    "/Steppers_and_Relays/STEP1_B2": [
+      0.5
+    ],
+    "/Steppers_and_Relays/STEP2_A1": [
+      0.45
+    ],
+    "/Steppers_and_Relays/STEP2_A2": [
+      0.5
+    ],
+    "/Steppers_and_Relays/STEP2_B1": [
+      0.45
+    ],
+    "/Steppers_and_Relays/STEP2_B2": [
+      0.45
+    ]
+  },
+  "fuseholder_pad_drills_mm": [
+    1.8,
+    1.8,
+    1.8,
+    1.8
+  ],
+  "socket_drills_mm": [
+    1.0
+  ],
+  "calculations_nominal": {
+    "VBAT_divider": {
+      "upper_ohm": 100000,
+      "lower_ohm": 10000,
+      "ADC_at_29_4_V": 2.6727272727272724,
+      "ADC_at_32_V": 2.909090909090909,
+      "ADC_at_48_4_V": 4.3999999999999995,
+      "bus_at_3_6_V_ADC": 39.6
+    },
+    "proposed_VBAT_ratio_only_not_applied": {
+      "upper_ohm": 150000,
+      "lower_ohm": 10000,
+      "ADC_at_48_4_V": 3.025
+    },
+    "Q1_cold_loss_W_at_18_milliohm": {
+      "5": 0.44999999999999996,
+      "10": 1.7999999999999998,
+      "15": 4.05,
+      "25": 11.25,
+      "30": 16.2
+    },
+    "AP2112_loss_W": {
+      "at_0_3_A": 0.51,
+      "at_0_5_A": 0.8500000000000001
+    },
+    "snubber_loss_W_at_32_V_20_kHz": 0.045056,
+    "R6_LED_resistor_W_at_32_V_assuming_2_1_V_LED": 0.089401
+  },
+  "ADC_paths": {
+    "/VBAT_SENSE": [
+      {
+        "ref": "C1",
+        "pin": "1"
+      },
+      {
+        "ref": "R2",
+        "pin": "2"
+      },
+      {
+        "ref": "R3",
+        "pin": "1"
+      },
+      {
+        "ref": "U3",
+        "pin": "39"
+      }
+    ],
+    "/M1_CS": [
+      {
+        "ref": "C305",
+        "pin": "1"
+      },
+      {
+        "ref": "R304",
+        "pin": "2"
+      },
+      {
+        "ref": "TP_CS1",
+        "pin": "1"
+      },
+      {
+        "ref": "U3",
+        "pin": "6"
+      }
+    ],
+    "/M2_CS": [
+      {
+        "ref": "C405",
+        "pin": "1"
+      },
+      {
+        "ref": "R404",
+        "pin": "2"
+      },
+      {
+        "ref": "TP_CS2",
+        "pin": "1"
+      },
+      {
+        "ref": "U3",
+        "pin": "12"
+      }
+    ],
+    "/DC_Motor_1/SO_RAW": [
+      {
+        "ref": "R304",
+        "pin": "1"
+      },
+      {
+        "ref": "U301",
+        "pin": "11"
+      }
+    ],
+    "/DC_Motor_2/SO_RAW": [
+      {
+        "ref": "R404",
+        "pin": "1"
+      },
+      {
+        "ref": "U401",
+        "pin": "11"
+      }
+    ]
+  },
+  "source_hashes": {
+    "Industrial_IO.kicad_sch": "e9249670345a2336ab905a602a9dc39bcee57f148c39beb5804f9a9b86263a9e",
+    "MCU.kicad_sch": "e7be294c9def745950ed94c17ea34eae15e23d3f1bc6d66cbb5dc67384d1de0f",
+    "Motor_Channel.kicad_sch": "5389c1ae6d04eaed22cc3314de26b90c4aacd28b1788d20d89a0c45fbf3667f4",
+    "Power.kicad_sch": "b75fa9905e7649ce1725955c58d5b7588b0cd52cd827654218d5c9a462119bb3",
+    "README.md": "600793b31496c43beb757e3fcf793420b8d0327713166de37a9930c3b5a17283",
+    "Steppers_Relays.kicad_sch": "8841e845b280342fd609583780ef5c1a212a0edc7d68da39158869e52e9e6afc",
+    "abx-footprints.pretty/ABX_Logo_Gears_Gold.kicad_mod": "57f800998698f8497aad9b2b40f22445943f9e8f72a3145fc3e9ec7a2b7ce552",
+    "abx-footprints.pretty/ABX_Logo_Gears_SilkS.kicad_mod": "b82fd69f2b2fa0d48b380e68f115ab303760fb10233f94193725bd739486aebe",
+    "abx-footprints.pretty/ABX_Text_Gold.kicad_mod": "84d8f779ac7fda43d5fbcd75a01ecffcca9e61552dcef04d76e86b23996d3112",
+    "abx-footprints.pretty/ABX_Text_SilkS.kicad_mod": "26c7b752cdce75aa62714aa3fba5701294fb6c802bd267b2885ec613163c972c",
+    "abx-footprints.pretty/CP_Elec_10x10.2.kicad_mod": "204ac4196e033f953ff616d4f9ff38f5a4f7a0b2b6edd7b75b728e3f986323de",
+    "abx-footprints.pretty/CP_Elec_8x10.2.kicad_mod": "34f926602278148a639333af45084df5ab7e29f1ad72bfbfefcfa44dd349c7c6",
+    "abx-footprints.pretty/Fuseholder_Keystone_3557-2.kicad_mod": "74bfefd513df40b2a641782a1c5e69a0a86f842142febc76ae9628c834a3b094",
+    "abx-footprints.pretty/SW_DIP_SPSTx03_Slide_9.78x4.72mm_W8.61mm_P2.54mm.kicad_mod": "236cfa40e020a00f2b03ab6f5d22e1f61fc3092989a290d2cc130e1709ab2b3c",
+    "abx-footprints.pretty/StepStick_Socket_2x08_P2.54mm_D1.0.kicad_mod": "57285dbe982efad89cf16f6b14bebd401434f61289da257126d40d71b7f1d63d",
+    "abx-motion.kicad_pcb": "8232d7bba2b5abf080cd80e2154a0ccdae39effc00a000316c70908a19a7006b",
+    "abx-motion.kicad_pro": "c4f43086d6a92e714a946f09124775cbd9c802299f18251ab17cc1709f2d4cf9",
+    "abx-motion.kicad_sch": "7050cf1c4de2ed8de57cca6a00a55e81440ecb896aefdc555a5ea2838b3739eb",
+    "abx-symbols.kicad_sym": "94aa9792595cd525ceeaea343ad27522a55453bca2c38123823d6e7416a9f394",
+    "finish_final_6.py": "0219ecee0bed3f807502eb2582c5aa0be08bd9ea0510d8a7dbeb5a341f798b68",
+    "fp-lib-table": "1a56162efe16b4cacddc1e89cb3c807f7129eab726e33b406658221185564c1c",
+    "generate_schematics.py": "2440fd6b0c5624d977b04540617c02dea2c952e57fd1d180a0f9cb630cd51122",
+    "sym-lib-table": "565b6efa99f2177cd745351877363f4ab13185bcdb9bc954d92d75f16207fcf1"
+  },
+  "electrical_source_or_upload_files_modified_by_review": false,
+  "production_status_pointer_marked_HOLD": true
+}

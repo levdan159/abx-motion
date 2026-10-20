@@ -1,0 +1,156 @@
+ABX-Motion Rev 1.1c — low-risk bench acceptance at the intended battery voltage
+20 October 2026
+
+STATUS: PROCEDURE PREPARED; NO POWERED BOARD TESTS HAVE BEEN RUN.
+Use the matching Rev 1.1c Gerbers/BOM/CPL. Resolve the relay placement exception
+before assembly. Static review does not certify zero failures on a battery.
+
+OBJECTIVE
+
+Check two DC channels for 150 W electrical input per motor for one second,
+then simultaneous 300 W for one second. This excludes StepStick/peripheral
+loads and is an intermittent edge case. Use measured bus electrical input
+power for this test; motor-nameplate mechanical watts are different.
+Keep D2 as the specified short-spike clamp. Do not force it to absorb a
+one-second braking event. No deliberate output short, battery reversal or
+power-limit destruction test is part of this procedure.
+
+PREPARATION
+
+Use the intended 7S battery voltage, measured before connecting it, or an
+energy-limited source at that same voltage. There is no 12 V bring-up
+requirement. Normal bus voltage must remain <=32 V; 7S full charge is 29.4 V.
+Use correct-polarity keyed wiring and a suitable inline fuse close to the
+battery. F1 is a fuse HOLDER: the actual fuse must be fitted separately.
+The printed 25 A target is not a safe starting test current or a precision
+current limit. A fuse can allow damaging short pulses before it clears.
+
+Have a current-limited test fixture, bus-current measurement, oscilloscope
+and temperature measurement available. For a battery-only first power,
+100 ohm / 25 W in series, with motors/carriers/other loads disconnected and
+the MCU held in RESET, is a simple precharge/fault-energy check. At 32 V it
+limits a hard short to approximately 0.32 A (about 0.337 A with -5% resistance);
+resistor dissipation under that short is approximately 10–11 W. Mount the
+resistor so its heat cannot damage wiring. It is NOT a motor-running supply
+or a regenerative brake. If the board does not charge normally, disconnect
+and inspect; do not bypass the resistor to force it to start. A proper
+current-limited fixture may be used instead. Avoid repeated live hot-plugging.
+
+A source that limits outgoing current may NOT accept returning motor energy.
+Do not substitute an ordinary source-only bench supply, e-fuse or blocking
+adapter for a verified regenerative-energy path during powered stopping tests.
+No motor test progresses to high speed until that path is established.
+
+Power off before wiring changes; open J102 E-stop and disconnect motors,
+StepStick carriers, external drivers, relays' loads and AUX loads initially.
+Inspect the actual populated parts against the new BOM, especially R302/R402
+12k, D2 pin 1 lower-right, Q1, diode/electrolytic polarity and socket strips.
+Do not plug A4988/TMC2209 or arbitrary carrier types into the 32 V system.
+DRV8825-compatible pinout and voltage suitability must both be established;
+set the actual carrier's own current limit separately.
+
+MEASUREMENT RULES
+
+Measure VBAT at the bridge bulk capacitors and driver VM, not only at the
+battery connector. Probe gate-to-SOURCE voltage; use a differential or other
+suitably isolated probe for high-side gates and motor phase nodes. Do not
+attach an ordinary grounded scope clip to a switching phase/high-side node.
+Use a phase-current probe or suitable isolated shunt measurement for winding
+current. Input/battery current and winding current differ during PWM.
+DRV8701 SO measures driving shunt current; it does NOT measure recirculating
+brake current. SO and an inline power meter serve different purposes.
+
+INITIAL POWER — NO MOTORS
+
+1. Unpowered: confirm polarity, fuse continuity and absence of an obvious
+   supply short. Resistance readings must be allowed to settle as caps charge.
+   Verify assembly connections, especially the relay pin 1/coil-row geometry.
+2. Battery precharge/current-limited first power at the intended voltage with
+   RESET held and E-stop open. Confirm VBAT rises normally and no unexpected
+   current or heating occurs. Remove RESET only after those checks pass.
+3. Confirm 5 V within 4.85–5.20 V and 3.3 V within 3.20–3.40 V as conservative
+   commissioning targets; investigate cycling, overshoot or radio brownouts.
+   These are test acceptance targets, not replacement component specifications.
+   Complete the no-motor checks before bypassing the precharge resistor.
+4. In isolation test USB-only, battery-only, then correct-polarity dual power
+   through the energy-limited fixture. Measure whether USB backfeeds VBAT
+   through the buck; do not assume reverse-polarity protection covers an
+   externally backpowered bus. Do not deliberately reverse a high-current pack.
+5. Confirm expander 0x20, input states and AUX off. Configure outputs with
+   safe latch values BEFORE changing direction registers. Check MCU-only
+   reset as well as cold boot: the expander retains state through MCU reset.
+6. With all motor commands inactive, close/open J102. Opening must bring
+   DRV nSLEEP below 0.8 V and StepStick EN to disabled. Observe actual gate
+   shutdown timing. A 1 ms response is a commissioning ceiling, not a claimed
+   datasheet guaranteed limit. Relays/AUX remain powered by design.
+
+CONTROL PREREQUISITES BEFORE MOTOR POWER
+
+There is no tested application firmware in this repository. Do not run a
+simple PWM sweep as though it provides current, energy or timeout protection.
+Require boot-disarmed commands, a <=1 second bounded burst timer, conservative
+PWM ramp, calibrated ADC scaling, encoder/command sanity checks, and a latched
+fault state requiring an explicit re-arm. Set EN low on reset/fault and prevent
+new drive commands. On DRV8701E, EN low applies low-side BRAKING, not high-Z.
+Opening J102/nSLEEP is the hardware high-Z disable path.
+
+The driver automatically retries OCP/gate faults after about 3 ms. EN-low
+software alone cannot guarantee that every wiring fault is isolated because
+low-side brake FETs can still conduct. For a persistent fault, keep hardware
+E-stop open and disconnect power; do not allow repeated fault/restart cycles.
+The driver's thermal shutdown measures its own die, not Q1 or external FETs.
+Confirm the fault latch using low-energy logic fault injection first; that
+does not prove the bridge can survive a real battery output short.
+
+BOUNDED MOTOR TESTS
+
+7. Measure/record winding resistance and inductance where possible, secure one
+   unloaded motor, and use a low-current test setting/fixture at the intended
+   voltage. Start with 100 ms low-PWM commands. No instant direction reversal.
+   Observe current rise, both gate waveforms, VM/phase ringing and nFAULT.
+8. Confirm actual chopping current against the new 9.35 A nominal target using
+   an appropriate controlled load and energy-limited setup, NOT an abrupt
+   locked-rotor battery test. The static model estimate is 6.7–11.8 A and
+   excludes resistor temperature drift, PCB ground errors and current overshoot
+   during 2 us blanking/comparator/turn-off delay. Very low-inductance motors
+   can exceed it substantially. Measure; do not treat 9.35 A as a hard ceiling.
+9. Test each channel separately with a controlled mechanical/electrical load:
+   low load first, then approximately 25 W/250 ms,50 W/250 ms,100 W/500 ms,
+   finally 150 W/1 s. Stop after every step to inspect waveforms and temperatures.
+   Repeat only after components return within 5 C of their starting temperature;
+   allow at least 60 seconds between final-power test bursts initially.
+10. Once both channels independently pass, repeat the short progression with
+    both channels, up to 150 W each/1 s. Measure total input power/current;
+    at 24 V,300 W corresponds to 12.5 A before controller losses. Q1's cold
+    resistive loss at 12.5 A is about 2.81 W; this is not a temperature rating.
+    Use an appropriately sized fuse/fixture after lower-level tests pass;
+    do not interpret a25 A fuse as permission for 25 A continuous PCB current.
+11. Check low-energy stops first, then increase speed gradually while measuring
+    signed battery current and bus voltage. Coast, EN-low brake and direction
+    reversal have different behavior. Do not assume all consumed energy must
+    return to the bus, or assume the BMS will accept it at full charge.
+    Forced backdrive, a falling load or BMS disconnect can require an external
+    brake. A two-channel 150 W/1 s RETURNED-energy case is 300 J; the local
+    capacitors/TVS are not a qualified 300 J dump load. Do not test that case
+    until an energy sink with adequate pulse/repetition capability is installed.
+
+STOP / INVESTIGATE CRITERIA
+
+- Unexpected command, nFAULT assertion, repeated restart, wrong gate sequence,
+  shoot-through signature, unstable current, rail cycling or missed timeout.
+- VM reaching 40 V or above during commissioning, or any sustained bus rise
+  beyond 32 V: stop progressing and investigate.40 V is the short-pulse TVS
+  clamp specification, not a normal operating target or a guaranteed board
+  waveform. Use suitable hardware energy containment; software reaction alone
+  cannot protect against every fast overvoltage event.
+- Gate-to-source magnitude approaching 15 V, unexpected negative ringing,
+  or phase excursion approaching the DRV8701 absolute pin limits. Verify
+  probe referencing before interpreting these readings. Gate absolute rating
+  is 20 V; do not use the absolute maximum as an acceptance target.
+- During initial qualification, any power component case approaching 70 C,
+  rapid unexplained heating, increasing voltage drop or drifting readings.
+  Case temperature does not establish junction temperature; use a conservative
+  stop threshold and investigate before repeating bursts.
+
+Record measurements in bench-results.csv. Every row currently says NOT RUN.
+Passing the design audit does not populate or pass that physical test log.

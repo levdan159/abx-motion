@@ -1,0 +1,157 @@
+ABX-Motion V1.1 — final validation and improvement run
+20 October 2026 — KiCad 10.0.7
+
+VERDICT
+
+The completed compact layout passes the independent electrical/layout checks
+and is a reasonable basis for controlled, low-current 12 V prototype testing.
+This is not an unconditional production or 32 V/full-current qualification.
+Before ordering assembly, confirm supplier placement/polarity (especially the
+new expander/connectors and the corrected XT60/LED placements) and the actual
+OLED mounting geometry. No complete application firmware is supplied yet.
+
+FRESH RESULTS
+
+ERC: 0 violations, including warnings.
+DRC: 0 errors; 0 unconnected items; 0 schematic-parity discrepancies.
+19 warnings remain, all lib_footprint_mismatch; no warnings were suppressed.
+Explicit project-wide minimum clearance and track width are now 0.15 mm.
+The completed routes passed those same limits before the project was updated.
+77 functional netlist assertions passed; all 742 schematic pin/net assignments
+match the saved PCB. BOM and CPL represent the same 237 placements in 80 BOM
+groups, without duplicate designators or empty supplier fields.
+No signal tracks are on In1.Cu. Existing motor/power/USB routing was preserved.
+Four copper layers, masks, paste, outline and both drill files are unchanged
+from the completed routing export after excluding generation timestamps.
+Only front silkscreen Gerber geometry changed in this pass.
+
+The earlier six opens are FIXED in commit bd5a0e0. Reports in older recovery
+and aesthetic-WIP folders describe earlier boards and are not the current result.
+
+CHANGES APPLIED
+
+1. Rear LOGO2 verified as B.SilkS only (plus its non-manufacturing courtyard),
+   with no copper, mask openings or pads. Front gold gears and horizontal
+   AUTOBOTIX / ABX-Motion V1.1 text remain between the steppers.
+2. Trimmed the ESP32's silkscreen outline at the board edge and moved seven
+   off-edge connector pin-1 triangles to F.Fab. Square pad-1 copper and existing
+   per-pin connector labels remain. All nine silk/edge warnings are resolved.
+3. Replaced F5's unverified C70125 selection with Littelfuse 1206L050/15YR,
+   C151162: 500 mA hold at 20 C, 15 V, 1206. Updated schematic, PCB, generator,
+   placement-stage supplier mapping and BOM. The existing footprint is retained;
+   its 2.8 mm pad spacing / 1.25 x 1.75 mm lands suit this 1206 part. The
+   manufacturer's recommended lands are 1.0 x 1.8 mm with 1.8 mm inner gap.
+   This is a shared thermal PTC, not a regulated 500 mA output or independent
+   per-channel protection. Hold current derates with temperature.
+4. Set global minimum track width and copper clearance to 0.15 mm; previously
+   these were zero while default net clearance was already 0.15 mm.
+5. Corrected CPL angles for J1, LED201, LED202, LED_FLT1 and LED_FLT2 from
+   0 to 180 degrees using saved supplier pad data. XT60's keyed outline also
+   agrees with this rotation. The previous J1 placement swapped pad locations
+   by 7.2 mm; the corrected location error is below 0.001 mm. The corrected
+   LED pad-location discrepancy is below 0.04 mm. Confirm molded +/− and LED
+   cathodes in the assembler preview, not merely numeric pin labels.
+   No PCB copper or connector net assignment was swapped.
+6. Refreshed README with actual board dimensions, component selection, compact
+   I/O pinout, firmware defaults, stop behavior and prototype limitations.
+7. Regenerated matched Gerbers, separate plated/non-plated drills, schematic
+   PDF and top/bottom renders. The upload ZIP contains exactly 11 layer files
+   plus two drill files, without redundant combined drills or drill maps.
+
+An explicit invariant comparison confirms no component pad, net assignment,
+track, via, or drill was changed by this improvement pass. The source board
+hash and export hashes are recorded in manifest.json.
+
+REMAINING LIBRARY WARNINGS
+
+The warning references are H5/H6, U3, seven test pads, U301/U401 and the seven
+edge connectors whose pin-1 silkscreen triangles were moved to F.Fab. These
+embedded footprints contain intentional project-specific drill, test-pad,
+thermal/stencil or drawing changes relative to the installed stock libraries.
+Do not blindly replace them from the stock libraries to remove the warnings.
+The schematic/PCB footprint identities and pin nets agree. These library
+warnings are disclosed rather than excluded from DRC.
+
+ASSEMBLY AND MECHANICAL CHECKS STILL REQUIRED
+
+- U601 (C128392) is confirmed NXP PCA9555PW,118 / TSSOP-24, and J601-J606
+  (C131339) are JST B3B-PH-K-S(LF)(SN), 3 positions, 2 mm pitch. Live supplier
+  CAD endpoints returned HTTP 403, so their CPL angle guesses (270 and 180
+  degrees respectively) have not been independently pad-verified. Confirm
+  U601 pin 1 at its PCB upper-left and J601-J606 pin 1 at the MIN/+5V end;
+  check housing/key orientation as well as holes. AO3400A and B5819W cached
+  supplier pad patterns support the new MOSFET/diode orientations.
+- The raw CPL audit deliberately reports pad-center differences; these do
+  not by themselves prove a footprint error. Large drain/exposed pads can
+  contain several supplier lead positions. For example, the relay supplier
+  CAD differs from the official hole drawing, while the PCB's 2 mm common-
+  to-coil-row offset agrees with Omron's drawing. Do not blindly fit every
+  supplier pad center or change copper from the raw residual list.
+- Verify polarity for D2, electrolytics, Q1 and the actual XT60 part. Catalogue
+  C98733 is the XT60-M connector; have the assembler confirm the physical
+  termination fits these holes and their assembly process, or hand-fit J1.
+- Actual OLED holes H5/H6: (67.85,105.30) and (91.15,105.30) mm. Horizontal
+  spacing is 23.30 mm; hole row is 23.80 mm below the header row at Y=81.50.
+  The user's earlier module description specified 23.0 mm spacing and Y=104.0
+  holes. Those are different mechanical assumptions; a physical module or
+  authoritative drawing is needed to approve fit. Holes were left untouched
+  because MC096GW/JMD/EastRising names do not establish interchangeable PCBs.
+
+ELECTRICAL LIMITS AND TEST PLAN
+
+The compact limit inputs support dry contacts/3.3 V logic ONLY. There is no
+industrial 12/24 V front end. The eight channels have filtering but no universal
+external-input surge immunity. Use firmware debounce and direction-aware
+limits; permit a controlled move away from an active limit. A broken NC wire
+can be treated as a limit fault. I2C sensing is not hardware overtravel shutdown.
+
+U601 cold-start outputs are inputs. External 1k command pulldowns keep AUX gates
+off. Firmware must first configure ports as inputs, load Port 1 latch 0x0C,
+then set Port 1 configuration 0xF0. Port 0 stays 0xFF for sensing. Grounded
+Port 1 bits 5..7 must remain inputs. ESP32-only resets do not reset the
+expander; test warm resets and I2C failures, not just cold boot.
+
+Opening J102 drives the hardware stop net low, sleeps DC drivers and gates
+onboard/external stepper enables. The output pullups select disabled active-
+low enable levels. External driver voltage/current/polarity must match this
+3.3 V interface. Relays and AUX outputs are not cut by this loop. Confirm the
+stop behavior with the actual drivers and loads before attaching machinery.
+
+Start with current-limited 12 V, motors disconnected and drives disabled.
+Verify 5 V/3.3 V, USB programming, expander address/interrupt/defaults, all
+limit channels, each output and E-stop. Add one unloaded motor at low current;
+check current measurement, PWM transients, regeneration, ripple and heating.
+
+Before higher-power operation, resolve the known power qualification limits:
+SMCJ30A has 30 V standoff and a maximum specified pulse clamp of 48.4 V,
+above DRV8701's 47 V absolute maximum; normal 32 V plus motor regeneration is
+not a validated operating envelope. Q1 has meaningful I-squared-R losses
+(about 1.8 W at 10 A using 18 milliohm cold resistance), the shunt return
+is not a dedicated two-wire Kelvin path, bulk-capacitor ripple capability
+is unverified and AP2112 dissipates about 0.51 W at 300 mA. Do not interpret
+25 A fuse / 15 A chop / 100 W labels as measured continuous PCB ratings.
+No hardware power redesign was introduced during this local final pass.
+
+FILES
+
+production/final-20261020/abx-motion-gerbers.zip
+production/final-20261020/abx-motion-jlcpcb-bom.csv
+production/final-20261020/abx-motion-jlcpcb-cpl.csv
+production/final-20261020/abx-motion-review-bundle.zip
+
+Upload all three matching fabrication/BOM/CPL files after resolving the
+placement/mechanical points above. Standard production aliases are refreshed;
+older dated ZIPs are retained as historical revisions.
+
+SOURCES
+
+Littelfuse electrical, derating and land-pattern data:
+https://www.littelfuse.com/assetdocs/littelfuse-ptc-1206l-datasheet?assetguid=2b6a1515-d4ee-4c83-8bd4-152b4901b8f5
+Supplier identity: https://www.lcsc.com/product-detail/C151162.html
+https://www.lcsc.com/product-detail/C128392.html
+https://www.lcsc.com/product-detail/C131339.html
+https://www.lcsc.com/product-detail/C98733.html
+Omron official G5LE drawing:
+https://components.omron.com/us-en/system/files/2026-03/datasheet_pdf/K100-E1.pdf
+Prior electrical review evidence and manufacturer documents are retained under
+validation/recovery-review-20261019/ and validation/revision-1632-20261019_163616/.

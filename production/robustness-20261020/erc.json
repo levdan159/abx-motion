@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-20T12:05:49",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b",
+            "violations": []
+        },
+        {
+            "path": "/Power_Supply/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b/383ff9ef-8565-4c62-b17f-0912fd19804f",
+            "violations": []
+        },
+        {
+            "path": "/MCU_and_Encoders/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b/c81c9d86-49aa-496e-8f70-b852842466ca",
+            "violations": []
+        },
+        {
+            "path": "/DC_Motor_1/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b/92b8d963-008c-44ee-80dc-a4ddc2493923",
+            "violations": []
+        },
+        {
+            "path": "/DC_Motor_2/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b/40d2ba13-688c-4a36-ae2b-0996c3aab01d",
+            "violations": []
+        },
+        {
+            "path": "/Steppers_and_Relays/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b/4a23d317-7151-447b-a577-c4acfecd7f3f",
+            "violations": []
+        },
+        {
+            "path": "/Industrial_IO/",
+            "uuid_path": "/f9149098-3f23-438d-bdc2-2e278b5ca35b/5b34e428-8262-458c-b688-d5bdfede8a4e",
+            "violations": []
+        }
+    ],
+    "source": "abx-motion.kicad_sch"
+}

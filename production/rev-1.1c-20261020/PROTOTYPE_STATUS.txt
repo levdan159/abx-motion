@@ -1,0 +1,5 @@
+PROTOTYPE FABRICATION CANDIDATE — CAD checks pass.
+Confirm relay physical alignment with JLCPCB before assembly.
+Physical motor/thermal/fault tests require the first prototype boards and are NOT RUN.
+Full-power operation and return-energy/protection envelope remain unqualified.
+See review.txt and bench-procedure.txt; bench-results.csv remains NOT RUN.

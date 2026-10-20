@@ -1,0 +1,4 @@
+Rev1.1d prototype fabrication candidate: CAD checks pass.
+Confirm relay alignment before JLCPCB assembly.
+Powered motor/thermal/fault and return-energy qualification NOT RUN.
+Use the matching Rev1.1d Gerbers/BOM/CPL together.

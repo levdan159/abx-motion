@@ -1,0 +1,38 @@
+{
+  "release_status": "HOLD: protection choice unresolved; relay physical alignment requires assembler review",
+  "PCB_sha256": "e57538e01f44b124110bc905ded196e782818067a06e66247f0d8a76af4b034c",
+  "BOM_groups": 66,
+  "placements": 239,
+  "supplier_SKUs_with_current_footprint_SVG": 66,
+  "numbered_pad_orientation_and_copper_overlap_pass": 237,
+  "relay_rotation_agrees_but_supplier_origin_not_certified": [
+    "K501",
+    "K502"
+  ],
+  "D2_rotation_supplier_verified": true,
+  "U601_rotation_supplier_verified": true,
+  "J601_to_J606_rotation_supplier_verified": true,
+  "PCB_BOM_CPL_unchanged": true,
+  "fresh_ERC_violations": 0,
+  "fresh_DRC_errors": 0,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "DRC_warnings": 19,
+  "DRC_warning_types": {
+    "lib_footprint_mismatch": 19
+  },
+  "all_13_fabrication_files_match_prior_geometry": false,
+  "second_TVS_added": false,
+  "protection_notes": "Do not assume parallel TVS energy ratings add. No unconditional 32V or regenerative-energy qualification.",
+  "revision": "1.1b",
+  "revision_marking_changes_only": true,
+  "manufacturing_geometry_changes": [
+    "F.SilkS",
+    "B.SilkS"
+  ],
+  "copper_mask_paste_outline_drills_identical": true,
+  "git_local_HEAD": "fc0f218bbfa59e0c1e870612c8e356da72eb1b0a",
+  "git_remote_HEAD_verified": "fc0f218bbfa59e0c1e870612c8e356da72eb1b0a",
+  "current_changes_committed": false,
+  "current_changes_pushed": false
+}

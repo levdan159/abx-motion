@@ -1,0 +1,18 @@
+{
+  "erc_violations": 0,
+  "copper_clearance_errors": 0,
+  "missing_connections": 6,
+  "parity_findings": 0,
+  "drill_collision_findings": 0,
+  "drc_warnings": 30,
+  "warning_categories": {
+    "lib_footprint_mismatch": 12,
+    "silk_edge_clearance": 9,
+    "track_dangling": 3,
+    "via_dangling": 6
+  },
+  "board_sha256": "aa70c7635d81c4219ddaae253112b4ad8123a7c80e8e61e719e34d2816372a69",
+  "aesthetic_pass_added_errors_or_opens": 0,
+  "latest_routing_checkpoint_preserved": true,
+  "fabrication_ready": false
+}

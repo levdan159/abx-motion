@@ -1,0 +1,65 @@
+ABX-Motion Rev 1.1b — hardware revision marking / manufacturing review
+20 October 2026
+
+HOLD: protection choice unresolved; relay physical alignment requires assembler review.
+No second TVS was added. This revision identifier is not manufacturing approval.
+
+REVISION IDENTIFICATION
+
+Use ABX-Motion Rev 1.1b for the hardware. Rev identifies the PCB revision;
+firmware can use its own version numbering. This identifies the recent ADC
+and resistor robustness changes, socket/BOM corrections and assembly review.
+
+This pass updates the front and rear silkscreen model/revision labels and
+rear specification-table heading. The heading font is reduced from 1.05 to
+0.95 mm to retain its original table width. All text positions, logos and
+copper artwork are preserved. Matching rear-library text and six schematic
+title blocks now identify revision 1.1b. Generator revision metadata and
+README are updated without running legacy layout/regeneration scripts.
+
+FRESH VALIDATION
+
+ERC: 0 violations including warnings.
+DRC: 0 errors, 0 opens, 0 schematic parity issues; 19 existing library warnings.
+751 schematic pin/net assignments match the prior validated source exactly.
+Native PCB bytes are unchanged except the three text labels, header font,
+rear footprint description and title metadata. Schematic changes are title
+metadata only. Gerber comparison proves all copper, mask, paste, outline
+and drill geometry identical; only F.SilkS and B.SilkS geometry changed.
+BOM and CPL are copied byte-for-byte from the supplier-audited candidate:
+66 part-number groups, 239 placements. Placement directions and positions
+are unchanged. The complete supplier audit is included as a baseline report.
+
+GIT STATE CHECKED THIS PASS
+
+Branch: v1.1-final
+Local committed HEAD: fc0f218bbfa59e0c1e870612c8e356da72eb1b0a
+Live GitHub refs/heads/v1.1-final: same commit, verified read-only.
+The robustness changes, assembly audit, regenerated manufacturing files and
+Rev 1.1b markings remain local and uncommitted. They have not been pushed.
+Matching committed branch heads do not mean the current working board is
+backed up on GitHub. No commit, reset, branch rename or push was performed.
+
+OPEN MANUFACTURING ISSUES
+
+The small TVS3300 footprint and CPL direction are verified, but its 125 W
+10/1000 us pulse rating replaces the larger SMCJ family's 1500 W rating.
+The old SMCJ30A also had a 30 V standoff / 48.4 V maximum specified clamp,
+which did not establish the requested normal-32 V / DRV8701 protection.
+Direct parallel population does not guarantee sharing or add energy ratings.
+Protection selection for unknown motor energy remains unresolved.
+K501/K502 supplier CAD has a 2.55 mm COM-to-coil-row offset; manufacturer
+and PCB use 2.00 mm. Confirm real-relay alignment against Omron's drawing.
+See assembly-audit-baseline.txt for exact coordinates, limits and references.
+Do not order this review candidate until these issues are resolved.
+
+LATEST MATCHED FILES
+
+production/rev-1.1b-20261020/abx-motion-gerbers.zip
+production/rev-1.1b-20261020/abx-motion-jlcpcb-bom.csv
+production/rev-1.1b-20261020/abx-motion-jlcpcb-cpl.csv
+production/rev-1.1b-20261020/abx-motion-review-bundle.zip
+
+Older dated directories are retained as history. Standard active aliases now
+point to this review candidate, still on hold. Source and export hashes are
+recorded in manifest.json; source is included in the review bundle.

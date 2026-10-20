@@ -1,4 +1,4 @@
-# ABX-Motion V1.1 prototype controller
+# ABX-Motion Rev 1.1c prototype controller
 
 Compact **157 × 105 mm, four-layer** ESP32-S3 motion controller. This layout is
 intended for controlled prototype testing. Printed voltage, motor-power and
@@ -17,9 +17,9 @@ fuse ratings are design targets, not measured board ratings.
   carrier's pinout, enable polarity, voltage range and mode straps before use.
 - Two SPDT relays. Contact ratings do not establish PCB current capability.
 - XT60 input, Keystone 3557-2 fuse holder, reverse-polarity P-MOSFET,
-  SMCJ30A TVS, 5 V buck and 3.3 V LDO.
+  TVS3300 precision pulse clamp, 5 V buck and 3.3 V LDO.
 - Front and rear exposed-copper gears (`F.Cu`/`F.Mask` and `B.Cu`/`B.Mask`)
-  with white silkscreen text (`AUTOBOTIX` / `ABX-Motion V1.1`). Select ENIG for
+  with white silkscreen text (`AUTOBOTIX` / `ABX-Motion Rev 1.1c`). Select ENIG for
   gold artwork.
 
 ## Compact I/O
@@ -71,20 +71,93 @@ independent hardware overtravel interlock.
 
 ## Validation and first power-up
 
-See `validation/final-rear-gold-20261020/review.txt` for independent checks,
-assembly caveats and source hashes. Use matching files in
-`production/final-rear-gold-20261020/`; older timestamped exports describe older
-boards. Approve pin 1, polarity and connector mating direction in the
-assembler's placement review (especially `U601` and `J601–J606`).
+**Prototype status:** CAD checks pass for the saved prototype candidate.
+Powered motor, thermal and fault qualification requires the first boards;
+it is not a prerequisite for fabricating them. Confirm relay alignment with
+the assembler before assembly: the supplier CAD conflicts with Omron's hole
+drawing. Full-power operation and the return-energy/protection envelope
+remain unqualified. The small D2 TVS is not a braking-energy sink, and
+parallel TVS parts do not guarantee current sharing. See
+`validation/robustness-final-20261020/review.txt` and the matched files in
+`production/rev-1.1d-20261020/`. Supplier numbered-pad checks verify D2,
+U601 and all six PH connector directions.
 
-Start with a current-limited 12 V bench supply, motors disconnected and drivers
-disabled. Check rails, USB programming, expander defaults, all eight inputs,
-auxiliary outputs and E-stop before adding one unloaded motor at low current.
-Measure switching transients, rail ripple, current accuracy and temperatures
-before increasing voltage or load. SMCJ30A's specified surge clamp can exceed
-the DRV8701's 47 V absolute maximum, so 32 V operation is not qualified.
+The supply target is conventional 7S lithium ion (29.4 V fully charged), with
+a 32 V normal ceiling. First power at the intended voltage needs controlled
+fault energy/current, motors disconnected and drivers disabled. A 12 V test
+is not required. Check rails, USB programming, expander defaults, all eight
+inputs, auxiliary outputs and E-stop before adding one unloaded motor at low
+current. Measure switching transients, rail ripple, current accuracy and
+temperatures before increasing load. D2 is now TI TVS3300DRVR (C2863624):
+33 V standoff, 40 V maximum clamp under TI's specified 8/20 us surge conditions.
+The SON package rating is 35 A at 8/20 us but only 3.5 A at 10/1000 us. It is
+not a continuous braking load. Regenerative loads require a battery/BMS that
+accepts their charging current or a separately sized braking clamp. Do not
+substitute a TMC2209 carrier for 7S/32 V use; its operating maximum is 29 V.
 Q1 heating, LDO dissipation and motor-capacitor ripple capability also need
 measurement. Confirm the OLED module's physical hole/header dimensions before
 ordering (`H5`/`H6` M2 holes are at `23.30 mm` actual X spacing vs `23.0 mm`
 nominal silkscreen callout, `23.80 mm` below `J208`); SSD1306 module names do
 not guarantee a common hole pattern.
+
+Assembly BOM correction (20 October 2026): StepStick sockets use four C27438
+1x8 female strips, with 1.0 mm PCB holes per the supplier drawing. The earlier
+C145755 entry was a temperature sensor and must not be assembled. The current
+BOM has 66 supplier/footprint groups for 239 placements; repeated connector,
+LED and switch selections are consolidated. Upload the matching new Gerbers,
+BOM and CPL together. F1 is a holder; obtain the actual blade fuse separately.
+
+Robustness revision (20 October 2026): R2=150k above R3=10k gives a nominal
+**VBAT/16** ADC input. R313/R413=1k form 1:2 dividers with R304/R404; the MCU
+now measures **SO/2**. Firmware must calculate shunt current using
+`I = (2*Vadc - calibrated_SO_offset) / (20*0.010)` with actual gain/offset
+calibration. Rev 1.1c separately lowers the chopping threshold through
+R302/R402; the ADC divider does not set that threshold. R6=22k reduces battery
+LED heating. All pre-existing signal routing and component positions except
+D2's local footprint remain preserved. No application firmware is supplied.
+Use the saved native design and the matching package. Legacy stage/router
+scripts restore older checkpoints and must not be used to export this revision.
+
+## Hardware revision
+
+The current hardware identifier is **ABX-Motion Rev 1.1d**. `Rev` identifies
+the PCB hardware; firmware versions are separate. Rev 1.1b included the
+ADC input dividers, battery-divider/LED resistor updates, corrected socket
+selection and assembly audit. Relay alignment needs assembler confirmation;
+powered qualification follows prototype receipt. Revision lettering does
+not imply qualified operating ratings. Rev 1.1c additionally changes R302/R402 from 30k to 12k (C22790) to lower
+the DC current-chopping target from 14.75 A to 9.35 A nominal. The analytical
+static corner estimate is about 6.7–11.8 A, before temperature drift, ground-layout errors and blanking/propagation
+overshoot; it is not a guaranteed current bound. Layout and copper routing are unchanged. This may restrict torque
+for low-voltage motors operated through PWM; it is not a 150 W power limiter.
+
+## Motor robustness and bench acceptance
+
+Design case: two DC motors, each drawing up to 150 W electrically for one
+second; 300 W combined excludes StepStick loads and other peripherals. This
+is a proposed intermittent operating envelope, not a measured board rating.
+Motor winding current can exceed battery current under PWM. Current chopping
+does not protect arbitrary low-inductance motors, brake-mode currents or a
+sustained short. DRV8701 retries faults automatically; its die-temperature
+shutdown does not measure the external MOSFETs or Q1.
+
+Follow `validation/robustness-final-20261020/bench-procedure.txt` at the intended
+pack voltage with fault energy limited before connecting motors. No physical
+load, thermal, stall or regenerative test has yet been performed. Do not infer
+safety from the 25 A holder label or 150 W motor power. Use actual phase-current
+measurements, a timed stop and a verified return-energy path during testing.
+
+## Thermal layout revision — Rev 1.1d
+
+Local net-specific thermal vias and backside copper spread heat from Q1
+and the motor bridge MOSFETs. A grounded top copper spreader connects the
+ESP32 module centre pad to its surroundings, retaining its twelve existing
+plated thermal holes and antenna keepout. U2 gains a small grounded spreader;
+its SOT-23 package still limits continuous dissipation. Existing buck and
+gate-driver thermal arrays remain unchanged. No component positions, lead
+pads, original routing, electrical values or connector orientations change.
+See `validation/thermal-20261020/review.txt` for checked scope and limitations.
+MOSFET drain copper is electrically live; a common metal heatsink requires
+an electrically insulating thermal interface. Added vias are outside solder
+lands and tented on both faces. This is a heat-path improvement, not a
+measured temperature or continuous-current qualification.

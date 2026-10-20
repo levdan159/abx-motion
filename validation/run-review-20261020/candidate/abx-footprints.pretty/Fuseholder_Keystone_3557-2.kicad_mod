@@ -1,0 +1,142 @@
+(footprint "Fuseholder_Keystone_3557-2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "car blade fuse direct solder")
+	(tags "car blade fuse")
+	(property "Reference" "F1"
+		(at 0 -3.8 0)
+		(layer "F.SilkS")
+		(uuid "cd5d7234-d561-42cb-8d04-5a439898442b")
+		(effects
+			(font
+				(size 0.68 0.68)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "25A"
+		(at 4.6 4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08afc32c-465f-451f-a5ba-2de4a372159f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1b299ae0-c2fc-42e3-8ec3-dc3673b9865e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8df1b581-94d2-4a5d-950d-1a1799b96f4c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C352820"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5bde5a22-d4ab-4439-8938-9def268abc3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "*Fuse*")
+	(sheetname "/Power_Supply/")
+	(sheetfile "Power.kicad_sch")
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.05 -3.1)
+		(end 5.05 -3.1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7e19b7da-d998-4f49-ac30-f6e05ad28650")
+	)
+	(fp_line
+		(start -5.05 3.1)
+		(end 5.05 3.1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6a85c2e5-883c-4943-9e3b-068460eb87f4")
+	)
+	(pad "1" thru_hole circle
+		(at 6.735 -1.7)
+		(size 2.5 2.5)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "af08aedc-e1fc-4e75-a6bc-f412ce89bb48")
+	)
+	(pad "1" thru_hole circle
+		(at 6.735 1.7)
+		(size 2.5 2.5)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "af08aedc-e1fc-4e75-a6bc-f412ce89bb48")
+	)
+	(pad "2" thru_hole circle
+		(at -6.735 -1.7)
+		(size 2.5 2.5)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "af08aedc-e1fc-4e75-a6bc-f412ce89bb48")
+	)
+	(pad "2" thru_hole circle
+		(at -6.735 1.7)
+		(size 2.5 2.5)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 90)
+		(uuid "af08aedc-e1fc-4e75-a6bc-f412ce89bb48")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_Blade_Mini_Keystone_3568.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

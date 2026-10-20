@@ -1,0 +1,26 @@
+[
+  {
+    "L_uH": 1,
+    "extra_current_during_2us_blank_A_at32V": 64.0
+  },
+  {
+    "L_uH": 5,
+    "extra_current_during_2us_blank_A_at32V": 12.8
+  },
+  {
+    "L_uH": 10,
+    "extra_current_during_2us_blank_A_at32V": 6.4
+  },
+  {
+    "L_uH": 50,
+    "extra_current_during_2us_blank_A_at32V": 1.28
+  },
+  {
+    "L_uH": 100,
+    "extra_current_during_2us_blank_A_at32V": 0.64
+  },
+  {
+    "L_uH": 1000,
+    "extra_current_during_2us_blank_A_at32V": 0.064
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "check": "BACK reaches ESP32 GPIO21",
+    "pass": true
+  },
+  {
+    "check": "INT reaches ESP32 GPIO36",
+    "pass": true
+  },
+  {
+    "check": "I2C SDA/SCL wired to GPIO41/42",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 0: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 1: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 2: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 3: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 4: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 5: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 6: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Limit channel 7: connector/pullup/series/filter/expander",
+    "pass": true
+  },
+  {
+    "check": "Aux 1: command/pulldown/gate",
+    "pass": true
+  },
+  {
+    "check": "Aux 1: flyback and shared fused supply",
+    "pass": true
+  },
+  {
+    "check": "Stepper 1: enable source/gate/drain and pullups",
+    "pass": true
+  },
+  {
+    "check": "Aux 2: command/pulldown/gate",
+    "pass": true
+  },
+  {
+    "check": "Aux 2: flyback and shared fused supply",
+    "pass": true
+  },
+  {
+    "check": "Stepper 2: enable source/gate/drain and pullups",
+    "pass": true
+  },
+  {
+    "check": "E-stop net has R9 pulldown",
+    "pass": true
+  },
+  {
+    "check": "PCA power/address/unused pins",
+    "pass": true
+  },
+  {
+    "check": "DRV8701 PH/EN and IDRIVE pin mapping",
+    "pass": true
+  }
+]

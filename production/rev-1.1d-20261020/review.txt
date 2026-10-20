@@ -1,0 +1,92 @@
+ABX-Motion Rev 1.1d — incremental thermal layout improvements
+20 October 2026
+
+RESULT
+
+Saved CAD passes ERC with zero violations and DRC with zero errors,
+zero unconnected items and zero schematic-parity issues. The same 19
+lib_footprint_mismatch warnings remain; no rule or severity was weakened.
+This is a prototype fabrication candidate. Confirm the existing Omron relay
+supplier-CAD alignment exception with JLCPCB before assembly. Physical power,
+motor, thermal, fault and regeneration qualification still requires boards.
+
+CHANGES
+
+20 additional 0.30 mm drilled / 0.65 mm diameter plated through-vias, explicitly
+tented on both faces, located outside exposed component solder lands:
+- Q1: two additional drain vias into its existing front/back V_FUSED copper.
+- Q303/Q403: four additional drain vias each into the internal +BATT plane.
+- Q304/Q404: two/four additional drain vias respectively.
+- Q402: four additional drain vias.
+Q301/Q401 already have drain-to-battery-plane vias. Q302 uses its existing
+same-net via to its new backside spreader. Congested candidate positions
+were rejected rather than moving or thinning any pre-existing routing.
+
+Four bounded backside copper spreaders, each on the corresponding motor
+output/drain net, sit behind Q302/Q304/Q402/Q404. These are small local areas
+rather than large switching-node planes. Actual filled area is approximately
+29.7 /18.6 /7.9 /33.0 mm2 respectively after clearance from existing routing.
+All spreaders are connected; none remains an isolated copper island.
+
+ESP32 U3: a grounded front-copper spreader inside the shielded module body
+adds approximately32.6 mm2 of filled copper in its bounded region. Its twelve
+existing plated EPAD holes and original solder/paste pattern remain intact.
+The antenna/feed region and footprint keepout are untouched. No heatsink or
+metal shield extension is added near the antenna.
+
+U2 AP2112: a small grounded front-copper spreader at its ground lead adds
+approximately4.5 mm2 of filled copper. Existing nearby ground vias couple it
+to the planes. No fictitious exposed pad was added to this SOT-23 package.
+This modest improvement does not make a 5V-to-3.3V LDO thermally unlimited.
+
+The buck U1 retains eight thermal holes; gate drivers U301/U401 retain nine
+each. D2, shunts and all component values are unchanged. No externally
+accessible copper heat-transfer land was opened in the solder mask.
+
+INDEPENDENT CHECKS
+
+All2802 original track/via objects preserve UUID/net/width/layer/coordinates.
+All component positions, rotations, lead pads, footprint drills, values and
+pad-net assignments match the pre-thermal board. All751 schematic pin/net
+assignments match the previous checked netlist, preserving the prior150
+functional net checks. No signal routing exists on In1, the ground plane.
+Every new via lands in matching filled copper on the front and its intended
+receiving layer: backside for Q1/low-side drains, In2 for +BATT drains.
+BOM and CPL are byte-for-byte identical to Rev1.1c (66groups,239placements).
+Gerber mask, paste, outline and NPTH geometry are unchanged after ignoring
+export timestamps/revision headers. Thus no additional exposed via aperture,
+solder opening or paste aperture is introduced. PTH drill data includes the
+20 added vias. Revision branding and schematic titles identify Rev1.1d.
+Fresh Gerbers, drill files, schematic PDF and both 3D renders are provided.
+
+LIMITATIONS AND COMMISSIONING
+
+These changes improve heat-conduction paths; they are not thermal simulation
+or measured junction-temperature results. Q1 remains the likely first
+high-current hotspot. The AP2112 dissipates approximately(5-3.3)*Iout and
+may be stressed by sustained ESP32 activity plus external3.3V loads.
+MOSFET drain copper is electrically live (+BATT, V_FUSED or motor outputs).
+A shared metal heatsink or chassis contact requires an electrically insulating
+thermal interface; solder mask alone is not qualified heatsink insulation.
+Do not attach bare metal across the independent backside drain spreaders.
+
+Prototype tests must include sustained Wi-Fi plus CPU activity, voltage
+stability and temperature of U3/U2, followed by the previously prepared staged
+motor tests and combined logic/motor operation. Check Q1, all bridge FETs,
+shunts, U1/U2, inductor and capacitors. StepStick-module cooling depends on
+the actual carrier fitted. Existing 7S/32V, motor compatibility, return-energy
+and firmware safety limitations remain unchanged; D2 is not a braking sink.
+No powered test result is claimed. All bench-results rows remain NOT RUN.
+
+SOURCES
+
+Espressif module/baseboard thermal-grounding and antenna guidance:
+https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html
+TI MOSFET heat paths through exposed pads and PCB copper:
+https://www.ti.com/document-viewer/lit/html/SSZTCT5/GUID-36CE88B1-C26A-4BBD-BBE7-68A67A44BD71
+AP2112 package and thermal data:
+https://www.diodes.com/assets/Datasheets/AP2112.pdf
+JLCPCB via covering / via-in-pad considerations:
+https://jlcpcb.com/blog/five-via-finishes
+
+Git: changes remain local and uncommitted; no push was performed.

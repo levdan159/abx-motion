@@ -11,6 +11,9 @@ import math
 import os
 import re
 import uuid
+from robustness_support import tvs3300_symbol, place_tvs3300
+
+HARDWARE_REVISION = "1.1d"
 
 PROJECT_DIR = "/home/daniel/Documents/kicad/abx-motion"
 SYM_DIR = "/usr/share/kicad/symbols"
@@ -330,6 +333,7 @@ def build_abx_symbols_lib():
 	)
 )
 """
+    content = content[:content.rfind(")")] + tvs3300_symbol() + "\n)\n"
     with open(os.path.join(PROJECT_DIR, "abx-symbols.kicad_sym"), "w", encoding="utf-8") as f:
         f.write(content)
 
@@ -704,6 +708,7 @@ class SchematicBuilder:
 	(generator_version "10.0")
 	(uuid "{self.file_uuid}")
 	(paper "{self.paper}")
+	(title_block (title "ABX-Motion") (rev "{HARDWARE_REVISION}"))
 	(lib_symbols
 {lib_block}
 	)
@@ -748,12 +753,11 @@ def build_power_sheet(cache: SymbolLibraryCache):
     sb.stub_net(r1, "1", "Q1_GATE")
     sb.stub_power(r1, "2", "GND")
 
-    d2 = sb.place_sym("Device:D_TVS", "D2", "SMCJ30A", "Diode_SMD:D_SMC", 142.24, 71.12, 270)
-    sb.stub_power(d2, "1", "+BATT")
-    sb.stub_power(d2, "2", "GND")
+    # 33 V standoff / <=40 V specified short-pulse clamp; not a brake resistor.
+    d2 = place_tvs3300(sb)
 
-    # 2. VBAT_SENSE Divider (R2 100k, R3 10k, C1 100nF)
-    r2 = sb.place_sym("Device:R", "R2", "100k", "Resistor_SMD:R_0603_1608Metric", 167.64, 66.04, 0)
+    # 2. VBAT_SENSE Divider (R2 150k, R3 10k, C1 100nF): ADC = VBAT / 16.
+    r2 = sb.place_sym("Device:R", "R2", "150k", "Resistor_SMD:R_0603_1608Metric", 167.64, 66.04, 0)
     sb.stub_power(r2, "1", "+BATT")
     sb.stub_net(r2, "2", "VBAT_SENSE", hier_shape="output")
 
@@ -840,7 +844,7 @@ def build_power_sheet(cache: SymbolLibraryCache):
 
     # 5. Power Rail Status LEDs: LED_PWR_BATT (Green + 10k), LED_PWR_5V (Green + 1k), LED_PWR_3V3 (Green + 1k)
     pwr_leds = [
-        ("+BATT", "R6", "10k", "LED_PWR_BATT1", "BATT_LED_A", 40.64),
+        ("+BATT", "R6", "22k", "LED_PWR_BATT1", "BATT_LED_A", 40.64),
         ("+5V", "R7", "1k", "LED_PWR_5V1", "5V_LED_A", 91.44),
         ("+3V3", "R8", "1k", "LED_PWR_3V3_1", "3V3_LED_A", 142.24),
     ]
@@ -1392,14 +1396,14 @@ def build_motor_channel_sheet(cache: SymbolLibraryCache):
     sb.stub_net(c_dvdd, "1", "DRV_DVDD")
     sb.stub_power(c_dvdd, "2", "GND")
 
-    # VREF divider: R01 (18k to AVDD) and R02 (30k to GND) -> 3.0V (15A chop limit)
+    # VREF divider: R01 18k / R02 12k -> 1.92V, 9.35A nominal chopping (not a power limiter).
     r, alt = mref("R01")
     r_vref_hi = sb.place_sym("Device:R", r, "18k", "Resistor_SMD:R_0603_1608Metric", 142.24, 139.7, 0, alt_refs=alt)
     sb.stub_net(r_vref_hi, "1", "DRV_AVDD")
     sb.stub_net(r_vref_hi, "2", "DRV_VREF")
 
     r, alt = mref("R02")
-    r_vref_lo = sb.place_sym("Device:R", r, "30k", "Resistor_SMD:R_0603_1608Metric", 142.24, 165.1, 0, alt_refs=alt)
+    r_vref_lo = sb.place_sym("Device:R", r, "12k", "Resistor_SMD:R_0603_1608Metric", 142.24, 165.1, 0, alt_refs=alt)
     sb.stub_net(r_vref_lo, "1", "DRV_VREF")
     sb.stub_power(r_vref_lo, "2", "GND")
 
@@ -1419,6 +1423,13 @@ def build_motor_channel_sheet(cache: SymbolLibraryCache):
     c_so = sb.place_sym("Device:C", r, "10nF", "Capacitor_SMD:C_0603_1608Metric", 228.6, 149.86, 0, alt_refs=alt)
     sb.stub_net(c_so, "1", "CS")
     sb.stub_power(c_so, "2", "GND")
+
+    # Local SO divider protects the 3.3 V ADC from the 4.8 V amplifier rail.
+    r, alt = mref("R13")
+    r_adc = sb.place_sym("Device:R", r, "1k", "Resistor_SMD:R_0603_1608Metric", 254, 175.26, 0, alt_refs=alt)
+    sb.stub_net(r_adc, "1", "CS")
+    sb.stub_power(r_adc, "2", "GND")
+    sb.add_text("ADC protection: R304/R404 + R313/R413 divide SO by 2; rescale firmware.", 193.04, 187.96, 1.27)
 
     tp_cs = sb.place_sym(
         "Connector:TestPoint",
@@ -1546,7 +1557,7 @@ def build_steppers_relays_sheet(cache: SymbolLibraryCache):
             "Driver_Motor:Pololu_Breakout_DRV8825",
             f"U50{ch}",
             "StepStick_DRV8825",
-            "Module:Pololu_Breakout-16_15.2x20.3mm",
+            "abx-footprints:StepStick_Socket_2x08_P2.54mm_D1.0",
             ux,
             uy,
             0,
@@ -2119,6 +2130,7 @@ def build_root_sheet():
 	(generator_version "10.0")
 	(uuid "{ROOT_UUID}")
 	(paper "A4")
+	(title_block (title "ABX-Motion") (rev "{HARDWARE_REVISION}"))
 	(lib_symbols)
 {chr(10).join(wires)}
 {chr(10).join(labels)}

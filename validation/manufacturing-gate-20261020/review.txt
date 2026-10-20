@@ -1,0 +1,205 @@
+ABX-Motion V1.1 — final manufacturing gate
+20 October 2026
+
+DECISION: HOLD FOR THE REQUESTED DIRECT 7S BATTERY / 32 V ENVELOPE
+
+The fabrication data is internally consistent and the routing is complete.
+However, the present design has not established the protection margins needed
+for direct battery-powered motor operation at this voltage. Resolve the two
+electrical items below before approving this revision for that use. This is
+a focused power/sensing correction, not a request to expand the I/O architecture.
+
+Operating target supplied by the user: 7S lithium ion, assuming conventional
+4.2 V/cell charging (29.4 V full), with support/margin through 32 V. Battery
+continuous current capability is at least 30 A. That does NOT mean the board
+will draw 30 A or is rated to carry 30 A; actual motor loads remain unspecified.
+Earlier reports recommending controlled 12 V testing do not approve this new
+use case. No electrical source, routing or fabrication/upload file was changed
+by this review. The production status pointer is marked HOLD separately.
+
+1. BUS PROTECTION NEEDS A GUARANTEED VOLTAGE/ENERGY BUDGET
+
+D2 is Brightking SMCJ30A/TR13, LCSC C310046. Its 30 V reverse standoff is
+below the requested 32 V normal ceiling. The series table specifies breakdown
+33.3–36.8 V and maximum clamp 48.4 V at 31 A, for the rated pulse conditions.
+DRV8701 VM has a 45 V recommended maximum and 47 V absolute maximum.
+Consequently, the present component selection does not guarantee protection
+of the motor drivers across the requested voltage and transient envelope.
+The specified clamp is not the voltage that every small transient will reach;
+actual clamp depends on current, temperature and wiring inductance. Those
+bounds have not been established here. Absolute maximum is not a design target.
+
+At 29.4 V the TVS is below its standoff rating, so this is not a claim that
+connecting a charged 7S pack necessarily causes immediate failure. It is a
+missing guaranteed margin for hot-plug, switching and regenerative conditions.
+A fully charged pack or a BMS that rejects/disconnects charging may not absorb
+regenerated motor energy. A TVS pulse rating does not establish a continuous
+braking-energy rating.
+
+Required resolution: select a protection arrangement whose guaranteed normal
+voltage rating covers 32 V and whose worst-case clamp, overshoot and energy
+remain within the limits of every attached device. Establish transient current
+and braking energy from the actual motors, wiring and battery/BMS behavior.
+This may be a qualified clamp/filter solution, or a bus braking clamp if the
+load requires one. Do not blindly install a higher-voltage SMCJ: that raises
+the clamp voltage. Lower SMCJ26A/28A parts would compromise normal 7S voltage.
+Input overvoltage disconnection alone does not absorb energy generated on the
+motor side. If a compact protection solution cannot meet the budget, change
+the driver/rating or explicitly narrow the operating envelope before release.
+
+2. PROTECT THE THREE ESP32 ANALOG INPUTS
+
+Verified against the newly exported netlist:
+  U301 SO -> R304 1k -> M1_CS / GPIO6, with C305 10nF to ground.
+  U401 SO -> R404 1k -> M2_CS / GPIO8, with C405 10nF to ground.
+There is no divider or external clamp on either path. DRV8701 SO is a gain-20
+shunt-amplifier output; its transfer characteristic extends toward AVDD,
+nominally 4.8 V. The approximately 3 V current-chop reference is not an SO
+voltage clamp. Normal regulated current can keep SO within range, but fault,
+blanking and transient excursions are not guaranteed to do so. The RC filter
+and 1k series resistor do not establish an allowed continuous overvoltage or
+injection-current rating at the ESP32. Espressif specifies 3.6 V GPIO tolerance.
+
+Minimal local correction to evaluate: add a 1k shunt resistor to ground on
+each ADC side of R304/R404, forming 1:2 dividers. A 4.8 V SO then yields
+2.4 V nominal at the ADC; worst-case AVDD, resistor tolerance, ADC source
+impedance and power sequencing still need checking. Each SO load is 2k,
+approximately 2.4 mA at 4.8 V, below TI's stated 5 mA source capability.
+The existing capacitor sees about 500 ohm Thevenin resistance instead of
+1k. Update firmware scaling and sampling calibration accordingly. Additional
+clamps, if used, need a defined current path and powered-off behavior.
+
+VBAT_SENSE / GPIO1 uses R2=100k above R3=10k and C1=100nF to ground:
+  29.4 V bus -> 2.673 V ADC; 32 V -> 2.909 V: normal voltages are acceptable.
+  48.4 V bus -> 4.400 V ADC: present pulse-clamp ceiling is not acceptable.
+An approximately 1:16 divider (for example R2=150k, R3=10k) would reduce
+48.4 V to 3.025 V nominal and retain useful battery measurement resolution.
+Choose its final ratio against the RESOLVED bus limit and tolerance; account
+for ADC range, filtering and unpowered input behavior. This is a proposed
+correction, not an applied or hardware-tested revision.
+
+ADDITIONAL ITEMS TO CLOSE WITHOUT REBUILDING THE BOARD
+
+- Choose the actual StepStick carrier before power approval. The schematic
+  basis is DRV8825; check carrier capacitor voltage, pinout, enable polarity
+  and supply transient limit. TMC2209 is not a default 7S/32 V substitute:
+  its published operating supply maximum is 29 V, below 29.4 V full charge.
+- F1 C352820 is the Keystone 3557-2 HOLDER. A physical blade fuse is a separate
+  item and is not represented by another blade-fuse BOM row. Obtain a fuse
+  with suitable DC voltage, interruption and current ratings; do not bridge
+  the holder for battery testing. A 25 A fuse label is not a PCB current rating.
+- R6 remains 10k in a 100mW 0603 part. At 32 V with a 2.1 V LED its nominal
+  dissipation is about 89mW. A 22k value in the same footprint is a simple
+  improvement in thermal margin, subject to acceptable LED brightness.
+- At actual intended motor load, qualify Q1 and the power paths thermally.
+  Q1 cold losses at 18 milliohm are 1.8 W at 10 A and 4.05 W at 15 A; hot
+  resistance increases loss. The battery's available 30 A does not establish
+  this operating current. Driver chop current and fuse rating do not certify
+  continuous board current. Motor, relay and connector limits apply separately.
+- AP2112 dissipates approximately 0.51 W at 300mA / 0.85 W at 500mA from 5 V.
+  Test sustained radio activity and external 3.3 V loading for heat/brownouts.
+- Bulk-capacitor ripple/ESR and current-sense accuracy still need load tests.
+  SN reaches local ground rather than a dedicated two-wire Kelvin return to
+  its shunt. Do not treat the nominal current threshold as measured accuracy.
+
+WHAT PASSED ON THE CURRENT SAVED FILES
+
+Fresh KiCad 10.0.7 ERC: 0 violations. Fresh DRC with schematic parity:
+0 errors, 0 unconnected items, 0 parity discrepancies. The 19 warnings are
+all lib_footprint_mismatch; no warnings were suppressed for this review.
+Project minimum track width / clearance remain 0.15 mm. Every one of the
+742 schematic pin/net assignments matches the saved PCB. There are four
+copper layers and zero signal tracks on In1.Cu.
+
+The latest matching package is production/final-bom-fix-20261020/.
+All manifest hashes match the saved source and exports. Its native review
+bundle contains the exact current PCB. BOM: 64 unique supplier groups and
+237 placements; CPL: the same 237 references, without duplicate designators.
+All BOM supplier fields agree with the saved PCB, including the four C27438
+StepStick socket strips. Their 32 holes are 1.0 mm. The F1 holder uses four
+1.8 mm drilled holes at the previously drawing-checked 13.47 x 3.40 mm pattern.
+The fabrication ZIP contains exactly 11 layer files and separate PTH/NPTH
+drills, with no redundant combined drill or map files.
+
+The 56 catalogue identities in the earlier supplier audit cover the unchanged
+parts. The eight newer codes were checked in this and preceding correction
+passes: C107136 (2.2nF/100V/0805), C844598 (10ohm/0.5W/0805), C310046
+(SMCJ30A), C352820 (3557-2 holder), C151162 (1206L050/15YR), C131339
+(B3B-PH-K-S), C128392 (PCA9555PW,118), C27438 (1x8 female socket).
+Catalogue identity is not full land-pattern, supplier orientation or live
+assembly-stock certification. The current JLC order itself is not accessible
+to this review. The connector bodies shown in the user's images are present;
+their pink outlines are not evidence of missing components.
+
+ASSEMBLY / FIT / FIRMWARE LIMITS
+
+Keep the present front branding and rear copper gears/white text. No aesthetic
+edit is needed for this manufacturing gate. Keep the spec-sheet wording as
+the user requested. Six I/O connectors mean four dual-limit connectors
+(eight inputs) plus two switched-output connectors, not six input channels.
+Limits are dry-contact/3.3 V only; AUX outputs share a thermal 500mA PTC.
+
+Supplier pad rotation conventions for U601 and the new PH connectors were
+not independently confirmed by live supplier CAD (earlier endpoint access
+failed). Approve actual pin 1/keying against PCB pads in JLC's placement
+editor; component presence or a plausible body outline is insufficient.
+Review polarized electrolytics, D2, Q1 and XT60 markings against their nets.
+The corrected socket row must be C27438, never the former TC622VOA sensor.
+Through-hole assembly process and the open exposed-pad thermal holes need
+assembler acceptance. Actual OLED mounting still requires checking the module:
+PCB hole spacing is 23.30 mm, 23.80 mm below its header, different from an
+earlier 23.0 mm module assumption. No missing-hole conclusion follows from
+the 3D connector render alone.
+
+Hardware E-stop gates brushed-driver sleep and onboard/external stepper
+enable, but relay coils and AUX outputs remain powered. External driver
+electrical compatibility is required. Limits are firmware/I2C sensed; they
+are not a separate hardware overtravel stop. Firmware must block motion
+further into an active limit, permit controlled retreat, initialize expander
+latches before enabling outputs, and handle warm ESP32 resets where the
+expander retains state. Grounded unused PCA9555 pins must remain inputs.
+No complete, tested application firmware has been established by this review.
+
+RELEASE PATH
+
+Make the small sensing/LED corrections, resolve the bus-protection budget
+for the actual drivers and battery/BMS, then regenerate a new matching upload
+set and repeat ERC/DRC/parity/package checks. Do not enlarge the board or add
+general industrial I/O as part of these fixes. Validate rails/programming at
+the intended voltage with motors disconnected and suitably limited available
+fault energy, then add one unloaded motor at reduced current. Measure bus
+overshoot/regeneration and temperatures before approving load operation.
+The request to use a battery does not substitute for a first-power protection
+plan. Tests can be performed at 29.4 V without requiring a 12 V operating mode.
+
+PRIMARY SOURCES
+
+TI DRV8701, absolute maximum ratings and sections 7.3.3/7.3.4 (SO amplifier):
+https://www.ti.com/lit/ds/symlink/drv8701.pdf
+Brightking/Yageo SMCJ series table, SMCJ30A row; exact part identity at LCSC:
+https://brightking.yageo.com/uploadfiles/file/tvs/2022062122285628567520.pdf
+https://www.lcsc.com/product-detail/C310046.html
+Espressif GPIO tolerance and ESP32-S3 electrical characteristics:
+https://docs.espressif.com/projects/esp-faq/en/latest/hardware-related/hardware-design.html#what-is-the-voltage-tolerance-of-gpios-of-esp-chips
+https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+TI DRV8825:
+https://www.ti.com/lit/ds/symlink/drv8825.pdf
+Analog Devices TMC2209, section 20.1:
+https://www.analog.com/media/en/technical-documentation/data-sheets/tmc2209_datasheet_rev1.09.pdf
+Vishay Q1 thermal and resistance ratings:
+https://www.vishay.com/docs/66963/sqj459ep.pdf
+Keystone 3557-2 mechanical drawing:
+https://www.keyelco.com/product-pdf.cfm?p=296
+Additional catalogue identity checks:
+https://www.lcsc.com/product-detail/C107136.html
+https://www.lcsc.com/product-detail/C844598.html
+https://www.lcsc.com/product-detail/C151162.html
+https://www.lcsc.com/product-detail/C131339.html
+https://www.lcsc.com/product-detail/C128392.html
+https://www.lcsc.com/product-detail/C27438.html
+
+Evidence: audit.json, netlist.xml, erc.json, drc.json in this directory.
+Previous identity and drawing evidence remains under
+validation/prototype-review-20261019_153750/, validation/final-run-20261020/,
+and validation/jlc-bom-fix-20261020/. This report supersedes their voltage-use
+conclusions for the newly specified 7S / 32 V target, not their historical data.

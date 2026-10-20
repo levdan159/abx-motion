@@ -1,0 +1,54 @@
+{
+  "revision": "1.1d",
+  "status": "Prototype fabrication candidate; relay alignment review before assembly. Powered qualification NOT RUN.",
+  "PCB_sha256": "d23b3d84dd2bca2d94089af4ddea84fd1d0c225a665421a40696b0b80786ce01",
+  "original_tracks_and_vias_preserved": 2802,
+  "added_tented_vias": 20,
+  "added_zones": 6,
+  "zone_areas": [
+    {
+      "ref": "Q302",
+      "layer": "B.Cu",
+      "filled_area_mm2": 29.6999928906305
+    },
+    {
+      "ref": "Q304",
+      "layer": "B.Cu",
+      "filled_area_mm2": 18.619516472277
+    },
+    {
+      "ref": "Q402",
+      "layer": "B.Cu",
+      "filled_area_mm2": 7.938423187911
+    },
+    {
+      "ref": "Q404",
+      "layer": "B.Cu",
+      "filled_area_mm2": 32.989897070304
+    },
+    {
+      "ref": "U3",
+      "layer": "F.Cu",
+      "filled_area_mm2": 32.643828254213
+    },
+    {
+      "ref": "U2",
+      "layer": "F.Cu",
+      "filled_area_mm2": 4.4711048510395
+    }
+  ],
+  "all_added_vias_on_matching_top_and_receiving_layer_filled_copper": true,
+  "component_positions_pads_drills_values_and_angles_unchanged": true,
+  "schematic_pin_nets_matched": 751,
+  "functional_net_checks_carried_forward_by_identical_pin_net_map": 150,
+  "ESP32_existing_ground_thermal_holes": 12,
+  "antenna_region_unchanged": true,
+  "BOM_and_CPL_byte_identical_to_Rev1_1c": true,
+  "mask_paste_outline_NPTH_geometry_unchanged": true,
+  "ERC_violations": 0,
+  "DRC_errors": 0,
+  "DRC_warnings": 19,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "physical_thermal_test": "NOT RUN"
+}

@@ -1,0 +1,26 @@
+{
+  "changes": [
+    "J102: off-edge pin-1 triangle moved to F.Fab",
+    "J301: off-edge pin-1 triangle moved to F.Fab",
+    "J401: off-edge pin-1 triangle moved to F.Fab",
+    "J205: off-edge pin-1 triangle moved to F.Fab",
+    "J207: off-edge pin-1 triangle moved to F.Fab",
+    "J505: off-edge pin-1 triangle moved to F.Fab",
+    "J506: off-edge pin-1 triangle moved to F.Fab",
+    "U3: clipped vertical silkscreen at board edge",
+    "U3: removed off-board silkscreen top line",
+    "U3: clipped vertical silkscreen at board edge"
+  ],
+  "F5": {
+    "old": "C70125 / unspecified 500mA_PTC",
+    "new": "C151162 / Littelfuse 1206L050/15YR",
+    "hold_A_at_20C": 0.5,
+    "Vmax": 15,
+    "source": "https://www.lcsc.com/product-detail/C151162.html",
+    "datasheet": "https://www.littelfuse.com/assetdocs/littelfuse-ptc-1206l-datasheet?assetguid=2b6a1515-d4ee-4c83-8bd4-152b4901b8f5"
+  },
+  "pad_geometry_unchanged": true,
+  "all_tracks_unchanged": true,
+  "In1_signal_tracks": 0,
+  "back_logo_silkscreen_only": true
+}

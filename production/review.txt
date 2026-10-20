@@ -1,111 +1,92 @@
-ABX-Motion V1.1 — final rear-copper-branding and polish validation
-20 October 2026 — KiCad 10.0.7
+ABX-Motion Rev 1.1d — incremental thermal layout improvements
+20 October 2026
 
-VERDICT
+RESULT
 
-The completed compact 157 x 105 mm layout passes all independent electrical,
-DRC, schematic-parity and Gerber-isolation checks after the local rear-copper
-branding and spec-table polish pass. It is ready for controlled, low-current
-12 V prototype bring-up. This is not an unconditional production or 32 V /
-full-current qualification. Before ordering assembly, confirm supplier
-placement/polarity in the assembler's DFM preview (especially U601, J601-J606,
-and the corrected XT60/LED orientations) and verify physical OLED mounting
-hole alignment against the chosen display module.
+Saved CAD passes ERC with zero violations and DRC with zero errors,
+zero unconnected items and zero schematic-parity issues. The same 19
+lib_footprint_mismatch warnings remain; no rule or severity was weakened.
+This is a prototype fabrication candidate. Confirm the existing Omron relay
+supplier-CAD alignment exception with JLCPCB before assembly. Physical power,
+motor, thermal, fault and regeneration qualification still requires boards.
 
-FRESH RESULTS
+CHANGES
 
-ERC: 0 violations (0 errors, 0 warnings).
-DRC: 0 errors; 0 unconnected items; 0 schematic-parity discrepancies.
-19 warnings remain, all lib_footprint_mismatch; 0 warnings on LOGO1 or LOGO2.
-Explicit project-wide minimum clearance and track width are 0.15 mm.
-77 functional netlist assertions passed; all 742 schematic pin/net assignments
-match the saved PCB. BOM and CPL represent the same 237 placements in 80 BOM
-groups, without duplicate designators or empty supplier fields.
-No signal tracks are on In1.Cu. All existing motor/power/USB/I/O routing, pads,
-vias and drills were 100% preserved.
+20 additional 0.30 mm drilled / 0.65 mm diameter plated through-vias, explicitly
+tented on both faces, located outside exposed component solder lands:
+- Q1: two additional drain vias into its existing front/back V_FUSED copper.
+- Q303/Q403: four additional drain vias each into the internal +BATT plane.
+- Q304/Q404: two/four additional drain vias respectively.
+- Q402: four additional drain vias.
+Q301/Q401 already have drain-to-battery-plane vias. Q302 uses its existing
+same-net via to its new backside spreader. Congested candidate positions
+were rejected rather than moving or thinning any pre-existing routing.
 
-Gerber & Drill Layer Isolation (compared against pre-pass baseline):
-- Changed layers (3): abx-motion-B_Cu.gbl, abx-motion-B_Mask.gbs, abx-motion-B_Silkscreen.gbo
-- Identical layers (10): abx-motion-F_Cu.gtl, abx-motion-In1_Cu.g1, abx-motion-In2_Cu.g2,
-  abx-motion-F_Mask.gts, abx-motion-F_Paste.gtp, abx-motion-B_Paste.gbp,
-  abx-motion-F_Silkscreen.gto, abx-motion-Edge_Cuts.gm1, abx-motion-PTH.drl,
-  abx-motion-NPTH.drl.
+Four bounded backside copper spreaders, each on the corresponding motor
+output/drain net, sit behind Q302/Q304/Q402/Q404. These are small local areas
+rather than large switching-node planes. Actual filled area is approximately
+29.7 /18.6 /7.9 /33.0 mm2 respectively after clearance from existing routing.
+All spreaders are connected; none remains an isolated copper island.
 
-CHANGES APPLIED IN THIS PASS
+ESP32 U3: a grounded front-copper spreader inside the shielded module body
+adds approximately32.6 mm2 of filled copper in its bounded region. Its twelve
+existing plated EPAD holes and original solder/paste pattern remain intact.
+The antenna/feed region and footprint keepout are untouched. No heatsink or
+metal shield extension is added near the antenna.
 
-1. Rear Branding Group (LOGO2 — abx-footprints:ABX_Text_Gold):
-   - Placed in the lower-left rear corner (high-X, high-Y PCB coordinates) using
-     the exact 0.75x proportions and spacing from logo-corner-preview-20261020
-     (overall bounds 17.50 x 16.323 mm).
-   - Anchor adjusted from the initial (187.0, 135.5) target to (186.0, 138.0) mm
-     (1.0 mm left, 2.5 mm lower) so the top gear teeth sit cleanly below the two
-     Y=132.5 mm bulk-cap vias without deleting or moving any vias or tracks:
-     * Clearance to GND via (189.85, 132.5): 0.561 mm
-     * Clearance to +BATT via (181.45, 132.5): 1.047 mm
-     * Clearance to +BATT via (180.80, 130.0): 3.317 mm
-     * Clearance to +3V3 via (197.00, 130.0): 5.342 mm
-     * Clearance to B.Cu +3V3 track: 5.517 mm
-     * Clearance to H4 mounting hole pad (197.5, 148.5): 8.221 mm
-     * Clearance to B.Cu GND zone pour: 0.221 mm (0 gear vertices inside GND fill)
-   - Converted the 535 gear polygons from B.SilkS to exposed B.Cu with matching
-     B.Mask openings (select ENIG surface finish for gold gears) while keeping
-     "AUTOBOTIX" and "ABX-Motion V1.1" in mirrored white B.SilkS below the gears.
-   - Synchronized abx-footprints.pretty/ABX_Text_Gold.kicad_mod with the board
-     instance so DRC reports 0 lib_footprint_mismatch on LOGO1 and LOGO2.
+U2 AP2112: a small grounded front-copper spreader at its ground lead adds
+approximately4.5 mm2 of filled copper. Existing nearby ground vias couple it
+to the planes. No fictitious exposed pad was added to this SOT-23 package.
+This modest improvement does not make a 5V-to-3.3V LDO thermally unlimited.
 
-2. Rear Spec Table Wording Polish (B.SilkS):
-   - Updated the rear specification table title and power ratings so unqualified
-     values are clearly labeled as design targets:
-     * "ABX-MOTION V1.1 — SPECS & I/O (DESIGN TARGETS)"
-     * "VBAT (J1 XT60): 12-32V target (25A Fuse, SMCJ30A)"
-     * "DC Servo 1&2: 2x 100W target (DRV8701E, 15A Chop)"
+The buck U1 retains eight thermal holes; gate drivers U301/U401 retain nine
+each. D2, shunts and all component values are unchanged. No externally
+accessible copper heat-transfer land was opened in the solder mask.
 
-3. Preserved All Prior Fixes:
-   - F5 remains Littelfuse 1206L050/15YR (LCSC C151162, 500 mA hold at 20 C, 15 V).
-   - CPL rotations for J1, LED201, LED202, LED_FLT1 and LED_FLT2 remain corrected
-     at 180.0 degrees.
-   - Front silkscreen/edge cleanup, 0.15 mm minimum track/clearance rules, and all
-     237 component pads, 1463 track segments and 198 vias are untouched.
+INDEPENDENT CHECKS
 
-REMAINING LIBRARY WARNINGS (19)
+All2802 original track/via objects preserve UUID/net/width/layer/coordinates.
+All component positions, rotations, lead pads, footprint drills, values and
+pad-net assignments match the pre-thermal board. All751 schematic pin/net
+assignments match the previous checked netlist, preserving the prior150
+functional net checks. No signal routing exists on In1, the ground plane.
+Every new via lands in matching filled copper on the front and its intended
+receiving layer: backside for Q1/low-side drains, In2 for +BATT drains.
+BOM and CPL are byte-for-byte identical to Rev1.1c (66groups,239placements).
+Gerber mask, paste, outline and NPTH geometry are unchanged after ignoring
+export timestamps/revision headers. Thus no additional exposed via aperture,
+solder opening or paste aperture is introduced. PTH drill data includes the
+20 added vias. Revision branding and schematic titles identify Rev1.1d.
+Fresh Gerbers, drill files, schematic PDF and both 3D renders are provided.
 
-The 19 lib_footprint_mismatch warnings are on H5/H6, U3, seven test pads,
-U301/U401 and the seven edge connectors whose off-board pin-1 silkscreen
-triangles were moved to F.Fab. These footprints contain intentional project
-modifications relative to the stock libraries and are disclosed rather than
-suppressed.
+LIMITATIONS AND COMMISSIONING
 
-ASSEMBLY, MECHANICAL AND ELECTRICAL CAVEATS
+These changes improve heat-conduction paths; they are not thermal simulation
+or measured junction-temperature results. Q1 remains the likely first
+high-current hotspot. The AP2112 dissipates approximately(5-3.3)*Iout and
+may be stressed by sustained ESP32 activity plus external3.3V loads.
+MOSFET drain copper is electrically live (+BATT, V_FUSED or motor outputs).
+A shared metal heatsink or chassis contact requires an electrically insulating
+thermal interface; solder mask alone is not qualified heatsink insulation.
+Do not attach bare metal across the independent backside drain spreaders.
 
-- Supplier CPL & Pin-1 Verification: U601 (PCA9555PW,118, C128392, CPL 270 deg)
-  and J601-J606 (B3B-PH-K-S, C131339, CPL 180 deg) CPL angles were not
-  independently pad-verified against live supplier CAD due to HTTP 403 on those
-  endpoints. Confirm U601 pin 1 (upper-left on PCB), J601-J606 pin 1 (MIN/+5V_OUT
-  end) and housing key orientation, D2/electrolytic/LED polarity, Q1 orientation
-  and J1 XT60-M (C98733) +/- polarity in the assembler's placement preview.
-- OLED Mounting Holes (H5/H6): Located at (67.85, 105.30) and (91.15, 105.30) mm
-  (23.30 mm horizontal spacing, 23.80 mm below J208 at Y=81.50 mm) versus the
-  23.0 mm nominal silkscreen callout. Verify mechanical hole pattern against the
-  actual 0.96"/1.3" OLED module before ordering.
-- Compact I/O Limits: J601-J604 accept dry contacts to GND or 3.3 V logic ONLY
-  (do not connect 12/24 V sensors). J605-J606 share F5 (1206L050/15YR, 500 mA
-  hold at 20 C); thermal PTC protection derates with ambient temperature and is
-  not an independent per-channel current regulator.
-- Firmware & Safety: Initialize U601 on every boot (keep ports as inputs, write
-  Port 1 output latch 0x0C, then set Port 1 direction 0xF0 and Port 0 direction
-  0xFF; keep grounded Port 1 bits 5..7 as inputs). Hardware E-stop (J102) gates
-  DC bridges and stepper enables, while relays and auxiliary outputs remain
-  powered. I2C limit sensing is not a hardware overtravel interlock.
-- Power Envelope: SMCJ30A's 48.4 V maximum surge clamp exceeds DRV8701E's 47 V
-  absolute maximum, so 32 V operation is not qualified. Begin bring-up at 12 V
-  with current limiting, unloaded motors, and thermal/transient measurements.
+Prototype tests must include sustained Wi-Fi plus CPU activity, voltage
+stability and temperature of U3/U2, followed by the previously prepared staged
+motor tests and combined logic/motor operation. Check Q1, all bridge FETs,
+shunts, U1/U2, inductor and capacitors. StepStick-module cooling depends on
+the actual carrier fitted. Existing 7S/32V, motor compatibility, return-energy
+and firmware safety limitations remain unchanged; D2 is not a braking sink.
+No powered test result is claimed. All bench-results rows remain NOT RUN.
 
-FILES
+SOURCES
 
-production/final-rear-gold-20261020/abx-motion-gerbers.zip
-production/final-rear-gold-20261020/abx-motion-jlcpcb-bom.csv
-production/final-rear-gold-20261020/abx-motion-jlcpcb-cpl.csv
-production/final-rear-gold-20261020/abx-motion-schematics.pdf
-production/final-rear-gold-20261020/pcb_3d_top.png
-production/final-rear-gold-20261020/pcb_3d_bottom.png
-production/final-rear-gold-20261020/abx-motion-review-bundle.zip
+Espressif module/baseboard thermal-grounding and antenna guidance:
+https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html
+TI MOSFET heat paths through exposed pads and PCB copper:
+https://www.ti.com/document-viewer/lit/html/SSZTCT5/GUID-36CE88B1-C26A-4BBD-BBE7-68A67A44BD71
+AP2112 package and thermal data:
+https://www.diodes.com/assets/Datasheets/AP2112.pdf
+JLCPCB via covering / via-in-pad considerations:
+https://jlcpcb.com/blog/five-via-finishes
+
+Git: changes remain local and uncommitted; no push was performed.

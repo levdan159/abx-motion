@@ -1,0 +1,57 @@
+{
+  "old_30k": {
+    "cases": 64,
+    "nominal_I_A": 14.75,
+    "min": {
+      "AVDD_V": 4.4,
+      "Rhigh_ohm": 18180.0,
+      "Rlow_ohm": 29700.0,
+      "gain": 22,
+      "offset_V": 0.25,
+      "shunt_ohm": 0.0101,
+      "VREF_V": 2.729323308270677,
+      "I_chop_A": 11.158070694287476,
+      "shunt_W": 1.2574756703490415
+    },
+    "max": {
+      "AVDD_V": 5.2,
+      "Rhigh_ohm": 17820.0,
+      "Rlow_ohm": 30300.0,
+      "gain": 18,
+      "offset_V": 0,
+      "shunt_ohm": 0.0099,
+      "VREF_V": 3.2743142144638404,
+      "I_chop_A": 18.37437830787789,
+      "shunt_W": 3.3424160041900346
+    },
+    "max_shunt_W": 3.3424160041900346
+  },
+  "new_12k": {
+    "cases": 64,
+    "nominal_I_A": 9.35,
+    "min": {
+      "AVDD_V": 4.4,
+      "Rhigh_ohm": 18180.0,
+      "Rlow_ohm": 11880.0,
+      "gain": 22,
+      "offset_V": 0.25,
+      "shunt_ohm": 0.0101,
+      "VREF_V": 1.738922155688623,
+      "I_chop_A": 6.700819782577062,
+      "shunt_W": 0.45349995616161864
+    },
+    "max": {
+      "AVDD_V": 5.2,
+      "Rhigh_ohm": 17820.0,
+      "Rlow_ohm": 12120.0,
+      "gain": 18,
+      "offset_V": 0,
+      "shunt_ohm": 0.0099,
+      "VREF_V": 2.1050100200400803,
+      "I_chop_A": 11.812626375084625,
+      "shunt_W": 1.3814276045857148
+    },
+    "max_shunt_W": 1.3814276045857148
+  },
+  "scope": "Analytical static estimates; exclude resistor TCR, PCB ground/Kelvin errors, comparator delay/blanking and thermal feedback. Not guaranteed motor peak-current bounds."
+}

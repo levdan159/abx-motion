@@ -1,0 +1,824 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-19T23:25:56",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "Pad net (/MCU_and_Encoders/VBUS_FUSED) doesn't match net given by schematic (/MCU_and_Encoders/VBUS_USB)",
+            "items": [
+                {
+                    "description": "Pad 2 [/MCU_and_Encoders/VBUS_FUSED] of D202 on F.Cu",
+                    "pos": {
+                        "x": 59.65,
+                        "y": 58.0
+                    },
+                    "uuid": "0ccbaef4-8c48-408b-8eb5-9c2ca66ab28d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/MCU_and_Encoders/+5V_ENC) doesn't match net given by schematic (+5V)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/MCU_and_Encoders/+5V_ENC] of J202",
+                    "pos": {
+                        "x": 49.5,
+                        "y": 119.5
+                    },
+                    "uuid": "b655465e-762f-4851-ae71-a770ed7218d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/MCU_and_Encoders/+5V_ENC) doesn't match net given by schematic (+5V)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/MCU_and_Encoders/+5V_ENC] of J203",
+                    "pos": {
+                        "x": 49.5,
+                        "y": 134.0
+                    },
+                    "uuid": "2926b2f8-f515-47c7-afac-e61aefe839f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/MCU_and_Encoders/+3V3_EXT) doesn't match net given by schematic (+3V3)",
+            "items": [
+                {
+                    "description": "PTH pad 2 [/MCU_and_Encoders/+3V3_EXT] of J209",
+                    "pos": {
+                        "x": 49.5,
+                        "y": 107.5
+                    },
+                    "uuid": "7514bb54-66b7-4df3-9dec-011c81f1c90c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R222) doesn't match symbol value (330R)",
+            "items": [
+                {
+                    "description": "Footprint R222",
+                    "pos": {
+                        "x": 57.5,
+                        "y": 110.4
+                    },
+                    "uuid": "f6b99ba2-9bda-474c-b42b-ab70b3cb67c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (R223) doesn't match symbol value (330R)",
+            "items": [
+                {
+                    "description": "Footprint R223",
+                    "pos": {
+                        "x": 57.5,
+                        "y": 112.8
+                    },
+                    "uuid": "5eefc980-e305-4299-ac83-35a26bf25c1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (U3) doesn't match symbol value (ESP32-S3-WROOM-1-N8R2)",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 60.0
+                    },
+                    "uuid": "0cc18a09-02c0-41ff-937e-de13ab60a3e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (U203) doesn't match symbol value (THVD1450DR)",
+            "items": [
+                {
+                    "description": "Footprint U203",
+                    "pos": {
+                        "x": 59.8,
+                        "y": 95.0
+                    },
+                    "uuid": "8960b1bc-3653-4618-9922-741fa49846ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C310) doesn't match symbol value (2.2nF)",
+            "items": [
+                {
+                    "description": "Footprint C310",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 98.5
+                    },
+                    "uuid": "40bee929-049b-4850-b67c-3b2359e6a74d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (R309) doesn't match symbol value (10mR_3W)",
+            "items": [
+                {
+                    "description": "Footprint R309",
+                    "pos": {
+                        "x": 178.5,
+                        "y": 90.5
+                    },
+                    "uuid": "3f17bcb5-9121-4612-ba4a-374497b9c8fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (/DC_Motor_1/DRV_IDRIVE) doesn't match net given by schematic (GND)",
+            "items": [
+                {
+                    "description": "Pad 12 [/DC_Motor_1/DRV_IDRIVE] of U301 on F.Cu",
+                    "pos": {
+                        "x": 166.25,
+                        "y": 81.9375
+                    },
+                    "uuid": "b35d3012-892f-4bd8-81a5-5be31b3887b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/M1_PWM_EN) doesn't match net given by schematic (/M1_PWM_PH)",
+            "items": [
+                {
+                    "description": "Pad 14 [/M1_PWM_EN] of U301 on F.Cu",
+                    "pos": {
+                        "x": 166.9375,
+                        "y": 80.75
+                    },
+                    "uuid": "3c2508e4-1763-4881-8daf-ff36ec5cb71b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/M1_PWM_PH) doesn't match net given by schematic (/M1_PWM_EN)",
+            "items": [
+                {
+                    "description": "Pad 15 [/M1_PWM_PH] of U301 on F.Cu",
+                    "pos": {
+                        "x": 166.9375,
+                        "y": 80.25
+                    },
+                    "uuid": "267f7536-e412-470e-8b5a-9976a482d32e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (C410) doesn't match symbol value (2.2nF)",
+            "items": [
+                {
+                    "description": "Footprint C410",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 128.5
+                    },
+                    "uuid": "242b85d0-dac6-47c5-997e-db7e571dad08"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (R409) doesn't match symbol value (10mR_3W)",
+            "items": [
+                {
+                    "description": "Footprint R409",
+                    "pos": {
+                        "x": 178.5,
+                        "y": 121.5
+                    },
+                    "uuid": "4f618ade-2408-480f-a619-7962bc685d7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (/DC_Motor_2/DRV_IDRIVE) doesn't match net given by schematic (GND)",
+            "items": [
+                {
+                    "description": "Pad 12 [/DC_Motor_2/DRV_IDRIVE] of U401 on F.Cu",
+                    "pos": {
+                        "x": 166.25,
+                        "y": 107.9375
+                    },
+                    "uuid": "81bc5973-964e-4fa5-b4d5-d69d5d8a4686"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/M2_PWM_EN) doesn't match net given by schematic (/M2_PWM_PH)",
+            "items": [
+                {
+                    "description": "Pad 14 [/M2_PWM_EN] of U401 on F.Cu",
+                    "pos": {
+                        "x": 166.9375,
+                        "y": 106.75
+                    },
+                    "uuid": "49f393fe-420a-4189-80af-b2f73d7a3aef"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (/M2_PWM_PH) doesn't match net given by schematic (/M2_PWM_EN)",
+            "items": [
+                {
+                    "description": "Pad 15 [/M2_PWM_PH] of U401 on F.Cu",
+                    "pos": {
+                        "x": 166.9375,
+                        "y": 106.25
+                    },
+                    "uuid": "46ca822b-4091-4548-8cd3-6c42f11b4d16"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H5",
+                    "pos": {
+                        "x": 67.85,
+                        "y": 105.3
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000805"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H6",
+                    "pos": {
+                        "x": 91.15,
+                        "y": 105.3
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000815"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint R312",
+                    "pos": {
+                        "x": 168.5,
+                        "y": 83.8
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000831"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint R412",
+                    "pos": {
+                        "x": 168.2,
+                        "y": 109.42
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000841"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint F4",
+                    "pos": {
+                        "x": 63.2,
+                        "y": 112.0
+                    },
+                    "uuid": "257c56f0-51ad-4efc-b704-d01cd463bedd"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint F3",
+                    "pos": {
+                        "x": 63.2,
+                        "y": 121.0
+                    },
+                    "uuid": "6e077a62-e02d-43e9-b37c-4c35e7f5403b"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint F2",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 54.5
+                    },
+                    "uuid": "ad03e95c-bb2c-457b-bc6e-c4719bdea651"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "abx-motion.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Mirrored text on front layer",
+            "items": [
+                {
+                    "description": "Reference field of LOGO2",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 108.06
+                    },
+                    "uuid": "9771ed34-6346-49d2-9c8b-295d838b6fb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "mirrored_text_on_front_layer"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint H5",
+                    "pos": {
+                        "x": 67.85,
+                        "y": 105.3
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000805"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint H6",
+                    "pos": {
+                        "x": 91.15,
+                        "y": 105.3
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000815"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 60.0
+                    },
+                    "uuid": "0cc18a09-02c0-41ff-937e-de13ab60a3e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_5V1",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 50.4
+                    },
+                    "uuid": "1101f7c0-d34d-411d-bee2-4d91180676d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_3V3_1",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 50.4
+                    },
+                    "uuid": "335c6d06-d6c1-4e80-a68a-72552ad83c5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_CS2",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 50.4
+                    },
+                    "uuid": "563d9f0b-70e4-4354-9a6c-f58b3ed79cf2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_CS1",
+                    "pos": {
+                        "x": 143.5,
+                        "y": 50.4
+                    },
+                    "uuid": "77f21ed1-25bc-4b18-afdd-94c77c7eb878"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_BATT1",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 50.4
+                    },
+                    "uuid": "96cf9901-8267-4444-a7a3-a17b48a78ebd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_GND2",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 50.4
+                    },
+                    "uuid": "a1e72a92-ad8d-4f69-bcea-566ffd3af708"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_GND1",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 50.4
+                    },
+                    "uuid": "dd214f91-6a4a-4864-a2d5-689018cd4861"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U301",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 80.0
+                    },
+                    "uuid": "e96f01d9-74e7-4713-ae39-a04d6f0ac0b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U401",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 106.0
+                    },
+                    "uuid": "f19d39db-17a5-48bc-a91d-0e64168aa21d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 48.0
+                    },
+                    "uuid": "36e936f8-0314-45f1-987c-eba17099d7c2"
+                },
+                {
+                    "description": "Segment of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 91.8,
+                        "y": 47.1
+                    },
+                    "uuid": "904074d5-f5da-4c05-ba5b-e02b20a4744a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 48.0
+                    },
+                    "uuid": "36e936f8-0314-45f1-987c-eba17099d7c2"
+                },
+                {
+                    "description": "Segment of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 110.2,
+                        "y": 47.1
+                    },
+                    "uuid": "83ef4c8f-a4bf-4741-b3e2-7abbc9bff413"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 202.0,
+                        "y": 153.0
+                    },
+                    "uuid": "69a5d6d8-3787-4302-a8da-07023486f6d9"
+                },
+                {
+                    "description": "Polygon of J505 on F.Silkscreen",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 152.72
+                    },
+                    "uuid": "b82632e6-c249-4f4e-bcd7-978adf9f4edc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 202.0,
+                        "y": 48.0
+                    },
+                    "uuid": "8e90179c-fccf-4366-97c9-d4a659255ca5"
+                },
+                {
+                    "description": "Polygon of J102 on F.Silkscreen",
+                    "pos": {
+                        "x": 201.72,
+                        "y": 70.0
+                    },
+                    "uuid": "944a07aa-d3fb-4f68-ac4d-8cf437bcb97a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 202.0,
+                        "y": 48.0
+                    },
+                    "uuid": "8e90179c-fccf-4366-97c9-d4a659255ca5"
+                },
+                {
+                    "description": "Polygon of J301 on F.Silkscreen",
+                    "pos": {
+                        "x": 201.72,
+                        "y": 89.0
+                    },
+                    "uuid": "6df16dd0-75a5-4ed3-aa66-d886dd292d9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 153.0
+                    },
+                    "uuid": "fce5c326-bee5-4edb-86a6-c5df79b642c9"
+                },
+                {
+                    "description": "Polygon of J207 on F.Silkscreen",
+                    "pos": {
+                        "x": 45.28,
+                        "y": 88.0
+                    },
+                    "uuid": "1934511e-e709-4722-ae70-ce850258df5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 153.0
+                    },
+                    "uuid": "fce5c326-bee5-4edb-86a6-c5df79b642c9"
+                },
+                {
+                    "description": "Polygon of J205 on F.Silkscreen",
+                    "pos": {
+                        "x": 45.28,
+                        "y": 71.0
+                    },
+                    "uuid": "b4497c1d-6086-4a4d-ab64-bc348258f38c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 202.0,
+                        "y": 153.0
+                    },
+                    "uuid": "69a5d6d8-3787-4302-a8da-07023486f6d9"
+                },
+                {
+                    "description": "Polygon of J506 on F.Silkscreen",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 152.72
+                    },
+                    "uuid": "397518f9-002b-4b6b-9e2b-b80f1c1c568c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 202.0,
+                        "y": 48.0
+                    },
+                    "uuid": "8e90179c-fccf-4366-97c9-d4a659255ca5"
+                },
+                {
+                    "description": "Polygon of J401 on F.Silkscreen",
+                    "pos": {
+                        "x": 201.72,
+                        "y": 119.0
+                    },
+                    "uuid": "4f96ab9d-525b-418e-9160-02b2644f978e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        }
+    ]
+}

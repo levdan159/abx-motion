@@ -1,0 +1,34 @@
+{
+  "added": [
+    {
+      "reference": "R313",
+      "position_mm": [
+        171.0,
+        90.0
+      ],
+      "value": "1k",
+      "LCSC": "C21190"
+    },
+    {
+      "reference": "R413",
+      "position_mm": [
+        156.5,
+        101.5
+      ],
+      "value": "1k",
+      "LCSC": "C21190"
+    }
+  ],
+  "value_changes": {
+    "R2": [
+      "100k",
+      "150k"
+    ],
+    "R6": [
+      "10k",
+      "22k"
+    ]
+  },
+  "base_PCB_sha256": "8232d7bba2b5abf080cd80e2154a0ccdae39effc00a000316c70908a19a7006b",
+  "new_symbol_UUID": "b06b2479-3f8e-5c00-9a5f-8d025e6ff355"
+}

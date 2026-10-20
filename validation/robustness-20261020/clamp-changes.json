@@ -1,0 +1,22 @@
+{
+  "reference": "D2",
+  "before": "SMCJ30A/C310046",
+  "after": "TVS3300DRVR/C2863624",
+  "footprint": "abx-footprints:TVS3300_DRV0006A_2x2mm",
+  "position_mm": [
+    182,
+    63.5
+  ],
+  "rotation_deg": 180,
+  "pin_map": {
+    "1": "GND",
+    "2": "GND",
+    "3": "GND",
+    "4": "+BATT",
+    "5": "+BATT",
+    "6": "+BATT",
+    "7": "GND"
+  },
+  "rating_scope": "33V standoff; 40V max at 35A 8/20us per TI; DRV package 3.5A 10/1000us. Not continuous regen protection.",
+  "land_pattern_source": "TI DRV0006A, SLVSDO2C page 22"
+}

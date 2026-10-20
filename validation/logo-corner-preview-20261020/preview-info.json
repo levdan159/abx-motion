@@ -1,0 +1,19 @@
+{
+  "preview_only": true,
+  "source_board_sha256": "d4ca59790c266d229190fe0ed36c328546fa8316fce35471d033b262c9228fca",
+  "rear_logo_anchor_mm": [
+    187,
+    134
+  ],
+  "scale": 0.75,
+  "bounds_origin_mm": [
+    178.25,
+    126.12
+  ],
+  "bounds_size_mm": [
+    17.5,
+    16.3225
+  ],
+  "B_silkscreen_only": true,
+  "live_board_unchanged": true
+}

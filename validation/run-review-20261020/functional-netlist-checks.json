@@ -1,0 +1,5 @@
+{
+  "current_pin_to_net_mapping_matches_previously_audited_20_checks": true,
+  "pins": 742,
+  "evidence": "../recovery-review-20261019/checks/netlist-checks.json"
+}

@@ -1,0 +1,23 @@
+{
+  "all_schematic_electrical_bytes_preserved": true,
+  "schematic_pin_net_count": 751,
+  "schematic_pin_nets_identical": true,
+  "export_geometry_matches_previous": {
+    "abx-motion-F_Paste.gtp": true,
+    "abx-motion-PTH.drl": true,
+    "abx-motion-B_Cu.gbl": true,
+    "abx-motion-F_Cu.gtl": true,
+    "abx-motion-F_Mask.gts": true,
+    "abx-motion-B_Mask.gbs": true,
+    "abx-motion-Edge_Cuts.gm1": true,
+    "abx-motion-B_Silkscreen.gbo": false,
+    "abx-motion-NPTH.drl": true,
+    "abx-motion-B_Paste.gbp": true,
+    "abx-motion-In1_Cu.g1": true,
+    "abx-motion-In2_Cu.g2": true,
+    "abx-motion-F_Silkscreen.gto": false
+  },
+  "only_silkscreen_manufacturing_geometry_changed": true,
+  "revision": "1.1b",
+  "PCB_sha256": "e57538e01f44b124110bc905ded196e782818067a06e66247f0d8a76af4b034c"
+}

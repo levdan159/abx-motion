@@ -1,0 +1,50 @@
+ABX-Motion Rev 1.1b — bounded peak-load assessment, 20 October 2026
+
+User design envelope: up to 150 W per motor for one second as an upper-edge
+case. Treat as electrical power drawn in motoring unless explicitly described
+as returned braking energy. Both motors simultaneously draw 300 W: nominal
+12.5 A at 24 V, 10.20 A at 29.4 V, 9.375 A at 32 V, excluding controller and
+conversion losses. Mechanical output watts would require efficiency margin.
+This does not by itself bound PWM winding/stall current or repeated heating.
+
+Q1 at 12.5 A and datasheet 18 milliohm cold maximum has about 2.81 W / 2.81 J
+for one second. Hot resistance and transient thermal impedance must be
+included before making a temperature-rise claim; a one-second peak is not a
+continuous rating. No change to the existing current chop is justified just
+from this bus-power number.
+
+The pictured D2 area is unchanged. Rev 1.1b was a marking-only pass and no
+second TVS has been fitted. The small TVS3300 footprint and solder mask/paste
+were verified in the supplier audit. Large masked copper is not an assembly
+fault or proof of inadequate electrical connection.
+
+D2 is a transient shunt across the bus. Normal motor power does not flow
+through D2. At normal 24–32 V, it is below its 33 V standoff. Comparing the
+motor's 150 W / one-second consumption with TVS pulse watts is not a valid
+selection method. The old 1500 W SMCJ rating and new 125 W SON rating refer
+to specified roughly millisecond surge waveforms, not one second.
+
+If the SAME numerical envelope is separately required for regeneration, the
+two motors can return 300 J. Existing four motor-rail bulk capacitors total
+nominal 640 uF, storing only 0.235 J extra between 29.4 and 40 V (0.184 J
+between 32 and 40 V). They cannot buffer 300 J. A battery/BMS that accepts
+the returning energy or an appropriately sized braking path is required.
+For scale only, a shared 36 V brake sinking 300 W corresponds to 4.32 ohm
+and at least 300 J pulse-energy capability for the one-second example, before
+margins, repetition and control tolerances. This is not a selected circuit.
+36 V is an illustrative braking level below the drivers' voltage ceiling;
+32 V remains the normal operating ceiling. The TVS cannot be treated as a
+sustained braking regulator, whether one or two are populated.
+
+Recommendation: assess motoring against the newly bounded 300 W / one-second
+total peak; retain short-spike suppression as a separate function. Do not
+add an uncoordinated second TVS as a remedy for normal motor consumption.
+The prior hardware candidate and manufacturing hold have not been changed
+by this calculation-only assessment. No additional motor model is required
+to express these bounds. The conservative 300 J regeneration case is an
+explicit separate example, not an inference from the user's motoring number.
+
+Primary sources:
+https://www.ti.com/lit/ds/symlink/tvs3300.pdf
+https://www.vishay.com/docs/66963/sqj459ep.pdf
+https://www.ti.com/lit/ds/symlink/drv8701.pdf

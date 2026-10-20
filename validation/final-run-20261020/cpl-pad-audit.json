@@ -1,0 +1,1605 @@
+[
+  {
+    "ref": "C1",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C2",
+    "code": "C29823",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C3",
+    "code": "C29823",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C4",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C5",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C6",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C7",
+    "code": "C12891",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C8",
+    "code": "C12891",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C9",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C10",
+    "code": "C15850",
+    "angle": 0.0,
+    "max_error_plus": 0.049997999999987996,
+    "max_error_minus": 0.049997999999987996
+  },
+  {
+    "ref": "C201",
+    "code": "C15850",
+    "angle": 0.0,
+    "max_error_plus": 0.049997999999973786,
+    "max_error_minus": 0.049997999999973786
+  },
+  {
+    "ref": "C202",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C203",
+    "code": "C14663",
+    "angle": 90.0,
+    "max_error_plus": 1.4750239999999764,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C204",
+    "code": "C14663",
+    "angle": 90.0,
+    "max_error_plus": 1.4750239999999764,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C205",
+    "code": "C1588",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004212,
+    "max_error_minus": 0.07497600000004212
+  },
+  {
+    "ref": "C206",
+    "code": "C1588",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004212,
+    "max_error_minus": 0.07497600000004212
+  },
+  {
+    "ref": "C207",
+    "code": "C1588",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C208",
+    "code": "C1588",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C209",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C210",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C211",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C212",
+    "code": "C14663",
+    "angle": 90.0,
+    "max_error_plus": 1.4750239999999764,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C213",
+    "code": "C14663",
+    "angle": 90.0,
+    "max_error_plus": 1.4750239999999764,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C214",
+    "code": "C14663",
+    "angle": 90.0,
+    "max_error_plus": 1.4750239999999764,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C301",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C302",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C303",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C304",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C305",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C306",
+    "code": "C72499",
+    "angle": 0.0,
+    "max_error_plus": 0.29986399999998525,
+    "max_error_minus": 0.29986399999998525
+  },
+  {
+    "ref": "C307",
+    "code": "C29823",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C308",
+    "code": "C29823",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C309",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C310",
+    "code": "C107136",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "C401",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C402",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C403",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C404",
+    "code": "C15849",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C405",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C406",
+    "code": "C72499",
+    "angle": 0.0,
+    "max_error_plus": 0.29986399999998525,
+    "max_error_minus": 0.29986399999998525
+  },
+  {
+    "ref": "C407",
+    "code": "C29823",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C408",
+    "code": "C29823",
+    "angle": 0.0,
+    "max_error_plus": 0.11758000000000379,
+    "max_error_minus": 0.11758000000000379
+  },
+  {
+    "ref": "C409",
+    "code": "C14663",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000004923,
+    "max_error_minus": 0.07497600000004923
+  },
+  {
+    "ref": "C410",
+    "code": "C107136",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "C501",
+    "code": "C72480",
+    "angle": 0.0,
+    "max_error_plus": 0.432798000000048,
+    "max_error_minus": 0.432798000000048
+  },
+  {
+    "ref": "C502",
+    "code": "C72480",
+    "angle": 0.0,
+    "max_error_plus": 0.432798000000048,
+    "max_error_minus": 0.432798000000048
+  },
+  {
+    "ref": "C601",
+    "code": "C14663",
+    "angle": 90.0,
+    "max_error_plus": 1.4750239999999764,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C602",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C603",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C604",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C605",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C606",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C607",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C608",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "C609",
+    "code": "C57112",
+    "angle": 0.0,
+    "max_error_plus": 0.07497600000003501,
+    "max_error_minus": 0.07497600000003501
+  },
+  {
+    "ref": "D1",
+    "code": "C14643",
+    "angle": 0.0,
+    "max_error_plus": 0.12246399999997948,
+    "max_error_minus": 0.12246399999997948
+  },
+  {
+    "ref": "D2",
+    "code": "C310046",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "D201",
+    "code": "C78428",
+    "angle": 0.0,
+    "max_error_plus": 0.2409020000000055,
+    "max_error_minus": 0.2409020000000055
+  },
+  {
+    "ref": "D202",
+    "code": "C8598",
+    "angle": 0.0,
+    "max_error_plus": 0.05002199999999846,
+    "max_error_minus": 0.05002199999999846
+  },
+  {
+    "ref": "D501",
+    "code": "C2128",
+    "angle": 0.0,
+    "max_error_plus": 0.12246399999997948,
+    "max_error_minus": 0.12246399999997948
+  },
+  {
+    "ref": "D502",
+    "code": "C12624",
+    "angle": 0.0,
+    "max_error_plus": 0.03850500944093398,
+    "max_error_minus": 0.03850500944093398
+  },
+  {
+    "ref": "D503",
+    "code": "C2128",
+    "angle": 0.0,
+    "max_error_plus": 0.12246399999997948,
+    "max_error_minus": 0.12246399999997948
+  },
+  {
+    "ref": "D504",
+    "code": "C12624",
+    "angle": 0.0,
+    "max_error_plus": 0.03850500944093398,
+    "max_error_minus": 0.03850500944093398
+  },
+  {
+    "ref": "D601",
+    "code": "C8598",
+    "angle": 0.0,
+    "max_error_plus": 0.050021999999984246,
+    "max_error_minus": 0.050021999999984246
+  },
+  {
+    "ref": "D602",
+    "code": "C8598",
+    "angle": 0.0,
+    "max_error_plus": 0.050021999999984246,
+    "max_error_minus": 0.050021999999984246
+  },
+  {
+    "ref": "F1",
+    "code": "C352820",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "F2",
+    "code": "C2984676",
+    "angle": 0.0,
+    "max_error_plus": 0.04500600000000787,
+    "max_error_minus": 0.04500600000000787
+  },
+  {
+    "ref": "F3",
+    "code": "C2984676",
+    "angle": 90.0,
+    "max_error_plus": 2.845006000000012,
+    "max_error_minus": 0.04500600000000077
+  },
+  {
+    "ref": "F4",
+    "code": "C20798",
+    "angle": 90.0,
+    "max_error_plus": 2.845006000000012,
+    "max_error_minus": 0.04500600000000077
+  },
+  {
+    "ref": "F5",
+    "code": "C151162",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "J1",
+    "code": "C98733",
+    "angle": 0.0,
+    "max_error_plus": 7.199941999999936,
+    "max_error_minus": 7.199941999999936
+  },
+  {
+    "ref": "J102",
+    "code": "C8465",
+    "angle": 90.0,
+    "max_error_plus": 5.0800000000000125,
+    "max_error_minus": 1.4210854715202004e-14
+  },
+  {
+    "ref": "J201",
+    "code": "C165948",
+    "angle": 270.0,
+    "max_error_plus": 6.060938424911548,
+    "max_error_minus": 0.0003202639536203045
+  },
+  {
+    "ref": "J202",
+    "code": "C566014",
+    "angle": 270.0,
+    "max_error_plus": 7.500056000000029,
+    "max_error_minus": 6.600000004652884e-05
+  },
+  {
+    "ref": "J203",
+    "code": "C566014",
+    "angle": 270.0,
+    "max_error_plus": 7.500056000000029,
+    "max_error_minus": 6.600000003231798e-05
+  },
+  {
+    "ref": "J204",
+    "code": "C492401",
+    "angle": 0.0,
+    "max_error_plus": 7.105427357601002e-15,
+    "max_error_minus": 7.105427357601002e-15
+  },
+  {
+    "ref": "J205",
+    "code": "C72334",
+    "angle": 270.0,
+    "max_error_plus": 10.159999999999997,
+    "max_error_minus": 0.0
+  },
+  {
+    "ref": "J206",
+    "code": "C492401",
+    "angle": 0.0,
+    "max_error_plus": 7.105427357601002e-15,
+    "max_error_minus": 7.105427357601002e-15
+  },
+  {
+    "ref": "J207",
+    "code": "C72334",
+    "angle": 270.0,
+    "max_error_plus": 10.159999999999997,
+    "max_error_minus": 0.0
+  },
+  {
+    "ref": "J208",
+    "code": "C2718488",
+    "angle": 0.0,
+    "max_error_plus": 0.0,
+    "max_error_minus": 0.0
+  },
+  {
+    "ref": "J209",
+    "code": "C566014",
+    "angle": 270.0,
+    "max_error_plus": 7.500056000000029,
+    "max_error_minus": 6.600000004652884e-05
+  },
+  {
+    "ref": "J301",
+    "code": "C8465",
+    "angle": 90.0,
+    "max_error_plus": 5.0800000000000125,
+    "max_error_minus": 1.4210854715202004e-14
+  },
+  {
+    "ref": "J401",
+    "code": "C8465",
+    "angle": 90.0,
+    "max_error_plus": 5.0800000000000125,
+    "max_error_minus": 1.4210854715202004e-14
+  },
+  {
+    "ref": "J501",
+    "code": "C566014",
+    "angle": 0.0,
+    "max_error_plus": 6.600000004652884e-05,
+    "max_error_minus": 6.600000004652884e-05
+  },
+  {
+    "ref": "J502",
+    "code": "C566014",
+    "angle": 0.0,
+    "max_error_plus": 6.600000004652884e-05,
+    "max_error_minus": 6.600000004652884e-05
+  },
+  {
+    "ref": "J503",
+    "code": "C566014",
+    "angle": 0.0,
+    "max_error_plus": 6.600000004652884e-05,
+    "max_error_minus": 6.600000004652884e-05
+  },
+  {
+    "ref": "J504",
+    "code": "C566014",
+    "angle": 0.0,
+    "max_error_plus": 6.600000003231798e-05,
+    "max_error_minus": 6.600000003231798e-05
+  },
+  {
+    "ref": "J505",
+    "code": "C72334",
+    "angle": 0.0,
+    "max_error_plus": 2.842170943040401e-14,
+    "max_error_minus": 2.842170943040401e-14
+  },
+  {
+    "ref": "J506",
+    "code": "C72334",
+    "angle": 0.0,
+    "max_error_plus": 2.842170943040401e-14,
+    "max_error_minus": 2.842170943040401e-14
+  },
+  {
+    "ref": "J601",
+    "code": "C131339",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "J602",
+    "code": "C131339",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "J603",
+    "code": "C131339",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "J604",
+    "code": "C131339",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "J605",
+    "code": "C131339",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "J606",
+    "code": "C131339",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "K501",
+    "code": "C116963",
+    "angle": 270.0,
+    "max_error_plus": 18.929229416313795,
+    "max_error_minus": 0.43953600000001813
+  },
+  {
+    "ref": "K502",
+    "code": "C116963",
+    "angle": 270.0,
+    "max_error_plus": 18.929229416313795,
+    "max_error_minus": 0.43953600000001813
+  },
+  {
+    "ref": "L1",
+    "code": "C177243",
+    "angle": 180.0,
+    "max_error_plus": 0.4030100000000232,
+    "max_error_minus": 0.4030100000000232
+  },
+  {
+    "ref": "LED201",
+    "code": "C2287",
+    "angle": 0.0,
+    "max_error_plus": 1.5385017999999917,
+    "max_error_minus": 1.5385017999999917
+  },
+  {
+    "ref": "LED202",
+    "code": "C2287",
+    "angle": 0.0,
+    "max_error_plus": 1.538501800000006,
+    "max_error_minus": 1.538501800000006
+  },
+  {
+    "ref": "LED203",
+    "code": "C2288",
+    "angle": 0.0,
+    "max_error_plus": 0.03850500944093398,
+    "max_error_minus": 0.03850500944093398
+  },
+  {
+    "ref": "LED_FLT1",
+    "code": "C2286",
+    "angle": 0.0,
+    "max_error_plus": 1.5376112007871579,
+    "max_error_minus": 1.5376112007871579
+  },
+  {
+    "ref": "LED_FLT2",
+    "code": "C2286",
+    "angle": 0.0,
+    "max_error_plus": 1.5376112007871579,
+    "max_error_minus": 1.5376112007871579
+  },
+  {
+    "ref": "LED_PWR_3V3_1",
+    "code": "C12624",
+    "angle": 0.0,
+    "max_error_plus": 0.03850500944093398,
+    "max_error_minus": 0.03850500944093398
+  },
+  {
+    "ref": "LED_PWR_5V1",
+    "code": "C12624",
+    "angle": 0.0,
+    "max_error_plus": 0.03850500944093398,
+    "max_error_minus": 0.03850500944093398
+  },
+  {
+    "ref": "LED_PWR_BATT1",
+    "code": "C12624",
+    "angle": 0.0,
+    "max_error_plus": 0.03850500944093398,
+    "max_error_minus": 0.03850500944093398
+  },
+  {
+    "ref": "Q1",
+    "code": "C3289501",
+    "angle": 270.0,
+    "max_error_plus": 5.851268559382356,
+    "max_error_minus": 0.48733246480397857
+  },
+  {
+    "ref": "Q301",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q302",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q303",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q304",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q401",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q402",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q403",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q404",
+    "code": "C86513",
+    "angle": 270.0,
+    "max_error_plus": 7.10827561496404,
+    "max_error_minus": 2.797450042144128
+  },
+  {
+    "ref": "Q501",
+    "code": "C20917",
+    "angle": 180.0,
+    "max_error_plus": 0.083297999999985,
+    "max_error_minus": 0.083297999999985
+  },
+  {
+    "ref": "Q502",
+    "code": "C20917",
+    "angle": 180.0,
+    "max_error_plus": 0.083297999999985,
+    "max_error_minus": 0.083297999999985
+  },
+  {
+    "ref": "Q503",
+    "code": "C20917",
+    "angle": 180.0,
+    "max_error_plus": 0.08329799999997078,
+    "max_error_minus": 0.08329799999997078
+  },
+  {
+    "ref": "Q504",
+    "code": "C20917",
+    "angle": 180.0,
+    "max_error_plus": 0.08329799999997078,
+    "max_error_minus": 0.08329799999997078
+  },
+  {
+    "ref": "Q601",
+    "code": "C20917",
+    "angle": 180.0,
+    "max_error_plus": 0.08329799999997078,
+    "max_error_minus": 0.08329799999997078
+  },
+  {
+    "ref": "Q602",
+    "code": "C20917",
+    "angle": 180.0,
+    "max_error_plus": 0.08329799999997078,
+    "max_error_minus": 0.08329799999997078
+  },
+  {
+    "ref": "R1",
+    "code": "C25819",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R2",
+    "code": "C25803",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R3",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R4",
+    "code": "C25803",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R5",
+    "code": "C25962",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R6",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R7",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R8",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R9",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R201",
+    "code": "C23186",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R202",
+    "code": "C23186",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R203",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R204",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R205",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R206",
+    "code": "C25804",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R207",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R208",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R209",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R210",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R211",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R212",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R213",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R214",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R215",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R216",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R217",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R218",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R219",
+    "code": "C22787",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R220",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R221",
+    "code": "C22787",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R222",
+    "code": "C23138",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R223",
+    "code": "C23138",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R224",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R225",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R226",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R227",
+    "code": "C25804",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R228",
+    "code": "C25804",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R229",
+    "code": "C25804",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R230",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R231",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R232",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R301",
+    "code": "C25810",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R302",
+    "code": "C22984",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R303",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R304",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R305",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R306",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R307",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R308",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R309",
+    "code": "C840621",
+    "angle": 0.0,
+    "max_error_plus": 0.10378800000003707,
+    "max_error_minus": 0.10378800000003707
+  },
+  {
+    "ref": "R310",
+    "code": "C844598",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "R311",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R312",
+    "code": "C25811",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R401",
+    "code": "C25810",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R402",
+    "code": "C22984",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R403",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R404",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R405",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R406",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R407",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R408",
+    "code": "C22859",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R409",
+    "code": "C840621",
+    "angle": 0.0,
+    "max_error_plus": 0.10378800000003707,
+    "max_error_minus": 0.10378800000003707
+  },
+  {
+    "ref": "R410",
+    "code": "C844598",
+    "status": "supplier pad data unavailable"
+  },
+  {
+    "ref": "R411",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000699198,
+    "max_error_minus": 0.07163600000699198
+  },
+  {
+    "ref": "R412",
+    "code": "C25811",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000004067,
+    "max_error_minus": 0.07163600000004067
+  },
+  {
+    "ref": "R501",
+    "code": "C22775",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R502",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R503",
+    "code": "C22775",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R504",
+    "code": "C21190",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R505",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R506",
+    "code": "C25804",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000001225,
+    "max_error_minus": 0.07163600000001225
+  },
+  {
+    "ref": "R507",
+    "code": "C25804",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R508",
+    "code": "C25804",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000004067,
+    "max_error_minus": 0.07163600000004067
+  },
+  {
+    "ref": "R601",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R602",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R603",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R604",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R605",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R606",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R607",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R608",
+    "code": "C23162",
+    "angle": 0.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R609",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R610",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R611",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R612",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R613",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R614",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R615",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R616",
+    "code": "C21190",
+    "angle": 180.0,
+    "max_error_plus": 0.07163600000002646,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R617",
+    "code": "C21190",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R618",
+    "code": "C21190",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R619",
+    "code": "C22775",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R620",
+    "code": "C22775",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R621",
+    "code": "C25804",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "R622",
+    "code": "C25804",
+    "angle": 90.0,
+    "max_error_plus": 1.5783639999999792,
+    "max_error_minus": 0.07163600000002646
+  },
+  {
+    "ref": "SW201",
+    "code": "C231329",
+    "angle": 0.0,
+    "max_error_plus": 3.399999997100167e-06,
+    "max_error_minus": 3.399999997100167e-06
+  },
+  {
+    "ref": "SW202",
+    "code": "C231329",
+    "angle": 0.0,
+    "max_error_plus": 3.399999997100167e-06,
+    "max_error_minus": 3.399999997100167e-06
+  },
+  {
+    "ref": "SW203",
+    "code": "C231329",
+    "angle": 0.0,
+    "max_error_plus": 3.399999997100167e-06,
+    "max_error_minus": 3.399999997100167e-06
+  },
+  {
+    "ref": "SW204",
+    "code": "C231329",
+    "angle": 0.0,
+    "max_error_plus": 3.399999997100167e-06,
+    "max_error_minus": 3.399999997100167e-06
+  },
+  {
+    "ref": "SW205",
+    "code": "C231329",
+    "angle": 0.0,
+    "max_error_plus": 3.399999997100167e-06,
+    "max_error_minus": 3.399999997100167e-06
+  },
+  {
+    "ref": "SW501",
+    "code": "C319040",
+    "angle": 270.0,
+    "max_error_plus": 10.121925621652991,
+    "max_error_minus": 0.14482599999993795
+  },
+  {
+    "ref": "SW502",
+    "code": "C319040",
+    "angle": 270.0,
+    "max_error_plus": 10.121925621652991,
+    "max_error_minus": 0.14482599999993795
+  },
+  {
+    "ref": "U1",
+    "code": "C1858395",
+    "angle": 270.0,
+    "max_error_plus": 6.856094485932672,
+    "max_error_minus": 0.29999400000005494
+  },
+  {
+    "ref": "U2",
+    "code": "C51118",
+    "angle": 270.0,
+    "max_error_plus": 3.1161067101769326,
+    "max_error_minus": 0.19497234842398237
+  },
+  {
+    "ref": "U3",
+    "code": "C2913204",
+    "angle": 0.0,
+    "max_error_plus": 1.9857029058267854,
+    "max_error_minus": 1.9857029058267854
+  },
+  {
+    "ref": "U4",
+    "code": "C133541",
+    "angle": 270.0,
+    "max_error_plus": 9.165870109926086,
+    "max_error_minus": 0.14399400000003482
+  },
+  {
+    "ref": "U201",
+    "code": "C7519",
+    "angle": 270.0,
+    "max_error_plus": 2.972939499689776,
+    "max_error_minus": 0.011596068989070481
+  },
+  {
+    "ref": "U202",
+    "code": "C132550",
+    "angle": 270.0,
+    "max_error_plus": 6.345955925086123,
+    "max_error_minus": 0.12494399999996375
+  },
+  {
+    "ref": "U203",
+    "code": "C2671361",
+    "angle": 270.0,
+    "max_error_plus": 6.345955925086123,
+    "max_error_minus": 0.12494399999997086
+  },
+  {
+    "ref": "U301",
+    "code": "C90964",
+    "angle": 270.0,
+    "max_error_plus": 4.620539413745583,
+    "max_error_minus": 0.010707093037744083
+  },
+  {
+    "ref": "U401",
+    "code": "C90964",
+    "angle": 270.0,
+    "max_error_plus": 4.620539413745583,
+    "max_error_minus": 0.010707093037744083
+  },
+  {
+    "ref": "U601",
+    "code": "C128392",
+    "status": "supplier pad data unavailable"
+  }
+]

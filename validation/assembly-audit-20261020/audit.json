@@ -1,0 +1,27 @@
+{
+  "release_status": "HOLD: protection choice unresolved; relay physical alignment requires assembler review",
+  "PCB_sha256": "0625cd61f3970adfcf98d8586c776f4bc83c87c669794b3f35ddb2c3129c7920",
+  "BOM_groups": 66,
+  "placements": 239,
+  "supplier_SKUs_with_current_footprint_SVG": 66,
+  "numbered_pad_orientation_and_copper_overlap_pass": 237,
+  "relay_rotation_agrees_but_supplier_origin_not_certified": [
+    "K501",
+    "K502"
+  ],
+  "D2_rotation_supplier_verified": true,
+  "U601_rotation_supplier_verified": true,
+  "J601_to_J606_rotation_supplier_verified": true,
+  "PCB_BOM_CPL_unchanged": true,
+  "fresh_ERC_violations": 0,
+  "fresh_DRC_errors": 0,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "DRC_warnings": 19,
+  "DRC_warning_types": {
+    "lib_footprint_mismatch": 19
+  },
+  "all_13_fabrication_files_match_prior_geometry": true,
+  "second_TVS_added": false,
+  "protection_notes": "Do not assume parallel TVS energy ratings add. No unconditional 32V or regenerative-energy qualification."
+}

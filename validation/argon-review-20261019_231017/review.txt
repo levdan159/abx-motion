@@ -1,0 +1,28 @@
+Snapshot review: 2026-10-19 23:10:17 local time.
+Argon is still active; no shared design, generator, library, or production files changed by this review.
+
+Fresh KiCad checks (zones refilled for checking):
+ERC: 0 violations.
+DRC: 4 copper errors, 35 warnings, 5 missing connections, 0 schematic-parity issues.
+
+Fix priorities:
+1. ENC2_A shorts M1_MAX_IN at via (65.8,114.22); this also causes two clearance findings.
+2. ENC2_B crosses ENC1_A on B.Cu near (97.5,73.1).
+3. Three pairs of same-net via drills overlap:
+   ESP_BOOT: (74.5,68.7)/(74.7,68.7)
+   M2_MIN_IN: (66.9,114.88)/(66.7,114.9)
+   S2_MAX_IN: (65.7,118.3)/(65.8,118.12)
+   Treat as fabrication blockers despite warning severity.
+4. Finish missing BTN_HOME/OK connection to MCU, plus M1_MIN_RAW, M2_MAX_IN, S1_MIN_IN, S1_MAX_IN.
+5. Back connector pin legends are whole mirrored strings, reversing their physical positions relative to pad nets. Use separate mirrored labels, each centered on its actual pad X coordinate. Pin 1 is MN or 5V, pin 2 G, pin 3 MX or SW. With current orientation the bottom view reads MX G MN / SW G 5V from left to right.
+6. Use individual pad-aligned labels on the front too; simplify the long footer and dense row labels for readability.
+
+Workflow defects:
+- run_stage3.py calls run_stage2.py; run_stage2.py restores the V1.0 PCB each time. Board-only corrections disappear on the next run. Separate one-time generation from incremental repair.
+- Router skips obstacle checks within 0.6mm of either endpoint. Other-net clearances must remain enforced there.
+- via_clear skips same-net holes. Drill spacing must be checked irrespective of net.
+- Obstacle setup still uses a hardcoded antenna rectangle and omits logo copper and zone geometry.
+
+Protected component placement/value/footprint changes from V1.0: []
+In1.Cu signal-track count: 0.
+Back logo is now silkscreen-only, avoiding exposing underlying copper.

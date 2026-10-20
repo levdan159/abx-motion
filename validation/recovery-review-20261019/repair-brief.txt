@@ -1,0 +1,44 @@
+Compact V1.1 recovery brief
+
+Recover a checkpoint; do not regenerate the board or run another global rip-up.
+Stop competing project writers before changing live files. Preserve the failed
+candidate and scripts for inspection.
+
+Use the supplied recovery-project/abx-motion.kicad_pcb with its matching
+schematics and project libraries. It is the compact pre-rip-up snapshot, with
+4 copper errors, 5 missing connections, 3 overlapping same-net via pairs,
+0 schematic parity findings and a zero-violation matching schematic ERC.
+Do not treat the recovery copy as fabrication-ready.
+
+1. Freeze placement and protect USB, input/buck, motor power, gate drive and
+   shunt routing. Do not invoke run_stage2.py, layout_pcb.py, or the current
+   run_stage3.py. Refill zones directly; do not run the whole polish script
+   merely to invoke its filler.
+2. Repair ENC2_A/M1_MAX_IN near (65.8,114.22), and the ENC2_B/ENC1_A crossing
+   near (97.5,73.1), using local changes. The first conflict accounts for three
+   of the four copper-error findings.
+3. Merge/relocate overlapping same-net via pairs, preserving all incident
+   connections: ESP_BOOT (74.5,68.7)/(74.7,68.7), M2_MIN_IN
+   (66.9,114.88)/(66.7,114.9), S2_MAX_IN (65.7,118.3)/(65.8,118.12).
+4. Finish BTN_HOME/OK, M1_MIN_RAW, M2_MAX_IN, S1_MIN_IN, S1_MAX_IN. Do not
+   rewrite unrelated nets. Keep signal tracks off In1.Cu and preserve current-
+   appropriate winding/output widths and the existing USB pair geometry.
+5. If a routing helper is used, enforce other-net clearance even at endpoints,
+   enforce hole spacing regardless of net, reject out-of-search-area endpoints,
+   and use actual layer-aware geometry. Never default motor/power nets to a
+   generic signal width. Run DRC and save a checkpoint after each repair group.
+6. When electrical routing passes, remove confirmed orphan stubs and fix the
+   back pin legends using separate mirrored labels at the actual pad positions.
+   Current bottom-view label order is MX|G|MN and SW|G|5V. Simplify clutter.
+7. Place final gold gears plus white AUTOBOTIX / ABX-Motion V1.1 text only
+   after routing is stable. Prefer the bottom-right blank area for minimum
+   disruption; retain the back silkscreen logo. Re-run DRC after copper changes.
+8. Fresh final ERC/DRC must show zero electrical errors, opens and parity
+   findings, with no drill collisions. Review remaining warnings individually.
+   Record the exact checked board checksum. Update BOM/CPL and fabrication
+   files together, but do not call the 32V/full-current envelope validated.
+
+The detailed review documents firmware startup/reset handling, voltage and
+thermal qualification, OLED mounting dimensions and assembly checks still
+needed before ordering or testing. Do not extend scope to industrial I/O or
+a larger board to solve the localized routing problem.

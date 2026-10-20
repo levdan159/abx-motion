@@ -1,0 +1,37 @@
+{
+  "DRC_errors": 0,
+  "ERC_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "DRC_warnings": 19,
+  "BOM_rows": 64,
+  "unique_supplier_codes": 64,
+  "placements": 237,
+  "tracks_and_vias_unchanged": true,
+  "only_pad_changes": {
+    "refs": [
+      "U501",
+      "U502"
+    ],
+    "holes": 32,
+    "before_mm": 0.8,
+    "after_mm": 1.0
+  },
+  "CPL_byte_identical": true,
+  "normalized_fabrication_comparison": {
+    "abx-motion-F_Paste.gtp": true,
+    "abx-motion-PTH.drl": false,
+    "abx-motion-B_Cu.gbl": false,
+    "abx-motion-F_Cu.gtl": true,
+    "abx-motion-F_Mask.gts": true,
+    "abx-motion-B_Mask.gbs": true,
+    "abx-motion-Edge_Cuts.gm1": true,
+    "abx-motion-B_Silkscreen.gbo": true,
+    "abx-motion-NPTH.drl": true,
+    "abx-motion-B_Paste.gbp": true,
+    "abx-motion-In1_Cu.g1": true,
+    "abx-motion-In2_Cu.g2": true,
+    "abx-motion-F_Silkscreen.gto": true
+  },
+  "PCB_sha256": "8232d7bba2b5abf080cd80e2154a0ccdae39effc00a000316c70908a19a7006b"
+}

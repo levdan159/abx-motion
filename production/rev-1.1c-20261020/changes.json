@@ -1,0 +1,18 @@
+{
+  "revision": "1.1c",
+  "changed_values": {
+    "R302": {
+      "before": "30k C22984",
+      "after": "12k C22790"
+    },
+    "R402": {
+      "before": "30k C22984",
+      "after": "12k C22790"
+    }
+  },
+  "nominal_current_chop_A": 9.35,
+  "routing_pad_net_and_board_geometry_changes": 0,
+  "strict_byte_scope_check_passed": true,
+  "second_TVS_added": false,
+  "physical_tests_performed": false
+}

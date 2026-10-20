@@ -1,0 +1,2 @@
+HOLD: protection choice unresolved; relay physical alignment requires assembler review
+See review.txt. The small TVS candidate is not released for unknown motor energy.

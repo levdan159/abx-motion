@@ -1,0 +1,32 @@
+[
+  {
+    "ref": "J1",
+    "old_rotation": "0.0",
+    "new_rotation": "180.0",
+    "basis": "Saved supplier footprint pad positions: pad 1 opposite PCB at 0 degrees; 180 aligns it. Confirm physical polarity in assembler preview."
+  },
+  {
+    "ref": "LED201",
+    "old_rotation": "0.0",
+    "new_rotation": "180.0",
+    "basis": "Saved supplier footprint pad positions: pad 1 opposite PCB at 0 degrees; 180 aligns it. Confirm physical polarity in assembler preview."
+  },
+  {
+    "ref": "LED202",
+    "old_rotation": "0.0",
+    "new_rotation": "180.0",
+    "basis": "Saved supplier footprint pad positions: pad 1 opposite PCB at 0 degrees; 180 aligns it. Confirm physical polarity in assembler preview."
+  },
+  {
+    "ref": "LED_FLT1",
+    "old_rotation": "0.0",
+    "new_rotation": "180.0",
+    "basis": "Saved supplier footprint pad positions: pad 1 opposite PCB at 0 degrees; 180 aligns it. Confirm physical polarity in assembler preview."
+  },
+  {
+    "ref": "LED_FLT2",
+    "old_rotation": "0.0",
+    "new_rotation": "180.0",
+    "basis": "Saved supplier footprint pad positions: pad 1 opposite PCB at 0 degrees; 180 aligns it. Confirm physical polarity in assembler preview."
+  }
+]

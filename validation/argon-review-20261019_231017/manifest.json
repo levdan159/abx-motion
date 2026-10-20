@@ -1,0 +1,6 @@
+{
+  "snapshot": "/tmp/abx-fix-20261019-231017",
+  "board_sha256": "8ec851d7639b256a545cc928b624a82d2242ff2cbd9337505cb07efa359bfab4",
+  "protected_component_regressions": [],
+  "live_board_changed_since_snapshot": true
+}
