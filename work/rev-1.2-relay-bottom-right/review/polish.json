@@ -1,0 +1,7 @@
+{
+  "removed_unused_vias": [
+    "1938e4ee-6532-4c93-b699-79e549bcac2f",
+    "7c215029-02b9-42ff-943c-265445dd9c27"
+  ],
+  "merged_collinear_new_segments": 4
+}

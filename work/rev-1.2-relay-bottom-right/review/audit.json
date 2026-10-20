@@ -1,0 +1,16 @@
+{
+  "moved_footprints": 16,
+  "unchanged_footprints": 236,
+  "unchanged_retained_tracks_vias": 2718,
+  "removed_local_tracks_vias": 361,
+  "new_local_tracks_vias": 231,
+  "preserved_thermal_vias": 20,
+  "zone_outlines_and_nets_unchanged": true,
+  "production_files_hash_identical": 337,
+  "electrical_netlist_unchanged": true,
+  "contact_tracks": 18,
+  "drc_errors": 0,
+  "opens": 0,
+  "parity_issues": 0,
+  "existing_library_warnings": 19
+}

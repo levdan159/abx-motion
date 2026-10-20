@@ -1,0 +1,20 @@
+{
+  "Before connector shift": {
+    "empty_rectangle_mm": [
+      136.0,
+      104.0,
+      21.0,
+      9.0
+    ],
+    "area_mm2": 189.0
+  },
+  "After connector shift": {
+    "empty_rectangle_mm": [
+      136.0,
+      104.0,
+      16.1,
+      16.9
+    ],
+    "area_mm2": 272.09
+  }
+}
