@@ -1,0 +1,18 @@
+[
+  {
+    "uuid": "0fb409f3-c9d3-43bf-9502-1c5fc2bbce9b",
+    "net": "+3V3"
+  },
+  {
+    "uuid": "bc904fbd-ab09-4a13-9324-1b47d4791d7b",
+    "net": "/MCU_and_Encoders/BTN_BACK"
+  },
+  {
+    "uuid": "e951533c-75eb-494b-987d-4a7fc991a606",
+    "net": "/MCU_and_Encoders/BTN_BACK"
+  },
+  {
+    "uuid": "40cafb59-a29a-4550-9e21-f0b5ec5d2193",
+    "net": "/+3V3_DRV_EN"
+  }
+]

@@ -1,4 +1,4 @@
-> Latest connector update: J502/J504 use low-profile 2.54 mm right-angle control headers, with front/back pin legends. Checks and renders: `work/rev-1.2-ext-headers/review/`.
+> Latest connector layout: upright 2.54 mm J502/J504 headers rotated 90 degrees, with the compact JST/header bank shifted right and matching 2.53 mm gaps. Front/back pin legends updated. Checks and renders: `work/rev-1.2-ext-upright/review/`.
 
 > Latest relay-bay refinement: both relay connectors shifted toward the bottom-right; Motor 2 layout preserved. Current checks and previews: `work/rev-1.2-relay-bottom-right/review/`.
 

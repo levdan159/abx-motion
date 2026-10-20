@@ -1,0 +1,302 @@
+[
+  {
+    "net": "/Steppers_and_Relays/STEP1_A2",
+    "start": [
+      97.7,
+      148.0,
+      0
+    ],
+    "end": [
+      100.5,
+      120.58,
+      0
+    ],
+    "width": 0.5,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP2_A2",
+    "start": [
+      120.7,
+      148.0,
+      0
+    ],
+    "end": [
+      121.0,
+      120.58,
+      0
+    ],
+    "width": 0.5,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP1_A1",
+    "start": [
+      95.2,
+      148.0,
+      0
+    ],
+    "end": [
+      100.5,
+      123.12,
+      0
+    ],
+    "width": 0.5,
+    "success": false
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP2_A1",
+    "start": [
+      118.2,
+      148.0,
+      0
+    ],
+    "end": [
+      121.0,
+      123.12,
+      0
+    ],
+    "width": 0.5,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP2_B1",
+    "start": [
+      121.0,
+      125.66,
+      0
+    ],
+    "end": [
+      123.2,
+      148.0,
+      0
+    ],
+    "width": 0.5,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP1_B1",
+    "start": [
+      100.2,
+      148.0,
+      0
+    ],
+    "end": [
+      100.5,
+      125.66,
+      0
+    ],
+    "width": 0.5,
+    "success": false
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP2_B2",
+    "start": [
+      121.0,
+      128.2,
+      0
+    ],
+    "end": [
+      125.7,
+      148.0,
+      0
+    ],
+    "width": 0.5,
+    "success": false
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP1_B2",
+    "start": [
+      100.5,
+      128.2,
+      0
+    ],
+    "end": [
+      102.7,
+      148.0,
+      0
+    ],
+    "width": 0.5,
+    "success": false
+  },
+  {
+    "net": "/STEP1_PUL",
+    "start": [
+      100.0,
+      143.0,
+      1
+    ],
+    "end": [
+      111.3,
+      143.44,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/STEP1_DIR",
+    "start": [
+      102.5,
+      145.5,
+      0
+    ],
+    "end": [
+      111.3,
+      145.98,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "start": [
+      131.48,
+      135.5,
+      1
+    ],
+    "end": [
+      133.0,
+      140.9,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/MCU_and_Encoders/BTN_BACK",
+    "start": [
+      99.7,
+      149.3,
+      1
+    ],
+    "end": [
+      103.9,
+      142.7,
+      1
+    ],
+    "width": 0.25,
+    "success": false
+  },
+  {
+    "net": "+3V3",
+    "start": [
+      111.025,
+      137.0,
+      0
+    ],
+    "end": [
+      111.0,
+      129.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/STEP2_PUL",
+    "start": [
+      133.0,
+      143.44,
+      0
+    ],
+    "end": [
+      127.6,
+      144.0,
+      1
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/+3V3_DRV_EN",
+    "start": [
+      109.3,
+      140.1,
+      1
+    ],
+    "end": [
+      112.7,
+      143.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "start": [
+      111.3,
+      140.9,
+      0
+    ],
+    "end": [
+      109.375,
+      137.0,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "start": [
+      111.3,
+      140.9,
+      0
+    ],
+    "end": [
+      107.0,
+      141.0,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/STEP2_DIR",
+    "start": [
+      130.0,
+      144.0,
+      0
+    ],
+    "end": [
+      133.0,
+      145.98,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/STEP1_PUL",
+    "start": [
+      99.2,
+      144.0,
+      0
+    ],
+    "end": [
+      100.0,
+      143.0,
+      1
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "start": [
+      109.375,
+      137.0,
+      0
+    ],
+    "end": [
+      109.38,
+      135.8,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "uuid": "e049c44e-0122-42d1-8823-be0cd4c6e9d3",
+    "net": "/STEP1_PUL",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "4a4deb38-45a1-4833-9503-a396a0836207",
+    "net": "/STEP1_DIR",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "42bc2f2d-d6e9-446b-a104-be2e86e243a7",
+    "net": "/STEP2_PUL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "c8116b7f-74a4-4df3-b114-25260a7be018",
+    "net": "/STEP2_DIR",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "c7ae788e-85bc-4767-b02b-9f997dff8bd9",
+    "net": "/MCU_and_Encoders/BTN_BACK",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "651ecce1-0be0-4aab-a38e-f1f289a467e9",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "02fde99a-3011-4144-8b0f-2a16d83a8ce7",
+    "net": "/+3V3_DRV_EN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "6e3ec572-82ae-4035-bc81-9ec70dbc4a40",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "0fc655c0-bf2b-460a-8540-0703384c1eaa",
+    "net": "/STEP1_PUL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cc9862a1-ff1a-4054-8242-841dfa89966e",
+    "net": "/STEP2_PUL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "155ce984-2ee8-48ff-9d0f-5fe321ef5c91",
+    "net": "/STEP2_DIR",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "6bacbd72-78fe-4d52-8703-2d1d00fcdbd9",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "f986a7ef-88d0-497b-afcf-c2221d81aa6c",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "11b9f65b-95e2-413f-bf0a-136e855b165c",
+    "net": "/STEP2_PUL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "51dcaf36-972a-415e-8f57-5c347d8fa531",
+    "net": "/STEP2_DIR",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "2c312e07-9cfa-4d39-a728-b06e3cb95ebf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "91d888be-f378-402c-ae52-3479f922959d",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "393d1a74-d99c-444a-afc4-f54f655873de",
+    "net": "/STEP2_PUL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "066a91f9-183f-47cd-bfaf-bec2c16d887b",
+    "net": "/STEP2_DIR",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "ff6ce31e-ae43-4cfa-a4f9-91f40dd56a90",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "1d51892d-1534-487f-beaa-669b531e5a2f",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "3a886f06-ba34-47aa-8ccc-c5c7880b59bc",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "4cd5ff34-6a14-44e5-8d6f-383c10ed19a3",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "81b74ec8-1497-4f2c-96ed-00e0f6fc5f96",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "589ada31-d643-4eca-a4c3-145374f47871",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "f6be4276-1b64-41f3-b5c8-bb3ee2d9c500",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "d4f21334-b995-4a42-9453-fc73e6db31cc",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "abdc446f-e1b8-42a8-ba48-237f07594511",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "78d22ef1-27a1-4661-9717-03c39216b3ec",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "91b7f73e-e17f-4772-936f-f0ed5dbcfd16",
+    "net": "/Steppers_and_Relays/STEP1_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "cae31036-96cf-406b-b1c7-904fd7616fcf",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "a3776ed3-20fe-4351-a16c-87f20daae303",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "6d39ee6f-270b-4d31-be14-909fd402b3df",
+    "net": "/Steppers_and_Relays/STEP2_EN_GATED",
+    "action": "remove free stub"
+  }
+]

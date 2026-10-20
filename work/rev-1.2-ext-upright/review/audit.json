@@ -1,0 +1,35 @@
+{
+  "moved_footprints": [
+    "J501",
+    "J502",
+    "J503",
+    "J504",
+    "R507"
+  ],
+  "unchanged_other_footprints": 247,
+  "preserved_original_track_via_objects": 2882,
+  "trimmed_original_tracks": [
+    "7552587b-a79e-4f63-8452-de6e79f4c456",
+    "4a4deb38-45a1-4833-9503-a396a0836207"
+  ],
+  "removed_original_tracks_vias": 65,
+  "new_tracks_vias": 290,
+  "motor_vias_1mm_0_5drill": 4,
+  "preserved_thermal_vias": 20,
+  "zone_outlines_and_nets_unchanged": true,
+  "front_and_back_labels_match_pad_nets": true,
+  "netlist_unchanged": true,
+  "production_files_unchanged": 337,
+  "jst_spacing_mm_before": 28,
+  "jst_spacing_mm_after": 21.7,
+  "bank_left_edge_shift_right_mm": 14.5,
+  "bank_width_reduction_mm": 13.12,
+  "matched_jst_to_ext_courtyard_gaps_mm": [
+    2.53,
+    2.53
+  ],
+  "drc_errors": 0,
+  "opens": 0,
+  "parity_issues": 0,
+  "existing_library_warnings": 19
+}

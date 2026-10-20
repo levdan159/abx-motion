@@ -1,0 +1,17 @@
+{
+  "net": "/MCU_and_Encoders/BTN_BACK",
+  "source": [
+    94.1,
+    149.3,
+    1
+  ],
+  "target": [
+    105.5,
+    142.7,
+    1
+  ],
+  "trimmed_tracks": [
+    "7552587b-a79e-4f63-8452-de6e79f4c456",
+    "c7ae788e-85bc-4767-b02b-9f997dff8bd9"
+  ]
+}
