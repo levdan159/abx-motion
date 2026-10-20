@@ -1,0 +1,23 @@
+ID,Requirement,Source IDs in integration-review.txt,Status
+driver_variant,"Confirm exact SPI variant, supplier stock, footprint and numbered pads","1,2",OPEN
+loss_model,Compare exact-package cold/hot conduction estimates; retain loss scope,"1,2,5",RESEARCH COMPLETE
+GPIO,"Close six direct STEP/DIR pins, SPI and chip-select allocation","7,12",OPEN
+hardware_arm,Provide default-disable covering MCU reset/hang and retained expander state,"1,7",OPEN
+enable_polarity,Use active-high driver enable; do not copy StepStick active-low circuit,1,OPEN
+sleep_sequence,"Wake with bridge inhibited, initialize/read back, then arm",1,OPEN
+logic_levels,"Verify VCC, MISO and fault pullups against ESP32 3.3V domain","1,2",OPEN
+current_reference,Choose current reference and firmware limits; internal reference can bypass divider,"1,2",OPEN
+local_caps,Place exact-device bypass and charge-pump capacitors at correct pins,"1,2,3",OPEN
+MLCC_derating,"Check effective capacitance with actual DC bias, tolerance and temperature",8,OPEN
+bulk_caps,"Size for bounded transient, ESR, ripple current and voltage","3,11",OPEN
+power_loops,Inspect VM-cap-bridge-ground return loop for every axis,3,OPEN
+thermal_pad,"Verify PWP drawing, solder coverage and direct plane connection",4,OPEN
+thermal_vias,Agree drill/fill/tenting/stencil process; inspect actual Gerber openings,"4,9,10",OPEN
+ground_plane,Retain continuous In1 ground and antenna keepout,3,OPEN
+shared_power,Recalculate Q1 and input-path losses for combined DC/stepper loading,project,OPEN
+motor_connector,"Check contact rating, coil pin pairs, direction and strain relief",project,OPEN
+limits,Decide eight inputs vs ten for five dual-limit axes,project,OPEN
+fault_recovery,"Define latch policy, stop behavior, readback and explicit re-arm","1,2,13",OPEN
+hold_current,Choose mechanically adequate hold current before tuning power savings,6,OPEN
+assembly,"Numbered-pad supplier overlay, BOM/CPL direction and package review",project,OPEN
+bench,"Verify one then three axes, holding heat, RF activity, resets and VM ringing",project,NOT RUN

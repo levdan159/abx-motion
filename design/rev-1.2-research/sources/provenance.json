@@ -1,0 +1,86 @@
+[
+  {
+    "file": "drv8461.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/drv8461.pdf",
+    "sha256": "8bd2541703d58985a0649ecf90c4c55f60ab7b5cf9b3f7257dfd31eca140ba40",
+    "bytes": 4615087,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "slva959b-motor-layout.pdf",
+    "url": "https://www.ti.com/lit/an/slva959b/slva959b.pdf",
+    "sha256": "89adbce11092779a4c024ea5832c3b3f62ff9c2a153646530dc8847f89c45eb9",
+    "bytes": 2866380,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "slma002h-powerpad.pdf",
+    "url": "https://www.ti.com/lit/an/slma002h/slma002h.pdf",
+    "sha256": "cdab5db916315b40c6b445a30ccff90de3d391d39231c3f519533113a8cb1f22",
+    "bytes": 1006906,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "slou558b-evm-guide.pdf",
+    "url": "https://www.ti.com/lit/ug/slou558b/slou558b.pdf",
+    "sha256": "983375bd86755f726233b14e1227385e514977c073457172aea46fd0db75634d",
+    "bytes": 8772602,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "spra953d-thermal-metrics.pdf",
+    "url": "https://www.ti.com/lit/an/spra953d/spra953d.pdf",
+    "sha256": "8ab81b5a351132ae8ab049d984e7cc72f1eb3dd3e4d9d8e063be6fcd841080a9",
+    "bytes": 599442,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": null,
+    "url": "https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf",
+    "accessed": "2026-10-20",
+    "status": "Read through browser; direct archive download returned404."
+  },
+  {
+    "file": "evm-drv8461-schematic.pdf",
+    "url": "https://www.ti.com/lit/zip/SLOR128",
+    "archive_entry": "MD040A/MD040A(007) - DRV8461 EVM/MD040A(007)_Sch-6-13-23.PDF",
+    "archive_sha256": "bf23445840bbe70e57c76adf6b565158af489283fcdf08e1c27a08bbafc8a495",
+    "sha256": "f03e56399a4676d35d65078bbfd7f61f6dbf963ce2ff592af36fdc42f82d07e1",
+    "bytes": 1353656,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "evm-common-layerplots.pdf",
+    "url": "https://www.ti.com/lit/zip/SLOR128",
+    "archive_entry": "MD040A/Common Documentation and Fabrication/MD040A_PCB_LayerPlots.PDF",
+    "archive_sha256": "bf23445840bbe70e57c76adf6b565158af489283fcdf08e1c27a08bbafc8a495",
+    "sha256": "758226032e559744c994d022dc7481cfdf4ba6ff9eb8010f735af5c6c5f67510",
+    "bytes": 5898249,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "evm-drv8461-fabnotes.pdf",
+    "url": "https://www.ti.com/lit/zip/SLOR128",
+    "archive_entry": "MD040A/MD040A(007) - DRV8461 EVM/MD040A(007)_PCB_FabNotes.PDF",
+    "archive_sha256": "bf23445840bbe70e57c76adf6b565158af489283fcdf08e1c27a08bbafc8a495",
+    "sha256": "f9630e973d29c09b9be0a59fefd9ebb91e034bc25cb94ee09bdbd4d4e4b5ce1b",
+    "bytes": 933888,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "evm-drv8461-componentviews.pdf",
+    "url": "https://www.ti.com/lit/zip/SLOR128",
+    "archive_entry": "MD040A/MD040A(007) - DRV8461 EVM/MD040A(007)_PCB_ComponentViews.PDF",
+    "archive_sha256": "bf23445840bbe70e57c76adf6b565158af489283fcdf08e1c27a08bbafc8a495",
+    "sha256": "fb7bdf3aac71c01d7f343814a02c3ddf0a764b03052872731c36e406e54856c9",
+    "bytes": 815977,
+    "accessed": "2026-10-20"
+  },
+  {
+    "file": "drv8452.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/drv8452.pdf",
+    "sha256": "35d1873e556c64ad0d08a3cf6421b6aa02fdcbfcdccaf629322ff91f4d49efc9",
+    "bytes": 4768921,
+    "accessed": "2026-10-20"
+  }
+]

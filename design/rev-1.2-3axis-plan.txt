@@ -17,7 +17,17 @@ socket assemblies with three independently controlled integrated stepper
 circuits. Reuse the current stepper region rather than insert a third module
 into remaining gaps. Driver selection and achievable current remain proposals.
 
-DRIVER PROPOSAL
+RESEARCH UPDATE — 20 October 2026
+
+The documentation review now favors evaluating DRV8452SPWPR first for its
+lower package-specific losses at our 32 V target; DRV8461SPWPR remains the
+higher-voltage alternative. This supersedes the initial driver preference
+below, not the retained one-IC-per-axis architecture. Neither part is frozen
+in a schematic. See rev-1.2-research/integration-review.txt and the reproducible
+conduction-loss-comparison.csv. GPIO/hardware arm and the assembly thermal-via
+process remain open design items. No Rev 1.2 hardware changes have been made.
+
+INITIAL DRIVER PROPOSAL (historical starting point)
 
 Evaluate three TI DRV8461SPWPR (SPI version,28-pin PowerPAD HTSSOP), one per
 motor. Verify exact orderable part, current JLCPCB/LCSC sourcing and supplier

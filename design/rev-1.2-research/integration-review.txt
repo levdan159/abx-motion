@@ -1,0 +1,251 @@
+ABX-Motion Rev 1.2 — integrated stepper research and implementation checklist
+20 October 2026. Local development branch only. No hardware modified.
+
+RECOMMENDATION
+
+Retain one IC per axis and evaluate DRV8452SPWPR first, with DRV8461SPWPR
+as the higher-voltage alternative. Do not freeze the earlier DRV8461 choice
+before comparing its dissipation. Develop one checked axis circuit and real
+placement envelope, then replicate three times. Maintain the Rev1.1d source,
+manufacturing files and Git tag as the unmodified prototype baseline.
+
+WHAT WAS ACTUALLY REVIEWED
+
+Manufacturer datasheets, motor-layout guidance, PowerPAD assembly guidance,
+thermal metrics, the evaluation-board guide and extracted TI EVM schematic,
+fabrication and copper-layer plots. The EVM uses the larger DDW package;
+it is a reference for connections/loops, not a drop-in PWP footprint. The
+SLOR128 archive contains several board revisions and IC populations; use the
+DRV8461 population explicitly rather than the unrelated driver-family pages.
+Reviewed documents and selected EVM files are archived in sources/ with
+URLs, archive-member names and SHA256 values in sources/provenance.json.
+
+SOURCE-VERIFIED DEVICE DETAILS
+
+DRV8461: SPI part DRV8461SPWPR; PWP0028T package. Operation4.5–65V;
+3A full-scale/2.1A RMS subject to thermal limits. ENABLE low makes outputs
+Hi-Z; sleep disables SPI. VCC determines SDO logic voltage. Internal-reference
+selection bypasses external VREF, so a resistor divider is not an immutable
+hardware current ceiling. [1, sections5,6,7.3.8,7.3.20]
+
+Its local capacitor starting points are: VM–PGND10nF at each supply region;
+CPH–CPL100nF VM-rated; VCP–VM1uF/16V; DVDD–GND1uF/6.3V;
+VCC–GND100nF/6.3V; local VM bulk sized for the application. VCP–VM is a
+floating capacitor, never a VCP-to-ground substitute. [1, table7-3, section11]
+
+DRV8452: SPI part DRV8452SPWPR, also28-pin PowerPAD. Datasheet operation
+4.5–55V; PWP capability4A full-scale/2.8A RMS is thermally conditional.
+The25C PWP typical high/low resistances are57/60mOhm; maxima68/72mOhm.
+At125C their maxima are100/105mOhm. Use this exact variant's reference
+values and pin map; do not substitute its44-pin headline ratings. [2]
+
+THERMAL COMPARISON — OUR CALCULATIONS, NOT MEASURED TEMPERATURES
+
+For sinusoidal phase current, Pcond=2*Iphase_RMS^2*(R_HS+R_LS).
+At2A RMS, using manufacturer tables specified at24V:
+
+                     typical25C   maximum25C   maximum125C sensitivity
+DRV8461 PWP, one IC      2.424W       2.920W           4.680W
+DRV8452 PWP, one IC      0.936W       1.120W           1.640W
+DRV8452, three ICs       2.808W       3.360W           4.920W
+
+The resistance inputs for DRV8461 are153/150mOhm typical25C,
+180/185mOhm maximum25C and285/300mOhm maximum125C. [1, section6.5]
+Calculations exclude switching, quiescent, copper and connector losses.
+They are comparative estimates at the datasheet test voltage, not guaranteed
+32V bounds. The hot row does not predict the eventual junction temperature.
+The lower-loss device reduces how much heat we need to remove before adding
+heatsinks. calculate_losses.py reproduces18 cases and arithmetic assertions.
+
+TI's thermal-metrics guide explains why JEDEC theta-JA is board/environment
+dependent. It cannot certify our three adjacent drivers in an enclosure.
+Use the actual stackup, copper coverage and neighboring heat sources when
+estimating temperatures. Measure the first assembly at thermal equilibrium;
+case temperature alone is not junction temperature. [5]
+
+PLACEMENT AND ROUTING RULES TO APPLY
+
+TI's motor-layout guide emphasizes short supply/return loops, local bypass
+and charge-pump parts, wide current conductors and multiple plane-transition
+vias. High-frequency capacitor loops should not share narrow returns with
+logic/reference signals. Thermal vias should connect directly into planes;
+thermal-relief spokes reduce heat transfer. Its generic guidance is a starting
+point; the selected device/package takes precedence. [3]
+
+Our proposed floorplan order is:
+1. Place the three actual driver footprints and their grounded thermal regions.
+2. Place charge-pump and smallest bypass parts before signal routing.
+3. Place local bulk and motor connectors so switching loops remain local.
+4. Route power and winding outputs, then logic/reference paths.
+5. Keep an unbroken In1 ground plane and the original ESP32 antenna clearance.
+6. Preserve unrelated DC-channel, encoder, communications and mechanical areas.
+
+Use the present two-socket region for a real three-cell trial. Reserve copper
+and capacitor volume as part of each cell; IC body dimensions alone do not
+prove fit. There is no routed Rev1.2 placement yet. Prefer motor outputs on
+outer copper with controlled loop areas; never expand them into giant heat
+planes under the MCU/RF/ADC area. Match connector/contact capability to the
+chosen phase-current objective and cable, rather than the battery fuse label.
+
+THERMAL PAD, VIAS AND ASSEMBLY
+
+PowerPAD guidance requires a soldered underside pad and efficient plane
+connections. Via count has diminishing returns; hole size, pad coverage and
+assembly quality matter together. Bottom-side-only tenting can increase
+voiding through trapped gases, so 'tent everything' is not a universal rule.
+The package drawing and assembler process must be reconciled. [4]
+
+For our design: use the exact PWP0028T land/stencil drawings, then have a
+single intentional thermal-via construction. Compare small vias coordinated
+with paste openings against filled/capped via-in-pad. Include nearby
+plane-stitching vias outside solder lands. Do not claim that setting KiCad's
+via-tenting flag covers a hole inside an overlapping exposed-pad mask opening.
+Review the actual mask/paste Gerbers. Do not drill arbitrary holes through
+lead lands or copy Q1's electrically-live drain pattern into grounded IC pads.
+
+JLCPCB distinguishes tented, plugged and filled/capped vias. These are different
+fabrication choices; generic tenting does not guarantee a planar sealed
+via-in-pad. If using solder-mask-defined thermal lands, call them out so CAM
+does not enlarge their openings. Obtain assembly-process confirmation and
+consider first-article X-ray of PowerPAD solder coverage. [9,10]
+
+SUPPLY AND CAPACITOR DECISIONS
+
+Keep the project7S/32V normal supply objective. A higher-rated driver does not
+upgrade the buck, DC bridges, clamp, capacitors, Q1 or connectors. Retain the
+existing protection envelope until a system-level change is explicitly checked.
+Provide accessible VM/GND probe points at each cell. Budget shared input
+current from electrical motor power and losses; phase RMS current is not
+battery current and the three phase-current labels cannot simply be summed.
+
+Select MLCCs using effective capacitance at operating bias and temperature,
+not only their printed values; high-permittivity ceramic capacitance can fall
+under DC bias. Check each actual supplier part's curves. [8]
+For our32V bus, evaluate50/63V ceramic and bulk parts against measured
+transients, ripple-current capability, ESR, temperature rating and lifetime.
+Do not copy the EVM's bulk value as a universal solution. Use dV approximately
+I*dt/C for a bounded transient estimate, then include ESR and cable inductance.
+
+Returning current can raise the supply and switching-node voltage; TI's spike
+mitigation guidance discusses local bulk and appropriate switching control. [11]
+Our independent energy example:1000uF rising from32 to40V stores only0.288J
+of additional energy. Bulk capacitance does not replace a return path for
+sustained mechanical regeneration. Also check BMS charge acceptance, a full
+pack and disconnects. Retain short-spike clamping; provide an external braking
+solution only if the chosen mechanism needs it. Motor changes require power
+off and discharged bus; arbitrary powered hot-plug robustness is not claimed.
+
+LOGIC, SPI AND BOOT SAFETY
+
+Proposed logic domain is3.3V: no5V MISO/nFAULT pull-up may reach an ESP32 pin.
+Budget the additional logic load on U2 and validate3.3V droop during Wi-Fi and
+motor activity. DVDD pins are local outputs; do not parallel the three driver
+DVDD regulators or use them as a shared peripheral supply.
+
+Keep all six STEP/DIR connections on direct ESP32 pins. Espressif documents
+RMT hardware transmission and synchronization facilities; these can support
+a pulse-engine implementation, but do not themselves provide trajectory
+planning. DMA/memory availability and task/interrupt timing require review
+against the actual ESP-IDF version. [12]
+Our firmware work must cover synchronized acceleration/deceleration, pulse
+width and DIR setup/hold, stop/abort, queue underflow and position accounting.
+SPI handles setup/readback, not the real-time step train. Start with simple
+fixed current/microsteps and verified faults; add automatic tuning afterward.
+
+The PCA9555 powers up as inputs and has no external reset pin. Its POR does
+not occur merely because the ESP32 restarts. [7]
+Therefore our revision must establish safe enables and chip select with
+external pulls and an independent hardware inhibit. Moving signals onto an
+expander does not by itself solve reset safety. Initialize output latches to
+safe values before making pins outputs. Test both cold boot and warm reset.
+The current pin-allocation proposal still needs a dedicated hardware-arm/
+reset/watchdog strategy; do not treat the five freed pins as a complete proof.
+
+For daisy-chain configuration, review exact frame ordering and failure modes
+of the whole chain. The draft expander-controlled chip select is conditional:
+SPI and I2C operations need exclusive ownership, known inactive startup and
+an abort path; keep outputs inhibited after a failed transaction. A direct
+MCU chip select is preferable if the GPIO budget can accommodate it.
+
+Keep per-axis enables and diagnostics. Implement the selected driver's logic
+polarity explicitly; old StepStick active-low gating cannot be reused unchanged.
+Keep outputs hardware-disabled while waking/configuring/readback occurs;
+release only after valid settings and an explicit arm request. A motor must
+not move because a status register or expander retained its previous value.
+An E-stop should inhibit the bridge independently of either serial bus.
+An MCU reset pin alone does not cover every firmware hang/software-reset case.
+
+FAULTS, HOLD CURRENT AND LIMITS
+
+TI's efficiency report documents motor/load-dependent current-reduction and
+auto-torque tuning. Its examples demonstrate potential savings, not a universal
+setup for arbitrary motors. [6]
+Our policy: conservative startup current, deliberate hold-current choice,
+latched application faults, explicit recovery and retained physical limits.
+Reduce holding current only after checking required holding torque; disable
+may release a vertical load. Sensorless stall detection is useful diagnostics,
+not a replacement for hard stops or independent travel protection.
+
+We currently have eight limit inputs. Reserve two more if both DC channels
+and all three steppers each require min/max sensing. Do not silently trade
+existing inputs away to make the GPIO or connector count appear complete.
+
+EVM LESSONS AND CHECKPOINTS
+
+The EVM guide provides individual current/microstep/fault controls and
+jumper-selectable routing for different populated devices. Follow the selected
+board's jumper population when comparing it with the circuit; debug headers,
+USB tools and other-driver options need not be copied into our board. [13,14]
+Our release gates, in order:
+- Confirm exact driver orderable variant and JLCPCB availability/numbered pads.
+- Close GPIO, logic-voltage, hardware inhibit and reset behavior on paper.
+- Check one axis schematic against the chosen datasheet and reference circuit.
+- Review three-cell placement, thermal copper, connectors and access.
+- Route, then ERC/DRC/parity, pin-map and Gerber/CPL orientation checks.
+- First article: rails/no unintended motion, one unloaded motor at low current,
+  current waveform/VM ringing, then three-axis motion and worst holding heat.
+- Repeat with Wi-Fi/CPU and intended DC-channel loading, enclosure and ambient.
+- Exercise E-stop, reset, serial failure, brownout and deliberate fault recovery
+  with bounded fault energy. Do not begin with destructive battery shorts.
+
+SOURCE INDEX (primary documentation only)
+
+[1] TI DRV8461 RevA, SLOSE98A; printed pages4,8–12,28–29,64–69,100–108;
+    exact PWP land/stencil example PDF pages115–117.
+    https://www.ti.com/lit/ds/symlink/drv8461.pdf
+[2] TI DRV8452 RevB, SLOSE84B; printed pages1,4,9–10,105–106.
+    https://www.ti.com/lit/ds/symlink/drv8452.pdf
+[3] TI SLVA959B, Best Practices for Board Layout of Motor Drivers,2021.
+    https://www.ti.com/lit/an/slva959b/slva959b.pdf
+[4] TI SLMA002H, PowerPAD Thermally Enhanced Package,2018; section4.2.
+    https://www.ti.com/lit/an/slma002h/slma002h.pdf
+[5] TI SPRA953D, Semiconductor and IC Package Thermal Metrics,2024.
+    https://www.ti.com/lit/an/spra953d/spra953d.pdf
+[6] TI SLVAFF1, System Efficiency Improvement With DRV8452/DRV8462,2023.
+    https://www.ti.com/lit/pdf/SLVAFF1
+[7] NXP PCA9555 datasheet, power-on reset and configuration registers.
+    https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf
+[8] Murata, MLCC DC-bias FAQ.
+    https://www.murata.com/en-eu/support/faqs/capacitor/ceramiccapacitor/char/0005
+[9] JLCPCB, via-finishing process distinctions.
+    https://jlcpcb.com/blog/five-via-finishes
+[10] JLCPCB, ordering solder-mask-defined pads.
+    https://jlcpcb.com/help/article/how-to-order-boards-with-solder-mask-defined-pads
+[11] TI, motor-output voltage-spike mitigation FAQ.
+    https://e2e.ti.com/support/motor-drivers-group/motor-drivers/f/motor-drivers-forum/965811/faq-how-to-control-voltage-spikes-on-motor-driver-outputs
+[12] Espressif, ESP32-S3 RMT documentation (stable resolved to v6.1 when read).
+    https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/rmt.html
+[13] TI SLOU558B, EVM user's guide,2023.
+    https://www.ti.com/lit/ug/slou558b/slou558b.pdf
+[14] TI SLOR128D public EVM hardware archive; selected MD040A DRV8461
+     schematic/component/fab PDFs and common layer plots inspected.
+    https://www.ti.com/lit/zip/SLOR128
+
+OPEN DECISIONS
+
+Driver procurement/package verification; current/duty/ambient objective;
+actual motor/connector ratings;2oz outer copper feasibility with fine-pitch
+routing; via fill/tenting and stencil process; full GPIO/hardware-arm allocation;
+external-driver port retention; extra two limit inputs. The research identifies
+these checks without representing them as solved. No Rev1.2 manufacturing
+files exist yet, and no powered test or component purchase was performed.

@@ -1,0 +1,9 @@
+{
+  "model": "Pcond=2*Iphase_RMS^2*(R_HS+R_LS)",
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/drv8461.pdf",
+    "https://www.ti.com/lit/ds/symlink/drv8452.pdf"
+  ],
+  "scope": "Sinusoidal two-phase motor excitation; table values specified at24V, not a32V guaranteed bound. Excludes switching, quiescent losses, recirculation details, board losses, self-heating and thermal coupling. Hot-resistance rows are sensitivity cases, not predicted temperatures.",
+  "physical_tests": "NOT RUN"
+}
