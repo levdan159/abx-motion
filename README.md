@@ -1,3 +1,5 @@
+> Latest I/O layout: 38 low-profile parts beneath the OLED (10 mm standoffs), six JST-PH ports in a vertical 2 x 3 bank, and revised routing/front-back legends. Electrical checks, mechanical limits and previews: `work/rev-1.2-io-under-oled/review/`. Exact OLED module fit still needs confirmation.
+
 > Latest connector layout: upright 2.54 mm J502/J504 headers rotated 90 degrees, with the compact JST/header bank shifted right and matching 2.53 mm gaps. Front/back pin legends updated. Checks and renders: `work/rev-1.2-ext-upright/review/`.
 
 > Latest relay-bay refinement: both relay connectors shifted toward the bottom-right; Motor 2 layout preserved. Current checks and previews: `work/rev-1.2-relay-bottom-right/review/`.

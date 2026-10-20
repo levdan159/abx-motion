@@ -1,0 +1,26 @@
+[
+  {
+    "net": "/STEP2_EN",
+    "layer": "F.Cu",
+    "before_segments": 12,
+    "after_segments": 8
+  },
+  {
+    "net": "/STEP2_EN",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 2
+  },
+  {
+    "net": "/STEP2_EN",
+    "layer": "B.Cu",
+    "before_segments": 19,
+    "after_segments": 8
+  },
+  {
+    "net": "/STEP2_EN",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 4
+  }
+]

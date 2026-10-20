@@ -1,0 +1,452 @@
+[
+  {
+    "net": "GND",
+    "layer": "F.Cu",
+    "before_segments": 14,
+    "after_segments": 10
+  },
+  {
+    "net": "/I2C_SCL",
+    "layer": "F.Cu",
+    "before_segments": 5,
+    "after_segments": 4
+  },
+  {
+    "net": "/I2C_SCL",
+    "layer": "F.Cu",
+    "before_segments": 6,
+    "after_segments": 3
+  },
+  {
+    "net": "/I2C_SCL",
+    "layer": "B.Cu",
+    "before_segments": 4,
+    "after_segments": 3
+  },
+  {
+    "net": "/I2C_SDA",
+    "layer": "F.Cu",
+    "before_segments": 11,
+    "after_segments": 4
+  },
+  {
+    "net": "/I2C_SDA",
+    "layer": "B.Cu",
+    "before_segments": 9,
+    "after_segments": 4
+  },
+  {
+    "net": "/I2C_SDA",
+    "layer": "B.Cu",
+    "before_segments": 5,
+    "after_segments": 2
+  },
+  {
+    "net": "/I2C_SDA",
+    "layer": "B.Cu",
+    "before_segments": 5,
+    "after_segments": 2
+  },
+  {
+    "net": "/I2C_SDA",
+    "layer": "In2.Cu",
+    "before_segments": 5,
+    "after_segments": 4
+  },
+  {
+    "net": "+3V3",
+    "layer": "F.Cu",
+    "before_segments": 5,
+    "after_segments": 4
+  },
+  {
+    "net": "+3V3",
+    "layer": "F.Cu",
+    "before_segments": 5,
+    "after_segments": 4
+  },
+  {
+    "net": "+3V3",
+    "layer": "B.Cu",
+    "before_segments": 6,
+    "after_segments": 4
+  },
+  {
+    "net": "+5V",
+    "layer": "F.Cu",
+    "before_segments": 10,
+    "after_segments": 4
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC1_A",
+    "layer": "F.Cu",
+    "before_segments": 4,
+    "after_segments": 3
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC1_A",
+    "layer": "F.Cu",
+    "before_segments": 17,
+    "after_segments": 2
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC1_A",
+    "layer": "B.Cu",
+    "before_segments": 11,
+    "after_segments": 6
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC2_A",
+    "layer": "F.Cu",
+    "before_segments": 8,
+    "after_segments": 4
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC2_A",
+    "layer": "F.Cu",
+    "before_segments": 4,
+    "after_segments": 2
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC2_A",
+    "layer": "B.Cu",
+    "before_segments": 12,
+    "after_segments": 10
+  },
+  {
+    "net": "/MCU_and_Encoders/ENC2_B",
+    "layer": "F.Cu",
+    "before_segments": 9,
+    "after_segments": 2
+  },
+  {
+    "net": "/IO_INT_N",
+    "layer": "F.Cu",
+    "before_segments": 21,
+    "after_segments": 6
+  },
+  {
+    "net": "/IO_INT_N",
+    "layer": "F.Cu",
+    "before_segments": 7,
+    "after_segments": 4
+  },
+  {
+    "net": "/IO_INT_N",
+    "layer": "F.Cu",
+    "before_segments": 6,
+    "after_segments": 4
+  },
+  {
+    "net": "/MCU_and_Encoders/RS485_RX",
+    "layer": "F.Cu",
+    "before_segments": 13,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/OUT2_GATE",
+    "layer": "F.Cu",
+    "before_segments": 5,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/OUT2_SW",
+    "layer": "F.Cu",
+    "before_segments": 52,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/OUT2_SW",
+    "layer": "F.Cu",
+    "before_segments": 4,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/OUT2_SW",
+    "layer": "B.Cu",
+    "before_segments": 3,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/OUT2_SW",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/S2_MIN_IN",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/S2_MIN_IN",
+    "layer": "In2.Cu",
+    "before_segments": 7,
+    "after_segments": 5
+  },
+  {
+    "net": "/Industrial_IO/S1_MAX_RAW",
+    "layer": "F.Cu",
+    "before_segments": 53,
+    "after_segments": 9
+  },
+  {
+    "net": "/Industrial_IO/M1_MIN_RAW",
+    "layer": "F.Cu",
+    "before_segments": 3,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/M1_MIN_RAW",
+    "layer": "B.Cu",
+    "before_segments": 8,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "layer": "In2.Cu",
+    "before_segments": 12,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/M1_MAX_IN",
+    "layer": "F.Cu",
+    "before_segments": 3,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/M1_MAX_IN",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/M2_MIN_IN",
+    "layer": "F.Cu",
+    "before_segments": 8,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/M2_MIN_IN",
+    "layer": "B.Cu",
+    "before_segments": 3,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/M2_MAX_IN",
+    "layer": "F.Cu",
+    "before_segments": 8,
+    "after_segments": 7
+  },
+  {
+    "net": "/Industrial_IO/M2_MAX_IN",
+    "layer": "B.Cu",
+    "before_segments": 5,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/S1_MIN_IN",
+    "layer": "B.Cu",
+    "before_segments": 6,
+    "after_segments": 3
+  },
+  {
+    "net": "/Industrial_IO/S1_MIN_IN",
+    "layer": "In2.Cu",
+    "before_segments": 8,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/S1_MAX_IN",
+    "layer": "B.Cu",
+    "before_segments": 18,
+    "after_segments": 13
+  },
+  {
+    "net": "/Industrial_IO/S1_MAX_IN",
+    "layer": "In2.Cu",
+    "before_segments": 8,
+    "after_segments": 5
+  },
+  {
+    "net": "/Industrial_IO/S2_MAX_IN",
+    "layer": "In2.Cu",
+    "before_segments": 22,
+    "after_segments": 9
+  },
+  {
+    "net": "/Industrial_IO/OUT1_CMD",
+    "layer": "F.Cu",
+    "before_segments": 13,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/OUT1_CMD",
+    "layer": "F.Cu",
+    "before_segments": 8,
+    "after_segments": 7
+  },
+  {
+    "net": "/Industrial_IO/OUT2_CMD",
+    "layer": "F.Cu",
+    "before_segments": 3,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/OUT2_CMD",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 4
+  },
+  {
+    "net": "/STEP1_EN",
+    "layer": "F.Cu",
+    "before_segments": 8,
+    "after_segments": 2
+  },
+  {
+    "net": "/STEP1_EN",
+    "layer": "B.Cu",
+    "before_segments": 6,
+    "after_segments": 4
+  },
+  {
+    "net": "/STEP1_EN",
+    "layer": "B.Cu",
+    "before_segments": 13,
+    "after_segments": 4
+  },
+  {
+    "net": "/STEP1_EN",
+    "layer": "B.Cu",
+    "before_segments": 10,
+    "after_segments": 5
+  },
+  {
+    "net": "/STEP2_EN",
+    "layer": "F.Cu",
+    "before_segments": 6,
+    "after_segments": 4
+  },
+  {
+    "net": "/STEP2_EN",
+    "layer": "In2.Cu",
+    "before_segments": 56,
+    "after_segments": 18
+  },
+  {
+    "net": "/+3V3_DRV_EN",
+    "layer": "F.Cu",
+    "before_segments": 8,
+    "after_segments": 4
+  },
+  {
+    "net": "/+3V3_DRV_EN",
+    "layer": "F.Cu",
+    "before_segments": 11,
+    "after_segments": 2
+  },
+  {
+    "net": "/+3V3_DRV_EN",
+    "layer": "B.Cu",
+    "before_segments": 7,
+    "after_segments": 2
+  },
+  {
+    "net": "/+3V3_DRV_EN",
+    "layer": "In2.Cu",
+    "before_segments": 4,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/S1_MIN_RAW",
+    "layer": "F.Cu",
+    "before_segments": 5,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/S1_MIN_RAW",
+    "layer": "B.Cu",
+    "before_segments": 31,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/M2_MIN_RAW",
+    "layer": "F.Cu",
+    "before_segments": 9,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/M2_MAX_RAW",
+    "layer": "F.Cu",
+    "before_segments": 9,
+    "after_segments": 8
+  },
+  {
+    "net": "/Industrial_IO/S2_MIN_RAW",
+    "layer": "F.Cu",
+    "before_segments": 3,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/S2_MAX_RAW",
+    "layer": "F.Cu",
+    "before_segments": 12,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/+5V_OUT",
+    "layer": "F.Cu",
+    "before_segments": 6,
+    "after_segments": 3
+  },
+  {
+    "net": "/Industrial_IO/+5V_OUT",
+    "layer": "F.Cu",
+    "before_segments": 16,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/+5V_OUT",
+    "layer": "F.Cu",
+    "before_segments": 13,
+    "after_segments": 4
+  },
+  {
+    "net": "/Industrial_IO/+5V_OUT",
+    "layer": "B.Cu",
+    "before_segments": 22,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/OUT1_GATE",
+    "layer": "F.Cu",
+    "before_segments": 4,
+    "after_segments": 3
+  },
+  {
+    "net": "/Industrial_IO/M1_MAX_RAW",
+    "layer": "F.Cu",
+    "before_segments": 7,
+    "after_segments": 6
+  },
+  {
+    "net": "/Industrial_IO/OUT1_SW",
+    "layer": "F.Cu",
+    "before_segments": 4,
+    "after_segments": 2
+  },
+  {
+    "net": "/Industrial_IO/OUT1_SW",
+    "layer": "F.Cu",
+    "before_segments": 5,
+    "after_segments": 3
+  },
+  {
+    "net": "/Industrial_IO/OUT1_SW",
+    "layer": "B.Cu",
+    "before_segments": 10,
+    "after_segments": 6
+  }
+]

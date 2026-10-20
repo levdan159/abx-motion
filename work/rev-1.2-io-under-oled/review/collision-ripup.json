@@ -1,0 +1,58 @@
+[
+  {
+    "uuid": "812fa3c6-0551-4bab-9022-b65acc5ca9d0",
+    "net": "GND"
+  },
+  {
+    "uuid": "1ce28739-a90c-4b93-91a9-5a3df7005b15",
+    "net": "/I2C_SCL"
+  },
+  {
+    "uuid": "74d3d84d-2cfd-452b-b468-9fb31f505a84",
+    "net": "/I2C_SCL"
+  },
+  {
+    "uuid": "0cdede3d-8542-4858-9e55-d072f86518d5",
+    "net": "/I2C_SCL"
+  },
+  {
+    "uuid": "1e2a6518-6176-4061-875a-41bfa110d9b6",
+    "net": "/I2C_SCL"
+  },
+  {
+    "uuid": "3bf61293-e7ab-429f-acb7-7806971c5f8d",
+    "net": "/I2C_SDA"
+  },
+  {
+    "uuid": "dea00746-d217-45e1-be38-39977645dfbc",
+    "net": "/I2C_SDA"
+  },
+  {
+    "uuid": "277d6890-8bcd-4772-bf1d-440dbc49cd5d",
+    "net": "/I2C_SDA"
+  },
+  {
+    "uuid": "4583904b-f378-4636-8606-3677feaec6db",
+    "net": "/I2C_SDA"
+  },
+  {
+    "uuid": "9394ee2c-e5dd-4e75-88b0-0e7a132271c4",
+    "net": "/MCU_and_Encoders/ENC1_A"
+  },
+  {
+    "uuid": "c6ab0e16-f30f-4782-8cc2-5b956ed2797f",
+    "net": "/MCU_and_Encoders/ENC2_A"
+  },
+  {
+    "uuid": "1cd171ee-e285-45f7-be77-a24803693b77",
+    "net": "/MCU_and_Encoders/ENC2_B"
+  },
+  {
+    "uuid": "59b6555f-8b73-4ef8-b573-c9aee4bc0a4b",
+    "net": "/MCU_and_Encoders/ENC2_B"
+  },
+  {
+    "uuid": "36baef97-5581-4ff6-911c-e0ebee84dbab",
+    "net": "/MCU_and_Encoders/RS485_RX"
+  }
+]

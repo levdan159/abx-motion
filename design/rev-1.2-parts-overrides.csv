@@ -1,3 +1,4 @@
 Reference,Manufacturer,MPN,Footprint,LCSC,Assembly status,Pin order
 J502,Wurth Elektronik,61300411121,abx-footprints:EXT_Header_1x04_P2.54mm_Vertical,,Select exact JLC stock match or hand fit; not released,1 EN;2 STEP;3 DIR;4 GND
 J504,Wurth Elektronik,61300411121,abx-footprints:EXT_Header_1x04_P2.54mm_Vertical,,Select exact JLC stock match or hand fit; not released,1 EN;2 STEP;3 DIR;4 GND
+J208,Samtec,SLW-104-01-L-S,abx-footprints:OLED_Socket_SLW_1x04_P2.54mm_LowProfile,,Hand fit or confirm exact assembly supply; OLED mate MTSW-104-07-L-S-215; verify actual module,1 GND;2 +3V3;3 SCL;4 SDA

@@ -1,0 +1,447 @@
+[
+  {
+    "uuid": "bdbdbb28-627a-468b-acfa-c513312d7e1c",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "2ec16872-ca27-4ad7-82d5-f0ca7499146d",
+    "net": "/I2C_SDA",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "410bfad6-ca39-453a-8911-3bb6f9d2b8c5",
+    "net": "/I2C_SDA",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "832c9ccc-fc3d-4fb8-bb83-d9602e953395",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "16118c69-af27-4d12-97f2-35516b5ae507",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "6b76484c-6e1d-4748-a29a-0b7456cce8b5",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "82345ea6-41db-4f8b-9254-acddc3e4813a",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "833bff73-24c5-4b5a-959e-e6c54b866bf6",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "baa0fb06-51ba-4997-bfbc-5fcb5ddc1256",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "bee9a1ae-8845-4eda-a764-5a9d34d4d369",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "c257f5b3-168a-42de-961a-87abe7c17792",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "ce6c5b25-f4b5-4904-adc0-5b959de7e6d7",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "e132d7a1-7a0f-43f1-92d1-662c2f1c3d27",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "eb8953f9-80ce-4fb8-8ad3-9dde1286ceca",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "eebd6bbc-f856-4a17-8a17-4a69c7e334df",
+    "net": "+3V3",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "5f954cfe-d81e-4f65-9711-a4a1191c60c0",
+    "net": "+5V",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "eef0ee1f-255d-42bc-ab5c-c8e90d49450e",
+    "net": "/MCU_and_Encoders/ENC1_A",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "17427d7a-6cc9-4db9-9ea4-1e89955bc118",
+    "net": "/IO_INT_N",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "1bc27b46-ee53-431c-80ed-cefc9f2d6528",
+    "net": "/IO_INT_N",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "37cd8b57-ff8a-461b-a664-e107d87d8cb5",
+    "net": "/MCU_and_Encoders/RS485_RX",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "595370ca-db3a-4f7b-9641-a5399cd760ab",
+    "net": "/Industrial_IO/OUT2_GATE",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "fa891089-63dc-4eb2-9168-237270cd32f8",
+    "net": "/Industrial_IO/OUT2_GATE",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "9f90bd41-42cb-4e88-9646-114256dc11a8",
+    "net": "/Industrial_IO/OUT2_SW",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "b3b39c8e-90a7-4594-a2f3-1b76f12745f9",
+    "net": "/Industrial_IO/OUT2_SW",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "d7a76320-8b6d-45e3-9bce-8958ec226406",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "a34dc03a-c2d9-4703-9068-4a94bc79c391",
+    "net": "/Industrial_IO/M1_MAX_IN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "afcaeeed-fabd-4321-aa9e-39970cbfa732",
+    "net": "/Industrial_IO/M1_MAX_IN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "182f0309-5749-47e0-8cec-dc0e781e98d3",
+    "net": "/Industrial_IO/M2_MIN_IN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "2ab72187-9669-44c8-9e20-b31242be9a76",
+    "net": "/Industrial_IO/M2_MAX_IN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "51d6fdd1-4704-493c-810e-6078a3e7e126",
+    "net": "/Industrial_IO/M2_MAX_IN",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "19875ba5-94ac-47f6-a8c2-efe6070d727d",
+    "net": "/Industrial_IO/OUT1_CMD",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "7cec4344-f8ad-498e-84d7-25ce15ba0d48",
+    "net": "/Industrial_IO/OUT1_CMD",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "c4823af1-290a-4cb2-bef4-a2bf4beed8d0",
+    "net": "/Industrial_IO/OUT1_CMD",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "3c4541d2-4c2f-497c-a289-5a75b0c57e43",
+    "net": "/Industrial_IO/OUT2_CMD",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "3536f988-6a07-4740-a3c3-7a4dbbf07c54",
+    "net": "/Industrial_IO/+5V_OUT",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "6fc6be4a-3257-47d2-937b-0ffc96919061",
+    "net": "/Industrial_IO/+5V_OUT",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "bcdefb58-39f2-4c25-9282-e4f363c17f04",
+    "net": "/Industrial_IO/+5V_OUT",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "52ba2d1d-4331-4281-9c1a-813fb0b1316c",
+    "net": "/Industrial_IO/OUT1_GATE",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "b3f8c7a2-edf0-400e-a83e-865bb47e5247",
+    "net": "/Industrial_IO/OUT1_GATE",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "b14ceaba-21a7-47ca-805d-bc6f89c606e1",
+    "net": "/Industrial_IO/OUT1_SW",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "db54b993-5116-4575-9b37-686e222e7e3f",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "964c9a15-622d-4a15-8b71-97df481de449",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "fa6ea219-f44f-490e-8af6-42e897c0b7c5",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "541acb36-23b7-4fd8-9464-8d9adeb31299",
+    "net": "+5V",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "e2096f55-70ed-44bf-b86c-3c4803969a1a",
+    "net": "/MCU_and_Encoders/ENC1_A",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "326e8942-be4b-480e-9eed-d2e6455d71ee",
+    "net": "/IO_INT_N",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "dd90e35f-26cf-4d25-aaea-04b6b6d60a09",
+    "net": "/Industrial_IO/OUT2_GATE",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "f37dfdeb-683e-4636-9531-af7a5e5199ba",
+    "net": "/Industrial_IO/OUT2_SW",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "abe99674-d303-43cc-9b24-8914780f80af",
+    "net": "/Industrial_IO/M1_MAX_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "5eadca37-c8a0-4d34-980c-9e4f22348881",
+    "net": "/Industrial_IO/OUT1_CMD",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "c992fc52-b4d5-4176-9506-34ec307419e0",
+    "net": "/Industrial_IO/OUT1_CMD",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "80ffaafe-d806-43bb-aa20-b9a967ea688c",
+    "net": "/Industrial_IO/+5V_OUT",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "f3a34a68-a7a1-43a6-817f-c476908e29c6",
+    "net": "/Industrial_IO/+5V_OUT",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "82757a83-213e-4630-a9a3-037ed98754d6",
+    "net": "/Industrial_IO/OUT1_GATE",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "35c842ef-9ecf-4c26-afbb-edd27f45a36d",
+    "net": "/Industrial_IO/OUT1_SW",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "0e14050c-e8b6-4f28-8b29-7877081381b5",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "71e5ed7f-baeb-450c-8010-b36a3630d9ad",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "98872e08-dcdc-4c3d-8e93-5b84e3860444",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "a19b8e32-1616-4263-8528-c60a00dc6904",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "5fdb0a85-ab9f-4f11-91a1-0383c0b2a78d",
+    "net": "/I2C_SCL",
+    "action": "remove unused via/zero-length segment"
+  },
+  {
+    "uuid": "69aad780-0e09-498a-a2a7-521a25edd23e",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "9430bdb3-4cb8-4c17-b025-225b13f4af55",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "1d22dbf3-b6f1-4e88-841f-8eac5c9b24da",
+    "net": "/I2C_SDA",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "7deb3a51-4375-469f-afb8-446ed6a84573",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "277b237b-d1a8-49ac-aae9-feba978ae442",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "77a9f99c-7851-4757-9790-29f7e5060845",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "c34b6bc2-c6e6-4860-9f90-da558725b1d4",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "094352e5-1b5d-4fd2-b64b-0705aa190903",
+    "net": "/I2C_SCL",
+    "action": "remove free stub"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  },
+  {
+    "uuid": "07befd1d-71e7-49af-ac2f-7f8d382de51c",
+    "net": "/Industrial_IO/M1_MIN_IN",
+    "action": "trim to connected branch points"
+  }
+]
