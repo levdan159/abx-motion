@@ -1,0 +1,15 @@
+{
+  "root_files": [
+    "abx-motion.kicad_pcb",
+    "MCU.kicad_sch",
+    "Power.kicad_sch",
+    "Steppers_Relays.kicad_sch",
+    "abx-motion.kicad_sch",
+    "Industrial_IO.kicad_sch",
+    "Motor_Channel.kicad_sch",
+    "abx-footprints.pretty/ABX_Text_Gold.kicad_mod"
+  ],
+  "revision": "1.2-dev",
+  "production_release": "production/rev-1.1d-20261020",
+  "authorization": "User requested work in root project; Rev 1.2 remains local."
+}

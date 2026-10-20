@@ -1,0 +1,1103 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-20T21:22:31",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "abx-motion.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 139.7,
+                        "y": 115.45
+                    },
+                    "uuid": "57d8b98a-1bcf-4821-940d-484a55f2c61d"
+                },
+                {
+                    "description": "Pad 2 [GND] of Q501 on F.Cu",
+                    "pos": {
+                        "x": 139.0625,
+                        "y": 118.15
+                    },
+                    "uuid": "9279b000-6abb-499c-83f8-8c536b960cb1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R207 on F.Cu",
+                    "pos": {
+                        "x": 149.825,
+                        "y": 114.1
+                    },
+                    "uuid": "eb98671c-104d-402d-a1fa-bfbbabdef569"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 152.0,
+                        "y": 115.2
+                    },
+                    "uuid": "7faf9c72-d87e-4d6d-b1ae-c6cc9f1cdafc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R208 on F.Cu",
+                    "pos": {
+                        "x": 164.325,
+                        "y": 123.0
+                    },
+                    "uuid": "6122f3d9-3766-4fb7-ae90-1b6139b29e22"
+                },
+                {
+                    "description": "Pad 2 [GND] of Q502 on F.Cu",
+                    "pos": {
+                        "x": 167.5625,
+                        "y": 122.45
+                    },
+                    "uuid": "f9ce6b76-4172-441d-a6a7-75a004b03c7a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of Q502 on F.Cu",
+                    "pos": {
+                        "x": 167.5625,
+                        "y": 122.45
+                    },
+                    "uuid": "f9ce6b76-4172-441d-a6a7-75a004b03c7a"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 166.4,
+                        "y": 114.5
+                    },
+                    "uuid": "02be367d-df18-4963-bf09-ad3b5953c026"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] of R502 on F.Cu",
+                    "pos": {
+                        "x": 148.175,
+                        "y": 116.8
+                    },
+                    "uuid": "20983907-2411-427b-8668-f30fb075ca3e"
+                },
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.85,
+                        "y": 112.75
+                    },
+                    "uuid": "1938e4ee-6532-4c93-b699-79e549bcac2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] of R502 on F.Cu",
+                    "pos": {
+                        "x": 148.175,
+                        "y": 116.8
+                    },
+                    "uuid": "20983907-2411-427b-8668-f30fb075ca3e"
+                },
+                {
+                    "description": "Pad 1 [+5V] of D501 on F.Cu",
+                    "pos": {
+                        "x": 143.95,
+                        "y": 116.6
+                    },
+                    "uuid": "0f420c97-5995-44c2-95ca-0abb060fdace"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] of R504 on F.Cu",
+                    "pos": {
+                        "x": 158.675,
+                        "y": 118.5
+                    },
+                    "uuid": "7faf826d-0b88-434f-82e3-383888310492"
+                },
+                {
+                    "description": "PTH pad 5 [+5V] of K501",
+                    "pos": {
+                        "x": 150.5,
+                        "y": 124.0
+                    },
+                    "uuid": "5cf0495e-a4e4-4efa-9399-ae3cb4af2308"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] of R504 on F.Cu",
+                    "pos": {
+                        "x": 158.675,
+                        "y": 118.5
+                    },
+                    "uuid": "7faf826d-0b88-434f-82e3-383888310492"
+                },
+                {
+                    "description": "Pad 1 [+5V] of D503 on F.Cu",
+                    "pos": {
+                        "x": 171.55,
+                        "y": 122.0
+                    },
+                    "uuid": "f16f7f82-dc36-4f2c-90b2-e2abe61893d7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/Steppers_and_Relays/RLY1_COIL_N] of Q501 on F.Cu",
+                    "pos": {
+                        "x": 140.9375,
+                        "y": 117.2
+                    },
+                    "uuid": "327b2537-f7c3-4291-bd22-7c3702493ecd"
+                },
+                {
+                    "description": "PTH pad 2 [/Steppers_and_Relays/RLY1_COIL_N] of K501",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 124.0
+                    },
+                    "uuid": "21280963-35d9-479c-b17b-edf17e529388"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY1_COIL_N] of D501 on F.Cu",
+                    "pos": {
+                        "x": 146.05,
+                        "y": 116.6
+                    },
+                    "uuid": "3f24e1ee-b503-4786-a715-4ce7339d94a1"
+                },
+                {
+                    "description": "Pad 3 [/Steppers_and_Relays/RLY1_COIL_N] of Q501 on F.Cu",
+                    "pos": {
+                        "x": 140.9375,
+                        "y": 117.2
+                    },
+                    "uuid": "327b2537-f7c3-4291-bd22-7c3702493ecd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Steppers_and_Relays/RLY1_COIL_N] of D502 on F.Cu",
+                    "pos": {
+                        "x": 152.2125,
+                        "y": 116.8
+                    },
+                    "uuid": "3d68c8d5-515b-4839-821b-a6e284a43049"
+                },
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY1_COIL_N] of D501 on F.Cu",
+                    "pos": {
+                        "x": 146.05,
+                        "y": 116.6
+                    },
+                    "uuid": "3f24e1ee-b503-4786-a715-4ce7339d94a1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RELAY_1] of R501 on F.Cu",
+                    "pos": {
+                        "x": 144.175,
+                        "y": 114.1
+                    },
+                    "uuid": "cfb22eb5-32de-4c50-9eb5-6a23f307f7f4"
+                },
+                {
+                    "description": "Track [/RELAY_1] on B.Cu, length 26.8701 mm",
+                    "pos": {
+                        "x": 125.5,
+                        "y": 93.0
+                    },
+                    "uuid": "5592d432-4c90-4361-b45a-07672b28a139"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RELAY_1] of R501 on F.Cu",
+                    "pos": {
+                        "x": 144.175,
+                        "y": 114.1
+                    },
+                    "uuid": "cfb22eb5-32de-4c50-9eb5-6a23f307f7f4"
+                },
+                {
+                    "description": "Pad 1 [/RELAY_1] of R207 on F.Cu",
+                    "pos": {
+                        "x": 148.175,
+                        "y": 114.1
+                    },
+                    "uuid": "a7d51497-9c6b-41f7-a805-6f2b8e9ed33a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/RELAY_2] on B.Cu, length 3.0000 mm",
+                    "pos": {
+                        "x": 148.5,
+                        "y": 113.5
+                    },
+                    "uuid": "5fb8f622-289e-42ce-a7e7-9d293ebe74f9"
+                },
+                {
+                    "description": "Via [/RELAY_2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 110.5
+                    },
+                    "uuid": "38d33be9-2d60-45ac-9ed7-5d39193b6eed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RELAY_2] of R503 on F.Cu",
+                    "pos": {
+                        "x": 162.675,
+                        "y": 121.0
+                    },
+                    "uuid": "7833f8e4-986f-4703-aeb2-2b3f08a9ab90"
+                },
+                {
+                    "description": "Via [/RELAY_2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 110.5
+                    },
+                    "uuid": "38d33be9-2d60-45ac-9ed7-5d39193b6eed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RELAY_2] of R208 on F.Cu",
+                    "pos": {
+                        "x": 162.675,
+                        "y": 123.0
+                    },
+                    "uuid": "bdcb1b7f-1232-4250-af1b-856125f73cbe"
+                },
+                {
+                    "description": "Pad 1 [/RELAY_2] of R503 on F.Cu",
+                    "pos": {
+                        "x": 162.675,
+                        "y": 121.0
+                    },
+                    "uuid": "7833f8e4-986f-4703-aeb2-2b3f08a9ab90"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY1_LED_A] of R502 on F.Cu",
+                    "pos": {
+                        "x": 149.825,
+                        "y": 116.8
+                    },
+                    "uuid": "2f976965-e873-40ae-a0bb-fdc4968c7a94"
+                },
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY1_LED_A] of D502 on F.Cu",
+                    "pos": {
+                        "x": 153.7875,
+                        "y": 116.8
+                    },
+                    "uuid": "a2d85ccb-d950-4dd8-92e0-a3e29ad8a905"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY2_GATE] of R503 on F.Cu",
+                    "pos": {
+                        "x": 164.325,
+                        "y": 121.0
+                    },
+                    "uuid": "010591ae-eae8-444d-8c86-d13025cea311"
+                },
+                {
+                    "description": "Pad 1 [/Steppers_and_Relays/RLY2_GATE] of Q502 on F.Cu",
+                    "pos": {
+                        "x": 167.5625,
+                        "y": 120.55
+                    },
+                    "uuid": "cfdd0ee6-f541-4b7e-9647-22e22c773aed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Steppers_and_Relays/RLY2_COIL_N] of D504 on F.Cu",
+                    "pos": {
+                        "x": 162.2125,
+                        "y": 118.5
+                    },
+                    "uuid": "c93f9343-6f5d-4782-aa23-283c9cd8b772"
+                },
+                {
+                    "description": "Pad 3 [/Steppers_and_Relays/RLY2_COIL_N] of Q502 on F.Cu",
+                    "pos": {
+                        "x": 169.4375,
+                        "y": 121.5
+                    },
+                    "uuid": "f1d321fe-09a8-492f-8010-eaa9ba614db5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [/Steppers_and_Relays/RLY2_COIL_N] of K502",
+                    "pos": {
+                        "x": 171.6,
+                        "y": 127.5
+                    },
+                    "uuid": "302da28e-05e8-4382-aa1f-9d0e63b111e9"
+                },
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY2_COIL_N] of D503 on F.Cu",
+                    "pos": {
+                        "x": 173.65,
+                        "y": 122.0
+                    },
+                    "uuid": "6cc58d9f-0f0a-4a9f-a036-063932595f96"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY2_COIL_N] of D503 on F.Cu",
+                    "pos": {
+                        "x": 173.65,
+                        "y": 122.0
+                    },
+                    "uuid": "6cc58d9f-0f0a-4a9f-a036-063932595f96"
+                },
+                {
+                    "description": "Pad 3 [/Steppers_and_Relays/RLY2_COIL_N] of Q502 on F.Cu",
+                    "pos": {
+                        "x": 169.4375,
+                        "y": 121.5
+                    },
+                    "uuid": "f1d321fe-09a8-492f-8010-eaa9ba614db5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 1 [/Steppers_and_Relays/RLY1_COM] of K501",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 122.0
+                    },
+                    "uuid": "ed98f04f-ad58-49eb-b1dc-0e2af1f2ba6f"
+                },
+                {
+                    "description": "PTH pad 2 [/Steppers_and_Relays/RLY1_COM] of J505",
+                    "pos": {
+                        "x": 151.08,
+                        "y": 148.0
+                    },
+                    "uuid": "8441864a-bc34-46d3-b118-df955c7c47c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 3 [/Steppers_and_Relays/RLY1_NO] of K501",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 136.2
+                    },
+                    "uuid": "c6092ef0-3885-4e53-adb3-fd7bf90b3c44"
+                },
+                {
+                    "description": "PTH pad 1 [/Steppers_and_Relays/RLY1_NO] of J505",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 148.0
+                    },
+                    "uuid": "63809277-44a6-48fa-82d9-563d42eabb5a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 4 [/Steppers_and_Relays/RLY1_NC] of K501",
+                    "pos": {
+                        "x": 150.5,
+                        "y": 136.2
+                    },
+                    "uuid": "9ef1e556-4015-4df1-88a7-f3f8afae9e7f"
+                },
+                {
+                    "description": "PTH pad 3 [/Steppers_and_Relays/RLY1_NC] of J505",
+                    "pos": {
+                        "x": 156.16,
+                        "y": 148.0
+                    },
+                    "uuid": "c77504b6-7c87-4394-8956-6d2b4f60738f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Steppers_and_Relays/RLY1_GATE] of Q501 on F.Cu",
+                    "pos": {
+                        "x": 139.0625,
+                        "y": 116.25
+                    },
+                    "uuid": "a0e5b3e1-f7fe-465c-aa8d-bd294145b584"
+                },
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY1_GATE] of R501 on F.Cu",
+                    "pos": {
+                        "x": 145.825,
+                        "y": 114.1
+                    },
+                    "uuid": "25c09b13-f492-4b76-8610-a7291ced4ec3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY2_LED_A] of R504 on F.Cu",
+                    "pos": {
+                        "x": 160.325,
+                        "y": 118.5
+                    },
+                    "uuid": "6676c93b-4335-4f04-8385-99ccc295c1c5"
+                },
+                {
+                    "description": "Pad 2 [/Steppers_and_Relays/RLY2_LED_A] of D504 on F.Cu",
+                    "pos": {
+                        "x": 163.7875,
+                        "y": 118.5
+                    },
+                    "uuid": "d33c7e16-598a-42d0-b08c-ba0a8481784f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 2 [/Steppers_and_Relays/RLY2_COM] of J506",
+                    "pos": {
+                        "x": 170.08,
+                        "y": 148.0
+                    },
+                    "uuid": "c8220ff9-0570-4853-9c11-ba99b0f772f0"
+                },
+                {
+                    "description": "PTH pad 1 [/Steppers_and_Relays/RLY2_COM] of K502",
+                    "pos": {
+                        "x": 173.6,
+                        "y": 133.5
+                    },
+                    "uuid": "7b79057f-f207-4b93-af2e-b6d5829b13eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 3 [/Steppers_and_Relays/RLY2_NO] of K502",
+                    "pos": {
+                        "x": 159.4,
+                        "y": 127.5
+                    },
+                    "uuid": "d1b54bff-c4e5-4617-bc43-b188ec870d04"
+                },
+                {
+                    "description": "PTH pad 1 [/Steppers_and_Relays/RLY2_NO] of J506",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 148.0
+                    },
+                    "uuid": "9ccb2e40-3f78-4df9-9aa2-2ee1d1bd4f1a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad 4 [/Steppers_and_Relays/RLY2_NC] of K502",
+                    "pos": {
+                        "x": 159.4,
+                        "y": 139.5
+                    },
+                    "uuid": "3a2aaecc-6483-4c7d-add2-dd03fab4b258"
+                },
+                {
+                    "description": "PTH pad 3 [/Steppers_and_Relays/RLY2_NC] of J506",
+                    "pos": {
+                        "x": 175.16,
+                        "y": 148.0
+                    },
+                    "uuid": "112a459b-f42a-4e30-bfe0-e949f19d7ee5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint H5",
+                    "pos": {
+                        "x": 67.85,
+                        "y": 105.3
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000805"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'MountingHole_2.2mm_M2' does not match copy in library 'MountingHole'",
+            "items": [
+                {
+                    "description": "Footprint H6",
+                    "pos": {
+                        "x": 91.15,
+                        "y": 105.3
+                    },
+                    "uuid": "00000000-0000-0000-0000-000000000815"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'ESP32-S3-WROOM-1' does not match copy in library 'RF_Module'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 60.0
+                    },
+                    "uuid": "0cc18a09-02c0-41ff-937e-de13ab60a3e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_5V1",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 50.4
+                    },
+                    "uuid": "1101f7c0-d34d-411d-bee2-4d91180676d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_3V3_1",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 50.4
+                    },
+                    "uuid": "335c6d06-d6c1-4e80-a68a-72552ad83c5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J505",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 148.0
+                    },
+                    "uuid": "4dba6bd5-0c9b-4766-b5cb-2bf60e57037b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_CS2",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 50.4
+                    },
+                    "uuid": "563d9f0b-70e4-4354-9a6c-f58b3ed79cf2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J102",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 70.0
+                    },
+                    "uuid": "65d70fc2-b7a5-4544-8d66-185460f52b90"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_CS1",
+                    "pos": {
+                        "x": 143.5,
+                        "y": 50.4
+                    },
+                    "uuid": "77f21ed1-25bc-4b18-afdd-94c77c7eb878"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J301",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 89.0
+                    },
+                    "uuid": "8c11dc03-06b3-48d6-b672-895978a21c42"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J207",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 88.0
+                    },
+                    "uuid": "937bbac6-6ac1-4cdc-b8a2-ac20155a092a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_BATT1",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 50.4
+                    },
+                    "uuid": "96cf9901-8267-4444-a7a3-a17b48a78ebd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J205",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 71.0
+                    },
+                    "uuid": "98b93ff8-55cd-40dc-8d22-d2914bbf0af8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J506",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 148.0
+                    },
+                    "uuid": "a12c3fa1-52f7-4f02-a3f3-d67cba2eab24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_GND2",
+                    "pos": {
+                        "x": 138.0,
+                        "y": 50.4
+                    },
+                    "uuid": "a1e72a92-ad8d-4f69-bcea-566ffd3af708"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal' does not match copy in library 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Footprint J401",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 119.0
+                    },
+                    "uuid": "a3969c34-5d46-4ff5-abd4-2c888130f80b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'TestPoint_Pad_D1.5mm' does not match copy in library 'TestPoint'",
+            "items": [
+                {
+                    "description": "Footprint TP_GND1",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 50.4
+                    },
+                    "uuid": "dd214f91-6a4a-4864-a2d5-689018cd4861"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U301",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 80.0
+                    },
+                    "uuid": "e96f01d9-74e7-4713-ae39-a04d6f0ac0b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U401",
+                    "pos": {
+                        "x": 165.0,
+                        "y": 106.0
+                    },
+                    "uuid": "f19d39db-17a5-48bc-a91d-0e64168aa21d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.85,
+                        "y": 112.75
+                    },
+                    "uuid": "1938e4ee-6532-4c93-b699-79e549bcac2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 144.45,
+                        "y": 110.4
+                    },
+                    "uuid": "4a3d07ed-0e69-4935-88c3-5d1daf985a8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 149.7,
+                        "y": 110.45
+                    },
+                    "uuid": "ca2ba2be-6a54-40e9-85d3-46ccab89dc61"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [+5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 139.2,
+                        "y": 110.8
+                    },
+                    "uuid": "db6b523f-15d9-4823-9dbb-e3dcb7370964"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/RELAY_1] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 112.0
+                    },
+                    "uuid": "d9d688b8-4c04-4226-ab81-4f134efb9a6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/RELAY_2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 154.5,
+                        "y": 110.5
+                    },
+                    "uuid": "38d33be9-2d60-45ac-9ed7-5d39193b6eed"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/RELAY_2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 151.5,
+                        "y": 113.5
+                    },
+                    "uuid": "58a4eea1-0ec5-4839-93b2-2ccf28558bb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

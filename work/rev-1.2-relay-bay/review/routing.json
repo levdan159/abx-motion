@@ -1,0 +1,437 @@
+[
+  {
+    "net": "/Steppers_and_Relays/RLY1_COM",
+    "start": [
+      144.5,
+      122.0,
+      0
+    ],
+    "end": [
+      151.08,
+      148.0,
+      0
+    ],
+    "width": 0.8,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_NO",
+    "start": [
+      159.4,
+      127.5,
+      0
+    ],
+    "end": [
+      165.0,
+      148.0,
+      0
+    ],
+    "width": 0.8,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_NC",
+    "start": [
+      159.4,
+      139.5,
+      0
+    ],
+    "end": [
+      175.16,
+      148.0,
+      0
+    ],
+    "width": 0.8,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_COM",
+    "start": [
+      170.08,
+      148.0,
+      0
+    ],
+    "end": [
+      173.6,
+      133.5,
+      0
+    ],
+    "width": 0.8,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_NO",
+    "start": [
+      138.5,
+      136.2,
+      0
+    ],
+    "end": [
+      146.0,
+      148.0,
+      0
+    ],
+    "width": 0.8,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_NC",
+    "start": [
+      150.5,
+      136.2,
+      0
+    ],
+    "end": [
+      156.16,
+      148.0,
+      0
+    ],
+    "width": 0.8,
+    "success": true
+  },
+  {
+    "net": "/RELAY_1",
+    "start": [
+      144.175,
+      114.1,
+      0
+    ],
+    "end": [
+      144.5,
+      112.0,
+      1
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "+5V",
+    "start": [
+      158.675,
+      118.5,
+      0
+    ],
+    "end": [
+      171.55,
+      122.0,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "/RELAY_2",
+    "start": [
+      162.675,
+      121.0,
+      0
+    ],
+    "end": [
+      154.5,
+      110.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "+5V",
+    "start": [
+      158.675,
+      118.5,
+      0
+    ],
+    "end": [
+      150.5,
+      124.0,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "GND",
+    "start": [
+      167.5625,
+      122.45,
+      0
+    ],
+    "end": [
+      166.4,
+      114.5,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_COIL_N",
+    "start": [
+      162.2125,
+      118.5,
+      0
+    ],
+    "end": [
+      169.4375,
+      121.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_COIL_N",
+    "start": [
+      140.9375,
+      117.2,
+      0
+    ],
+    "end": [
+      138.5,
+      124.0,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_GATE",
+    "start": [
+      139.0625,
+      116.25,
+      0
+    ],
+    "end": [
+      145.825,
+      114.1,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/RELAY_2",
+    "start": [
+      151.5,
+      113.5,
+      1
+    ],
+    "end": [
+      154.5,
+      110.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_COIL_N",
+    "start": [
+      152.2125,
+      116.8,
+      0
+    ],
+    "end": [
+      146.05,
+      116.6,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_COIL_N",
+    "start": [
+      171.6,
+      127.5,
+      0
+    ],
+    "end": [
+      173.65,
+      122.0,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_COIL_N",
+    "start": [
+      146.05,
+      116.6,
+      0
+    ],
+    "end": [
+      140.9375,
+      117.2,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_COIL_N",
+    "start": [
+      173.65,
+      122.0,
+      0
+    ],
+    "end": [
+      169.4375,
+      121.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "+5V",
+    "start": [
+      148.175,
+      116.8,
+      0
+    ],
+    "end": [
+      143.95,
+      116.6,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "+5V",
+    "start": [
+      148.175,
+      116.8,
+      0
+    ],
+    "end": [
+      148.85,
+      112.75,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "/RELAY_1",
+    "start": [
+      144.175,
+      114.1,
+      0
+    ],
+    "end": [
+      148.175,
+      114.1,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY1_LED_A",
+    "start": [
+      149.825,
+      116.8,
+      0
+    ],
+    "end": [
+      153.7875,
+      116.8,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_LED_A",
+    "start": [
+      160.325,
+      118.5,
+      0
+    ],
+    "end": [
+      163.7875,
+      118.5,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "GND",
+    "start": [
+      164.325,
+      123.0,
+      0
+    ],
+    "end": [
+      167.5625,
+      122.45,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "/Steppers_and_Relays/RLY2_GATE",
+    "start": [
+      164.325,
+      121.0,
+      0
+    ],
+    "end": [
+      167.5625,
+      120.55,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  },
+  {
+    "net": "GND",
+    "start": [
+      139.7,
+      115.45,
+      0
+    ],
+    "end": [
+      139.0625,
+      118.15,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "GND",
+    "start": [
+      149.825,
+      114.1,
+      0
+    ],
+    "end": [
+      152.0,
+      115.2,
+      0
+    ],
+    "width": 0.4,
+    "success": true
+  },
+  {
+    "net": "/RELAY_2",
+    "start": [
+      162.675,
+      123.0,
+      0
+    ],
+    "end": [
+      162.675,
+      121.0,
+      0
+    ],
+    "width": 0.25,
+    "success": true
+  }
+]

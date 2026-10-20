@@ -4,7 +4,7 @@
 	(generator_version "10.0")
 	(uuid "f9149098-3f23-438d-bdc2-2e278b5ca35b")
 	(paper "A4")
-	(title_block (title "ABX-Motion") (rev "1.1d"))
+	(title_block (title "ABX-Motion") (rev "1.2-dev"))
 	(lib_symbols)
 	(wire (pts (xy 76.2 38.1) (xy 83.82 38.1)) (stroke (width 0) (type default)) (uuid "946a69f2-b870-534c-b572-c535a7ce9b57"))
 	(wire (pts (xy 76.2 43.18) (xy 83.82 43.18)) (stroke (width 0) (type default)) (uuid "6a4532c4-9251-5fae-bf09-e8579d21a9a9"))
