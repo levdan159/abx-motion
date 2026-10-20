@@ -1,0 +1,18 @@
+{
+  "changed_footprints": [
+    "J502",
+    "J504"
+  ],
+  "unchanged_other_footprints": 250,
+  "all_tracks_and_vias_unchanged": 2949,
+  "front_and_back_labels_match_pad_nets": true,
+  "pin_order": "1 EN, 2 STEP, 3 DIR, 4 GND",
+  "pitch_mm": 2.54,
+  "drill_mm": 1.1,
+  "production_files_hash_identical": 337,
+  "electrical_netlist_unchanged": true,
+  "drc_errors": 0,
+  "opens": 0,
+  "parity_issues": 0,
+  "existing_library_warnings": 19
+}

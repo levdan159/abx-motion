@@ -6083,7 +6083,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+		(property "Footprint" "abx-footprints:EXT_Header_1x04_P2.54mm_RightAngle"
 			(at 114.3 111.76 0)
 			(effects
 				(font
@@ -6092,7 +6092,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300411021.pdf"
 			(at 114.3 111.76 0)
 			(effects
 				(font
@@ -6100,6 +6100,14 @@
 				)
 				(hide yes)
 			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 114.3 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "61300411021"
+			(at 114.3 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(pin "1"
 			(uuid "0f8acc35-9179-57e5-b2ec-f86d94d14814")
@@ -7212,7 +7220,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+		(property "Footprint" "abx-footprints:EXT_Header_1x04_P2.54mm_RightAngle"
 			(at 261.62 111.76 0)
 			(effects
 				(font
@@ -7221,7 +7229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61300411021.pdf"
 			(at 261.62 111.76 0)
 			(effects
 				(font
@@ -7229,6 +7237,14 @@
 				)
 				(hide yes)
 			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 261.62 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "61300411021"
+			(at 261.62 104.14 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
 		)
 		(pin "1"
 			(uuid "6dec6a73-a358-5f82-86e7-6ac6e300d572")

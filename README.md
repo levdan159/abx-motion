@@ -1,3 +1,5 @@
+> Latest connector update: J502/J504 use low-profile 2.54 mm right-angle control headers, with front/back pin legends. Checks and renders: `work/rev-1.2-ext-headers/review/`.
+
 > Latest relay-bay refinement: both relay connectors shifted toward the bottom-right; Motor 2 layout preserved. Current checks and previews: `work/rev-1.2-relay-bottom-right/review/`.
 
 > **Active root project: Rev 1.2-dev (local development).** Relay bay consolidation is implemented in the root PCB and schematics. The preserved manufacturing release is `production/rev-1.1d-20261020/`. Rev 1.2-dev is not a manufacturing release. Review evidence and before/after images are in `work/rev-1.2-relay-bay/review/`. Do not run legacy rebuild scripts over this placement.

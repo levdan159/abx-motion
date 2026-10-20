@@ -1,0 +1,3 @@
+Reference,Manufacturer,MPN,Footprint,LCSC,Assembly status,Pin order
+J502,Wurth Elektronik,61300411021,abx-footprints:EXT_Header_1x04_P2.54mm_RightAngle,,Select exact JLC stock match or hand fit; not released,1 EN;2 STEP;3 DIR;4 GND
+J504,Wurth Elektronik,61300411021,abx-footprints:EXT_Header_1x04_P2.54mm_RightAngle,,Select exact JLC stock match or hand fit; not released,1 EN;2 STEP;3 DIR;4 GND
