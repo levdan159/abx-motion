@@ -1,0 +1,119 @@
+ABX-Motion Rev 1.2 — three integrated stepper axes
+Discussion draft, 20 October 2026
+
+BASELINE AND STATUS
+
+Start from commit12ad71f6982117bd97d409770fdfee5e75b0d575, tag rev-1.1d,
+on branch rev-1.2-3axis-stepper. Rev1.1d source and manufacturing package
+remain unchanged. No Rev1.2 schematic/layout/firmware has been implemented.
+The files in production/rev-1.1d-20261020 are still the current matched
+prototype candidate, not a three-axis manufacturing release.
+
+INTENT
+
+Retain157x105mm board outline, mounting holes, ESP32, two DC channels,
+CAN/RS485, OLED/UI, auxiliary outputs and relays. Replace the two StepStick
+socket assemblies with three independently controlled integrated stepper
+circuits. Reuse the current stepper region rather than insert a third module
+into remaining gaps. Driver selection and achievable current remain proposals.
+
+DRIVER PROPOSAL
+
+Evaluate three TI DRV8461SPWPR (SPI version,28-pin PowerPAD HTSSOP), one per
+motor. Verify exact orderable part, current JLCPCB/LCSC sourcing and supplier
+land pattern before committing the schematic. The 65V operating range is
+useful for our7S/32V target; it does not raise the whole board voltage rating.
+Integrated sensing avoids external phase shunts. Direct STEP/DIR handles
+motion; SPI handles settings and diagnostic reads. The supported daisy chain
+can reduce chip-select resources. Distinguish the SPI variant from the H/W
+variant, whose same-size package has a different interface pin assignment.
+
+Provisional board objective: approximately2A RMS phase current per axis,
+subject to simultaneous-axis PCB/enclosure thermal verification. Begin bench
+commissioning substantially lower. Manufacturer full-scale3A is approximately
+2.1A RMS for sinusoidal excitation, not a promise of3A RMS continuously.
+If higher phase current is a core requirement, compare DRV8452/DRV8462 with
+their exact package/thermal limits before layout. TMC2240 offers useful quiet
+motion/telemetry, but its36V range makes transient protection coordination
+more demanding. Do not select solely from headline peak-current ratings.
+
+GPIO AND CONTROL
+
+Keep all six STEP/DIR signals on ESP32 GPIOs, driven by a coordinated hardware
+pulse engine. I2C expanders must never generate the step pulse train.
+The current module GPIO budget is effectively full. Add a second PCA9555 at
+a verified unused address, provisionally0x21; existing device is0x20. Move
+three navigation buttons and both relay controls to slow I/O, freeing five
+ordinary MCU GPIOs. A provisional allocation is existing GPIO11..14 for
+axes1/2 STEP/DIR, freed GPIO47/48 for axis3 STEP/DIR, and freed GPIO21/37/40
+for SPI SCLK/MOSI/MISO. SPI daisy-chain chip select may use expander GPIO
+because configuration transactions are not the step timing source; serialize
+SPI with chip-select writes, default it inactive and verify startup behavior.
+This allocation is a proposal requiring schematic/boot/firmware review.
+Do not depend on changing boot-strapping pins or changing the N8R2 module SKU.
+
+Use independent per-axis enables, fault indication and hardware E-stop
+inhibition with default-disabled pulls. GPIO-expander reset persistence must
+not permit motion after a warm MCU reset. Establish known current/microstep
+settings and read back configuration before arming. Driver faults should
+stop the relevant commanded motion and latch the application fault; hardware
+auto-retry is not permission to resume. Hardware E-stop must work without
+I2C, SPI or application firmware. Disable/HiZ may remove holding torque;
+a falling-load axis needs a separately considered mechanical restraint.
+
+THERMAL, POWER AND LAYOUT
+
+Place three repeated driver cells in the region freed by sockets, switches
+and associated components. Each cell includes local ceramic supply bypass,
+charge-pump parts, logic decoupling, local bulk capacitance, reference/current
+setting, driver ground/thermal pad, fault/enable circuitry and motor connector.
+Choose component values from the exact datasheet/application circuit.
+
+Give every grounded PowerPAD a short, low-impedance connection to the internal
+ground plane and a local via array/backside spreader. Coordinate thermal-hole
+and stencil design with JLCPCB; do not put arbitrary open holes in paste
+apertures. Preserve the solid In1 ground plane and ESP32 antenna keepout.
+Separate high-current loops from ADC/encoder/RF signals. Allow airflow and
+optional insulated chassis coupling; route no new switching-node heat plane
+under the ESP32 or its antenna.
+
+Recalculate simultaneous DC+stepper input currents, Q1 dissipation, shared
+copper/via current paths, fuse coordination, terminal/contact ratings, bulk
+capacitor ripple and battery/BMS energy acceptance. Holding torque also causes
+stepper heat without shaft motion. Enclosure and ambient temperature matter;
+more PCB copper cannot automatically guarantee better cooling than a module.
+Existing D2 remains a short-pulse clamp, not a braking-energy dump load.
+
+CONNECTORS AND LIMITS
+
+Provide three dedicated4-wire motor connectors near their driver circuits.
+Try the existing four-position bottom connector region first. Decide how
+many external STEP/DIR interfaces to retain before allocating that edge;
+retain useful flexibility if placement allows, rather than promise all ports.
+Eight existing limit inputs cover three dual-limit steppers plus two single
+DC limits. Ten inputs are needed if all five motors require separate minimum
+and maximum signals; reserve two new expander inputs and an additional
+protected3-pin limit header if that is required. Preserve the3.3V/dry-contact
+input contract; these are not24V industrial inputs.
+
+IMPLEMENTATION CHECKPOINTS
+
+1. Agree current/driver/interface priorities; check sourcing and exact variant.
+2. Prove GPIO allocation, default-disarmed logic, faults and E-stop behavior.
+3. Create a non-routed placement trial with real footprints, passives,
+   connectors, thermal regions and service access. Review fit before routing.
+4. Implement one fully checked stepper schematic cell, then replicate it.
+5. Route locally, preserving unrelated circuitry; review power/return paths.
+6. Run ERC/DRC/parity, pin-map and supplier-placement checks. Export a separate
+   Rev1.2 Gerber/BOM/CPL package only after the native design is complete.
+7. Prototype staged one-axis, then three-axis, holding-current and simultaneous
+   DC/stepper thermal tests, reset/fault/E-stop tests and intended motor tests.
+
+REFERENCES
+
+https://www.ti.com/product/DRV8461
+https://www.ti.com/lit/ds/symlink/drv8461.pdf
+https://www.ti.com/product/DRV8434S
+https://www.ti.com/product/DRV8452
+https://www.ti.com/product/DRV8462
+https://www.analog.com/en/products/tmc2240.html
