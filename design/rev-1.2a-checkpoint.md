@@ -19,3 +19,7 @@ The earlier common machined HS1 plate is a superseded mechanical study. Custom m
 Ethernet is a future revision option: W5500-class SPI Ethernet with a PoE-capable connector and optional isolated PoE daughterboard. Before implementation check GPIO allocation, supply headroom, antenna clearance, connector fit and external-DC priority/reverse-current protection. No Ethernet/PoE hardware is present in this checkpoint.
 
 Root KiCad sources and local libraries are authoritative. Earlier design proposals/execution packets describe historical plans; they do not override the saved circuitry. Temporary routing candidates, backups and GUI session preferences are excluded from this commit.
+
+## Placement correction, 23 October 2026
+
+The JLCPCB CPL corrects J102/J301/J401 from 90 to 270 degrees so the two-pin terminal wire openings face the right edge. LED201/LED202/LED_FLT1/LED_FLT2 change from 180 to 0 degrees because supplier C2286/C2287 symbols number anode/cathode opposite to the native KiCad LED. Seven rotations change; every center and BOM identity is retained. Physical pin function and directional body constraints are now checked separately from raw pad numbers. All 328 placements were reviewed; all ten LED K/A mappings and all seven terminal wire-entry directions are asserted. The two relay alignment exceptions remain explicit. See validation/rev-1.2a-placement-fix-20261023/ and the corrected CPL in the prototype package. PCB circuitry, placement and Gerbers are unchanged.

@@ -1,6 +1,8 @@
 ABX-Motion Rev 1.2a — JLCPCB prototype fabrication / assembly review package
 2026-10-23
 
+PLACEMENT CORRECTION: J102/J301/J401 are now 270 degrees (wire entry outward). LED201/LED202/LED_FLT1/LED_FLT2 are now 0 degrees (supplier A/K semantics corrected). These seven changes are already included; do not apply another 180 degrees. All centers, BOM identities and Gerbers are unchanged. See placement-correction-notes.txt.
+
 UPLOAD MATCHED FILES ONLY
 abx-motion-rev1.2a-gerbers.zip + abx-motion-rev1.2a-jlcpcb-bom.csv + abx-motion-rev1.2a-jlcpcb-cpl.csv
 74 catalogue SKUs / 328 placements; J208 and mechanical items are separate.
@@ -13,7 +15,7 @@ Epoxy resin-filled, planarized and copper-capped thermal holes (IPC-4761 Type VI
 Top stencil only for component assembly. Back mask openings are TIM contact areas, not paste pads. Retain the segmented driver EP stencil. Request X-ray inspection of all three driver exposed-pad joints; target <=20% void area with no large central void, subject to agreed assembler acceptance.
 
 ASSEMBLY CHECKS / UNRESOLVED ITEMS
-Supplier numbered pad centers were fitted and checked against corresponding native PCB lands for every catalogue placement. Derived rotations/origins are in placements.csv/json. These are catalogue-geometry checks, not physical supplier fit approval.
+Supplier pad centers were fitted and checked against corresponding native PCB lands using explicit functional pin mapping. C2286/C2287 LEDs map supplier A1/K2 to native A2/K1. The independent unpolarized contacts of C8465 map in reverse to satisfy outward mechanical wire entry. All seven terminal wire-entry directions and all ten LED K/A functions are separately asserted. Other numbered components retain their reviewed physical pin numbering. Derived rotations/origins are in placements.csv/json. These are catalogue-geometry checks, not physical supplier fit approval.
 K501/K502: C116963 supplier CAD COM-to-coil-row offset differs from Omron's drawing by about 0.55 mm. Rotation/pin numbering is identified, but supplier-model origin cannot be certified from that inconsistent geometry. JLC must align actual G5LE-14 5 V relay using the manufacturer hole drawing and PCB lands before assembly. Do not move PCB holes to match the malformed supplier model. See assembly/relay-alignment.svg and assembly/placement-overlays.html. CPL contains the best fit to supplier numbered pads, explicitly subject to this correction.
 J208 is the separate low-profile Samtec socket in manual-and-mechanical-bom.csv. Do not let BOM matching substitute a generic tall socket. Its actual OLED/header stack must engage correctly at the required 10 mm standoff height.
 Through-hole headers, JST connectors, terminal blocks, relays, capacitors and fuse holder require the applicable selective/wave/manual assembly process. Check service availability/fixtures with JLC; SMT-only assembly does not fit these automatically.

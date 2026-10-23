@@ -1,0 +1,241 @@
+{
+  "PCB_unchanged_sha256": "51a583987cc928cb9c5e47a8bd627dcd8717c2d7bf8e899feedf9d6ab6bdb1d0",
+  "reviewed_CPL_rows": 328,
+  "unchanged_centers": true,
+  "unchanged_SKUs": true,
+  "changed_rotations": [
+    {
+      "ref": "J102",
+      "code": "C8465",
+      "before": 90,
+      "after": 270,
+      "x": 197.0,
+      "y": 67.46,
+      "reason": "Mechanical wire-entry direction from supplier footprint arrows and user JLC preview. Independent unpolarized contacts permit reversing catalogue contact numbers. Wire entry must face the right board edge."
+    },
+    {
+      "ref": "J301",
+      "code": "C8465",
+      "before": 90,
+      "after": 270,
+      "x": 197.0,
+      "y": 86.46,
+      "reason": "Mechanical wire-entry direction from supplier footprint arrows and user JLC preview. Independent unpolarized contacts permit reversing catalogue contact numbers. Wire entry must face the right board edge."
+    },
+    {
+      "ref": "J401",
+      "code": "C8465",
+      "before": 90,
+      "after": 270,
+      "x": 197.0,
+      "y": 116.46,
+      "reason": "Mechanical wire-entry direction from supplier footprint arrows and user JLC preview. Independent unpolarized contacts permit reversing catalogue contact numbers. Wire entry must face the right board edge."
+    },
+    {
+      "ref": "LED201",
+      "code": "C2287",
+      "before": 180,
+      "after": 0,
+      "x": 66.5,
+      "y": 77.0,
+      "reason": "Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers."
+    },
+    {
+      "ref": "LED202",
+      "code": "C2287",
+      "before": 180,
+      "after": 0,
+      "x": 57.5,
+      "y": 117.8,
+      "reason": "Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers."
+    },
+    {
+      "ref": "LED_FLT1",
+      "code": "C2286",
+      "before": 180,
+      "after": 0,
+      "x": 197.000559,
+      "y": 101.500051,
+      "reason": "Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers."
+    },
+    {
+      "ref": "LED_FLT2",
+      "code": "C2286",
+      "before": 180,
+      "after": 0,
+      "x": 197.000559,
+      "y": 131.500051,
+      "reason": "Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers."
+    }
+  ],
+  "LED_function_checks": [
+    {
+      "ref": "D502",
+      "supplier_pin_functions": {
+        "2": "A",
+        "1": "K"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {}
+    },
+    {
+      "ref": "D504",
+      "supplier_pin_functions": {
+        "2": "A",
+        "1": "K"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {}
+    },
+    {
+      "ref": "LED201",
+      "supplier_pin_functions": {
+        "2": "K",
+        "1": "A"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {
+        "1": "2",
+        "2": "1"
+      }
+    },
+    {
+      "ref": "LED202",
+      "supplier_pin_functions": {
+        "2": "K",
+        "1": "A"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {
+        "1": "2",
+        "2": "1"
+      }
+    },
+    {
+      "ref": "LED203",
+      "supplier_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {}
+    },
+    {
+      "ref": "LED_FLT1",
+      "supplier_pin_functions": {
+        "2": "K",
+        "1": "A"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {
+        "1": "2",
+        "2": "1"
+      }
+    },
+    {
+      "ref": "LED_FLT2",
+      "supplier_pin_functions": {
+        "2": "K",
+        "1": "A"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {
+        "1": "2",
+        "2": "1"
+      }
+    },
+    {
+      "ref": "LED_PWR_3V3_1",
+      "supplier_pin_functions": {
+        "2": "A",
+        "1": "K"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {}
+    },
+    {
+      "ref": "LED_PWR_5V1",
+      "supplier_pin_functions": {
+        "2": "A",
+        "1": "K"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {}
+    },
+    {
+      "ref": "LED_PWR_BATT1",
+      "supplier_pin_functions": {
+        "2": "A",
+        "1": "K"
+      },
+      "native_pin_functions": {
+        "1": "K",
+        "2": "A"
+      },
+      "mapping": {}
+    }
+  ],
+  "terminal_entry_checks": {
+    "J102": [
+      1,
+      0
+    ],
+    "J301": [
+      1,
+      0
+    ],
+    "J401": [
+      1,
+      0
+    ],
+    "J205": [
+      -1,
+      0
+    ],
+    "J207": [
+      -1,
+      0
+    ],
+    "J505": [
+      0,
+      1
+    ],
+    "J506": [
+      0,
+      1
+    ]
+  },
+  "unchanged_rotations": 321,
+  "remaining_relay_alignment_reviews": [
+    "K501",
+    "K502"
+  ],
+  "review_scope": "Supplier CAD geometry, symbol pin function/polarity and terminal wire-entry direction. Actual JLC order state/3D models are not available through connected browser; user screenshot is evidence for terminal correction. Final assembler alignment remains required for the two relays."
+}

@@ -1,0 +1,59 @@
+{
+  "actual_exported_CPL_rows": 328,
+  "changed_rows": [
+    {
+      "ref": "J102",
+      "Rotation": [
+        "90.0",
+        "270.0"
+      ]
+    },
+    {
+      "ref": "J301",
+      "Rotation": [
+        "90.0",
+        "270.0"
+      ]
+    },
+    {
+      "ref": "J401",
+      "Rotation": [
+        "90.0",
+        "270.0"
+      ]
+    },
+    {
+      "ref": "LED201",
+      "Rotation": [
+        "180.0",
+        "0.0"
+      ]
+    },
+    {
+      "ref": "LED202",
+      "Rotation": [
+        "180.0",
+        "0.0"
+      ]
+    },
+    {
+      "ref": "LED_FLT1",
+      "Rotation": [
+        "180.0",
+        "0.0"
+      ]
+    },
+    {
+      "ref": "LED_FLT2",
+      "Rotation": [
+        "180.0",
+        "0.0"
+      ]
+    }
+  ],
+  "all_centers_and_other_CPL_fields_identical": true,
+  "corrected_alias_matches_canonical": true,
+  "PCB_schematics_BOM_Gerbers_identical_to_3077444": true,
+  "reviewed_remaining_rotations": 321,
+  "review_notes": "Supplier functional K/A mapping and mechanical wire-entry constraints applied; K501/K502 manufacturer alignment still required."
+}

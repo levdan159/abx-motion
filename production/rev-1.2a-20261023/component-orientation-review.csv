@@ -1,0 +1,329 @@
+Designator,SKU,Category,Rotation,Status,Basis,Evidence
+C1,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C10,C15850,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15850-1.svg
+C2,C29823,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C29823-1.svg
+C201,C15850,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15850-1.svg
+C202,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C203,C14663,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C204,C14663,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C205,C1588,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C1588-1.svg
+C206,C1588,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C1588-1.svg
+C207,C1588,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C1588-1.svg
+C208,C1588,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C1588-1.svg
+C209,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C210,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C211,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C212,C14663,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C213,C14663,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C214,C14663,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C3,C29823,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C29823-1.svg
+C301,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C302,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C303,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C304,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C305,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C306,C72499,Polarized electrolytic,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier footprint + marker is on pad 1; native positive pad 1 retained. Supplier negative stripe remains on pad 2.,validation/rev-1.2a-20261023/supplier/C72499-1.svg
+C307,C29823,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C29823-1.svg
+C308,C29823,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C29823-1.svg
+C309,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C310,C107136,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C107136-1.svg
+C4,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C401,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C402,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C403,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C404,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C405,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C406,C72499,Polarized electrolytic,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier footprint + marker is on pad 1; native positive pad 1 retained. Supplier negative stripe remains on pad 2.,validation/rev-1.2a-20261023/supplier/C72499-1.svg
+C407,C29823,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C29823-1.svg
+C408,C29823,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C29823-1.svg
+C409,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C410,C107136,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C107136-1.svg
+C5,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+C6,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C601,C14663,Unpolarized passive / symmetric part,270,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C602,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C603,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C604,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C605,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C606,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C607,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C608,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C609,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C610,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C611,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C612,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C613,C57112,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C57112-1.svg
+C7,C12891,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C12891-1.svg
+C711,C162275,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C162275-1.svg
+C712,C162275,Unpolarized passive / symmetric part,270,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C162275-1.svg
+C713,C77058,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C77058-1.svg
+C714,C59782,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C59782-1.svg
+C715,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C716,C59782,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C59782-1.svg
+C717,C88747,Polarized electrolytic,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier footprint + marker is on pad 1; native positive pad 1 retained. Supplier negative stripe remains on pad 2.,validation/rev-1.2a-20261023/supplier/C88747-1.svg
+C721,C162275,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C162275-1.svg
+C722,C162275,Unpolarized passive / symmetric part,270,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C162275-1.svg
+C723,C77058,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C77058-1.svg
+C724,C59782,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C59782-1.svg
+C725,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C726,C59782,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C59782-1.svg
+C727,C88747,Polarized electrolytic,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier footprint + marker is on pad 1; native positive pad 1 retained. Supplier negative stripe remains on pad 2.,validation/rev-1.2a-20261023/supplier/C88747-1.svg
+C731,C162275,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C162275-1.svg
+C732,C162275,Unpolarized passive / symmetric part,270,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C162275-1.svg
+C733,C77058,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C77058-1.svg
+C734,C59782,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C59782-1.svg
+C735,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C736,C59782,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C59782-1.svg
+C737,C88747,Polarized electrolytic,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier footprint + marker is on pad 1; native positive pad 1 retained. Supplier negative stripe remains on pad 2.,validation/rev-1.2a-20261023/supplier/C88747-1.svg
+C741,C14663,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C742,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C743,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C744,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C745,C14663,Unpolarized passive / symmetric part,270,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C746,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C747,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C748,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C749,C14663,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C14663-1.svg
+C8,C12891,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C12891-1.svg
+C9,C15849,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C15849-1.svg
+D1,C14643,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C14643-1.svg
+D2,C2863624,Diode / protection,180,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C2863624-1.svg
+D201,C78428,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C78428-1.svg
+D202,C8598,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C8598-1.svg
+D501,C2128,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C2128-1.svg
+D502,C12624,Polarized LED,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier K/A function checked against schematic K/A after applying explicit mapping.,validation/rev-1.2a-20261023/supplier/C12624-1.svg
+D503,C2128,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C2128-1.svg
+D504,C12624,Polarized LED,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier K/A function checked against schematic K/A after applying explicit mapping.,validation/rev-1.2a-20261023/supplier/C12624-1.svg
+D601,C8598,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C8598-1.svg
+D602,C8598,Diode / protection,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Cathode/anode symbol mapping retained; D201 is bidirectional. D2 functional ground/positive pins retain the reviewed TI mapping.,validation/rev-1.2a-20261023/supplier/C8598-1.svg
+F1,C352820,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C352820-1.svg
+F2,C2984676,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C2984676-1.svg
+F3,C2984676,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C2984676-1.svg
+F4,C20798,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C20798-1.svg
+F5,C151162,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C151162-1.svg
+J1,C98733,Connector,180,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C98733-1.svg
+J102,C8465,Directional screw terminal,270,PASS,"Mechanical wire-entry direction from supplier footprint arrows and user JLC preview. Independent unpolarized contacts permit reversing catalogue contact numbers. Wire entry must face the right board edge. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [1, 0].",validation/rev-1.2a-20261023/supplier/C8465-1.svg
+J201,C165948,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C165948-1.svg
+J202,C566014,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C566014-1.svg
+J203,C566014,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C566014-1.svg
+J204,C492401,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492401-1.svg
+J205,C72334,Directional screw terminal,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [-1, 0].",validation/rev-1.2a-20261023/supplier/C72334-1.svg
+J206,C492401,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492401-1.svg
+J207,C72334,Directional screw terminal,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [-1, 0].",validation/rev-1.2a-20261023/supplier/C72334-1.svg
+J209,C566014,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C566014-1.svg
+J301,C8465,Directional screw terminal,270,PASS,"Mechanical wire-entry direction from supplier footprint arrows and user JLC preview. Independent unpolarized contacts permit reversing catalogue contact numbers. Wire entry must face the right board edge. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [1, 0].",validation/rev-1.2a-20261023/supplier/C8465-1.svg
+J401,C8465,Directional screw terminal,270,PASS,"Mechanical wire-entry direction from supplier footprint arrows and user JLC preview. Independent unpolarized contacts permit reversing catalogue contact numbers. Wire entry must face the right board edge. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [1, 0].",validation/rev-1.2a-20261023/supplier/C8465-1.svg
+J505,C72334,Directional screw terminal,0,PASS,"Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [0, 1].",validation/rev-1.2a-20261023/supplier/C72334-1.svg
+J506,C72334,Directional screw terminal,0,PASS,"Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric. Wire-entry vector checked against intended board edge: [0, 1].",validation/rev-1.2a-20261023/supplier/C72334-1.svg
+J601,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J602,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J603,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J604,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J605,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J606,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J607,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J608,C131339,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C131339-1.svg
+J701,C492403,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492403-1.svg
+J702,C492403,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492403-1.svg
+J703,C492403,Connector,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492403-1.svg
+J711,C566014,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C566014-1.svg
+J712,C566014,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C566014-1.svg
+J713,C566014,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C566014-1.svg
+JP701,C492402,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492402-1.svg
+JP702,C492402,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492402-1.svg
+JP703,C492402,Connector,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Keyed JST/USB/XT60 pin mapping retained; unkeyed strip headers are symmetric.,validation/rev-1.2a-20261023/supplier/C492402-1.svg
+K501,C116963,Relay,270,RELAY MANUFACTURER ALIGNMENT REQUIRED,Pin numbering/rotation retained; supplier hole-offset discrepancy remains an explicit manufacturer-alignment review.,validation/rev-1.2a-20261023/supplier/C116963-1.svg
+K502,C116963,Relay,0,RELAY MANUFACTURER ALIGNMENT REQUIRED,Pin numbering/rotation retained; supplier hole-offset discrepancy remains an explicit manufacturer-alignment review.,validation/rev-1.2a-20261023/supplier/C116963-1.svg
+L1,C177243,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C177243-1.svg
+LED201,C2287,Polarized LED,0,PASS,"Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers. Supplier K/A function checked against schematic K/A after applying explicit mapping.",validation/rev-1.2a-20261023/supplier/C2287-1.svg
+LED202,C2287,Polarized LED,0,PASS,"Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers. Supplier K/A function checked against schematic K/A after applying explicit mapping.",validation/rev-1.2a-20261023/supplier/C2287-1.svg
+LED203,C2288,Polarized LED,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier K/A function checked against schematic K/A after applying explicit mapping.,validation/rev-1.2a-20261023/supplier/C2288-1.svg
+LED_FLT1,C2286,Polarized LED,0,PASS,"Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers. Supplier K/A function checked against schematic K/A after applying explicit mapping.",validation/rev-1.2a-20261023/supplier/C2286-1.svg
+LED_FLT2,C2286,Polarized LED,0,PASS,"Supplier symbol identifies pin 1 as anode and pin 2 as cathode; native KiCad LED has pad 1 cathode / pad 2 anode. Match K/A function, not raw pin numbers. Supplier K/A function checked against schematic K/A after applying explicit mapping.",validation/rev-1.2a-20261023/supplier/C2286-1.svg
+LED_PWR_3V3_1,C12624,Polarized LED,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier K/A function checked against schematic K/A after applying explicit mapping.,validation/rev-1.2a-20261023/supplier/C12624-1.svg
+LED_PWR_5V1,C12624,Polarized LED,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier K/A function checked against schematic K/A after applying explicit mapping.,validation/rev-1.2a-20261023/supplier/C12624-1.svg
+LED_PWR_BATT1,C12624,Polarized LED,0,PASS,Supplier numbered pad geometry; native pin mapping retained. Supplier K/A function checked against schematic K/A after applying explicit mapping.,validation/rev-1.2a-20261023/supplier/C12624-1.svg
+Q1,C3289501,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C3289501-1.svg
+Q301,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q302,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q303,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q304,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q401,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q402,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q403,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q404,C86513,MOSFET,270,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C86513-1.svg
+Q501,C20917,MOSFET,180,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C20917-1.svg
+Q502,C20917,MOSFET,180,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C20917-1.svg
+Q601,C20917,MOSFET,180,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C20917-1.svg
+Q602,C20917,MOSFET,180,PASS,Supplier numbered pad geometry; native pin mapping retained. Gate/source/drain symbol functions agree; common drain pads 5-8 map to native common pad 5 for C86513.,validation/rev-1.2a-20261023/supplier/C20917-1.svg
+R1,C25819,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25819-1.svg
+R2,C22807,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22807-1.svg
+R201,C23186,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23186-1.svg
+R202,C23186,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23186-1.svg
+R203,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R204,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R205,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R206,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R207,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R208,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R209,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R210,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R211,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R212,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R213,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R214,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R215,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R216,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R217,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R218,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R219,C22787,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22787-1.svg
+R220,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R221,C22787,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22787-1.svg
+R222,C23138,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23138-1.svg
+R223,C23138,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23138-1.svg
+R224,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R225,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R226,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R227,C25804,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R228,C25804,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R229,C25804,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R230,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R231,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R232,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R3,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R301,C25810,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25810-1.svg
+R302,C22790,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22790-1.svg
+R303,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R304,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R305,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R306,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R307,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R308,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R309,C840621,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C840621-1.svg
+R310,C844598,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C844598-1.svg
+R311,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R312,C25811,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25811-1.svg
+R313,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R4,C25803,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25803-1.svg
+R401,C25810,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25810-1.svg
+R402,C22790,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22790-1.svg
+R403,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R404,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R405,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R406,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R407,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R408,C22859,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22859-1.svg
+R409,C840621,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C840621-1.svg
+R410,C844598,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C844598-1.svg
+R411,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R412,C25811,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25811-1.svg
+R413,C21190,Unpolarized passive / symmetric part,90,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R5,C25962,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25962-1.svg
+R501,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R502,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R503,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R504,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R6,C31850,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C31850-1.svg
+R601,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R602,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R603,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R604,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R605,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R606,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R607,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R608,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R609,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R610,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R611,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R612,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R613,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R614,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R615,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R616,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R617,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R618,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R619,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R620,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R623,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R624,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R625,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R626,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R627,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R628,C23162,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C23162-1.svg
+R629,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R630,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R7,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R711,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R712,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R713,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R714,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R715,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R716,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R717,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R718,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R721,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R722,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R723,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R724,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R725,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R726,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R727,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R728,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R731,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R732,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R733,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R734,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R735,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R736,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R737,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R738,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R744,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R745,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R746,C25804,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R747,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R748,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R749,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R750,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+R751,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R752,C22775,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R753,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R754,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R755,C22775,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R756,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R757,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R758,C22775,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R759,C22775,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C22775-1.svg
+R761,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R762,C21190,Unpolarized passive / symmetric part,180,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R763,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R764,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R765,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R8,C21190,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C21190-1.svg
+R9,C25804,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C25804-1.svg
+SW201,C231329,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C231329-1.svg
+SW202,C231329,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C231329-1.svg
+SW203,C231329,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C231329-1.svg
+SW204,C231329,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C231329-1.svg
+SW205,C231329,Unpolarized passive / symmetric part,0,PASS,Supplier numbered pad geometry; native pin mapping retained.,validation/rev-1.2a-20261023/supplier/C231329-1.svg
+U1,C1858395,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C1858395-1.svg
+U2,C51118,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C51118-1.svg
+U201,C7519,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C7519-1.svg
+U202,C132550,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C132550-1.svg
+U203,C2671361,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C2671361-1.svg
+U3,C2913204,Numbered IC / module,0,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C2913204-1.svg
+U301,C90964,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C90964-1.svg
+U4,C133541,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C133541-1.svg
+U401,C90964,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C90964-1.svg
+U601,C128392,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C128392-1.svg
+U701,C5930226,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C5930226-1.svg
+U702,C5930226,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C5930226-1.svg
+U703,C5930226,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C5930226-1.svg
+U704,C128392,Numbered IC / module,0,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C128392-1.svg
+U705,C7481,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C7481-1.svg
+U706,C7481,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C7481-1.svg
+U707,C7481,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C7481-1.svg
+U708,C7642,Numbered IC / module,180,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C7642-1.svg
+U709,C6761,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C6761-1.svg
+U710,C702145,Numbered IC / module,90,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C702145-1.svg
+U711,C7642,Numbered IC / module,270,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C7642-1.svg
+U712,C91875,Numbered IC / module,180,PASS,"Supplier numbered pad geometry; native pin mapping retained. Numbered IC pin functions reviewed against schematic, allowing documented naming aliases (GND/EP, active-low notation and alternate-function names).",validation/rev-1.2a-20261023/supplier/C91875-1.svg

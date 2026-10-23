@@ -31,10 +31,16 @@ writecsv(P/'manual-and-mechanical-bom.csv',list(manual[0]),manual)
 j=fs['J208'];positions=[q.GetPosition() for q in j.Pads()];manualpos=[{'Designator':'J208','Mid X':f'{sum(p.ToMM(q.x) for q in positions)/len(positions):.4f}mm','Mid Y':f'{-sum(p.ToMM(q.y) for q in positions)/len(positions):.4f}mm','Native rotation':j.GetOrientationDegrees(),'Layer':'Top','Note':'Unkeyed manually fitted socket; not a JLC supplier-normalized CPL row.'}]
 writecsv(P/'manual-placement.csv',list(manualpos[0]),manualpos)
 writecsv(P/'catalogue-audit.csv',['LCSC Part #','MPN','Manufacturer','Package','Description','Assembly mode','Library','JLCPCB URL','Availability'],[{'LCSC Part #':c,'MPN':cat[c]['componentModelEn'],'Manufacturer':cat[c]['componentBrandEn'],'Package':cat[c]['componentSpecificationEn'],'Description':cat[c]['describe'],'Assembly mode':cat[c].get('assemblyMode',''),'Library':cat[c].get('componentLibraryType',''),'JLCPCB URL':f'https://jlcpcb.com/partdetail/Component/{c}','Availability':'Catalogue listing verified; live allocation/stock not reserved. Check at order quantity.'} for c in sorted(groups)])
-for name in ['drc.json','erc.json','placements.csv','placements.json','catalog-selected.json','metadata-changes.json']:shutil.copy2(O/name,P/name)
+for name in ['drc.json','erc.json','placements.csv','placements.json','catalog-selected.json','metadata-changes.json','orientation-rules.json']:shutil.copy2(O/name,P/name)
 shutil.copy2(ROOT/'design/thermal-rev1.2-20261023/filled-capped-vias.csv',P/'filled-capped-vias.csv')
+FIX=O.parent/'rev-1.2a-placement-fix-20261023'
+for a,z in [('README.txt','placement-correction-notes.txt'),('review.json','orientation-correction.json'),('component-orientation-review.csv','component-orientation-review.csv'),('export-verification.json','placement-export-verification.json')]:shutil.copy2(FIX/a,P/z)
+shutil.copy2(P/'abx-motion-rev1.2a-jlcpcb-cpl.csv',P/'abx-motion-rev1.2a-jlcpcb-cpl-corrected.csv')
+for name in ['supplier-polarity-and-keying.png','supplier-C8465-entry.png','supplier-C72334-entry.png']:shutil.copy2(FIX/name,P/'assembly'/name)
 (P/'README.txt').write_text('''ABX-Motion Rev 1.2a — JLCPCB prototype fabrication / assembly review package
 2026-10-23
+
+PLACEMENT CORRECTION: J102/J301/J401 are now 270 degrees (wire entry outward). LED201/LED202/LED_FLT1/LED_FLT2 are now 0 degrees (supplier A/K semantics corrected). These seven changes are already included; do not apply another 180 degrees. All centers, BOM identities and Gerbers are unchanged. See placement-correction-notes.txt.
 
 UPLOAD MATCHED FILES ONLY
 abx-motion-rev1.2a-gerbers.zip + abx-motion-rev1.2a-jlcpcb-bom.csv + abx-motion-rev1.2a-jlcpcb-cpl.csv
@@ -48,7 +54,7 @@ Epoxy resin-filled, planarized and copper-capped thermal holes (IPC-4761 Type VI
 Top stencil only for component assembly. Back mask openings are TIM contact areas, not paste pads. Retain the segmented driver EP stencil. Request X-ray inspection of all three driver exposed-pad joints; target <=20% void area with no large central void, subject to agreed assembler acceptance.
 
 ASSEMBLY CHECKS / UNRESOLVED ITEMS
-Supplier numbered pad centers were fitted and checked against corresponding native PCB lands for every catalogue placement. Derived rotations/origins are in placements.csv/json. These are catalogue-geometry checks, not physical supplier fit approval.
+Supplier pad centers were fitted and checked against corresponding native PCB lands using explicit functional pin mapping. C2286/C2287 LEDs map supplier A1/K2 to native A2/K1. The independent unpolarized contacts of C8465 map in reverse to satisfy outward mechanical wire entry. All seven terminal wire-entry directions and all ten LED K/A functions are separately asserted. Other numbered components retain their reviewed physical pin numbering. Derived rotations/origins are in placements.csv/json. These are catalogue-geometry checks, not physical supplier fit approval.
 K501/K502: C116963 supplier CAD COM-to-coil-row offset differs from Omron's drawing by about 0.55 mm. Rotation/pin numbering is identified, but supplier-model origin cannot be certified from that inconsistent geometry. JLC must align actual G5LE-14 5 V relay using the manufacturer hole drawing and PCB lands before assembly. Do not move PCB holes to match the malformed supplier model. See assembly/relay-alignment.svg and assembly/placement-overlays.html. CPL contains the best fit to supplier numbered pads, explicitly subject to this correction.
 J208 is the separate low-profile Samtec socket in manual-and-mechanical-bom.csv. Do not let BOM matching substitute a generic tall socket. Its actual OLED/header stack must engage correctly at the required 10 mm standoff height.
 Through-hole headers, JST connectors, terminal blocks, relays, capacitors and fuse holder require the applicable selective/wave/manual assembly process. Check service availability/fixtures with JLC; SMT-only assembly does not fit these automatically.
@@ -76,7 +82,7 @@ for r in places:
  seen.add(key);f=fs[ref];pads=[q for q in f.Pads() if q.GetNumber() and q.IsOnLayer(p.F_Cu)];root=E.parse(O/'supplier'/f'{c}-1.svg').getroot();g=next(g for g in root if 'c_para' in g.attrib);ox,oy=map(float,g.attrib['c_origin'].split(','));co=math.cos(math.radians(-r['rotation']));si=math.sin(math.radians(-r['rotation']));points=[]
  for e in g.iter():
   if e.attrib.get('c_partid')=='part_pad':
-   xx,yy=map(float,e.attrib['c_origin'].split(','));x,y=(xx-ox)*.254,(yy-oy)*.254;points.append((e.attrib['number'],r['x']+co*x-si*y,r['y']+si*x+co*y))
+   xx,yy=map(float,e.attrib['c_origin'].split(','));x,y=(xx-ox)*.254,(yy-oy)*.254;nn=e.attrib['number'];mapping=json.loads(r.get('supplier_to_native_pad_mapping','{}'));label=nn+'→'+mapping[nn] if nn in mapping else nn;points.append((label,r['x']+co*x-si*y,r['y']+si*x+co*y))
  xs=[x for _,x,y in points]+[p.ToMM(q.GetPosition().x) for q in pads];ys=[y for _,x,y in points]+[p.ToMM(q.GetPosition().y) for q in pads];xmin,xmax=min(xs)-1.5,max(xs)+1.5;ymin,ymax=min(ys)-1.5,max(ys)+1.5;scale=min(280/(xmax-xmin),190/(ymax-ymin));sx=lambda x:15+(x-xmin)*scale;sy=lambda y:45+(y-ymin)*scale
  svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="320" height="270"><rect width="320" height="270" fill="#f4f6f8"/><text x="10" y="20" font-size="13">{html.escape(ref)} / {c} / {r["rotation"]}°</text>']
  for q in pads:
@@ -84,8 +90,8 @@ for r in places:
   if abs(q.GetOrientationDegrees()%180-90)<.01:w,h=h,w
   svg.append(f'<rect x="{sx(x-w/2):.3f}" y="{sy(y-h/2):.3f}" width="{w*scale:.3f}" height="{h*scale:.3f}" fill="#dfbb59" stroke="#856000" stroke-width=".4"/>')
  for n,x,y in points:svg.append(f'<circle cx="{sx(x):.3f}" cy="{sy(y):.3f}" r="2" fill="#1060a5"/><text x="{sx(x)+3:.3f}" y="{sy(y)-2:.3f}" font-size="8">{html.escape(n)}</text>')
- svg.append('</svg>');panels.append('<figure>'+''.join(svg)+'<figcaption>'+html.escape(r['status'])+'</figcaption></figure>')
-(P/'assembly/placement-overlays.html').write_text('<!doctype html><meta charset="utf-8"><title>Rev 1.2a placement audit</title><style>body{font:14px sans-serif;margin:24px}main{display:flex;flex-wrap:wrap}figure{margin:8px;border:1px solid #ccc}figcaption{padding:8px}</style><h1>Rev 1.2a supplier placement audit</h1><p>Top view. Gold: native PCB lands; blue: supplier numbered pad centers using exported CPL origins and rotations. All 328 placements audited; panels cover each SKU/angle and every connector/relay. Relays require manufacturer alignment review.</p><main>'+''.join(panels)+'</main>')
+ svg.append('</svg>');panels.append('<figure>'+''.join(svg)+'<figcaption>'+html.escape(r['status']+' — '+r.get('orientation_basis',''))+'</figcaption></figure>')
+(P/'assembly/placement-overlays.html').write_text('<!doctype html><meta charset="utf-8"><title>Rev 1.2a placement audit</title><style>body{font:14px sans-serif;margin:24px}main{display:flex;flex-wrap:wrap}figure{margin:8px;border:1px solid #ccc}figcaption{padding:8px}</style><h1>Rev 1.2a supplier placement audit</h1><p>Top view. Gold: native PCB lands; blue: supplier pad centers using exported CPL origins and rotations. Labels source→native show explicit functional mapping for A/K LED polarity or independent terminal contacts. Raw pad-number equality alone is not an orientation check. All 328 placements audited; panels cover each SKU/angle and every connector/relay. Relays require manufacturer alignment review.</p><main>'+''.join(panels)+'</main>')
 # Relay-specific physical pad drawing, independent of malformed supplier geometry.
 svg=['<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500"><rect width="1100" height="500" fill="white"/><text x="25" y="30" font-size="20">Rev 1.2a — relay alignment / TOP VIEW / native PCB hole positions</text>']
 for idx,ref in enumerate(['K501','K502']):

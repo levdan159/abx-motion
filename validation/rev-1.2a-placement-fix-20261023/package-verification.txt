@@ -1,0 +1,25 @@
+{
+  "PCB_sha256": "51a583987cc928cb9c5e47a8bd627dcd8717c2d7bf8e899feedf9d6ab6bdb1d0",
+  "electrical_footprints_unchanged_since_revision_export_start": true,
+  "existing_track_via_UUID_geometry_nets_unchanged": true,
+  "decorative_footprints_changed": [
+    "LOGO1",
+    "LOGO2"
+  ],
+  "ERC_violations": 0,
+  "DRC_errors": 0,
+  "DRC_warnings": 95,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "catalogue_SKUs": 74,
+  "catalogue_placements": 328,
+  "supplier_pad_checks_pass": 326,
+  "relay_alignment_required": [
+    "K501",
+    "K502"
+  ],
+  "separately_sourced_socket": "J208",
+  "selected_filled_capped_features": 104,
+  "manifest_hashes_match": true,
+  "all_zip_integrity_checks_pass": true
+}
