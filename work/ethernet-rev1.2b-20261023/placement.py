@@ -109,19 +109,21 @@ add('Q801','RESET SINK / SELECT','Package_TO_SOT_SMD:SOT-23',113,87.5,0,'expande
 res(816,'100k',111.5,89.7,0,'reset interface default state')
 add('D801','ETHERNET ESD / SELECT','Package_TO_SOT_SMD:SOT-23-6',130,74.4,0,'low capacitance Ethernet protection; MPN/topology not frozen')
 cap(820,'1nF HV / SELECT',134.5,59.8,0,'shield coupling position; voltage/clearance review pending',size='1206')
+add('TP_ETH_3V3','3V3_ETH / UNCONNECTED DRAFT','TestPoint:TestPoint_Pad_D1.5mm',133.5,56.25,0,'intended 3V3_ETH measurement point; schematic/net assignment pending')
 
 # A dimensioned reservation rather than an invented regulator footprint. The
 # dedicated rail must not silently consume the old 1 A external 5 V allocation.
-reserve=pcbnew.FOOTPRINT(b);reserve.SetReference('PWR_ETH_RESERVE');reserve.SetValue('3V3 ETH SUPPLY - REVIEW');reserve.SetPosition(mm(147.75,56.25))
+reserve=pcbnew.FOOTPRINT(b);reserve.SetReference('PWR_ETH_RESERVE');reserve.SetValue('3V3 ETH SUPPLY - REVIEW');reserve.SetPosition(mm(143.5,56.25))
 reserve.SetExcludedFromBOM(True);reserve.SetExcludedFromPosFiles(True)
 reserve.Reference().SetVisible(False);reserve.Value().SetVisible(False)
-for p,q in [((-8.25,-2.25),(8.25,-2.25)),((8.25,-2.25),(8.25,2.25)),((8.25,2.25),(-8.25,2.25)),((-8.25,2.25),(-8.25,-2.25))]:
- s=pcbnew.PCB_SHAPE(reserve);s.SetShape(pcbnew.SHAPE_T_SEGMENT);s.SetStart(mm(147.75+p[0],56.25+p[1]));s.SetEnd(mm(147.75+q[0],56.25+q[1]));s.SetLayer(pcbnew.Dwgs_User);s.SetWidth(150000);reserve.Add(s)
+for p,q in [((-12.5,-2.25),(12.5,-2.25)),((12.5,-2.25),(12.5,2.25)),((12.5,2.25),(-12.5,2.25)),((-12.5,2.25),(-12.5,-2.25))]:
+ s=pcbnew.PCB_SHAPE(reserve);s.SetShape(pcbnew.SHAPE_T_SEGMENT);s.SetStart(mm(143.5+p[0],56.25+p[1]));s.SetEnd(mm(143.5+q[0],56.25+q[1]));s.SetLayer(pcbnew.Dwgs_User);s.SetWidth(150000);reserve.Add(s)
 b.Add(reserve)
 
 def text(s,x,y,size=.8,layer=pcbnew.Dwgs_User):
  t=pcbnew.PCB_TEXT(b);t.SetText(s);t.SetPosition(mm(x,y));t.SetTextSize(mm(size,size));t.SetTextThickness(120000);t.SetLayer(layer);b.Add(t)
 text('3V3 ETH SUPPLY RESERVE',147.75,56.25,.65)
+text('3V3_ETH',133.5,54.4,.65,pcbnew.F_SilkS)
 text('ETHERNET - PLACEMENT REVIEW ONLY',131,44.5,1)
 text('NO PoE',120.6,47,.65)
 text('EXTRA ANTENNA CLEARANCE WAIVED - WIFI TEST REQUIRED',125,40.8,.7)

@@ -544,5 +544,18 @@
     "status": "reference-circuit placement; electrical integration pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
+  },
+  "TP_ETH_3V3": {
+    "value": "3V3_ETH / UNCONNECTED DRAFT",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "position": [
+      133.5,
+      56.25,
+      0
+    ],
+    "role": "intended 3V3_ETH measurement point; schematic/net assignment pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
   }
 }

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-24",
+  "reservation_before_mm": [
+    139.5,
+    54,
+    156,
+    58.5
+  ],
+  "reservation_after_mm": [
+    131,
+    54,
+    156,
+    58.5
+  ],
+  "area_before_mm2": 74.25,
+  "area_after_mm2": 112.5,
+  "test_point": {
+    "reference": "TP_ETH_3V3",
+    "position_mm": [
+      133.5,
+      56.25
+    ],
+    "diameter_mm": 1.5,
+    "connected": false,
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "all_other_existing_board_objects_preserved_verbatim": true,
+  "segments_vias_zones_unchanged": true,
+  "existing_component_positions_unchanged": true,
+  "source_pcb_sha256": "51a583987cc928cb9c5e47a8bd627dcd8717c2d7bf8e899feedf9d6ab6bdb1d0"
+}

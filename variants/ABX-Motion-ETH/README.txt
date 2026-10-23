@@ -27,7 +27,7 @@ PLACEMENT PROVIDED
   front overhang. Nominal height 13.5 mm. Verify actual drawing/panel latch access.
 - U801: W5500, JLC C32843, at (120.3,74.8), rotated 270 degrees to put its
   Ethernet MDI pin bank toward the jack. Crystal immediately below its clock pins.
-- 42 new footprint positions cover controller, jack, clock, bypass/bulk caps,
+- 43 new footprint positions cover controller, jack, clock, bypass/bulk caps,
   reference termination network, straps, reset/interface and ESD package reserves.
 - Existing 5 V converter, inductor, 3.3 V regulator, ADC divider and their support
   parts retain their original positions. The five rail/ground test pads form one
@@ -36,8 +36,14 @@ PLACEMENT PROVIDED
   Three existing pull-ups move below/right of the PHY. These are the only ten
   existing footprint moves relative to Rev 1.2a.
 - The stepper/watchdog IC positions, motor sockets and board outline are retained.
-- A 16.5 x 4.5 mm dedicated Ethernet supply reservation is marked on Dwgs.User.
+- A 25 x 4.5 mm dedicated Ethernet supply reservation is marked on Dwgs.User,
+  expanded left into the space vacated by CS1/CS2: x131..156 / y54..58.5 mm.
+  This provides room for regulator/filter/input/output-capacitor placement while
+  keeping the existing main converter and the MDI area below the jack intact.
   It is NOT a selected/connected regulator or a demonstrated complete supply fit.
+- TP_ETH_3V3 at (133.5,56.25) is the intended top-side 3V3_ETH measurement point,
+  with a 1.5 mm exposed pad and front label. It is unconnected in this draft,
+  excluded from BOM/CPL, and requires schematic/net integration with the supply.
 - No PoE circuitry or PoE connector claim is included. HR911105A is non-PoE and
   rated 0..70 C; broader temperature/PoE variants need a new connector selection.
 
@@ -101,7 +107,7 @@ visible mouth, not a vendor STEP model or authority for supplier CPL rotation.
 Other local visualization models are copied from the Rev 1.2a project.
 
 Baseline commit: ce34a43.
-Date: 2026-10-23.
+Date: 2026-10-23. Supply-reservation/test-point update: 2026-10-24.
 Build/review scripts: work/ethernet-rev1.2b-20261023/placement.py and review.py.
 
 PRIMARY DESIGN REFERENCES

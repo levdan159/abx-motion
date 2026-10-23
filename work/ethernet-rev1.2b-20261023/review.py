@@ -37,6 +37,8 @@ for r in parts:
 report=dict(courtyard_overlaps=overlap,new_parts_inside_15mm_antenna_envelope=rfhits,
             extra_antenna_clearance_waived_by_user=True,
             stage='PLACEMENT ONLY - NO ROUTING OR ELECTRICAL INTEGRATION',
+            ethernet_supply_reservation_mm=[131,54,156,58.5],
+            ethernet_supply_test_point_mm=[133.5,56.25],
             jack_body_bounds=list(outline(fs['J801'],pcbnew.F_Fab).bounds),
             jack_height_mm=13.5,board_edge_y_mm=48)
 (O/'layout-review/geometry.json').write_text(json.dumps(report,indent=2))
@@ -72,7 +74,7 @@ def plot(name,xlim,ylim,large=False):
    labels={'J801':'RJ45 + MAGNETICS','U801':'W5500','U3':'ESP32-S3'}
    ax.text((x0+x1)/2,y1+.65,labels[r],ha='center',fontsize=9,color=color,weight='bold')
  ax.annotate('Extra antenna clearance waived\nWi-Fi performance to be measured',(112,51),(106,44.5),ha='right',fontsize=8,color='#ab3d6c',arrowprops=dict(arrowstyle='->',color='#ab3d6c'))
- ax.add_patch(Rectangle((139.5,54),16.5,4.5,fill=False,edgecolor='#8b49ac',ls='--',lw=1.5))
+ ax.add_patch(Rectangle((131,54),25,4.5,fill=False,edgecolor='#8b49ac',ls='--',lw=1.5))
  ax.text(147.75,56.25,'3V3 ETH SUPPLY RESERVE',fontsize=7,ha='center',color='#8b49ac',weight='bold')
  ax.annotate('CABLE EXIT',(120.5,46),(120.5,42.7),ha='center',fontsize=10,weight='bold',color='#007e9e',arrowprops=dict(arrowstyle='<-',color='#007e9e',lw=2))
  ax.set_xlim(xlim);ax.set_ylim(ylim[1],ylim[0]);ax.set_aspect('equal');ax.grid(alpha=.15)

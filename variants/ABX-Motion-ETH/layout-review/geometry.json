@@ -8,6 +8,16 @@
   ],
   "extra_antenna_clearance_waived_by_user": true,
   "stage": "PLACEMENT ONLY - NO ROUTING OR ELECTRICAL INTEGRATION",
+  "ethernet_supply_reservation_mm": [
+    131,
+    54,
+    156,
+    58.5
+  ],
+  "ethernet_supply_test_point_mm": [
+    133.5,
+    56.25
+  ],
   "jack_body_bounds": [
     112.54,
     45.99,

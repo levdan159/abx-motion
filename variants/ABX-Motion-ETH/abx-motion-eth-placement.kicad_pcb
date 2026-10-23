@@ -202667,7 +202667,7 @@
 	(footprint ""
 		(layer "F.Cu")
 		(uuid "c1606000-af75-4b25-b678-70c1f811019f")
-		(at 147.75 56.25)
+		(at 143.5 56.25)
 		(property "Reference" "PWR_ETH_RESERVE"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -202715,8 +202715,8 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -8.25 -2.25)
-			(end 8.25 -2.25)
+			(start -12.5 -2.25)
+			(end 12.5 -2.25)
 			(stroke
 				(width 0.15)
 				(type default)
@@ -202725,8 +202725,18 @@
 			(uuid "11aae594-1238-4471-974a-5b6c4f0178c2")
 		)
 		(fp_line
-			(start -8.25 2.25)
-			(end -8.25 -2.25)
+			(start -12.5 2.25)
+			(end -12.5 -2.25)
+			(stroke
+				(width 0.15)
+				(type default)
+			)
+			(layer "Dwgs.User")
+			(uuid "5afa5ba9-37fe-4319-a5ae-621f766f76b6")
+		)
+		(fp_line
+			(start 12.5 -2.25)
+			(end 12.5 2.25)
 			(stroke
 				(width 0.15)
 				(type default)
@@ -202735,24 +202745,14 @@
 			(uuid "cecd3093-348f-40a9-89b4-30757518729e")
 		)
 		(fp_line
-			(start 8.25 -2.25)
-			(end 8.25 2.25)
+			(start 12.5 2.25)
+			(end -12.5 2.25)
 			(stroke
 				(width 0.15)
 				(type default)
 			)
 			(layer "Dwgs.User")
 			(uuid "15564504-5b46-4021-99c8-827cee16174e")
-		)
-		(fp_line
-			(start 8.25 2.25)
-			(end -8.25 2.25)
-			(stroke
-				(width 0.15)
-				(type default)
-			)
-			(layer "Dwgs.User")
-			(uuid "5afa5ba9-37fe-4319-a5ae-621f766f76b6")
 		)
 		(embedded_fonts no)
 	)
@@ -202829,6 +202829,116 @@
 		(effects
 			(font
 				(size 1 1)
+				(thickness 0.12)
+			)
+		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
+		(layer "F.Cu")
+		(uuid "9eec6f2d-113c-4409-bebd-c28e68fa41ae")
+		(at 133.5 56.25)
+		(descr "SMD pad as test Point, diameter 1.5mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP_ETH_3V3"
+			(at 0 -1.648 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2beeb832-e26d-4603-ad2a-a28c41681554")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "3V3_ETH / UNCONNECTED DRAFT"
+			(at 0 1.75 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0085bca4-b03e-4c1c-8f35-a2d61dc191d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92c55590-5322-4154-8c52-5e01def4eac3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d4b5048-4473-4bfa-a961-90826acec598")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 0 0.95)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "2fc5b295-86be-47df-b213-1570f83688ff")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.25 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "47e83420-b327-4516-8df9-2cf7f29ae158")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1.65 0)
+			(layer "F.Fab")
+			(uuid "d8909797-6575-4fc4-9e63-b53021c70450")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 1.5 1.5)
+			(layers "F.Cu" "F.Mask")
+			(uuid "be5f3964-12c3-476a-951f-cf9eff8aff51")
+		)
+		(embedded_fonts no)
+	)
+	(gr_text "3V3_ETH"
+		(at 133.5 54.4 0)
+		(layer "F.SilkS")
+		(uuid "2f96df00-2034-4386-bc12-cd5c89bb7433")
+		(effects
+			(font
+				(size 0.65 0.65)
 				(thickness 0.12)
 			)
 		)
