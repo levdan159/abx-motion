@@ -4,7 +4,7 @@ The root KiCad project is the active three-axis development checkpoint. It inclu
 
 See [Rev 1.2a checkpoint](design/rev-1.2a-checkpoint.md), [digital I/O pin allocation](design/limit-inputs-rev1.2-20261023.txt) and [thermal review](design/thermal-rev1.2-20261023.md). Rev 1.2a is a saved CAD checkpoint, not a qualified manufacturing release. The matched [JLCPCB prototype package](production/rev-1.2a-20261023/README.txt) includes current Gerbers, drills, BOM, supplier-normalized CPL, assembly drawings and audit evidence. Earlier exports/renders are historical. Relay alignment still requires assembler review; J208 and mechanical items are separately sourced.
 
-Ethernet with an optional isolated PoE daughterboard is a future option only; no Ethernet/PoE circuitry has been added. Current cooling direction uses stock heatsinks without custom machining; archived machined-heatsink drawings are superseded.
+The proposed **Rev 1.2b / ABX-MOTION-ETH** [Ethernet placement candidate](variants/ABX-Motion-ETH/README.txt) is a separate physical layout study. It adds proposed RJ45/W5500/support positions to a review copy, with a dedicated supply reservation; its Ethernet circuit is not schematic-integrated or routed. The root Rev 1.2a project and manufacturing package remain the saved baseline. No PoE circuitry has been added. Current cooling direction uses stock heatsinks without custom machining; archived machined-heatsink drawings are superseded.
 
 ## Historical Rev 1.1 documentation
 

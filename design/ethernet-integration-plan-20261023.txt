@@ -1,0 +1,202 @@
+ABX-Motion Ethernet integration plan — 2026-10-23
+Status: original circuit proposal; user subsequently authorized a Rev 1.2b
+placement study. Baseline: ce34a43, Rev 1.2a.
+
+LATEST USER DECISION / PLACEMENT UPDATE
+The user explicitly waived the extra 15 mm antenna clearance to simplify the
+layout. This supersedes that constraint in the original proposal below.
+Current placement candidate: variants/ABX-Motion-ETH/abx-motion-eth-placement.kicad_pcb.
+J801 body x112.54..128.58 / y45.99..67.29 mm, nominal 2.54 mm lateral gap to U3.
+The jack's RF effect is accepted as a prototype tradeoff, not RF qualification.
+Existing power-converter/regulator/ADC parts remain in their original positions;
+only seven test pads and three pull-ups move. SKU proposal: ABX-MOTION-ETH;
+hardware revision Rev 1.2b. The root Rev 1.2a board and manufacturing exports are
+unchanged. This is placement only: supply selection, schematic integration and
+routing are pending. See variants/ABX-Motion-ETH/README.txt for current status.
+
+ORIGINAL CIRCUIT PROPOSAL (antenna/placement constraints superseded as above)
+
+SCOPE AND ARCHITECTURE
+Add one non-PoE 10/100BASE-T Ethernet port in the area to the right of U3.
+Use W5500 (integrated MAC and PHY) on the existing stepper SPI bus. A bare
+LAN8720-style RMII PHY is insufficient for the ESP32-S3, which lacks an EMAC.
+Keep motion generation local to the ESP32; networking supplies buffered commands,
+configuration and telemetry. Do not promise deterministic Ethernet pulse timing
+or 100 Mbit/s application throughput over the shared SPI bus.
+No PoE controller, rectifier, converter or daughterboard header in this change.
+
+MAIN PARTS
+1. WIZnet W5500, LQFP-48 7x7 mm body, 0.5 mm pitch, JLC/LCSC C32843.
+   JLC catalog lists this part in stock at research time; stock must be checked
+   again when ordering. Device temperature range -40 to +85 C.
+2. Candidate jack: genuine HanRun HR911105A, JLC/LCSC C12074, through-hole,
+   integrated 10/100 magnetics and two LEDs, approximately 16.04 mm wide,
+   21.3 mm deep and 13.5 mm high. Catalog lists wave-solder assembly.
+   Its specified operating range is 0 to +70 C: this limits an assembly using it.
+   Do not substitute an anonymous JLCPCB Assembly entry with a similar name.
+   Freeze selection only after checking the manufacturer transformer diagram,
+   center taps, shield pins, pin numbering, footprint and panel opening.
+   If a -40 to +85 C board is required, choose a qualified industrial-temperature
+   magjack before placement; do not infer compatibility from appearance.
+
+SUPPORT CIRCUIT — DERIVE FROM THE W5500 REFERENCE, NOT A GENERIC PHY CIRCUIT
+- 25 MHz crystal meeting W5500 tolerance, ESR and drive requirements, close to
+  XI/XO. Compute the two load capacitors from the selected crystal CL and board
+  parasitics; do not blindly copy the reference capacitor values.
+- EXRES1: 12.4 kohm, 1%, with a short ground connection.
+- RX/TX termination and AC-coupling network matched to the selected magjack's
+  actual center-tap topology. WIZnet warns that common versus separate center
+  taps require different receive circuitry. Verify the four signal polarities
+  and pin mapping independently of the library symbol.
+- All required AVDD/VDD bypass capacitors, local bulk capacitors, analog supply
+  filtering, TOCAP (4.7uF)/1V2O (10nF) capacitors and reserved-pin treatment per
+  datasheet. VBG pin 18 must float; do not add a capacitor or other load to it.
+  The internal 1.2 V output is not a rail for external loads.
+- Explicit PMODE pull configuration for full auto-negotiation; CS pull-up.
+- Defined power-on reset plus a firmware-accessible reset. RSTn low for at least
+  500 us after valid power, with startup/PLL delay respected before SPI access.
+  Prefer an open-drain reset arrangement that a supervisor and firmware can
+  both assert; do not connect competing push-pull outputs together.
+- Link/activity LED resistors sized from the actual jack polarity and LED data.
+- Ethernet-suitable low-capacitance ESD protection with a short discharge path.
+  Choose PHY/cable-side placement and working voltage together with the final
+  reference circuit so the transformer isolation is not bypassed.
+- Separate local connector shield/chassis net. Resolve its enclosure bond and
+  capacitive coupling to circuit GND deliberately; retain isolation/clearance.
+  Do not simply short the shield to battery return or duplicate internal Bob
+  Smith termination without inspecting the jack diagram.
+- Optional source-series resistor footprints on SPI clock/data where justified
+  by topology; initial stuffing and values require signal-integrity review.
+- Small 3V3_ETH/GND/RESET/CS test points outside the isolation and antenna areas.
+
+PIN PLAN — VERIFIED AGAINST THE EXISTING SCHEMATIC NETLIST
+There are no unused regular output GPIOs on U3. Proposed minimal reassignment:
+  Ethernet SCLK: GPIO21, existing STEP_SPI_SCLK, U3 pad 23.
+  Ethernet MOSI: GPIO37, existing STEP_SPI_MOSI, U3 pad 30.
+  Ethernet MISO: GPIO40, existing STEP_SPI_MISO, U3 pad 33.
+  Ethernet CS_N: GPIO3, currently LED_STAT, U3 pad 15; add a pull-up.
+  STAT LED: move to U601 IO1_5, pad 18; prefer active-low sinking if suitable.
+  Ethernet RESET_N request: U601 IO1_6, pad 19, through the reset arrangement.
+  Ethernet interrupt: initially polling; no additional ESP GPIO required.
+  GPIO46: leave unused, preserving boot/download strapping behavior.
+
+IMPORTANT: U601 pads 18 and 19 are currently connected to GND. Remove those
+connections in both schematic and PCB before reusing the pins; they are not
+already floating spare outputs. Preserve the existing stop/status input and
+all other expander functions when changing direction/output registers.
+GPIO3 is a JTAG-selection strap. Pulling it high for idle CS is consistent with
+USB JTAG selection when strap selection is enabled; verify actual module/eFuse
+configuration and reset behavior. No eFuse programming is part of this plan.
+
+FIRMWARE CONTRACT
+- Pin the ESP-IDF/W5500 component versions and demonstrate polling mode using
+  the chosen version before committing to an interrupt-free schematic.
+- All users must serialize access to the same SPI host. For stepper accesses,
+  acquire the SPI bus BEFORE asserting expander-controlled CS over I2C, keep it
+  acquired through the transfer, deassert CS over I2C, then release the bus.
+  Transaction-level locking alone does not cover the external CS operation.
+- Check every existing SPI slave releases MISO when deselected, tolerates other
+  device clock modes/frequencies while deselected, and has a defined idle CS.
+- Ethernet hardware CS uses the same bus arbitration. Avoid lock-order deadlocks
+  involving I2C and SPI. Never perform blocking I2C transfers in ISR callbacks.
+- Start Ethernet SPI at 20 MHz; qualify any higher clock on the populated board.
+  Set each device's own mode and frequency. Bound Ethernet transfer sizes so
+  driver configuration/status access cannot starve.
+- Reset through I2C needs a board-specific callback/sequence; it is not a normal
+  ESP GPIO number. Recovery must still work following brownout or ESP reboot.
+- Test networking alongside all axes and fault handling; network loss must not
+  bypass the existing local motion interlocks.
+
+POWER PLAN
+W5500 lists approximately 132 mA typical during 100 Mbit/s transmission at 3.3 V,
+about 0.44 W. This is a typical figure, not a guaranteed maximum board budget.
+Reserve at least 300 mA regulator capacity for Ethernet per the WIZnet guide,
+including LED loading and margin; verify transient and temperature behavior.
+Do not automatically add this load to U2, the existing AP2112K-3.3.
+Preferred modest addition: a dedicated 5 V to 3.3 V regulator for 3V3_ETH,
+with at least 500 mA rating and suitable thermal copper, IF the complete 5 V
+budget supports it while retaining the agreed 1 A external allocation.
+An LDO adds about 0.22 W heat at 132 mA; check the final regulator package and
+worst-case current/ambient, not just its headline current rating.
+First calculate U1's existing 2 A output budget for all simultaneous internal and
+external loads. If insufficient, resolve supply capacity before freezing this
+addition; do not silently reduce the external current allocation.
+Keep one continuous circuit ground beneath the PHY and its digital/MDI routing;
+filter the analog supply as recommended rather than splitting the ground plane.
+
+PLACEMENT PLAN — RIGHT OF ESP32, NOT YET FIXED COORDINATES
+Board envelope: x45..202 mm, y48..153 mm; U3 origin approximately (101,60) mm.
+Preferred cable access is through the top edge to the right of U3. Put the
+magjack at that edge, PHY behind its signal-pin side, crystal/decoupling at PHY.
+Reserve roughly a 20x35 mm functional block including the jack and routing,
+then expand for actual courtyards, shielding clearance, power and probe access.
+
+Two checked constraints prevent treating the visible area as entirely empty:
+1. A jack approximately x113..130, y48..70 conflicts with the existing top test
+   pads and places its metal body very close to the ESP antenna. Reject this
+   as a frozen placement until antenna clearance is demonstrated. Espressif
+   recommends at least 15 mm antenna clearance in all directions in the product.
+2. Moving the jack farther right, provisionally around x127..143, y48..70,
+   improves antenna separation but overlaps the present U1 supply area.
+   This is a placement-study envelope, not a verified footprint position.
+
+Compare those envelopes using the actual antenna and connector models. Prefer
+adequate antenna separation and a controlled local relocation of the entire U1
+power island over placing the jack against the radiator. Preserve the converter
+hot-loop geometry and feedback routing when moving the island. Check conflicts
+with L1, Q1, fuse/input circuitry and the existing thermal features. Test pads can
+move into accessible short rows; preserve net labels and probe clearance.
+W5500 can sit below/left of the jack behind its signal pins, toward the existing
+SPI connections. Check whether R747/R748/R749 need a small local relocation.
+Do not spread unrelated watchdog/stepper logic or reroute the entire complex.
+If this cannot fit without extensive disturbance, return the placement study
+for review before changing architecture or moving the ESP32.
+
+ROUTING AND MECHANICAL ACCEPTANCE
+- Manufacturer-matched jack footprint, board-edge relationship, cable latch
+  clearance, shield stakes, drill diameters and panel cutout verified in 3D.
+- Preserve antenna clearance from jack metal, mounting hardware and cable plug.
+- Keep TX/RX pairs short (target <25 mm), matched within each pair, nominally
+  100 ohm differential using the ACTUAL fabrication stack-up. Prefer one layer,
+  no pair vias, no stubs, no crossing other digital signals through the pair area.
+- Preserve the PHY/pair return reference up to the isolation boundary. Apply
+  WIZnet/manufacturer plane keepouts under magnetics/RJ45 and keep unrelated
+  tracks out of that region on every layer. Do not extend these voids blindly
+  under the PHY or SPI return paths.
+- Separate Ethernet from buck switching nodes and motor-current paths.
+- No long unreviewed SPI tee stubs; review the shared-bus branch topology.
+- Record physical RJ45 mouth direction, pin 1 and LED polarity in the export
+  orientation rules. Supplier zero-degree rotation must be verified from its
+  actual model/drawing, following the recent terminal/LED export corrections.
+- Additions must pass ERC, netlist/PCB parity, DRC and zero-open verification.
+  Compare old/new violations and preserve all unrelated connections.
+
+SMALL EXECUTION CHUNKS, EACH REVIEWABLE BEFORE THE NEXT
+A. Freeze feasibility: connector temperature class, jack/antenna mechanical
+   envelope, GPIO3 boot behavior, polling driver and full rail budget.
+   Deliver a placement proposal and pin/power table; no routing.
+B. Schematic: Ethernet sheet, exact support BOM and expander/LED changes;
+   independent pin-by-pin reference check and ERC.
+C. Placement only: magjack, PHY, crystal, reset, power, protection and test pads;
+   local supply-island move only if needed. Review 2D/3D and routing corridors.
+D. Route the bounded Ethernet block and reconnect locally affected nets;
+   preserve other routes, then refill/check zones and DRC/parity/opens.
+E. Manufacturing and bring-up: exact BOM/CPL/model orientation review, matched
+   Gerbers and drills, then physical boot/reset/link/cable/traffic testing,
+   concurrent motion tests, rail/thermal checks and ESD/EMC validation.
+   Do not claim hardware qualification from a clean CAD check alone.
+
+PRIMARY REFERENCES CHECKED 2026-10-23
+https://docs.wiznet.io/Product/Chip/Ethernet/W5500
+https://docs.wiznet.io/Product/Chip/Ethernet/W5500/ref-schematic
+https://docs.wiznet.io/Design-Guide/hardware_design_guide
+https://docs.wiznet.io/assets/files/W5500_ds_v110e-226ffec190c588b69f88d629789585e1.pdf
+https://jlcpcb.com/partdetail/Wiznet-W5500/C32843
+https://jlcpcb.com/partdetail/C12074
+https://www.lcsc.com/datasheet/C12074.pdf
+https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html
+https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+https://github.com/espressif/esp-eth-drivers/tree/master/w5500
+
+This document records a proposal and unresolved design gates. It does not change
+Rev 1.2a or certify fit, EMC, thermal performance or industrial temperature use.

@@ -1,0 +1,548 @@
+{
+  "J801": {
+    "value": "HR911105A / C12074",
+    "footprint": "Connector_RJ:RJ45_Hanrun_HR911105A_Horizontal",
+    "position": [
+      125,
+      63.25,
+      180
+    ],
+    "role": "RJ45 opening toward the top edge; extra antenna clearance waived by user",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "U801": {
+    "value": "W5500 / C32843",
+    "footprint": "Package_QFP:LQFP-48_7x7mm_P0.5mm",
+    "position": [
+      120.3,
+      74.8,
+      270
+    ],
+    "role": "integrated 10/100 MAC and PHY; MDI pins toward jack",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "Y801": {
+    "value": "25MHz / CL TO SELECT",
+    "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "position": [
+      119.8,
+      82,
+      0
+    ],
+    "role": "crystal; exact CL and drive specification pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C801": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      121.75,
+      69,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C802": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      119.25,
+      69,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C803": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      116.75,
+      69,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C804": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      114,
+      71.6,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C805": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      114,
+      73.7,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C806": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      114,
+      76,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C807": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      123.8,
+      80.5,
+      0
+    ],
+    "role": "local W5500 supply bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C809": {
+    "value": "4.7uF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "position": [
+      112.1,
+      77,
+      90
+    ],
+    "role": "TOCAP capacitor; pin 20",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C810": {
+    "value": "10nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      114,
+      78.8,
+      90
+    ],
+    "role": "1V2O capacitor; pin 22",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C811": {
+    "value": "10uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "position": [
+      126.5,
+      82.6,
+      0
+    ],
+    "role": "digital supply bulk",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C812": {
+    "value": "10uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "position": [
+      130,
+      82.5,
+      0
+    ],
+    "role": "analog supply bulk",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C813": {
+    "value": "CL TBD",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      116.4,
+      80.5,
+      0
+    ],
+    "role": "crystal load capacitor",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C814": {
+    "value": "CL TBD",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      123.5,
+      83.3,
+      0
+    ],
+    "role": "crystal load capacitor",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C815": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      129.15,
+      68.7,
+      0
+    ],
+    "role": "TX center-tap bypass; confirm jack pin mapping",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C816": {
+    "value": "10nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      129,
+      70.5,
+      0
+    ],
+    "role": "RX center-tap network; confirm jack topology",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C817": {
+    "value": "6.8nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      129,
+      78,
+      0
+    ],
+    "role": "RX reference termination network",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C818": {
+    "value": "6.8nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      129,
+      80,
+      0
+    ],
+    "role": "RX reference termination network",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R801": {
+    "value": "12.4k 1%",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      114.5,
+      69.1,
+      0
+    ],
+    "role": "EXRES1 bias resistor",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R802": {
+    "value": "49.9R 1%",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      126.5,
+      71.2,
+      0
+    ],
+    "role": "MDI termination; final center-tap circuit review pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R803": {
+    "value": "49.9R 1%",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      126.5,
+      73.2,
+      0
+    ],
+    "role": "MDI termination; final center-tap circuit review pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R804": {
+    "value": "49.9R 1%",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      126.5,
+      75.2,
+      0
+    ],
+    "role": "MDI termination; final center-tap circuit review pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R805": {
+    "value": "49.9R 1%",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      126.5,
+      77.2,
+      0
+    ],
+    "role": "MDI termination; final center-tap circuit review pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R806": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      126.5,
+      79.1,
+      0
+    ],
+    "role": "PMODE strap",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R807": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      126.5,
+      80.7,
+      0
+    ],
+    "role": "PMODE strap",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R808": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      123.6,
+      81.8,
+      0
+    ],
+    "role": "PMODE strap",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R809": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      116.8,
+      85.5,
+      0
+    ],
+    "role": "CS pull-up",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R810": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      117,
+      89,
+      0
+    ],
+    "role": "RESET pull-up",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R811": {
+    "value": "330R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      130.4,
+      54,
+      90
+    ],
+    "role": "RJ45 green LED resistor",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R812": {
+    "value": "330R",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      130.4,
+      56.5,
+      90
+    ],
+    "role": "RJ45 yellow LED resistor",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R813": {
+    "value": "22R / SI TBD",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      113.7,
+      91,
+      0
+    ],
+    "role": "SPI series option",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R814": {
+    "value": "22R / SI TBD",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      113.7,
+      93,
+      0
+    ],
+    "role": "SPI series option",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R815": {
+    "value": "22R / SI TBD",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      113.7,
+      95,
+      0
+    ],
+    "role": "SPI series option",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "FB801": {
+    "value": "FERRITE / RATED >=300mA",
+    "footprint": "Inductor_SMD:L_0603_1608Metric",
+    "position": [
+      126.6,
+      68.75,
+      0
+    ],
+    "role": "analog supply filter",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "U803": {
+    "value": "OPEN-DRAIN RESET / SELECT",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "position": [
+      114,
+      84,
+      0
+    ],
+    "role": "power-on reset supervisor; MPN not frozen",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C819": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      111,
+      83.7,
+      0
+    ],
+    "role": "supervisor bypass",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "Q801": {
+    "value": "RESET SINK / SELECT",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "position": [
+      113,
+      87.5,
+      0
+    ],
+    "role": "expander reset open-drain interface",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R816": {
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      111.5,
+      89.7,
+      0
+    ],
+    "role": "reset interface default state",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "D801": {
+    "value": "ETHERNET ESD / SELECT",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "position": [
+      130,
+      74.4,
+      0
+    ],
+    "role": "low capacitance Ethernet protection; MPN/topology not frozen",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C820": {
+    "value": "1nF HV / SELECT",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "position": [
+      134.5,
+      59.8,
+      0
+    ],
+    "role": "shield coupling position; voltage/clearance review pending",
+    "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  }
+}

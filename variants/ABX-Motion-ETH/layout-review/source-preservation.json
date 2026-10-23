@@ -1,0 +1,16 @@
+{
+  "root_files_unchanged": {
+    "MCU.kicad_sch": true,
+    "Power.kicad_sch": true,
+    "Steppers_Relays.kicad_sch": true,
+    "abx-motion.kicad_sch": true,
+    "Industrial_IO.kicad_sch": true,
+    "Motor_Channel.kicad_sch": true,
+    "abx-motion.kicad_pcb": true,
+    "abx-motion.kicad_pro": true
+  },
+  "new_parts_excluded_from_exports": true,
+  "new_part_pads_unconnected": true,
+  "no_new_moved_courtyard_overlaps": true,
+  "extra_antenna_clearance_waived_by_user": true
+}

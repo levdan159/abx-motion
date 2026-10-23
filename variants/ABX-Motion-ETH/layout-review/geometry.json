@@ -1,0 +1,19 @@
+{
+  "courtyard_overlaps": [],
+  "new_parts_inside_15mm_antenna_envelope": [
+    {
+      "ref": "J801",
+      "area": 291.4188
+    }
+  ],
+  "extra_antenna_clearance_waived_by_user": true,
+  "stage": "PLACEMENT ONLY - NO ROUTING OR ELECTRICAL INTEGRATION",
+  "jack_body_bounds": [
+    112.54,
+    45.99,
+    128.58,
+    67.29
+  ],
+  "jack_height_mm": 13.5,
+  "board_edge_y_mm": 48
+}

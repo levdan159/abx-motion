@@ -1,0 +1,10 @@
+#VRML V2.0 utf8
+# HR911105A approximate mechanical envelope; 2.54 mm units; not supplier CAD
+Transform { translation 1.748031 -0.866142 2.657480 children [ Shape { appearance Appearance { material Material { diffuseColor .55 .58 .60 } } geometry Box { size 6.314961 4.913386 5.314961 } } ] }
+Transform { translation -1.291339 -5.059055 2.657480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .68 .7 } } geometry Box { size 0.236220 3.472441 5.314961 } } ] }
+Transform { translation 4.787402 -5.059055 2.657480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .68 .7 } } geometry Box { size 0.236220 3.472441 5.314961 } } ] }
+Transform { translation 1.748031 -5.059055 5.196850 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .68 .7 } } geometry Box { size 5.842520 3.472441 0.236220 } } ] }
+Transform { translation 1.748031 -5.059055 0.236220 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .68 .7 } } geometry Box { size 5.842520 3.472441 0.472441 } } ] }
+Transform { translation 1.748031 -3.346457 2.519685 children [ Shape { appearance Appearance { material Material { diffuseColor .045 .045 .045 } } geometry Box { size 5.842520 0.078740 4.094488 } } ] }
+Transform { translation -0.393701 -6.692913 0.826772 children [ Shape { appearance Appearance { material Material { diffuseColor .05 .6 .12 } } geometry Box { size 0.905512 0.204724 0.472441 } } ] }
+Transform { translation 3.858268 -6.692913 0.826772 children [ Shape { appearance Appearance { material Material { diffuseColor .95 .55 .03 } } geometry Box { size 0.905512 0.204724 0.472441 } } ] }
