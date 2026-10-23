@@ -33672,11 +33672,11 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "563d9f0b-70e4-4354-9a6c-f58b3ed79cf2")
-		(at 137 56.5)
+		(at 88 51 90)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP_CS2"
-			(at 0 -1.648 0)
+			(at 0 -1.648 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ea4ddc7b-328b-4e3a-9d46-dcb657f84c5b")
@@ -33688,7 +33688,7 @@
 			)
 		)
 		(property "Value" "TP_CS"
-			(at 0 1.75 0)
+			(at 0 1.75 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7bd80bc6-3c22-4b5e-be37-9a94fa7df702")
@@ -33700,7 +33700,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33713,7 +33713,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33737,6 +33737,16 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start 1.4 -1.9)
+			(end 1.4 1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "813bc214-35e3-4d60-8f77-ad57aeda1e63")
+		)
+		(fp_line
 			(start -1.4 -1.9)
 			(end 1.4 -1.9)
 			(stroke
@@ -33745,6 +33755,16 @@
 			)
 			(layer "B.CrtYd")
 			(uuid "cf1b21c0-0152-461d-ada0-dcf6ed822bd2")
+		)
+		(fp_line
+			(start 1.4 1.9)
+			(end -1.4 1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "020decec-4e51-437f-933d-a0946734dc04")
 		)
 		(fp_line
 			(start -1.4 1.9)
@@ -33763,18 +33783,8 @@
 				(width 0.05)
 				(type default)
 			)
-			(layer "B.CrtYd")
-			(uuid "813bc214-35e3-4d60-8f77-ad57aeda1e63")
-		)
-		(fp_line
-			(start 1.4 1.9)
-			(end -1.4 1.9)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "B.CrtYd")
-			(uuid "020decec-4e51-437f-933d-a0946734dc04")
+			(layer "F.CrtYd")
+			(uuid "35f8906c-92aa-4c4d-bf0e-340cc7d09a87")
 		)
 		(fp_line
 			(start -1.4 -1.9)
@@ -33787,26 +33797,6 @@
 			(uuid "2740496f-7c5a-408e-836d-fec6bcbebb19")
 		)
 		(fp_line
-			(start -1.4 1.9)
-			(end -1.4 -1.9)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "8e75bd19-a6a3-4e18-8a3b-135d6234cb52")
-		)
-		(fp_line
-			(start 1.4 -1.9)
-			(end 1.4 1.9)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "35f8906c-92aa-4c4d-bf0e-340cc7d09a87")
-		)
-		(fp_line
 			(start 1.4 1.9)
 			(end -1.4 1.9)
 			(stroke
@@ -33816,8 +33806,18 @@
 			(layer "F.CrtYd")
 			(uuid "9cea8a9a-b2b7-42f6-8872-344d2354ed4d")
 		)
+		(fp_line
+			(start -1.4 1.9)
+			(end -1.4 -1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "8e75bd19-a6a3-4e18-8a3b-135d6234cb52")
+		)
 		(pad "1" thru_hole roundrect
-			(at 0 0)
+			(at 0 0 90)
 			(size 2.5 3.6)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -41829,11 +41829,11 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "77f21ed1-25bc-4b18-afdd-94c77c7eb878")
-		(at 132.5 56.5)
+		(at 82.5 51 90)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP_CS1"
-			(at 0 -1.648 0)
+			(at 0 -1.648 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "03f76b0c-dd4d-4d89-bf55-768d8ea0d08f")
@@ -41845,7 +41845,7 @@
 			)
 		)
 		(property "Value" "TP_CS"
-			(at 0 1.75 0)
+			(at 0 1.75 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fe6c463c-9119-4197-aef6-bdce4456c7f7")
@@ -41857,7 +41857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -41870,7 +41870,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -41894,6 +41894,16 @@
 		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start 1.4 -1.9)
+			(end 1.4 1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "6ad22408-19bd-4b6b-b679-36719ac10487")
+		)
+		(fp_line
 			(start -1.4 -1.9)
 			(end 1.4 -1.9)
 			(stroke
@@ -41902,6 +41912,16 @@
 			)
 			(layer "B.CrtYd")
 			(uuid "6c834f56-4d82-41c3-bb58-82cd8fee99f4")
+		)
+		(fp_line
+			(start 1.4 1.9)
+			(end -1.4 1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "B.CrtYd")
+			(uuid "875dbd17-d94c-4f9b-95a4-247df37fe146")
 		)
 		(fp_line
 			(start -1.4 1.9)
@@ -41920,18 +41940,8 @@
 				(width 0.05)
 				(type default)
 			)
-			(layer "B.CrtYd")
-			(uuid "6ad22408-19bd-4b6b-b679-36719ac10487")
-		)
-		(fp_line
-			(start 1.4 1.9)
-			(end -1.4 1.9)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "B.CrtYd")
-			(uuid "875dbd17-d94c-4f9b-95a4-247df37fe146")
+			(layer "F.CrtYd")
+			(uuid "ed32681f-8bc8-4826-8131-6c8d3db13910")
 		)
 		(fp_line
 			(start -1.4 -1.9)
@@ -41944,26 +41954,6 @@
 			(uuid "0c6897b5-902e-479e-9883-a31128656c91")
 		)
 		(fp_line
-			(start -1.4 1.9)
-			(end -1.4 -1.9)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "2901e81f-6c73-4979-92b2-1b9c297c0e67")
-		)
-		(fp_line
-			(start 1.4 -1.9)
-			(end 1.4 1.9)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "ed32681f-8bc8-4826-8131-6c8d3db13910")
-		)
-		(fp_line
 			(start 1.4 1.9)
 			(end -1.4 1.9)
 			(stroke
@@ -41973,8 +41963,18 @@
 			(layer "F.CrtYd")
 			(uuid "aa20e6d6-c375-48b1-98ff-af5370d6da21")
 		)
+		(fp_line
+			(start -1.4 1.9)
+			(end -1.4 -1.9)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "F.CrtYd")
+			(uuid "2901e81f-6c73-4979-92b2-1b9c297c0e67")
+		)
 		(pad "1" thru_hole roundrect
-			(at 0 0)
+			(at 0 0 90)
 			(size 2.5 3.6)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -104937,7 +104937,7 @@
 		)
 	)
 	(gr_text "CS1"
-		(at 132.5 53.65 0)
+		(at 82.5 48.55 0)
 		(layer "F.SilkS")
 		(uuid "547b820e-c558-4a5c-9080-03b5f6f96977")
 		(effects
@@ -104949,7 +104949,7 @@
 		)
 	)
 	(gr_text "CS2"
-		(at 137 53.65 0)
+		(at 88 48.55 0)
 		(layer "F.SilkS")
 		(uuid "75ba3d20-225d-4cdb-8bb0-81dd5a968d39")
 		(effects
@@ -106349,7 +106349,7 @@
 		)
 	)
 	(gr_text "CS1"
-		(at 132.5 53.65 0)
+		(at 82.5 48.55 0)
 		(layer "B.SilkS")
 		(uuid "7041f1c9-9501-4455-8313-67c473a65170")
 		(effects
@@ -106362,7 +106362,7 @@
 		)
 	)
 	(gr_text "CS2"
-		(at 137 53.65 0)
+		(at 88 48.55 0)
 		(layer "B.SilkS")
 		(uuid "7aeca06e-e33a-4563-96d7-f2dd03411589")
 		(effects

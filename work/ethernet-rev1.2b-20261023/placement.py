@@ -17,11 +17,11 @@ mm=lambda x,y:pcbnew.VECTOR2I(round(x*1e6),round(y*1e6))
 # Restricted local placement changes. Copper is retained verbatim in the review
 # board so a placement experiment cannot erase necessary original connections.
 moves={
- # Move the seven top probe pads into two accessible rows to the right of RJ45.
+ # Five rail/ground pads right of RJ45; CS1/CS2 left of ESP32.
  'TP_BATT1':(132.5,51,0), 'TP_5V1':(138,51,0),
  'TP_3V3_1':(143.5,51,0), 'TP_GND1':(149,51,0),
- 'TP_GND2':(154.5,51,0), 'TP_CS1':(132.5,56.5,0),
- 'TP_CS2':(137,56.5,0),
+ 'TP_GND2':(154.5,51,0), 'TP_CS1':(82.5,51,90),
+ 'TP_CS2':(88,51,90),
  # Frees the original small logic pull-up row beneath the new PHY.
  'R747':(134.5,82.5,0), 'R748':(132.5,86,0), 'R749':(132.5,88.2,0),
 }

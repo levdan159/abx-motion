@@ -30,9 +30,11 @@ PLACEMENT PROVIDED
 - 42 new footprint positions cover controller, jack, clock, bypass/bulk caps,
   reference termination network, straps, reset/interface and ESD package reserves.
 - Existing 5 V converter, inductor, 3.3 V regulator, ADC divider and their support
-  parts retain their original positions. Seven existing test pads and both face
-  legends move to an accessible group to the right. Three existing pull-ups move
-  below/right of the PHY. These are the only ten existing footprint moves.
+  parts retain their original positions. The five rail/ground test pads form one
+  row to the right of the RJ45. CS1 and CS2 sit to the left of the ESP32, at
+  (82.5,51) and (88,51) mm, rotated 90 degrees, with front/back legends above.
+  Three existing pull-ups move below/right of the PHY. These are the only ten
+  existing footprint moves relative to Rev 1.2a.
 - The stepper/watchdog IC positions, motor sockets and board outline are retained.
 - A 16.5 x 4.5 mm dedicated Ethernet supply reservation is marked on Dwgs.User.
   It is NOT a selected/connected regulator or a demonstrated complete supply fit.

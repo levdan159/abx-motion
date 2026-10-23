@@ -80,5 +80,5 @@ def plot(name,xlim,ylim,large=False):
  ax.set_title('ABX-Motion-ETH · Rev 1.2b placement candidate',loc='left',fontsize=17,weight='bold',pad=15)
  fig.text(.12,.025,'Blue: new Ethernet parts     Amber: locally moved parts     Grey: existing placement\nPlacement only. Existing copper has not been rerouted. Power selection and electrical integration remain open.',fontsize=10,color='#43564b')
  fig.savefig(O/'layout-review'/name,dpi=150,bbox_inches='tight');plt.close(fig)
-plot('placement-detail.png',(89,174),(41,101),True)
+plot('placement-detail.png',(76,174),(41,101),True)
 plot('placement-overview.png',(42,205),(40,156))

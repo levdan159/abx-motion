@@ -1,0 +1,18 @@
+{
+  "moved": {
+    "TP_CS1": [
+      82.5,
+      51,
+      90
+    ],
+    "TP_CS2": [
+      88,
+      51,
+      90
+    ]
+  },
+  "changed_footprints": 2,
+  "changed_legends": 4,
+  "all_other_board_objects_preserved_verbatim": true,
+  "routing_unchanged": true
+}
