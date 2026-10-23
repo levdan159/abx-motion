@@ -1,0 +1,86 @@
+TASK 6.1 — Bench fixture and commissioning procedure
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k tokens, soft, including relevant loaded evidence.
+Work mode: procedure design
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Prepare intended-voltage energy-limited fixture, probe references, calibrated instruments, rail targets, scope setup, thermal sensors and step-by-step stop conditions.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/5.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Prepare a safe, concrete commissioning procedure for an actual 7S/32 V design. No 12 V bring-up requirement. Outgoing current limiting does not provide a regenerative energy sink. A high-current battery and fuse alone do not bound every damaging test transient.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/5.3/evidence/first-article-release-review.txt
+- work/rev-1.2-completion/packets/1.5/evidence/protection-envelope.txt
+- work/rev-1.2-completion/packets/3.4/evidence/fabrication-spec.txt
+- work/rev-1.2-completion/packets/4.6/evidence/bench-unrun-checks.csv
+- validation/robustness-final-20261020/bench-procedure.txt (adapt, do not reuse old StepStick instructions)
+- User-provided list of available bench instruments and fixture parts
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own bench procedure/fixture drawings/blank result sheets only
+Own report root: work/rev-1.2-completion/packets/6.1/evidence/
+Own result: work/rev-1.2-completion/packets/6.1/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. List physical prerequisites: actual assembled revision, exact firmware, blade fuse/harness/heatsink/TIM, calibrated DMM/current measurement, scope/probes and temperature sensors. Mark any unavailable item before energizing.
+2. Draw the intended-voltage energy-limited power/measurement setup and a verified energy-return path for later regeneration tests. Define scope reference/probe connections so no grounded clip shorts a phase/high-side node.
+3. Write a sequence for unpowered inspection, no-motor first power, USB/battery modes, rail checks, interfaces, inhibit logic and low-current per-channel motor tests. Include expected observation, measurement point, range and stop/investigate condition for each.
+4. Use released component limits plus conservative commissioning targets; distinguish test stops from validated board ratings. Start motors <=0.5 A RMS or a lower motor rating and use bounded DC bursts.
+5. Create blank capture sheets with serial/HW/FW, ambient, fixture/instrument IDs, calibration state, wiring and timestamp. Do not initiate physical work through tools or claim a test ran.
+
+REQUIRED OUTPUTS
+- bench-procedure.txt
+- fixture-and-probe-diagram.pdf or equivalent
+- blank-bench-results.csv
+- capture-metadata.schema.json
+- pre-power-prerequisites.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Technician can follow exact connections/measurements/stop conditions; appropriate return path required before regeneration.
+- No unbounded deliberate short/reversal/hot-plug test and no simulated physical pass.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- No instrument/sink capability supports a planned observation: specify the missing item and defer that experiment.
+- Safe limits or stop mode ambiguous: return to the released protection/firmware contract, not improvised battery testing.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

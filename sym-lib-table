@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "abx")(type "KiCad")(uri "${KIPRJMOD}/abx-symbols.kicad_sym")(options "")(descr "ABX Custom Symbols"))
+
+ (lib (name "abx-r12")(type "KiCad")(uri "${KIPRJMOD}/abx-r12-symbols.kicad_sym")(options "")(descr "Rev1.2 reviewed pin maps"))
 )

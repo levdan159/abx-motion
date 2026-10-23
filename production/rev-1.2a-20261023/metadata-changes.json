@@ -1,0 +1,2072 @@
+[
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U702",
+    "LCSC": "C5930226"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R716",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C748",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R750",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R753",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J607",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J608",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R734",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "JP703",
+    "LCSC": "C492402"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U711",
+    "LCSC": "C7642"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C712",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R756",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "JP701",
+    "LCSC": "C492402"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R714",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J702",
+    "LCSC": "C492403"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C611",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R713",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C743",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C717",
+    "LCSC": "C88747"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R763",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R718",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R749",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R630",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R754",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C714",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R748",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C733",
+    "LCSC": "C77058"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C726",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C724",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R747",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R624",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C723",
+    "LCSC": "C77058"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U712",
+    "LCSC": "C91875"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R759",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C749",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C741",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C727",
+    "LCSC": "C88747"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J701",
+    "LCSC": "C492403"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R752",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R625",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R715",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R628",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C737",
+    "LCSC": "C88747"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R761",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U710",
+    "LCSC": "C702145"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C725",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J712",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R746",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U708",
+    "LCSC": "C7642"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R721",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U704",
+    "LCSC": "C128392"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R717",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R626",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C612",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C735",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U706",
+    "LCSC": "C7481"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C711",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U707",
+    "LCSC": "C7481"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R732",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C732",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R727",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R751",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R627",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C613",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R725",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C713",
+    "LCSC": "C77058"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C742",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U705",
+    "LCSC": "C7481"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R711",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R723",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R757",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C721",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R744",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R728",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R765",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C722",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R733",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C744",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C716",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R758",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R762",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U703",
+    "LCSC": "C5930226"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R724",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J713",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C731",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C610",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R738",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R735",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R737",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R623",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R736",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R629",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J703",
+    "LCSC": "C492403"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R755",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C715",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "JP702",
+    "LCSC": "C492402"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R764",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U701",
+    "LCSC": "C5930226"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R731",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R745",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C734",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R726",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R722",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "J711",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C736",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "R712",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C746",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C747",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "C745",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "ref": "U709",
+    "LCSC": "C6761"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U3",
+    "LCSC": "C2913204"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C201",
+    "LCSC": "C15850"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C202",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R203",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C203",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "SW201",
+    "LCSC": "C231329"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C204",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "SW202",
+    "LCSC": "C231329"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J201",
+    "LCSC": "C165948"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R201",
+    "LCSC": "C23186"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R202",
+    "LCSC": "C23186"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U201",
+    "LCSC": "C7519"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "F2",
+    "LCSC": "C2984676"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "D202",
+    "LCSC": "C8598"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R204",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R205",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R206",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R207",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R208",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R209",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R210",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R231",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R232",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "F3",
+    "LCSC": "C2984676"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J202",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J203",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R211",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R212",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C205",
+    "LCSC": "C1588"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R213",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R214",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C206",
+    "LCSC": "C1588"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R215",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R216",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C207",
+    "LCSC": "C1588"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R217",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R218",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C208",
+    "LCSC": "C1588"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U4",
+    "LCSC": "C133541"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C209",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U202",
+    "LCSC": "C132550"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C210",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J204",
+    "LCSC": "C492401"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R219",
+    "LCSC": "C22787"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J205",
+    "LCSC": "C72334"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R220",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "LED201",
+    "LCSC": "C2287"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "U203",
+    "LCSC": "C2671361"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C211",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J206",
+    "LCSC": "C492401"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R221",
+    "LCSC": "C22787"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R222",
+    "LCSC": "C23138"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R223",
+    "LCSC": "C23138"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "D201",
+    "LCSC": "C78428"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J207",
+    "LCSC": "C72334"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R224",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "LED202",
+    "LCSC": "C2287"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R225",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R226",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "F4",
+    "LCSC": "C20798"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "J209",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R227",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C212",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "SW203",
+    "LCSC": "C231329"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R228",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C213",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "SW204",
+    "LCSC": "C231329"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R229",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "C214",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "SW205",
+    "LCSC": "C231329"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "R230",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "ref": "LED203",
+    "LCSC": "C2288"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "J1",
+    "LCSC": "C98733"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "F1",
+    "LCSC": "C352820"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "Q1",
+    "LCSC": "C3289501"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "D1",
+    "LCSC": "C14643"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R1",
+    "LCSC": "C25819"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R2",
+    "LCSC": "C22807"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R3",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C1",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "U1",
+    "LCSC": "C1858395"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C2",
+    "LCSC": "C29823"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C3",
+    "LCSC": "C29823"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C4",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C5",
+    "LCSC": "C15849"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C6",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "L1",
+    "LCSC": "C177243"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R4",
+    "LCSC": "C25803"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R5",
+    "LCSC": "C25962"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C7",
+    "LCSC": "C12891"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C8",
+    "LCSC": "C12891"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "U2",
+    "LCSC": "C51118"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C9",
+    "LCSC": "C15849"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "C10",
+    "LCSC": "C15850"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R6",
+    "LCSC": "C31850"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "LED_PWR_BATT1",
+    "LCSC": "C12624"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R7",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "LED_PWR_5V1",
+    "LCSC": "C12624"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R8",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "LED_PWR_3V3_1",
+    "LCSC": "C12624"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "J102",
+    "LCSC": "C8465"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "R9",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "ref": "D2",
+    "LCSC": "C2863624"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U701",
+    "LCSC": "C5930226"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C711",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C712",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C713",
+    "LCSC": "C77058"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C714",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C715",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C716",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C717",
+    "LCSC": "C88747"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R711",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R712",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R713",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R714",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R715",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R716",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R717",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R718",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J711",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "JP701",
+    "LCSC": "C492402"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J701",
+    "LCSC": "C492403"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U705",
+    "LCSC": "C7481"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R751",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R752",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R753",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U702",
+    "LCSC": "C5930226"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C721",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C722",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C723",
+    "LCSC": "C77058"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C724",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C725",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C726",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C727",
+    "LCSC": "C88747"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R721",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R722",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R723",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R724",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R725",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R726",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R727",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R728",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J712",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "JP702",
+    "LCSC": "C492402"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J702",
+    "LCSC": "C492403"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U706",
+    "LCSC": "C7481"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R754",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R755",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R756",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U703",
+    "LCSC": "C5930226"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C731",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C732",
+    "LCSC": "C162275"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C733",
+    "LCSC": "C77058"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C734",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C735",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C736",
+    "LCSC": "C59782"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C737",
+    "LCSC": "C88747"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R731",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R732",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R733",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R734",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R735",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R736",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R737",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R738",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J713",
+    "LCSC": "C566014"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "JP703",
+    "LCSC": "C492402"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J703",
+    "LCSC": "C492403"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U707",
+    "LCSC": "C7481"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R757",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R758",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R759",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U704",
+    "LCSC": "C128392"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U708",
+    "LCSC": "C7642"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U709",
+    "LCSC": "C6761"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U710",
+    "LCSC": "C702145"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U711",
+    "LCSC": "C7642"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "U712",
+    "LCSC": "C91875"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C741",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C742",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C743",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C744",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C745",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C746",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C747",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C748",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "C749",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R744",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R745",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R746",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R747",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R748",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R749",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R750",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R761",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R762",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R763",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R764",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R765",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R501",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "Q501",
+    "LCSC": "C20917"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "D501",
+    "LCSC": "C2128"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R502",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "D502",
+    "LCSC": "C12624"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "K501",
+    "LCSC": "C116963"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J505",
+    "LCSC": "C72334"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R503",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "Q502",
+    "LCSC": "C20917"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "D503",
+    "LCSC": "C2128"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "R504",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "D504",
+    "LCSC": "C12624"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "K502",
+    "LCSC": "C116963"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "ref": "J506",
+    "LCSC": "C72334"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "U601",
+    "LCSC": "C128392"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C601",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J601",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R601",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R609",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C602",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R602",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R610",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C603",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J602",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R603",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R611",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C604",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R604",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R612",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C605",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J603",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R605",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R613",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C606",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R606",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R614",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C607",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J604",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R607",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R615",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C608",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R608",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R616",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C609",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "F5",
+    "LCSC": "C151162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R617",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R619",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "Q601",
+    "LCSC": "C20917"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "D601",
+    "LCSC": "C8598"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J605",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R618",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R620",
+    "LCSC": "C22775"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "Q602",
+    "LCSC": "C20917"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "D602",
+    "LCSC": "C8598"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J606",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J607",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R623",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R625",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C610",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R624",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R626",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C611",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "J608",
+    "LCSC": "C131339"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R627",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R629",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C612",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R628",
+    "LCSC": "C23162"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "R630",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "ref": "C613",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "U301",
+    "LCSC": "C90964"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R312",
+    "LCSC": "C25811"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C301",
+    "LCSC": "C15849"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C302",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C303",
+    "LCSC": "C15849"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C304",
+    "LCSC": "C15849"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R301",
+    "LCSC": "C25810"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R302",
+    "LCSC": "C22790"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R303",
+    "LCSC": "C25804"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R304",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C305",
+    "LCSC": "C57112"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R305",
+    "LCSC": "C22859"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "Q301",
+    "LCSC": "C86513"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R306",
+    "LCSC": "C22859"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "Q302",
+    "LCSC": "C86513"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R307",
+    "LCSC": "C22859"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "Q303",
+    "LCSC": "C86513"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R308",
+    "LCSC": "C22859"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "Q304",
+    "LCSC": "C86513"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R309",
+    "LCSC": "C840621"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C306",
+    "LCSC": "C72499"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C307",
+    "LCSC": "C29823"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C308",
+    "LCSC": "C29823"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C309",
+    "LCSC": "C14663"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R310",
+    "LCSC": "C844598"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "C310",
+    "LCSC": "C107136"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "J301",
+    "LCSC": "C8465"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R311",
+    "LCSC": "C21190"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "LED_FLT1",
+    "LCSC": "C2286"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "ref": "R313",
+    "LCSC": "C21190"
+  }
+]

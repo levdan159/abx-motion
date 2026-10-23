@@ -1,0 +1,83 @@
+TASK 8.2 — Reproduction and release archive
+Recommended model: gpt-6.1-sol
+Reasoning effort: low
+Starting-context target: 4-8k tokens, soft, including relevant loaded evidence.
+Work mode: packaging
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Package exact CAD, dependencies, BOM/CPL/CAM, firmware/config/calibration schema and test references; verify manifests and reproduction instructions.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/8.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Package a reproducible release candidate, not a random collection of similarly named files. CAD, firmware, calibration schema, manufacturing outputs and test references must all name compatible revisions. This task does not authorize a remote push, public release or purchase.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/8.1/evidence/documentation-source-map.csv
+- work/rev-1.2-completion/packets/5.1/evidence/release-manifest.json
+- work/rev-1.2-completion/packets/7.4/evidence/firmware-limits-delta.json
+- Final accepted CAD/firmware/docs and exact toolchain dependencies
+- Preserved production/rev-1.1d-20261020/ (do not modify)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own candidate archive/manifest/reproduction checks; reviewed packaging scripts only; source/old releases read-only
+Own report root: work/rev-1.2-completion/packets/8.2/evidence/
+Own result: work/rev-1.2-completion/packets/8.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Follow the prescribed sequence and checks directly. Use deterministic scripts
+for extraction, copying, numerical reconciliation and unchanged-geometry checks.
+Avoid a long preliminary plan. If the supposedly routine edit requires a new
+electrical/mechanical/interface decision, return that issue for Medium/High;
+do not guess. Show changed files, check results and concrete exceptions.
+
+EXECUTION SEQUENCE
+1. Resolve final accepted source revisions and compare them with phase5 manufacturing outputs. If later changes affect CAD/CPL/BOM, require regenerated audited outputs; do not combine new source with old CAM.
+2. Collect exact CAD/libraries, BOM/CPL/CAM, mechanical/thermal notes, firmware/build instructions, configuration/calibration schema, source evidence index and qualified test references.
+3. Write hashes, tool versions, dependency pinning and reproduction commands. Check archive contents, reference counts, paths and revision IDs; exclude credentials/local secrets and obsolete candidates.
+4. Exercise the approved deterministic build/export instructions in an isolated directory when feasible and reconcile normalized outputs; report unavailable dependencies explicitly.
+5. Return candidate archive and reproduction checklist. Do not push/tag/upload or overwrite a previous release automatically.
+
+REQUIRED OUTPUTS
+- release-candidate.zip or equivalent
+- release-candidate-manifest.json
+- reproduction-checks.json
+- reproduction-instructions.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Revisions and hashes reconcile across source, output, firmware/docs and qualified evidence.
+- Archive reproducible and complete; no remote publication/old-release mutation.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Later source change invalidates CAM/testing: return exact affected packet and re-export/retest requirement.
+- Missing frozen dependency prevents reproduction: state it; do not declare reproducible from a list of intended commands.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

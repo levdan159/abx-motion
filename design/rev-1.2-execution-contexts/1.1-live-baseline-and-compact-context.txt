@@ -1,0 +1,109 @@
+TASK 1.1 — Live baseline and compact context
+Recommended model: gpt-6.1-sol
+Reasoning effort: low
+Starting-context target: 3-6k tokens, soft, including relevant loaded evidence.
+Work mode: read-only CAD / write reports
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Snapshot current root hashes; export fresh ERC/DRC/parity/netlist and footprint/pad/stackup summaries without changing CAD. Inspect helper scripts before use; adapt stale wrappers in an isolated validation project.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- None. Bootstrap the live baseline; no prior task success is assumed.
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Establish the live as-built state without repairing it. The last review found 3 open links, 192 warnings and no other DRC errors/parity issues; those are historical observations, not expected values to force. No released Rev1.2 exists. Live root takes precedence over old candidate folders.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- design/rev-1.2-completion-plan.txt
+- abx-motion.kicad_sch
+- Industrial_IO.kicad_sch
+- Steppers_Relays.kicad_sch
+- Power.kicad_sch
+- MCU.kicad_sch
+- Motor_Channel.kicad_sch
+- abx-motion.kicad_pcb
+- abx-motion.kicad_pro
+- sym-lib-table
+- fp-lib-table
+- work/rev-1.2-electrical/layout-review-20261022/review.txt
+- work/rev-1.2-electrical/routing-layout-fix-20261021/check.py (inspect only)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- work/rev-1.2-completion/ only; root CAD and settings read-only
+Own report root: work/rev-1.2-completion/packets/1.1/evidence/
+Own result: work/rev-1.2-completion/packets/1.1/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Follow the prescribed sequence and checks directly. Use deterministic scripts
+for extraction, copying, numerical reconciliation and unchanged-geometry checks.
+Avoid a long preliminary plan. If the supposedly routine edit requires a new
+electrical/mechanical/interface decision, return that issue for Medium/High;
+do not guess. Show changed files, check results and concrete exceptions.
+
+EXECUTION SEQUENCE
+1. Inventory live source hashes, native tool versions, branch and dirty paths. Preserve user changes; do not commit, reset, clean or restore anything. Create an immutable validation snapshot with all hierarchical sheets, libraries and project settings; resolve library paths explicitly.
+2. Inspect CLI help for installed commands. In that snapshot export the XML netlist and fresh JSON ERC; run PCB DRC with zone refill and schematic parity. Put reports under this packet, never reuse an old filename as fresh evidence. Parse counts and error details; CLI exit zero alone is insufficient.
+3. Use native parsing to export component reference/value/footprint, numbered pad-net pairs, footprint coordinates/orientation, copper stackup, open-link endpoint UUIDs and warning categories. Keep full extraction on disk and print concise summaries.
+4. Create state.json, context.txt and file-index.csv at the completion work root. Identify authoritative files and classify helper scripts by side effects. Mark generators, stale candidate audits and the old PWP loss calculator as reference-only. Record which root/source hashes generated each report.
+5. Compare root hashes before/after read-only work. If an editor saves during the run, preserve it and recapture a consistent snapshot rather than reverting. Report material changes; distinguish property-UUID serialization from circuit/geometry changes.
+
+REQUIRED OUTPUTS
+- baseline-netlist.xml
+- baseline-erc.json
+- baseline-drc.json
+- component-inventory.csv
+- pad-net-map.csv
+- geometry-summary.json
+- source-hashes.json
+- warning-index.csv
+- snapshot/ plus completion-root state.json/context.txt/file-index.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Reports can be traced to one consistent source snapshot; all hierarchical component instances included.
+- Root CAD/settings not mutated by the packet; open links and warnings remain accurately reported, not repaired or hidden.
+- All future packets remain PLANNED; no baseline check is described as a powered/thermal qualification.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Missing tool/library: diagnose locally and report exact missing dependency; do not rebuild source to bypass it.
+- Material changes during snapshot: recapture consistently; do not proceed with mixed-source reports.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.
+
+NATIVE CHECK RECIPES (verify installed --help and substitute snapshot/output paths)
+These are argument arrays to adapt in a checked subprocess, not commands to run
+against the root or literal placeholder filenames:
+["kicad-cli","sch","export","netlist","--format","kicadxml","--output",
+ "EVIDENCE/baseline-netlist.xml","SNAPSHOT/abx-motion.kicad_sch"]
+["kicad-cli","sch","erc","--format","json","--output",
+ "EVIDENCE/baseline-erc.json","SNAPSHOT/abx-motion.kicad_sch"]
+["kicad-cli","pcb","drc","--refill-zones","--schematic-parity","--format",
+ "json","--output","EVIDENCE/baseline-drc.json","SNAPSHOT/abx-motion.kicad_pcb"]
+Resolve local libraries in the copied project. Never execute a legacy generator
+to make the snapshot load. Emit run command, source hashes and raw reports.

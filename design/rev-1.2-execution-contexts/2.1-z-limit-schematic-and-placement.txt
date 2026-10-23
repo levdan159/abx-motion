@@ -1,0 +1,91 @@
+TASK 2.1 — Z-limit schematic and placement
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k tokens, soft, including relevant loaded evidence.
+Work mode: single CAD writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Add J607 and matching two 4.7k/two 1k/two 10nF network using U704.19/.20; move existing connector bank down nominally 10.5 mm and add top connector. Validate isolated draft against live source before reuse.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.7/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Implement only the accepted Z-limit circuit and placement. Existing bank pin1 origins are J601/2 at X67.5/75,Y116; J603/4 Y126.5; J605/6 Y137, all 90 deg. Proposed shift is +10.5 mm Y; J607 uses the freed top slot, nominally (67.5,116),90 deg. Verify live positions and mechanical fit first.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- Industrial_IO.kicad_sch
+- Steppers_Relays.kicad_sch
+- abx-motion.kicad_pcb
+- work/rev-1.2-completion/packets/1.7/evidence/phase-1-decisions.json
+- work/rev-1.2-completion/packets/1.3/evidence/connector-map.csv
+- work/rev-1.2-electrical/z-limit-20261022/project/ (unpromoted draft; inspect only)
+- work/rev-1.2-electrical/z-limit-20261022/new-parts.json (draft)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Industrial_IO.kicad_sch; Steppers_Relays.kicad_sch; abx-motion.kicad_pcb; own evidence. Update only directly affected design metadata when necessary.
+Own report root: work/rev-1.2-completion/packets/2.1/evidence/
+Own result: work/rev-1.2-completion/packets/2.1/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Snapshot live sources and all old pad memberships/connectivity before editing. Reconcile the old draft with the accepted phase-1 state rather than overwriting the root from it.
+2. Add J607 with pin1 Z_MIN_RAW, pin2 GND, pin3 Z_MAX_RAW; two 4.7k RAW pull-ups to 3V3; two 1k series resistors to filtered Z_MIN_IN/Z_MAX_IN; two 10nF filtered-node capacitors to GND. Use unused refs R623/R624, R625/R626 and C610/C611 only after checking uniqueness.
+3. Connect filtered globals to U704 pin19/20, IO1_6/IO1_7; remove only their actual NC markers. Preserve all other U704 mappings. Copy existing limit topology/footprints and source-linked instance paths, not arbitrary regenerated symbols.
+4. Shift the six connector footprints as proposed and place J607. Fit the six low-profile passives below the OLED while respecting its mounting holes/10 mm stack and the new connector courtyard. Keep existing connector pin functions and actual harness access.
+5. Before save/reload identify copper or vias under moved/new foreign pads; retire only explicitly logged conflicting local items so pcbnew cannot silently reassign their nets. Preserve critical power/thermal copper and report all temporary opens for 2.2.
+
+REQUIRED OUTPUTS
+- z-circuit-map.csv
+- z-placement.json
+- schematic-delta.txt
+- removed-copper-manifest.json
+- placement-front.png
+- after-netlist.xml
+- after-erc.json
+- temporary-opens.json
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Netlist exactly implements new front ends and U704 inputs; no duplicated refs/NC conflicts or unrelated pin changes.
+- Actual courtyard/edge/hole/cable fit checked; new thermal regions unaffected; temporary routing gaps explicit.
+- Root remains reviewable; no stale draft promoted wholesale.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- A target footprint collides with protected power geometry or the edge: propose the smallest safe shift, do not delete protected copper.
+- Accepted gate changes U704 usage: return the allocation conflict instead of borrowing another pin.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

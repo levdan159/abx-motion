@@ -1,0 +1,205 @@
+CURRENT USER DIRECTION: The Phase1 correction expansion was rolled back to the earlier 330-component board with three open connections. The former expanded-board execution plan below is superseded. Do not resume it automatically. See work/rev-1.2-completion/rollback-to-three-opens/.
+
+EXECUTION AMENDMENT: Before Phase 2 read PHASE-2-ENTRY.txt and the correction implementation/review evidence. Original packet sequence must include the new power/interlock routing obligations. No Phase 2 execution is implied.
+
+ABX-Motion Rev1.2 — execution context index
+Prepared 22 October 2026. All 37 packets are PLANNED.
+
+Each task has a standalone scoped packet plus one shared context and result schema.
+Read 00-project-context.txt and ONLY the selected task plus relevant dependency evidence.
+The full completion plan remains authoritative for engineering scope and phase gates.
+
+MODEL SELECTION
+Choose the listed actual model and effort in your client before launching a packet.
+A model name inside a prompt does not switch the active model. Light maps to Low in
+supported clients; these are reasoning levels, not different parameter-size Sol models.
+Model routing is project judgment informed by current official guidance, not an EDA benchmark.
+
+HOW TO START LATER
+Example authorization for a single task:
+Execute packet 1.1 only. Read design/rev-1.2-execution-contexts/00-project-context.txt
+and design/rev-1.2-execution-contexts/1.1-live-baseline-and-compact-context.txt.
+Use its model/effort, scope, outputs and checks. Stop after result.json and the report.
+This is an example future launch prompt, not a command being executed now.
+
+To authorize the complete first phase, explicitly request packets 1.1 through 1.7
+and stop at gate-1. Later phases require their user-requested checkpoint release.
+Do not treat creating this packet bundle as running any packet.
+
+DEPENDENCY AND OUTPUT RULES
+Dependency result.json must exist, name matching source hashes, and satisfy the
+task acceptance/review state. A PLANNED row is not a passed dependency. Task 1.1
+creates live context/state/index; subsequent task paths are future artifacts.
+Outputs default to work/rev-1.2-completion/packets/<ID>/evidence/ and result.json.
+Native source edits require explicit implementation scope from the chosen packet.
+Physical tasks need actual human/instrument evidence or return AWAITING_HARDWARE.
+
+PACKETS (full fields are also in ../rev-1.2-work-packages.csv)
+
+1.1 | gpt-6.1-sol / low | depends: bootstrap
+Live baseline and compact context
+1.1-live-baseline-and-compact-context.txt
+
+1.2 | gpt-6-luna / medium | depends: 1.1
+Primary-source component evidence
+1.2-primary-source-component-evidence.txt
+
+1.3 | gpt-6.1-sol / low | depends: 1.1
+As-built pin and connector maps
+1.3-as-built-pin-and-connector-maps.txt
+
+1.4 | gpt-6.1-sol / high | depends: 1.2;1.3
+Reset and inhibit behavior
+1.4-reset-and-inhibit-behavior.txt
+
+1.5 | gpt-6.1-sol / high | depends: 1.2;1.3
+Power path and protection budget
+1.5-power-path-and-protection-budget.txt
+
+1.6 | gpt-6.1-sol / high | depends: 1.2;1.5
+Driver and board thermal model
+1.6-driver-and-board-thermal-model.txt
+
+1.7 | gpt-6-astra / medium | depends: 1.4;1.5;1.6
+Independent electrical and thermal gate
+1.7-independent-electrical-and-thermal-gate.txt
+
+2.1 | gpt-6.1-sol / medium | depends: 1.7
+Z-limit schematic and placement
+2.1-z-limit-schematic-and-placement.txt
+
+2.2 | gpt-6.1-sol / medium | depends: 2.1
+Reconnect moved bank and Z inputs
+2.2-reconnect-moved-bank-and-z-inputs.txt
+
+2.3 | gpt-6.1-sol / medium | depends: 2.2
+U702 sleep-pin escape
+2.3-u702-sleep-pin-escape.txt
+
+2.4 | gpt-6.1-sol / medium | depends: 2.3
+Close CS and E-stop-feed gaps
+2.4-close-cs-and-e-stop-feed-gaps.txt
+
+2.5 | gpt-6.1-sol / medium | depends: 2.4
+DVDD loops and signal cleanup
+2.5-dvdd-loops-and-signal-cleanup.txt
+
+2.6 | gpt-6.1-sol / low | depends: 2.5
+Silkscreen and connector legends
+2.6-silkscreen-and-connector-legends.txt
+
+2.7 | gpt-6.1-sol / high | depends: 2.6
+Layout regression review
+2.7-layout-regression-review.txt
+
+3.1 | gpt-6-luna / medium | depends: 1.7
+Exact sourcing evidence
+3.1-exact-sourcing-evidence.txt
+
+3.2 | gpt-6.1-sol / high | depends: 2.7;3.1
+Passive heatsink assembly
+3.2-passive-heatsink-assembly.txt
+
+3.3 | gpt-6.1-sol / high | depends: 3.2
+Thermal copper and fabrication construction
+3.3-thermal-copper-and-fabrication-construction.txt
+
+3.4 | gpt-6.1-sol / medium | depends: 3.3
+Mechanical and procurement freeze
+3.4-mechanical-and-procurement-freeze.txt
+
+4.1 | gpt-6.1-sol / low | depends: 1.7
+Firmware board definition and diagnostics skeleton
+4.1-firmware-board-definition-and-diagnostics-skeleton.txt
+
+4.2 | gpt-6.1-sol / high | depends: 4.1
+Arming, watchdog and latched faults
+4.2-arming-watchdog-and-latched-faults.txt
+
+4.3 | gpt-6.1-sol / medium | depends: 4.2
+Hardware pulse generation and motion bounds
+4.3-hardware-pulse-generation-and-motion-bounds.txt
+
+4.4 | gpt-6.1-sol / medium | depends: 4.3
+Limits and onboard/external modes
+4.4-limits-and-onboard-external-modes.txt
+
+4.5 | gpt-6.1-sol / medium | depends: 4.4
+Operating profiles, telemetry and calibration
+4.5-operating-profiles-telemetry-and-calibration.txt
+
+4.6 | gpt-6.1-sol / high | depends: 4.5;3.4
+Firmware integration gate
+4.6-firmware-integration-gate.txt
+
+5.1 | gpt-6.1-sol / low | depends: 3.4;4.6
+Reproducible first-article export
+5.1-reproducible-first-article-export.txt
+
+5.2 | gpt-6.1-sol / high | depends: 5.1
+CAM, numbered-pad and assembly audit
+5.2-cam-numbered-pad-and-assembly-audit.txt
+
+5.3 | gpt-6-astra / medium | depends: 5.2
+Independent first-article release gate
+5.3-independent-first-article-release-gate.txt
+
+6.1 | gpt-6.1-sol / medium | depends: 5.3
+Bench fixture and commissioning procedure
+6.1-bench-fixture-and-commissioning-procedure.txt
+
+6.2 | gpt-6.1-sol / medium | depends: 6.1
+First power and interface evidence
+6.2-first-power-and-interface-evidence.txt
+
+6.3 | gpt-6.1-sol / medium | depends: 6.2
+Fault timing and low-current motors
+6.3-fault-timing-and-low-current-motors.txt
+
+7.1 | gpt-6.1-sol / high | depends: 6.3
+Qualification experiment design
+7.1-qualification-experiment-design.txt
+
+7.2 | gpt-6.1-sol / medium | depends: 7.1
+Per-axis and all-axis thermal runs
+7.2-per-axis-and-all-axis-thermal-runs.txt
+
+7.3 | gpt-6.1-sol / high | depends: 7.2
+Combined loading and regenerative limits
+7.3-combined-loading-and-regenerative-limits.txt
+
+7.4 | gpt-6.1-sol / high | depends: 7.2;7.3
+Derive validated limits and calibration
+7.4-derive-validated-limits-and-calibration.txt
+
+8.1 | gpt-6-luna / medium | depends: 7.4
+Instrument manual and unit records
+8.1-instrument-manual-and-unit-records.txt
+
+8.2 | gpt-6.1-sol / low | depends: 8.1
+Reproduction and release archive
+8.2-reproduction-and-release-archive.txt
+
+8.3 | gpt-6.1-sol / high | depends: 8.2
+Final evidence and traceability review
+8.3-final-evidence-and-traceability-review.txt
+
+TOKEN ESTIMATES
+manifest.json reports characters/4 estimates for the shared context plus each
+packet. These are not tokenizer counts, do not include loaded files/tool output,
+and are not usage forecasts or hard cutoffs. Supply all necessary evidence.
+
+MODEL-SPECIFIC DESIGN
+Luna packets give factual schemas, bounded family batches and UNKNOWN handling.
+Sol Low packets give a prescribed sequence, tight write scope and exact checks.
+Sol Medium packets give actual interfaces/geometry and bounded implementation
+choices with escalation on persistent route blockage. Sol High packets expose
+source limits, cross-domain interactions, reproducible calculations and uncertainty.
+Astra packets require independent source reconstruction and sampled recomputation
+rather than accepting author summaries. No model is asked for hidden reasoning.
+
+PRIMARY MODEL/PROMPT GUIDANCE (retrieved 22 October 2026)
+https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.1-sol
+https://developers.openai.com/api/docs/models/gpt-6-luna
+https://learn.chatgpt.com/docs/learn/best-practices
+No performance, context-efficiency or correctness percentage is promised.

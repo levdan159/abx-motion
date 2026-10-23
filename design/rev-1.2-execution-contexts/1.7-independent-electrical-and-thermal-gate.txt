@@ -1,0 +1,89 @@
+TASK 1.7 — Independent electrical and thermal gate
+Recommended model: gpt-6-astra
+Reasoning effort: medium
+Starting-context target: 8-16k tokens, soft, including relevant loaded evidence.
+Work mode: independent review
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Challenge coupled assumptions in the circuit, load budget, fault behavior and thermal model. Recompute representative cases and inspect source evidence independently. No CAD edits.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.4/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/1.5/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/1.6/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+This is an independent pre-layout engineering gate, not a rewrite or a physical qualification. Challenge the coupled electrical, fault and thermal claims using source evidence. The reviewer must be able to fail a case even if prior packets confidently reported completion.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.4/evidence/truth-table.csv
+- work/rev-1.2-completion/packets/1.4/evidence/inhibit-issues.csv
+- work/rev-1.2-completion/packets/1.5/evidence/power-results.json
+- work/rev-1.2-completion/packets/1.5/evidence/power-issues.csv
+- work/rev-1.2-completion/packets/1.6/evidence/thermal-results.csv
+- work/rev-1.2-completion/packets/1.6/evidence/thermal-issues.csv
+- design/rev-1.2-completion-plan.txt
+- Relevant original schematic/pin and primary-source excerpts selected from the packet evidence
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own review evidence; completion-root gate-1.txt only
+Own report root: work/rev-1.2-completion/packets/1.7/evidence/
+Own result: work/rev-1.2-completion/packets/1.7/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Serve as an independent reviewer. Start with requirements and selected original
+sources/CAD/data before reading author conclusions. Recompute representative
+cases and look for interactions between domains. Findings need severity,
+exact source, failure mechanism, minimal correction and verification needed.
+Do not rewrite or silently fix the design while reviewing it. More confidence
+or agreement between models cannot replace missing physical/supplier evidence.
+
+EXECUTION SEQUENCE
+1. Read requirements and raw circuit evidence first, then the three authors reports. Independently reconstruct representative inhibit paths, one shared power budget and one hot driver/shared-sink case.
+2. Check interactions the individual analyses could miss: rail sequencing versus retained outputs, DC stop behavior versus current limits, shared Q1 heat versus stepper-only claims, package limits versus connector/harness rating and copper process versus fine pitch.
+3. Classify each issue as design blocker, missing specification, fabrication question or post-fabrication measurement. Avoid holding first-article fabrication for tests that need the first board; keep design unknowns visible.
+4. Freeze accepted decisions needed downstream: pin map, Z topology, load profiles, thermal envelope/contact reservations, proposed minimal fixes, SDK/toolchain/interface choices or named owners for unresolved items.
+5. Produce pass/needs-rework recommendation with source locations, confidence limits and retest scope. Stop for phase review; no CAD changes or automatic phase-2 dispatch.
+
+REQUIRED OUTPUTS
+- phase-1-review.txt
+- phase-1-decisions.json
+- phase-1-open-issues.csv
+- completion-root gate-1.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- No unresolved pre-layout electrical/protection/thermal blocker; arithmetic and source sampling genuinely independent.
+- Accepted intent and unrun physical tests are clearly separated; reviewer conclusion traceable to evidence.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- A coupled contradiction survives recomputation: escalate to Astra High with that narrow contradiction and original sources.
+- Missing input prevents a bounded conclusion: name the missing evidence/owner; a stronger model cannot replace it.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,84 @@
+TASK 8.3 — Final evidence and traceability review
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: independent review
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Cross-check manual, firmware settings, hardware source, released manufacturing data and actual qualification evidence; ensure failures/deferred tests remain visible.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/8.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Final review checks whether an outside engineer can reproduce, assemble, commission, operate and diagnose the instrument from its package. This is evidence/traceability review, not a new qualification or a replacement for actual measurements.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/8.2/evidence/release-candidate-manifest.json
+- work/rev-1.2-completion/packets/8.2/evidence/reproduction-checks.json
+- work/rev-1.2-completion/packets/8.1/evidence/documentation-source-map.csv
+- work/rev-1.2-completion/packets/7.4/evidence/validated-profile-ratings.csv
+- Sampled original qualification traces/calculation sources and final source/CAM/firmware
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own final review and completion-root gate-8.txt only; release candidate read-only
+Own report root: work/rev-1.2-completion/packets/8.3/evidence/
+Own result: work/rev-1.2-completion/packets/8.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Start from final requirements and inspect actual archive/source artifacts, not only summaries. Trace representative hardware pins/MPNs, profile ceilings, calibration values and cooling construction back to original evidence.
+2. Verify first-power and recovery instructions are executable by someone outside the project. Check serial/HW/FW/version compatibility, handling limits and diagnostic/probe references.
+3. Sample measured rating/accuracy/temperature claims including uncertainty and deferred cases. Ensure 3.5 A driver capability, retained connector limits and future high-power scope remain correctly distinguished.
+4. Check that any post-qualification hardware/firmware change has corresponding affected-test evidence and that final manufacturing data matches the accepted board.
+5. Return final recommendation and explicit unresolved/deferred items; stop for user review without automatic publication or remote write.
+
+REQUIRED OUTPUTS
+- final-traceability-review.txt
+- requirements-artifact-evidence-map.csv
+- final-open-items.csv
+- completion-root gate-8.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- All claimed ratings and operating instructions trace to compatible final artifacts and real evidence.
+- Independent sampling completed; failed/deferred cases visible; no unreviewed revision mixed into release.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Unsupported claim or revision mismatch: return exact document/value/source and required correction/retest.
+- A physical question remains: require physical evidence rather than raising model effort to assume an answer.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

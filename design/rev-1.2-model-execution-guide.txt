@@ -1,0 +1,192 @@
+ABX-Motion Rev1.2 — model allocation and compact execution protocol
+22 October 2026. Planning only: no agents launched and no implementation begun.
+
+COMPANION FILES
+Scope, engineering requirements and phase gates:
+ design/rev-1.2-completion-plan.txt
+Executable-work definitions (planning records, not an automated executor):
+ design/rev-1.2-work-packages.csv
+The CSV has 37 packets, with model/effort, dependencies, allowed work mode,
+inputs, scope, deliverables, pass criteria and starting-context targets.
+All packet statuses are PLANNED. Historical drafts are not completed packets.
+
+MODEL RECOMMENDATIONS
+These assignments are engineering judgment for this project, based on current
+OpenAI model guidance, not measured EDA benchmarks or a guarantee of lowest cost.
+Select the lightest setting that passes representative work without expensive
+rework; record actual usage/latency and outcomes for the first few packets.
+Model access and usage accounting depend on the user's client/account. API
+list prices do not translate directly into subscription quota percentages.
+No parameter counts or exact savings are assumed.
+
+Luna-M: GPT-6 Luna, medium reasoning.
+ Use exact evidence extraction, supplier/dimension collection and assembly of
+ documentation from approved facts. No independent safety sign-off, speculative
+ component selection, routing or unprescribed CAD mutation.
+Sol-L: GPT-6.1 Sol, low reasoning (Light in the supported graphical clients).
+ Use baseline extraction/check scripts, exact pin tables, approved silkscreen
+ edits, firmware definitions and reproducible export/packaging. An apparently
+ small edit involving hidden electrical tradeoffs belongs at Medium instead.
+Sol-M: GPT-6.1 Sol, medium reasoning.
+ Default for bounded implementation: Z-limit integration, routing, capacitor
+ loop improvements, pulse/mode/telemetry firmware and interpretation of clear
+ bench results. It must have the relevant engineering decisions as inputs.
+Sol-H: GPT-6.1 Sol, high reasoning.
+ Use power/protection/thermal modeling, reset/inhibit logic, mechanical thermal
+ construction, complicated firmware interactions and engineering audits.
+Astra-M: GPT-6 Astra, medium reasoning.
+ Two short independent reviews: 1.7 electrical/thermal gate and 5.3 first-
+ article release gate. Feed compact evidence plus necessary original sources.
+ Escalate to High only when the review leaves coupled contradictions or needs
+ materially deeper reasoning. No blanket Astra/Max/Ultra execution of the queue.
+
+Low/Light, Medium and High are reasoning settings, not different parameter
+sizes of Sol. Luna/Sol/Astra are distinct model choices. Do not equate a
+higher effort with guaranteed correctness or use more tokens as evidence.
+Model/reasoning recommendations can be changed when actual packet outcomes
+show that doing so reduces total cost to a verified result.
+
+ALLOCATION COUNTS
+Phase 1: 7 packets — baseline, sources, maps, fault analysis, power analysis,
+ thermal analysis and independent review.
+Phase 2: 7 packets — Z schematic/placement, bank/Z routes, sleep escape,
+ CS/enable gaps, capacitor/route cleanup, labels and connectivity review.
+Phase 3: 4 packets — procurement evidence, heatsink assembly, thermal PCB
+ construction and mechanical/procurement freeze.
+Phase 4: 6 packets — board definitions, arming/watchdog, pulse engine,
+ limits/modes, profiles/telemetry/calibration and integration review.
+Phase 5: 3 packets — export, CAM/CPL review and independent release review.
+Phase 6: 3 packets — bench setup, initial power/interfaces and fault/motors.
+Phase 7: 4 packets — experiment design, steppers, combined/regen and ratings.
+Phase 8: 3 packets — manual, reproduction archive and final traceability.
+Model totals: Luna-M 3; Sol-L 6; Sol-M 13; Sol-H 13; Astra-M 2.
+Counts describe work allocation, not a promised share of tokens, time or cost.
+
+CONTEXT CONTRACT — BUILD ONCE, READ SELECTIVELY
+1.1 creates a new completion work root, suggested:
+ work/rev-1.2-completion/
+Inside it maintain:
+ state.json: current source hashes/revision, packet states, last check artifacts,
+   active writer, unresolved issues and named approved decisions.
+ context.txt: approximately 1-2k tokens of current intent and hard constraints.
+ file-index.csv: authoritative files and helpers, scope and side effects.
+ packets/<ID>/task.txt: exact task, input paths/hashes and allowed writes.
+ packets/<ID>/result.json: outcome, changed paths/hashes, checks, exceptions,
+   actual model/effort, observed token/time use if exposed, next dependencies.
+ packets/<ID>/evidence/: logs, compact tables, plots and calculation provenance.
+ gate-<phase>.txt: reviewed decisions, unresolved blockers and checkpoint report.
+
+Starting context targets in the CSV are soft planning targets, not a token
+cutoff or model context limit. Routine packets start around 3-6k relevant
+tokens; implementation around 4-9k; engineering analysis 6-12k; independent
+gates 8-16k. Necessary original evidence may justify more. Never omit a
+critical rating, connection or exception simply to meet a context target.
+
+Pass these inputs to each fresh work session:
+- Short project constraints and phase-specific accepted decisions.
+- Its exact CSV row plus approved dependency results.
+- Relevant file paths/hashes and selected source excerpts or geometry views.
+- Exact acceptance checks and allowed write scope.
+Do not replay the entire conversation, every old work folder or whole PDFs.
+Do not print a whole PCB/schematic into model context. Read native CAD with
+scripts, return targeted pin/net/geometry tables and small selected views.
+A worker retains access to full files when it needs to verify a detail.
+Cache retrieved source documents locally with URL/date/hash; reuse relevant
+pages. Do not repeatedly research already frozen facts unless they have become
+stale, conflict, change MPN/package or are needed for an independent review.
+
+Authority distinctions:
+- Completion plan: intended scope and accepted targets.
+- Current native CAD: actual circuit/geometry, which still needs validation.
+- Exact manufacturer documents: device limits and construction requirements.
+- Fresh tool outputs: what has been checked against a particular input hash.
+- Historical generators, saved reports and drafts: reference only until verified.
+The older loss-comparison script covers other PWP devices. Do not apply its
+numbers to the selected DRV8462DDWR. Existing audit scripts may import a save()
+function or refer to stale candidate files: inspect before running them.
+
+HANDOFF TEMPLATE
+ID and exact objective:
+Model / reasoning:
+Dependencies accepted at hashes:
+Allowed source/report writes:
+Read these files/excerpts first:
+Fixed decisions and protected geometry:
+Required output artifacts:
+Pass criteria and check commands:
+When to escalate / return a layout issue:
+Return status + changed files + input/output hashes + evidence + unresolved items.
+
+EXECUTION AND REVIEW POLICY
+- A new task is not evidence that its dependencies passed. Recheck source hashes
+  and dependency acceptance before edits, exports or review.
+- One CAD writer at a time. Root CAD is the eventual reviewable project; isolated
+  trials remain short and are promoted only after the actual safety/regression
+  checks. Fresh user/editor saves are preserved; stale snapshots are never
+  silently copied back over the live board.
+- No concurrent readers against a changing CAD snapshot: analysis/review uses
+  immutable snapshots. Read-only research can overlap only with phase scope
+  explicitly released for execution. It must not write shared CAD/output files.
+- Firmware modules can use separate write scopes only after their interfaces
+  and pin maps are frozen; integration requires the final checked hardware map.
+- Default execution is serial. Multiple workers are optional for explicitly
+  requested independent work, not a default way to inflate context/usage.
+- Use the safe PCB save wrapper; native pcbnew SaveBoard can rewrite the project.
+  Save/compare project settings, check pad nets and connected groups, and inspect
+  moved-pad/via collisions before reload. Never run a legacy board rebuild.
+- Run deterministic scripts for calculations, exports and comparisons; models
+  inspect relevant results rather than narrating or repeating routine checks.
+  Native check exit status alone is insufficient; parse actual report contents.
+- Run checks justified by each change; full gates apply to the integrated state.
+  Do not repeat passed broad checks without a new change or unresolved concern.
+- After two substantively different failed routing attempts on the same geometry,
+  stop blind retries. Return the concrete blocking pads/tracks/layers and
+  smallest candidate layout change; escalate Sol-M to Sol-H if needed. Do not
+  remove necessary copper or relax design rules to force completion.
+- Escalate missing/contradictory source limits and failed budgets to an analysis
+  packet; a cheaper extraction worker cannot decide these by inference.
+- A reviewer starts from requirements and actual evidence, samples/recomputes
+  the underlying data, and does not merely approve the author's summary.
+- Every phase ends with a checkpoint report and stop. Continue into a new phase
+  only when the user resumes it. No automatic fabrication, order, push or
+  publication follows a passed review.
+- Physical packets require a human and actual instruments. A model can prepare
+  procedures and analyze supplied readings; it cannot run motors, measure
+  temperature or certify a physical pass from calculations or a 3D render.
+
+ESCALATION LADDER
+Luna-M -> Sol-M when extraction reveals ambiguity or an engineering choice.
+Sol-L -> Sol-M when the prescribed edit needs coordinated implementation.
+Sol-M -> Sol-H for coupled faults, persistent geometry blockage or ambiguous
+waveforms; include compact failed-attempt evidence, not another full history.
+Sol-H -> Astra-M/High only for unresolved cross-domain contradictions or the
+scheduled independent gates. Max/Ultra is not planned; evaluate a specific
+benefit before using it. Physical/fabrication uncertainty requires measurement
+or supplier evidence rather than a stronger model's confidence.
+
+FIRST EXECUTION ORDER
+1.1 -> (1.2 and 1.3) -> (1.4 and 1.5) -> 1.6 -> 1.7 -> STOP.
+Parentheses indicate independent read-only scopes, not automatically launched
+parallel agents. Start serially unless parallel work is explicitly requested.
+If baseline reveals new material edits, use those as the current state and
+refresh relevant contexts rather than reverting them.
+The review must preserve the distinction between the 3.5 A driver thermal
+case and the retained 3 A connector specification. The 5 A RMS revision is
+out of scope. Z-limit implementation remains planned, not already completed.
+
+CURRENT OFFICIAL MODEL GUIDANCE (fetched 22 October 2026)
+OpenAI model catalog: Luna for focused economical workloads; Sol for balanced
+complex work; Astra for the most demanding work.
+ https://developers.openai.com/api/docs/models
+Model selection: use guidance as a starting point and evaluate actual outcomes.
+ https://developers.openai.com/api/docs/guides/model-selection
+Client reasoning terminology and Light/Low mapping:
+ https://learn.chatgpt.com/docs/models?surface=web
+
+FULL PER-PACKET EXECUTION CONTEXT
+The 37 model-specific task prompts and shared context/result schema are in:
+ design/rev-1.2-execution-contexts/INDEX.txt
+Start a fresh authorized packet with its matching prompt plus the shared file;
+do not load all 37 prompts. The CSV links each packet directly to its prompt.
+The model must still inspect current dependency evidence and original sources.
+Creating these files did not start any task or change source CAD/firmware.

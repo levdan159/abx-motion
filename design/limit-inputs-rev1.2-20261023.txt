@@ -1,0 +1,47 @@
+ABX-Motion Rev 1.2-dev: eight-socket digital I/O bank
+Implemented 2026-10-23
+
+The root KiCad PCB and schematics are the source of truth for this change.
+All sockets use the existing vertical three-pin JST PH footprint, at 90 degrees.
+Existing J601-J606 move down 10.5 mm; no original IC or motor connector moves.
+
+Top-view layout (pin-1 origin; pin 2 is Y-2 mm, pin 3 is Y-4 mm):
+Row Y=116.0 mm: J607 Z limits at X=67.5; J608 spare DIN at X=75.0.
+Row Y=126.5 mm: J601 M1 limits at X=67.5; J602 M2 limits at X=75.0.
+Row Y=137.0 mm: J603 X limits at X=67.5; J604 Y limits at X=75.0.
+Row Y=147.5 mm: J605 OUT1 at X=67.5; J606 OUT2 at X=75.0.
+
+Pin functions:
+J601/J602/J603/J604/J607: pin 1 MIN, pin 2 GND, pin 3 MAX.
+J608: pin 1 DIN1, pin 2 GND, pin 3 DIN2.
+J605/J606 unchanged: pin 1 +5V_OUT, pin 2 GND, pin 3 switched output.
+Front and back function/pin legends match these assignments.
+Former S1/S2 limit names are now X/Y, including the local schematic nets.
+
+Input-expander allocation (existing I2C addresses preserved):
+M1 MIN/MAX: U601, 0x20, IO0_0/IO0_1, pins 4/5.
+M2 MIN/MAX: U601, 0x20, IO0_2/IO0_3, pins 6/7.
+X MIN/MAX: U601, 0x20, IO0_4/IO0_5, pins 8/9 (formerly S1).
+Y MIN/MAX: U601, 0x20, IO0_6/IO0_7, pins 10/11 (formerly S2).
+Z MIN/MAX: U704, 0x21, IO1_6/IO1_7, pins 19/20.
+DIN1/DIN2: U601, 0x20, IO1_2/IO1_3, pins 15/16.
+The four new expander pins must be configured as inputs by firmware.
+
+New front ends match the existing limit circuit: RAW node pulled to 3V3 by
+4.7k, then 1k series to the filtered input, with 10nF from that input to GND.
+An open contact reads high; a contact closed to GND reads low.
+Limits and DIN are 3.3 V/dry-contact inputs, not 24 V industrial sensor inputs.
+Z MIN: R623 pull-up, R625 series, C610 filter.
+Z MAX: R624 pull-up, R626 series, C611 filter.
+DIN1: R627 pull-up, R629 series, C612 filter.
+DIN2: R628 pull-up, R630 series, C613 filter.
+The low-profile filter parts are below the OLED, clear of its mounting holes.
+The existing 10 mm OLED standoff requirement remains in effect.
+
+The existing OUT1/OUT2 supply allocation is unchanged. New +5V_OUT routing
+uses 0.5 mm copper, matching the existing power trunk. Motor-phase/DC-power
+copper and driver thermal vias are retained. New signal routes avoid the
+stepper-driver power-pour region on In2.Cu.
+
+This is a CAD implementation checkpoint. It is not a manufacturing release
+or evidence of powered, thermal, cable, or firmware validation.

@@ -1,0 +1,86 @@
+TASK 6.3 — Fault timing and low-current motors
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k per result set tokens, soft, including relevant loaded evidence.
+Work mode: HUMAN BENCH + analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Human measures reset/E-stop/watchdog/config-failure behavior and one low-current motor per channel; model compares scope/current records with timing/behavior contract.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/6.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Physical timing and current waveforms must verify the accepted state/timing contract. This packet follows passing no-motor/interface checks, uses low-energy fault injection and only low-current motor tests; it is not worst-case thermal qualification.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/6.2/evidence/first-power-results.csv
+- work/rev-1.2-completion/packets/6.2/evidence/interface-results.csv
+- work/rev-1.2-completion/packets/6.1/evidence/bench-procedure.txt
+- work/rev-1.2-completion/packets/1.4/evidence/truth-table.csv
+- work/rev-1.2-completion/packets/1.4/evidence/timing-contract.txt
+- Actual human-captured control/phase/current traces and firmware diagnostic logs
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own raw trace copies, analysis and phase report; completion-root gate-6.txt. No unapproved source modifications or physical actuation.
+Own report root: work/rev-1.2-completion/packets/6.3/evidence/
+Own result: work/rev-1.2-completion/packets/6.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Confirm preceding tests passed at the same HW/FW/fixture configuration. Choose correctly referenced capture points for E-stop input, permit/enable outputs, watchdog/reset and representative bridge behavior.
+2. Analyze human measurements for cold/warm reset, watchdog starvation, failed configuration, E-stop assert/release and fault recovery. Confirm explicit re-arm and measure latency against the contract; distinguish electrical disable from mechanical stopping.
+3. Review one unloaded motor per axis/channel at a bounded low setting: phase mapping, actual RMS waveform, SPI readback, pulse/DIR timing, VM/phase excursions and expected encoder/diagnostic behavior.
+4. Record actual versus expected states, trace uncertainty and unresolved artifacts. Do not infer phase current from battery current or accept a logic edge alone as proof of all bridge outputs.
+5. Return phase-6 results and qualification prerequisites. If a firmware fix is necessary, send it to its owner and repeat affected observations on the new version before passing.
+
+REQUIRED OUTPUTS
+- fault-timing-results.csv
+- low-current-motor-results.csv
+- raw-scope-and-current/
+- phase-6-review.txt
+- completion-root gate-6.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Actual traces demonstrate required inhibit/recovery states and bounded low-current channel behavior.
+- No unexpected restart; every pass tied to current setup and no missing observation hidden by software test output.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Ambiguous ringing, current or race: escalate to Sol High with raw traces, probe setup and minimal reproducer.
+- Hardware not available: AWAITING_HARDWARE; do not advance to qualification.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

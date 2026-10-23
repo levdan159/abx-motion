@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ABX work-packet result; no example is a completed execution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "status",
+    "actual_model",
+    "actual_reasoning_effort",
+    "input_hashes",
+    "changed_files",
+    "outputs",
+    "checks",
+    "issues",
+    "next_action",
+    "physical_evidence_provided"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "enum": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "5.1",
+        "5.2",
+        "5.3",
+        "6.1",
+        "6.2",
+        "6.3",
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "8.1",
+        "8.2",
+        "8.3"
+      ]
+    },
+    "status": {
+      "enum": [
+        "TASK_COMPLETE",
+        "NEEDS_REWORK",
+        "WAITING_FOR_INPUT",
+        "AWAITING_HARDWARE"
+      ]
+    },
+    "actual_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actual_reasoning_effort": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "input_hashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "changed_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "before_sha256",
+          "after_sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "before_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "after_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "status",
+          "evidence",
+          "details"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "details": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "severity",
+          "description",
+          "source",
+          "owner"
+        ],
+        "properties": {
+          "severity": {
+            "enum": [
+              "BLOCKER",
+              "MAJOR",
+              "MINOR",
+              "MISSING_EVIDENCE"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "physical_evidence_provided": {
+      "type": "boolean"
+    },
+    "phase_recommendation": {
+      "enum": [
+        null,
+        "READY_FOR_USER_REVIEW",
+        "NEEDS_REWORK",
+        "AWAITING_HARDWARE"
+      ]
+    },
+    "observed_usage": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Actual tokens/time if exposed; no invented token/account-cost figures"
+    }
+  }
+}

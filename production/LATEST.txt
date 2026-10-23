@@ -1,7 +1,7 @@
-Latest matched prototype candidate: rev-1.1d-20261020/
-ABX-Motion Rev1.1d: incremental thermal copper and20 tented vias.
-ERC0; DRC0 errors/0 opens/0 parity;19 existing library warnings.
-BOM66groups/239placements; coordinates and angles unchanged.
-Confirm relay alignment before assembly. Physical qualification NOT RUN.
-Use the matching Gerber/BOM/CPL together; see review.txt.
-Changes are local and uncommitted; no Git push performed.
+Latest matched Rev 1.2 prototype package: rev-1.2a-20261023/
+ABX-Motion Rev 1.2a: three onboard stepper axes, eight-socket digital bank, thermal features and front/rear branding.
+Use the versioned directory or its abx-motion-rev1.2a-jlcpcb-package.zip; earlier top-level generic exports are historical Rev 1.1 files and must not be mixed with Rev 1.2a.
+JLC catalogue audit: 74 SKUs / 328 placements, plus separately sourced J208 and mechanical items.
+ERC0; DRC0 errors/0 opens/0 parity; 95 warnings. Relay physical alignment requires assembler review.
+Powered and installed thermal qualification NOT RUN. See the versioned README.txt for fabrication process, filled/capped holes, sourcing and assembly conditions.
+Preserved Rev 1.1d package: rev-1.1d-20261020/.

@@ -1,10 +1,14 @@
-> Latest I/O layout: 38 low-profile parts beneath the OLED (10 mm standoffs), six JST-PH ports in a vertical 2 x 3 bank, and revised routing/front-back legends. Electrical checks, mechanical limits and previews: `work/rev-1.2-io-under-oled/review/`. Exact OLED module fit still needs confirmation.
+# ABX-Motion Rev 1.2a
 
-> Latest connector layout: upright 2.54 mm J502/J504 headers rotated 90 degrees, with the compact JST/header bank shifted right and matching 2.53 mm gaps. Front/back pin legends updated. Checks and renders: `work/rev-1.2-ext-upright/review/`.
+The root KiCad project is the active three-axis development checkpoint. It includes three onboard DRV8462DDWR drivers, external control interfaces, an eight-socket digital I/O bank (M1/M2/X/Y/Z limits, two spare digital inputs and two auxiliary outputs), axis-based legends, updated package models and thermal copper/vias/TIM windows.
 
-> Latest relay-bay refinement: both relay connectors shifted toward the bottom-right; Motor 2 layout preserved. Current checks and previews: `work/rev-1.2-relay-bottom-right/review/`.
+See [Rev 1.2a checkpoint](design/rev-1.2a-checkpoint.md), [digital I/O pin allocation](design/limit-inputs-rev1.2-20261023.txt) and [thermal review](design/thermal-rev1.2-20261023.md). Rev 1.2a is a saved CAD checkpoint, not a qualified manufacturing release. The matched [JLCPCB prototype package](production/rev-1.2a-20261023/README.txt) includes current Gerbers, drills, BOM, supplier-normalized CPL, assembly drawings and audit evidence. Earlier exports/renders are historical. Relay alignment still requires assembler review; J208 and mechanical items are separately sourced.
 
-> **Active root project: Rev 1.2-dev (local development).** Relay bay consolidation is implemented in the root PCB and schematics. The preserved manufacturing release is `production/rev-1.1d-20261020/`. Rev 1.2-dev is not a manufacturing release. Review evidence and before/after images are in `work/rev-1.2-relay-bay/review/`. Do not run legacy rebuild scripts over this placement.
+Ethernet with an optional isolated PoE daughterboard is a future option only; no Ethernet/PoE circuitry has been added. Current cooling direction uses stock heatsinks without custom machining; archived machined-heatsink drawings are superseded.
+
+## Historical Rev 1.1 documentation
+
+The content below describes the preserved Rev 1.1 prototype and its exports. StepStick socket details, firmware allocations, component counts and images below do not describe the active Rev 1.2a board. The preserved Rev 1.1d manufacturing package is `production/rev-1.1d-20261020/`. Do not run legacy rebuild/router scripts over the active root placement.
 
 # ABX-Motion Rev 1.1c prototype controller
 

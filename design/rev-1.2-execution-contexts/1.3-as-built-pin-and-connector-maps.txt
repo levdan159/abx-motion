@@ -1,0 +1,86 @@
+TASK 1.3 — As-built pin and connector maps
+Recommended model: gpt-6.1-sol
+Reasoning effort: low
+Starting-context target: 3-6k tokens, soft, including relevant loaded evidence.
+Work mode: read-only CAD / write reports
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Derive GPIO, expander addresses/bits, connector pins and schematic-to-PCB mappings using deterministic extraction. Include the proposed Z mapping separately from current hardware.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Derive the actual map from live exports, not the Rev1.1 README. U704 is the added expander; proposed Z uses its currently unused pins 19/20, IO1_6/IO1_7. Z is not yet part of the root circuit. Existing GPIO, I2C, SPI and limit functions must remain identifiable.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.1/evidence/baseline-netlist.xml
+- work/rev-1.2-completion/packets/1.1/evidence/pad-net-map.csv
+- work/rev-1.2-completion/packets/1.1/evidence/component-inventory.csv
+- abx-motion.kicad_sch
+- Industrial_IO.kicad_sch
+- Steppers_Relays.kicad_sch
+- Power.kicad_sch
+- MCU.kicad_sch
+- Motor_Channel.kicad_sch
+- work/rev-1.2-electrical/circuit.py (compare metadata; do not execute save)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own extraction scripts/reports only; native source read-only
+Own report root: work/rev-1.2-completion/packets/1.3/evidence/
+Own result: work/rev-1.2-completion/packets/1.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Follow the prescribed sequence and checks directly. Use deterministic scripts
+for extraction, copying, numerical reconciliation and unchanged-geometry checks.
+Avoid a long preliminary plan. If the supposedly routine edit requires a new
+electrical/mechanical/interface decision, return that issue for Medium/High;
+do not guess. Show changed files, check results and concrete exceptions.
+
+EXECUTION SEQUENCE
+1. Parse hierarchical netlist instances and PCB pads. Export MCU GPIO-to-net/device-pin relationships, expander addresses from address-pin wiring, I2C/SPI endpoints, testpoints and connector pin maps.
+2. Compare pin memberships using reference/pin pairs, not only equal-looking net names. Preserve full hierarchical paths for the two DC instances.
+3. Write current and proposed-Z mappings as separate records. Mark whether each mapping is supported by schematic, PCB, manufacturer pin definitions and planned intent.
+4. List discrepancies with old circuit.json, README and parts-overrides without editing those documents or changing pin assignments. Record inputs that are boot straps or have special restrictions for 1.4 to assess.
+
+REQUIRED OUTPUTS
+- pinmap.csv
+- connector-map.csv
+- expander-map.csv
+- mapping-discrepancies.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- All actual non-NC pad memberships reconcile with the snapshot; no old StepStick map silently reused.
+- Z proposal clearly separated from installed/current circuit; no inferred unreviewed GPIO allocation.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Ambiguous address, pin number or hierarchical membership: provide exact nodes and defer engineering interpretation.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,89 @@
+TASK 7.4 — Derive validated limits and calibration
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: analysis / bounded firmware update
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Fit calibration with uncertainty; determine per-profile ratings and firmware ceilings from measurements; evaluate mixed-load acceptance run and unresolved failures.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/7.2/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/7.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Convert measured evidence into conservative instrument ratings and calibrated telemetry. Settings that were not physically qualified must stay unqualified/disabled. Proposed VBAT +/-2% and driving-current +/-(5% reading+0.1 A) are targets to evaluate, not values to print regardless of results.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/7.2/evidence/stepper-results.csv
+- work/rev-1.2-completion/packets/7.3/evidence/combined-results.csv
+- work/rev-1.2-completion/packets/7.3/evidence/transient-results.csv
+- work/rev-1.2-completion/packets/7.1/evidence/measurement-uncertainty.txt
+- Raw bench/calibration data and exact HW/FW/configuration IDs
+- firmware/ profile and calibration definitions
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own analysis/rating reports and bounded firmware limit/calibration updates; affected tests; completion-root gate-7.txt
+Own report root: work/rev-1.2-completion/packets/7.4/evidence/
+Own result: work/rev-1.2-completion/packets/7.4/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Validate provenance and coverage of raw observations. Derive separate stepper-only/combined limits versus ambient, all-axis concurrency, heatsink/harness and DC duty; do not fill missing cases with interpolation presented as measured.
+2. Fit calibration coefficients over a defined range and compute residuals, uncertainty, clipping and bandwidth limitations. Distinguish driving-shunt observability from true winding/braking current.
+3. Translate accepted limits into firmware ceilings/calibration records; version them and repeat affected host checks plus any physical cases changed by the new behavior. Changing limits cannot silently invalidate the qualification setup.
+4. Review the proposed repeated mixed-load acceptance run after safe limits are established; retain logs and explain any reset/fault. This screen does not establish lifetime reliability statistics.
+5. Return the validated table, failed/deferred modes, retest scope and phase gate. Keep the high-power 5 A RMS design out of this release.
+
+REQUIRED OUTPUTS
+- validated-profile-ratings.csv
+- calibration-results.csv
+- calibration-uncertainty.txt
+- firmware-limits-delta.json
+- acceptance-run-results.csv
+- phase-7-review.txt
+- completion-root gate-7.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Every published limit/calibration claim traces to adequate raw evidence and uncertainty.
+- Necessary derating/disabled cases explicit; affected checks rerun for changes; phase stops for review.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Missing coverage or failed accuracy target: publish a narrower supported range or return needed experiment; never invent successful ratings.
+- Hardware change needed: assign a new controlled revision and repeat affected gates/tests.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

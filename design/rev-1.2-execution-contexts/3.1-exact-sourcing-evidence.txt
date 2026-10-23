@@ -1,0 +1,81 @@
+TASK 3.1 — Exact sourcing evidence
+Recommended model: gpt-6-luna
+Reasoning effort: medium
+Starting-context target: 3-6k per family tokens, soft, including relevant loaded evidence.
+Work mode: read-only research
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Collect exact availability/drawings for selected MPNs, capacitor dimensions/ripple, harness contacts, relay holes, OLED stack, TIM and heatsink candidates. Report gaps; no substitution approval.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.7/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Collect exact procurement/fit evidence, not generic substitutes. Earlier parts-overrides references J502/J504 from retired connectors; current EXT is J701/2/3. OLED requires a verified matching direct-plug stack at 10 mm standoffs. Stock claims need source/date and exact variant.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.1/evidence/component-inventory.csv
+- work/rev-1.2-completion/packets/1.7/evidence/phase-1-decisions.json
+- design/rev-1.2-parts-overrides.csv (historical; reconcile refs)
+- design/rev-1.2-research/sourcing-check-20261021.txt (historical)
+- Exact manufacturer/supplier drawings and JLCPCB/PCBWay sourcing information
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own supplier/source evidence only
+Own report root: work/rev-1.2-completion/packets/3.1/evidence/
+Own result: work/rev-1.2-completion/packets/3.1/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+This is a bounded extraction/assembly job. Work one part family or document
+section at a time. Use exact fields and source locations; UNKNOWN is a valid
+value and a cue to hand off, not permission to infer. Return structured tables
+and a short exception list. Make no new engineering choice or safety claim.
+
+EXECUTION SEQUENCE
+1. Process capacitor, relay/terminal, JST harness, EXT/OLED stack, heatsink/TIM and critical IC families in bounded batches. Start from actual component refs/MPNs, not old BOM line numbers.
+2. For each selected part record exact orderable variant, assembly identifier, supply availability/date, footprint dimensions and numbered-pad direction. Mark unavailable, hand-fit and DNP separately.
+3. Capture cap height/ripple/ESR/lifetime, relay contact-versus-coil hole drawing and OLED socket/mate insertion/stack dimensions. Do not infer fit from a similar 3D model.
+4. Return candidate heatsink/TIM vendor performance with orientation/airflow conditions and manufacturing drawings. Flag missing/contradictory information; leave engineering selection to 3.2/3.4.
+5. Do not upload BOMs, communicate with suppliers or place an order in this evidence packet.
+
+REQUIRED OUTPUTS
+- sourcing.csv
+- mechanical-evidence.csv
+- supplier-source-index.json
+- sourcing-gaps.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Exact identities, drawing provenance and availability dates; old ref mismatches detected.
+- No silent substitution, supplier contact, stock reservation or physical-fit claim without dimensions.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Missing exact thermal/relay/harness drawing or conflicting CAD: provide both sources for engineering review; do not declare equivalence.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

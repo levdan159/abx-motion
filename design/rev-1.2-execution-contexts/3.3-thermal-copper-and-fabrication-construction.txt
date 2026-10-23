@@ -1,0 +1,88 @@
+TASK 3.3 — Thermal copper and fabrication construction
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: single CAD writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Implement only justified local GND/via/mask/paste or stackup changes. Validate fabricator limits for chosen copper and fine pitch; reconcile actual PowerPAD solder/via process.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/3.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Implement only the justified phase3 thermal construction changes. Phase2 signal/power connectivity is the regression baseline. Present driver pads/thermal-via process are custom; open thermal via-in-pad must be reconciled with mask/paste and assembler capability, not with a generic tenting flag.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- abx-motion.kicad_pcb
+- abx-footprints.pretty/DRV8462_DDW0044E.kicad_mod
+- abx-motion.kicad_pro (rules only if deliberately needed)
+- work/rev-1.2-completion/packets/3.2/evidence/pcb-thermal-change-request.txt
+- work/rev-1.2-completion/packets/3.2/evidence/cooling-stack.json
+- work/rev-1.2-completion/packets/1.6/evidence/thermal-results.csv
+- Exact fabricator/assembler stackup, spacing and via-finish specifications
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- abx-motion.kicad_pcb; affected custom thermal footprint; project rules only for an explicitly approved fabrication change; own evidence
+Own report root: work/rev-1.2-completion/packets/3.3/evidence/
+Own result: work/rev-1.2-completion/packets/3.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Snapshot phase2 geometry and read exact contact/mount requirements. Separate copper heat spreading, through-board transfer and mechanical contact functions; preserve all required electrical nets.
+2. Implement the minimum justified GND spreading/via/plane changes with real pad and mask/paste geometry. Respect In1 continuity and keep signal copper out of contact strips. Update the matching custom footprint when its construction changes.
+3. If choosing 2 oz outer copper, use actual supplier stackup/fine-pitch capability, update stackup intentionally and rerun all constraints. Do not relax spacing to force 2 oz or silently retain an old 1 oz order configuration.
+4. Specify filled/capped or alternative supported thermal-via process consistently across paste, mask and fabrication notes. Check all critical layer plots and electrical plane/via connections.
+5. Refill and run complete ERC/DRC/parity, pad-group and protected-copper audits. Recalculate thermal sensitivity with implemented geometry; save only a checked root result.
+
+REQUIRED OUTPUTS
+- thermal-copper-delta.json
+- implemented-thermal-geometry.json
+- mask-paste-copper-views/
+- fabrication-thermal-notes.txt
+- post-thermal-drc.json
+- post-thermal-connectivity.json
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Quantified heat-path benefit and supported fabrication/assembly process.
+- No unapproved net/power/ground regression, newly unrouted connection or SMD drill conflict outside deliberate approved thermal construction.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Fabricator cannot support selected copper/paste/via pattern: return a process/geometry option with its thermal impact.
+- A new mount crosses necessary copper: propose a different support or explicit small reroute; do not drill through it.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

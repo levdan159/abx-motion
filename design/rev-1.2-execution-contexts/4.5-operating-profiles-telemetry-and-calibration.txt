@@ -1,0 +1,85 @@
+TASK 4.5 — Operating profiles, telemetry and calibration
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k tokens, soft, including relevant loaded evidence.
+Work mode: firmware writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Implement STEPPER_ONLY/COMBINED ceilings, DC burst limits, readback, fault/OT reporting, timestamped logs and versioned calibration/configuration integrity.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/4.4/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+STEPPER_ONLY and COMBINED are distinct budgets. Three-axis 2 A is the normal target; 3 A is a qualification target; 3.5 A remains a driver thermal case until the full connection path permits it. DRV8701 SO does not measure all recirculating/braking current, and driver thermal-warning bits are not calibrated die-temperature telemetry.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.5/evidence/power-budget.csv
+- work/rev-1.2-completion/packets/1.6/evidence/cooling-requirements.txt
+- work/rev-1.2-completion/packets/1.7/evidence/phase-1-decisions.json
+- firmware/ motion/mode/fault interfaces
+- Actual ADC divider/shunt/gain evidence and accepted measurement targets
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- firmware/ profile, telemetry/configuration/calibration modules and bounded command interface; own reports
+Own report root: work/rev-1.2-completion/packets/4.5/evidence/
+Own result: work/rev-1.2-completion/packets/4.5/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Encode explicit per-profile per-axis current, total-load and DC burst/duty ceilings. Select profiles only while disarmed; lock DC commands off in STEPPER_ONLY. Keep unqualified settings disabled.
+2. Use driver configuration readback and actual current-scaling conventions. Distinguish requested current, configured register-derived estimate and physically measured RMS current in the schema.
+3. Implement VBAT/DC-current ADC conversions from actual divider/gain/shunt values and versioned calibration coefficients. Include clipping, range/error indication and update rate/bandwidth; do not use the old README formula without reconciling current hardware.
+4. Log timestamped faults, thermal warnings, reset reason, mode, commands and relevant measured/readback values. Define a conservative reduce-current/stop policy through the fault API; do not present MCU sensor temperature as power-stage temperature.
+5. Store configuration/calibration with hardware/schema version and integrity check. Bound flash writes and reject incompatible/corrupt records. Add representative parser, bounds and calibration arithmetic tests.
+
+REQUIRED OUTPUTS
+- profile/telemetry/config source
+- diagnostic-schema.json
+- profile-limit-table.csv
+- calibration-command-contract.txt
+- profile-telemetry-test-results.json
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Approved ceilings enforced; invalid/corrupt/incompatible profiles cannot silently arm or raise limits.
+- Telemetry labels and calibration math reflect actual observability, units and uncertainty; no fabricated temperatures.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Power budget requires enforcement impossible with available sensing: return the exact limitation and propose a bounded restriction.
+- An OT response conflicts with holding safety or explicit re-arm: escalate the state interaction to High.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

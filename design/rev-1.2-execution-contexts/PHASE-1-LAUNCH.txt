@@ -1,0 +1,133 @@
+Execute PHASE 1 ONLY of the ABX-Motion Rev1.2 completion plan.
+
+Workspace: /home/daniel/Documents/kicad/abx-motion
+Coordinator recommendation: gpt-6.1-sol, medium reasoning.
+This request authorizes local analysis, source research, calculation/check
+scripts and evidence reports. Keep native CAD and firmware read-only. Stop
+after the phase-1 independent review; do not begin phase 2.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- design/rev-1.2-completion-plan.txt (requirements and phase 1)
+- design/rev-1.2-work-packages.csv (phase-1 rows only)
+- design/rev-1.2-execution-contexts/result.schema.json
+
+Use the detailed packet for each task below. Do not load all 37 packets or
+replay the old conversation. The coordinator keeps only compact status,
+decisions and issue summaries; workers read relevant original sources.
+
+MODEL DISPATCH AND ORDER
+I explicitly authorize delegated agents for these seven phase-1 tasks, using
+the named model/effort where supported. Start each worker with a fresh context
+(fork_turns="none" if available), shared context, its packet, and paths to
+accepted dependency evidence. Do not inherit the full parent conversation.
+Default to sequential dispatch to simplify evidence and avoid duplicate work.
+
+1.1 — gpt-6.1-sol / low
+Read: design/rev-1.2-execution-contexts/1.1-live-baseline-and-compact-context.txt
+Snapshot the live project; export fresh ERC/DRC/parity/netlist and component,
+pad/net and stackup summaries. Create the compact working context and state.
+Do not fix the historical three opens or force reports to old counts.
+
+1.2 — gpt-6-luna / medium; after 1.1
+Read: design/rev-1.2-execution-contexts/1.2-primary-source-component-evidence.txt
+Extract exact selected-part ratings, conditions, pin/package drawings and
+thermal/process evidence. Work in bounded component-family batches. Record
+sources/revisions/pages/hashes and UNKNOWN fields; do not infer substitutes.
+
+1.3 — gpt-6.1-sol / low; after 1.1
+Read: design/rev-1.2-execution-contexts/1.3-as-built-pin-and-connector-maps.txt
+Derive the actual GPIO/expander/connector maps from fresh exports. Keep current
+hardware and proposed Z-limit allocation separate. Flag stale documentation.
+
+1.4 — gpt-6.1-sol / high; after 1.2 and 1.3
+Read: design/rev-1.2-execution-contexts/1.4-reset-and-inhibit-behavior.txt
+Audit cold/warm reset, rail sequencing, retained expander outputs, watchdog,
+E-stop, driver faults, mode jumpers and explicit re-arm. Produce source-backed
+truth tables/timing targets; distinguish DC braking from high-impedance stop.
+
+1.5 — gpt-6.1-sol / high; after 1.2 and 1.3
+Read: design/rev-1.2-execution-contexts/1.5-power-path-and-protection-budget.txt
+Calculate STEPPER_ONLY and COMBINED budgets: shared Q1/input paths, bridge,
+fuse/connectors, buck/LDO, ESP32/radio, logic and peripherals. Review voltage
+margins, clamps and bounded regenerative energy with explicit BMS/sink assumptions.
+
+1.6 — gpt-6.1-sol / high; after 1.2 and 1.5
+Read: design/rev-1.2-execution-contexts/1.6-driver-and-board-thermal-model.txt
+Calculate DDWR losses at 2/3/3.5 A RMS and shared/local passive thermal paths.
+Include PCB/via/TIM resistance between the bottom pad and underside heatsink,
+hot/tolerance losses and uncertainty. Compare actual 1 oz copper with justified
+2 oz/via options. Derive heatsink/interface requirements rather than guessing.
+
+1.7 — gpt-6-astra / medium; after 1.4, 1.5 and 1.6
+Read: design/rev-1.2-execution-contexts/1.7-independent-electrical-and-thermal-gate.txt
+Independently inspect original evidence, reconstruct representative inhibit
+paths and recompute representative power/hot/shared-sink cases. Challenge
+cross-domain contradictions. Return phase decisions, blockers and the gate.
+The reviewer must not merely endorse summaries or modify the design.
+
+Model names in text do not change a running session. Record actual model and
+effort if exposed. If requested routing is unavailable, report the limitation
+and provide the next exact handoff; do not silently run the entire phase on a
+different model or claim that an independent reviewer was used when it was not.
+
+FIXED DESIGN INTENT
+- Keep DRV8462DDWR, board outline, main layout, original upright JST-XH motor
+  connectors, three external interfaces and passive cooling; no fan.
+- 7S lithium-ion, 29.4 V fully charged, 32 V normal design ceiling.
+- Three axes at 2 A RMS normal; 3 A RMS higher-current qualification target.
+  3.5 A RMS is a driver-side thermal design case, not an automatic port rating.
+  Respect the retained JST-XH 3 A/AWG22 specification. A 5 A RMS/~7 A sinusoidal-
+  peak implementation belongs to a later revision.
+- Propose 40 C ambient and driver junction <=125 C including uncertainty.
+  Model all three axes and common-sink coupling. Include ESP32 and shared
+  input/regulator heat even when DC commands are off.
+- COMBINED additionally includes agreed DC edge bursts: up to 150 W electrical
+  input per motor for one second. Derive continuous/repetition/total limits.
+  Phase current, battery current, consumed power and returned energy differ.
+- Z-limit addition is accepted in principle: J607 MIN/GND/MAX, same pull-up/
+  series/RC front end, U704 pins19/20 IO1_6/IO1_7; nominal connector-bank shift
+  +10.5 mm down. Review its allocation/fit requirements; do not implement it.
+
+SOURCE AND OUTPUT DISCIPLINE
+Native source, project settings, custom libraries/footprints and preserved
+manufacturing releases remain read-only. Do not run a legacy rebuild or stale
+candidate script. Some helpers write on import, and native pcbnew SaveBoard
+can rewrite project settings: inspect before using and run checks on snapshots.
+Preserve user/editor changes; never restore an old snapshot over the live PCB.
+
+Write only under work/rev-1.2-completion/:
+- packets/<ID>/evidence/: raw reports, sources, calculations, tables and plots.
+- packets/<ID>/result.json: the shared-schema result with input hashes, checks,
+  changed/output files, issues/owners and actual model/effort if known.
+- state.json, context.txt and file-index.csv: compact live execution records.
+- gate-1.txt: final phase recommendation and unresolved items.
+
+Validate dependencies and hashes before using their reports. TASK_COMPLETE
+means the packet's analysis/deliverables are complete, not that the circuit
+passed every engineering target. A completed analysis may identify a design
+blocker; keep it visible for 1.7 and continue other independent analysis where
+evidence permits. Do not alter assumptions to manufacture a passing budget.
+For genuinely missing prerequisites, record exactly what is absent and finish
+unaffected work. Missing physical tests are not a phase-1 failure requiring
+boards we do not yet have; retain them as explicit post-fabrication tests.
+
+Do not modify CAD, implement firmware, reroute, add connectors/vias, select an
+unreviewed replacement, commit/push, upload, contact suppliers or order parts.
+Do not start unrelated phases or extra agents. Escalate a narrow unresolved
+engineering contradiction with its original evidence, not the whole history.
+
+FINAL PHASE-1 HANDOFF
+Provide:
+1. Per-packet completion/check status and actual model/effort where available.
+2. Actual pin map and source-linked inhibit/stop/recovery truth table.
+3. Separate stepper-only/combined power budgets and bounded protection envelope.
+4. Thermal assumptions, 2/3/3.5 A results, PCB/via/sink allocation and uncertainty.
+5. Minimal necessary design changes, grouped into blockers, recommended
+   improvements, fabrication questions and post-fabrication measurements.
+6. Accepted decisions versus unresolved specifications, with named owners and
+   precise evidence needed; proposed changes are not applied or auto-approved.
+7. Root source hash comparison, independently reviewed gate recommendation and
+   the exact proposed scope for phase 2.
+
+STOP after this handoff. Do not implement phase 2, even if changes look simple.

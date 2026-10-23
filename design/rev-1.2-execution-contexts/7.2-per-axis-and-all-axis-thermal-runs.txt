@@ -1,0 +1,84 @@
+TASK 7.2 — Per-axis and all-axis thermal runs
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 4-8k per run family tokens, soft, including relevant loaded evidence.
+Work mode: HUMAN BENCH + analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Human performs progressive 2 A then allowed 3 A stepper-only tests, including hold and motion; model analyzes temperature/current/voltage trends and equilibrium.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/7.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Analyze actual human-run stepper tests, not simulated thermal images. Normal operation is up to 2 A RMS/phase; 3 A is a higher-current target only after the prior level passes. Stationary hold and microstep position can be thermally important even when the motor is not moving.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/7.1/evidence/qualification-matrix.csv
+- work/rev-1.2-completion/packets/7.1/evidence/measurement-uncertainty.txt
+- work/rev-1.2-completion/packets/7.1/evidence/junction-estimation-method.txt
+- Actual logged phase/bus currents, temperatures, diagnostic state and configured motor/heat assembly
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own raw measurement copies, calculations/plots and results; no source edits or remote bench actuation
+Own report root: work/rev-1.2-completion/packets/7.2/evidence/
+Own result: work/rev-1.2-completion/packets/7.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Validate each run metadata, motor/current convention, harness, heatsink/TIM, ambient and firmware profile. Flag clipped/missing/misreferenced sensors before calculating a margin.
+2. Analyze progressive single-axis and all-three-axis 2 A, then allowed 3 A stepper-only runs. Cover full-current stationary holding and motion; do not count automatic hold-current reduction as evidence for a full-current rating.
+3. Plot equilibrium and trends for drivers, board/contact regions, Q1, regulators, ESP32, connectors and bulk caps. Combine measured data with the accepted junction method and uncertainty; compute connector rise and measured voltage drop.
+4. Compare observations against the model and criteria, distinguishing model error from measurement setup effects. Return pass/derate/needs-investigation by profile, current and environment.
+5. Preserve raw logs and next minimal diagnostic experiment. Missing physical data returns AWAITING_HARDWARE.
+
+REQUIRED OUTPUTS
+- raw-stepper-runs/
+- stepper-results.csv
+- thermal-current-plots/
+- model-versus-measurement.csv
+- stepper-qualification-issues.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Supported limits use actual all-axis/hold data, correct current and uncertainty; proposed temperature limits satisfied or derating explicit.
+- No extrapolation above measured current/environment or connector specification.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Unexpected hot spot/drift/fault: stop increasing current; send raw setup/data to Sol High for root-cause work.
+- Measured and modeled results diverge: do not tune assumptions solely to force a pass.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,87 @@
+TASK 7.1 — Qualification experiment design
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Freeze matrix for current, all-axis concurrency, hold/motion, ambient, heatsink orientation, DC duty, cables and calibration uncertainty. Define stop/acceptance criteria before testing.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/6.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Freeze experiments before running higher loads. Requirements include all-three-axis concurrency, stationary holding and motion, stepper-only versus combined profiles, proposed 40 C ambient and <=125 C driver junction estimate including uncertainty. The retained XH ports are not automatically qualified above their specification.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/6.3/evidence/phase-6-review.txt
+- work/rev-1.2-completion/packets/1.6/evidence/thermal-assumptions.json
+- work/rev-1.2-completion/packets/1.5/evidence/protection-envelope.txt
+- work/rev-1.2-completion/packets/3.2/evidence/cooling-stack.json
+- work/rev-1.2-completion/packets/4.5/evidence/profile-limit-table.csv
+- design/rev-1.2-completion-plan.txt
+- Available actual motors/cables/environment and calibrated instrument capabilities
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own experiment design, data/uncertainty schema and blank templates only
+Own report root: work/rev-1.2-completion/packets/7.1/evidence/
+Own result: work/rev-1.2-completion/packets/7.1/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Define the actual motor winding/current characteristics, cable/contact construction, heatsink/TIM, orientation, enclosure and ambient for each case. Record limits of representativeness when actual peripherals differ.
+2. Create staged per-axis then simultaneous stepper-only runs from normal 2 A toward allowed 3 A, covering hold positions, low-speed chopping, representative motion and both load/minimal radio modes.
+3. Define independent DC/combined-load bursts and repetition limits, then bounded stopping/backdrive cases only inside the reviewed energy-sink envelope. Do not derive regenerated energy from consumed-power labels.
+4. Specify measurement sites, signed bus and phase current conventions, sensor/probe bandwidth, sample rates, equilibrium criterion and a junction-estimation method with uncertainty. A case temperature plus generic theta-JA is not that method.
+5. Set stop/pass criteria and raw-data naming before testing. Exclude 3.5 A port tests unless exact connector/path specifications permit them; thermal calculations alone cannot authorize over-rating a port.
+
+REQUIRED OUTPUTS
+- qualification-matrix.csv
+- measurement-uncertainty.txt
+- junction-estimation-method.txt
+- blank-qualification-results.csv
+- qualification-stop-criteria.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Matrix isolates assumptions and covers both profiles and all-axis heating, including full-current hold.
+- Every planned physical test is bounded by actual part/sink/instrument capabilities; no premature pass.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Unavailable ambient/load/instrument prevents target coverage: identify the limited rating that can actually be tested.
+- 3.5 A requires a new connector specification: keep disabled and return the hardware requirement instead of treating it as a test-only waiver.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

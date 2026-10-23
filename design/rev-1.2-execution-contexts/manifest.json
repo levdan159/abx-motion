@@ -1,0 +1,515 @@
+{
+  "prepared_date": "2026-10-22",
+  "planning_only": true,
+  "agents_launched": 0,
+  "implementation_tasks_executed": 0,
+  "packet_count": 37,
+  "shared_context_path": "design/rev-1.2-execution-contexts/00-project-context.txt",
+  "shared_context_sha256": "61e1262be2aa31095e742949ee38bbedee0d325650b5a9d826e9a74c7ad951bb",
+  "result_schema_path": "design/rev-1.2-execution-contexts/result.schema.json",
+  "planning_source_hashes_not_baseline_execution": {
+    "abx-motion.kicad_pcb": "608dda123833825c678cbcbc39477c06abf48fa7c8d630b5e87aae48d6f5453d",
+    "abx-motion.kicad_pro": "eedd17618fe28db9453066f3fa8c5c7b5ac2e4029340d61e3a08401fc42c4fbe",
+    "sym-lib-table": "7cf12b11827c34b9f3262f5ef1e910a32c2ad25577e9cd40134f41b433d445e5",
+    "fp-lib-table": "1a56162efe16b4cacddc1e89cb3c807f7129eab726e33b406658221185564c1c",
+    "abx-r12-symbols.kicad_sym": "c89e1b4a1762c3fb47bd5d25203f8f115b021cc1ac9d80f9f4c6c33aa5ba745c",
+    "abx-footprints.pretty/DRV8462_DDW0044E.kicad_mod": "7667bacd0b45a5e98aa01f7eb5260e7684ce92bcd0273ab1c52e81730d2e7bd3",
+    "MCU.kicad_sch": "2b2e85a294cb3ceea930b5900720c91eee5f2084fcc161220e4e8f0f859919b3",
+    "Power.kicad_sch": "36aae5a844fdfcffbf38b0b831bf7526580d5d771afdc68a4e2d8a5a9504dac6",
+    "Steppers_Relays.kicad_sch": "aa8c5554327ea15a562b9a4dcb2bd5154923673d63f45c34e2847f3224408b8f",
+    "abx-motion.kicad_sch": "9a633c1446f71a0375b2b5472898a49961039968862671f65b8bccbd6193e8eb",
+    "Industrial_IO.kicad_sch": "9b9336bc5b1dd5236894721a8d63f69b86230ceb6132d9fdd99e63d4c3de27d2",
+    "Motor_Channel.kicad_sch": "7a2559e14bc14dbfa517d554200e2d2cbd091497576e0a4d7e8e628a5a967383"
+  },
+  "packets": [
+    {
+      "id": "1.1",
+      "path": "design/rev-1.2-execution-contexts/1.1-live-baseline-and-compact-context.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "dependencies": [],
+      "status": "PLANNED",
+      "prompt_sha256": "dc3d99b49c7fa0d190acb307f2ab29770c667f26484c9fede96f805bc1aad4cd",
+      "shared_plus_prompt_characters": 13741,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3436
+    },
+    {
+      "id": "1.2",
+      "path": "design/rev-1.2-execution-contexts/1.2-primary-source-component-evidence.txt",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "dependencies": [
+        "1.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "c0b542adc87991a19fc61054a7ac7e232a285f1ce135325c566d0c340d7b67ad",
+      "shared_plus_prompt_characters": 12192,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3048
+    },
+    {
+      "id": "1.3",
+      "path": "design/rev-1.2-execution-contexts/1.3-as-built-pin-and-connector-maps.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "dependencies": [
+        "1.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "e762bf2e4286b7cbebc0168eef4161870c33efa5830b2a1d477098bc5f7b8f3a",
+      "shared_plus_prompt_characters": 11876,
+      "approx_shared_plus_prompt_tokens_chars_div4": 2969
+    },
+    {
+      "id": "1.4",
+      "path": "design/rev-1.2-execution-contexts/1.4-reset-and-inhibit-behavior.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "1.2",
+        "1.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "31db341bee6941063b94a352275123fec1e77b3c1aaf47bff57fa70aa8bfef28",
+      "shared_plus_prompt_characters": 12402,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3101
+    },
+    {
+      "id": "1.5",
+      "path": "design/rev-1.2-execution-contexts/1.5-power-path-and-protection-budget.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "1.2",
+        "1.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "72b55aeceeb7f4a9dd5ab80b7ea81d01ac3c73e7fd27bce42c2306f72d4700cb",
+      "shared_plus_prompt_characters": 12569,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3143
+    },
+    {
+      "id": "1.6",
+      "path": "design/rev-1.2-execution-contexts/1.6-driver-and-board-thermal-model.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "1.2",
+        "1.5"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "9f16b74285012f09a7eae4a7b5a15bc88a0dd162ab43ce2aa69508a15e29fa3c",
+      "shared_plus_prompt_characters": 12802,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3201
+    },
+    {
+      "id": "1.7",
+      "path": "design/rev-1.2-execution-contexts/1.7-independent-electrical-and-thermal-gate.txt",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "dependencies": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "cf66749050df58c4864ab13f0e3fa6ca32485d1656686819d3e7db841ae4850c",
+      "shared_plus_prompt_characters": 12742,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3186
+    },
+    {
+      "id": "2.1",
+      "path": "design/rev-1.2-execution-contexts/2.1-z-limit-schematic-and-placement.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "1.7"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "cf975744205c092e174d70a78783b5eff135bfa4751a26177b9a27db741b38a7",
+      "shared_plus_prompt_characters": 12805,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3202
+    },
+    {
+      "id": "2.2",
+      "path": "design/rev-1.2-execution-contexts/2.2-reconnect-moved-bank-and-z-inputs.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "2.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "ca3c52dc9e7ec5789ce6e403ab47e5d881a2e7742b330aa5704f7eb4df9d1bef",
+      "shared_plus_prompt_characters": 12201,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3051
+    },
+    {
+      "id": "2.3",
+      "path": "design/rev-1.2-execution-contexts/2.3-u702-sleep-pin-escape.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "2.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "c65736e773b081db50f843acabcb7908d0298df90759e44c992b353e8f3cc8d6",
+      "shared_plus_prompt_characters": 12056,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3014
+    },
+    {
+      "id": "2.4",
+      "path": "design/rev-1.2-execution-contexts/2.4-close-cs-and-e-stop-feed-gaps.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "2.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "77ab99320dfa00d90808f47d6b2afe3f35a83c0da9f33d3c4f1546649ee963b2",
+      "shared_plus_prompt_characters": 11834,
+      "approx_shared_plus_prompt_tokens_chars_div4": 2959
+    },
+    {
+      "id": "2.5",
+      "path": "design/rev-1.2-execution-contexts/2.5-dvdd-loops-and-signal-cleanup.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "2.4"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "6fab6c6c5f1440b1dcbf02609277a551dd36628796a53e2c03282051cf9301a2",
+      "shared_plus_prompt_characters": 12160,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3040
+    },
+    {
+      "id": "2.6",
+      "path": "design/rev-1.2-execution-contexts/2.6-silkscreen-and-connector-legends.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "dependencies": [
+        "2.5"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "86b2dab2c08151faa5ffa78a517bbab2df3474b10ecea2a5c1763d83eda06620",
+      "shared_plus_prompt_characters": 11753,
+      "approx_shared_plus_prompt_tokens_chars_div4": 2939
+    },
+    {
+      "id": "2.7",
+      "path": "design/rev-1.2-execution-contexts/2.7-layout-regression-review.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "2.6"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "5933a47e9f26c84f1913c3904623d61d97879d9571bda78cbc49a6730847e9e0",
+      "shared_plus_prompt_characters": 12387,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3097
+    },
+    {
+      "id": "3.1",
+      "path": "design/rev-1.2-execution-contexts/3.1-exact-sourcing-evidence.txt",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "dependencies": [
+        "1.7"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "7da0b7ebb0c18438ab3d3f3d5ee8117d449d6069109ab4ae17437f910024adce",
+      "shared_plus_prompt_characters": 11875,
+      "approx_shared_plus_prompt_tokens_chars_div4": 2969
+    },
+    {
+      "id": "3.2",
+      "path": "design/rev-1.2-execution-contexts/3.2-passive-heatsink-assembly.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "2.7",
+        "3.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "668668c1adbc0b35b09083f21f443cbaebab7c9166eebafff19108ac31df2e2f",
+      "shared_plus_prompt_characters": 12610,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3153
+    },
+    {
+      "id": "3.3",
+      "path": "design/rev-1.2-execution-contexts/3.3-thermal-copper-and-fabrication-construction.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "3.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "687362fc66b835e62649630f69fba5049554f89cafbbe69a639ba1374abc4c8d",
+      "shared_plus_prompt_characters": 12608,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3152
+    },
+    {
+      "id": "3.4",
+      "path": "design/rev-1.2-execution-contexts/3.4-mechanical-and-procurement-freeze.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "3.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "6fb93493e6bd9b914fc4ae21cc4a540cb19caf07c6a72b765651438a0e207f74",
+      "shared_plus_prompt_characters": 12241,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3061
+    },
+    {
+      "id": "4.1",
+      "path": "design/rev-1.2-execution-contexts/4.1-firmware-board-definition-and-diagnostics-skeleton.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "dependencies": [
+        "1.7"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "73e0e790df554aef049058f99f2f8bfc5fe179561a94338c630bbbb1716727fd",
+      "shared_plus_prompt_characters": 12260,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3065
+    },
+    {
+      "id": "4.2",
+      "path": "design/rev-1.2-execution-contexts/4.2-arming-watchdog-and-latched-faults.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "4.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "3b6583858e72ac88799eba08b521ad92d3bb46a61dfd6b6c5f4986c58897aaad",
+      "shared_plus_prompt_characters": 12414,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3104
+    },
+    {
+      "id": "4.3",
+      "path": "design/rev-1.2-execution-contexts/4.3-hardware-pulse-generation-and-motion-bounds.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "4.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "1028bf20d9100b933bb945d5f27c95255a8803211b4ecd5ad8bdff6449f5d203",
+      "shared_plus_prompt_characters": 12032,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3008
+    },
+    {
+      "id": "4.4",
+      "path": "design/rev-1.2-execution-contexts/4.4-limits-and-onboard-external-modes.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "4.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "9909d196ed173f1994b43f9c7e0b8a8f0cafe3fa6a6cbc1adf1fb29a3e4b6cf0",
+      "shared_plus_prompt_characters": 12244,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3061
+    },
+    {
+      "id": "4.5",
+      "path": "design/rev-1.2-execution-contexts/4.5-operating-profiles-telemetry-and-calibration.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "4.4"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "750226ac391181a121bbae480f887b049ee5ff383637e12686e1b6c10da7229a",
+      "shared_plus_prompt_characters": 12561,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3141
+    },
+    {
+      "id": "4.6",
+      "path": "design/rev-1.2-execution-contexts/4.6-firmware-integration-gate.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "4.5",
+        "3.4"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "5baf1b8cc6798add0ef10c096f28c95c0f4f39503d980028b4b066a3820436dc",
+      "shared_plus_prompt_characters": 12363,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3091
+    },
+    {
+      "id": "5.1",
+      "path": "design/rev-1.2-execution-contexts/5.1-reproducible-first-article-export.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "dependencies": [
+        "3.4",
+        "4.6"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "eed6ed51bf645c8d7c64b5025d30a45b98c23c1246f30abf65c8c7d023b69178",
+      "shared_plus_prompt_characters": 12331,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3083
+    },
+    {
+      "id": "5.2",
+      "path": "design/rev-1.2-execution-contexts/5.2-cam-numbered-pad-and-assembly-audit.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "5.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "5d9c3b300e1a5f2da130162ad2c44bd121f7ae96e20c0c05babfa506859dae16",
+      "shared_plus_prompt_characters": 12549,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3138
+    },
+    {
+      "id": "5.3",
+      "path": "design/rev-1.2-execution-contexts/5.3-independent-first-article-release-gate.txt",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "dependencies": [
+        "5.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "2bd5f08ebdd995e90bfaad445d5685dfaf36b89432464f726ba304ae0509130d",
+      "shared_plus_prompt_characters": 12434,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3109
+    },
+    {
+      "id": "6.1",
+      "path": "design/rev-1.2-execution-contexts/6.1-bench-fixture-and-commissioning-procedure.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "5.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "142290b6f135f57ecf958b63f2230cf12c4351e96da14676cbfac093dccea588",
+      "shared_plus_prompt_characters": 12563,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3141
+    },
+    {
+      "id": "6.2",
+      "path": "design/rev-1.2-execution-contexts/6.2-first-power-and-interface-evidence.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "6.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "5eb981d42e176b4aad11be9981c41a3f5eb8942b06420b8b6c6547bffe1e7e85",
+      "shared_plus_prompt_characters": 12249,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3063
+    },
+    {
+      "id": "6.3",
+      "path": "design/rev-1.2-execution-contexts/6.3-fault-timing-and-low-current-motors.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "6.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "e10e166f9048fc461c97ff50d1ef17b0fabe2b5d09446f6509a57637aa7a1d5c",
+      "shared_plus_prompt_characters": 12462,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3116
+    },
+    {
+      "id": "7.1",
+      "path": "design/rev-1.2-execution-contexts/7.1-qualification-experiment-design.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "6.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "05393c0fde4051a1d23c53583052d7ae4cd8678854834c63b0a231b54a6398b2",
+      "shared_plus_prompt_characters": 12655,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3164
+    },
+    {
+      "id": "7.2",
+      "path": "design/rev-1.2-execution-contexts/7.2-per-axis-and-all-axis-thermal-runs.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "dependencies": [
+        "7.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "6543b4fad8e9e7c9505c05e6c1680ba1e406d150166a4cf1e2b37816028dc4db",
+      "shared_plus_prompt_characters": 12285,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3072
+    },
+    {
+      "id": "7.3",
+      "path": "design/rev-1.2-execution-contexts/7.3-combined-loading-and-regenerative-limits.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "7.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "63b2953351f43650a84f409d165b77ff09daf532b5bd0f1103e60821eead4c72",
+      "shared_plus_prompt_characters": 12525,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3132
+    },
+    {
+      "id": "7.4",
+      "path": "design/rev-1.2-execution-contexts/7.4-derive-validated-limits-and-calibration.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "7.2",
+        "7.3"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "e8776fcb739e609d0c1ead5645c49986b50d2f83f1d2be80fe79ad872c3bd25d",
+      "shared_plus_prompt_characters": 12599,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3150
+    },
+    {
+      "id": "8.1",
+      "path": "design/rev-1.2-execution-contexts/8.1-instrument-manual-and-unit-records.txt",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "dependencies": [
+        "7.4"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "04f72ff957c425f4c09f339288642aac2d352c656bb92875e6701c18ca87643a",
+      "shared_plus_prompt_characters": 12306,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3077
+    },
+    {
+      "id": "8.2",
+      "path": "design/rev-1.2-execution-contexts/8.2-reproduction-and-release-archive.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "low",
+      "dependencies": [
+        "8.1"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "2aa6ecf4d37dfb2ba9936281dd89b12e1ca5a766c2d14e54681736f3fbe7af0d",
+      "shared_plus_prompt_characters": 12133,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3034
+    },
+    {
+      "id": "8.3",
+      "path": "design/rev-1.2-execution-contexts/8.3-final-evidence-and-traceability-review.txt",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "dependencies": [
+        "8.2"
+      ],
+      "status": "PLANNED",
+      "prompt_sha256": "0237321af1704c6b0bd97c22255a99ae4c06ff50717883c42e9ab58fa36b1162",
+      "shared_plus_prompt_characters": 12265,
+      "approx_shared_plus_prompt_tokens_chars_div4": 3067
+    }
+  ],
+  "note": "Token estimates are rough characters/4 for prompt+shared text only, excluding source/tool context. Live 1.1 execution must refresh source state."
+}

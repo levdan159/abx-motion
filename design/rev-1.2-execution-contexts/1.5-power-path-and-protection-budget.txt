@@ -1,0 +1,90 @@
+TASK 1.5 — Power path and protection budget
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Calculate STEPPER_ONLY and COMBINED input/component currents, Q1 and regulator dissipation, fuse/connector/copper limits and bounded return-energy envelope. Include radio/peripheral loads and tolerances.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.2/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/1.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Two operating profiles are required. STEPPER_ONLY has DC outputs unloaded and commands locked off but still includes shared Q1/regulator, logic/radio/peripheral heat. COMBINED includes declared DC duty. Battery capability, summed phase currents and fuse markings are not board ratings.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.2/evidence/component-evidence.csv
+- work/rev-1.2-completion/packets/1.3/evidence/pinmap.csv
+- work/rev-1.2-completion/packets/1.1/evidence/geometry-summary.json
+- Power.kicad_sch
+- Motor_Channel.kicad_sch
+- Steppers_Relays.kicad_sch
+- Industrial_IO.kicad_sch
+- validation/robustness-final-20261020/bench-procedure.txt (historical test design)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own reproducible calculations and reports only
+Own report root: work/rev-1.2-completion/packets/1.5/evidence/
+Own result: work/rev-1.2-completion/packets/1.5/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Build explicit load cases at 29.4 V and 32 V with low-voltage pack/current sensitivity. Include stepper conversion efficiency and motor operating assumptions; do not set battery current by adding phase RMS currents.
+2. Calculate Q1 loss, voltage drops, shared trace/via/connector current, fuse coordination, buck/LDO dissipation and supply headroom under Wi-Fi, relay, OLED and AUX loads. Check actual source values rather than copying Rev1.1 arithmetic.
+3. Evaluate input TVS/clamp, Q1/gate, bridge and capacitor voltage limits together including tolerance and pulse conditions. Separate allowed normal bus ceiling from transient acceptance.
+4. Define a bounded braking/backdrive envelope with the pack/BMS or external sink assumptions. The agreed 150 W per DC motor for one second is consumed electrical power, not known regenerated energy.
+5. Return proposed per-profile current/duty caps and failed budgets. Identify minimal changes and required measurements; never claim extra copper cures an overloaded regulator.
+
+REQUIRED OUTPUTS
+- power-budget.csv
+- protection-envelope.txt
+- power-calculations.py
+- power-results.json
+- power-issues.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Units, tolerance/corner assumptions and current conventions are explicit and reproducible.
+- Every shared input/regulator path is considered for both profiles; no unexplained pass based on battery/fuse label.
+- Unknown motor/BMS parameters bound the claim instead of being filled with optimistic values.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Unbounded regenerative energy or insufficient component margin: declare that operating case unsupported pending evidence/design change.
+- Conflicting heat/current demands: pass them explicitly to 1.6 and 1.7, not to a blind layout widening operation.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

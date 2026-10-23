@@ -1,0 +1,84 @@
+TASK 6.2 — First power and interface evidence
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 4-8k per result set tokens, soft, including relevant loaded evidence.
+Work mode: HUMAN BENCH + analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+A human technician inspects assembly, powers at intended voltage and checks rails, USB/battery modes and all interfaces. Model reviews supplied measurements and photos.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/6.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Human bench work is mandatory. If the board or actual readings are absent, prepare the capture checklist and return AWAITING_HARDWARE; do not manufacture screenshots, temperatures or functional passes. Inspect both solder assembly and the passive heatsink/TIM fit before motors.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/6.1/evidence/bench-procedure.txt
+- work/rev-1.2-completion/packets/6.1/evidence/pre-power-prerequisites.csv
+- work/rev-1.2-completion/packets/6.1/evidence/blank-bench-results.csv
+- Actual first-article photos, serial/HW/FW, instrument setup and human measurements
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own raw observation copies, analysis and bench records only; no CAD/firmware change or remote physical actuation
+Own report root: work/rev-1.2-completion/packets/6.2/evidence/
+Own result: work/rev-1.2-completion/packets/6.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Verify actual hardware/firmware/fixture matches the released package and pre-power prerequisites. Review unpowered polarity/short observations, PowerPAD inspection and sink compression/insulation/solder-tail clearance.
+2. Have the human follow the energy-limited no-motor first-power steps. Analyze actual VBAT, 5 V/3V3, consumption, sequencing and unexpected heating observations; stop progression for unexplained behavior.
+3. Review battery-only, USB-only and dual-power/backfeed readings with actual probe references. Confirm UI/radio/relay/peripheral rail droop/ripple under specified diagnostic commands.
+4. Record each limit including Z, encoders, AUX, communications, mode/interface and buttons/OLED observation. Keep raw evidence and pass/fail/inconclusive status tied to its setup.
+5. Return issues with the next minimal measurement needed; do not silently revise firmware/hardware while analyzing the bench state.
+
+REQUIRED OUTPUTS
+- assembly-observations.csv
+- first-power-results.csv
+- interface-results.csv
+- raw-bench-evidence/
+- commissioning-issues.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Actual evidence covers each required initial function without unintended energization, unexplained rail cycling/backfeed or heat.
+- Missing/inconclusive observations remain unrun; fixture and instrument identity retained.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- No physical evidence: AWAITING_HARDWARE, with required readings listed.
+- Any unexplained rail/heat/assembly behavior: halt test progression and escalate the narrow diagnostic issue to Sol High if needed.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

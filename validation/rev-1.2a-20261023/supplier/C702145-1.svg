@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.398mm" height="8.509mm" viewBox="3980.8 2983.3 37 33.5"><title></title><style type="text/css">
+*[layerid="1"] {stroke:#FF0000;fill:#FF0000;}
+*[layerid="2"] {stroke:#0000FF;fill:#0000FF;}
+*[layerid="3"] {stroke:#FFCC00;fill:#FFCC00;}
+*[layerid="4"] {stroke:#66CC33;fill:#66CC33;}
+*[layerid="5"] {stroke:#808080;fill:#808080;}
+*[layerid="6"] {stroke:#800000;fill:#800000;}
+*[layerid="7"] {stroke:#800080;fill:#800080;stroke-opacity:0.7;fill-opacity:0.7;}
+*[layerid="8"] {stroke:#AA00FF;fill:#AA00FF;stroke-opacity:0.7;fill-opacity:0.7;}
+*[layerid="9"] {stroke:#6464FF;fill:#6464FF;}
+*[layerid="10"] {stroke:#FF00FF;fill:#FF00FF;}
+*[layerid="11"] {stroke:#FFFFFF;fill:#FFFFFF;stroke-opacity:0.5;fill-opacity:0.5;}
+*[layerid="12"] {stroke:#FFFFFF;fill:#FFFFFF;}
+*[layerid="13"] {stroke:#33CC99;fill:#33CC99;}
+*[layerid="14"] {stroke:#5555FF;fill:#5555FF;}
+*[layerid="15"] {stroke:#F022F0;fill:#F022F0;}
+*[layerid="19"] {stroke:#66CCFF;fill:#66CCFF;}
+*[layerid="21"] {stroke:#800000;fill:#800000;}
+*[layerid="22"] {stroke:#008000;fill:#008000;}
+*[layerid="23"] {stroke:#00FF00;fill:#00FF00;}
+*[layerid="24"] {stroke:#BC8E00;fill:#BC8E00;}
+*[layerid="25"] {stroke:#70DBFA;fill:#70DBFA;}
+*[layerid="26"] {stroke:#00CC66;fill:#00CC66;}
+*[layerid="27"] {stroke:#9966FF;fill:#9966FF;}
+*[layerid="28"] {stroke:#800080;fill:#800080;}
+*[layerid="29"] {stroke:#008080;fill:#008080;}
+*[layerid="30"] {stroke:#15935F;fill:#15935F;}
+*[layerid="31"] {stroke:#000080;fill:#000080;}
+*[layerid="32"] {stroke:#00B400;fill:#00B400;}
+*[layerid="33"] {stroke:#2E4756;fill:#2E4756;}
+*[layerid="34"] {stroke:#99842F;fill:#99842F;}
+*[layerid="35"] {stroke:#FFFFAA;fill:#FFFFAA;}
+*[layerid="36"] {stroke:#99842F;fill:#99842F;}
+*[layerid="37"] {stroke:#2E4756;fill:#2E4756;}
+*[layerid="38"] {stroke:#3535FF;fill:#3535FF;}
+*[layerid="39"] {stroke:#8000BC;fill:#8000BC;}
+*[layerid="40"] {stroke:#43AE5F;fill:#43AE5F;}
+*[layerid="41"] {stroke:#C3ECCE;fill:#C3ECCE;}
+*[layerid="42"] {stroke:#728978;fill:#728978;}
+*[layerid="43"] {stroke:#39503F;fill:#39503F;}
+*[layerid="44"] {stroke:#0C715D;fill:#0C715D;}
+*[layerid="45"] {stroke:#5A8A80;fill:#5A8A80;}
+*[layerid="46"] {stroke:#2B937E;fill:#2B937E;}
+*[layerid="47"] {stroke:#23999D;fill:#23999D;}
+*[layerid="48"] {stroke:#45B4E3;fill:#45B4E3;}
+*[layerid="49"] {stroke:#215DA1;fill:#215DA1;}
+*[layerid="50"] {stroke:#4564D7;fill:#4564D7;}
+*[layerid="51"] {stroke:#6969E9;fill:#6969E9;}
+*[layerid="52"] {stroke:#9069E9;fill:#9069E9;}
+*[layerid="99"] {stroke:#00CCCC;fill:#00CCCC;stroke-opacity:0.6;fill-opacity:0.6;}
+*[layerid="100"] {stroke:#CC9999;fill:#CC9999;}
+*[layerid="101"] {stroke:#66FFCC;fill:#66FFCC;}
+*[layerid="Hole"] {stroke:#222222;fill:#222222;}
+*[layerid="DRCError"] {stroke:#FAD609;fill:#FAD609;}
+*[fill="none"] {fill: none;}
+*[stroke="none"] {stroke: none;}
+path, polyline, polygon, line {stroke-linecap:round;}
+g[c_partid="part_pad"][layerid="1"] ellipse:not([c_padid]) {fill:#FF0000;}
+g[c_partid="part_pad"][layerid="1"]  polygon:not([c_padid]) {fill:#FF0000;}
+g[c_partid="part_pad"][layerid="1"]  polyline:not([c_padid]) {stroke:#FF0000;}
+g[c_partid="part_pad"][layerid="1"]  circle {fill:#FF0000;}
+g[c_partid="part_pad"][layerid="2"]  ellipse:not([c_padid]) {fill:#0000FF;}
+g[c_partid="part_pad"][layerid="2"]  polygon:not([c_padid]) {fill:#0000FF;}
+g[c_partid="part_pad"][layerid="2"]  polyline:not([c_padid]) {stroke:#0000FF;}
+g[c_partid="part_pad"][layerid="2"]  circle {fill:#0000FF;}
+g[c_partid="part_pad"][layerid="11"]  ellipse:not([c_padid]) {fill:#FFFFFF;}
+g[c_partid="part_pad"][layerid="11"]  polygon:not([c_padid]) {fill:#FFFFFF;}
+g[c_partid="part_pad"][layerid="11"]  polyline:not([c_padid]) {stroke:#FFFFFF;}
+g[c_partid="part_pad"][layerid="11"]  circle {fill:#FFFFFF;}
+g[c_partid="part_pad"][layerid] > circle[c_padhole] {fill: #222222;}
+g[c_partid="part_pad"][layerid] > polyline[c_padhole] {stroke:#222222;}
+g[c_partid="part_via"][layerid] > * + circle {fill: #222222;}
+g[c_partid="part_pad"] > polygon[c_padid] {stroke-linejoin: miter;stroke-miterlimit: 100;}
+g[c_partid="part_hole"] > circle {fill: #222222;}path, polyline, polygon {stroke-linejoin:round;}
+rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges;}
+</style>
+<rect x="3980.8" y="2983.3" width="37" height="33.5" fill="#000000" stroke="none"/><g c_origin="4000.28,3000" c_para="package`VSON-8_L3.0-W3.0-P0.65-TL-EP`pre`U?`Contributor`lcsc`link`https://item.szlcsc.com/117124.html`3DModel`VSON-8_L3.0-W3.0-H1.0-P0.65-TL-EP`" c_transformList=""  xmlns="http://www.w3.org/2000/svg"><g c_partid="part_pad" c_etype="pinpart" c_origin="3994.47,2996.16" layerid="1" number="1" net="" plated ="Y" c_shapetype="group" id="gge54" locked="0" c_rotation="270" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="3996.143 2995.492 3996.143 2996.831 3992.797 2996.831 3992.797 2995.492" layerid="7" stroke-width="0.4" c_padid="gge54" /><polygon points="3996.143 2995.492 3996.143 2996.831 3992.797 2996.831 3992.797 2995.492" layerid="5" stroke-width="0" c_padid="gge54" /><polygon points="3996.143 2995.492 3996.143 2996.831 3992.797 2996.831 3992.797 2995.492" stroke-width="0" /><circle c_padhole="1" cx="3994.47" cy="2996.1614" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="3994.47,2998.72" layerid="1" number="2" net="" plated ="Y" c_shapetype="group" id="gge55" locked="0" c_rotation="270" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="3996.143 2998.051 3996.143 2999.389 3992.797 2999.389 3992.797 2998.051" layerid="7" stroke-width="0.4" c_padid="gge55" /><polygon points="3996.143 2998.051 3996.143 2999.389 3992.797 2999.389 3992.797 2998.051" layerid="5" stroke-width="0" c_padid="gge55" /><polygon points="3996.143 2998.051 3996.143 2999.389 3992.797 2999.389 3992.797 2998.051" stroke-width="0" /><circle c_padhole="1" cx="3994.47" cy="2998.72" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="3994.47,3001.28" layerid="1" number="3" net="" plated ="Y" c_shapetype="group" id="gge56" locked="0" c_rotation="270" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="3996.143 3000.611 3996.143 3001.949 3992.797 3001.949 3992.797 3000.611" layerid="7" stroke-width="0.4" c_padid="gge56" /><polygon points="3996.143 3000.611 3996.143 3001.949 3992.797 3001.949 3992.797 3000.611" layerid="5" stroke-width="0" c_padid="gge56" /><polygon points="3996.143 3000.611 3996.143 3001.949 3992.797 3001.949 3992.797 3000.611" stroke-width="0" /><circle c_padhole="1" cx="3994.47" cy="3001.28" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="3994.47,3003.84" layerid="1" number="4" net="" plated ="Y" c_shapetype="group" id="gge57" locked="0" c_rotation="270" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="3996.143 3003.171 3996.143 3004.509 3992.797 3004.509 3992.797 3003.171" layerid="7" stroke-width="0.4" c_padid="gge57" /><polygon points="3996.143 3003.171 3996.143 3004.509 3992.797 3004.509 3992.797 3003.171" layerid="5" stroke-width="0" c_padid="gge57" /><polygon points="3996.143 3003.171 3996.143 3004.509 3992.797 3004.509 3992.797 3003.171" stroke-width="0" /><circle c_padhole="1" cx="3994.47" cy="3003.84" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4006.09,3003.84" layerid="1" number="5" net="" plated ="Y" c_shapetype="group" id="gge58" locked="0" c_rotation="90" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="4004.417 3004.509 4004.417 3003.171 4007.763 3003.171 4007.763 3004.509" layerid="7" stroke-width="0.4" c_padid="gge58" /><polygon points="4004.417 3004.509 4004.417 3003.171 4007.763 3003.171 4007.763 3004.509" layerid="5" stroke-width="0" c_padid="gge58" /><polygon points="4004.417 3004.509 4004.417 3003.171 4007.763 3003.171 4007.763 3004.509" stroke-width="0" /><circle c_padhole="1" cx="4006.09" cy="3003.84" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4006.09,3001.28" layerid="1" number="6" net="" plated ="Y" c_shapetype="group" id="gge59" locked="0" c_rotation="90" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="4004.417 3001.949 4004.417 3000.611 4007.763 3000.611 4007.763 3001.949" layerid="7" stroke-width="0.4" c_padid="gge59" /><polygon points="4004.417 3001.949 4004.417 3000.611 4007.763 3000.611 4007.763 3001.949" layerid="5" stroke-width="0" c_padid="gge59" /><polygon points="4004.417 3001.949 4004.417 3000.611 4007.763 3000.611 4007.763 3001.949" stroke-width="0" /><circle c_padhole="1" cx="4006.09" cy="3001.28" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4006.09,2998.72" layerid="1" number="7" net="" plated ="Y" c_shapetype="group" id="gge60" locked="0" c_rotation="90" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="4004.417 2999.389 4004.417 2998.051 4007.763 2998.051 4007.763 2999.389" layerid="7" stroke-width="0.4" c_padid="gge60" /><polygon points="4004.417 2999.389 4004.417 2998.051 4007.763 2998.051 4007.763 2999.389" layerid="5" stroke-width="0" c_padid="gge60" /><polygon points="4004.417 2999.389 4004.417 2998.051 4007.763 2998.051 4007.763 2999.389" stroke-width="0" /><circle c_padhole="1" cx="4006.09" cy="2998.72" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4006.09,2996.16" layerid="1" number="8" net="" plated ="Y" c_shapetype="group" id="gge61" locked="0" c_rotation="90" c_width="1.3386" c_height="3.346" title="" c_shape="RECT" pasteExpansion="0" solderExpansion="0.2"><polygon points="4004.417 2996.829 4004.417 2995.491 4007.763 2995.491 4007.763 2996.829" layerid="7" stroke-width="0.4" c_padid="gge61" /><polygon points="4004.417 2996.829 4004.417 2995.491 4007.763 2995.491 4007.763 2996.829" layerid="5" stroke-width="0" c_padid="gge61" /><polygon points="4004.417 2996.829 4004.417 2995.491 4007.763 2995.491 4007.763 2996.829" stroke-width="0" /><circle c_padhole="1" cx="4006.09" cy="2996.16" r="0" stroke-width="0" /></g><g c_partid="part_pad" c_etype="pinpart" c_origin="4000.28,3000.02" layerid="1" number="9" net="" plated ="Y" c_shapetype="group" id="gge69" locked="0" c_rotation="0" c_width="5.9844" c_height="13.4648" title="" c_shape="POLYGON" pasteExpansion="0" solderExpansion="0.2"><polygon points="3997.288 2996.496 3998.43 2996.496 3998.43 2993.268 3999.571 2993.268 3999.571 2996.535 4000.989 2996.535 4000.989 2993.268 4002.13 2993.268 4002.13 2996.535 4003.272 2996.535 4003.272 3003.504 4002.13 3003.504 4002.13 3006.732 4000.989 3006.732 4000.989 3003.504 3999.571 3003.504 3999.571 3006.732 3998.43 3006.732 3998.43 3003.504 3997.288 3003.504 3997.288 2996.496 3997.288 2996.496 3997.288 2996.496 3997.288 2996.496" layerid="7" stroke-width="0.4" c_padid="gge69" /><polygon points="3997.288 2996.496 3998.43 2996.496 3998.43 2993.268 3999.571 2993.268 3999.571 2996.535 4000.989 2996.535 4000.989 2993.268 4002.13 2993.268 4002.13 2996.535 4003.272 2996.535 4003.272 3003.504 4002.13 3003.504 4002.13 3006.732 4000.989 3006.732 4000.989 3003.504 3999.571 3003.504 3999.571 3006.732 3998.43 3006.732 3998.43 3003.504 3997.288 3003.504 3997.288 2996.496 3997.288 2996.496 3997.288 2996.496 3997.288 2996.496" layerid="5" stroke-width="0" c_padid="gge69" /><polygon points="3997.288 2996.496 3998.43 2996.496 3998.43 2993.268 3999.571 2993.268 3999.571 2996.535 4000.989 2996.535 4000.989 2993.268 4002.13 2993.268 4002.13 2996.535 4003.272 2996.535 4003.272 3003.504 4002.13 3003.504 4002.13 3006.732 4000.989 3006.732 4000.989 3003.504 3999.571 3003.504 3999.571 3006.732 3998.43 3006.732 3998.43 3003.504 3997.288 3003.504 3997.288 2996.496 3997.288 2996.496 3997.288 2996.496 3997.288 2996.496" stroke-width="0" /><circle c_padhole="1" cx="4000.28" cy="3000.0197" r="0" stroke-width="0" /></g><g c_partid="part_via" c_etype="pinpart" c_shapetype="group" net="" c_origin="4000.28,3002.46" layerid="11" id="gge126" locked="" solderExpansion=""><circle cx="4000.28" cy="3002.46" r="0.9843" stroke-width="0" /><circle cx="4000.28" cy="3002.46" r="0.5906"  stroke-width="0" /></g><g c_partid="part_via" c_etype="pinpart" c_shapetype="group" net="" c_origin="4000.28,2997.54" layerid="11" id="gge134" locked="" solderExpansion=""><circle cx="4000.28" cy="2997.54" r="0.9843" stroke-width="0" /><circle cx="4000.28" cy="2997.54" r="0.5906"  stroke-width="0" /></g><g c_partid="part_via" c_etype="pinpart" c_shapetype="group" net="" c_origin="3998.31,3000" layerid="11" id="gge142" locked="" solderExpansion=""><circle cx="3998.31" cy="3000" r="0.9843" stroke-width="0" /><circle cx="3998.31" cy="3000" r="0.5906"  stroke-width="0" /></g><g c_partid="part_via" c_etype="pinpart" c_shapetype="group" net="" c_origin="4002.25,3000" layerid="11" id="gge150" locked="" solderExpansion=""><circle cx="4002.25" cy="3000" r="0.9843" stroke-width="0" /><circle cx="4002.25" cy="3000" r="0.5906"  stroke-width="0" /></g><polyline points="4000.283 2994 4000.277 2994" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge76" /><polyline points="4006.28 2994.785 4006.28 2994" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge81" /><polyline points="4002.836 3006 4006.28 3006 4006.28 3005.215" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge80" /><polyline points="4000.277 3006 4000.283 3006" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge79" /><polyline points="3994.28 3005.215 3994.28 3006 3997.724 3006" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge78" /><polyline points="3997.724 2994 3994.28 2994 3994.28 2994.785" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge77" /><polyline points="4006.28 2994 4002.836 2994" stroke-width="0.5906" c_shapetype="line" stroke-linecap="round" fill="none" layerid="3" net="" id="gge75" /><circle cx="3992.78" cy="2994" r="0.22" stroke-width="0.5906" fill="none" layerid="3" id="gge82" c_shapetype="line" /><circle cx="3991.28" cy="2996.16" r="0.49" stroke-width="0.9843" fill="none" layerid="12" id="gge119" c_shapetype="line" /></g></svg>

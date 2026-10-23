@@ -1,0 +1,7 @@
+reference,quantity,manufacturer,SKU_or_spec,requirement,source
+HS1_BLANK,1,Fischer Elektronik,SK 44 150 SA,"159 x150 x15 mm stock, 4 mm base /11 mm fins; cut length105; mill four bosses per Update B drawing",https://www.digikey.com/en/products/detail/fischer-elektronik/SK-44-150-SA/25832008
+TIM1-4,4 cut pieces,Henkel/Bergquist,GP5000S35-0.020-02-0404,"Three8x17 mm driver pieces + one3.6x3.0 mm U2 piece; 0.508 mm stock, target0.40 mm assembled; insulating",https://uk.rs-online.com/web/p/thermal-pads/7073421
+SCREWS,4,Commercial,ISO 4762 M3x10 A2,M3 x 10 socket-head; do not substitute longer fasteners into enclosure blindly,
+NUTS,4,Commercial,ISO 4032 M3 A2,"M3 hex nut, across flats 5.5 mm; captive recess or tool access",
+SPACERS,4,Machined PEEK/nylon,ABX-HS1-SPACER-2P00,OD6 / ID3.2 / height2.00 +/-0.03 mm; thickness measured after seating,
+WASHERS,4,Commercial,M3 nylon flat washer,"OD<=6 mm, thickness0.5 mm; verify corner component clearances",

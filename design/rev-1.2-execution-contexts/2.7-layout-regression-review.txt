@@ -1,0 +1,93 @@
+TASK 2.7 — Layout regression review
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: independent review
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Run fresh refill/ERC/DRC/parity and compare all old pad groups, allowed net changes, critical copper and new via-drill clearances. Review warning dispositions and actual layout.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/2.6/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Review the actual integrated board, not only the last script outputs. Z addition and any intentional local fanout changes are allowed; unrelated power, DC stage and thermal regressions are not. A zero error collection does not hide open-link or parity collections.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- abx-motion.kicad_pcb
+- abx-motion.kicad_sch
+- Industrial_IO.kicad_sch
+- Steppers_Relays.kicad_sch
+- Power.kicad_sch
+- MCU.kicad_sch
+- Motor_Channel.kicad_sch
+- work/rev-1.2-completion/packets/1.1/evidence/source-hashes.json
+- work/rev-1.2-completion/packets/2.1/evidence/removed-copper-manifest.json
+- work/rev-1.2-completion/packets/2.5/evidence/cleanup-manifest.json
+- work/rev-1.2-completion/packets/2.6/evidence/label-changes.json
+- work/rev-1.2-completion/packets/1.7/evidence/phase-1-decisions.json
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own verification artifacts and completion-root gate-2.txt; root read-only
+Own report root: work/rev-1.2-completion/packets/2.7/evidence/
+Own result: work/rev-1.2-completion/packets/2.7/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Independently export/refill/check the current source snapshot, using its current hash, and parse ERC errors, DRC errors, opens, parity and all warning types separately.
+2. Compare every old pad-net identity and connected group. Allow only the explicitly accepted Z net additions/pin changes and logged local edits. Check board outline, motor/BATT conductors and In1 GND continuity.
+3. Check new via-drill/SMD-solder-land conflicts and actual thermal/contact regions. Verify no retained via was silently reassigned by moved-pad overlap.
+4. Classify remaining warnings with item-level/grouped evidence. Independently inspect silk orientation and representative pin1/connector mapping; do not refresh all footprints to silence instance mismatch warnings.
+5. Return the phase gate with exact blocker list or recommendation. Cooling construction still needs phase3; no fabrication readiness claim from routing success alone.
+
+REQUIRED OUTPUTS
+- integrated-erc.json
+- integrated-drc.json
+- integrated-netlist.xml
+- topology-regression.json
+- warning-dispositions.csv
+- phase-2-review.txt
+- completion-root gate-2.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Zero opens, unexplained errors or parity mismatches; intentional deltas documented and previously connected retained groups preserved.
+- Warning dispositions and independent geometry evidence complete enough to enter mechanical/thermal freeze.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- A regression exists: return exact affected item/net and originating packet; do not fix circuit/routing while serving as independent reviewer.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

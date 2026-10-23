@@ -1,0 +1,85 @@
+TASK 2.5 — DVDD loops and signal cleanup
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 4-8k tokens, soft, including relevant loaded evidence.
+Work mode: single CAD writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Trial in-place capacitor flips and shorter supply/return loops; retire only proven orphan stubs and redundant signal geometry. Keep intentional current and thermal structures.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/2.4/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+C716/C726/C736 are independent DVDD capacitors. Historical trace lengths are about 5.5/6.6/7.8 mm. An in-place 180 deg rotation may face DVDD pad1 toward pin24. Moving these caps right collided with EXT header courtyards. Many dangling warnings are intentional parallel-power structures.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- abx-motion.kicad_pcb
+- work/rev-1.2-completion/packets/1.6/evidence/cooling-requirements.txt
+- work/rev-1.2-completion/packets/2.4/evidence/pad-group-audit.json
+- work/rev-1.2-electrical/layout-review-20261022/metrics.json (historical)
+- work/rev-1.2-electrical/layout-review-20261022/review.txt
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- abx-motion.kicad_pcb and own cleanup evidence only
+Own report root: work/rev-1.2-completion/packets/2.5/evidence/
+Own result: work/rev-1.2-completion/packets/2.5/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Extract each actual DVDD supply/ground loop and measure route topology before modifying. Trial one capacitor flip at a time, reconnecting both pads with a shorter complete loop and practical local ground return.
+2. Retire old GND vias that would sit beneath a newly live DVDD pad before reload. Preserve all three separate DVDD nets; never connect driver internal regulator outputs together.
+3. Classify dangling signal ends/vias by real pad connectivity and useful remaining destination. Remove only confirmed leftovers; preserve pending anchors, thermal ground and parallel current transitions.
+4. Simplify needless bends and tiny stubs only where clearance and reference-plane quality remain good. Record UUID/geometry delta and compare connected pad groups after each local edit.
+5. Keep an edit only if its full loop or verified route hygiene improves. Restore a rejected trial from the packet snapshot without overwriting unrelated live edits.
+
+REQUIRED OUTPUTS
+- dvdd-before-after.csv
+- cleanup-manifest.json
+- fresh-drc.json
+- pad-group-audit.json
+- local-views/
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Separate local DVDD nets, improved or unchanged full loops, no lost retained connectivity.
+- No blanket warning deletion or aesthetic shortening that harms power/return integrity.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Improvement needs a significant connector/driver move: return the bounded tradeoff for review; leave working geometry intact.
+- A power/thermal item is flagged dangling: retain it until current/heat function has been assessed.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

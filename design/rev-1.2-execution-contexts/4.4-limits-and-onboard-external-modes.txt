@@ -1,0 +1,84 @@
+TASK 4.4 — Limits and onboard/external modes
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 4-8k tokens, soft, including relevant loaded evidence.
+Work mode: firmware writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Implement all limit/encoder checks and controlled retreat; axis mode selection and external interface profiles; no armed mode change.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/4.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+The new Z limit pair is U704 port1 bits6/7 (pins19/20), separate from existing U601 DC/X/Y limit mappings. External mode retains ESP32 pulse control; mode jumpers choose enable destination. Limit response and retreat must follow the accepted stop behavior, not disable escape motion in both directions blindly.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.3/evidence/connector-map.csv
+- work/rev-1.2-completion/packets/2.1/evidence/z-circuit-map.csv
+- work/rev-1.2-completion/packets/4.1/evidence/firmware-interface-contract.txt
+- firmware/ arming and pulse interfaces
+- Accepted limit/filter/interrupt and external-output electrical contracts
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- firmware/ limit/encoder/mode modules and relevant tests; own reports
+Own report root: work/rev-1.2-completion/packets/4.4/evidence/
+Own result: work/rev-1.2-completion/packets/4.4/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Implement input-direction masks, expander interrupt acknowledgement and debounced/filtered software semantics. Preserve all existing input bits; reserve Z bits as inputs and handle their interrupts without changing command outputs.
+2. Implement direction-aware travel inhibition and controlled retreat from an active limit. Define disconnected/normally-closed behavior and the commissioning policy for unconfigured axes.
+3. Implement ONBOARD/EXT axis profiles using accepted jumper and interface polarity/voltage contracts. Mode changes require DISARMED; configuration cannot invent jumper-state sensing if hardware does not provide it.
+4. Integrate encoder plausibility for DC channels within their actual input/scale capabilities; do not claim encoder feedback for open-loop steppers.
+5. Exercise simultaneous limit events, expander read errors, inconsistent configuration, retreat, warm reset and attempted armed mode changes. Produce an I/O diagnostic command map.
+
+REQUIRED OUTPUTS
+- limit/encoder/mode source
+- input-mask-map.csv
+- mode-and-limit-tests.json
+- io-diagnostic-commands.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Existing DC/X/Y bits preserved, Z inputs correctly addressed and safe under interrupts/read failures.
+- EXT remains ESP-controlled; unsupported jumper sensing, feedback or industrial cable compatibility not invented.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Required physical mode state cannot be sensed: make explicit configuration/inspection requirement, not a guessed GPIO.
+- A limit safety requirement exceeds I2C sensing capability: return it to electrical/requirements review.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

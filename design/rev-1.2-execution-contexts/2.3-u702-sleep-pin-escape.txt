@@ -1,0 +1,84 @@
+TASK 2.3 — U702 sleep-pin escape
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 4-8k tokens, soft, including relevant loaded evidence.
+Work mode: single CAD writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Close AX2_SLEEP_N using actual connected anchors. Preserve charge-pump loop; use bounded local R721/ENABLE-fanout adjustment only if needed.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/2.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Historical remaining AX2_SLEEP_N gap is U702 pin42 at (111.75,119.1025) to R722.2 at (113.425,112.25). C723 at (114.5,118) connects CPH/CPL immediately above; R721 at (116,120) pulls ENABLE down. R721 shifted to (116,120.75) was a courtyard-only candidate, not a proven routable placement.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- abx-motion.kicad_pcb
+- work/rev-1.2-completion/packets/2.2/evidence/remaining-links.json
+- work/rev-1.2-completion/packets/1.7/evidence/phase-1-decisions.json
+- work/rev-1.2-electrical/layout-review-20261022/u702-escape.png (historical view)
+- work/rev-1.2-electrical/route_core.py
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- abx-motion.kicad_pcb only; matching schematic position/value change only if an accepted circuit correction requires it; own evidence
+Own report root: work/rev-1.2-completion/packets/2.3/evidence/
+Own result: work/rev-1.2-completion/packets/2.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Refresh both AX2_SLEEP_N connected components and surrounding F/B/In2 geometry. Discard stale coordinates when live geometry has changed; print only a local map.
+2. Try a deliberate pin escape and legal via location using existing connected anchors. Preserve C723 and its short no-via pump loop. Inspect ENABLE/STEP/DIR via fanouts on every layer before calling a gap open.
+3. If needed, trial the smallest R721/ENABLE-fanout movement within accepted scope. Remove conflicting old copper before reload; reconnect R721 to its intended ENABLE/GND pads and audit all altered groups.
+4. Route sleep back to its pull-up group with practical 0.2 mm signal routing, using smaller width only within the approved rules. Run native DRC/refill and group comparison; save only the checked result.
+
+REQUIRED OUTPUTS
+- sleep-escape-before.png
+- sleep-escape-after.png
+- route-or-obstacle-report.json
+- fresh-drc.json
+- retained-groups.json
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Actual target components merge; R721 and charge-pump networks retain exact intended connectivity.
+- No new opens, foreign thermal vias, power damage or DRC-rule relaxation.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- After two different attempts on unchanged geometry, return exact obstruction and the smallest legal proposed fanout/layout change.
+- Escalate to Sol High for interaction between layers; do not repeatedly expand A* limits without a geometry reason.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

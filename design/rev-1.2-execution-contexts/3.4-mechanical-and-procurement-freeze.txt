@@ -1,0 +1,91 @@
+TASK 3.4 — Mechanical and procurement freeze
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k tokens, soft, including relevant loaded evidence.
+Work mode: review / documentation
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Reconcile final mechanical stack, exact BOM, hand-fit/DNP decisions and all phase-3 CAD changes. Independently check relay pad mapping and post-thermal geometry.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/3.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Reconcile the implemented thermal/mechanical construction with the actual final board and procurement records. The older relay CAD alignment issue and OLED fit must be closed using exact drawings and the selected assembly, not inherited as vague warnings.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/3.1/evidence/sourcing.csv
+- work/rev-1.2-completion/packets/3.2/evidence/cooling-stack.json
+- work/rev-1.2-completion/packets/3.3/evidence/implemented-thermal-geometry.json
+- work/rev-1.2-completion/packets/3.3/evidence/post-thermal-drc.json
+- abx-motion.kicad_pcb
+- abx-motion.kicad_sch
+- Industrial_IO.kicad_sch
+- Steppers_Relays.kicad_sch
+- Power.kicad_sch
+- MCU.kicad_sch
+- Motor_Channel.kicad_sch
+- Exact relay numbered-hole and connector/module supplier drawings
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own frozen mechanical/BOM/process documents and completion-root gate-3.txt; CAD read-only
+Own report root: work/rev-1.2-completion/packets/3.4/evidence/
+Own result: work/rev-1.2-completion/packets/3.4/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Reconcile every reference with selected MPN, footprint, pad map and assemble/hand-fit/DNP status. Confirm the final native pin map still agrees after thermal changes.
+2. Independently sample relay coil/contact numbered holes, capacitor lead spacing/polarity/height, motor connector direction and the OLED 10 mm direct-plug stack. Check the heatsink support/contact assembly and harness access.
+3. Check final fabrication stackup, mask/paste, thermal-via finish and mechanical drawing against supplier capabilities and the phase1 thermal budget. Inspect fresh post-thermal connectivity rather than trusting phase2 results.
+4. Freeze exact BOM, drawings and exceptions with source hashes. Return phase gate; list any unavailable critical part as unresolved, not a generic substitute.
+
+REQUIRED OUTPUTS
+- frozen-bom.csv
+- assembly-mechanical.pdf or equivalent
+- fabrication-spec.txt
+- phase-3-review.txt
+- completion-root gate-3.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Buildable exact mechanical/thermal stack, closed critical part/process exceptions and preserved electrical integration.
+- No silent part/package/connector substitution; phase gate stops for user review.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Fit or numbered-pad contradiction: return exact parts/holes and source drawing; route it back to the owning packet.
+- Stock change needs a true engineering substitution: request a scoped review, not a Low/Luna inferred swap.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,86 @@
+TASK 5.2 — CAM, numbered-pad and assembly audit
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: independent review
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Check actual Gerbers/mask/paste/drills, layer stack, clearances, populated sides, every MPN pin1/polarity and CPL origin/rotation against supplier drawings and assembly preview.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/5.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Actual output files and supplier numbered pads are authoritative assembly evidence. A 3D model looking aligned is insufficient. Prior screenshots contained a mistakenly selected temperature-sensor MPN for a socket; exact BOM identity and pin mapping must be independently checked.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/5.1/evidence/release-manifest.json
+- work/rev-1.2-completion/packets/5.1/evidence/reference-count-reconciliation.csv
+- work/rev-1.2-completion/packets/5.1/evidence/candidate-release/
+- work/rev-1.2-completion/packets/3.4/evidence/frozen-bom.csv
+- work/rev-1.2-completion/packets/3.4/evidence/fabrication-spec.txt
+- Exact manufacturer/supplier numbered-pad drawings and authorized assembly preview if available
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own audits/annotated CAM and assembly evidence only; release inputs read-only
+Own report root: work/rev-1.2-completion/packets/5.2/evidence/
+Own result: work/rev-1.2-completion/packets/5.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Open CAM independently and verify board outline, actual layer order, copper fills, antenna keepout, plated/nonplated holes and soldermask/paste construction. Check that thermal contact regions and via finish agree with the stack/assembly notes.
+2. Join actual BOM, CPL, native reference/pad orientation and supplier numbered drawings for every populated part. Explicitly check relays, diode/TVS, Q1, ESP32, driver pins, electrolytics, JST/keying, terminal wire entries and header sockets.
+3. Check placement origin, units, side and angle convention in the intended assembler system. If an actual upload/preview is not available/authorized, produce a local numbered-pad overlay and identify the remaining supplier-preview check; do not claim it passed.
+4. Review solder-tail heights, underside mask openings and thermal-pad/paste/via interaction against the mechanical sink stack. Verify BOM hand-fit/DNP/fuse/harness decisions.
+5. Record exact discrepancies, evidence images/source pages and fixes requested. Re-review regenerated output if any source/export transform changes.
+
+REQUIRED OUTPUTS
+- cam-audit.csv
+- numbered-pad-assembly-audit.csv
+- annotated-cam/
+- placement-overlays/
+- assembly-exceptions.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Every populated exact variant/rotation/polarity supported by mapping evidence; any unavailable supplier preview explicit.
+- No unexplained mechanical/process/layer discrepancy; zero assumed pass from 3D alone.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- A supplier drawing conflicts with KiCad/source: record both numbered maps and request an engineering correction.
+- Need upload/contact/ordering not already authorized: finish local evidence and report the precise external step rather than doing it automatically.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

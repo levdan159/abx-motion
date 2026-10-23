@@ -1,0 +1,87 @@
+TASK 3.2 — Passive heatsink assembly
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: analysis / mechanical design
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Choose dimensioned common or individual underside cooling from the thermal budget. Specify TIM, insulation, support, flatness, compression and natural-convection conditions; check cable/solder-tail/antenna access.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/2.7/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/3.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Design a passive cooling assembly from the accepted thermal budget. Bottom-pad DDWR heat must pass through PCB/vias and a real interface; a generic aluminum block below the board is not a specified heat path. Retain board outline, driver placement, access and ESP32 antenna clearance.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.6/evidence/cooling-requirements.txt
+- work/rev-1.2-completion/packets/1.6/evidence/thermal-assumptions.json
+- work/rev-1.2-completion/packets/2.7/evidence/phase-2-review.txt
+- work/rev-1.2-completion/packets/3.1/evidence/mechanical-evidence.csv
+- abx-motion.kicad_pcb
+- Current mechanical/3D assembly with actual component heights
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own mechanical CAD/drawings/calculations; proposed mounting annotations only; no root copper edits
+Own report root: work/rev-1.2-completion/packets/3.2/evidence/
+Own result: work/rev-1.2-completion/packets/3.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Build a dimensioned assembly for a common spreader/heatsink or separate units that meets the shared/local resistance allocation. Compare feasible options and select using stated natural-convection/orientation conditions.
+2. Specify contact footprints, allowable flatness and tolerances, TIM thickness/conductivity/compression, insulation and retention. Include PCB warpage, solder tails and assembly force; do not rely on adhesive pads as a structural design without evidence.
+3. Use existing holes/brackets where possible. Check screw, jumper, JST/EXT plug and cable insertion access, OLED/module stack, capacitors and antenna keepout. Electrically live Q1/DC drain copper must not contact a common sink accidentally.
+4. Update the thermal network with chosen interface/sink properties and combined-source coupling. Return exact PCB contact/via/mask change requirements to 3.3.
+5. Produce a buildable drawing and selection rationale with unresolved vendor/enclosure assumptions. Do not purchase hardware or redesign the whole floorplan.
+
+REQUIRED OUTPUTS
+- cooling-assembly.pdf or equivalent dimensioned artifact
+- cooling-stack.json
+- mechanical-clearances.csv
+- thermal-allocation.csv
+- pcb-thermal-change-request.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Actual tolerance-aware mechanical fit and support; no lead/pad shorting or PCB bow.
+- Thermal allocation uses actual interface/sink conditions and includes shared heating; exact parts/drawing sufficient to build.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Required sink cannot fit or needs significant board moves: expose dimensions, heat budget and minimal options for review.
+- No real enclosure/orientation defined: bound it and keep the requirement explicit rather than claiming guaranteed cooling.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

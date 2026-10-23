@@ -1,3 +1,9 @@
+CURRENT STATUS — 21 October 2026
+The current selection is DRV8462DDWR, with the three-axis placement in the
+root PCB. The historical proposals below are superseded by:
+ design/rev-1.2-research/layout-integration-plan-20261021.txt
+The root PCB remains a mechanical placement trial, not an electrical release.
+
 ABX-Motion Rev 1.2 — three integrated stepper axes
 Discussion draft, 20 October 2026
 

@@ -1,0 +1,87 @@
+TASK 5.3 — Independent first-article release gate
+Recommended model: gpt-6-astra
+Reasoning effort: medium
+Starting-context target: 8-16k tokens, soft, including relevant loaded evidence.
+Work mode: independent review
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Read actual source/output checks and challenge electrical, thermal and assembly consistency. Confirm test firmware/fixture readiness and list post-fabrication tests explicitly.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/5.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Independently decide whether the first-article package is ready to be fabricated, not whether the instrument is already qualified. Powered thermal/fault tests cannot precede receipt of first boards. Design/process blockers still require closure before recommending manufacture.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.7/evidence/phase-1-review.txt
+- work/rev-1.2-completion/packets/2.7/evidence/phase-2-review.txt
+- work/rev-1.2-completion/packets/3.4/evidence/phase-3-review.txt
+- work/rev-1.2-completion/packets/4.6/evidence/firmware-integration-review.txt
+- work/rev-1.2-completion/packets/5.1/evidence/release-manifest.json
+- work/rev-1.2-completion/packets/5.2/evidence/cam-audit.csv
+- work/rev-1.2-completion/packets/5.2/evidence/numbered-pad-assembly-audit.csv
+- Sampled original source drawings/CAM and exact native snapshot
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own release review and completion-root gate-5.txt; candidate and sources read-only
+Own report root: work/rev-1.2-completion/packets/5.3/evidence/
+Own result: work/rev-1.2-completion/packets/5.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Serve as an independent reviewer. Start with requirements and selected original
+sources/CAD/data before reading author conclusions. Recompute representative
+cases and look for interactions between domains. Findings need severity,
+exact source, failure mechanism, minimal correction and verification needed.
+Do not rewrite or silently fix the design while reviewing it. More confidence
+or agreement between models cannot replace missing physical/supplier evidence.
+
+EXECUTION SEQUENCE
+1. Check source/output hashes and accepted phase decisions, then independently sample original circuit/CAM/pad evidence and recompute representative electrothermal claims.
+2. Challenge coupled release failures: wrong package or BOM identifier, revised copper with old fab settings, via/paste process mismatch, reversed connector/relay pinout, stale firmware map, unbuildable heatsink stack and unsupported connector current claim.
+3. Ensure every pre-fabrication issue has a documented resolution or explicitly bounded first-article purpose. Do not waive critical assembly uncertainty by moving it into a future bench check.
+4. Confirm commissioning firmware, fixture/probe plan and first-article inspection needs are ready or have named pre-power prerequisites. Separate CAD/process completion from unrun physical qualification.
+5. Return release recommendation and remaining actions. No automatic upload, order, push or publication; stop for phase review.
+
+REQUIRED OUTPUTS
+- first-article-release-review.txt
+- release-blockers.csv
+- post-fabrication-test-index.csv
+- completion-root gate-5.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- No unresolved design/manufacturing blocker or undocumented critical exception.
+- Physical test status truthful and source-output-firmware consistency sampled independently.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- A cross-domain contradiction remains: escalate narrowly to Astra High and identify the conflicting originals.
+- Supplier evidence or hardware is needed: name it; model confidence cannot replace it.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

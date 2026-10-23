@@ -1,0 +1,86 @@
+TASK 2.2 — Reconnect moved bank and Z inputs
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k tokens, soft, including relevant loaded evidence.
+Work mode: single CAD writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Route the moved connectors and new conditioning/network locally. Preserve existing input/output contracts, ground reference and power copper.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/2.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Finish only new Z routes, moved-bank connections and copper displaced by the accepted placement. Connector shift can affect eight limit RAW nets, AUX supply/output paths and GND; use the actual 2.1 loss/endpoint report instead of assuming every route can translate intact.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- abx-motion.kicad_pcb
+- work/rev-1.2-completion/packets/2.1/evidence/z-circuit-map.csv
+- work/rev-1.2-completion/packets/2.1/evidence/removed-copper-manifest.json
+- work/rev-1.2-completion/packets/2.1/evidence/temporary-opens.json
+- work/rev-1.2-completion/packets/1.1/evidence/source-hashes.json
+- work/rev-1.2-electrical/route_core.py (inspect/adapt in own work folder)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- abx-motion.kicad_pcb and own routing helpers/evidence only
+Own report root: work/rev-1.2-completion/packets/2.2/evidence/
+Own result: work/rev-1.2-completion/packets/2.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Create a before snapshot of this packet and rebuild native connectivity. Route each changed signal from its full connected groups; keep unchanged resistor/expander endpoints anchored.
+2. Place short local fanouts/ground returns for the Z filters and feed their pull-ups from real 3V3 source-connected copper. Respect the OLED mounting holes and bottom connector access.
+3. Use supported F/B/In2 signal layers with continuous In1 GND. Check new via drills against all SMD solder lands on reload; thermal via-in-pad is not authorized here.
+4. Keep AUX supply/output paths at their reviewed current capability; do not treat them as arbitrary 0.15 mm signals. Remove only obsolete endpoints identified against pad connectivity, retaining unfinished original 3-net anchors.
+5. Run fresh scoped/native checks and verify previously connected retained groups. Record exact unresolved original gaps separately from any regression.
+
+REQUIRED OUTPUTS
+- routing-delta.json
+- pad-group-audit.json
+- local-drc.json
+- remaining-links.json
+- bank-routing.png
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Every new and moved-bank pad group connected to its intended source/destination; no extra opens caused by the move.
+- Old pad-net identities and protected power/thermal structures preserved except documented accepted edits.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Two different search/escape attempts fail: record exact blocking items/layers and request a small layout adjustment at Sol High.
+- Do not run a full-region autorouter/rip-up or relax design rules to force a route.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

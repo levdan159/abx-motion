@@ -1,0 +1,428 @@
+CURRENT USER DIRECTION: The Phase1 correction expansion was rolled back to the earlier 330-component board with three open connections. The former expanded-board execution plan below is superseded. Do not resume it automatically. See work/rev-1.2-completion/rollback-to-three-opens/.
+
+ABX-Motion Rev 1.2 — completion and qualification plan
+Execution amendment: Phase 1 analysis found electrical corrections. The user
+authorized their implementation and chose the larger power supply preserving
+the full 1 A external 5 V allocation. Current evidence and implementation are
+under work/rev-1.2-completion/corrections/. Before Phase 2, read
+design/rev-1.2-execution-contexts/PHASE-2-ENTRY.txt; it adds the new power and
+interlock routing obligations to the original Phase 2 sequence. The historical
+baseline and planning statements below are not a claim about the corrected CAD.
+
+Updated 22 October 2026 after the thermal and Z-limit decisions.
+Planning only. CAD, firmware implementation, fabrication and purchasing have
+not been started by this update. Stop for review at each phase checkpoint.
+
+OBJECTIVE
+Complete a reproducible, serviceable motion-development instrument with a
+published operating envelope, deterministic control/inhibit behavior, useful
+measurements, traceable configuration and documented test evidence. Retain
+157 x105 mm outline, main floorplan, three DRV8462DDWR cells, upright JST-XH
+motor connectors, three EXT interfaces, existing DC channels, communications,
+OLED and relay arrangements. Use passive heatsinks; no fan requirement.
+Keep DRV8462DDWR for this revision. A future high-power revision will address
+5 A RMS / approximately 7 A sinusoidal phase peaks; that is outside Rev1.2.
+Engineer the present board's complete heat path and shared power budget.
+Disabling DC commands does not remove stepper, input-stage or regulator heat.
+Changes remain incremental and evidence-driven. Root CAD is not modified by
+this planning document; Rev1.1d release remains preserved.
+
+CURRENT EVIDENCE
+Latest PCB review: work/rev-1.2-electrical/layout-review-20261022/review.txt
+Root SHA256 at review:
+554ca71e0227585ade147b3a222a0ac3ab37ef12193d233909ab4dce8be073ac
+Three opens; zero DRC errors in the violations collection; zero schematic
+parity issues; 192 warnings require disposition. This routing check does not
+establish assembly correctness, performance or qualification. No powered tests run.
+The subsequent root schematic ERC check reported zero violations. Root CAD
+is unchanged. Its stored stackup currently specifies 35 um (about 1 oz) copper
+on all four layers. Two-ounce outer copper has not yet been selected or applied.
+The three driver thermal regions retain twelve planned 0.25 mm drill GND vias
+per axis; this count alone does not demonstrate their thermal conductance.
+Z-limit schematic drafts exist only in an isolated work folder and have not
+been promoted. Treat their proposed geometry as an input to placement review.
+Repository README, pin maps and some planning documents describe Rev1.1 or
+obsolete placement proxies; replace the release-facing descriptions with the
+final Rev1.2 implementation. No application firmware is currently supplied.
+
+PROPOSED REQUIREMENTS TO FREEZE IN PHASE 1
+R01 Power: conventional 7S lithium-ion, 29.4 V fully charged; 32 V normal
+    design ceiling. Declare minimum operating voltage and brownout threshold
+    from the selected pack's discharge limits and motor behavior. Battery
+    capability of >=30 A is a source property, not a PCB current rating.
+R02 Steppers: three independently configured axes, normal target up to 2 A
+    RMS/phase simultaneously with specified passive heatsinks. Design and
+    qualify a higher-current stepper-only profile targeting 3 A RMS per axis
+    simultaneously. Evaluate 3.5 A RMS as a driver-side thermal design case;
+    it is the package-class ceiling, not the installed connector/board rating.
+    Set current for the actual motor; initial commissioning uses <=0.5 A RMS
+    or a lower motor-rated value. Keep the user's original JST-XH connectors.
+    Their manufacturer's 3 A/AWG22 rating includes contact/wire and thermal
+    conditions. Qualify the actual harness at 3 A. A 3.5 A port rating requires
+    an appropriate revised connector specification or manufacturer approval;
+    passing a heat test alone does not override its published rating. Keep
+    ordinary operation inside both the driver and connector specifications.
+R03 DC: up to 150 W electrical input per motor for one second as the agreed
+    intermittent edge case. Define separate continuous and repeat-duty limits
+    from copper, FET, Q1, connector and thermal budgets. Include stepper,
+    radio and peripheral loads in the combined input budget.
+R04 Cooling: use 40 C ambient as the proposed qualification design point;
+    record enclosure, orientation, heatsink/TIM geometry and natural airflow.
+    Prioritize bottom exposed pad -> solder -> PCB GND/vias -> insulating
+    thermal interface -> mechanically supported underside spreader/heatsink.
+    Evaluate a common passive heatsink for all three axes, with thermal
+    coupling included. Top-side supplementary cooling is optional. No fan.
+    Propose driver junction <=125 C, with estimation uncertainty included;
+    other parts remain below their own derated limits. Final limits follow
+    test evidence. Do not use thermal shutdown as a normal operating boundary.
+R05 Inputs: retain current dry-contact/3.3 V limit interfaces and protected
+    front ends. The accepted scope includes a dedicated Z MIN/GND/MAX header
+    J607 using the currently unconnected U704.19/.20 expander inputs. Reuse
+    the established input
+    topology, verify address/interrupt/register mapping, label and protect it.
+    This provides two limits for each of the five motor channels. Shift the
+    existing six-connector bank down one 10.5 mm row and add J607 in the top
+    slot, subject to actual courtyard, cable, board-edge and routing checks.
+    Place matching pull-up/series/RC parts below the OLED. Update both faces.
+    The concept is accepted; its isolated draft is not an implemented change.
+R06 External drives: three 5 V logic EN_N/STEP/DIR/GND outputs, ESP-controlled
+    in EXT mode. Publish drive current, polarity, pulse timing, supported cable
+    length/load and ground requirements. Arbitrary optocoupler or long-cable
+    industrial interfaces require a suitable adapter and qualification.
+R07 Measurements: propose VBAT accuracy +/-2% and DC driving-current readback
+    +/-(5% of reading +0.1 A) after calibration over a stated range. Verify
+    feasibility and specify bandwidth/filtering before advertising. DRV8701
+    SO telemetry does not measure all recirculating/braking current. Stepper
+    current settings/readback are distinct from measured phase RMS current.
+R08 Fault behavior: motion disarmed on cold boot, MCU reset, watchdog expiry,
+    failed configuration and motor fault as defined in the truth table.
+    Hardware E-stop inhibits motor bridges independently of I2C/SPI/firmware;
+    no automatic motion restart after clearing a fault. Declare relay/AUX
+    behavior separately. Propose <=1 ms electrical E-stop-to-inhibit acceptance
+    ceiling; mechanical stopping/holding is a separate mechanism-dependent
+    requirement. Publish measured watchdog timeout and tolerances.
+R09 Service: accessible power/control probe points, connector/pin legends,
+    hardware/firmware/serial identification, configuration readback and a
+    recoverable programming path. Firmware refuses incompatible hardware
+    configurations. Store calibration with version/integrity information.
+R10 Environmental robustness: define supported connector handling, cable
+    lengths, supply transients and ESD/EMI test conditions for this lab system.
+    Exact formal compliance scope is a separate product requirement; do not
+    attach certification or universal peripheral compatibility claims.
+R11 Operating profiles: publish independent STEPPER_ONLY and COMBINED limits.
+    STEPPER_ONLY has DC outputs unloaded and commands locked off; retain
+    radio, UI, logic, input-stage and peripheral heat in its budget. COMBINED
+    includes both DC channels and their declared continuous/burst duty.
+    Select profiles only while disarmed; firmware enforces their total-load
+    budgets. Neither phase-current sums nor battery labels set input ratings.
+
+PHASE 1 — CLOSE REQUIREMENTS AND ELECTRICAL DESIGN
+Work:
+- Produce one authoritative Rev1.2 connector map, GPIO/strap allocation,
+  I2C addresses, SPI ownership and driver pin/MPN map from the actual schematic.
+  Remove stale StepStick references from active documentation.
+- Audit each DRV8462 cell against the DDWR datasheet: all supply/ground pins,
+  charge-pump and DVDD capacitors, MODE/reserved pins, pull resistors,
+  nSLEEP/ENABLE, CS/MISO, and configuration defaults/readback.
+- Build a hardware truth table covering E-stop, warm reset, partial supplies,
+  expander retained states, watchdog expiry, latched driver fault, missing
+  jumper, ONBOARD/EXT mode and recovery. Quantify electrical disable timing.
+  Check each DC bridge's brake versus high-impedance states and fault retry.
+- Calculate combined current and heat budgets: Q1, fuse/wiring, input copper,
+  bridge FETs/shunts, 5 V buck, AP2112 3.3 V LDO, ESP32 radio peaks, all new
+  logic and driver VCC loads, relay coils, OLED and shared AUX allocation.
+  Cooling copper is not a substitute for a failed LDO dissipation budget.
+- Calculate each driver at 2, 3 and 3.5 A RMS, including hot/max FET resistance,
+  switching and quiescent losses, 29.4/32 V operation and current tolerance.
+  Cover holding, low-speed chopping and higher-speed motion; automatic
+  standstill-current reduction is optional efficiency, not cooling credit
+  for a claimed full-current operating mode.
+- Model chip-to-underside resistance through solder, copper, plated vias,
+  solder mask/interface and heatsink, plus mutual heating between axes.
+  Junction-to-exposed-pad resistance is not junction-to-underside-heatsink
+  resistance: the intervening PCB is a real part of the thermal path.
+  Derive the maximum permitted local and shared heatsink resistances at 40 C
+  ambient from the <=125 C driver-junction target. Include uncertainty.
+- Use current 1 oz copper as the baseline. Compare 2 oz outer layers and
+  additional/coordinated thermal vias where calculations justify them. Check
+  fabricator fine-pitch constraints before choosing a thicker copper stackup.
+- Coordinate TVS/clamp tolerances, ringing, reverse-polarity FET/gate ratings,
+  component voltage limits, bulk capacitance/ripple and input fault clearing.
+  Declare a bounded regenerative-energy/current envelope and the required
+  battery/BMS return path or external braking arrangement. A 150 W motor
+  input burst does not define returned braking energy. Do not rate D2 as
+  a sustained braking sink or rely on parallel TVS current sharing.
+- Freeze Z-limit circuit, pin/interrupt mapping and minimal accessible probe
+  points. Define repeatable temperature-measurement locations near each
+  driver, Q1, bridge, buck, LDO and ESP32; include connectors and bulk caps.
+Deliverables: requirements, power/thermal calculations, complete pin map,
+truth table, protection envelope, reviewed schematic and ERC dispositions.
+Include one table per operating profile: per-component watts, conductor and
+connector limits, assumed heatsink/interface properties and predicted margins.
+Pass: no unresolved power-domain/pinout/inhibit/design-envelope blocker;
+no unexplained ERC error. Warnings have exact, reviewed explanations.
+Checkpoint: review these deliverables before any wider circuit change.
+
+PHASE 2 — FINISH LOCAL LAYOUT AND ROUTING
+Work:
+- Snapshot current root CAD and preserve its existing connected-pad groups.
+- Implement the accepted Z input header and conditioning: U704 IO1_6/IO1_7,
+  J607, two 4.7k pull-ups, two 1k series resistors and two 10nF capacitors,
+  matching existing limit-input topology. Preserve all existing connector
+  pin functions while shifting the bank down. Native drafts must be checked
+  against the live root before reuse; do not run an older rebuild generator.
+  Preserve outline, DC stage and other established main placements.
+- Close AX2_SLEEP_N, AX3_CS_N and +3V3_DRV_EN. For AX2, try a local escape;
+  R721 at approximately (116,120.75) has courtyard room if needed. Preserve
+  C723 first. The +3V3_DRV_EN net is an E-stop-derived logic feed.
+- Try rotating C716/C726/C736 180 degrees in place to shorten DVDD paths;
+  retain changes only if the full supply/return loops improve. Remove old
+  conflicting copper before reload to prevent net reassignment beneath pads.
+- Clean proven dead-end signal copper and redundant zigzags; retain current
+  transition/thermal vias, power traces and unfinished endpoint anchors.
+- Examine actual motor/BATT via sharing, neck-downs, return paths and local
+  bypass loops against the budget. Preserve continuous In1 GND and underside
+  thermal reserves. Do not solve signal congestion by cutting the ground plane.
+- Reserve the three underside contact regions and any mounting clearance
+  established in phase 1. Improve local ground spreading, thermal-via arrays,
+  supply neck-downs or parallel transitions only where the budget shows a
+  benefit. Document intentional changes to protected copper explicitly.
+- Fix nine silk warnings and add consistent J607/Z pin labels front/back.
+Deliverables: reloadable root PCB, updated schematic, difference audit and
+before/after images. Preserve old manufacturing packages.
+Pass: zero opens, zero unexplained DRC/ERC errors, zero parity mismatches;
+all intentional pad-net changes documented, every previously connected group
+preserved unless explicitly changed, no new power/thermal regression or
+via-drill conflict with SMD solder lands. Warning count alone is not a gate:
+each remaining warning must be individually reviewed or grouped with evidence.
+Checkpoint: inspect finished native layout before mechanical/fabrication freeze.
+The cooling geometry must also pass phase 3 before this routing is frozen.
+
+PHASE 3 — MECHANICAL, THERMAL CONSTRUCTION AND PROCUREMENT
+Work:
+- Select exact stocked/obtainable MPNs for bulk capacitors, headers, OLED
+  socket/mate, relays and the DRV8462DDWR; assign assemble/hand-fit/DNP for every
+  reference. Recheck JLCPCB and PCBWay supply options at order time. No silent
+  package substitutions; identify pin-compatible alternates separately.
+- Verify exact cap diameter, lead spacing, height, voltage, ripple/ESR/lifetime;
+  JST harness, contacts and wire; relay numbered holes and contact routing;
+  coil suppression, terminal direction and contact-specific current limits.
+- Fit actual 10 mm OLED standoffs and direct plug header/socket stack, including
+  module pin order, hole pitch, underside clearance and assembly tolerances.
+- Define a dimensioned underside passive spreader/heatsink for the three
+  driver ground-contact regions, using the phase-1 resistance budget. Specify
+  material, contact footprints, flatness, TIM conductivity/thickness and
+  compression, insulation, mechanical support and natural-convection rating
+  in the intended orientation. Include shared-base temperature rise from
+  all axes; a vendor's ideal open-air rating is not an enclosure guarantee.
+- Use a supported bracket/existing mounting arrangement where practical.
+  Loads must not bow the PCB or bear on protruding through-hole leads.
+  Verify mounting/cable clearances in an assembly model; add new holes only
+  after a copper/ground/mechanical review. Keep shunts, motor plugs and EXT
+  accessible. Review Q1/DC FET live-copper insulation and keep metal clear of
+  the ESP32 antenna. Preserve the ESP32's separate thermal spreading path.
+- Specify fabricator stackup/copper weight consistent with the current/thermal
+  calculations. Review 2 oz outer copper recommendation against fine-pitch
+  clearances and assembler/fabricator capabilities; do not silently change
+  stackup or substitute a copper weight that invalidates calculations.
+- Freeze exposed-pad land/mask/paste and thermal-via fabrication process with
+  assembler capability. Confirm filled/capped requirements or revise the
+  footprint/process intentionally. Inspect actual output layers, not 3D alone.
+- Re-run the complete layout/connectivity audit after any thermal copper,
+  via, mask, stackup or mounting adjustment. Confirm each thermal via's real
+  plane connections and solder process; do not assume more vias always help.
+Deliverables: mechanical/assembly drawings, thermal construction drawing,
+procurement BOM with numbered-pad source evidence and fabrication specification.
+Include exact heatsink/TIM parts or a fabrication drawing and a fitted assembly
+view showing the PCB-to-heatsink stack, tall components and wire access.
+Pass: exact mechanical stack fits; no unselected critical part or unresolved
+relay/PowerPAD assembly exception. Heatsink requirements are buildable.
+Checkpoint: review assembly and process details before exports.
+
+PHASE 4 — COMMISSIONING AND DIAGNOSTIC FIRMWARE
+Work:
+- Implement hardware-specific pin/address map and a state machine:
+  DISARMED -> CONFIGURED -> ARMED; any defined fault -> LATCHED_FAULT.
+  Explicit re-arm requires the fault cleared and configuration verified.
+- Initialize expander latches before directions; test warm-reset persistence.
+  Read back driver settings before arming. Provide per-axis current/microstep/
+  ONBOARD-EXT profiles, conservative ramping and verified STEP/DIR timing.
+- Implement phase-1 STEPPER_ONLY/COMBINED current and duty limits; inhibit DC
+  commands in STEPPER_ONLY. Support Z MIN/MAX as inputs on U704 port1 bits6/7,
+  including interrupt handling and controlled retreat. Maintain all existing
+  DC/X/Y limit mappings. Reject profile changes while armed.
+- Generate synchronized motion pulses with hardware timing. Handle command
+  timeout, buffer underrun, limit direction/controlled retreat and encoder
+  plausibility. A connected network or GUI must not be required to inhibit.
+- Make the watchdog depend on verified control-loop progress; avoid feeding it
+  from an unrelated task while the control task is stalled.
+- Add bounded DC bursts, explicit stop mode, current/power logging, fault
+  registers, OT warnings, reset reasons and configuration dumps.
+- Enable/read driver thermal warning and fault reporting, with a defined
+  reduce-current/stop response and explicit re-arm policy. Existing thermal
+  warning bits are not calibrated continuous temperature readings. Do not
+  present the ESP32's own sensor as a power-stage temperature measurement.
+  Select conservative current ceilings until the phase-7 data justifies more.
+- Provide diagnostic commands for rails, limit inputs, encoder counts, relays,
+  AUX, CAN/RS485, OLED/buttons and each external interface. Log time-stamped
+  events and measured/commanded values with HW/FW revision and serial ID.
+- Add calibration support and recoverable update path. Avoid writing flash
+  continuously during real-time motion. No elaborate UI is needed for this gate.
+Deliverables: reproducible build, versioned firmware, operating commands,
+configuration schema and host-side logic/decoder tests where meaningful.
+Pass before first motor power: auditable inhibit/default logic, safe settings,
+bounded commands and logs available. Hardware timing/fault behavior remains
+NOT RUN until measured; firmware compilation is not hardware verification.
+Parallelism: implement after phase-1 pin map freezes, alongside phases 2/3.
+
+PHASE 5 — FIRST-ARTICLE MANUFACTURING RELEASE
+Work:
+- Freeze one native CAD commit and revision. Export Gerbers, plated/nonplated
+  drills, paste/mask, BOM, CPL and assembly drawings from that exact state.
+- Check external CAM plots against native pad nets and board dimensions.
+  Check layer order, outline, plane fills, antenna keepout and thermal features.
+- Audit each selected MPN's pin1/polarity against the supplier drawing and
+  uploaded JLCPCB assembly rotation/origin. Inspect relays, diode/TVS, Q1,
+  ESP32, driver pins, electrolytics, JST/keying and terminal wire openings.
+  A correctly placed 3D model does not prove a correct BOM/CPL assignment.
+- Include fabrication notes, hand-fit parts, actual blade fuse selection,
+  harness drawings, first-article inspection and PowerPAD X-ray requirements.
+- Include the exact copper stackup and thermal-via finish in the fabrication
+  order notes. Include the heatsink/TIM, retention hardware and qualified
+  motor harness in the assembly BOM. Check underside solder tails and mask
+  openings against the real contact areas. Do not substitute the old 1 oz
+  order settings if the reviewed design has selected 2 oz outer copper.
+- Archive source commit, dependencies, datasheets, tool versions, output hashes,
+  BOM revision and accepted warning/process dispositions. Make release
+  generation use the frozen native CAD; do not invoke legacy rebuild scripts.
+Pass: CAD/manufacturing/process gates closed; commissioning firmware and
+measurement fixture ready. Release a small first-article build for validation.
+Physical motor/thermal tests are NOT prerequisites for ordering these first
+boards. They are prerequisites for publishing validated operating ratings.
+No purchase/order/push is performed by this plan.
+
+PHASE 6 — FIRST-ARTICLE ELECTRICAL AND FUNCTIONAL ACCEPTANCE
+Work:
+- Inspect assembly and unpowered shorts/polarity. Verify PowerPAD solder quality
+  and relay holes/pinout. Use fused, energy-limited first power at the intended
+  7S voltage; no 12 V bring-up requirement. Establish a verified return-energy
+  path before any regenerative motor test; a source-only limiter is insufficient.
+- Test battery-only, USB-only and dual-power/backfeed behavior. Confirm all
+  rails, sequencing, boot/disarmed states and consumption before motors.
+- Measure VBAT/rail ripple and droop with Wi-Fi, OLED, relays and peripherals.
+  Check each I/O, Z limits, encoder, comms, mode jumper and EXT signal.
+- Inspect the actual passive-heatsink fit, TIM compression and insulation,
+  board support and solder-tail clearance. Establish repeatable thermocouple/
+  IR measurement locations and record ambient temperature before load tests.
+- Measure hardware E-stop latency, watchdog behavior, warm reset, brownout,
+  failed I2C/SPI setup and explicit recovery using low-energy fault injection.
+- Run one unloaded stepper at <=0.5 A RMS; verify coil mapping, current waveform,
+  configuration readback, pulse timing and VM/phase transients. Repeat by axis.
+- Test one unloaded DC channel with bounded low-power commands; calibrate
+  telemetry. Progress only after waveforms and faults behave as expected.
+Pass: no unintended energization/restart, rails within component limits and
+commissioning targets, all functions demonstrated and traces/logs retained.
+Record failed/inconclusive measurements; do not substitute estimates as passes.
+
+PHASE 7 — OPERATING-ENVELOPE QUALIFICATION
+Work:
+- Measure phase RMS current and winding/driver/connector heat at stepped settings
+  on each axis, then all three at the proposed 2 A RMS normal target. Include
+  stationary hold, slow motion and higher-speed operation with representative
+  cable lengths and motors. Test enclosure and proposed 40 C ambient.
+- Qualify the higher-current STEPPER_ONLY profile by progressing from the
+  normal target toward 3 A RMS on one axis, then all three simultaneously.
+  Use the actual AWG22/JST contact/harness construction and record its voltage
+  drop and rise in temperature. Test holding and representative microstep
+  positions as well as motion; retain the configured current for full-current
+  thermal tests rather than relying on automatic holding-current reduction.
+- Record Q1, bridges, shunts, buck, LDO, ESP32, driver, electrolytic and connector
+  temperatures; measure relevant voltage drops. Estimate junction temperature
+  using appropriate methods; case temperature is not junction temperature.
+- Acceptance targets: no thermal warnings or faults; driver junction estimate
+  including uncertainty <=125 C; other junctions below their phase-1 derated
+  limits; connector rise <=20 C and absolute temperature below its specified
+  maximum; all wire, capacitor, relay and supply limits respected. Thermal
+  equilibrium target: <1 C drift per 10 minutes at fixed load. Do not infer
+  junction temperature from case temperature plus an unrelated theta-JA.
+- Progress DC tests to each 150 W/1 s, then simultaneous bursts and approved
+  combined loading. Derive repetition/duty and total input limit from results.
+  Test COMBINED independently; a passing STEPPER_ONLY profile does not qualify
+  the same current settings while the DC channels heat the shared input stage.
+- Test bounded stop/backdrive regeneration with the defined energy sink and
+  battery/BMS conditions. Do not convert motor input power to assumed returned
+  energy. Observe local VM and switching nodes with correctly referenced probes.
+- Test fault recovery and command/link losses under bounded operating load;
+  review cable/ESD/EMI susceptibility using specified lab conditions.
+- Keep 3.5 A RMS as a thermal design case unless the complete current path,
+  including connector specifications, permits a physical test and port rating.
+  The retained 3 A JST-XH specification prevents publishing a 3.5 A port
+  rating on cooling evidence alone. Leave this setting disabled if unresolved;
+  a 5 A RMS / approximately 7 A sinusoidal-peak design is a later revision.
+Pass: published limits supported by data, repeatable faults/stops, temperature
+and waveform margins demonstrated, calibration targets met within uncertainty.
+Use a repeated mixed-load run (propose 8 hours) after thermal tests pass; zero
+unexplained resets/faults and retained logs. This is an acceptance screen, not
+proof of lifetime/reliability statistics.
+
+PHASE 8 — FINAL DOCUMENTATION AND VALIDATED RELEASE
+- Publish actual connector contracts, supply/current/duty/temperature limits,
+  valid harness/motor ranges, heatsink construction, calibration and uncertainty,
+  stop semantics, regenerative constraints and supported firmware settings.
+- Publish separate STEPPER_ONLY and COMBINED rating tables, each with per-axis
+  RMS/current-waveform convention, all-axis concurrency, DC duty, ambient,
+  heatsink/TIM/mounting configuration and harness requirements. State which
+  settings are qualified, derated, disabled or reserved for a future revision.
+  Preserve raw thermal/current logs and the calculation revision behind each
+  published rating. Do not label every assembled board as 3.5 A just because
+  the selected IC package has that capability under specified conditions.
+- Update schematic PDF, pin tables, front/back legends, mechanical drawings,
+  service/test procedures, diagnostic protocol, BOM and release history.
+- Publish each unit's serial, HW/FW revision, calibration and acceptance record.
+  Keep failed/deferred tests explicit and preserve first-article deviations.
+- If qualification requires changes, issue a new controlled hardware revision
+  and rerun affected tests. Do not label a changed PCB with the old release ID.
+Pass: a person outside this conversation can assemble, commission, operate,
+diagnose and reproduce the instrument using the released package.
+
+EXECUTION ORDER AND REVIEW STOPS
+1 -> 2 -> 3 -> 5 -> 6 -> 7 -> 8; phase4 runs after1 in parallel with2/3
+and must be ready before motor tests. Review each phase's evidence at its
+checkpoint. Routine corrections stay within the approved incremental scope.
+Mechanical cooling work may be explored alongside phase2, but both phase2's
+routing audit and phase3's thermal/mechanical gate must pass before exports.
+Stop after each phase with changed files, evidence, remaining issues and the
+next phase's exact scope. This plan update itself starts none of those phases.
+Reconsider wider changes only for a measured/calculated power-budget failure,
+protection-envelope failure or unbuildable mechanical/assembly detail.
+We can complete phases1-5 before boards arrive. Phases6-8 establish validated
+instrument ratings. There is no requirement to perform physical tests before
+manufacturing the very first articles.
+
+PRIMARY REFERENCES
+TI DRV8462 DDWR pinout, thermal and layout requirements:
+ https://www.ti.com/lit/ds/symlink/drv8462.pdf
+Espressif ESP32-S3-WROOM-1/-1U supply, pin and mechanical requirements:
+ https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+JST XH contact/wire/current and mechanical specification:
+ https://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+TI PowerPAD solder, board and thermal-via process guidance:
+ https://www.ti.com/lit/an/slma002h/slma002h.pdf
+Refer to exact selected-component datasheets for all other limits. These
+references do not certify the assembled ABX-Motion board.
+
+MODEL-SPECIFIC WORK BREAKDOWN
+The 37 planned work packets, model/effort recommendations, dependencies,
+inputs, deliverables and pass criteria are defined in:
+ design/rev-1.2-work-packages.csv
+Context contracts, escalation rules and per-phase execution protocol:
+ design/rev-1.2-model-execution-guide.txt
+These companion documents allocate future work only; no agents or execution
+phases were started while preparing them. Each phase retains its review stop.
+
+DETAILED EXECUTION PACKETS
+Each of the 37 future work packets now has task-specific context, source paths,
+allowed writes, execution sequence, deliverables, checks and escalation rules:
+ design/rev-1.2-execution-contexts/INDEX.txt
+This remains a planning artifact. Select/release a phase or packet explicitly
+before implementation; preserve every phase checkpoint and physical test gate.

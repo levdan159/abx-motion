@@ -1,0 +1,85 @@
+TASK 8.1 — Instrument manual and unit records
+Recommended model: gpt-6-luna
+Reasoning effort: medium
+Starting-context target: 4-8k tokens, soft, including relevant loaded evidence.
+Work mode: documentation
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Assemble user/service documentation from approved pin maps, mechanical drawings, validated rating/calibration tables and actual test records. Do not invent performance claims.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/7.4/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Assemble documentation from accepted facts only. The existing README mixes Rev1.1 descriptions and historical Rev1.2 drafts. Preserve release history but make the active instrument specification unambiguous; the user should not need the old conversation to operate it.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/7.4/evidence/validated-profile-ratings.csv
+- work/rev-1.2-completion/packets/7.4/evidence/calibration-results.csv
+- work/rev-1.2-completion/packets/7.4/evidence/phase-7-review.txt
+- work/rev-1.2-completion/packets/3.4/evidence/assembly-mechanical.pdf or equivalent
+- work/rev-1.2-completion/packets/4.5/evidence/diagnostic-schema.json
+- Accepted final pin map, firmware commands and actual phase6/7 records
+- README.md and release documentation (historical sections to retain explicitly)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- README.md and new user/service docs; own evidence; no performance-table edits beyond approved values
+Own report root: work/rev-1.2-completion/packets/8.1/evidence/
+Own result: work/rev-1.2-completion/packets/8.1/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+This is a bounded extraction/assembly job. Work one part family or document
+section at a time. Use exact fields and source locations; UNKNOWN is a valid
+value and a cue to hand off, not permission to infer. Return structured tables
+and a short exception list. Make no new engineering choice or safety claim.
+
+EXECUTION SEQUENCE
+1. Build a manual outline covering identity, connectors/harness, intended supply, heatsink installation, safe commissioning, operation, diagnostics, calibration, fault recovery and supported limits.
+2. Populate current pin tables and separate stepper-only/combined rating tables from accepted artifacts. Include current convention, ambient/concurrency, DC duty and exact cooling/harness requirements.
+3. Document programming/recovery, units, configuration/serial IDs, service probe points and calibration records. Keep failed/deferred tests and unavailable operating cases visible.
+4. Reconcile obsolete StepStick/Rev1.1 instructions: retain archival release links but remove ambiguity from the active quick start. Do not silently alter historical released packages.
+5. Validate references and numeric copying using a deterministic table/link check; return any missing approved fact rather than drafting a plausible rating.
+
+REQUIRED OUTPUTS
+- operating-manual.txt or repository-native format
+- service-and-calibration.txt
+- quick-start.txt
+- unit-record-template.json
+- documentation-source-map.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- All active claims map to accepted evidence, correct HW/FW/connector map and actual thermal/harness specification.
+- No invented accuracy/current/temperature claim or rewrite of preserved historical manufacturing files.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Missing/contradictory approved value: identify its source owner for Sol Medium/High reconciliation.
+- A wording change would change engineering meaning: flag it rather than smoothing away a restriction.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,96 @@
+CURRENT USER DIRECTION: The Phase1 correction expansion was rolled back to the earlier 330-component board with three open connections. The former expanded-board execution plan below is superseded. Do not resume it automatically. See work/rev-1.2-completion/rollback-to-three-opens/.
+
+ABX-Motion Rev1.2 — Phase 2 entry amendment
+
+AUTHORITY AND CHECKPOINT
+The user authorized implementing the Phase 1 findings and preparing Phase 2.
+This packet prepares the next phase; it does not start routing or manufacture.
+Read the correction implementation report and independent review first:
+work/rev-1.2-completion/corrections/
+The original Phase 1 snapshot/reports are historical evidence, not the new
+as-built baseline. Capture fresh native hashes, netlist, ERC, refilled DRC and
+parity before any Phase 2 edit. Never restore the old snapshot over the root.
+
+RETAINED INTENT
+157x105mm outline and established motor, relay, communications, OLED and UI
+floorplan; three DRV8462DDWR; original upright JST-XH motor ports; no fan.
+User explicitly chose the larger supply to retain 1A total external 5 V allocation.
+That allocation is battery-powered operation, not USB-only operation. All
+connector power pins are outputs; external rail injection is prohibited.
+Normal target remains 2A RMS/phase, with 3A actual RMS conditional on the
+complete driver/connector/harness/thermal qualification. 3.5A is not a port rating.
+
+REVIEWED CIRCUIT CONTRACTS
+Read the frozen proposals AND their amendments, not the proposals alone:
+- corrections/power-design/proposal.json
+- corrections/power-design/sources/amendment-01-u5-control-pins.json
+- corrections/inhibit-design/proposal.json
+- corrections/inhibit-design/amendment-01-fivev-threshold.json
+- corrections/design-review/
+- corrections/thermal-contract/
+Paths above are relative to work/rev-1.2-completion/.
+The implementation report must reconcile the native result with these contracts.
+No unreviewed component substitution or new power/control architecture during
+routing. Return a narrow obstacle and minimal layout option if placement fails.
+
+ROUTING WORK ORDER / MODEL DISPATCH
+One CAD writer at a time, fresh bounded contexts, immutable check snapshots.
+1. gpt-6.1-sol / low: capture the new baseline, read the exact changed-pad and
+   removed-copper manifests, enumerate routing obligations by net/component.
+   Separate original opens, intentional new connections and unintended losses.
+2. gpt-6.1-sol / high: finalize and route the local input 5 V/ideal-diode/3V3 power
+   blocks. Follow manufacturer hot-loop, feedback/Kelvin, effective-capacitance,
+   current-path, exposed-pad and thermal guidance. Keep BUCK5V isolated from
+   shared+5V except through U5. Never use USB to backfeed the battery buck.
+   Verify custom pad numbering and F/B orientation against manufacturer drawings.
+3. gpt-6.1-sol / high: route rail supervision, reset/fresh-arm latch, monitor
+   isolation and DC/AUX inhibit. Preserve the reviewed 3V3/5V domains, capacitor
+   ownership, output defaults and direct DC sleep pulldowns. Maintain the stated
+   voltage-drop budgets. Do not bypass latch/reset for easier routing.
+4. gpt-6.1-sol / medium: route external Ioff buffers and their series resistors,
+   bypass capacitors and receiver contracts. Keep outputs disabled until permit.
+5. Execute original 2.1–2.6 in dependency order: Z input/bank placement and
+   routing; original sleep/CS/E-stop feed gaps; DVDD loops; selective cleanup;
+   correct assembled front/back legends, including any stale 25 A fuse rating.
+   F1 is a holder; the actual fuse remains a coordinated, unselected part. Re-identify endpoints in the new
+   netlist: the original open-link count/names may change after topology edits.
+6. gpt-6.1-sol / high, independent: original 2.7 regression with fresh native
+   ERC/refilled DRC/parity, retained connected-pad groups, power-domain review,
+   courtyard/edge/contact checks and front/back/3D inspection. Stop at gate.
+Use gpt-6-astra / medium only for a genuine coupled electrical contradiction,
+or the independent phase gate if retaining the established review scheme.
+
+ROUTING / PROMOTION RULES
+Work from the current native root; preserve its user-visible state and dirty
+work. Stage edits and compare hashes before promotion. Do not execute legacy
+whole-board generators or side-effecting audit imports. Never solve congestion
+by relaxing design rules, cutting the In1 ground reference or blanket-deleting
+dangling warnings. After two different failed attempts, propose a local layout
+change rather than loop. Log every removed track/via with its reason and net.
+All new required pads must connect before Phase 2 passes; a clean parity check
+does not establish connectivity. Zero opens and no unexplained DRC/ERC errors
+are the final routing gate. No manufacturing files are released in this phase.
+
+THERMAL CONSTRUCTION
+Keep the stored 35um copper baseline until full-board DFM accepts a change.
+The 24 central filled/capped-via construction is a candidate, not already built.
+Protect the 9x17.5mm per-axis reservation, with an actual proposed 8 x 17 mm contact
+patch and defined alignment. The revised model does not prove actual hardware
+performance. Do not reuse the old 9 mm contact model as the new as-built result.
+TIM, supported sink, via process, assembly and current qualification close in
+Phase 3 and subsequent hardware phases. No open via-in-pad process assumption.
+
+REMAINING SYSTEM / MANUFACTURING GATES
+Motor/pack/BMS returned-energy envelope, full-pack/loss-of-sink behavior,
+aggregate Q1 input current and burst SOA, actual fuse coordination, motor bulk
+capacitor ripple and final exact sourcing remain explicit requirements.
+No arbitrary motor/BMS data, braking resistor, fuse or sustained TVS rating may
+be invented. Route preparation does not resolve or waive these gates.
+Physical fault/reset, rail transients, connector and thermal tests are post-fab
+measurements; they have not been run. Firmware must implement configuration,
+readback and a fresh operator arm action; no firmware implementation is implied.
+
+STOP
+At completion return exact source hashes, changed native files, actual model/
+effort, routing and retained-net evidence, unresolved issues with owners and the
+Phase 2 recommendation. Do not start Phase 3, push, upload or order anything.

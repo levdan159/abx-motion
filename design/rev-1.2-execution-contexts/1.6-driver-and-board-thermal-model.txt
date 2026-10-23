@@ -1,0 +1,89 @@
+TASK 1.6 — Driver and board thermal model
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Calculate 2/3/3.5 A RMS driver losses and thermal paths, shared heating, actual 1 oz baseline and candidate 2 oz/via options. Include PCB resistance between exposed pad and underside sink.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.2/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/1.5/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Keep the DDWR bottom-pad package. Model 2 A RMS normal, 3 A RMS higher-current target and 3.5 A RMS driver-side thermal case. Present copper is 35 um on all four layers; twelve planned 0.25 mm drill GND vias/axis are not a verified thermal resistance. Use 40 C ambient and proposed driver junction <=125 C including uncertainty.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.2/evidence/component-evidence.csv
+- work/rev-1.2-completion/packets/1.5/evidence/power-budget.csv
+- work/rev-1.2-completion/packets/1.1/evidence/geometry-summary.json
+- abx-motion.kicad_pcb
+- abx-footprints.pretty/DRV8462_DDW0044E.kicad_mod
+- https://www.ti.com/lit/an/slma002h/slma002h.pdf
+- design/rev-1.2-research/calculate_losses.py (other PWP devices; do not reuse its part values)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own thermal calculation/model files and reports only
+Own report root: work/rev-1.2-completion/packets/1.6/evidence/
+Own result: work/rev-1.2-completion/packets/1.6/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Calculate DDWR conduction loss using Pcond=2*Iphase_RMS^2*(RHS+RLS), exact hot/cold source values and tolerances. Add switching/quiescent losses with stated PWM/slew assumptions; assess hold and motion without crediting automatic current reduction for a full-current claim.
+2. Extract actual EP, solder opening, copper areas, via drills/plating assumptions, board thickness and contact regions. Model the series/parallel heat paths through board/vias and TIM; do not connect a heatsink directly to the datasheet junction-to-bottom metric while omitting the PCB.
+3. Model shared-sink temperature rise from all three axes plus local spreading/contact resistance for each. Include enclosure/orientation, nearby heat sources and realistic TIM thickness/flatness sensitivity.
+4. Compare baseline 1 oz, candidate 2 oz outer copper and coordinated via/plane changes. Derive required sink/interface performance and manufacturing implications. Use calculations as estimates with uncertainty, not achieved temperatures.
+5. Return a feasible cooling envelope or precise failure conditions; keep 3.5 A port operation constrained by the retained connector specification. No CAD/heatsink procurement in this packet.
+
+REQUIRED OUTPUTS
+- thermal-model.py
+- thermal-results.csv
+- thermal-assumptions.json
+- cooling-requirements.txt
+- thermal-issues.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Exact selected-package inputs, RMS convention, hot losses, shared heating and intervening PCB represented.
+- Predicted margin includes sensitivity/uncertainty; no use of theta-JA as a fixed board-specific property.
+- A 3.5 A thermal case does not become a 3.5 A JST port rating.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Uncertain plating/TIM/enclosure values: provide bounded sensitivity and source requirements, not a guessed precise temperature.
+- No feasible passive construction within agreed envelope: expose the tradeoff for gate review before any redesign.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

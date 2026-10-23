@@ -1,0 +1,42 @@
+HISTORICAL VARIANT CHECK — DDVR is not the selected package.
+Current design uses DRV8462DDWR. See layout-integration-plan-20261021.txt
+and the placement README for the DDWR listing. The DDVR figures below are
+archived research, not the current BOM or a stock commitment.
+
+DRV8462DDVR procurement check — 21 October 2026
+Exact variant: DDV, top-exposed thermal pad; three ICs per board.
+Status: catalog support and distributor supply identified; assembly sourcing
+is not yet confirmed for a specific build quantity or delivery date.
+
+JLCPCB
+Exact catalog match: DRV8462DDVR, Extended part C29780285, HTSSOP-44.
+Page identifies SMT assembly support for Economic and Standard PCBA.
+The retrieved current product page does not expose a usable stock count or
+confirmed lead time. Older search extracts reported zero stock/pre-order;
+these are not treated as current inventory evidence.
+https://jlcpcb.com/partdetail/TexasInstruments-DRV8462DDVR/C29780285
+
+LCSC (separate inventory from JLCPCB assembly)
+Exact part C29780285. Retrieved product page reports 11 in stock, minimum 1.
+This does not establish how many JLCPCB can allocate to assembly.
+https://www.lcsc.com/product-detail/stepper-motor-driver_ti-drv8462ddvr_C29780285.html
+
+PCBWay
+Official procurement policy supports sourcing through authorized distributors,
+including DigiKey/Mouser, or customer-consigned components. No exact-part
+PCBWay inventory, quotation or delivery commitment has been obtained.
+https://www.pcbway.com/pcb_prototype/Electronic_Components.html
+
+Authorized distributor route
+Retrieved DigiKey page reports 474 in stock for DRV8462DDVR; cut-tape ordering
+code 296-DRV8462DDVRCT-ND. Stock is not reserved; delivery is order-dependent.
+https://www.digikey.com/en/products/detail/texas-instruments/DRV8462DDVR/23028781
+TI's direct-order page reports out of stock; that is distinct from distributor
+inventory. Avoid relying on old search summaries of stock quantities.
+https://www.ti.com/product/DRV8462/part-details/DRV8462DDVR
+
+Design freeze gate
+Obtain JLCPCB allocation/pre-order lead time and a PCBWay exact-MPN sourcing
+quote for 3 x board quantity plus their required assembly overage. Do not
+substitute DRV8462DDWR: its thermal construction and numbered pins differ.
+No orders, reservations, uploads or messages to suppliers were made.

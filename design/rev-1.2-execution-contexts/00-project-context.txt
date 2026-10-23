@@ -1,0 +1,102 @@
+ABX-Motion Rev1.2 — shared execution context
+Prepared 22 October 2026. These are instructions for FUTURE authorized work.
+Generating/reading these files starts no execution phase or agent.
+
+PROJECT AND AUTHORITY
+Workspace: /home/daniel/Documents/kicad/abx-motion
+Branch at planning: rev-1.2-3axis-stepper; inspect live branch/dirty state.
+Authoritative intent: design/rev-1.2-completion-plan.txt.
+Task allocation: design/rev-1.2-work-packages.csv.
+Current circuit/geometry: root native PCB and hierarchical schematics.
+Exact device constraints: selected manufacturer documents, with conditions.
+Fresh reports apply only to their named source hashes. Prior plans, generators
+and work-folder candidates are historical inputs, not completed dependencies.
+The root is user-visible and has substantial uncommitted work. Preserve it.
+
+ACCEPTED SCOPE AND TARGETS
+- Retain 157 x105 mm outline, main floorplan, 3 DRV8462DDWR bottom-pad drivers,
+  2 DC channels, CAN/RS485, I2C/OLED, UI, AUX and relay arrangement.
+- 7S lithium-ion: 29.4 V full charge, 32 V normal design ceiling. A >=30 A
+  battery capability does not specify the board current rating.
+- Normal target: 3 axes at up to 2 A RMS/phase. Higher-current stepper-only
+  target: 3 A RMS/phase, subject to qualification. Evaluate 3.5 A RMS as a
+  DRIVER thermal design case, constrained by the rest of the current path.
+- Keep original upright JST-XH motor connectors. Manufacturer 3 A/AWG22
+  specification must be respected; a heat test alone cannot authorize a
+  3.5 A port rating. A 5 A RMS/~7 A sinusoidal-peak design is a later revision.
+- DC edge case: 150 W electrical input per motor for 1 second. Continuous
+  current/duty and total combined load remain budget/test-derived.
+- No fan. Prioritize bottom exposed pad -> solder -> GND copper/vias ->
+  insulating TIM -> supported underside passive spreader/heatsink. Include
+  board thermal resistance and all-axis/shared heating, not only IC theta-JC.
+- Proposed qualification environment: 40 C ambient, driver junction estimate
+  <=125 C including uncertainty, connector rise <=20 C and its absolute limit.
+  Confirm other parts' separate derated limits; no powered tests have run.
+- STEPPER_ONLY: DC outputs unloaded and commands locked off. COMBINED:
+  declared DC/stepper duty. Both include Q1, regulators, ESP32/radio and I/O.
+- Accepted Z addition: J607 MIN/GND/MAX with same pull-up/series/RC topology
+  as existing limits, using U704 pins19/20, IO1_6/IO1_7. Shift six-connector
+  bank down nominally 10.5 mm and add J607 at top, subject to actual fit.
+  Existing assignments remain unchanged. New filters sit beneath the OLED.
+- OLED uses actual matching direct-plug stack and 10 mm standoffs. Limit
+  interfaces remain dry-contact/3V3, not direct 24 V sensor inputs. External
+  STEP/DIR/EN_N interfaces are 5 V logic with defined current/cable contracts.
+- Explicit arm/configuration/readback before motion, independent hardware
+  E-stop/inhibit and defined fault recovery. Power off to change motor wiring.
+
+HISTORICAL STARTING OBSERVATIONS — REFRESH IN 1.1
+Review recorded 3 opens: AX2_SLEEP_N, AX3_CS_N and +3V3_DRV_EN; no other DRC
+errors/parity issues; 192 warnings; subsequent root ERC reported zero.
+Do not force current report counts to match these observations.
+Stored stackup was 1.6 mm/4 layers with 35 um copper per layer. No 2 oz
+change has been applied. Twelve planned 0.25 mm drill GND thermal vias/axis
+are not a measured thermal resistance. No application firmware exists yet.
+Drivers at (88/108/128,124.5) mm, 0 deg, 20 mm pitch. Preserve In1 GND and
+underside heat-contact reservations approximately centreX +/-4.5 mm,
+Y115..132.5; re-read actual geometry before any work.
+Z drafts exist in work/rev-1.2-electrical/z-limit-20261022/project/ only;
+they are not promoted or accepted execution output. Source hash recheck is
+mandatory before using any piece of that draft.
+
+EXECUTION BOUNDARIES
+- Only execute after the user authorizes the named packet/phase. A request to
+  review or expand the plan authorizes documentation, not CAD/firmware work.
+  Once a phase is authorized, finish its in-scope packets without asking for
+  permission at every routine step. Stop at the phase checkpoint requested.
+- One CAD writer. Use immutable snapshots for concurrent readers; no worker
+  may overwrite user/editor saves. Recheck live source hashes before promotion.
+- Do not reset/clean/discard Git work, run a legacy generator, bulk-refresh
+  footprints, relax rules to route, or delete all dangling warnings. No
+  automatic commit/push, upload, supplier message, purchase or publication.
+- Keep output in work/rev-1.2-completion/packets/<ID>/evidence/ plus result.json,
+  unless a packet explicitly lists other write scopes. Existing production/
+  releases are read-only. Use approved source changes only for implementation.
+- Inspect helpers before executing/importing: some save metadata on import,
+  use stale candidates or regenerate obsolete boards. The old PWP loss script
+  is not a DRV8462DDWR model. Importing route_core patches the save function;
+  understand it before use. Native pcbnew SaveBoard can rewrite .kicad_pro.
+- Use /usr/bin/python3 for installed pcbnew. Use a safe save wrapper/staged
+  PCB-only promotion; compare project settings and retained net/geometry after.
+  Remove displaced conflicting copper BEFORE reload: moved pads can cause
+  pcbnew to reassign a via net and hide an error. Keep thermal via-in-pad
+  exceptions limited to phase3's explicitly specified assembly process.
+- Refill zones before supply/ground connectivity checks. Native tool exit0
+  does not prove no violations: parse errors, opens, parity and warnings.
+  Compare actual pad groups, not just track counts or net names.
+- No more blind routing loops after two different attempts on fixed geometry.
+  Return exact obstacles and a minimal layout option; escalate with evidence.
+- Physical tests require a human, actual board/instruments and recorded setup.
+  Missing physical evidence is AWAITING_HARDWARE, never a simulated PASS.
+
+CONTEXT AND RESULT CONTRACT
+Read this shared file once per fresh session, your packet, and only needed
+accepted dependency results/source sections. Keep access to originals; do not
+truncate needed evidence to hit a token target. Do not paste the old chat or
+whole PCB/PDF into context. Use compact extraction, relevant source pages and
+selected views. Model/effort settings are chosen in client/orchestrator; a
+prompt naming a model does not switch the session. Record actual if known.
+Provide result.json matching result.schema.json. TASK_COMPLETE means only
+this packet's stated deliverables/checks succeeded. It does not approve a
+phase, authorize manufacture or establish physical qualification.
+Use source-backed brief conclusions, evidence paths and unresolved items;
+no long internal-reasoning transcript or repetitive full-report narration.

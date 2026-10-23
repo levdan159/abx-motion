@@ -1,0 +1,88 @@
+TASK 1.4 — Reset and inhibit behavior
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Audit cold/warm boot, power-domain sequencing, E-stop, watchdog, expander retained state, faults, missing jumpers and re-arm behavior; distinguish DC brake and high-Z states.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.2/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/1.3/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Determine actual asynchronous inhibit and re-arm behavior. Existing control bank is U704 expander, U705/6/7 buffers, U708 interlock, U709 arm latch, U710 watchdog, U711 axis gates and U712 relay gates. Do not assume the circuit implements its intended truth table merely because parity passes.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.3/evidence/pinmap.csv
+- work/rev-1.2-completion/packets/1.3/evidence/expander-map.csv
+- work/rev-1.2-completion/packets/1.2/evidence/component-evidence.csv
+- Steppers_Relays.kicad_sch
+- MCU.kicad_sch
+- Power.kicad_sch
+- Motor_Channel.kicad_sch
+- work/rev-1.2-electrical/audit_circuit.py (historical logic checks, inspect only)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own analysis/simulation/test scripts and reports only
+Own report root: work/rev-1.2-completion/packets/1.4/evidence/
+Own result: work/rev-1.2-completion/packets/1.4/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Trace gate, latch, watchdog, reset, pull-up/down and enable nets from actual source. Confirm exact device thresholds across supply tolerance and the configured U710 timing/enable/WDI behavior.
+2. Build a table for cold boot, MCU-only reset, expander retained outputs, partial rails, E-stop assertion/release, watchdog expiry, failed configuration, common driver fault, absent/misplaced jumper and ONBOARD/EXT transitions.
+3. Analyze analog power-up/decay and pull-resistor dominance separately from Boolean simulation. Check current in clamp/protection structures during partial power. Distinguish DC PWM low-side braking from nSLEEP/high-impedance behavior.
+4. Specify the allowed state machine, electrical stop latency and explicit re-arm sequence. Identify relay/AUX behavior independently and note which mechanisms lose holding torque.
+5. Use a small independent model to check representative edge sequences, but label it logical analysis rather than measured reset behavior. Recommend only concrete minimal corrections for demonstrated defects.
+
+REQUIRED OUTPUTS
+- truth-table.csv
+- fault-sequences.json
+- timing-contract.txt
+- inhibit-issues.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Each fault/default maps to actual output pins, intended stop mode and recovery; no automatic restart assumption.
+- Uncertain startup analog behavior remains a named hardware test or circuit issue, not a simulated PASS.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Power-domain/threshold/retry contradiction: identify affected pins, bounds and minimal correction; send to 1.7 gate.
+- Circuit change required: propose it here; do not edit CAD in an analysis packet.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

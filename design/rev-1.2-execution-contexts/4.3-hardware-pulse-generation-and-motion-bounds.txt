@@ -1,0 +1,83 @@
+TASK 4.3 — Hardware pulse generation and motion bounds
+Recommended model: gpt-6.1-sol
+Reasoning effort: medium
+Starting-context target: 5-9k tokens, soft, including relevant loaded evidence.
+Work mode: firmware writer
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Implement synchronized STEP/DIR timing with appropriate hardware peripherals; acceleration, buffer-underrun and bounded-command handling.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/4.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Three axes use direct ESP32 STEP/DIR signals. SPI sets/readbacks configuration; I2C expander activity cannot be the pulse engine. The selected hardware timing peripheral and resource allocation must follow the frozen SDK/interface contract.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/4.1/evidence/firmware-interface-contract.txt
+- work/rev-1.2-completion/packets/1.4/evidence/timing-contract.txt
+- firmware/ board definitions and arming interfaces
+- Official SDK documentation for selected pulse-generation peripheral and TI STEP/DIR timing table
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- firmware/ motion/pulse engine, bounded command queue and relevant tests; own reports
+Own report root: work/rev-1.2-completion/packets/4.3/evidence/
+Own result: work/rev-1.2-completion/packets/4.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Implement this bounded objective using the accepted engineering contract.
+Inspect relevant source before editing; keep a small local change manifest.
+Use tools for real geometry/code/checks. Make routine local choices within
+constraints, then verify them. If two distinct routing attempts fail, report
+actual obstacles and the smallest layout option rather than looping. Do not
+expand to unrelated cleanup or redesign. Return evidence and concise decisions.
+
+EXECUTION SEQUENCE
+1. Confirm pulse-peripheral ownership, clock/tick resolution and pins before implementation. Derive pulse high/low, DIR setup/hold and maximum rate from exact device limits plus explicit margin.
+2. Implement synchronized start/update for three axes with bounded motion buffers, acceleration/deceleration and pulse/count accounting. Keep settings, units and overflow behavior explicit.
+3. Integrate stop/abort and buffer-underrun handling through the accepted fault API. Avoid blocking I2C/SPI/flash/network operations in the real-time pulse path.
+4. Check command bounds, zero/one-step cases, timer/queue boundaries and simultaneous axes with meaningful host/simulator tests. Prepare expected GPIO trace patterns for hardware validation.
+5. Report measured software scheduling behavior separately from expected physical pulse timing.
+
+REQUIRED OUTPUTS
+- pulse/motion source
+- pulse-timing-contract.csv
+- motion-test-results.json
+- expected-scope-patterns.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Pulse architecture uses direct hardware timing, timing math meets sourced limits and failure/underrun is bounded.
+- No simulated output described as a measured waveform or proof of loaded position accuracy.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Peripheral resources conflict with encoder/communications/SDK constraints: return a scoped interface decision.
+- Timing remains nondeterministic under concurrency: escalate to Sol High before adding queue or thread complexity.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

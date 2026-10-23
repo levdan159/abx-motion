@@ -1,0 +1,82 @@
+TASK 1.2 — Primary-source component evidence
+Recommended model: gpt-6-luna
+Reasoning effort: medium
+Starting-context target: 3-6k per family tokens, soft, including relevant loaded evidence.
+Work mode: read-only research
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Extract exact selected-part limits and package drawings by component family. Record tables/pages/conditions and source hashes; do not choose substitutes or infer ratings from headlines.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/1.1/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+This is factual extraction for exact selected packages. Current drivers are DRV8462DDWR, not DDVR or an older PWP proposal. Source limits must retain temperature, waveform, voltage, tolerance and package conditions. A large headline current is not a board rating.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/1.1/evidence/component-inventory.csv
+- work/rev-1.2-completion/packets/1.1/evidence/pad-net-map.csv
+- https://www.ti.com/lit/ds/symlink/drv8462.pdf
+- https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf
+- https://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+- design/rev-1.2-research/sources/provenance.json (historical index only)
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own packet evidence and downloaded source cache only
+Own report root: work/rev-1.2-completion/packets/1.2/evidence/
+Own result: work/rev-1.2-completion/packets/1.2/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+This is a bounded extraction/assembly job. Work one part family or document
+section at a time. Use exact fields and source locations; UNKNOWN is a valid
+value and a cue to hand off, not permission to infer. Return structured tables
+and a short exception list. Make no new engineering choice or safety claim.
+
+EXECUTION SEQUENCE
+1. Process one component family at a time: stepper IC/package; input/protection/DC bridge; buck/LDO/module; safety logic; connectors/relays/capacitors. Confirm exact MPNs from 1.1 before choosing the manufacturer document.
+2. Capture source URL, revision, date, SHA256 and PDF page/table. Extract min/typ/max, unit, test condition and meaning into the specified table. Mark absent data UNKNOWN and explicitly distinguish operating limits, absolute maxima, surge conditions and thermal reference metrics.
+3. For DDWR extract FS/RMS conventions, FET resistances at cold/hot temperatures, quiescent/switching conditions, thermal metrics and land/paste guidance. For connectors include actual wire/contact and temperature constraints; for capacitors include effective/ripple/ESR dimensions where published.
+4. Extract safety logic power-up/default states, thresholds, timing and partial-power behavior. Record conflicting vendor CAD and manufacturer pin drawings without resolving the engineering choice yourself.
+5. Validate row completeness and units using a small deterministic table checker. Supply only small source excerpts needed by the analysis packets.
+
+REQUIRED OUTPUTS
+- component-evidence.csv
+- source-index.json
+- missing-evidence.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Every numeric entry has exact MPN/package, unit, condition and primary-source location; unknowns are explicit.
+- No substitution selection, board-current claim or safety sign-off.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Conflicting pinout/limit or unclear exact MPN: return the conflicting evidence for Sol Medium/High review.
+- Do not guess a derating, fit or equivalence to fill a table cell.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,154 @@
+ABX-Motion Rev 1.2 — layout integration plan, 21 October 2026
+
+CURRENT AUTHORITY
+This document supersedes the older DRV8452/DRV8461 and DDVR proposals for
+the current placement. Selected driver is DRV8462DDWR, bottom exposed pad.
+Three independent axes, 2 A RMS/phase normal target, occasional 3 A RMS
+conditional on thermal validation. 7S battery; normal supply target to 32 V.
+Passive heatsinks; no fan connector. No claim of powered/thermal validation.
+
+The native root PCB is still a placement trial. All new footprints are
+mechanical proxies, not electrically connected components. Zero reported
+opens after removing old modules is NOT proof of a complete circuit: there
+are no conductive pads on the new proxies. See schematic parity and the
+placement audit before using any DRC summary.
+
+KEEP THE APPROVED FLOORPLAN
+Drivers U701/U702/U703: centres (88,124.5), (107,124.5), (126,124.5) mm,
+all 0 degrees, 19 mm pitch. Power/output pins face left, controls face right.
+Keep the repeated capacitor/pull arrangements. Keep U704 near the existing
+I2C/digital-I/O side; U705..707 form the three candidate external interfaces;
+U708..710 reserve inhibit/arming/supervision space. Existing DC, relay,
+OLED/10 mm standoff, RF and communications arrangements stay fixed.
+Do not add more unspecified logic 'just in case'. Replace package candidates
+with the minimum verified circuit during schematic integration, and remove
+any proxy the circuit does not need.
+
+ROUTING FLOORPLAN — COARSE REGIONS, NOT ROUTED PATHS
+1. Shared motor supply: evaluate a front-copper distribution band approximately
+   X79.5..134.5, Y113..116 mm, entering from the protected motor bus on the
+   right. Establish the actual branch point from the schematic/current copper.
+   Give each driver its own low-impedance branch and local bulk loop.
+   Do not chain the three power feeds through narrow IC pads or signal vias.
+   This band is not a selected copper width or a qualified current path.
+2. Phase outputs: group each driver's parallel output pins locally, then fan
+   toward its motor connector below. Use front copper and In2 as needed;
+   review the existing In2 zones before assigning any corridor to power.
+   Do not force four winding nets through a single narrow side corridor.
+3. Control: descend from the upper logic bank to the RIGHT side of each
+   driver. Keep STEP/DIR and SPI away from switching-node bundles. Prefer
+   a short configuration bus trunk with short branches. Decide chip-select
+   architecture before laying out the bus. Route against a continuous ground
+   reference and avoid plane-split crossings.
+4. Ground/heat: retain continuous In1 GND. Keep the underside thermal-contact
+   regions reserved at X82.5..93.5 / 101.5..112.5 / 120.5..131.5,
+   Y115..132.5 mm. Join EP45, PGND and GND to low-impedance grounded copper
+   and coordinated thermal-via arrays. Never connect a phase-output island
+   to a common heatsink. Do not perforate the ground reference to make routing
+   appear easier. Actual B.Cu copper, mask, TIM insulation and heatsink fixing
+   are not designed yet.
+5. Retained obstacles: encoder, button, I/O and supply traces already cross
+   the bay. Respect them. Only identify obsolete StepStick routing for later
+   selective retirement. No board-wide collision rip-up or legacy rebuild.
+
+LOCAL DDWR PIN GROUPS — TOP VIEW, VERIFY AGAIN IN THE SCHEMATIC
+ VCP=1; VM=2,11,12,21; PGNDA=3,10; PGNDB=13,20.
+ AOUT1=4,5,6; AOUT2=7,8,9; BOUT2=14,15,16; BOUT1=17,18,19.
+ GND=22,23 and exposed pad 45 in the footprint.
+ DVDD=24; VCC=25; nFAULT=26; nHOME=27; MODE=28.
+ RSVD=29,30,31,32 and (in SPI mode)35: leave unconnected per datasheet.
+ VREF=33; nSCS=34; SDO=36; SDI=37; SCLK=38; STEP=39; DIR=40.
+ ENABLE=41; nSLEEP=42; CPL=43; CPH=44.
+ DDVR is a different pinout and is not a drop-in alternate.
+
+Two local 10 nF VM-rated capacitors go to VM/PGND supply pairs. Keep the
+100 nF VM-rated charge-pump capacitor at CPH/CPL, and the 1 uF/16 V capacitor
+between VCP and VM, not VCP and ground. Keep 100 nF at VCC and 1 uF at
+DVDD. These are datasheet starting points; choose actual procurement parts
+and verify voltage/bias/ripple. Never parallel the three DVDD regulator outputs.
+VCC/logic-domain selection must protect the ESP32 from 5 V SDO/pullups.
+
+0.635 mm lead pitch and 0.4 mm lands leave only 0.235 mm between leads.
+At our 0.15 mm signal/clearance minimum, a between-lead trace would need
+0.45 mm. Escape outward. Stagger transition vias around capacitors/pulls.
+Do not select thermal-via construction or insert holes into the exposed pad
+until the stencil/mask and assembly process are reviewed together.
+
+CONNECTOR AND MECHANICAL PLAN
+J711/712/713 use the original upright JST-XH B4B-XH-A four-position,
+2.5 mm pitch footprint, centred on each axis at Y148 mm. Matching cable
+housing: XHP-4 with correctly selected genuine crimp contacts.
+Suggested pin mapping for review: 1=A1, 2=A2, 3=B1, 4=B2; all four pins
+are in one row. Verify the original harness convention before assigning nets.
+JST specifies 3 A with AWG22 and a temperature range including self-heating.
+Normal 2 A RMS operation still requires wire/contact/temperature qualification;
+3 A RMS has no nameplate current margin and is not a qualified operating
+mode merely because the driver or heatsink can support it. Do not silently
+raise the connector limit to match the IC. Check mating access and wire bend.
+
+C717/727/737 use D8/P3.5 radial packages as fit candidates only. Select bulk
+capacitance, voltage, ripple-current and lifetime first. If an adequate part
+needs D10 or more height, revise placement before routing. A larger voltage
+rating does not establish ripple or regenerative-energy capability.
+
+J701/702/703 are upright external-control OUTPUT candidates. They preserve
+ESP32 control when an external driver is used. Four pins are provisional:
+do not freeze pin order, voltage, sink/source polarity or buffering until
+the supported external-driver interface is defined. They are not motor ports.
+JP701/702/703 reserve per-axis onboard/external mode selection. The hardware
+mode must prevent accidental onboard bridge drive; it must not merely change
+the firmware label. Heatsink and cable access must remain usable in both modes.
+
+ELECTRICAL WORK THAT MUST PRECEDE ROUTING
+A. Export the actual native schematic netlist and close the ESP32 pin budget.
+   Six STEP/DIR signals require direct MCU pins. Existing GPIO11..14 serve
+   two axes; the older proposal moves UI/relay controls to a second expander
+   to free pins, but the third axis, SPI, chip-select and hardware arm still
+   need a checked allocation. Do not borrow strap/input-only pins casually.
+B. Define the minimum hardware truth table: E-stop, MCU reset, watchdog loss,
+   missing 3V3, expander power-up, failed SPI configuration, per-axis mode,
+   per-axis enable and driver fault. Outputs must remain inhibited until
+   valid configuration and an explicit arm action. Inhibit must work without
+   a functioning I2C/SPI bus. Expander retained state is not a reset strategy.
+C. Choose exact gate/buffer/supervisor devices to implement that truth table.
+   U705..710 are package envelopes, not selected ICs. Confirm their pinouts,
+   package size, default outputs, supply sequencing and required passives.
+   A supervisory-reset device alone is not automatically a firmware watchdog.
+D. Give each driver local fault observation and configuration readback.
+   Avoid implicit motion restart after a fault or reset. Define what each
+   external output does when inhibited, in either mode, and with power absent.
+E. Implement one complete driver cell in the schematic, review it, then copy
+   to Y/Z. Include all required pulls/straps and power pins, reserved-pin
+   treatment, reference choice and current settings. An internal VREF option
+   can bypass an external divider, so a divider alone is not a hardware limit.
+F. Replace proxies with real schematic-linked footprints and check parity.
+   Delete unnecessary provisional parts at this point. Do not manufacture
+   from the placement-only footprint, which lacks approved EP paste/vias.
+
+ROUTING ORDER AFTER ELECTRICAL REVIEW
+1. Freeze actual connector/capacitor/support-device footprints and pin maps.
+2. Identify obsolete track UUIDs by net plus connection/physical scope; preserve
+   shared supply/ground and all unrelated routing. Save a rollback snapshot.
+3. Route one axis's power loops, four winding nets and thermal connections.
+   Review width, copper weight, temperature rise, neck-downs, vias, supply
+   ripple and return paths before repeating. Phase RMS is not battery current.
+4. Replicate the reviewed geometry, adapting to real obstacles on each axis.
+5. Route hardware inhibit/faults, then STEP/DIR, SPI/I2C and slow status nets.
+6. Review thermal-contact copper and all power/return paths; refill zones;
+   check ERC, full DRC and schematic parity. Fix the causes of errors rather
+   than relaxing constraints or repeatedly ripping up the whole board.
+7. Stop for review before fabrication/assembly exports. Routing and DRC do
+   not establish three-axis thermal performance or 3 A RMS capability.
+
+SOURCE REFERENCES
+TI DRV8462 Rev B: pin functions, Table 7-1, sections 9,10,11 and DDW0044E:
+ https://www.ti.com/lit/ds/symlink/drv8462.pdf
+TI recommends 2 oz outer copper for thermal/EMI performance; this remains
+a stackup/cost decision, not a change made by this plan.
+NXP PCA9555 reset/input defaults:
+ https://www.nxp.com/docs/en/data-sheet/PCA9555.pdf
+Selected JST-XH connector specification:
+ https://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+JLCPCB exact DDWR catalog listing (assembly stock not confirmed):
+ https://jlcpcb.com/partdetail/TexasInstruments-DRV8462DDWR/C5930226
+No supplier communication, order, reservation or new release was made.

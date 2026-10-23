@@ -1,0 +1,84 @@
+TASK 7.3 — Combined loading and regenerative limits
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k per run family tokens, soft, including relevant loaded evidence.
+Work mode: HUMAN BENCH + analysis
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Human performs bounded DC bursts, combined profiles and defined stop/return-energy cases only with an adequate sink/fixture. Model reviews interacting input, switch-node and thermal evidence.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/7.2/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Combined loading shares Q1, supply/regulator and board thermal paths with the stepper cells. The agreed DC edge case is each 150 W electrical input for one second, not continuous power or guaranteed returned energy. Source current limiting alone cannot absorb regeneration.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/7.1/evidence/qualification-matrix.csv
+- work/rev-1.2-completion/packets/7.2/evidence/stepper-results.csv
+- work/rev-1.2-completion/packets/1.5/evidence/protection-envelope.txt
+- Actual human-captured signed battery current, local VM/phase/gate traces, temperatures and bounded load/sink setup
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own physical evidence analysis, plots and results only; no remote actuation or unapproved design changes
+Own report root: work/rev-1.2-completion/packets/7.3/evidence/
+Own result: work/rev-1.2-completion/packets/7.3/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Verify actual energy sink, pack/BMS condition, current/energy limits and correctly referenced probes before recommending a regenerative measurement. If prerequisites are absent, defer it explicitly.
+2. Analyze staged individual DC bursts then both channels and accepted combined profiles. Preserve burst duration/repetition/cooldown and stepper/RF/peripheral conditions; measure total input rather than phase-current sums.
+3. Check Q1/FET/shunt/regulator heating and voltage drops together with driver/connector thermal results. Determine whether combined use requires lower phase current or DC duty than stepper-only.
+4. Analyze bounded stop/backdrive scenarios with local bus and switching waveforms, including full-pack/limited-acceptance cases only where the fixture can contain them. Compare actual excursions to reviewed component limits and protection conditions.
+5. Evaluate resets/fault recovery under these bounded loads. Return measured operating-envelope restrictions and exact unresolved physical cases; do not authorize destructive arbitrary shorts or battery reversals.
+
+REQUIRED OUTPUTS
+- raw-combined-and-regen/
+- combined-results.csv
+- transient-results.csv
+- combined-duty-envelope.csv
+- combined-qualification-issues.csv
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Each claimed combined/return-energy case actually demonstrated within documented setup and component limits.
+- Stepper-only ratings not transferred automatically; consumed motor power and returned energy kept distinct.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- Uncontrolled bus rise or uncertain sink/BMS behavior: stop progression and require a bounded physical setup/design correction.
+- Unexpected switching/thermal failure: record raw evidence and return to owning analysis; model confidence is not test containment.
+Finish this packet only. Do not auto-start a different phase or launch agents.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

@@ -1,0 +1,88 @@
+TASK 4.6 — Firmware integration gate
+Recommended model: gpt-6.1-sol
+Reasoning effort: high
+Starting-context target: 6-12k tokens, soft, including relevant loaded evidence.
+Work mode: independent review
+Planning state at creation: PLANNED. This file is not evidence the task has run.
+
+OBJECTIVE
+Review reset/fault/timing/profile interactions against final hardware; run meaningful host tests and build checks; define unrun hardware tests.
+
+READ FIRST
+- design/rev-1.2-execution-contexts/00-project-context.txt
+- This packet and its matching CSV row
+- Relevant accepted dependency results (hashes/current state must agree)
+
+DEPENDENCIES
+- work/rev-1.2-completion/packets/4.5/result.json plus the evidence needed below
+- work/rev-1.2-completion/packets/3.4/result.json plus the evidence needed below
+Do not proceed with stale/missing accepted inputs. Preserve live user changes;
+refresh the snapshot or return the precise unmet prerequisite.
+
+TASK-SPECIFIC ENGINEERING CONTEXT
+Firmware must be integrated against the final post-thermal hardware map, not only the phase1 draft map. Several independently correct modules can still disagree on ownership, latch sequence, current convention, timeout or stop action.
+
+RELEVANT SOURCE FILES / EVIDENCE
+- work/rev-1.2-completion/packets/3.4/evidence/phase-3-review.txt
+- work/rev-1.2-completion/packets/3.4/evidence/frozen-bom.csv
+- work/rev-1.2-completion/packets/4.1/evidence/firmware-interface-contract.txt
+- firmware/ all source and meaningful tests
+- work/rev-1.2-completion/packets/1.4/evidence/truth-table.csv
+- work/rev-1.2-completion/packets/4.5/evidence/profile-limit-table.csv
+These are paths/URLs to inspect selectively, not a request to load entire files
+into the chat. Paths under work/rev-1.2-completion/ are future dependency outputs.
+Refer to original data where a summary is insufficient. No authority is implied
+by a historical candidate filename.
+
+ALLOWED WRITES
+- Own integration review/tests and narrowly scoped firmware corrections only; no CAD mutation; completion-root gate-4.txt
+Own report root: work/rev-1.2-completion/packets/4.6/evidence/
+Own result: work/rev-1.2-completion/packets/4.6/result.json
+All other source or external mutations are outside this packet's scope.
+
+MODEL-SPECIFIC EXECUTION STYLE
+Reconstruct relevant actual circuit/geometry/data and sourced limits before
+choosing a model or modification. State units, assumptions, corner conditions
+and uncertainty; use reproducible calculations or meaningful tests. Challenge
+coupled failure modes and return the smallest evidence-supported correction.
+Do not enumerate endless alternatives or rewrite working subsystems. Provide
+brief conclusions with source/artifact evidence, not an internal reasoning log.
+
+EXECUTION SEQUENCE
+1. Independently reconcile final hardware pins/addresses/part variants with board definitions and protocol. Check IRQ/task/peripheral ownership, reset sequencing and partial failures across the modules.
+2. Build with recorded dependencies and run representative integration tests for arm/config failure, watchdog starvation, pulse underrun, limit/retreat, corrupted calibration, mode/profile changes and communications loss.
+3. Inspect current-unit conversions, external enable polarity, SPI chip-select transaction ordering and diagnostic timestamps. Confirm a lost GUI/network cannot defeat the accepted inhibit sequence.
+4. Classify what can be demonstrated in a host test versus scope/bench-only behavior; prepare a requirements-to-check mapping.
+5. Make only bounded firmware fixes to demonstrated integration defects, repeat affected tests and request fresh review if a safety contract changes. Return phase gate and stop.
+
+REQUIRED OUTPUTS
+- firmware-integration-review.txt
+- build-manifest.json
+- integration-test-results.json
+- requirements-test-map.csv
+- bench-unrun-checks.csv
+- completion-root gate-4.txt
+Place report/artifact outputs under the own report root unless an output is an
+explicit source edit or completion-root gate/context file named above.
+
+ACCEPTANCE / VERIFICATION
+- Final hardware map matched, reproducible build, meaningful failure tests pass, physical timing checks explicitly pending.
+- No safety contract silently changed to make tests pass.
+Also apply the shared unchanged-source/protected-net/process checks relevant to
+this mode. Parse actual report contents. A command completing is not itself a
+passing engineering result. Do not mark missing physical checks PASS.
+
+ESCALATION / STOP CONDITIONS
+- A requirement cannot be implemented with actual hardware/SDK: report precise incompatibility to the owning design decision.
+- Host testing cannot establish a physical claim: preserve NOT RUN rather than treating compilation as evidence.
+This is a phase gate: write the recommendation and STOP for user review.
+
+RETURN CONTRACT
+Write result.json conforming to design/rev-1.2-execution-contexts/result.schema.json.
+Include actual model/effort if exposed, input hashes, exact changed files/output
+paths, check results/evidence, unresolved issues with owner, and next action.
+Use TASK_COMPLETE only when this packet's outputs/checks truly succeeded;
+NEEDS_REWORK for failed checks; WAITING_FOR_INPUT for an unmet prerequisite;
+AWAITING_HARDWARE for missing physical evidence. Phase completion is separate.
+In the user report give the outcome, changed source files if any, checks and
+material limitations. Keep raw logs/calculations on disk and summaries concise.

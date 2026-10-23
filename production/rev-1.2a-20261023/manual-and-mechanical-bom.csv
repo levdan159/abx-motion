@@ -1,0 +1,6 @@
+Designator,Quantity,Part,Reason
+J208,1,Samtec SLW-104-01-L-S,"Low-profile 4.57 mm body, 2.54 mm pitch socket; source separately or arrange JLC consignment. Unkeyed single row; preserve PCB pin labels. Confirm actual OLED header engagement at 10 mm standoff height."
+JP701/JP702/JP703 shunts,3,2.54 mm two-position insulated jumper shunt,Fit to ONBOARD positions for default onboard axis control; headers themselves are in assembly BOM.
+F1 fuse element,1,"Compatible blade fuse, chosen for actual wiring/load envelope","F1 in JLC BOM is the holder only. Board 25 A marking is a design target, not a qualified assembly current rating."
+OLED and standoffs,1,"Actual OLED module, matching header, 10 mm insulating standoffs",Confirm module hole spacing and plug engagement; OLED module is not a fitted PCB footprint part.
+Heatsinks and TIM,1,Stock finned sinks and electrically insulating TIM; selection pending,Do not order archived machined HS1. No selected installed cooling rating or heatsink SKU is approved by this package.
