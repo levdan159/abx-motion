@@ -4,8 +4,9 @@
   "original_copper_preserved_verbatim": true,
   "stationary_footprints_preserved_verbatim": true,
   "existing_supply_placement_unchanged": true,
-  "new_footprints": 43,
+  "new_footprints": 61,
   "moved_existing": 10,
   "new_electrical_connections": 0,
-  "stage": "placement only; not for manufacture"
+  "stage": "placement only; not for manufacture",
+  "last_placement_update": "2026-10-24 dedicated ETH3V3 / sequencing"
 }

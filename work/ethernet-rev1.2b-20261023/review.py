@@ -37,8 +37,8 @@ for r in parts:
 report=dict(courtyard_overlaps=overlap,new_parts_inside_15mm_antenna_envelope=rfhits,
             extra_antenna_clearance_waived_by_user=True,
             stage='PLACEMENT ONLY - NO ROUTING OR ELECTRICAL INTEGRATION',
-            ethernet_supply_reservation_mm=[131,54,156,58.5],
-            ethernet_supply_test_point_mm=[133.5,56.25],
+            ethernet_supply_envelope_mm=[132.6,53.3,158.5,59.35],
+            ethernet_supply_test_point_mm=[157,56.25],
             jack_body_bounds=list(outline(fs['J801'],pcbnew.F_Fab).bounds),
             jack_height_mm=13.5,board_edge_y_mm=48)
 (O/'layout-review/geometry.json').write_text(json.dumps(report,indent=2))
@@ -67,20 +67,20 @@ def plot(name,xlim,ylim,large=False):
    pos=pad.GetPosition();sz=pad.GetSize();x,y=pos.x/1e6,pos.y/1e6
    ax.add_patch(Circle((x,y),min(sz.x,sz.y)/2e6,color='#d4ac4c',alpha=.85,zorder=4))
   pos=f.GetPosition();x,y=pos.x/1e6,pos.y/1e6
-  if large or r in ['U3','U1','U2','L1','J801','U801','Y801','U803','Q1']:
+  if large or r in ['U3','U1','U2','L1','J801','U801','Y801','U802','L801','U803','U804','Q1']:
    ax.text((x0+x1)/2,(y0+y1)/2,r,fontsize=6 if r in parts and r not in ['J801','U801'] else 8,
            ha='center',va='center',weight='bold',color=color,zorder=5)
   if r in ['J801','U801','U3']:
    labels={'J801':'RJ45 + MAGNETICS','U801':'W5500','U3':'ESP32-S3'}
    ax.text((x0+x1)/2,y1+.65,labels[r],ha='center',fontsize=9,color=color,weight='bold')
  ax.annotate('Extra antenna clearance waived\nWi-Fi performance to be measured',(112,51),(106,44.5),ha='right',fontsize=8,color='#ab3d6c',arrowprops=dict(arrowstyle='->',color='#ab3d6c'))
- ax.add_patch(Rectangle((131,54),25,4.5,fill=False,edgecolor='#8b49ac',ls='--',lw=1.5))
- ax.text(147.75,56.25,'3V3 ETH SUPPLY RESERVE',fontsize=7,ha='center',color='#8b49ac',weight='bold')
+ ax.add_patch(Rectangle((132.6,53.3),25.9,6.05,fill=False,edgecolor='#8b49ac',ls='--',lw=1.5))
+ ax.text(145.55,52.95,'DEDICATED 3V3 ETH BUCK',fontsize=7,ha='center',color='#8b49ac',weight='bold')
  ax.annotate('CABLE EXIT',(120.5,46),(120.5,42.7),ha='center',fontsize=10,weight='bold',color='#007e9e',arrowprops=dict(arrowstyle='<-',color='#007e9e',lw=2))
  ax.set_xlim(xlim);ax.set_ylim(ylim[1],ylim[0]);ax.set_aspect('equal');ax.grid(alpha=.15)
  ax.set_xlabel('PCB X (mm)');ax.set_ylabel('PCB Y (mm)')
  ax.set_title('ABX-Motion-ETH · Rev 1.2b placement candidate',loc='left',fontsize=17,weight='bold',pad=15)
- fig.text(.12,.025,'Blue: new Ethernet parts     Amber: locally moved parts     Grey: existing placement\nPlacement only. Existing copper has not been rerouted. Power selection and electrical integration remain open.',fontsize=10,color='#43564b')
+ fig.text(.12,.025,'Blue: new Ethernet parts     Amber: locally moved parts     Grey: existing placement\nPlacement only. Existing copper has not been rerouted. Supply selected and placed. Electrical integration / copper routing remain open.',fontsize=10,color='#43564b')
  fig.savefig(O/'layout-review'/name,dpi=150,bbox_inches='tight');plt.close(fig)
 plot('placement-detail.png',(76,174),(41,101),True)
 plot('placement-overview.png',(42,205),(40,156))

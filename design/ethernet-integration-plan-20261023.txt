@@ -11,8 +11,11 @@ The jack's RF effect is accepted as a prototype tradeoff, not RF qualification.
 Existing power-converter/regulator/ADC parts remain in their original positions;
 only seven test pads and three pull-ups move. SKU proposal: ABX-MOTION-ETH;
 hardware revision Rev 1.2b. The root Rev 1.2a board and manufacturing exports are
-unchanged. This is placement only: supply selection, schematic integration and
-routing are pending. See variants/ABX-Motion-ETH/README.txt for current status.
+unchanged. This remains placement only. Update2026-10-24: dedicated protected-
+VBAT LMR36506R3RPER supply and TXU0304PWR SPI isolation are selected and placed;
+schematic integration and routing are pending. The newer power/interface and
+firmware timing decisions supersede the original5V-fed-regulator/20MHz-start
+proposals below; see layout-review/power-routing-plan.txt in the ETH directory. See variants/ABX-Motion-ETH/README.txt for current status.
 
 ORIGINAL CIRCUIT PROPOSAL (antenna/placement constraints superseded as above)
 

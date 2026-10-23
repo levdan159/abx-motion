@@ -4,18 +4,22 @@
     {
       "ref": "J801",
       "area": 291.4188
+    },
+    {
+      "ref": "C801",
+      "area": 0.4395
     }
   ],
   "extra_antenna_clearance_waived_by_user": true,
   "stage": "PLACEMENT ONLY - NO ROUTING OR ELECTRICAL INTEGRATION",
-  "ethernet_supply_reservation_mm": [
-    131,
-    54,
-    156,
-    58.5
+  "ethernet_supply_envelope_mm": [
+    132.6,
+    53.3,
+    158.5,
+    59.35
   ],
   "ethernet_supply_test_point_mm": [
-    133.5,
+    157,
     56.25
   ],
   "jack_body_bounds": [

@@ -1,0 +1,38 @@
+{
+  "status": "PLACEMENT-ONLY CHECKS PASSED; NOT ELECTRICALLY INTEGRATED OR ROUTED",
+  "date": "2026-10-24",
+  "new_footprints": 61,
+  "root_design_files_unchanged": [
+    "MCU.kicad_sch",
+    "Power.kicad_sch",
+    "Steppers_Relays.kicad_sch",
+    "abx-motion.kicad_sch",
+    "Industrial_IO.kicad_sch",
+    "Motor_Channel.kicad_sch",
+    "abx-motion.kicad_pcb"
+  ],
+  "existing_copper_expressions_preserved_from_root": 6799,
+  "existing_moved_references_relative_to_Rev1_2a": [
+    "R747",
+    "R748",
+    "R749",
+    "TP_3V3_1",
+    "TP_5V1",
+    "TP_BATT1",
+    "TP_CS1",
+    "TP_CS2",
+    "TP_GND1",
+    "TP_GND2"
+  ],
+  "no_additional_existing_footprint_changes_this_update": true,
+  "new_footprints_excluded_from_assembly_exports": true,
+  "new_pads_net0": true,
+  "custom_regulator_pin_numbers_verified": true,
+  "no_courtyard_intersections_for_new_or_moved_parts": true,
+  "ERC_parity_DRC_not_claimed": true,
+  "preserved_copper_counts": {
+    "segment": 5630,
+    "via": 1131,
+    "zone": 38
+  }
+}

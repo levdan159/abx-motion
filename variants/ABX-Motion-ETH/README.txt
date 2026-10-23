@@ -27,7 +27,7 @@ PLACEMENT PROVIDED
   front overhang. Nominal height 13.5 mm. Verify actual drawing/panel latch access.
 - U801: W5500, JLC C32843, at (120.3,74.8), rotated 270 degrees to put its
   Ethernet MDI pin bank toward the jack. Crystal immediately below its clock pins.
-- 43 new footprint positions cover controller, jack, clock, bypass/bulk caps,
+- 61 new footprint positions cover controller, jack, clock, bypass/bulk caps,
   reference termination network, straps, reset/interface and ESD package reserves.
 - Existing 5 V converter, inductor, 3.3 V regulator, ADC divider and their support
   parts retain their original positions. The five rail/ground test pads form one
@@ -36,23 +36,34 @@ PLACEMENT PROVIDED
   Three existing pull-ups move below/right of the PHY. These are the only ten
   existing footprint moves relative to Rev 1.2a.
 - The stepper/watchdog IC positions, motor sockets and board outline are retained.
-- A 25 x 4.5 mm dedicated Ethernet supply reservation is marked on Dwgs.User,
-  expanded left into the space vacated by CS1/CS2: x131..156 / y54..58.5 mm.
-  This provides room for regulator/filter/input/output-capacitor placement while
-  keeping the existing main converter and the MDI area below the jack intact.
-  It is NOT a selected/connected regulator or a demonstrated complete supply fit.
-- TP_ETH_3V3 at (133.5,56.25) is the intended top-side 3V3_ETH measurement point,
-  with a 1.5 mm exposed pad and front label. It is unconnected in this draft,
-  excluded from BOM/CPL, and requires schematic/net integration with the supply.
+- The dedicated Ethernet supply is now SELECTED AND PHYSICALLY PLACED:
+  U802 LMR36506R3RPER, 65V/600mA class, fed from protected +BATT, with a
+  300mA Ethernet allocation. L801 is a 15uH shielded 4x4x3mm inductor. Input
+  bulk/HF, bootstrap, VCC and output capacitors and EN resistors are placed
+  above the original supply; the study envelope is x132.6..158.5/y53.3..59.35.
+  Existing main5V/external1A allocation is not consumed by this addition.
+- TP_ETH_3V3 moved to (157,56.25) for probe access beside the power island;
+  its eventual connection is the OUTPUT bus, despite nearby VIN capacitors.
+- U804 TXU0304PWR provides SPI power-domain isolation; Q802 gates its OE
+  with Ethernet CS so it releases the shared MISO line when deselected.
+  U803 is now TPS3808G33DBVR; Q801 supplies an open-drain manual-reset request.
+  Their bypass and support parts are placed. Ethernet requires VBAT; USB-only
+  logic operation must not back-power it. Firmware CS setup/hold is required.
+- The new Ethernet bypass, crystal and strap positions were adjusted to keep
+  MDI exits and a SPI via escape beside the crystal available. No additional
+  existing Rev1.2a component was moved for this supply update.
+- Detailed routing order, exact proposed power/interface pin nets, firmware
+  requirements and remaining release checks are recorded in
+  layout-review/power-routing-plan.txt and power-interface-design.json.
 - No PoE circuitry or PoE connector claim is included. HR911105A is non-PoE and
   rated 0..70 C; broader temperature/PoE variants need a new connector selection.
 
 CHECKS AND LIMITS
 - Geometry review: no courtyard intersections involving the new/moved parts.
 - USER UPDATE: the additional 15 mm antenna clearance was explicitly waived to
-  simplify integration. J801 now enters that former clearance envelope; other
-  proposed Ethernet footprints remain outside it. Nominal body-to-module lateral
-  gap is 2.54 mm, with no footprint courtyard intersection. This is a geometric
+  simplify integration. J801 now enters that former clearance envelope;
+  C801 also enters it slightly; see geometry.json for the exact screen.
+  Nominal body-to-module lateral gap is 2.54 mm, with no footprint courtyard intersection. This is a geometric
   screen, not measured RF qualification. Wi-Fi range/throughput may suffer and
   must be measured with the real jack, plugged cable and enclosure.
 - All original segment, via and zone expressions are retained verbatim. No
@@ -64,9 +75,9 @@ CHECKS AND LIMITS
 - Every new footprint is excluded from BOM and CPL. Pads have no assigned nets,
   and the new references are not present in the schematic. This prevents the
   placement study being mistaken for a completed assembly export.
-- U803, Q801 and D801 are provisional package allocations, not frozen MPNs.
+- D801 remains a provisional ESD package allocation, not a frozen MPN.
   Crystal CL/load caps, protection ratings, jack pinout/center-tap network and
-  regulator selection still require electrical review. Some package choices can
+  input-capacitor DC bias still require electrical review. Some package choices can
   change after that review, so this is not a promise that routing will be complete.
 - W5500 pin 18 VBG is intentionally left floating in the circuit proposal;
   C809 is 4.7 uF for TOCAP pin 20, C810 is 10 nF for 1V2O pin 22.
@@ -74,13 +85,11 @@ CHECKS AND LIMITS
   this study. They apply after the circuit is actually integrated and routed.
 
 NEXT ELECTRICAL CHECKPOINT
-1. Freeze the Ethernet power source. The existing AP2112 is a thermal/current
-   constraint. The previous full-allocation analysis already exceeded the old
-   2 A main-buck capability; do not assume a new 5 V-fed LDO has spare capacity.
-   Preserve the intended 1 A external 5 V allocation. A dedicated protected-VBAT
-   3.3 V buck is an option, but requires checking independent power sequencing,
-   USB-only behavior and SPI/reset back-powering before adopting it. LMR36506R3
-   has a compact 65 V/600 mA option; the reserved box is not its completed layout.
+1. Integrate the selected protected-VBAT buck and power-domain interface in the
+   schematic using the proposed pin/net contract, validate the DC-bias/thermal
+   budget, and freeze remaining Ethernet support parts. The source/circuit
+   selection is no longer just an empty supply reservation. New pads still
+   have no nets, and no routing/DRC release is claimed.
 2. Confirm shared SPI/polling behavior and GPIO3 boot-state allocation; move the
    status LED to an expander output and provide an expander reset interface.
    U601 pads 18/19 currently have GND ties that MUST be removed before reuse.
@@ -99,6 +108,10 @@ VIEWS AND EVIDENCE
   layout-review/placement-3d.png       Mechanical visualization
   layout-review/geometry.json         Courtyard/antenna screen
   layout-review/parts.json            New package positions and unresolved status
+  layout-review/power-routing-plan.png Proposed power loops / SPI route strategy
+  layout-review/power-routing-plan.txt Detailed routing and electrical contract
+  layout-review/power-interface-design.json Proposed per-pin net map / distances
+  layout-review/ethernet-supply-placement.json Bounded-change preservation proof
   layout-review/moved-parts.json      Exact 10-part existing placement changes
   layout-review/preservation.json     Source/copper preservation evidence
 
@@ -108,7 +121,10 @@ Other local visualization models are copied from the Rev 1.2a project.
 
 Baseline commit: ce34a43.
 Date: 2026-10-23. Supply-reservation/test-point update: 2026-10-24.
-Build/review scripts: work/ethernet-rev1.2b-20261023/placement.py and review.py.
+The original placement.py is historical; do not rerun it over this candidate.
+Latest bounded delta: work/ethernet-3v3-20261024/place_supply.py.
+Routing design/review: work/ethernet-3v3-20261024/design_data.py and routing_view.py.
+Whole-board review: work/ethernet-rev1.2b-20261023/review.py.
 
 PRIMARY DESIGN REFERENCES
 https://docs.wiznet.io/Product/Chip/Ethernet/W5500/ref-schematic

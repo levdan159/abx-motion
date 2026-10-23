@@ -1,0 +1,948 @@
+{
+  "date": "2026-10-24",
+  "status": "PROPOSED CONNECTIONS ONLY; NOT A CONNECTED SCHEMATIC OR ROUTED BOARD",
+  "input_net": "+BATT = Q1 sources/U1 VIN protected battery node; do not use V_FUSED",
+  "input_normal_max_v": 32,
+  "output_v": 3.3,
+  "converter_current_rating_a": 0.6,
+  "ethernet_planned_allocation_a": 0.3,
+  "usb_only_behavior": "Ethernet off without VBAT. Main logic/USB may remain on; U804 isolates domains.",
+  "pin_net_table": [
+    {
+      "pin": "U802.1",
+      "proposed_net": "ETH_VCC_INT",
+      "position_mm": [
+        146.4,
+        57.0875
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.2",
+      "proposed_net": "NC",
+      "position_mm": [
+        146.4,
+        56.6
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.3",
+      "proposed_net": "ETH_BUCK_EN",
+      "position_mm": [
+        146.4,
+        56.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.4",
+      "proposed_net": "+BATT",
+      "position_mm": [
+        146.4,
+        55.6125
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.5",
+      "proposed_net": "ETH_SW",
+      "position_mm": [
+        144.6,
+        55.6125
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.6",
+      "proposed_net": "ETH_BOOT",
+      "position_mm": [
+        144.6,
+        56.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.7",
+      "proposed_net": "ETH_VCC_INT",
+      "position_mm": [
+        144.6,
+        56.6
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.8",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        144.6,
+        57.0875
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U802.9",
+      "proposed_net": "GND",
+      "position_mm": [
+        145.5,
+        56.9
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "L801.1",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        138.5,
+        56.3
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "L801.2",
+      "proposed_net": "ETH_SW",
+      "position_mm": [
+        141.5,
+        56.3
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C821.1",
+      "proposed_net": "+BATT",
+      "position_mm": [
+        151.0,
+        54.775
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C821.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        151.0,
+        57.725
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C822.1",
+      "proposed_net": "+BATT",
+      "position_mm": [
+        153.7,
+        54.775
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C822.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        153.7,
+        57.725
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C823.1",
+      "proposed_net": "GND",
+      "position_mm": [
+        146.025,
+        54.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C823.2",
+      "proposed_net": "+BATT",
+      "position_mm": [
+        147.575,
+        54.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C824.1",
+      "proposed_net": "ETH_BOOT",
+      "position_mm": [
+        143.4,
+        55.88
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C824.2",
+      "proposed_net": "ETH_SW",
+      "position_mm": [
+        143.4,
+        54.92
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C825.1",
+      "proposed_net": "ETH_VCC_INT",
+      "position_mm": [
+        143.4,
+        57.12
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C825.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        143.4,
+        58.08
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C826.1",
+      "proposed_net": "GND",
+      "position_mm": [
+        133.9,
+        57.725
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C826.2",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        133.9,
+        54.775
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C827.1",
+      "proposed_net": "GND",
+      "position_mm": [
+        136.4,
+        57.725
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C827.2",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        136.4,
+        54.775
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R817.1",
+      "proposed_net": "+3V3",
+      "position_mm": [
+        147.49,
+        56.4
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R817.2",
+      "proposed_net": "ETH_BUCK_EN",
+      "position_mm": [
+        148.51,
+        56.4
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R818.1",
+      "proposed_net": "ETH_BUCK_EN",
+      "position_mm": [
+        147.69,
+        58.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R818.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        148.71,
+        58.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "TP_ETH_3V3.1",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        157.0,
+        56.25
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.1",
+      "proposed_net": "+3V3",
+      "position_mm": [
+        107.4375,
+        80.05
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.2",
+      "proposed_net": "STEP_SPI_SCLK",
+      "position_mm": [
+        107.4375,
+        80.7
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.3",
+      "proposed_net": "STEP_SPI_MOSI",
+      "position_mm": [
+        107.4375,
+        81.35
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.4",
+      "proposed_net": "MCU_ETH_CS_N",
+      "position_mm": [
+        107.4375,
+        82.0
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.5",
+      "proposed_net": "ETH_MISO_BUF",
+      "position_mm": [
+        107.4375,
+        82.65
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.6",
+      "proposed_net": "NC",
+      "position_mm": [
+        107.4375,
+        83.3
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.7",
+      "proposed_net": "GND",
+      "position_mm": [
+        107.4375,
+        83.95
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.8",
+      "proposed_net": "ETH_SPI_OE",
+      "position_mm": [
+        113.1625,
+        83.95
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.9",
+      "proposed_net": "NC",
+      "position_mm": [
+        113.1625,
+        83.3
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.10",
+      "proposed_net": "ETH_MISO",
+      "position_mm": [
+        113.1625,
+        82.65
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.11",
+      "proposed_net": "ETH_CS_N",
+      "position_mm": [
+        113.1625,
+        82.0
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.12",
+      "proposed_net": "ETH_MOSI_BUF",
+      "position_mm": [
+        113.1625,
+        81.35
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.13",
+      "proposed_net": "ETH_SCLK_BUF",
+      "position_mm": [
+        113.1625,
+        80.7
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U804.14",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        113.1625,
+        80.05
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C828.1",
+      "proposed_net": "+3V3",
+      "position_mm": [
+        106.92,
+        78.2
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C828.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        107.88,
+        78.2
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C829.1",
+      "proposed_net": "GND",
+      "position_mm": [
+        110.82,
+        78.6
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C829.2",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        111.78,
+        78.6
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "Q802.1",
+      "proposed_net": "MCU_ETH_CS_N",
+      "position_mm": [
+        103.0625,
+        79.05
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "Q802.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        103.0625,
+        80.95
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "Q802.3",
+      "proposed_net": "ETH_SPI_OE",
+      "position_mm": [
+        104.9375,
+        80.0
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R820.1",
+      "proposed_net": "+3V3",
+      "position_mm": [
+        108.99,
+        85.5
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R820.2",
+      "proposed_net": "ETH_SPI_OE",
+      "position_mm": [
+        110.01,
+        85.5
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R821.1",
+      "proposed_net": "+3V3",
+      "position_mm": [
+        103.39,
+        77.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R821.2",
+      "proposed_net": "MCU_ETH_CS_N",
+      "position_mm": [
+        104.41,
+        77.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R813.1",
+      "proposed_net": "ETH_SCLK",
+      "position_mm": [
+        115.5,
+        81.61
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R813.2",
+      "proposed_net": "ETH_SCLK_BUF",
+      "position_mm": [
+        115.5,
+        80.59
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R814.1",
+      "proposed_net": "ETH_MOSI",
+      "position_mm": [
+        115.5,
+        83.81
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R814.2",
+      "proposed_net": "ETH_MOSI_BUF",
+      "position_mm": [
+        115.5,
+        82.79
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R815.1",
+      "proposed_net": "STEP_SPI_MISO",
+      "position_mm": [
+        104.29,
+        83.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R815.2",
+      "proposed_net": "ETH_MISO_BUF",
+      "position_mm": [
+        105.31,
+        83.1
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R809.1",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        115.89,
+        84.9
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R809.2",
+      "proposed_net": "ETH_CS_N",
+      "position_mm": [
+        116.91,
+        84.9
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U803.1",
+      "proposed_net": "ETH_RESET_N",
+      "position_mm": [
+        113.1375,
+        89.45
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U803.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        113.1375,
+        88.5
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U803.3",
+      "proposed_net": "ETH_MR_N",
+      "position_mm": [
+        113.1375,
+        87.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U803.4",
+      "proposed_net": "NC",
+      "position_mm": [
+        110.8625,
+        87.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U803.5",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        110.8625,
+        88.5
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U803.6",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        110.8625,
+        89.45
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "Q801.1",
+      "proposed_net": "ETH_RESET_REQ",
+      "position_mm": [
+        111.0625,
+        92.05
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "Q801.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        111.0625,
+        93.95
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "Q801.3",
+      "proposed_net": "ETH_MR_N",
+      "position_mm": [
+        112.9375,
+        93.0
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C819.1",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        109.1,
+        88.98
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C819.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        109.1,
+        88.02
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R810.1",
+      "proposed_net": "ETH_RESET_N",
+      "position_mm": [
+        115.5,
+        90.11
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R810.2",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        115.5,
+        89.09
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R816.1",
+      "proposed_net": "ETH_RESET_REQ",
+      "position_mm": [
+        109.0,
+        93.51
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R816.2",
+      "proposed_net": "GND",
+      "position_mm": [
+        109.0,
+        92.49
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R819.1",
+      "proposed_net": "3V3_ETH",
+      "position_mm": [
+        115.09,
+        91.3
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "R819.2",
+      "proposed_net": "ETH_MR_N",
+      "position_mm": [
+        116.11,
+        91.3
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.18",
+      "proposed_net": "NC",
+      "position_mm": [
+        116.1375,
+        74.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.20",
+      "proposed_net": "ETH_TOCAP",
+      "position_mm": [
+        116.1375,
+        75.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.22",
+      "proposed_net": "ETH_1V2O",
+      "position_mm": [
+        116.1375,
+        76.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.32",
+      "proposed_net": "ETH_CS_N",
+      "position_mm": [
+        121.05,
+        78.9625
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.33",
+      "proposed_net": "ETH_SCLK",
+      "position_mm": [
+        121.55,
+        78.9625
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.34",
+      "proposed_net": "ETH_MISO",
+      "position_mm": [
+        122.05,
+        78.9625
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.35",
+      "proposed_net": "ETH_MOSI",
+      "position_mm": [
+        122.55,
+        78.9625
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "U801.37",
+      "proposed_net": "ETH_RESET_N",
+      "position_mm": [
+        124.4625,
+        77.55
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C809.1",
+      "proposed_net": "GND",
+      "position_mm": [
+        112.725,
+        77.25
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C809.2",
+      "proposed_net": "ETH_TOCAP",
+      "position_mm": [
+        114.275,
+        77.25
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C810.1",
+      "proposed_net": "GND",
+      "position_mm": [
+        113.62,
+        78.5
+      ],
+      "pcb_net": ""
+    },
+    {
+      "pin": "C810.2",
+      "proposed_net": "ETH_1V2O",
+      "position_mm": [
+        114.58,
+        78.5
+      ],
+      "pcb_net": ""
+    }
+  ],
+  "placement_distances": [
+    {
+      "from_pin": "U802.4",
+      "to_pin": "C823.2",
+      "role": "VIN-to-HF input pad",
+      "straight_pad_center_distance_mm": 1.915
+    },
+    {
+      "from_pin": "U802.9",
+      "to_pin": "C823.1",
+      "role": "HF capacitor ground-to-IC ground",
+      "straight_pad_center_distance_mm": 2.849
+    },
+    {
+      "from_pin": "U802.6",
+      "to_pin": "C824.1",
+      "role": "BOOT local loop",
+      "straight_pad_center_distance_mm": 1.22
+    },
+    {
+      "from_pin": "U802.5",
+      "to_pin": "C824.2",
+      "role": "SW bootstrap return",
+      "straight_pad_center_distance_mm": 1.385
+    },
+    {
+      "from_pin": "U802.5",
+      "to_pin": "L801.2",
+      "role": "SW output to inductor",
+      "straight_pad_center_distance_mm": 3.175
+    },
+    {
+      "from_pin": "U802.7",
+      "to_pin": "C825.1",
+      "role": "internal VCC bypass",
+      "straight_pad_center_distance_mm": 1.308
+    },
+    {
+      "from_pin": "L801.1",
+      "to_pin": "C827.2",
+      "role": "inductor output to first output cap",
+      "straight_pad_center_distance_mm": 2.595
+    },
+    {
+      "from_pin": "U804.1",
+      "to_pin": "C828.1",
+      "role": "main3V3 isolator bypass",
+      "straight_pad_center_distance_mm": 1.921
+    },
+    {
+      "from_pin": "U804.14",
+      "to_pin": "C829.2",
+      "role": "Ethernet3V3 isolator bypass",
+      "straight_pad_center_distance_mm": 2.003
+    },
+    {
+      "from_pin": "U801.20",
+      "to_pin": "C809.2",
+      "role": "TOCAP local capacitor",
+      "straight_pad_center_distance_mm": 2.522
+    },
+    {
+      "from_pin": "U801.22",
+      "to_pin": "C810.2",
+      "role": "1V2O local capacitor",
+      "straight_pad_center_distance_mm": 2.496
+    },
+    {
+      "from_pin": "U803.6",
+      "to_pin": "C819.1",
+      "role": "supervisor VDD bypass",
+      "straight_pad_center_distance_mm": 1.824
+    }
+  ],
+  "NC": [
+    "U802.2 PG unused",
+    "U803.4 CT float for20ms nominal delay",
+    "U804.6",
+    "U804.9",
+    "U801.18 VBG float"
+  ],
+  "remaining_pin_definitions": "Other W5500 pins/MDI, crystal, ESD and shield topology still require reference schematic integration.",
+  "firmware_contract": {
+    "spi_mode": 0,
+    "initial_spi_mhz": 10,
+    "qualify_spi_mhz": 20,
+    "cs_setup_hold_turnaround_us": 2,
+    "oe": "HIGH only when MCU_ETH_CS_N is LOW. Q802 inverter; R820 pullup to MAIN +3V3.",
+    "miso": "U804 outputs high-Z whenever deselected or a supply is absent. Do not tie OE permanently high.",
+    "cs_timing": "Configure hardware CS setup/hold/guard time if supported, otherwise manual GPIO CS under shared SPI lock. Verify enable/disable latency at both domain voltages.",
+    "reset": "Assert U601 IO1_6 through Q801 for >=1ms, release, wait >=30ms, then check VERSIONR and link; supervisor CT open defaults20ms nominal.",
+    "shared_bus_lock": "Acquire before any expander-controlled stepper CS assertion; keep until CS deasserted; serialize Ethernet too.",
+    "mcu_changes_pending": "GPIO3/LED_STAT repurpose and U601 pads18/19 currently GND must be changed in BOTH schematic and PCB, with boot strap review."
+  },
+  "source_files": [
+    {
+      "file": "tps3808.pdf",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed"
+    },
+    {
+      "file": "txu0304.pdf",
+      "sha256": "777d4ab9598977e0c8b40c1269299663f7cd6e87a40c1a13031f0acabee7ec0f"
+    },
+    {
+      "file": "lmr36506.pdf",
+      "sha256": "661995ffe62892b60b4295c9a05819b50fcaaea52dfb11e6e2a1402af31ec150"
+    }
+  ]
+}

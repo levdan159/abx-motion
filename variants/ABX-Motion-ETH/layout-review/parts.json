@@ -29,9 +29,9 @@
     "value": "25MHz / CL TO SELECT",
     "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
     "position": [
-      119.8,
-      82,
-      0
+      119.4,
+      82.5,
+      0.0
     ],
     "role": "crystal; exact CL and drive specification pending",
     "status": "reference-circuit placement; electrical integration pending",
@@ -42,9 +42,9 @@
     "value": "100nF",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      121.75,
-      69,
-      0
+      121.55,
+      68.5,
+      0.0
     ],
     "role": "local W5500 supply bypass",
     "status": "reference-circuit placement; electrical integration pending",
@@ -55,9 +55,9 @@
     "value": "100nF",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      119.25,
+      118.7,
       69,
-      0
+      0.0
     ],
     "role": "local W5500 supply bypass",
     "status": "reference-circuit placement; electrical integration pending",
@@ -120,9 +120,9 @@
     "value": "100nF",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      123.8,
-      80.5,
-      0
+      122.6,
+      81,
+      0.0
     ],
     "role": "local W5500 supply bypass",
     "status": "reference-circuit placement; electrical integration pending",
@@ -133,9 +133,9 @@
     "value": "4.7uF",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "position": [
-      112.1,
-      77,
-      90
+      113.5,
+      77.25,
+      0.0
     ],
     "role": "TOCAP capacitor; pin 20",
     "status": "reference-circuit placement; electrical integration pending",
@@ -146,9 +146,9 @@
     "value": "10nF",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      114,
-      78.8,
-      90
+      114.1,
+      78.5,
+      0.0
     ],
     "role": "1V2O capacitor; pin 22",
     "status": "reference-circuit placement; electrical integration pending",
@@ -185,9 +185,9 @@
     "value": "CL TBD",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      116.4,
-      80.5,
-      0
+      116.6,
+      82.6,
+      90.0
     ],
     "role": "crystal load capacitor",
     "status": "reference-circuit placement; electrical integration pending",
@@ -198,9 +198,9 @@
     "value": "CL TBD",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      123.5,
+      122.1,
       83.3,
-      0
+      90.0
     ],
     "role": "crystal load capacitor",
     "status": "reference-circuit placement; electrical integration pending",
@@ -354,9 +354,9 @@
     "value": "10k",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      123.6,
-      81.8,
-      0
+      123.7,
+      82.3,
+      0.0
     ],
     "role": "PMODE strap",
     "status": "reference-circuit placement; electrical integration pending",
@@ -367,9 +367,9 @@
     "value": "10k",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      116.8,
-      85.5,
-      0
+      116.4,
+      84.9,
+      0.0
     ],
     "role": "CS pull-up",
     "status": "reference-circuit placement; electrical integration pending",
@@ -380,9 +380,9 @@
     "value": "10k",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      117,
-      89,
-      0
+      115.5,
+      89.6,
+      90.0
     ],
     "role": "RESET pull-up",
     "status": "reference-circuit placement; electrical integration pending",
@@ -419,9 +419,9 @@
     "value": "22R / SI TBD",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      113.7,
-      91,
-      0
+      115.5,
+      81.1,
+      90.0
     ],
     "role": "SPI series option",
     "status": "reference-circuit placement; electrical integration pending",
@@ -432,9 +432,9 @@
     "value": "22R / SI TBD",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      113.7,
-      93,
-      0
+      115.5,
+      83.3,
+      90.0
     ],
     "role": "SPI series option",
     "status": "reference-circuit placement; electrical integration pending",
@@ -445,9 +445,9 @@
     "value": "22R / SI TBD",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      113.7,
-      95,
-      0
+      104.8,
+      83.1,
+      0.0
     ],
     "role": "SPI series option",
     "status": "reference-circuit placement; electrical integration pending",
@@ -468,15 +468,17 @@
     "excluded_from_cpl": true
   },
   "U803": {
-    "value": "OPEN-DRAIN RESET / SELECT",
-    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "value": "TPS3808G33DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
     "position": [
-      114,
-      84,
-      0
+      112,
+      88.5,
+      180
     ],
-    "role": "power-on reset supervisor; MPN not frozen",
-    "status": "reference-circuit placement; electrical integration pending",
+    "role": "3.07V supervisor, CT open gives20ms delay; MR low from Q801",
+    "mpn": "TPS3808G33DBVR",
+    "jlc": "C43698",
+    "status": "selected component; placement only; schematic/net integration pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -484,9 +486,9 @@
     "value": "100nF",
     "footprint": "Capacitor_SMD:C_0402_1005Metric",
     "position": [
-      111,
-      83.7,
-      0
+      109.1,
+      88.5,
+      90.0
     ],
     "role": "supervisor bypass",
     "status": "reference-circuit placement; electrical integration pending",
@@ -494,15 +496,17 @@
     "excluded_from_cpl": true
   },
   "Q801": {
-    "value": "RESET SINK / SELECT",
+    "value": "BSS138",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
     "position": [
-      113,
-      87.5,
+      112,
+      93,
       0
     ],
-    "role": "expander reset open-drain interface",
-    "status": "reference-circuit placement; electrical integration pending",
+    "role": "MCU-expander-controlled open drain supervisor MR; no supply backfeed",
+    "mpn": "BSS138",
+    "jlc": "C52895",
+    "status": "selected component; placement only; schematic/net integration pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -510,9 +514,9 @@
     "value": "100k",
     "footprint": "Resistor_SMD:R_0402_1005Metric",
     "position": [
-      111.5,
-      89.7,
-      0
+      109,
+      93,
+      90.0
     ],
     "role": "reset interface default state",
     "status": "reference-circuit placement; electrical integration pending",
@@ -549,12 +553,282 @@
     "value": "3V3_ETH / UNCONNECTED DRAFT",
     "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
     "position": [
-      133.5,
+      157,
       56.25,
-      0
+      0.0
     ],
     "role": "intended 3V3_ETH measurement point; schematic/net assignment pending",
     "status": "reference-circuit placement; electrical integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "U802": {
+    "value": "LMR36506R3RPER",
+    "footprint": "abx-eth:LMR36506_RPE0009B",
+    "position": [
+      145.5,
+      56.35,
+      180
+    ],
+    "role": "65V fixed3V3 600mA buck; Ethernet allocation 300mA; RT to VCC for1MHz",
+    "mpn": "LMR36506R3RPER",
+    "jlc": "C3190188",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "L801": {
+    "value": "15uH / SWPA4030S150MT",
+    "footprint": "Inductor_SMD:L_Sunlord_SWPA4030S",
+    "position": [
+      140,
+      56.3,
+      0
+    ],
+    "role": "15uH shielded output inductor; 1.11A RMS / 1.65A Isat; 3mm height",
+    "mpn": "SWPA4030S150MT",
+    "jlc": "C83475",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C821": {
+    "value": "4.7uF 50V X7R",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "position": [
+      151,
+      56.25,
+      270
+    ],
+    "role": "protected VBAT input bulk; verify combined effective capacitance >=2.2uF at32V",
+    "mpn": "1206B475K500NT",
+    "jlc": "C29823",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C822": {
+    "value": "4.7uF 50V X7R",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "position": [
+      153.7,
+      56.25,
+      270
+    ],
+    "role": "protected VBAT input bulk; verify combined effective capacitance >=2.2uF at32V",
+    "mpn": "1206B475K500NT",
+    "jlc": "C29823",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C823": {
+    "value": "100nF 50V X7R",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "position": [
+      146.8,
+      54.1,
+      0
+    ],
+    "role": "input high frequency capacitor above U802; pad2 VIN, pad1 GND; front GND spine through center land",
+    "mpn": "CC0603KRX7R9BB104",
+    "jlc": "C14663",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C824": {
+    "value": "100nF 16V X7R",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      143.4,
+      55.4,
+      90
+    ],
+    "role": "bootstrap capacitor; BOOT to SW, shortest local path",
+    "mpn": "CL05B104KO5NNNC",
+    "jlc": "C1525",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C825": {
+    "value": "1uF 25V X5R",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      143.4,
+      57.6,
+      270
+    ],
+    "role": "internal VCC bypass; pad1 VCC, pad2 GND",
+    "mpn": "CL05A105KA5NQNC",
+    "jlc": "C52923",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C826": {
+    "value": "22uF 25V X5R",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "position": [
+      133.9,
+      56.25,
+      90
+    ],
+    "role": "3V3_ETH output bulk; pad1 GND, pad2 output",
+    "mpn": "CL31A226KAHNNNE",
+    "jlc": "C12891",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C827": {
+    "value": "22uF 25V X5R",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "position": [
+      136.4,
+      56.25,
+      90
+    ],
+    "role": "3V3_ETH output bulk; pad1 GND, pad2 output",
+    "mpn": "CL31A226KAHNNNE",
+    "jlc": "C12891",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R817": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      148,
+      56.4,
+      0
+    ],
+    "role": "main3V3 to EN series; follows main logic presence",
+    "mpn": "",
+    "jlc": "",
+    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R818": {
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      148.2,
+      58.55,
+      0
+    ],
+    "role": "EN pull-down to ground",
+    "mpn": "",
+    "jlc": "",
+    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "U804": {
+    "value": "TXU0304PWR",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "position": [
+      110.3,
+      82,
+      0
+    ],
+    "role": "3 forward /1 return SPI isolator; Ioff; OE only while Ethernet selected",
+    "mpn": "TXU0304PWR",
+    "jlc": "C4364118",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C828": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      107.4,
+      78.2,
+      0
+    ],
+    "role": "U804 VCCA main3V3 bypass",
+    "mpn": "CL05B104KO5NNNC",
+    "jlc": "C1525",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "C829": {
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "position": [
+      111.3,
+      78.6,
+      0
+    ],
+    "role": "U804 VCCB Ethernet3V3 bypass",
+    "mpn": "CL05B104KO5NNNC",
+    "jlc": "C1525",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "Q802": {
+    "value": "BSS138",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "position": [
+      104,
+      80,
+      0
+    ],
+    "role": "CS inverter for OE; gate main CS_N, drain OE, source ground",
+    "mpn": "BSS138",
+    "jlc": "C52895",
+    "status": "selected component; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R819": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      115.6,
+      91.3,
+      0
+    ],
+    "role": "supervisor MR pull-up to3V3_ETH; Q801 drain at MR",
+    "mpn": "",
+    "jlc": "",
+    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R820": {
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      109.5,
+      85.5,
+      0
+    ],
+    "role": "SPI OE pull-up to main3V3; Q802 clamps low when deselected",
+    "mpn": "",
+    "jlc": "",
+    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
+    "excluded_from_bom": true,
+    "excluded_from_cpl": true
+  },
+  "R821": {
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0402_1005Metric",
+    "position": [
+      103.9,
+      77.1,
+      0
+    ],
+    "role": "MCU Ethernet CS_N pull-up to main3V3; boot strap must be validated",
+    "mpn": "",
+    "jlc": "",
+    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   }

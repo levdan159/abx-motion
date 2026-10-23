@@ -1,0 +1,215 @@
+ABX-Motion-ETH Rev 1.2b — dedicated 3V3 placement and routing contract
+2026-10-24 | PHYSICAL PLACEMENT ONLY | no copper routing / no schematic integration
+
+DECISION
+Use protected +BATT, after Q1, to supply a separate Ethernet buck. Do not take
+Ethernet power from U2 or consume the agreed external 1A allocation on +5V.
+The new converter does not remedy the previously identified full-allocation
+shortfall of the original supply; that issue remains separate.
+
+SELECTED POWER AND INTERFACE PARTS
+Reference   Part                         Catalog      Package / purpose
+U802        TI LMR36506R3RPER             C3190188     2x2mm RPE0009B, fixed3.3V
+L801        Sunlord SWPA4030S150MT        C83475       4x4x3mm,15uH shielded
+U804        TI TXU0304PWR                 C4364118     TSSOP14,3 forward/1 return
+U803        TI TPS3808G33DBVR             C43698       SOT23-6,3.07V monitor
+Q801/Q802   onsemi BSS138                 C52895       SOT23,open-drain functions
+C821/822    1206B475K500NT                C29823       2x4.7uF50V input
+C823        CC0603KRX7R9BB104             C14663       100nF50V,0603,VIN HF bypass
+C824        CL05B104KO5NNNC               C1525        100nF16V,0402,BOOT to SW
+C825        CL05A105KA5NQNC               C52923       1uF25V,0402,internal VCC
+C826/827    CL31A226KAHNNNE               C12891       2x22uF25V output,1206
+C828/829    CL05B104KO5NNNC               C1525        100nF16V,0402,dual-domain bypass
+R817/818    10k/100k                                  EN feed / pull-down
+R819        10k                                       supervisor MR pull-up
+R820/821    4.7k/10k                                  OE / main CS pull-ups
+
+TI catalog pages confirm U802/U803/U804 ordering identities; Q801/Q802 and the
+small Samsung capacitor identities were checked against supplier pages. Existing
+large capacitors reuse the Rev1.2a catalog selections. C83475 identifies the
+selected Sunlord part; current JLC orderability was not independently confirmed.
+Live stock, every small resistor MPN, passive DC-bias curves and supplier CPL
+orientation remain release checks. None of this draft is exported for assembly.
+
+POWER DESIGN BASIS
+- Normal input maximum32V; the existing TVS contract specifies40V clamp.
+  U802 is65V rated; input capacitors50V. This does not qualify motor-regeneration
+  surges or establish the real transient envelope of the whole board.
+- Converter class600mA; planned Ethernet allocation300mA, not a new external port
+  rating. W5500's132mA typical transmit figure is not a maximum guarantee.
+- RT(pin1) directly to internal VCC(pin7): TI's1MHz fixed3.3V example,15uH and
+  2x22uF. No external feedback divider or RT resistor is necessary.
+- At32V, minimum selected inductance12uH and f=0.93MHz give about265mA ripple;
+  at600mA the approximate peak is733mA. Confirm current-limit margin from the
+  final datasheet limits and real waveforms. L801 Isat minimum1.65A, RMS1.11A;
+  regulator high-side current-limit maximum1.11A. These are different ratings.
+- 2x4.7uF input is a placement for DC-bias margin. Require combined EFFECTIVE
+  input capacitance >=2.2uF at32V/temperature; nominal9.4uF alone proves nothing.
+- C824 sees the BOOT-SW differential, not the battery voltage;16V is adequate
+  for the internal gate-drive supply. Never reuse this16V part on VIN.
+- R81710k from existing main +3V3, R818100k to GND: buck follows main logic
+  presence. EN is about3.0V at nominal main3V3. PGOOD pin2 is unused.
+- USB-only, without battery: Ethernet is deliberately off. Independent supply
+  isolation prevents its SPI pins drawing power from the active MCU rail.
+- Output tolerance, efficiency/loss and thermal rise require load/ambient tests;
+  the600mA silicon rating is not a measured board thermal qualification.
+
+PLACEMENT / ROUTING ORDER
+1. Integrate the exact schematic and resolve the pending Ethernet parts first.
+   New pads are currently net0. The proposed pin/net table is in
+   power-interface-design.json; it is NOT a substitute for schematic parity.
+2. Clear only proven obsolete/conflicting copper inside this Ethernet change.
+   All original segments/vias/zones currently survive verbatim, including copper
+   under the new footprints and moved original test pads/pull-ups. It cannot be
+   used as finished routing for the new placement. Preserve unrelated connections.
+3. Route the new buck locally before its supply trunk or control lines:
+   +BATT enters from the RIGHT, from Q1 source atx162.1,y61.595 or a verified
+   low-impedance point on the SAME protected net. Do not use V_FUSED on Q1 drain.
+   C821/822 VIN pads face UP; GND pads face DOWN. C823 VIN pad2 is to the RIGHT; its GND pad1 is to the LEFT.
+   Join VIN bulk -> C823.2 -> U802.4 with short, wide front copper. Keep
+   C823.1 -> U802.9 return compact. Do not make the HF loop visit the bulk caps.
+   Measured pad-center separations: VIN/HF1.92mm, HF GND/IC GND2.85mm.
+   Run front GND from C823.1 through the center gap between VIN/SW corner
+   lands to ground9; the0.35mm spine has about0.275mm lateral pad clearance.
+   This keeps the HF return local rather than forcing it through two vias.
+   These are geometric lower bounds, not already routed trace lengths.
+   C824 is between U802 and L801: BOOT-to-cap1.22mm, SW-to-cap1.38mm.
+   SW -> L801 right pad2 is3.18mm. Use a small front-layer SW shape; avoid
+   expansive SW copper, test-point branches and any signal routing beneath it.
+   L801 left pad1 -> C827/C826 upper pads forms the output bus to the LEFT.
+   C824 upper pad2 joins SW toward the TOP of the inductor pad; lower pad1
+   reaches BOOT on a separate front trace. C825 sits BELOW C824: upper pad1
+   reaches VCC pin7 by a short leftward/downward trace (1.31mm pad separation),
+   while lower pad2 returns to GND. This avoids crossing the feedback escape.
+   RT ties to VCC through a short rear-layer bridge: study vias near(147,57.2)
+   and(144,56.7), checking the latter carefully against pins6/8 and C825.
+   Let U802.8 escape down to a tentative feedback via near(144.6,58.2),
+   then run below/around the OUTPUT side of L801 on the rear, away from SW.
+   These are route intentions, not drilled/DRC-approved via coordinates.
+   Take U802.8 sense from the output
+   capacitor bus with a separate quiet trace; use the bottom side if needed,
+   going around the output side/below L801, not beneath its SW terminal.
+   Proposed ground stitching near(145.5,57.75),(148.8,57.55) and the output
+   capacitor returns is a ROUTING RESERVATION, not vias already added. Use solid
+   return copper, verify each via against pads/traces, and avoid unfilled vias
+   in the small custom solder lands. Do not assume ground9 is a generic center EP.
+4. Route the 3V3_ETH output trunk DOWN the jack's RIGHT side, aroundx135..136,
+   then into the existing Ethernet ferrite/bulk area aroundx126..130,y68..83.
+   A short rear-layer crossing past C820/C2/C3 is preferable to cutting through
+   the old U1 hot loop or magnetics area. Use >=0.6mm trunk as a starting width
+   at300mA and a nearby GND stitch at each layer change; check real copper weight.
+   Connect TP_ETH_3V3 at(157,56.25) through a quiet branch from the OUTPUT bus,
+   on the rear layer around the TOP of the new power island, below the test-pad
+   row and above the new switching node. Use it for DC checks; probe C827 for
+   switching ripple so the remote branch does not distort the measurement.
+   Its physical proximity to
+   input capacitors does not make it a VIN pad. Keep that branch out of SW.
+   Keep the main3V3 EN feed out of the U1/L1 switching region; route along its
+   right side on the rear layer, then through R817. Do not tie the two3V3 rails.
+5. Preserve an uninterrupted circuit-GND reference beneath W5500 and its signal
+   area. Do not split analog and digital grounds. Filter AVDD per WIZnet;
+   neither the ferrite nor a new3V3 supply implies a split ground plane.
+6. Reserve front-layer TX/RX fanout between PHY top bank and jack. C801 has moved
+   upward and C802 left so they no longer sit on the original straight pair exits.
+   Fan the RX pair through the gap between C801 and C802, and TX to their right.
+   Exact W5500/jack polarity, center-tap circuitry and ESD remain to be frozen.
+   Pair width/gap must be calculated for the ACTUAL two-layer fab stack-up; a
+   guessed fine trace pair is not a100ohm design. Recheck the fanout gap with
+   those dimensions. Keep pairs short, same-layer, via-free where possible.
+   Ground/track keepouts for the jack apply at the isolation boundary, not under
+   the PHY. Do not route the supply or SPI underneath magnetics to save distance.
+7. Crystal stays adjacent to pins30/31, now(119.4,82.5); load caps flank it.
+   Reserve front-layer clock traces first, short and with no clock vias. Do not
+   pass SPI below the crystal or its XI/XO nodes. New SPI exit space lies to the
+   RIGHT of the crystal, then uses short rear-layer runs back toward U804.
+   A tentative staggered0.5mm-via study around(120.9,80.1),(121.55,80.1),
+   (122.2,80.2),(123.65,80.1) suggests an escape for CS/SCLK/MISO/MOSI. These are
+   not placed vias, not DRC-approved coordinates, and may move after net mapping.
+   Via/trace clearance to neighboring pins, C807 and crystal pads MUST be checked.
+   Keep the rear-layer digital run above the oscillator field: initially study
+   a grouped rear bus aroundy77.5 beneath the PHY digital side, reaching the
+   west escape aroundx114.8 and returning to U804. Keep it off XI/XO around
+   x120,y79; don't take a direct rear line over those clock pins; retain GND return bridges and stitches.
+   C807 has a longer digital VDD lead than the analog bypass capacitors. Use a
+   direct low-inductance feed/return; revisit after exact fanout if it becomes a
+   long detour. Do not claim perfect decoupling from a courtyard check alone.
+8. U804 is at(110.3,82). Main SPI connects on its LEFT; Ethernet on its RIGHT.
+   R813/R814 sit just outside its Ethernet side, R815 outside the main MISO side.
+   These22ohm source-series values are initial tuning values, not SI validation.
+   Take SPI branches near the MCU source; avoid a long tee from the stepper area.
+   Rear-layer crossings provide escape without moving U704/U705/U707/U709.
+   Long rear runs on this two-layer PCB consume GND plane: keep them grouped and
+   short and verify the ground return is not severed. Do not promise routing
+   closure solely from free space in this placement view.
+9. U803/Q801 sit below U804, with local bypass, pull-up and gate pull-down.
+   Reset/MR/EN are slow control lines; use rear-layer crossings rather than
+   displacing MDI/clock routing. The supervisor bypass is1.82mm pad-to-pad.
+10. Reconnect the10 original moved footprints, refill zones, run ERC, parity,
+    shorts/clearance/opens, then inspect power-loop copper and signal returns.
+    Only after those pass generate new BOM/CPL/Gerber outputs for the ETH option.
+
+POWER SEQUENCING / SHARED-SPI REQUIREMENT
+U804 has VCCA=main+3V3 and VCCB=3V3_ETH, with Ioff/supply-disconnect behavior.
+Map A1/B1=SCLK, A2/B2=MOSI, A3/B3=CS_N, B4/A4=MISO. Crucially, a push-pull MISO
+buffer cannot be left enabled when W5500 is deselected: its input pull-down
+would otherwise drive the shared stepper MISO line. Q802 inverts MAIN CS_N:
+  MAIN CS_N HIGH -> Q802 ON -> OE LOW -> all buffer outputs high impedance.
+  MAIN CS_N LOW  -> Q802 OFF -> R820 raises OE -> Ethernet selected.
+R820 pulls to MAIN+3V3, R821 holds main CS inactive, R809 holds Ethernet CS
+inactive while its translated output is disconnected. The MOS gate creates no
+forward supply connection. Buffer rail-disconnect behavior is still required.
+
+Start SPI mode0 at10MHz.20MHz is a qualification target, superseding the earlier
+unguarded20MHz starting proposal; include both buffer delays in the read timing
+budget. Allow2us before clocking after asserting main CS,2us hold after the last
+edge, and2us deselect/bus turnaround initially. Configure hardware CS timings if
+supported, or use manual GPIO CS under the bus lock; verify with a scope before
+using the standard W5500 driver's default timings. This is an explicit firmware
+requirement introduced by the CS-gated isolation stage, not transparent wiring.
+
+Existing GPIO3/LED_STAT reassignment and U601 IO1_5/IO1_6 reuse are still pending.
+U601 pads18/19 currently have GND connections in the root circuit. They cannot
+be used until BOTH schematic and PCB ties are removed. Check GPIO3 strapping;
+no eFuse changes are authorized or performed. No new MCU pin is assumed free.
+
+RESET
+TPS3808G33 monitors3V3_ETH on SENSE and VDD.3.07V threshold, worst accuracy1.5%
+gives approximately3.024..3.116V, before considering hysteresis. CT left open
+provides20ms nominal reset delay. RESET_OD has the existing10k pull-up to3V3_ETH.
+Q801 pulls MR low from the expander request; its gate has100k pull-down. Assert
+request >=1ms, release, wait>=30ms initially, then read the W5500 version/status.
+Do not attach the supervisor reset pull-up to main3V3 or expose an unpowered PHY
+to push-pull reset. Keep CT unconnected with no measurement stub.
+
+CUSTOM FOOTPRINT
+ethernet-footprints.pretty/LMR36506_RPE0009B.kicad_mod follows TI drawing4227033/B
+(datasheet Rev C page45). Upper corner lands are0.75mm wide; lower0.70mm; GND9
+is0.35x1.30mm at(0,-0.55), not a generic square center EP. Middle lands0.6x0.25,
+0.5mm pitch, opposing row centers1.8mm. Corner polygons retain the drawn L shape;
+minor0.05mm corner radii are not replicated. Paste polygons scale corner area
+to90% and GND to85%; confirm stencil with assembler before release. Custom
+footprint/CPL is not yet a supplier-approved assembly rotation. The2x2x1mm VRML
+is a dimension envelope only. The Sunlord model is the installed KiCad STEP.
+
+REMAINING ELECTRICAL GATES
+Exact crystal CL/ESR/load caps; ferrite and ESD MPN/ratings; magjack pinout/CT
+network and shield/chassis connection; rail DC-bias/thermal checks; GPIO/eFuse
+boot configuration; firmware driver CS timing; custom footprint independent
+release review; full schematic/parity/routing and physical prototype tests.
+The PCB is not ready to manufacture; all new pads remain net0 and all61 new
+footprints are excluded from BOM/CPL. Rev1.2a manufacturing outputs are unchanged.
+
+PRIMARY REFERENCES
+TI LMR36506 Rev C,January2026: https://www.ti.com/lit/ds/symlink/lmr36506.pdf
+TI TXU0304: https://www.ti.com/lit/ds/symlink/txu0304.pdf
+TI TPS3808: https://www.ti.com/lit/ds/symlink/tps3808.pdf
+onsemi BSS138: https://www.onsemi.com/pdf/datasheet/bss138-d.pdf
+Sunlord SWPA: https://www.sunlordinc.com/UploadFiles/PDF_Cat/20120704094224784.pdf
+W5500: https://docs.wiznet.io/img/products/w5500/W5500_ds_v110e.pdf
+JLC U802: https://jlcpcb.com/partdetail/TexasInstruments-LMR36506R3RPER/C3190188
+JLC U804: https://jlcpcb.com/partdetail/TexasInstruments-TXU0304PWR/C4364118
+JLC U803: https://jlcpcb.com/partdetail/TexasInstruments-TPS3808G33DBVR/C43698
+JLC Q801/802: https://jlcpcb.com/partdetail/onsemi-BSS138/C52895
+C1525: https://www.lcsc.com/product-detail/C1525.html
+
+C825 catalog identity: https://www.lcsc.com/product-detail/C52923.html
