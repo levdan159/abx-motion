@@ -29,5 +29,6 @@
     67.29
   ],
   "jack_height_mm": 13.5,
-  "board_edge_y_mm": 48
+  "board_edge_y_mm": 48,
+  "historical_checkpoint_notice": "Placement-only geometry screen; positions remain approved. Current electrical/routing status is in routing-progress.json and fresh checkpoint QA."
 }

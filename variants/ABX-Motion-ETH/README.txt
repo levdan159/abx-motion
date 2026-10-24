@@ -37,15 +37,16 @@ PLACEMENT PROVIDED
   Three existing pull-ups move below/right of the PHY. These are the only ten
   existing footprint moves relative to Rev 1.2a.
 - The stepper/watchdog IC positions, motor sockets and board outline are retained.
-- The dedicated Ethernet supply is now SELECTED AND PHYSICALLY PLACED:
+- The dedicated Ethernet supply is schematic-integrated and locally routed:
   U802 LMR36506R3RPER, 65V/600mA class, fed from protected +BATT, with a
   300mA Ethernet allocation. L801 is a 15uH shielded 4x4x3mm inductor. Input
   bulk/HF, bootstrap, VCC and output capacitors and EN resistors are placed
   above the original supply; the study envelope is x132.6..158.5/y53.3..59.35.
   Existing main5V/external1A allocation is not consumed by this addition.
 - TP_ETH_3V3 moved to (157,56.25) for probe access beside the power island;
-  its eventual connection is the OUTPUT bus, despite nearby VIN capacitors.
-- U804 TXU0304PWR provides SPI power-domain isolation; Q802 gates its OE
+  it connects to the OUTPUT bus, despite nearby VIN capacitors.
+- PROPOSED (not yet wired): U804 TXU0304PWR provides SPI power-domain
+  isolation; Q802 gates its OE
   with Ethernet CS so it releases the shared MISO line when deselected.
   U803 is now TPS3808G33DBVR; Q801 supplies an open-drain manual-reset request.
   Their bypass and support parts are placed. Ethernet requires VBAT; USB-only
@@ -102,3 +103,5 @@ NEXT ELECTRICAL CHECKPOINT
 Historical placement images/reports and proposal pin contracts remain useful
 references. Current routing images and results are in layout-review/routing-*.
 Do not rerun historical placement generators: they overwrite routing progress.
+
+Fresh checkpoint QA: ../../validation/ethernet-checkpoint-20261024/README.txt
