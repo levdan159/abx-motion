@@ -731,7 +731,7 @@
 			(uuid "48d24488-d3a2-4fd3-b2bf-98cc7bc7898b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2690,7 +2690,7 @@
 			(uuid "7abd1cf8-68e8-4b5b-bb83-6511c15104f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2824,7 +2824,7 @@
 			(uuid "c7a10299-c333-4ff6-8bc0-79f29029b433")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3562,7 +3562,7 @@
 			(uuid "160cded6-3e1a-4732-b87d-6776b9d69312")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8701,7 +8701,7 @@
 			(uuid "d1162b7d-8cee-4b2a-a900-8d221d8a7b9e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11861,7 +11861,7 @@
 			(uuid "736e2289-2167-45ff-9ad7-b477f627c97a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12303,7 +12303,7 @@
 			(uuid "62451182-686c-41eb-b9aa-613c38415c1e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13613,7 +13613,7 @@
 			(uuid "ba84c4ec-7bde-4c13-97d3-de54f8e311cf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15774,7 +15774,7 @@
 			(uuid "1ca5e10d-b20b-47a1-8423-77f4c69c9c3d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20775,7 +20775,7 @@
 			(uuid "28f9708b-873a-4a8d-b6cf-85cba9c1a35e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21733,7 +21733,7 @@
 			(uuid "ccc10ea6-2ae9-4f57-8629-608588ae96a6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22027,7 +22027,7 @@
 			(uuid "45114ae9-c1e5-4fc0-8dcd-c6f0db7933db")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23828,7 +23828,7 @@
 			(uuid "398f7d3b-643a-4b87-a207-976d0656c6d6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24950,7 +24950,7 @@
 			(uuid "cdb360fc-543e-4079-93ca-b4493b1ade0d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26512,7 +26512,7 @@
 			(uuid "7e99859f-1b74-44ad-a5d9-3f73c9b73dd6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29330,7 +29330,7 @@
 			(uuid "49c15a2a-6e4a-4822-adb2-99ddfb77253f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/HR911105A-envelope.wrl"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/HR911105A-envelope.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31520,7 +31520,7 @@
 			(uuid "e6081ed4-bf03-42aa-881d-a75058cb9238")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36467,7 +36467,7 @@
 			(uuid "1ef9b48a-8441-44b6-9293-c85d7ca8b059")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38947,7 +38947,7 @@
 			(uuid "50c2b3be-1cdd-4ab1-9b40-9a734c1995ab")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39081,7 +39081,7 @@
 			(uuid "81ff4d1f-e106-42eb-b6d4-1ac5145f1ea5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39689,7 +39689,7 @@
 			(uuid "01537b8d-5928-475b-aca9-94d68f9e628d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40983,7 +40983,7 @@
 			(uuid "8f939cf4-d7f0-4793-a986-300ede73c423")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42373,7 +42373,7 @@
 			(uuid "ca709778-0ed6-43e7-8038-b448fe4bf4a7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42655,7 +42655,7 @@
 			(uuid "02775cdd-67a1-4f23-a782-89d8cb5ca3f6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43048,7 +43048,7 @@
 			(uuid "06b90900-a293-4bdf-bc9d-b6a26eda871e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_SWPA4030S.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/L_Sunlord_SWPA4030S.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43059,7 +43059,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_SWPA4030S.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/L_Sunlord_SWPA4030S.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46951,7 +46951,7 @@
 			(uuid "bdcd2e40-cf76-4fab-80f5-cb4b9c79c339")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47085,7 +47085,7 @@
 			(uuid "6a96277e-05fc-4610-8583-5b663bec4bb8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47219,7 +47219,7 @@
 			(uuid "c9658a20-b2bb-4616-bcfc-488a29287640")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -61190,7 +61190,7 @@
 			(uuid "754673d0-c1b1-4a78-8786-c04572f00a51")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -63182,7 +63182,7 @@
 			(uuid "54860909-34e4-495c-a9a5-a644e7aa6c88")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -63506,7 +63506,7 @@
 			(uuid "2ec968fe-ffd8-4a47-81b8-bc69aa512f01")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -64336,7 +64336,7 @@
 			(uuid "884c8f37-2290-4b75-ac99-1f5ed4bd58f1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68109,7 +68109,7 @@
 			(uuid "27aa9c5f-da62-4239-ab74-ac6a110ac7fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -71531,7 +71531,7 @@
 			(uuid "8d619e7e-26b1-41ec-90ab-93a3b17726ec")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -71854,7 +71854,7 @@
 			(uuid "d9f55e5f-38cd-4e58-8589-c29ef8d471c6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -72136,7 +72136,7 @@
 			(uuid "25b879b7-5218-4afb-a89d-3e43c4141e7e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -72515,7 +72515,7 @@
 			(uuid "fe77cb37-1439-42aa-bae4-91e2fc5a8b42")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/TSSOP-14_4.4x5mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -73560,7 +73560,7 @@
 			(uuid "c79d7f03-6a96-4ff6-b768-75d7c987bbf7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -75420,7 +75420,7 @@
 			(uuid "32c5dd00-78a8-43b1-88fa-ecc93c5b2ed8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -77836,7 +77836,7 @@
 			(uuid "38ca759a-8901-4669-af21-64b70a5a6e25")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -79648,7 +79648,7 @@
 			(uuid "411a0b51-28e8-4af0-b304-81231eda2530")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/Crystal_SMD_3225-4Pin_3.2x2.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -80365,7 +80365,7 @@
 			(uuid "cabfabc3-0c5e-4bd7-b522-1076ecdcce7f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-48_7x7mm_P0.5mm.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/LQFP-48_7x7mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -81387,7 +81387,7 @@
 			(uuid "769350a7-735a-41dc-ab70-898d5f52abd0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -83464,7 +83464,7 @@
 			(uuid "bf027b44-c59f-4ebd-8ffe-2f1fd40dc83b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -84986,7 +84986,7 @@
 			(uuid "c2636451-bcc4-48ff-851a-42a5b16845a0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -85416,7 +85416,7 @@
 			(uuid "7641cd78-95bf-4777-9b65-143d98749176")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -86819,7 +86819,7 @@
 			(uuid "83ec6154-3995-4e66-bdb8-9ad843029fec")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87278,7 +87278,7 @@
 			(uuid "081d1ad0-0935-4d43-8b25-be818d2586ca")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87412,7 +87412,7 @@
 			(uuid "2991a845-a335-43b9-893a-486f64aa0aee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87546,7 +87546,7 @@
 			(uuid "99622a1c-03e1-4cdd-bfb1-4dd624003d14")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87680,7 +87680,7 @@
 			(uuid "0dba314b-9213-4312-ae30-3b9374a0b27f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87977,7 +87977,7 @@
 			(uuid "97b73b7b-f62e-46cd-8453-140445bb6f93")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -88111,7 +88111,7 @@
 			(uuid "3b62b2c9-bbf5-4f81-8c14-04512806c702")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -88460,7 +88460,7 @@
 			(uuid "b79e6288-f554-4932-8342-6c421a270111")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/models/LMR36506-RPE-envelope.wrl"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/LMR36506-RPE-envelope.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -90342,7 +90342,7 @@
 			(uuid "e97087ac-12f0-4944-b719-576e291647f8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -90991,7 +90991,7 @@
 			(uuid "26821752-fdc8-46f0-b98b-1124f55c702e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -92848,7 +92848,7 @@
 			(uuid "492261db-6e0c-4da0-8a9c-1ace8ad4a9cc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/L_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -95229,7 +95229,7 @@
 			(uuid "b6ee5722-7a2e-46b8-a179-6324576836d6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -97445,7 +97445,7 @@
 			(uuid "373b69ac-4fd1-44cd-acb2-deda83a66342")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -99120,7 +99120,7 @@
 			(uuid "430a744b-a584-4a1b-97ba-567498b1e060")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+		(model "${KIPRJMOD}/abx-3dmodels/ethernet/C_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)

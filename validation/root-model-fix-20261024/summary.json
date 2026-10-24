@@ -1,0 +1,7 @@
+{
+  "only_model_paths_changed": true,
+  "geometry_nets_tracks_zones_and_assembly_attributes_unchanged": true,
+  "all_61_ethernet_models_visible_and_resolved": true,
+  "files_bundled": 14,
+  "pcb_sha256": "cc39d92c5dad5d39e84765f8bf229c8f554357263823dead2ee272910836f359"
+}

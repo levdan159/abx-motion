@@ -8,7 +8,7 @@ The checkpoint retains the three onboard DRV8462 drivers, external stepper inter
 
 See [root promotion QA](validation/root-ethernet-promotion-20261024/README.txt), [Ethernet routing preview](variants/ABX-Motion-ETH/layout-review/routing-overview.png), and [remaining circuit requirements](variants/ABX-Motion-ETH/layout-review/power-routing-plan.txt). The earlier Rev1.2a CAD is recoverable from Git commit `ce34a43`; its [JLCPCB prototype package](production/rev-1.2a-20261023/README.txt) is preserved and **does not describe this Rev1.2b draft**. Earlier exports and renders remain historical. Do not run legacy rebuild/router scripts over the active root project.
 
-The original local project settings were saved before promotion in `work/root-ethernet-promotion-20261024/before/`. Root schematic instance project names and library paths were adapted for `abx-motion`; the reviewed PCB geometry was copied unchanged.
+The original local project settings were saved before promotion in `work/root-ethernet-promotion-20261024/before/`. Root schematic instance project names and library paths were adapted for `abx-motion`; the reviewed PCB geometry was copied unchanged. Ethernet 3D models are bundled under `abx-3dmodels/ethernet/`; see the [model-loading verification](validation/root-model-fix-20261024/README.txt).
 
 ## Historical Rev 1.1 documentation
 

@@ -1,0 +1,307 @@
+[
+  {
+    "ref": "C813",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R806",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C829",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R813",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C821",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
+  },
+  {
+    "ref": "R810",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C804",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "C809",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0603_1608Metric.step"
+  },
+  {
+    "ref": "C814",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R805",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C806",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "C802",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R811",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R808",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C815",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "J801",
+    "old": "${KIPRJMOD}/models/HR911105A-envelope.wrl",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/HR911105A-envelope.wrl"
+  },
+  {
+    "ref": "Q801",
+    "old": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23.step"
+  },
+  {
+    "ref": "R816",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R804",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R819",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R812",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R820",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C825",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "C817",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "L801",
+    "old": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_SWPA4030S.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/L_Sunlord_SWPA4030S.step"
+  },
+  {
+    "ref": "L801",
+    "old": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_SWPA4030S.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/L_Sunlord_SWPA4030S.step"
+  },
+  {
+    "ref": "Q802",
+    "old": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23.step"
+  },
+  {
+    "ref": "C801",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "C811",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0805_2012Metric.step"
+  },
+  {
+    "ref": "R818",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C810",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "D801",
+    "old": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23-6.step"
+  },
+  {
+    "ref": "C824",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R802",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C812",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0805_2012Metric.step"
+  },
+  {
+    "ref": "U803",
+    "old": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/SOT-23-6.step"
+  },
+  {
+    "ref": "C816",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "U804",
+    "old": "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/TSSOP-14_4.4x5mm_P0.65mm.step"
+  },
+  {
+    "ref": "R821",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R814",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C803",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "Y801",
+    "old": "${KICAD9_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/Crystal_SMD_3225-4Pin_3.2x2.5mm.step"
+  },
+  {
+    "ref": "U801",
+    "old": "${KICAD9_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-48_7x7mm_P0.5mm.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/LQFP-48_7x7mm_P0.5mm.step"
+  },
+  {
+    "ref": "C820",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
+  },
+  {
+    "ref": "R815",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C822",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
+  },
+  {
+    "ref": "R801",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C818",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "C807",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R809",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R807",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "C819",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "R817",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "R803",
+    "old": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/R_0402_1005Metric.step"
+  },
+  {
+    "ref": "U802",
+    "old": "${KIPRJMOD}/models/LMR36506-RPE-envelope.wrl",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/LMR36506-RPE-envelope.wrl"
+  },
+  {
+    "ref": "C826",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
+  },
+  {
+    "ref": "C805",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "FB801",
+    "old": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/L_0603_1608Metric.step"
+  },
+  {
+    "ref": "C828",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0402_1005Metric.step"
+  },
+  {
+    "ref": "C827",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_1206_3216Metric.step"
+  },
+  {
+    "ref": "C823",
+    "old": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "new": "${KIPRJMOD}/abx-3dmodels/ethernet/C_0603_1608Metric.step"
+  }
+]

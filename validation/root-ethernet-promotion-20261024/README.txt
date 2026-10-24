@@ -28,3 +28,8 @@ under work/root-ethernet-promotion-20261024/before/. The .prl was not overwritte
 Open/reload abx-motion.kicad_pro from root to view the updated project.
 Artifacts: erc.json, drc.json, netlist.xml, qa-summary.json; audit.py verifies
 root/source equivalence and root-relative dependency resolution.
+
+Follow-up: project-local Ethernet model paths were added after promotion. The
+audit normalizes model filenames when comparing source/root PCB data; all
+geometry, electrical data and assembly attributes remain identical. See
+../root-model-fix-20261024/ for the model-only diff check and fresh render.

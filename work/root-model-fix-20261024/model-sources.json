@@ -1,0 +1,58 @@
+{
+  "C_0402_1005Metric.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2"
+  },
+  "R_0402_1005Metric.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+  },
+  "C_1206_3216Metric.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+  },
+  "C_0603_1608Metric.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+  },
+  "HR911105A-envelope.wrl": {
+    "source": "${KIPRJMOD}/models/HR911105A-envelope.wrl",
+    "sha256": "4972046aba266491b0552eb74642aade9fb48801e810b81aff7257011b4ad2f5"
+  },
+  "SOT-23.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+  },
+  "L_Sunlord_SWPA4030S.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Sunlord_SWPA4030S.step",
+    "sha256": "d4b86a2358a1aa286e351c21caa2c5e17f7feb88a18fcea01e2ac122a9ea41ce"
+  },
+  "C_0805_2012Metric.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+  },
+  "SOT-23-6.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step",
+    "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+  },
+  "TSSOP-14_4.4x5mm_P0.65mm.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step",
+    "sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245"
+  },
+  "Crystal_SMD_3225-4Pin_3.2x2.5mm.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+    "sha256": "d2a89df82ee5f0f56ef23ee59c8161b8d4e92af2b21959d72778316dde3f9f22"
+  },
+  "LQFP-48_7x7mm_P0.5mm.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-48_7x7mm_P0.5mm.step",
+    "sha256": "9dea352d93177c2904afd7d7b68ea8855ce1ab691f69f8b3e13655600514b6bf"
+  },
+  "LMR36506-RPE-envelope.wrl": {
+    "source": "${KIPRJMOD}/models/LMR36506-RPE-envelope.wrl",
+    "sha256": "1ba167aa45640fbfa7ff716641869faa2363fa652924a985695e5c25c6731ad8"
+  },
+  "L_0603_1608Metric.step": {
+    "source": "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
+    "sha256": "b0136ad7160588d2f5dac8c85da84a35646db656b5bc54bbb873b6b548eedbb3"
+  }
+}

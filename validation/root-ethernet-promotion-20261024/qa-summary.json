@@ -1,7 +1,7 @@
 {
   "status": "Root project matches reviewed Ethernet development draft",
-  "root_pcb_sha256": "9faf08cbfbc2d6bd6f0eda9db8df346772a88c3d867e618500bb68363d48f641",
-  "pcb_copied_unchanged": true,
+  "root_pcb_sha256": "cc39d92c5dad5d39e84765f8bf229c8f554357263823dead2ee272910836f359",
+  "pcb_geometry_unchanged_model_paths_may_be_localized": true,
   "schematic_instances_renamed": true,
   "project_metadata_renamed": true,
   "all_mapped_pad_nets_match_fresh_netlist": true,
