@@ -550,7 +550,7 @@
     "excluded_from_cpl": true
   },
   "TP_ETH_3V3": {
-    "value": "3V3_ETH / UNCONNECTED DRAFT",
+    "value": "3V3_ETH / POWER TEST POINT",
     "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
     "position": [
       157,
@@ -558,7 +558,7 @@
       0.0
     ],
     "role": "intended 3V3_ETH measurement point; schematic/net assignment pending",
-    "status": "reference-circuit placement; electrical integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -573,7 +573,7 @@
     "role": "65V fixed3V3 600mA buck; Ethernet allocation 300mA; RT to VCC for1MHz",
     "mpn": "LMR36506R3RPER",
     "jlc": "C3190188",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -588,7 +588,7 @@
     "role": "15uH shielded output inductor; 1.11A RMS / 1.65A Isat; 3mm height",
     "mpn": "SWPA4030S150MT",
     "jlc": "C83475",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -603,7 +603,7 @@
     "role": "protected VBAT input bulk; verify combined effective capacitance >=2.2uF at32V",
     "mpn": "1206B475K500NT",
     "jlc": "C29823",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -618,7 +618,7 @@
     "role": "protected VBAT input bulk; verify combined effective capacitance >=2.2uF at32V",
     "mpn": "1206B475K500NT",
     "jlc": "C29823",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -633,7 +633,7 @@
     "role": "input high frequency capacitor above U802; pad2 VIN, pad1 GND; front GND spine through center land",
     "mpn": "CC0603KRX7R9BB104",
     "jlc": "C14663",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -648,7 +648,7 @@
     "role": "bootstrap capacitor; BOOT to SW, shortest local path",
     "mpn": "CL05B104KO5NNNC",
     "jlc": "C1525",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -663,7 +663,7 @@
     "role": "internal VCC bypass; pad1 VCC, pad2 GND",
     "mpn": "CL05A105KA5NQNC",
     "jlc": "C52923",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -678,7 +678,7 @@
     "role": "3V3_ETH output bulk; pad1 GND, pad2 output",
     "mpn": "CL31A226KAHNNNE",
     "jlc": "C12891",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -693,7 +693,7 @@
     "role": "3V3_ETH output bulk; pad1 GND, pad2 output",
     "mpn": "CL31A226KAHNNNE",
     "jlc": "C12891",
-    "status": "selected component; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -708,7 +708,7 @@
     "role": "main3V3 to EN series; follows main logic presence",
     "mpn": "",
     "jlc": "",
-    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },
@@ -723,7 +723,7 @@
     "role": "EN pull-down to ground",
     "mpn": "",
     "jlc": "",
-    "status": "package/value selected; sourcing pending; placement only; schematic/net integration pending",
+    "status": "power schematic integrated; routed; release validation pending",
     "excluded_from_bom": true,
     "excluded_from_cpl": true
   },

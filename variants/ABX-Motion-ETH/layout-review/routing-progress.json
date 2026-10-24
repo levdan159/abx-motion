@@ -1,0 +1,50 @@
+{
+  "stage": "ROUTING IN PROGRESS",
+  "integrated_power_footprints": [
+    "C821",
+    "C822",
+    "C823",
+    "C824",
+    "C825",
+    "C826",
+    "C827",
+    "L801",
+    "R817",
+    "R818",
+    "TP_ETH_3V3",
+    "U802"
+  ],
+  "remaining_unintegrated_ethernet_footprints": 49,
+  "original_pad_nets_preserved": true,
+  "original_positions_preserved": true,
+  "original_zone_net_layer_preserved": true,
+  "root_pcb_unchanged": true,
+  "power_pads_match_exported_schematic": true,
+  "stack": [
+    "F.Cu",
+    "In1.Cu GND plane",
+    "In2.Cu split power and short signal underpasses",
+    "B.Cu"
+  ],
+  "drc_counts": {
+    "solder_mask_bridge": 26,
+    "silk_overlap": 17,
+    "silk_over_copper": 13,
+    "lib_footprint_mismatch": 19,
+    "track_dangling": 37,
+    "via_dangling": 42
+  },
+  "defined_net_opens": 0,
+  "erc_violations": 0,
+  "manufacturing_ready": false,
+  "next": "Integrate and route controller, crystal, magjack, reset and SPI isolation; establish final isolation keepouts; full release validation",
+  "root_schematics_unchanged": true,
+  "remaining_solder_mask_flags": "26 rear ESP TIM opening/GND zone and pad reports; retain for release review, no new signal routed through opening",
+  "cleanup_summary": {
+    "removed_original_vias": 33,
+    "removed_signal_stubs_and_redundant_vias": 359,
+    "retained_collision_free_fragments": 141,
+    "additional_isolated_objects": 33,
+    "final_signal_objects": 34
+  }
+}

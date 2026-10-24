@@ -8,5 +8,6 @@
   "moved_existing": 10,
   "new_electrical_connections": 0,
   "stage": "placement only; not for manufacture",
-  "last_placement_update": "2026-10-24 dedicated ETH3V3 / sequencing"
+  "last_placement_update": "2026-10-24 dedicated ETH3V3 / sequencing",
+  "historical_checkpoint_notice": "Placement-only evidence; copper changed during authorized cleanup/routing on 2026-10-24. See routing-progress.json for current status."
 }

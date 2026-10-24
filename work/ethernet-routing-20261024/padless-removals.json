@@ -1,0 +1,167 @@
+{
+  "7b1b114b-9c25-4bc8-a291-f895b0925e2d": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "2f877e99-0578-4fee-bdb3-61ab2cd6c43d": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "ac1a3577-9fce-4c4c-9ec7-b66964c63591": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "bd58a6ac-cf97-47f1-bd5d-ed6934d849b8": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "456c66b3-cbcb-4353-9ed7-aea9b183aab9": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "aa9c3333-4c5c-475d-b547-a367b4ee9be6": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "57de409e-5be3-4b19-a381-7082fc5ff30e": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "8992a9d4-e4c9-45d9-bfe5-ec572c52618c": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "603870ac-ca4a-4d71-9420-adb02e856672": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "f2661a10-f56c-4945-b0a7-09d46a771fd9": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "127ccccf-5c4e-435b-9433-fc1046561e98": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "87dc7d90-6d76-4a7e-add7-d82667bc14b0": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "225b3d41-02b0-4442-b163-206c96013fa9": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "21d7aa13-ccca-49c9-9ef9-9d7230c541dd": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "c5364e8d-5619-495b-a076-4062f5420142": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "948bd3c1-2aca-4b98-8c15-f1d8a4329968": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "5b932eac-f4b5-42e1-a636-e320990d3ae4": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "786e2f5c-a370-47ea-a63f-68cc7ebaa150": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "8d198b7c-55dc-4f1e-ad2e-d2f6cc65e36b": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "baef23cd-4b5a-4899-bcea-33634d8583fc": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "808efc3f-7bc0-4adb-b15d-944491947542": {
+    "net": "+5V",
+    "kind": "PCB_VIA",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "9a0be1a1-6d3f-479a-a5b1-5ed3df41be89": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "a0b58d3a-ac15-4acd-a1e2-77314277bdca": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "df7021a8-6c99-44c4-9221-085c74a9e67b": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "f7d3d70c-d503-4bb8-a9f7-13e51bc67468": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "ad757823-670b-43e1-ba2b-084da800d535": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "bb24ae79-d72f-4651-b564-d30cfd410e88": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "be90999e-91e4-47d7-853d-b071136c91ef": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "f39de04d-13ef-41c0-a4d6-a0ec4d7f6883": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "c142abcd-eeb8-4971-bbfb-d6c674d40acf": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "db6e2bbb-7f01-414c-a556-b06d3093d1e1": {
+    "net": "+5V",
+    "kind": "PCB_VIA",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "cb51f1e4-8baf-4c7b-80cd-e4dfe4354871": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  },
+  "f1a996f4-9073-4acd-804f-5a29d22a4707": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "native conductive component has no component pads, including zone connectivity"
+  }
+}

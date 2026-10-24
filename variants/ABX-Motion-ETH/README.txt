@@ -1,14 +1,15 @@
 ABX-Motion-ETH — proposed Rev 1.2b Ethernet assembly option
 ========================================================
 
-OPEN THIS BOARD FOR THE PLACEMENT REVIEW:
+OPEN THIS BOARD FOR THE ROUTING REVIEW:
   abx-motion-eth-placement.kicad_pcb
   abx-motion-eth-placement.kicad_pro
 
-This is a PHYSICAL PLACEMENT STUDY, not an electrically integrated PCB or a
-manufacturing release. The root Rev 1.2a PCB, schematics and production exports
-have not been changed. This directory intentionally has no schematic claiming
-that the proposed Ethernet circuitry has already been wired.
+ROUTING IN PROGRESS, not a manufacturing release. The variant now has its own
+schematic hierarchy. The 12-part dedicated Ethernet 3.3V converter is electrically
+integrated and routed. The remaining 49 Ethernet footprints are placement drafts:
+the W5500, magnetics, clock, protection and SPI interface are not yet wired.
+Root Rev1.2a PCB, schematics and manufacturing exports remain unchanged.
 
 PRODUCT IDENTIFICATION
 PCB hardware revision: Rev 1.2b, once the electrical design is finalized.
@@ -66,70 +67,38 @@ CHECKS AND LIMITS
   Nominal body-to-module lateral gap is 2.54 mm, with no footprint courtyard intersection. This is a geometric
   screen, not measured RF qualification. Wi-Fi range/throughput may suffer and
   must be measured with the real jack, plugged cable and enclosure.
-- All original segment, via and zone expressions are retained verbatim. No
-  necessary original trace has been deleted to make the placement look clear.
-  CONSEQUENCE: old copper remains at the pre-move test-pad/pull-up positions; it
-  is not valid routing for those moved parts and conflicts with proposed pads.
-  Filled copper also remains under the proposed jack. It must be cleared/rerouted
-  with reviewed keepouts during electrical integration; DO NOT fabricate this file.
-- Every new footprint is excluded from BOM and CPL. Pads have no assigned nets,
-  and the new references are not present in the schematic. This prevents the
-  placement study being mistaken for a completed assembly export.
+- Obsolete signal branches and isolated copper were removed conservatively.
+  Copper conflicting with new/moved pads was clipped; surviving ends were retained
+  and displaced existing connections rerouted. See routing-progress.json and the
+  work/ethernet-routing-20261024 audit files. Placement-era preservation reports
+  describe the earlier checkpoint and are superseded for present copper geometry.
+- Every new footprint remains excluded from BOM and CPL. Twelve power footprints
+  have schematic-assigned nets; the other 49 retain net0 pending integration.
+- The actual stack is FOUR layers: F.Cu, In1.Cu GND, In2.Cu split power, B.Cu.
+  New routes avoid In1.Cu. Short In2 underpasses must be reviewed for power-plane
+  continuity. Earlier two-layer routing notes were incorrect.
+- Search reservations protect the jack isolation, clock and buck areas while
+  restoring old nets. Final native jack isolation/copper voids remain pending;
+  existing filled copper under the proposed jack is not yet qualified.
 - D801 remains a provisional ESD package allocation, not a frozen MPN.
   Crystal CL/load caps, protection ratings, jack pinout/center-tap network and
   input-capacitor DC bias still require electrical review. Some package choices can
   change after that review, so this is not a promise that routing will be complete.
 - W5500 pin 18 VBG is intentionally left floating in the circuit proposal;
   C809 is 4.7 uF for TOCAP pin 20, C810 is 10 nF for 1V2O pin 22.
-- Schematic ERC, PCB parity, DRC and zero-open release checks have NOT passed for
-  this study. They apply after the circuit is actually integrated and routed.
+- The current power-integrated schematic passes ERC with zero violations.
+  PCB DRC is a progress check only: remaining draft net0 pads do not prove routed
+  Ethernet connectivity. Existing silkscreen/library/dangling issues remain.
 
 NEXT ELECTRICAL CHECKPOINT
-1. Integrate the selected protected-VBAT buck and power-domain interface in the
-   schematic using the proposed pin/net contract, validate the DC-bias/thermal
-   budget, and freeze remaining Ethernet support parts. The source/circuit
-   selection is no longer just an empty supply reservation. New pads still
-   have no nets, and no routing/DRC release is claimed.
-2. Confirm shared SPI/polling behavior and GPIO3 boot-state allocation; move the
-   status LED to an expander output and provide an expander reset interface.
-   U601 pads 18/19 currently have GND ties that MUST be removed before reuse.
-3. Build and check the Ethernet schematic using the exact jack transformer/LED
-   diagram and selected supply/protection/reset parts. Reconcile actual parts
-   and footprints with the reservation before touching routing.
-4. Preserve the existing supply hot-loop/feedback/thermal layout. Review new
-   Ethernet supply copper separately. Remove only identified obsolete/conflicting
-   copper in a separate reviewed routing operation.
-5. Integrate, route and validate, then create separate base/ETH assembly BOMs,
-   supplier-checked CPL rules and matched manufacturing packages.
+1. Freeze crystal, ESD and exact magjack pin/center-tap/shield circuitry.
+2. Integrate W5500 and SPI isolation/reset into the schematic. GPIO3/status LED
+   changes and removal of U601 pads18/19 ground ties remain pending.
+3. Route local bypass, clock, MDI pairs and then SPI; establish native isolation
+   keepouts and verify actual layer stack, return paths and power-plane continuity.
+4. Run complete schematic/PCB parity, ERC, DRC, BOM/CPL review and prototype tests.
+   Do not use this in-progress variant for manufacturing.
 
-VIEWS AND EVIDENCE
-  layout-review/placement-detail.png   Annotated close placement view
-  layout-review/placement-overview.png Whole-board placement view
-  layout-review/placement-3d.png       Mechanical visualization
-  layout-review/geometry.json         Courtyard/antenna screen
-  layout-review/parts.json            New package positions and unresolved status
-  layout-review/power-routing-plan.png Proposed power loops / SPI route strategy
-  layout-review/power-routing-plan.txt Detailed routing and electrical contract
-  layout-review/power-interface-design.json Proposed per-pin net map / distances
-  layout-review/ethernet-supply-placement.json Bounded-change preservation proof
-  layout-review/moved-parts.json      Exact 10-part existing placement changes
-  layout-review/preservation.json     Source/copper preservation evidence
-
-The local RJ45 VRML is an approximate, dimensioned mechanical envelope with a
-visible mouth, not a vendor STEP model or authority for supplier CPL rotation.
-Other local visualization models are copied from the Rev 1.2a project.
-
-Baseline commit: ce34a43.
-Date: 2026-10-23. Supply-reservation/test-point update: 2026-10-24.
-The original placement.py is historical; do not rerun it over this candidate.
-Latest bounded delta: work/ethernet-3v3-20261024/place_supply.py.
-Routing design/review: work/ethernet-3v3-20261024/design_data.py and routing_view.py.
-Whole-board review: work/ethernet-rev1.2b-20261023/review.py.
-
-PRIMARY DESIGN REFERENCES
-https://docs.wiznet.io/Product/Chip/Ethernet/W5500/ref-schematic
-https://docs.wiznet.io/Design-Guide/hardware_design_guide
-https://jlcpcb.com/partdetail/Wiznet-W5500/C32843
-https://jlcpcb.com/partdetail/C12074
-https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html
-https://www.ti.com/product/LMR36506
+Historical placement images/reports and proposal pin contracts remain useful
+references. Current routing images and results are in layout-review/routing-*.
+Do not rerun historical placement generators: they overwrite routing progress.

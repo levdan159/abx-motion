@@ -1,5 +1,7 @@
+CURRENT STATUS: power routing is implemented; remaining controller/interface sections below are proposals, not completed wiring.
+
 ABX-Motion-ETH Rev 1.2b — dedicated 3V3 placement and routing contract
-2026-10-24 | PHYSICAL PLACEMENT ONLY | no copper routing / no schematic integration
+2026-10-24 | ROUTING IN PROGRESS | power schematic integrated and routed
 
 DECISION
 Use protected +BATT, after Q1, to supply a separate Ethernet buck. Do not take
@@ -113,7 +115,7 @@ PLACEMENT / ROUTING ORDER
    upward and C802 left so they no longer sit on the original straight pair exits.
    Fan the RX pair through the gap between C801 and C802, and TX to their right.
    Exact W5500/jack polarity, center-tap circuitry and ESD remain to be frozen.
-   Pair width/gap must be calculated for the ACTUAL two-layer fab stack-up; a
+   Pair width/gap must be calculated for the ACTUAL four-layer fabrication stack-up; a
    guessed fine trace pair is not a100ohm design. Recheck the fanout gap with
    those dimensions. Keep pairs short, same-layer, via-free where possible.
    Ground/track keepouts for the jack apply at the isolation boundary, not under
@@ -138,8 +140,9 @@ PLACEMENT / ROUTING ORDER
    These22ohm source-series values are initial tuning values, not SI validation.
    Take SPI branches near the MCU source; avoid a long tee from the stepper area.
    Rear-layer crossings provide escape without moving U704/U705/U707/U709.
-   Long rear runs on this two-layer PCB consume GND plane: keep them grouped and
-   short and verify the ground return is not severed. Do not promise routing
+   Actual PCB is four layers. In1.Cu is the continuous GND plane; keep signal
+   routes off it. In2.Cu carries split power; review any short signal underpasses
+   for power-plane continuity. Do not promise routing
    closure solely from free space in this placement view.
 9. U803/Q801 sit below U804, with local bypass, pull-up and gate pull-down.
    Reset/MR/EN are slow control lines; use rear-layer crossings rather than
@@ -196,8 +199,8 @@ Exact crystal CL/ESR/load caps; ferrite and ESD MPN/ratings; magjack pinout/CT
 network and shield/chassis connection; rail DC-bias/thermal checks; GPIO/eFuse
 boot configuration; firmware driver CS timing; custom footprint independent
 release review; full schematic/parity/routing and physical prototype tests.
-The PCB is not ready to manufacture; all new pads remain net0 and all61 new
-footprints are excluded from BOM/CPL. Rev1.2a manufacturing outputs are unchanged.
+The PCB is not ready to manufacture; 12 power footprints now have schematic-assigned nets; 49 Ethernet draft
+footprints remain net0. All61 remain excluded from BOM/CPL. Rev1.2a manufacturing outputs are unchanged.
 
 PRIMARY REFERENCES
 TI LMR36506 Rev C,January2026: https://www.ti.com/lit/ds/symlink/lmr36506.pdf

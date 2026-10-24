@@ -34,5 +34,6 @@
     "segment": 5630,
     "via": 1131,
     "zone": 38
-  }
+  },
+  "historical_checkpoint_notice": "Placement-only evidence; copper changed during authorized cleanup/routing on 2026-10-24. See routing-progress.json for current status."
 }

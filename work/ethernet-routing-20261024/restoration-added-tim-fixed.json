@@ -1,0 +1,77 @@
+[
+  {
+    "uuid": "ee9b0c1e-3920-4d77-935d-1d41183c3579",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "89574b30-9e55-43a7-b399-e2b2df2cf2db",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "a7447453-728d-44e6-8a89-9a81b5a28983",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "59d99cdb-18f4-4ed1-a4ac-9dc95173575b",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "d7d4b36e-c5b2-4d63-b327-6c15049b9afa",
+    "net": "I2C_SDA",
+    "kind": "PCB_VIA"
+  },
+  {
+    "uuid": "5dd0eada-5f80-4fec-ab1b-86dd3ba1f74b",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "b0c9646e-1e17-4c75-ae35-7fac6dba7f7b",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "3e526ec0-6893-4b51-8ecc-43a801457d41",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "c58e1f62-6f81-449e-a4e5-e523b7d1b7dd",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "6728f10e-c061-45fd-88a6-edb16e5bec88",
+    "net": "I2C_SDA",
+    "kind": "PCB_VIA"
+  },
+  {
+    "uuid": "7c3b97ea-4228-45e1-ae84-13764aa09a36",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "deecb7da-2897-4af6-8e62-47139763c2b6",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "eb58b263-4650-4e10-8ce6-f39edfa34fdf",
+    "net": "I2C_SDA",
+    "kind": "PCB_VIA"
+  },
+  {
+    "uuid": "eea1b1de-e7bd-42f3-8e16-013d86c0ba9b",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  },
+  {
+    "uuid": "6bac8304-a3b6-4e69-a65c-164bc64e2daa",
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK"
+  }
+]

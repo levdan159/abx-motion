@@ -660,8 +660,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "abx-motion.kicad_sch",
-        "name": "abx-motion",
+        "filename": "abx-motion-eth-placement.kicad_sch",
+        "name": "abx-motion-eth-placement",
         "uuid": "f9149098-3f23-438d-bdc2-2e278b5ca35b"
       }
     ],

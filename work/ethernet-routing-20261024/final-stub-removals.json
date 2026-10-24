@@ -1,0 +1,172 @@
+{
+  "082d5d54-b5cb-4086-b735-7a0be57eb41c": {
+    "net": "AX3_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "168d0221-b71b-4b5d-b156-5419697f5c77": {
+    "net": "/M1_CS",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "2771b64d-b1d0-4bff-bb92-3f2e24972743": {
+    "net": "AX1_EXT_STEP_OUT",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "2a2ff47b-2436-40ac-9cea-3f2c12c2c547": {
+    "net": "STEP_WD_OK",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "3e4ff73a-1761-4f0c-bac7-7f4d3aea181d": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "4641a60a-2819-4e6b-b64a-fcc915ca58e4": {
+    "net": "STEP2_PUL",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "482e5c8c-0b8d-4895-a0dd-102bb0e6517c": {
+    "net": "/VBAT_SENSE",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "4cf001b8-5b70-4dae-8603-025fb44e458c": {
+    "net": "/M2_nFAULT",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "4ea74b04-44df-48c2-bc3a-66c68b602269": {
+    "net": "STEP_SPI_MISO",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "6e64ee70-d330-4b9a-a90f-e767486e94dc": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "6ffce630-65f1-4602-8baf-240acd5df6ce": {
+    "net": "/M2_nFAULT",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "7715ce97-702c-4438-b1ed-591ec113175e": {
+    "net": "/M2_PWM_PH",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "88819bb4-a17f-4f4d-8c5e-fc6dbb6045ca": {
+    "net": "AX3_CS_N",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "8e6cc09e-123d-4fdb-b77b-8e6349cf420f": {
+    "net": "AX3_CS_N",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "9863e6f8-d2fb-4316-b347-277fb62a96f6": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "9ab8404b-6a4e-4068-a938-525a9ba626c4": {
+    "net": "/M1_PWM_PH",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "9ae613fe-61eb-49cd-b437-0f7b99d20522": {
+    "net": "STEP2_DIR",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "a1810dfa-ad7c-4fad-b01d-5f678a013503": {
+    "net": "/Industrial_IO/+5V_OUT",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "a32a5d28-b4b1-4c7c-bbbd-20c03d314bf3": {
+    "net": "AX2_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "a59c8193-3b0c-4bbc-9c7d-ad5dab3e0529": {
+    "net": "/M2_nFAULT",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "d0716034-28f9-4c45-9076-6c8d668ea23d": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "e8d58035-2da2-4322-a1cc-100a37703ea7": {
+    "net": "AX3_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "324caa68-0b4e-475e-8662-78d4b7e48c61": {
+    "net": "STEP2_PUL",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "387fa213-95ba-416c-a5ee-5e31b2798e15": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "39291fab-7b2a-41ed-ab22-ec8df20ba18a": {
+    "net": "AX2_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "3d8d3a81-3e20-4168-a1dd-fd6b359cc68d": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "3d905de6-21db-4c5b-aa83-fde62278741f": {
+    "net": "/M2_nFAULT",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "3e9f9049-aefc-43c9-967e-97fbe4469064": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "5d30eb22-54a1-42f0-be7b-71e419efb009": {
+    "net": "STEP2_PUL",
+    "kind": "PCB_VIA",
+    "reason": "signal via without layer transfer; nonbridge proof"
+  },
+  "a4eca096-b910-4045-a9cf-46dee9a4ee8d": {
+    "net": "STEP2_PUL",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "c51f9ae8-15fc-4eba-95bf-fb26cb3e7c56": {
+    "net": "AX3_CMD",
+    "kind": "PCB_VIA",
+    "reason": "signal via without layer transfer; nonbridge proof"
+  },
+  "e9dfaf3b-d485-4be8-973f-73fce64ca0c7": {
+    "net": "I2C_SCL",
+    "kind": "PCB_VIA",
+    "reason": "signal via without layer transfer; nonbridge proof"
+  },
+  "03effdf2-f535-4708-99c4-7dfefc260436": {
+    "net": "AX2_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "dangling signal stub; nonbridge proof"
+  },
+  "26860b67-ba3b-4eb5-9dd4-59c04b764c0b": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_VIA",
+    "reason": "signal via without layer transfer; nonbridge proof"
+  }
+}

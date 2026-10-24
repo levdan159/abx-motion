@@ -1,0 +1,7278 @@
+{
+  "date": "2026-10-24",
+  "schematic_integrated_refs": [
+    "C821",
+    "C822",
+    "C823",
+    "C824",
+    "C825",
+    "C826",
+    "C827",
+    "L801",
+    "R817",
+    "R818",
+    "TP_ETH_3V3",
+    "U802"
+  ],
+  "all_other_pad_nets_preserved": true,
+  "zone_assignments_and_layers_preserved": true,
+  "collision_removals": {
+    "1bf7b800-45f2-4e88-8da7-fa91e302c1cb": {
+      "kind": "via",
+      "net": "RLY1_CMD",
+      "position": [
+        109.2375,
+        92.95
+      ],
+      "conflicts": [
+        [
+          "R816",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R816",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "3508152a-6359-4789-a222-09168277fdb6": {
+      "kind": "via",
+      "net": "GND",
+      "position": [
+        108.175,
+        84.0
+      ],
+      "conflicts": [
+        [
+          "U804",
+          "7",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "64990453-2d7e-47fb-938f-744077e91627": {
+      "kind": "via",
+      "net": "GND",
+      "position": [
+        112.5125,
+        79.65
+      ],
+      "conflicts": [
+        [
+          "U804",
+          "14",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "68fed7ae-712f-4cb4-99ad-c9af12fff21d": {
+      "kind": "via",
+      "net": "GND",
+      "position": [
+        126.7625,
+        81.2
+      ],
+      "conflicts": [
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "b0783544-2e98-48b5-af60-4e9d709e4148": {
+      "kind": "via",
+      "net": "GND",
+      "position": [
+        130.725,
+        76.0
+      ],
+      "conflicts": [
+        [
+          "D801",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "d72e4539-2400-4455-bdec-b5e28584e192": {
+      "kind": "via",
+      "net": "GND",
+      "position": [
+        108.375,
+        82.0
+      ],
+      "conflicts": [
+        [
+          "U804",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "d8d48334-5b54-4ea0-b3bb-c42665fc337a": {
+      "kind": "via",
+      "net": "STEP_SPI_MOSI",
+      "position": [
+        120.8,
+        81.2
+      ],
+      "conflicts": [
+        [
+          "Y801",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "0796a051-dc3e-4730-9a58-2af1a7192a37": {
+      "kind": "segment",
+      "net": "/M1_CS",
+      "layer": "B.Cu",
+      "start": [
+        98.5,
+        59.0
+      ],
+      "end": [
+        141.5,
+        59.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "aecb254d-467f-40f3-98ce-f2f6a448c81a",
+          "start": [
+            98.5,
+            59.0
+          ],
+          "end": [
+            111.294,
+            59.0
+          ]
+        },
+        {
+          "uuid": "ca779c71-b1e0-4b52-8e46-f88944f8b307",
+          "start": [
+            114.336,
+            59.0
+          ],
+          "end": [
+            126.784,
+            59.0
+          ]
+        },
+        {
+          "uuid": "406442ee-37f0-4097-ae15-0d4ac160beb9",
+          "start": [
+            129.826,
+            59.0
+          ],
+          "end": [
+            141.5,
+            59.0
+          ]
+        }
+      ]
+    },
+    "1b26b36f-d6c6-424a-81fd-ec574f175637": {
+      "kind": "segment",
+      "net": "/M1_CS",
+      "layer": "B.Cu",
+      "start": [
+        144.5,
+        50.4
+      ],
+      "end": [
+        144.5,
+        54.5
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "TP_3V3_1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "85dbe288-a388-46b5-84e0-ee3fe9c3bdfc",
+          "start": [
+            144.5,
+            53.096
+          ],
+          "end": [
+            144.5,
+            54.5
+          ]
+        }
+      ]
+    },
+    "d57e6c21-4538-41fc-b2f2-9176440ebe12": {
+      "kind": "segment",
+      "net": "/M1_CS",
+      "layer": "B.Cu",
+      "start": [
+        143.5,
+        50.4
+      ],
+      "end": [
+        144.5,
+        50.4
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "TP_3V3_1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "0b6791aa-bb38-45bd-8792-43b215df15fa": {
+      "kind": "segment",
+      "net": "+BATT",
+      "layer": "F.Cu",
+      "start": [
+        132.0,
+        87.0
+      ],
+      "end": [
+        136.0,
+        83.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "R747",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R748",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "bd58a6ac-cf97-47f1-bd5d-ed6934d849b8",
+          "start": [
+            132.0,
+            87.0
+          ],
+          "end": [
+            132.62900000000002,
+            86.37099999999998
+          ]
+        },
+        {
+          "uuid": "2f877e99-0578-4fee-bdb3-61ab2cd6c43d",
+          "start": [
+            133.76336810867215,
+            85.23663189132786
+          ],
+          "end": [
+            135.72999321152534,
+            83.27000678847467
+          ]
+        }
+      ]
+    },
+    "3e34bc75-90c2-41bd-9ae7-8070d22ca13c": {
+      "kind": "segment",
+      "net": "+BATT",
+      "layer": "F.Cu",
+      "start": [
+        132.0,
+        91.0
+      ],
+      "end": [
+        132.0,
+        87.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "R749",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "7053d49b-4b49-4edc-9a84-dc9c5670a1f5",
+          "start": [
+            132.0,
+            91.0
+          ],
+          "end": [
+            132.0,
+            88.971
+          ]
+        },
+        {
+          "uuid": "ac1a3577-9fce-4c4c-9ec7-b66964c63591",
+          "start": [
+            132.0,
+            87.42899999999999
+          ],
+          "end": [
+            132.0,
+            87.0
+          ]
+        }
+      ]
+    },
+    "b2bce13f-f350-4eca-9dd5-7daea967e0b7": {
+      "kind": "via",
+      "net": "+BATT",
+      "position": [
+        136.0,
+        83.0
+      ],
+      "conflicts": [
+        [
+          "R747",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "28c6401c-366c-40c9-96f7-a7edcd7121f1": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        128.0,
+        54.5
+      ],
+      "end": [
+        128.0,
+        59.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ],
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "456c66b3-cbcb-4353-9ed7-aea9b183aab9",
+          "start": [
+            128.0,
+            54.5
+          ],
+          "end": [
+            128.0,
+            55.87179737417196
+          ]
+        },
+        {
+          "uuid": "603870ac-ca4a-4d71-9420-adb02e856672",
+          "start": [
+            128.0,
+            57.90820262582804
+          ],
+          "end": [
+            128.0,
+            58.394
+          ]
+        }
+      ]
+    },
+    "3f3fb05b-1003-4c42-abc5-b5c512d13153": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        128.0,
+        50.4
+      ],
+      "end": [
+        128.0,
+        54.5
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "9",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "8992a9d4-e4c9-45d9-bfe5-ec572c52618c",
+          "start": [
+            128.0,
+            50.4
+          ],
+          "end": [
+            128.0,
+            50.956929303879676
+          ]
+        },
+        {
+          "uuid": "aa9c3333-4c5c-475d-b547-a367b4ee9be6",
+          "start": [
+            128.0,
+            53.02307069612033
+          ],
+          "end": [
+            128.0,
+            54.5
+          ]
+        }
+      ]
+    },
+    "48925768-2ffc-4331-9e11-da4acb371e36": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        131.55,
+        80.2
+      ],
+      "end": [
+        128.15,
+        80.2
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "C818",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C818",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "8cd88ee3-5c08-463e-ae62-cfd554cac0a7",
+          "start": [
+            131.55,
+            80.2
+          ],
+          "end": [
+            130.05599999999998,
+            80.2
+          ]
+        }
+      ]
+    },
+    "4b06bd43-d422-4e85-b77d-6289bcec6351": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        100.7,
+        83.3
+      ],
+      "end": [
+        103.725,
+        80.275
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "Q802",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "9fe42428-cb51-46ea-8109-a36ea2df2a10",
+          "start": [
+            100.7,
+            83.3
+          ],
+          "end": [
+            102.429,
+            81.571
+          ]
+        }
+      ]
+    },
+    "7b6c64df-32aa-46c6-936a-936d466716ea": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        103.725,
+        80.275
+      ],
+      "end": [
+        103.725,
+        78.8
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "Q802",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f2661a10-f56c-4945-b0a7-09d46a771fd9",
+          "start": [
+            103.725,
+            80.275
+          ],
+          "end": [
+            103.725,
+            79.67099999999999
+          ]
+        }
+      ]
+    },
+    "dd7a2683-d7c7-40e4-a6ac-fd2fe9979cf4": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        128.0,
+        59.0
+      ],
+      "end": [
+        129.0,
+        60.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "f18fa074-aeaf-4313-bf44-2a7163fdc054": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        128.699999,
+        79.0
+      ],
+      "end": [
+        128.699999,
+        80.2
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "C818",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "a63a4b1e-c483-458a-8d58-a7cfc84a671f",
+          "start": [
+            128.699999,
+            79.0
+          ],
+          "end": [
+            128.699999,
+            79.444
+          ]
+        }
+      ]
+    },
+    "f889a53b-d036-4aa8-b7b5-ed66d55a6a24": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        103.725,
+        78.8
+      ],
+      "end": [
+        102.9,
+        78.8
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q802",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "2d86929b-b5c4-4895-a1de-232295351f0c": {
+      "kind": "via",
+      "net": "+3V3",
+      "position": [
+        126.4,
+        81.8
+      ],
+      "conflicts": [
+        [
+          "C811",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "501d49e3-746d-48b5-8174-e6aeb4fc40f4": {
+      "kind": "via",
+      "net": "+3V3",
+      "position": [
+        104.434,
+        83.034
+      ],
+      "conflicts": [
+        [
+          "R815",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "6370d67c-ac4f-43e2-aba0-03052693350f": {
+      "kind": "via",
+      "net": "+3V3",
+      "position": [
+        128.15,
+        80.2
+      ],
+      "conflicts": [
+        [
+          "C818",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "adc87e41-bb84-4b93-a645-1d90e854f019": {
+      "kind": "via",
+      "net": "+3V3",
+      "position": [
+        129.0,
+        60.0
+      ],
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "SH",
+          "drill clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "dbf9a025-e44a-4d9c-808c-c51a36e18173": {
+      "kind": "via",
+      "net": "+3V3",
+      "position": [
+        102.9,
+        78.8
+      ],
+      "conflicts": [
+        [
+          "Q802",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "b1452e14-3a01-4624-bab9-e228d7d5d61a": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "B.Cu",
+      "start": [
+        129.0,
+        60.0
+      ],
+      "end": [
+        128.0,
+        61.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "e06eba5b-eb84-4acd-bea8-bb13e135554e": {
+      "kind": "segment",
+      "net": "+3V3",
+      "layer": "B.Cu",
+      "start": [
+        128.0,
+        61.0
+      ],
+      "end": [
+        128.0,
+        64.5
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "064e615a-7f80-42ff-b9ef-b2f3c32d0676",
+          "start": [
+            128.0,
+            61.486
+          ],
+          "end": [
+            128.0,
+            64.5
+          ]
+        }
+      ]
+    },
+    "34494533-3a6a-4b76-a31f-cf935e88698a": {
+      "kind": "segment",
+      "net": "STEP_SPI_MISO",
+      "layer": "F.Cu",
+      "start": [
+        115.2,
+        68.6
+      ],
+      "end": [
+        110.4,
+        63.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "1592bfcc-be9f-4a01-82f0-01a51cf6fcf9",
+          "start": [
+            115.10900000000001,
+            68.509
+          ],
+          "end": [
+            110.4,
+            63.8
+          ]
+        }
+      ]
+    },
+    "76719c75-a5da-45a0-b8ee-cae06dc3f456": {
+      "kind": "segment",
+      "net": "STEP_SPI_MISO",
+      "layer": "F.Cu",
+      "start": [
+        128.2,
+        76.0
+      ],
+      "end": [
+        120.8,
+        68.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "D801",
+          "3",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R803",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R804",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "3",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "46",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "47",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "48",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "9d663ebb-c972-4735-abdd-35a0512b66c5",
+          "start": [
+            128.2,
+            76.0
+          ],
+          "end": [
+            128.1013840723747,
+            75.90138407237471
+          ]
+        },
+        {
+          "uuid": "efb3275e-c3e8-4477-a86e-8ba9c863af2b",
+          "start": [
+            127.94861592762528,
+            75.7486159276253
+          ],
+          "end": [
+            127.551,
+            75.35100000000001
+          ]
+        },
+        {
+          "uuid": "e8683638-4eb0-4f1d-bdd6-60dcd8e1a1d7",
+          "start": [
+            126.80899999999998,
+            74.609
+          ],
+          "end": [
+            125.99099999999999,
+            73.791
+          ]
+        },
+        {
+          "uuid": "5e2b1051-329a-453f-9f03-da775e863d70",
+          "start": [
+            123.82900000000001,
+            71.629
+          ],
+          "end": [
+            123.471,
+            71.271
+          ]
+        },
+        {
+          "uuid": "4b469213-7f63-4915-a7bc-73ad65cd8fb7",
+          "start": [
+            121.84077965835387,
+            69.64077965835388
+          ],
+          "end": [
+            121.281,
+            69.081
+          ]
+        }
+      ]
+    },
+    "d70518d6-e148-4f9c-9b38-b6a772f3280b": {
+      "kind": "segment",
+      "net": "STEP_SPI_MISO",
+      "layer": "F.Cu",
+      "start": [
+        120.8,
+        68.6
+      ],
+      "end": [
+        115.2,
+        68.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C802",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C802",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C803",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C803",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "afc518b3-3605-45eb-b226-0eee217e1033",
+          "start": [
+            120.519,
+            68.6
+          ],
+          "end": [
+            119.71309788693583,
+            68.6
+          ]
+        },
+        {
+          "uuid": "efc1ff34-5a2d-4bcf-af27-7ea174721b2d",
+          "start": [
+            115.73690211306416,
+            68.6
+          ],
+          "end": [
+            115.47939414091951,
+            68.6
+          ]
+        }
+      ]
+    },
+    "dd70d965-772b-462c-80aa-6ec81f13333b": {
+      "kind": "segment",
+      "net": "STEP_SPI_MISO",
+      "layer": "F.Cu",
+      "start": [
+        122.4,
+        70.2
+      ],
+      "end": [
+        121.0,
+        71.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "3",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "4",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "5",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "42d0e17b-b708-4450-8bc2-d56f1fff2260": {
+      "kind": "via",
+      "net": "STEP_SPI_MISO",
+      "position": [
+        116.4,
+        76.0
+      ],
+      "conflicts": [
+        [
+          "U801",
+          "20",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "21",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "22",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "cad057a6-cef4-45c6-966c-c4b21a9c6165": {
+      "kind": "via",
+      "net": "STEP_SPI_MISO",
+      "position": [
+        121.0,
+        71.6
+      ],
+      "conflicts": [
+        [
+          "U801",
+          "5",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "6",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "1d7de7aa-adc9-4220-9594-e25fd658d786": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        124.175,
+        76.0
+      ],
+      "end": [
+        124.2,
+        76.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "40",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "3dd725bc-a230-4df3-88dc-0ae018b95bbf": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        113.8,
+        69.2
+      ],
+      "end": [
+        113.6,
+        69.2
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "54bf856e-889f-44e6-96f7-39cd3b8f4bf5": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        119.8,
+        72.0
+      ],
+      "end": [
+        118.4,
+        70.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "8",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "9",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "10",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "11",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "2b983857-7a2d-4d53-9f56-a8bb763ea7ba",
+          "start": [
+            119.8,
+            72.0
+          ],
+          "end": [
+            119.446,
+            71.646
+          ]
+        }
+      ]
+    },
+    "6a976602-19cd-45ac-b241-263d56b01d10": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        124.2,
+        76.0
+      ],
+      "end": [
+        121.4,
+        73.2
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "40",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "41",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "42",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "6f7168d9-d169-41a5-8f39-26d1c320f617",
+          "start": [
+            123.46740835559197,
+            75.26740835559197
+          ],
+          "end": [
+            121.4,
+            73.2
+          ]
+        }
+      ]
+    },
+    "6c1cb2bf-8b73-4b8c-aeb2-07dd28b778fe": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        114.6,
+        69.6
+      ],
+      "end": [
+        114.4,
+        69.4
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "6e8d4351-82fc-401d-857d-a8f2476e1db3": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        118.4,
+        70.6
+      ],
+      "end": [
+        116.8,
+        70.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "10",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "11",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "12",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "5420e441-47ba-4e4d-918f-40fc3c65fd08",
+          "start": [
+            117.129,
+            70.6
+          ],
+          "end": [
+            116.8,
+            70.6
+          ]
+        }
+      ]
+    },
+    "8cad1d3d-d53f-476d-9cf8-04580f982558": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        124.175,
+        76.0
+      ],
+      "end": [
+        124.2,
+        76.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "40",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "90ca08c4-5330-4d5a-b20c-7d1efff94369": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        115.0,
+        69.8
+      ],
+      "end": [
+        114.8,
+        69.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "44a7d74c-2e6f-433f-adbf-97e70852a4c9",
+          "start": [
+            115.0,
+            69.8
+          ],
+          "end": [
+            114.891,
+            69.691
+          ]
+        }
+      ]
+    },
+    "ab3a8c9b-e84b-4e97-8b0a-b417e4cde80b": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        114.0,
+        69.4
+      ],
+      "end": [
+        113.8,
+        69.2
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "c9c6deb2-92dd-4628-b5ed-4dccb69f6c9a": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        114.4,
+        69.4
+      ],
+      "end": [
+        114.0,
+        69.4
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "d607ad58-e4a6-4ae3-a5bb-b73d90413b27": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        113.6,
+        69.2
+      ],
+      "end": [
+        113.4,
+        69.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "d9f0959b-2c8b-4086-86c5-f9b1fc707e42": {
+      "kind": "segment",
+      "net": "STEP_SPI_MOSI",
+      "layer": "F.Cu",
+      "start": [
+        114.8,
+        69.6
+      ],
+      "end": [
+        114.6,
+        69.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "95fe7fc3-e9ba-4615-a551-d5565324cbf8": {
+      "kind": "via",
+      "net": "STEP_SPI_MOSI",
+      "position": [
+        120.9,
+        81.9
+      ],
+      "conflicts": [
+        [
+          "Y801",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "588d9eb0-75d5-43dc-9055-1f7162868841": {
+      "kind": "segment",
+      "net": "STEP_SPI_SCLK",
+      "layer": "F.Cu",
+      "start": [
+        115.2,
+        75.0
+      ],
+      "end": [
+        115.0,
+        74.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "19",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "d1ecd41a-df88-4485-8903-13f2311c3e2a",
+          "start": [
+            115.129,
+            74.929
+          ],
+          "end": [
+            115.0,
+            74.8
+          ]
+        }
+      ]
+    },
+    "6f4fd518-90c5-4fbc-8e5c-a4577c147b71": {
+      "kind": "segment",
+      "net": "STEP_SPI_SCLK",
+      "layer": "F.Cu",
+      "start": [
+        115.2,
+        75.0
+      ],
+      "end": [
+        118.2,
+        75.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "19",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "e63a35a0-f807-4436-a18f-9a27c94d8681",
+          "start": [
+            117.146,
+            75.0
+          ],
+          "end": [
+            118.2,
+            75.0
+          ]
+        }
+      ]
+    },
+    "7532fa5b-d88d-4813-8b6f-e3ab56a43bec": {
+      "kind": "segment",
+      "net": "STEP2_PUL",
+      "layer": "F.Cu",
+      "start": [
+        116.4,
+        77.2
+      ],
+      "end": [
+        117.0,
+        76.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "22",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "23",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "24",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "fa06968c-8769-4e03-b3df-bd937d32de97": {
+      "kind": "segment",
+      "net": "STEP2_PUL",
+      "layer": "F.Cu",
+      "start": [
+        107.0,
+        77.2
+      ],
+      "end": [
+        116.4,
+        77.2
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C809",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C809",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "23",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "24",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "3a9a87e1-14ec-40c2-9574-b2e9b72ce43f",
+          "start": [
+            107.0,
+            77.2
+          ],
+          "end": [
+            112.004,
+            77.2
+          ]
+        },
+        {
+          "uuid": "2bded4e3-9735-45fc-9ad1-4759e92a57ec",
+          "start": [
+            113.446,
+            77.2
+          ],
+          "end": [
+            113.554,
+            77.2
+          ]
+        },
+        {
+          "uuid": "6ef8488e-210f-49e4-b1c2-7dc152e8dcb8",
+          "start": [
+            114.996,
+            77.2
+          ],
+          "end": [
+            115.129,
+            77.2
+          ]
+        }
+      ]
+    },
+    "0e7cb3f4-8942-4b05-b28c-5d425c634a5a": {
+      "kind": "via",
+      "net": "STEP2_PUL",
+      "position": [
+        117.0,
+        76.6
+      ],
+      "conflicts": [
+        [
+          "U801",
+          "21",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "22",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "23",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "205efd86-5573-479c-9a14-b2b7dc5f83b6": {
+      "kind": "segment",
+      "net": "STEP2_DIR",
+      "layer": "F.Cu",
+      "start": [
+        106.8,
+        78.0
+      ],
+      "end": [
+        122.4,
+        78.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C810",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C810",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C828",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C828",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "25",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "26",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "27",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "28",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "29",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "30",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "31",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "32",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "33",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "34",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "35",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "303b4d79-7596-4418-967a-7741b945d252",
+          "start": [
+            108.431,
+            78.0
+          ],
+          "end": [
+            113.14728764545967,
+            78.0
+          ]
+        },
+        {
+          "uuid": "403b2ba6-0460-4b32-b822-84fa93dfb09d",
+          "start": [
+            115.05271235454033,
+            78.0
+          ],
+          "end": [
+            117.25832187625785,
+            78.0
+          ]
+        }
+      ]
+    },
+    "227b5aeb-8451-434f-9cb8-d1012ef04553": {
+      "kind": "segment",
+      "net": "STEP2_DIR",
+      "layer": "F.Cu",
+      "start": [
+        133.199999,
+        86.6
+      ],
+      "end": [
+        134.399999,
+        87.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R748",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "af1fb324-b677-413b-bef8-6711d5e2559c",
+          "start": [
+            133.345999,
+            86.746
+          ],
+          "end": [
+            134.399999,
+            87.8
+          ]
+        }
+      ]
+    },
+    "6655aa49-945e-4bbb-80aa-8e25781d5923": {
+      "kind": "segment",
+      "net": "STEP2_DIR",
+      "layer": "F.Cu",
+      "start": [
+        122.4,
+        78.0
+      ],
+      "end": [
+        124.4,
+        80.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "U801",
+          "35",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "36",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "3d57986f-2ed1-42cb-94a5-6fce9e8efe42",
+          "start": [
+            123.471,
+            79.071
+          ],
+          "end": [
+            124.4,
+            80.0
+          ]
+        }
+      ]
+    },
+    "7b2eba10-c711-4a35-991a-07573da65b21": {
+      "kind": "segment",
+      "net": "STEP2_DIR",
+      "layer": "F.Cu",
+      "start": [
+        105.8,
+        77.0
+      ],
+      "end": [
+        106.8,
+        78.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C828",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "9587ef9e-2ada-445b-b0c0-629cdf89d8d6",
+          "start": [
+            105.8,
+            77.0
+          ],
+          "end": [
+            106.47834687148293,
+            77.67834687148293
+          ]
+        }
+      ]
+    },
+    "c5117a94-3233-4f5b-84f8-d14aead66d7f": {
+      "kind": "segment",
+      "net": "STEP2_DIR",
+      "layer": "F.Cu",
+      "start": [
+        102.905,
+        76.0
+      ],
+      "end": [
+        103.905,
+        77.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R821",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R821",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "7ef01cce-9187-47c9-8795-1dead4abbc98",
+          "start": [
+            102.905,
+            76.0
+          ],
+          "end": [
+            103.414,
+            76.509
+          ]
+        }
+      ]
+    },
+    "d2112334-ea61-4c63-b508-88ada4ea0a6c": {
+      "kind": "segment",
+      "net": "STEP2_DIR",
+      "layer": "F.Cu",
+      "start": [
+        103.905,
+        77.0
+      ],
+      "end": [
+        105.8,
+        77.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R821",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R821",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f2ca21b8-3762-4139-a019-193b0f3ab37e",
+          "start": [
+            104.95100000000001,
+            77.0
+          ],
+          "end": [
+            105.8,
+            77.0
+          ]
+        }
+      ]
+    },
+    "9b92baf0-6e19-48ee-a8e9-2183dc17d754": {
+      "kind": "via",
+      "net": "STEP2_DIR",
+      "position": [
+        133.199999,
+        86.6
+      ],
+      "conflicts": [
+        [
+          "R748",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "2b21d219-8537-40d9-94f0-1bdefaf818fc": {
+      "kind": "segment",
+      "net": "I2C_SCL",
+      "layer": "F.Cu",
+      "start": [
+        103.1111,
+        85.45
+      ],
+      "end": [
+        105.5807,
+        82.9804
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "R815",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "c965316f-df70-4cf4-a228-01612a602b35",
+          "start": [
+            103.1111,
+            85.45
+          ],
+          "end": [
+            104.92665675199915,
+            83.63444324800085
+          ]
+        }
+      ]
+    },
+    "a957c3d3-0754-48e6-8a67-7483b0e121a2": {
+      "kind": "via",
+      "net": "I2C_SCL",
+      "position": [
+        105.5807,
+        82.9804
+      ],
+      "conflicts": [
+        [
+          "R815",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "734f251a-1e90-45eb-9201-6c9723b88070": {
+      "kind": "segment",
+      "net": "I2C_SDA",
+      "layer": "F.Cu",
+      "start": [
+        112.0,
+        62.0
+      ],
+      "end": [
+        112.0,
+        58.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "270bab19-0810-40b2-8eaf-76db455b9698",
+          "start": [
+            112.0,
+            62.0
+          ],
+          "end": [
+            112.0,
+            61.461
+          ]
+        },
+        {
+          "uuid": "d0fe2c62-b5c9-451f-8704-2d76cb800600",
+          "start": [
+            112.0,
+            58.419
+          ],
+          "end": [
+            112.0,
+            58.0
+          ]
+        }
+      ]
+    },
+    "24435cd0-6e03-4d42-a0a9-38f8e7a64520": {
+      "kind": "segment",
+      "net": "/M2_nFAULT",
+      "layer": "F.Cu",
+      "start": [
+        122.5,
+        68.5
+      ],
+      "end": [
+        129.25,
+        75.25
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "C801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "D801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "D801",
+          "3",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R802",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R803",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f772367f-15b0-4845-8231-ef3963b0a12a",
+          "start": [
+            122.571,
+            68.571
+          ],
+          "end": [
+            125.459,
+            71.459
+          ]
+        },
+        {
+          "uuid": "39bfb8ac-356c-4121-b45b-72cbbbf85544",
+          "start": [
+            125.78099999999999,
+            71.78099999999999
+          ],
+          "end": [
+            126.63936899582687,
+            72.63936899582687
+          ]
+        },
+        {
+          "uuid": "a73c3646-4df0-49ae-ad24-57e85f3b8ada",
+          "start": [
+            127.53751587569815,
+            73.53751587569815
+          ],
+          "end": [
+            127.97539074847928,
+            73.97539074847928
+          ]
+        }
+      ]
+    },
+    "79763de5-87c0-4295-b688-45a780ac2412": {
+      "kind": "segment",
+      "net": "/M2_nFAULT",
+      "layer": "F.Cu",
+      "start": [
+        129.0,
+        76.8
+      ],
+      "end": [
+        129.0,
+        75.5
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "D801",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "6a7a5739-c3f2-4d95-8519-8b73da399c29",
+          "start": [
+            129.0,
+            76.8
+          ],
+          "end": [
+            129.0,
+            75.921
+          ]
+        }
+      ]
+    },
+    "be0b1320-673f-49d4-9544-05c2526837cd": {
+      "kind": "segment",
+      "net": "/M2_nFAULT",
+      "layer": "F.Cu",
+      "start": [
+        127.2,
+        78.6
+      ],
+      "end": [
+        129.0,
+        76.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C817",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R806",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "e8571c1e-13a4-4dc7-8b28-9f3bd1e7f4a5",
+          "start": [
+            127.28917498250856,
+            78.51082501749144
+          ],
+          "end": [
+            127.96900000000001,
+            77.83099999999999
+          ]
+        },
+        {
+          "uuid": "53c9606a-bc19-4d9b-a4d0-6f056bfa6c25",
+          "start": [
+            128.381,
+            77.419
+          ],
+          "end": [
+            129.0,
+            76.8
+          ]
+        }
+      ]
+    },
+    "e05c8907-5b52-4e8a-bc73-36f284322707": {
+      "kind": "segment",
+      "net": "/M2_nFAULT",
+      "layer": "F.Cu",
+      "start": [
+        112.25,
+        57.25
+      ],
+      "end": [
+        122.5,
+        67.5
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "J801",
+          "4",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "5",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "7",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "808880f4-50ab-445b-a5da-46f1a85aff25",
+          "start": [
+            112.25,
+            57.25
+          ],
+          "end": [
+            113.429,
+            58.428999999999995
+          ]
+        },
+        {
+          "uuid": "7c6eaaca-3006-4ad4-976f-f7dbeac9a122",
+          "start": [
+            114.326,
+            59.32599999999999
+          ],
+          "end": [
+            117.239,
+            62.239
+          ]
+        },
+        {
+          "uuid": "af66def0-aa51-41fb-9c81-b80c7d58f721",
+          "start": [
+            118.39099999999999,
+            63.39099999999999
+          ],
+          "end": [
+            118.909,
+            63.909000000000006
+          ]
+        },
+        {
+          "uuid": "8580de82-3984-4723-83cd-42bad0c65ec8",
+          "start": [
+            119.261,
+            64.261
+          ],
+          "end": [
+            120.18900000000001,
+            65.18900000000001
+          ]
+        },
+        {
+          "uuid": "80779b3c-aa97-4af0-9bdf-165375f1e66e",
+          "start": [
+            121.801,
+            66.801
+          ],
+          "end": [
+            122.5,
+            67.5
+          ]
+        }
+      ]
+    },
+    "f0dce480-1dbe-463c-bb7e-8372c50b9cc4": {
+      "kind": "segment",
+      "net": "/M2_nFAULT",
+      "layer": "F.Cu",
+      "start": [
+        129.0,
+        75.5
+      ],
+      "end": [
+        129.25,
+        75.25
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "D801",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "477adccb-bc07-4c64-bd75-b5c9930c7b4f": {
+      "kind": "via",
+      "net": "/M2_nFAULT",
+      "position": [
+        127.2,
+        78.6
+      ],
+      "conflicts": [
+        [
+          "R806",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "e268308c-e7cc-4f43-bfe2-5b01c33e6bed": {
+      "kind": "via",
+      "net": "/M2_nFAULT",
+      "position": [
+        122.5,
+        68.5
+      ],
+      "conflicts": [
+        [
+          "C801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "e0cfac45-469a-444a-a713-beb9e215b8e0": {
+      "kind": "via",
+      "net": "AX1_EXT_EN",
+      "position": [
+        109.3674,
+        89.2448
+      ],
+      "conflicts": [
+        [
+          "C819",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "0e84c324-b6f9-421d-a564-1e669e5b0ece": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        125.8625,
+        80.55
+      ],
+      "end": [
+        125.8,
+        80.6
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "R807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "21202c7a-fedf-46fe-bdbc-727079e10fd5": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        121.6,
+        81.4
+      ],
+      "end": [
+        123.4,
+        83.2
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C807",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C814",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R808",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "5b932eac-f4b5-42e1-a636-e320990d3ae4",
+          "start": [
+            121.76635013000136,
+            81.56635013000137
+          ],
+          "end": [
+            122.48364986999864,
+            82.28364986999864
+          ]
+        },
+        {
+          "uuid": "c142abcd-eeb8-4971-bbfb-d6c674d40acf",
+          "start": [
+            123.09100000000001,
+            82.891
+          ],
+          "end": [
+            123.4,
+            83.2
+          ]
+        }
+      ]
+    },
+    "21840faf-8823-4606-978d-c9ac36722c6d": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.4,
+        80.8
+      ],
+      "end": [
+        127.4,
+        81.6
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "C811",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "21d7aa13-ccca-49c9-9ef9-9d7230c541dd",
+          "start": [
+            127.4,
+            81.34213051591443
+          ],
+          "end": [
+            127.4,
+            81.529
+          ]
+        }
+      ]
+    },
+    "237b3bd2-ee8f-44b1-bc4b-18b91a388ec9": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        121.725,
+        80.55
+      ],
+      "end": [
+        121.7,
+        80.6
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "C807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "26240616-febb-45ed-92ad-8167ef75ad44": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.4,
+        81.4
+      ],
+      "end": [
+        127.0,
+        81.8
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "C811",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "c5364e8d-5619-495b-a076-4062f5420142",
+          "start": [
+            127.4,
+            81.4
+          ],
+          "end": [
+            127.24600000000001,
+            81.554
+          ]
+        }
+      ]
+    },
+    "30834a9e-4e98-42e8-8e35-6e22edfdae78": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        117.6,
+        80.8
+      ],
+      "end": [
+        118.8,
+        80.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "Y801",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "32081bf7-0203-47a5-84b8-b84573da828b": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        125.8625,
+        80.55
+      ],
+      "end": [
+        125.8,
+        80.6
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "R807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "39f35647-55e8-4cd7-a07b-72727bf52271": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        126.2,
+        80.6
+      ],
+      "end": [
+        129.0,
+        77.8
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "C817",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C817",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R806",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R807",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "786e2f5c-a370-47ea-a63f-68cc7ebaa150",
+          "start": [
+            126.766,
+            80.03399999999999
+          ],
+          "end": [
+            127.03399999999999,
+            79.766
+          ]
+        },
+        {
+          "uuid": "ad757823-670b-43e1-ba2b-084da800d535",
+          "start": [
+            127.626,
+            79.17399999999999
+          ],
+          "end": [
+            128.15992742537986,
+            78.64007257462012
+          ]
+        }
+      ]
+    },
+    "3bef86c8-590c-477e-8144-d0ad966c63be": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.4,
+        81.0
+      ],
+      "end": [
+        127.4,
+        81.4
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "948bd3c1-2aca-4b98-8c15-f1d8a4329968",
+          "start": [
+            127.4,
+            81.31713051591444
+          ],
+          "end": [
+            127.4,
+            81.4
+          ]
+        }
+      ]
+    },
+    "3e4352d8-53ab-422f-832f-daf05e00d85d": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.2,
+        80.6
+      ],
+      "end": [
+        127.4,
+        80.8
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "416c3d07-3cc4-4723-a0fd-3bbd11dd68bd": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        119.8625,
+        80.55
+      ],
+      "end": [
+        121.725,
+        80.55
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "C807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f39de04d-13ef-41c0-a4d6-a0ec4d7f6883",
+          "start": [
+            119.8625,
+            80.55
+          ],
+          "end": [
+            121.55489969220855,
+            80.55
+          ]
+        }
+      ]
+    },
+    "46742a44-430f-444f-b0ba-1a5e7a072ada": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        118.8,
+        80.8
+      ],
+      "end": [
+        119.05,
+        80.55
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "Y801",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "bb24ae79-d72f-4651-b564-d30cfd410e88",
+          "start": [
+            118.821,
+            80.779
+          ],
+          "end": [
+            119.05,
+            80.55
+          ]
+        }
+      ]
+    },
+    "4ada451f-577d-40bb-b023-1ed89138623d": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        125.0,
+        80.6
+      ],
+      "end": [
+        127.0,
+        80.6
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "R807",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f7d3d70c-d503-4bb8-a9f7-13e51bc67468",
+          "start": [
+            125.0,
+            80.6
+          ],
+          "end": [
+            125.399,
+            80.6
+          ]
+        }
+      ]
+    },
+    "527848d2-790b-4d74-b624-bdf4fc46097e": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.0,
+        84.8
+      ],
+      "end": [
+        127.0,
+        82.0
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "C811",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "9340cae8-2292-47ac-b34b-88ef93c1293a",
+          "start": [
+            127.0,
+            84.8
+          ],
+          "end": [
+            127.0,
+            83.646
+          ]
+        }
+      ]
+    },
+    "55b43dc8-826f-4636-9d30-75396431a440": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.0,
+        81.8
+      ],
+      "end": [
+        127.0,
+        82.0
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "C811",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "5819b700-0e93-4378-8651-ed1189818509": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        121.7,
+        81.4
+      ],
+      "end": [
+        121.6,
+        81.4
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "7701ed28-b9a8-48bb-a663-90d1558a2a27": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        116.6,
+        79.8
+      ],
+      "end": [
+        117.6,
+        80.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "Y801",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "8d198b7c-55dc-4f1e-ad2e-d2f6cc65e36b",
+          "start": [
+            116.6,
+            79.8
+          ],
+          "end": [
+            117.58248412430184,
+            80.78248412430185
+          ]
+        }
+      ]
+    },
+    "7dd5e88c-17ab-4e14-a37c-fcae9cc8604b": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        125.8,
+        80.6
+      ],
+      "end": [
+        127.2,
+        80.6
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "R807",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "7ffae904-b0bf-48b9-9e0c-bb21b822ab0c": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        124.8,
+        82.0
+      ],
+      "end": [
+        124.8,
+        80.8
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "C811",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "a0b58d3a-ac15-4acd-a1e2-77314277bdca",
+          "start": [
+            124.8,
+            81.68246867708798
+          ],
+          "end": [
+            124.8,
+            80.8
+          ]
+        }
+      ]
+    },
+    "8073528c-d588-4b3d-869f-fea59f900b54": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.4,
+        81.6
+      ],
+      "end": [
+        127.0,
+        82.0
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "C811",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "87122b45-2f1c-416e-a4f7-548af5ba7322": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        129.0,
+        77.8
+      ],
+      "end": [
+        131.4,
+        77.8
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "C817",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C817",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "c66eb84d-b2c8-4594-bc30-05a647d51c6d",
+          "start": [
+            130.106,
+            77.8
+          ],
+          "end": [
+            131.4,
+            77.8
+          ]
+        }
+      ]
+    },
+    "ad899e72-a746-4a13-9ddf-1488e40b9362": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        123.6,
+        83.2
+      ],
+      "end": [
+        124.8,
+        82.0
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "C811",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R808",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f1a996f4-9073-4acd-804f-5a29d22a4707",
+          "start": [
+            123.6,
+            83.2
+          ],
+          "end": [
+            123.87243876516426,
+            82.92756123483574
+          ]
+        }
+      ]
+    },
+    "b8eba02c-6f25-4921-8b5b-eafb2fcab699": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        127.0,
+        80.6
+      ],
+      "end": [
+        127.4,
+        81.0
+      ],
+      "width_mm": 0.3,
+      "conflicts": [
+        [
+          "R807",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "bc0341b9-6634-432e-b7c7-e391ea3ddcdb": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        125.8,
+        80.6
+      ],
+      "end": [
+        126.2,
+        80.6
+      ],
+      "width_mm": 0.35,
+      "conflicts": [
+        [
+          "R807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "cf3d70c7-ebd3-411a-987d-10cc4b02c87d": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        122.5,
+        54.5
+      ],
+      "end": [
+        129.0,
+        61.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ],
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "225b3d41-02b0-4442-b163-206c96013fa9",
+          "start": [
+            122.5,
+            54.5
+          ],
+          "end": [
+            124.3462711342509,
+            56.3462711342509
+          ]
+        }
+      ]
+    },
+    "d5258420-9586-48ce-80ca-36c1be955245": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        118.0,
+        83.4
+      ],
+      "end": [
+        118.8,
+        82.6
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "Y801",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "e2c9043d-f64c-405a-bb3a-3b5ca6d633d3": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        118.8,
+        82.6
+      ],
+      "end": [
+        118.8,
+        80.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "Y801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "Y801",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "e7d3af65-a5d9-4be5-9fad-f5f6b30a7c12": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "F.Cu",
+      "start": [
+        121.7,
+        80.6
+      ],
+      "end": [
+        121.7,
+        81.4
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "C807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "3fdef15e-81bd-4d98-803f-e73299d0bec9": {
+      "kind": "via",
+      "net": "+5V",
+      "position": [
+        129.0,
+        61.0
+      ],
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "a74af76c-84cb-4652-8991-54cf501f3f70": {
+      "kind": "via",
+      "net": "+5V",
+      "position": [
+        118.0,
+        83.4
+      ],
+      "conflicts": [
+        [
+          "Y801",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "f5d41ed5-4ed6-4fef-bc4f-e127baa44e21": {
+      "kind": "via",
+      "net": "+5V",
+      "position": [
+        121.7,
+        81.4
+      ],
+      "conflicts": [
+        [
+          "C807",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "9681345a-75be-4cf3-99bd-176d81e968fb": {
+      "kind": "segment",
+      "net": "+5V",
+      "layer": "B.Cu",
+      "start": [
+        129.0,
+        61.0
+      ],
+      "end": [
+        133.5,
+        65.5
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "d02e3806-fffa-4247-9c2d-c9b304976edc",
+          "start": [
+            129.486,
+            61.486
+          ],
+          "end": [
+            133.5,
+            65.5
+          ]
+        }
+      ]
+    },
+    "0a4384ca-e4c8-44b6-aa90-78e2e536461a": {
+      "kind": "segment",
+      "net": "/M1_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        154.4,
+        64.0
+      ],
+      "end": [
+        148.8,
+        58.4
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "R818",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "d8401790-e15a-49f5-85b4-f9c7da4b16d0",
+          "start": [
+            154.4,
+            64.0
+          ],
+          "end": [
+            149.24099999999999,
+            58.84099999999997
+          ]
+        }
+      ]
+    },
+    "2a0ae658-cb46-4953-b7c9-9217087d3e3d": {
+      "kind": "segment",
+      "net": "/M1_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        148.8,
+        58.4
+      ],
+      "end": [
+        134.0,
+        58.4
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "C825",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C826",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C827",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "L801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "L801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R818",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R818",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "5514746b-2362-4b1b-ae7d-929c2a500405",
+          "start": [
+            147.159,
+            58.4
+          ],
+          "end": [
+            143.96304350530482,
+            58.4
+          ]
+        },
+        {
+          "uuid": "d552c2cb-0f5c-4722-a29d-c99c42fefb0b",
+          "start": [
+            142.8369564946952,
+            58.4
+          ],
+          "end": [
+            142.1053007344134,
+            58.4
+          ]
+        },
+        {
+          "uuid": "f6df86a0-eb1f-4dd2-b97c-5057383698ae",
+          "start": [
+            140.8946992655866,
+            58.4
+          ],
+          "end": [
+            139.1053007344134,
+            58.4
+          ]
+        },
+        {
+          "uuid": "20df8e08-ed19-49da-8ee7-70417af68499",
+          "start": [
+            137.8946992655866,
+            58.4
+          ],
+          "end": [
+            137.54105262768203,
+            58.4
+          ]
+        },
+        {
+          "uuid": "4f107189-112d-4bdd-85d0-f4ade31474d9",
+          "start": [
+            135.25894737231798,
+            58.4
+          ],
+          "end": [
+            135.04105262768203,
+            58.4
+          ]
+        }
+      ]
+    },
+    "2c8dc0e5-1ed2-49bc-9f3b-26e6005a62ba": {
+      "kind": "segment",
+      "net": "/M1_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        155.0,
+        64.599999
+      ],
+      "end": [
+        148.8,
+        58.4
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "R818",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "3839d274-96e4-4fa9-93bf-561d10fb38e4",
+          "start": [
+            155.0,
+            64.599999
+          ],
+          "end": [
+            149.24099999999999,
+            58.84099992887094
+          ]
+        }
+      ]
+    },
+    "0c281e79-aa6c-4935-a9ce-43702b0b0da0": {
+      "kind": "via",
+      "net": "/M1_PWM_PH",
+      "position": [
+        134.0,
+        58.4
+      ],
+      "conflicts": [
+        [
+          "C826",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "05eb1b9e-f6d8-4e33-b50e-2968489c5b99": {
+      "kind": "segment",
+      "net": "/M1_PWM_PH",
+      "layer": "B.Cu",
+      "start": [
+        112.4,
+        58.4
+      ],
+      "end": [
+        112.2,
+        58.6
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "0c9719f2-b8e5-4887-b3fc-cce1e1e28cad": {
+      "kind": "segment",
+      "net": "/M1_PWM_PH",
+      "layer": "B.Cu",
+      "start": [
+        134.0,
+        58.4
+      ],
+      "end": [
+        112.4,
+        58.4
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ],
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "dffd56ce-1c93-4f89-9f81-84b0e95da25c",
+          "start": [
+            134.0,
+            58.4
+          ],
+          "end": [
+            127.53952995811942,
+            58.4
+          ]
+        },
+        {
+          "uuid": "e1e084d6-e83b-4ffe-902f-95a963c09f00",
+          "start": [
+            125.0104700418806,
+            58.4
+          ],
+          "end": [
+            116.10952995811941,
+            58.4
+          ]
+        },
+        {
+          "uuid": "d7737b0b-d7bf-4032-9c3b-714395d5a7ef",
+          "start": [
+            113.58047004188059,
+            58.4
+          ],
+          "end": [
+            112.4,
+            58.4
+          ]
+        }
+      ]
+    },
+    "35780f7d-9ae9-4195-9482-1411d089316a": {
+      "kind": "segment",
+      "net": "/M1_PWM_PH",
+      "layer": "B.Cu",
+      "start": [
+        112.2,
+        58.6
+      ],
+      "end": [
+        95.0,
+        58.6
+      ],
+      "width_mm": 0.18,
+      "conflicts": [
+        [
+          "J801",
+          "SH",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "8e26b791-8add-4593-b2c2-5da4398d6817",
+          "start": [
+            111.32190211306416,
+            58.6
+          ],
+          "end": [
+            95.0,
+            58.6
+          ]
+        }
+      ]
+    },
+    "281d4797-c61c-4003-9585-c8d0cce32f68": {
+      "kind": "segment",
+      "net": "/M1_PWM_EN",
+      "layer": "B.Cu",
+      "start": [
+        108.5,
+        60.0
+      ],
+      "end": [
+        122.0,
+        73.5
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "8",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "b9f38916-4ee3-480a-ba8f-4bf04e7385c4",
+          "start": [
+            108.5,
+            60.0
+          ],
+          "end": [
+            115.11364986999864,
+            66.61364986999864
+          ]
+        },
+        {
+          "uuid": "58366cad-9570-4bd5-a34f-a1661397f3f0",
+          "start": [
+            115.29635013000137,
+            66.79635013000137
+          ],
+          "end": [
+            122.0,
+            73.5
+          ]
+        }
+      ]
+    },
+    "75a3d687-77ed-4628-827a-e5578daa5085": {
+      "kind": "segment",
+      "net": "/M2_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        118.0,
+        72.0
+      ],
+      "end": [
+        108.75,
+        72.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C804",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C804",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "13",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "63d50947-20c1-4c45-9781-da9178b8d58b",
+          "start": [
+            118.0,
+            72.0
+          ],
+          "end": [
+            117.146,
+            72.0
+          ]
+        },
+        {
+          "uuid": "5c43f549-8589-42e6-bd31-8f5389f790d1",
+          "start": [
+            115.129,
+            72.0
+          ],
+          "end": [
+            115.01309788693584,
+            72.0
+          ]
+        },
+        {
+          "uuid": "116ef78f-146f-4005-8922-f1dd4bd7b277",
+          "start": [
+            112.98690211306416,
+            72.0
+          ],
+          "end": [
+            108.75,
+            72.0
+          ]
+        }
+      ]
+    },
+    "76af023e-7807-4eb1-b927-c50a6e562eb6": {
+      "kind": "segment",
+      "net": "/M2_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        128.0,
+        81.4
+      ],
+      "end": [
+        128.6,
+        82.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C812",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "1e9a4c97-5ece-484c-952e-d1b5e5a7ede2",
+          "start": [
+            128.0,
+            81.4
+          ],
+          "end": [
+            128.29492742537988,
+            81.69492742537989
+          ]
+        }
+      ]
+    },
+    "c46a900b-e72e-484f-80d6-c5b24bc73c55": {
+      "kind": "segment",
+      "net": "/M2_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        126.2,
+        79.6
+      ],
+      "end": [
+        123.4,
+        76.8
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "R806",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "37",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U801",
+          "38",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "ef95a26f-9e5d-4798-af53-ed1cb4324083",
+          "start": [
+            125.449,
+            78.84899999999999
+          ],
+          "end": [
+            124.57100000000001,
+            77.971
+          ]
+        },
+        {
+          "uuid": "7944861f-6c3f-4c52-bd06-c738e458d303",
+          "start": [
+            123.46163189132785,
+            76.86163189132785
+          ],
+          "end": [
+            123.4,
+            76.8
+          ]
+        }
+      ]
+    },
+    "cae2a8c9-88e7-4efa-a555-d6195c80c151": {
+      "kind": "segment",
+      "net": "/M2_PWM_PH",
+      "layer": "F.Cu",
+      "start": [
+        128.6,
+        82.0
+      ],
+      "end": [
+        143.5,
+        82.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C812",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C812",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R747",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R747",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f3b68e1d-741a-4518-910b-f89710ad85dc",
+          "start": [
+            129.821,
+            82.0
+          ],
+          "end": [
+            130.179,
+            82.0
+          ]
+        },
+        {
+          "uuid": "ced77a7e-2e23-45d8-b81a-deea37ed00d5",
+          "start": [
+            131.72099999999998,
+            82.0
+          ],
+          "end": [
+            133.0089728091845,
+            82.0
+          ]
+        },
+        {
+          "uuid": "8ac9c821-979f-4af2-acb5-22368d9f5eb9",
+          "start": [
+            134.34102719081548,
+            82.0
+          ],
+          "end": [
+            134.65897280918452,
+            82.0
+          ]
+        },
+        {
+          "uuid": "bb098564-471a-4e3f-b985-e7a55e2a6742",
+          "start": [
+            135.9910271908155,
+            82.0
+          ],
+          "end": [
+            143.5,
+            82.0
+          ]
+        }
+      ]
+    },
+    "5072e490-3bf8-46ac-82d2-718fe5e0ca70": {
+      "kind": "via",
+      "net": "/M2_PWM_PH",
+      "position": [
+        126.2,
+        79.6
+      ],
+      "conflicts": [
+        [
+          "R806",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "037ca716-3a80-42b4-a48e-4bd280be6639": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        115.5,
+        68.0
+      ],
+      "end": [
+        123.5,
+        68.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "07aac5ba-11e4-4a64-a6b4-13d3e5bb306b",
+          "start": [
+            115.5,
+            68.0
+          ],
+          "end": [
+            120.59728764545967,
+            68.0
+          ]
+        },
+        {
+          "uuid": "1f396597-57c4-44e2-a33a-bd5e8d6c8072",
+          "start": [
+            122.50271235454034,
+            68.0
+          ],
+          "end": [
+            123.5,
+            68.0
+          ]
+        }
+      ]
+    },
+    "12e50d2e-e91f-487b-bbbb-3abb2508e5f1": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        123.5,
+        68.0
+      ],
+      "end": [
+        138.5,
+        53.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "C820",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C826",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C827",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "TP_5V1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f5084676-4471-4984-a3c2-7767b9d5ecbc",
+          "start": [
+            123.5,
+            68.0
+          ],
+          "end": [
+            132.179,
+            59.321
+          ]
+        },
+        {
+          "uuid": "cbec285f-402c-464d-95b7-c2ee82c0780a",
+          "start": [
+            132.871,
+            58.629
+          ],
+          "end": [
+            132.94077965835388,
+            58.55922034164613
+          ]
+        },
+        {
+          "uuid": "f6926012-ef3f-4655-9000-deba2ca18ee8",
+          "start": [
+            134.621,
+            56.879
+          ],
+          "end": [
+            135.879,
+            55.621
+          ]
+        },
+        {
+          "uuid": "e95ac671-6d63-4ecf-8bcd-34d80247b2e7",
+          "start": [
+            137.49162593770157,
+            54.008374062298444
+          ],
+          "end": [
+            138.429,
+            53.071
+          ]
+        }
+      ]
+    },
+    "17db3235-c044-4c1f-8b1a-bf7777942b53": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        150.0,
+        50.4
+      ],
+      "end": [
+        150.0,
+        54.5
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "C821",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "TP_GND1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "ed7cc4da-a070-4a33-9fd3-f1b0a2b1357c",
+          "start": [
+            150.0,
+            53.096
+          ],
+          "end": [
+            150.0,
+            53.923891236737965
+          ]
+        }
+      ]
+    },
+    "36e9d14c-0218-4202-9a37-ca0baff32463": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        138.5,
+        53.0
+      ],
+      "end": [
+        145.0,
+        53.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "TP_3V3_1",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "TP_5V1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "e41bab3c-734e-4995-a7f8-2475b4452fa4",
+          "start": [
+            139.42909326780878,
+            53.0
+          ],
+          "end": [
+            142.07090673219122,
+            53.0
+          ]
+        }
+      ]
+    },
+    "6f1d97c2-c437-44f9-b73e-dc3401ee30c6": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        150.0,
+        54.5
+      ],
+      "end": [
+        157.5,
+        62.0
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "C821",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C822",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "49f7fb24-f453-4bdb-949f-e75fc9f67bee",
+          "start": [
+            151.14600000000002,
+            55.646
+          ],
+          "end": [
+            152.53061482032226,
+            57.03061482032227
+          ]
+        },
+        {
+          "uuid": "58e1fee3-ed78-4f25-bc44-0860c7b28493",
+          "start": [
+            154.096,
+            58.596
+          ],
+          "end": [
+            157.5,
+            62.0
+          ]
+        }
+      ]
+    },
+    "893e448a-223e-4a8f-a062-ed55f41c52eb": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        149.0,
+        50.4
+      ],
+      "end": [
+        150.0,
+        50.4
+      ],
+      "width_mm": 0.25,
+      "conflicts": [
+        [
+          "TP_GND1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "e738034a-fcc3-4605-ae4d-fccba58fea7c": {
+      "kind": "segment",
+      "net": "/M2_CS",
+      "layer": "F.Cu",
+      "start": [
+        149.0,
+        50.4
+      ],
+      "end": [
+        146.5,
+        50.4
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "TP_GND1",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "887c1a73-5d02-48c3-a76b-6a5bfe1c4b15",
+          "start": [
+            147.479,
+            50.4
+          ],
+          "end": [
+            146.5,
+            50.4
+          ]
+        }
+      ]
+    },
+    "23192291-2c8b-47cd-9373-0bba52f9d28b": {
+      "kind": "segment",
+      "net": "STEP1_PUL",
+      "layer": "F.Cu",
+      "start": [
+        106.0044,
+        80.4389
+      ],
+      "end": [
+        102.5655,
+        77.0
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q802",
+          "3",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R821",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "3cf563c0-719f-4f89-88ae-1b573f0c5b55",
+          "start": [
+            106.0044,
+            80.4389
+          ],
+          "end": [
+            105.91179195720225,
+            80.34629195720225
+          ]
+        },
+        {
+          "uuid": "20b7bcd9-5f85-4747-96bb-f0f32b311c69",
+          "start": [
+            105.01950000000001,
+            79.45400000000001
+          ],
+          "end": [
+            103.2315,
+            77.666
+          ]
+        },
+        {
+          "uuid": "3e75d1bf-7f5b-45e5-a558-061394766052",
+          "start": [
+            102.87400000000001,
+            77.30850000000001
+          ],
+          "end": [
+            102.5655,
+            77.0
+          ]
+        }
+      ]
+    },
+    "70384b4f-ae47-46c3-8c1d-2f72a1e4d26a": {
+      "kind": "segment",
+      "net": "STEP1_PUL",
+      "layer": "F.Cu",
+      "start": [
+        106.0044,
+        80.5755
+      ],
+      "end": [
+        110.8125,
+        80.5755
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "U804",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "a8601137-dbe5-4bb0-a697-56ac8469b985",
+          "start": [
+            106.0044,
+            80.5755
+          ],
+          "end": [
+            106.45400000000001,
+            80.5755
+          ]
+        },
+        {
+          "uuid": "938e451b-ccb6-46bc-987b-c871c0f93003",
+          "start": [
+            108.42099999999999,
+            80.5755
+          ],
+          "end": [
+            110.8125,
+            80.5755
+          ]
+        }
+      ]
+    },
+    "e001c9ab-439c-4b83-a9dc-c2741762d705": {
+      "kind": "segment",
+      "net": "STEP1_PUL",
+      "layer": "F.Cu",
+      "start": [
+        110.8125,
+        80.5755
+      ],
+      "end": [
+        115.337,
+        85.1
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "U804",
+          "8",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U804",
+          "9",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U804",
+          "10",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U804",
+          "11",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "a5a524d9-17b1-400c-8f7d-decdfb0a8367",
+          "start": [
+            110.8125,
+            80.5755
+          ],
+          "end": [
+            112.179,
+            81.94200000000001
+          ]
+        },
+        {
+          "uuid": "5abec046-8392-4ce5-b893-2713a7593a06",
+          "start": [
+            114.146,
+            83.90899999999999
+          ],
+          "end": [
+            115.337,
+            85.1
+          ]
+        }
+      ]
+    },
+    "efc5ccbf-4e61-4581-bffa-ac37e6b60395": {
+      "kind": "segment",
+      "net": "STEP1_PUL",
+      "layer": "F.Cu",
+      "start": [
+        115.337,
+        85.1
+      ],
+      "end": [
+        120.275,
+        85.1
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "R809",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R809",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "b81fdea2-5023-470e-9472-e7743ce9065f",
+          "start": [
+            117.426,
+            85.1
+          ],
+          "end": [
+            120.275,
+            85.1
+          ]
+        }
+      ]
+    },
+    "93114a52-0cf9-4b96-a7ba-81e6077d4af2": {
+      "kind": "segment",
+      "net": "/VBAT_SENSE",
+      "layer": "F.Cu",
+      "start": [
+        113.5,
+        56.01
+      ],
+      "end": [
+        113.5,
+        56.5
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "9b0ac51c-e2f3-4c75-aa2d-c5d9fccdf7c7": {
+      "kind": "segment",
+      "net": "/VBAT_SENSE",
+      "layer": "F.Cu",
+      "start": [
+        113.5,
+        56.5
+      ],
+      "end": [
+        123.5,
+        66.5
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ],
+        [
+          "J801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "4",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "5",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "ae63034d-3602-4396-b8a9-95964549aa3a",
+          "start": [
+            115.68217287433852,
+            58.68217287433853
+          ],
+          "end": [
+            119.229,
+            62.229
+          ]
+        },
+        {
+          "uuid": "93f67d27-c342-4906-b27b-d4b16bf75596",
+          "start": [
+            120.941,
+            63.941
+          ],
+          "end": [
+            121.769,
+            64.769
+          ]
+        },
+        {
+          "uuid": "29f1c7db-9685-47f6-bcf1-0967eb1f6d10",
+          "start": [
+            122.221,
+            65.221
+          ],
+          "end": [
+            122.719,
+            65.719
+          ]
+        }
+      ]
+    },
+    "ee8eccba-59a9-4930-89ce-e23b10f94210": {
+      "kind": "segment",
+      "net": "/VBAT_SENSE",
+      "layer": "F.Cu",
+      "start": [
+        128.5,
+        71.5
+      ],
+      "end": [
+        133.0,
+        76.0
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "D801",
+          "4",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "D801",
+          "5",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "D801",
+          "6",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "9df5f4df-523d-4d4b-8da1-cfdb6d98417b",
+          "start": [
+            128.5,
+            71.5
+          ],
+          "end": [
+            130.204,
+            73.20400000000001
+          ]
+        },
+        {
+          "uuid": "cb08beb7-661a-4d23-b7f8-7276ec2fd24f",
+          "start": [
+            132.071,
+            75.071
+          ],
+          "end": [
+            133.0,
+            76.0
+          ]
+        }
+      ]
+    },
+    "f8e9badc-2069-41d4-9998-4155b755f829": {
+      "kind": "segment",
+      "net": "/VBAT_SENSE",
+      "layer": "F.Cu",
+      "start": [
+        109.75,
+        56.01
+      ],
+      "end": [
+        113.5,
+        56.01
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "",
+          "NPTH drill clearance on every copper layer"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "1850d76f-ab40-44fe-8670-9c3a414c7dde",
+          "start": [
+            109.75,
+            56.01
+          ],
+          "end": [
+            113.07308284755203,
+            56.01
+          ]
+        }
+      ]
+    },
+    "be53c91a-203f-40c5-8eab-a7b0552b8011": {
+      "kind": "via",
+      "net": "/VBAT_SENSE",
+      "position": [
+        123.5,
+        66.5
+      ],
+      "conflicts": [
+        [
+          "J801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "J801",
+          "2",
+          "drill clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "baf4eaa2-1f2a-4b40-bc66-c5bbf284961e": {
+      "kind": "segment",
+      "net": "/VBAT_SENSE",
+      "layer": "B.Cu",
+      "start": [
+        123.5,
+        66.5
+      ],
+      "end": [
+        128.5,
+        71.5
+      ],
+      "width_mm": 0.2,
+      "conflicts": [
+        [
+          "J801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "8096a8cc-a103-4622-be3f-54f65f440443",
+          "start": [
+            123.811,
+            66.811
+          ],
+          "end": [
+            128.5,
+            71.5
+          ]
+        }
+      ]
+    },
+    "6a99e89a-5001-4391-a831-f30fbd1bc506": {
+      "kind": "segment",
+      "net": "AX1_CMD",
+      "layer": "F.Cu",
+      "start": [
+        108.9,
+        91.15
+      ],
+      "end": [
+        113.7,
+        95.95
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "Q801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "e8db6701-a0ed-4421-9acf-280db619beda",
+          "start": [
+            108.9,
+            91.15
+          ],
+          "end": [
+            110.07900000000001,
+            92.32900000000001
+          ]
+        },
+        {
+          "uuid": "dc33814a-9b6e-4360-a706-087470d3462c",
+          "start": [
+            110.34599999999999,
+            92.59599999999999
+          ],
+          "end": [
+            111.15400000000001,
+            93.40400000000001
+          ]
+        },
+        {
+          "uuid": "b75ab7ad-a644-4dd8-b383-61e28dea6dbd",
+          "start": [
+            112.03836810867215,
+            94.28836810867215
+          ],
+          "end": [
+            113.7,
+            95.95
+          ]
+        }
+      ]
+    },
+    "eb908ace-0d1a-4f20-aa26-ede59da2aabc": {
+      "kind": "segment",
+      "net": "AX2_CMD",
+      "layer": "F.Cu",
+      "start": [
+        106.4,
+        87.4
+      ],
+      "end": [
+        112.55,
+        93.55
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q801",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "Q801",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "dcad4037-6553-468d-967c-0bdcfcd60cf1",
+          "start": [
+            106.4,
+            87.4
+          ],
+          "end": [
+            110.504,
+            91.504
+          ]
+        },
+        {
+          "uuid": "3007f23d-68c8-498a-a9dd-4eb52ceb5f9b",
+          "start": [
+            111.59599999999999,
+            92.59599999999999
+          ],
+          "end": [
+            111.95400000000001,
+            92.95400000000001
+          ]
+        }
+      ]
+    },
+    "1fab4746-2424-43a7-8d65-bacb862477b4": {
+      "kind": "segment",
+      "net": "AX3_CMD",
+      "layer": "F.Cu",
+      "start": [
+        113.1,
+        87.15
+      ],
+      "end": [
+        115.3,
+        87.15
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "U803",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "22294c95-33f6-4d75-94bf-5ac1aab36f90",
+          "start": [
+            114.02335892127549,
+            87.15
+          ],
+          "end": [
+            115.3,
+            87.15
+          ]
+        }
+      ]
+    },
+    "ef17a8ba-65c8-4b37-8f02-844205c03323": {
+      "kind": "via",
+      "net": "AX3_CMD",
+      "position": [
+        113.1,
+        87.15
+      ],
+      "conflicts": [
+        [
+          "U803",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "a8691ab3-e314-4ed0-ab7b-ef2771fa3dee": {
+      "kind": "segment",
+      "net": "STEP_ARM_Q",
+      "layer": "F.Cu",
+      "start": [
+        113.05,
+        92.2
+      ],
+      "end": [
+        113.05,
+        94.55
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q801",
+          "3",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "606bc152-fd47-4a6d-bc41-1427a74e3fad",
+          "start": [
+            113.05,
+            92.2
+          ],
+          "end": [
+            113.05,
+            92.45400000000001
+          ]
+        },
+        {
+          "uuid": "9a0cdbce-0dec-4957-9f53-16f2731cabb7",
+          "start": [
+            113.05,
+            93.54599999999999
+          ],
+          "end": [
+            113.05,
+            94.55
+          ]
+        }
+      ]
+    },
+    "c60806ed-ab55-491c-9747-0557e0d9be06": {
+      "kind": "segment",
+      "net": "STEP_ARM_Q",
+      "layer": "F.Cu",
+      "start": [
+        106.95,
+        86.1
+      ],
+      "end": [
+        113.05,
+        92.2
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "C819",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "C819",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U803",
+          "6",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "f4286751-45fd-439b-80dd-fabea5eb1d88",
+          "start": [
+            106.95,
+            86.1
+          ],
+          "end": [
+            108.55163189132786,
+            87.70163189132785
+          ]
+        },
+        {
+          "uuid": "739c2a60-3070-45e7-b0de-960ecbe50bc7",
+          "start": [
+            109.65599999999999,
+            88.80599999999998
+          ],
+          "end": [
+            109.96163189132785,
+            89.11163189132786
+          ]
+        },
+        {
+          "uuid": "b9da8223-6785-4e7d-8c51-20b7dc7339e8",
+          "start": [
+            110.84599999999999,
+            89.996
+          ],
+          "end": [
+            113.05,
+            92.2
+          ]
+        }
+      ]
+    },
+    "1124276c-d2c5-4476-90da-29885dd6a13c": {
+      "kind": "segment",
+      "net": "RLY1_CMD",
+      "layer": "F.Cu",
+      "start": [
+        108.55,
+        91.5
+      ],
+      "end": [
+        109.15,
+        92.1
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "R816",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "5b647c76-0544-490e-ab2b-4d4d8e99ebb3",
+          "start": [
+            108.55,
+            91.5
+          ],
+          "end": [
+            109.02400000000002,
+            91.974
+          ]
+        }
+      ]
+    },
+    "9d22c4b9-9bea-4212-8dff-7ef36bdb32de": {
+      "kind": "via",
+      "net": "RLY1_CMD",
+      "position": [
+        109.15,
+        92.1
+      ],
+      "conflicts": [
+        [
+          "R816",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "7ecae69d-d369-4ee3-9926-2a922b3dd836": {
+      "kind": "segment",
+      "net": "AX1_EXT_STEP_OUT",
+      "layer": "F.Cu",
+      "start": [
+        116.0287,
+        87.6963
+      ],
+      "end": [
+        110.2409,
+        87.6963
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "U803",
+          "3",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "U803",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "1c1e13f4-b3a5-48e7-b669-192ad84174dd",
+          "start": [
+            116.0287,
+            87.6963
+          ],
+          "end": [
+            114.04599999999999,
+            87.6963
+          ]
+        },
+        {
+          "uuid": "80534c39-6d4d-429c-ad88-4a7ad02245d9",
+          "start": [
+            112.229,
+            87.6963
+          ],
+          "end": [
+            111.771,
+            87.6963
+          ]
+        }
+      ]
+    },
+    "c86ee3f5-03be-4680-a78d-67f7be5db807": {
+      "kind": "via",
+      "net": "AX1_EXT_STEP_OUT",
+      "position": [
+        110.2409,
+        87.6963
+      ],
+      "conflicts": [
+        [
+          "U803",
+          "4",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "879edd33-cc83-41d7-aa55-1a65b629f2a2": {
+      "kind": "segment",
+      "net": "STEP_WD_OK",
+      "layer": "F.Cu",
+      "start": [
+        131.6,
+        82.4
+      ],
+      "end": [
+        136.2,
+        82.4
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "C812",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R747",
+          "1",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R747",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "7a2e8432-d61b-4046-94ec-3b235e9c15cf",
+          "start": [
+            131.696,
+            82.4
+          ],
+          "end": [
+            133.029,
+            82.4
+          ]
+        },
+        {
+          "uuid": "3a842016-ea99-4b46-a450-065ea81f779b",
+          "start": [
+            134.321,
+            82.4
+          ],
+          "end": [
+            134.679,
+            82.4
+          ]
+        },
+        {
+          "uuid": "475c2bcb-4ddc-47c3-bc2e-68bdbe248977",
+          "start": [
+            135.971,
+            82.4
+          ],
+          "end": [
+            136.2,
+            82.4
+          ]
+        }
+      ]
+    },
+    "d7437af7-9691-4eb1-a501-175415d886c8": {
+      "kind": "segment",
+      "net": "STEP_WD_OK",
+      "layer": "F.Cu",
+      "start": [
+        131.4,
+        82.6
+      ],
+      "end": [
+        131.6,
+        82.4
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "C812",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": []
+    },
+    "127deb72-4aa9-4fcc-82a3-33e96ed7c905": {
+      "kind": "via",
+      "net": "STEP_WD_OK",
+      "position": [
+        108.4,
+        88.7
+      ],
+      "conflicts": [
+        [
+          "C819",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "d7754223-2019-4080-8e8b-c3b571cdeee9": {
+      "kind": "via",
+      "net": "STEP_WD_OK",
+      "position": [
+        131.4,
+        82.6
+      ],
+      "conflicts": [
+        [
+          "C812",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "old layer-transfer/stitch point conflicts with new placement; review/reconnect required"
+    },
+    "02ed39d3-a590-4e18-b81d-6d02a4b40698": {
+      "kind": "segment",
+      "net": "AX3_CS_N",
+      "layer": "F.Cu",
+      "start": [
+        107.7,
+        92.25
+      ],
+      "end": [
+        108.9,
+        93.45
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "R816",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "affae27e-8a32-4a47-a720-807782923caa",
+          "start": [
+            107.7,
+            92.25
+          ],
+          "end": [
+            108.51204629366501,
+            93.062046293665
+          ]
+        }
+      ]
+    },
+    "d4a60170-4baf-4738-955c-7a53d0cf323f": {
+      "kind": "segment",
+      "net": "AX3_CS_N",
+      "layer": "F.Cu",
+      "start": [
+        108.9,
+        93.45
+      ],
+      "end": [
+        110.5,
+        93.45
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q801",
+          "2",
+          "foreign copper / pad clearance"
+        ],
+        [
+          "R816",
+          "1",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "50c27d48-c057-4bb1-b188-82ffa517fac4",
+          "start": [
+            109.56599999999999,
+            93.45
+          ],
+          "end": [
+            110.19004090380949,
+            93.45
+          ]
+        }
+      ]
+    },
+    "d8a6f150-c91e-4e95-904d-3d3a8f9b4f7b": {
+      "kind": "segment",
+      "net": "AX3_CS_N",
+      "layer": "F.Cu",
+      "start": [
+        110.5,
+        93.45
+      ],
+      "end": [
+        118.85,
+        101.8
+      ],
+      "width_mm": 0.15,
+      "conflicts": [
+        [
+          "Q801",
+          "2",
+          "foreign copper / pad clearance"
+        ]
+      ],
+      "reason": "only conflicting interval removed; unaffected ends retained",
+      "retained": [
+        {
+          "uuid": "e294907f-d277-4152-ba53-f215f0a4e3a2",
+          "start": [
+            111.54599999999999,
+            94.496
+          ],
+          "end": [
+            118.85,
+            101.8
+          ]
+        }
+      ]
+    }
+  },
+  "stub_removals": {
+    "50c27d48-c057-4bb1-b188-82ffa517fac4": {
+      "net": "AX3_CS_N",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "3a842016-ea99-4b46-a450-065ea81f779b": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "7a2e8432-d61b-4046-94ec-3b235e9c15cf": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "80534c39-6d4d-429c-ad88-4a7ad02245d9": {
+      "net": "AX1_EXT_STEP_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "606bc152-fd47-4a6d-bc41-1427a74e3fad": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "b9da8223-6785-4e7d-8c51-20b7dc7339e8": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "739c2a60-3070-45e7-b0de-960ecbe50bc7": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "3007f23d-68c8-498a-a9dd-4eb52ceb5f9b": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "dc33814a-9b6e-4360-a706-087470d3462c": {
+      "net": "AX1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "9df5f4df-523d-4d4b-8da1-cfdb6d98417b": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "39c2b6ea-cc77-4fc8-a4a4-179a967a1892": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_VIA",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8096a8cc-a103-4622-be3f-54f65f440443": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "29f1c7db-9685-47f6-bcf1-0967eb1f6d10": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "93f67d27-c342-4906-b27b-d4b16bf75596": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ae63034d-3602-4396-b8a9-95964549aa3a": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5abec046-8392-4ce5-b893-2713a7593a06": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "938e451b-ccb6-46bc-987b-c871c0f93003": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "a5a524d9-17b1-400c-8f7d-decdfb0a8367": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "20b7bcd9-5f85-4747-96bb-f0f32b311c69": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "887c1a73-5d02-48c3-a76b-6a5bfe1c4b15": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "cd59ee79-bd97-4898-b269-b7ad551f4f0b": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "27e2b21a-31f5-4dec-9dc3-0cbd4496e317": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "49f7fb24-f453-4bdb-949f-e75fc9f67bee": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e41bab3c-734e-4995-a7f8-2475b4452fa4": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ed7cc4da-a070-4a33-9fd3-f1b0a2b1357c": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e95ac671-6d63-4ecf-8bcd-34d80247b2e7": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f6926012-ef3f-4655-9000-deba2ca18ee8": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "cbec285f-402c-464d-95b7-c2ee82c0780a": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f5084676-4471-4984-a3c2-7767b9d5ecbc": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "1f396597-57c4-44e2-a33a-bd5e8d6c8072": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8ac9c821-979f-4af2-acb5-22368d9f5eb9": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ced77a7e-2e23-45d8-b81a-deea37ed00d5": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f3b68e1d-741a-4518-910b-f89710ad85dc": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5f7b5ea0-f05a-4052-9d4d-14e86757439a": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "159ec3d5-184a-4740-89a2-d5b0c8a31339": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ee445613-24e0-487c-80c2-ce7e6d681fab": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "2e290692-605e-40c4-b159-c137b98ac082": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "b64c6088-6c59-4c31-afa5-6c270222ded5": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "d481da92-6394-40ac-a4c1-9c3cd1445df5": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8a0c29dd-0e1d-4a08-87db-1fee74125f59": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "1f3a298d-0d1c-40b9-a832-8b3b57053889": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8d150dfb-3c62-4b28-86de-5efda31c7290": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "06ee9fca-1027-4897-a02d-af7b4d79e66f": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "63d50947-20c1-4c45-9781-da9178b8d58b": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "37ec3927-a03e-410a-8fd9-3f8a4a1c2612": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "7944861f-6c3f-4c52-bd06-c738e458d303": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "55505515-beea-431d-8a72-b5b0705b54ed": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8c681788-c86a-4f67-8f05-7da01bdebd66": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "545ef72e-6a74-479c-9b4d-28e529fda4e8": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "d91a7a75-fbc3-45e9-964b-bb3881acce61": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ef95a26f-9e5d-4798-af53-ed1cb4324083": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f712f85f-55e2-479d-971b-ff824ca47d82": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_VIA",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "4a741ce3-309c-4d24-aa31-098ed7520348": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "1e9a4c97-5ece-484c-952e-d1b5e5a7ede2": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5c43f549-8589-42e6-bd31-8f5389f790d1": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "d7737b0b-d7bf-4032-9c3b-714395d5a7ef": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e1e084d6-e83b-4ffe-902f-95a963c09f00": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "dffd56ce-1c93-4f89-9f81-84b0e95da25c": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "4f107189-112d-4bdd-85d0-f4ade31474d9": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "20df8e08-ed19-49da-8ee7-70417af68499": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f6df86a0-eb1f-4dd2-b97c-5057383698ae": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "d552c2cb-0f5c-4722-a29d-c99c42fefb0b": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5514746b-2362-4b1b-ae7d-929c2a500405": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "c03f61ee-42e9-4c23-849a-f4092f6fba0a": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_VIA",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f32e528f-e9da-4dcf-bb76-3b2182e3ff13": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "80779b3c-aa97-4af0-9bdf-165375f1e66e": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8580de82-3984-4723-83cd-42bad0c65ec8": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "af66def0-aa51-41fb-9c81-b80c7d58f721": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "7c6eaaca-3006-4ad4-976f-f7dbeac9a122": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "6a7a5739-c3f2-4d95-8519-8b73da399c29": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "53c9606a-bc19-4d9b-a4d0-6f056bfa6c25": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e8571c1e-13a4-4dc7-8b28-9f3bd1e7f4a5": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "a73c3646-4df0-49ae-ad24-57e85f3b8ada": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "39bfb8ac-356c-4121-b45b-72cbbbf85544": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f772367f-15b0-4845-8231-ef3963b0a12a": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "9587ef9e-2ada-445b-b0c0-629cdf89d8d6": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f2ca21b8-3762-4139-a019-193b0f3ab37e": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "854e3124-e376-4f83-b10f-cf4a749b7975": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_VIA",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "628ce214-bd00-448a-bc7a-a9e04e6ccad6": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f3e62936-9551-47c8-857d-6bc957ba6dd8": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5dcf8856-6335-4822-96f9-9591a86a50e4": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8d6e8965-9154-4e0f-9ef1-eeef1e1b50d4": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f9c8b958-d88f-43fc-aacd-2dd7baa7b527": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "3d57986f-2ed1-42cb-94a5-6fce9e8efe42": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "403b2ba6-0460-4b32-b822-84fa93dfb09d": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "303b4d79-7596-4418-967a-7741b945d252": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "6ef8488e-210f-49e4-b1c2-7dc152e8dcb8": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "2bded4e3-9735-45fc-9ad1-4759e92a57ec": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "10c01b1c-f15e-4d0e-8ace-3a4b01370302": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e63a35a0-f807-4436-a18f-9a27c94d8681": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ac0de52e-5348-49c1-9816-5ecc17d4c106": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "4e600570-e791-48a6-aeac-b63703c5d5be": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "9b5682f0-0e91-483b-829f-b551e513a98c": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f90aedcc-a469-4734-bba4-44b9b84b9501": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "44a7d74c-2e6f-433f-adbf-97e70852a4c9": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8ac2fc33-4810-4dfa-b26f-a5f4fc8fff8a": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f467deec-aeff-463c-94b3-b7cc528299a3": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5420e441-47ba-4e4d-918f-40fc3c65fd08": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "6f4455cc-af5f-462e-bfd5-ce7aa147b8f5": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "93532ed7-6f24-45a5-8f04-27040d4ae6c4": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "62a0986b-8054-4aa7-88aa-62654ad7e9f3": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "9da4499e-e29f-4195-b23f-33f54b727e17": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "c3119675-06d5-4e35-9dac-bcd2d5e30a6f": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ab82841c-d11b-4151-bc6e-ec60a91379e4": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8ebd45c8-220d-4408-9a9b-ae626264bc15": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "7a9a646d-cca4-456f-8798-6e49c3a1ef8e": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "49930691-3059-4bed-a055-75171c0b8aa0": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8786d256-c3b8-46e4-919d-2aa3240c4bb4": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e45239df-ae21-4fc5-9d7a-c2b2e0d3cc00": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "1ba9e55f-87df-462b-9112-f972f5bbe8ed": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ae8dda37-c793-41cc-9bc9-b713572e5b05": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "f5577b66-944a-49b2-8eb7-92e2c459ea22": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "89bd66a6-6a7e-4da5-a355-95dbce98f5c5": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_VIA",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "85933dda-6253-4273-a067-6826f39f999a": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "6f7168d9-d169-41a5-8f39-26d1c320f617": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "552050e2-90f7-493b-9a65-d0d31a52457c": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "2d0102e8-26ae-4106-8ead-ab8317a4a596": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "870c3cf1-9e16-4641-85bb-c386c2a65bc2": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "d428f781-d92a-4e6f-aadd-d4d25b194425": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "2b983857-7a2d-4d53-9f56-a8bb763ea7ba": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "efc1ff34-5a2d-4bcf-af27-7ea174721b2d": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "afc518b3-3605-45eb-b226-0eee217e1033": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "4b469213-7f63-4915-a7bc-73ad65cd8fb7": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "5e2b1051-329a-453f-9f03-da775e863d70": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e8683638-4eb0-4f1d-bdd6-60dcd8e1a1d7": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "efb3275e-c3e8-4477-a86e-8ba9c863af2b": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "810bd4a7-5ebb-4e84-bea2-c8bb9fc33330": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "9d663ebb-c972-4735-abdd-35a0512b66c5": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "ca779c71-b1e0-4b52-8e46-f88944f8b307": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "99c985e9-565d-44e6-8b2b-83025d798efa": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "4680b0be-43fa-4041-b0bc-c04e0e7ec2e2": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "219c5597-e600-413b-840a-e2381bbb1163": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "fdfe4e60-fe0a-4dec-a924-7074df13e533": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_VIA",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "d9ae16d0-0c51-457b-af4a-bf1d04a62c6d": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "a0969199-98c5-4008-8a77-7f01c33cfbad": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "330ab90d-f0f5-445b-8e79-f455d79b24e2": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "8a8e5b9f-841d-4f26-9196-cb080ce2ec5a": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "2931a382-b943-4015-a908-b16abca246b4": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "e1e81186-3fb1-4880-b94c-e67752d04fb6": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "isolated signal copper with no component pad"
+    },
+    "02188e91-bbe8-411d-9e3d-84621823dc80": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "06830be5-5ba2-4629-bdc7-80d4654fbecc": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "07aac5ba-11e4-4a64-a6b4-13d3e5bb306b": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "0eb4f5fd-2d13-4634-9ff2-523a326b0e49": {
+      "net": "Z_MAX_IN",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "116ef78f-146f-4005-8922-f1dd4bd7b277": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1288bb2d-4bf9-46cd-a0d0-e69318fa874d": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1456baea-00c9-4e40-aa77-f8c0b30cfbab": {
+      "net": "STEP_WD_READY",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1592bfcc-be9f-4a01-82f0-01a51cf6fcf9": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1850d76f-ab40-44fe-8670-9c3a414c7dde": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1b28b2ea-dda9-4a55-85a7-5e71d6f2a216": {
+      "net": "/M2_PWM_EN",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "1c1e13f4-b3a5-48e7-b669-192ad84174dd": {
+      "net": "AX1_EXT_STEP_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1ee0ce00-56b6-488b-97ae-85509d73beb1": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "21dffa5b-d23b-4119-b556-72679dd68db2": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "22294c95-33f6-4d75-94bf-5ac1aab36f90": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "270bab19-0810-40b2-8eaf-76db455b9698": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "36b884c5-8863-4039-a616-a3c2552a18f8": {
+      "net": "STEP_WD_READY",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "3a9a87e1-14ec-40c2-9574-b2e9b72ce43f": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "3cf563c0-719f-4f89-88ae-1b573f0c5b55": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "3e75d1bf-7f5b-45e5-a558-061394766052": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "406442ee-37f0-4097-ae15-0d4ac160beb9": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "475c2bcb-4ddc-47c3-bc2e-68bdbe248977": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "4c2c3395-3793-4094-b379-5a0b18c961ac": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "51ad79ec-7bf6-435a-8ed3-82b401706e8d": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "53b16409-fc0e-4712-9e6b-0f170d327a3c": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "58366cad-9570-4bd5-a34f-a1661397f3f0": {
+      "net": "/M1_PWM_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "58e1fee3-ed78-4f25-bc44-0860c7b28493": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "591f982f-3db0-4a4f-8e57-6f3239c10888": {
+      "net": "/M2_CS",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "5b647c76-0544-490e-ab2b-4d4d8e99ebb3": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "60c02a55-250c-40f0-8cc1-ef4821edc2bf": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "64773a67-ad49-4eb9-b693-dc03e029a697": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "69dd21ef-82f0-42f9-87e1-a2fef031d2cd": {
+      "net": "/Industrial_IO/+5V_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "700c2319-4f6f-4f78-bc19-9704028aa736": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "7ef01cce-9187-47c9-8795-1dead4abbc98": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "808880f4-50ab-445b-a5da-46f1a85aff25": {
+      "net": "/M2_nFAULT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "8186bb75-4e18-4bde-a107-f91a3cb07071": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "85dbe288-a388-46b5-84e0-ee3fe9c3bdfc": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "8e26b791-8add-4593-b2c2-5da4398d6817": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "8f2863ad-d0be-4ac7-9210-2d4d710110dd": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "9378558f-dcac-4b0d-af44-760472cf53ec": {
+      "net": "STEP_PERMIT",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "9a0cdbce-0dec-4957-9f53-16f2731cabb7": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "a394a927-2912-40c0-9beb-65eb070bf0df": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "a75a01e4-26e1-4ed2-8dd6-a9c2dbfff678": {
+      "net": "AX1_EXT_STEP_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "a8601137-dbe5-4bb0-a697-56ac8469b985": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "aecb254d-467f-40f3-98ce-f2f6a448c81a": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "af1fb324-b677-413b-bef8-6711d5e2559c": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "affae27e-8a32-4a47-a720-807782923caa": {
+      "net": "AX3_CS_N",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b75ab7ad-a644-4dd8-b383-61e28dea6dbd": {
+      "net": "AX1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b81fdea2-5023-470e-9472-e7743ce9065f": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b8c5f457-4f6b-44ea-9e47-adadf15dbb99": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b9f38916-4ee3-480a-ba8f-4bf04e7385c4": {
+      "net": "/M1_PWM_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "bb098564-471a-4e3f-b985-e7a55e2a6742": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "bc341bce-6c2f-4d44-8505-72b1e3874130": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c38b3e11-4fc9-456e-b653-fa1bece55897": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c3dedac5-cd9a-43fd-93ac-2f5b75b99bf0": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c965316f-df70-4cf4-a228-01612a602b35": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ca194d04-b8b0-46bf-ae0d-403a0aa79a49": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ca7a08cc-3bdd-4e3f-9872-210c00d09828": {
+      "net": "AX1_EXT_STEP_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ca869db0-3dd8-40b6-bf56-d7ceff5b85a8": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "cb08beb7-661a-4d23-b7f8-7276ec2fd24f": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "cdd24400-6e9e-4c81-8085-1c00d8e4f47d": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d0aa97f1-8ea2-4a71-80da-0fe57a63304c": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d0fe2c62-b5c9-451f-8704-2d76cb800600": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d1ecd41a-df88-4485-8903-13f2311c3e2a": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d78caf77-c87a-494a-84f4-f7bcf3c60c7d": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d813bf7e-e608-423c-a06e-4c4ea2bac44f": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "dcad4037-6553-468d-967c-0bdcfcd60cf1": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "e1106c11-d23d-40f5-88ac-2eaa72a1243f": {
+      "net": "AX2_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "e294907f-d277-4152-ba53-f215f0a4e3a2": {
+      "net": "AX3_CS_N",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "e399d2f5-1ef6-4c8a-ba3c-81866bdd322b": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "e8db6701-a0ed-4421-9acf-280db619beda": {
+      "net": "AX1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ea989cc1-b0e7-4dbe-8679-81c7f8f719f1": {
+      "net": "AX3_CS_N",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ecd40376-79ee-43b8-8914-c0d269a8f791": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ed46ef1a-2665-4e45-848c-5cca69f8514a": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ee31b4ba-3d67-402e-bd35-76bb7decae9c": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "efb7aaa6-2e55-454d-a0ad-2b707192ca00": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "f273f575-ddd1-4552-876a-99654ecbbe96": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "f4286751-45fd-439b-80dd-fabea5eb1d88": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "f8c01ad0-ef8a-47fe-b967-bf205c8f0201": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "01c188a5-4e11-42af-b629-15e892f90ca6": {
+      "net": "AX1_EXT_STEP_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "02116323-cf66-4d80-862d-d6d87c362ff0": {
+      "net": "AX3_CS_N",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "03c0a442-4255-48a9-8fbb-9ad51865ffcb": {
+      "net": "/M1_PWM_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "068eb40a-485b-45e3-971b-c061c6fb0b96": {
+      "net": "/M1_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "0710c5a9-cda3-4bb5-b408-392428b99989": {
+      "net": "AX1_EXT_STEP_OUT",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "09a423b1-27e8-4e05-8eba-306fec9ec86c": {
+      "net": "I2C_SDA",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "0c93c3be-e519-45d0-9895-7712053adde6": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "0ce0ad50-69cd-4442-a8e7-b2dd4e26c1bf": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "0da18c7f-8674-42b2-aa77-8ddccbf3196e": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "0f98c20f-5a29-4e8d-bd3c-1b3324e2906b": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "0fd01364-4ab0-400a-b324-4166fb10bfee": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "12d96b3a-6824-4fea-945e-5cd36cba719c": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1c98e3ea-f584-4d6b-bd95-1c592e06a728": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1ed1b495-e664-4c7d-8933-406cadcad0f0": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "27b9ce63-355c-40b0-993b-178cbab9d7ee": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "3269edd7-8dc0-4aa8-bcf7-d35f0b590da3": {
+      "net": "AX1_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "377853b4-76cc-4d1c-93ac-64c215be3d6b": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "399db8fb-2b57-4b69-9751-3bfd55280fe9": {
+      "net": "/M2_CS",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "3d02f951-85f3-46c5-adf0-1a50504d8956": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "4240b388-6c78-4592-b27d-4b02c506521b": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "482bb8c9-e786-4fd5-8574-0987d2fa70a3": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "48af34c6-ec62-4b19-9c7e-ed8929bc84a1": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "4ecfc9f3-7ff6-45d2-ad8f-04c3034eb0a5": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "5a48171e-eebc-4aca-8cb6-2033226efbc0": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "5adee5fb-24ba-4ac6-9a13-393868f0e89d": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "6653785e-eeba-4d34-a9f6-d4b0458447b9": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "6c5700a9-2804-4d39-8202-111c9e05bfb3": {
+      "net": "AX1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "6e572a96-d7b1-42e3-981e-130001053dba": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "6f9d61a4-00a6-4332-98e0-33333d51fcf0": {
+      "net": "STEP2_DIR",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "734dc9b5-f388-4224-aad4-bdd73b35b2f7": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "77c0f978-768b-4274-b13a-00e28633d4b6": {
+      "net": "/M1_PWM_EN",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "809a36f5-cadc-4d55-9716-242fa3b2f0f9": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "99b96057-c3a5-49a3-a7de-64792fd143ed": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "9ba03fc5-3de6-4d3e-9aa4-4de684f42873": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "9df423b8-2b6f-4a42-81f6-d84720e4c98c": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "9f69f7fe-fb78-494b-bf18-5035b56c330c": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "a867a188-f4fe-424c-8946-fbe1b215907d": {
+      "net": "AX3_CS_N",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ae4fff4d-c8ef-49ba-83f5-8dfee78dee5d": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "af2262db-23dd-4cb1-acb8-45768a7278d5": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b6682526-c05d-4b68-879c-0550ba5450d8": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b741c64d-9226-4222-9e34-bb2a7dd05d07": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "be6ff970-2a5c-44ec-b552-93fd45a1cf17": {
+      "net": "AX1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c2c736c1-c9e6-46d0-b260-6131b7251f44": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c31d274d-31a9-4386-aef8-f6a1f8394e90": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "c4d2c9cc-f10a-448d-b018-604847d33da1": {
+      "net": "STEP_ARM_Q",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ce9c5384-c464-41a1-8265-282081ab87e6": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d26154fd-61c5-4df3-991a-81f3dc06a48d": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d28fc76f-454c-462c-b61e-80ece8995bd1": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d4921383-72cc-4eb4-a313-e81d3104851b": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d7b0c22d-6190-429b-9a00-fa3a6feb17ea": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d7c25ca9-40df-4b74-b68b-6f1d86458ad0": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "d8d7261f-889d-4260-a843-12def4a070a4": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "df6bd51a-fa14-4cd2-98ca-c3d59514b73a": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "dffff808-3635-4f78-b33c-816c2d7c910a": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "e005fb74-7b31-49a1-a66b-f6c57ba0b526": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "e27be8be-f56f-45a5-8fbb-8ab5ae1f5fff": {
+      "net": "STEP_SPI_MISO",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "eb9a18a1-5bed-42ad-9c79-dcc1fb4034e3": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "f7d9f767-a8b7-471a-812f-6baac2f99be7": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "01c7df77-6d2c-4ae4-83ae-6ef34101c629": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "05e9bfd3-aad9-4312-bd66-97791462bba9": {
+      "net": "/M2_CS",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "0d71d18d-2778-473d-8317-d7c7f09db5c7": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "179b0a2a-aea6-489a-a8c6-20975ad21b49": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "21efdbb8-224e-4c1e-871f-a37a3ae8c577": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "26ed0bca-d39e-4156-8418-547fa570af47": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "2c9c2938-bff0-4308-b8f8-3a4dd27b9627": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "2e8fbca5-7e83-4d12-a058-d9178f38e684": {
+      "net": "/M2_PWM_PH",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "35a4fc4c-62be-4d63-b077-171ca8ec16e0": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "39418c27-9fc5-4d8d-8410-dd353829e52c": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "3aa0b8c9-f9a3-40ab-b79c-f8c23c65a9d1": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "439e2ab1-f791-49df-b1c6-6258ac443b83": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "4dd3af92-1b3c-4177-885f-dad05d9de366": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "50771c6e-67fa-41e5-880b-222aac68928a": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "51dafa4b-0515-45cc-88ce-90255256b41d": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "570032f9-025e-432c-84ff-ab60d1130c96": {
+      "net": "/M2_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "751abd4d-1876-463d-91f5-97cc2af3b836": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "7b7cbb74-1b81-4a52-9124-35d235633b82": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "7bd950ba-dd2b-4056-b96a-3115d3e965c5": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "810e126f-8b96-43ca-9019-8efe44ad56a5": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "85da74d3-3aec-4893-b392-513b98724b53": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "884fb729-588a-4e53-ae88-290a78dd0f06": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "8cc46db0-a643-489f-9e5f-8f7f23445fe9": {
+      "net": "AX1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "8ee5794c-038a-4041-ada5-70fa4240b34a": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "9ae36c34-6191-4a96-8de8-1a9f692ac21d": {
+      "net": "/M1_CS",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "b4f99c76-a1b4-4615-9d6f-0bbf6ea77d72": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "bf568d70-dfeb-4a5a-a996-9136b78a9549": {
+      "net": "/VBAT_SENSE",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c316f7eb-4d45-45e7-90fc-3fafc34bd5c5": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c3cbe9b6-0ada-4fbc-b518-96a268abd15a": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "caf21b5c-08ef-4854-a85f-5341eef3e3e7": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "dad668a8-0cae-4724-8ceb-11075d12813a": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "daf50737-9172-403e-935e-4dff2099c9c0": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "de6c3b7c-f98b-409f-9eb9-a64f4cfac154": {
+      "net": "AX2_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "e668d1f0-111a-4ee4-a73c-60ec961b5c8b": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "eaa49c0f-e613-4196-ab73-8e1f3b9904c3": {
+      "net": "I2C_SCL",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "fac48c1f-e666-4a35-ac96-90cedbe90bda": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "fad919b8-e1bd-49b9-ba12-c1d5e4e99c5b": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "02c1178e-2cbc-4d10-92c4-2385324d28ab": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "12145012-6621-4778-a530-0a3f4c7679d6": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "1288e555-98e9-425d-98ea-5a1ca1edd8ed": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "18f8b686-be1a-4fa3-b2d2-baa839f8a48f": {
+      "net": "/M1_CS",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "2ddada46-0f89-4fc6-ae0c-66cf12aa04fe": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "452e6eb0-8443-4547-9a9c-a06c2db8a202": {
+      "net": "STEP_WD_OK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "554a7475-94c5-40b8-925b-d8efcdd87897": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "5cf58639-9752-4936-afa3-4dd51cfd3fc2": {
+      "net": "AX3_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "69a62b89-1284-456a-9b2d-259e0d1e6c1f": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "89ccbb3d-6038-4ba1-a270-4f27154088c3": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "8f8ae0db-d148-4533-aa76-6fa0b21cf2ab": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ae1f235d-cf3f-405a-bd44-f27a3bf4b857": {
+      "net": "I2C_SDA",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "baa78453-9307-4830-b36f-bd9827f1c1f1": {
+      "net": "STEP2_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "c6d32925-9246-4527-bda2-e5002eabf237": {
+      "net": "I2C_SCL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "d956dbab-4dc3-4e04-a95c-23d8d2a691fb": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "db212101-9552-409b-b7fa-3ad30d8cebb2": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "f869e2fd-0b45-429a-91d5-d5437a630457": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "fc3ed5c5-4a5a-4714-b12b-789d0542284c": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "21393cd8-647c-49c4-a04e-dbb51a4a92f6": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "2dd02bdf-67c3-4b37-8d16-3e3581a6fe8d": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "2fd5d2e6-8633-40d1-963a-80c229798cc1": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "55b1e8e9-629c-4166-8772-af19f35a6884": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "75936d3b-9110-468f-88ad-c34cda1a6afd": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "7f6fec3d-5aa3-4512-b6bc-33deee39bb2c": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "89e845ee-ac9a-4c10-b834-fa243d4cfd21": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "948f092e-5cee-44d1-84ad-ca6b2c4d825e": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ca2192b4-9450-4cff-992c-661f670bf350": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "cad7b74a-0634-44c6-9bff-b2ccdc71818c": {
+      "net": "STEP_SPI_MOSI",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "dd3a3b46-f065-496b-900b-31fb8232e094": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "dd8a2c6c-28a6-4df6-af6e-f4932501c642": {
+      "net": "STEP1_PUL",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "e19786c9-936f-4ac2-8ba5-4a07b340524e": {
+      "net": "AX2_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "ec4c14f2-d66c-4cbb-9263-60d1740375dc": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "fbbe213a-8015-48ca-b845-42940bca240d": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "fd5288f8-5fb3-468e-9801-af6e54cc4305": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "38a2701c-c351-49ee-adf9-f1744ff273c5": {
+      "net": "I2C_SDA",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "3ddbdb21-9309-4d2c-9459-de107323222b": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "52c6fe2c-5e5f-4f42-8ba9-9005c80f283d": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "9d743422-0ec3-4542-92c1-e94e5a7d5f5f": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "a0a11c81-0f90-4295-aba4-f2ce9482cddd": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "a552e15f-a413-4e1f-9129-b160151ab590": {
+      "net": "I2C_SDA",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "b8aef556-3c35-4253-ac0b-c5f11c87b70f": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "dea7ea7c-483a-40da-9399-577f71b05581": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "06319b31-656c-446c-9d99-9b793bd7be8e": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "5614214b-b7b9-4444-b372-5698a176682c": {
+      "net": "AX1_EXT_EN",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "97e4843d-106d-4c44-8045-c403f61b50ec": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    },
+    "cb839d41-e6ae-414d-a657-f4a0886071b8": {
+      "net": "RLY1_CMD",
+      "kind": "PCB_VIA",
+      "reason": "signal via without layer transfer; nonbridge proof"
+    },
+    "52dc2723-7ea0-4caf-a9c7-f17501ff0750": {
+      "net": "STEP_SPI_SCLK",
+      "kind": "PCB_TRACK",
+      "reason": "dangling signal stub; nonbridge proof"
+    }
+  },
+  "retained_collision_free_fragments": 141,
+  "cleanup_preserves_post_trim_component_pad_partitions": true,
+  "removed_original_vias": 33,
+  "removed_signal_stubs_and_redundant_vias": 359,
+  "affected_nets": [
+    "+3V3",
+    "+5V",
+    "+BATT",
+    "/M1_CS",
+    "/M1_PWM_EN",
+    "/M1_PWM_PH",
+    "/M2_CS",
+    "/M2_PWM_PH",
+    "/M2_nFAULT",
+    "/VBAT_SENSE",
+    "AX1_CMD",
+    "AX1_EXT_EN",
+    "AX1_EXT_STEP_OUT",
+    "AX2_CMD",
+    "AX3_CMD",
+    "AX3_CS_N",
+    "GND",
+    "I2C_SCL",
+    "I2C_SDA",
+    "RLY1_CMD",
+    "STEP1_PUL",
+    "STEP2_DIR",
+    "STEP2_PUL",
+    "STEP_ARM_Q",
+    "STEP_SPI_MISO",
+    "STEP_SPI_MOSI",
+    "STEP_SPI_SCLK",
+    "STEP_WD_OK"
+  ],
+  "routing_required": true
+}

@@ -12,5 +12,6 @@
   "new_parts_excluded_from_exports": true,
   "new_part_pads_unconnected": true,
   "no_new_moved_courtyard_overlaps": true,
-  "extra_antenna_clearance_waived_by_user": true
+  "extra_antenna_clearance_waived_by_user": true,
+  "historical_checkpoint_notice": "Placement-only evidence; copper changed during authorized cleanup/routing on 2026-10-24. See routing-progress.json for current status."
 }
