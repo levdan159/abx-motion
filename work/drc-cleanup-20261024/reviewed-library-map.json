@@ -1,0 +1,23 @@
+{
+  "H5": "abx-footprints:ABX_H5_MountingHole_2.2mm_M2",
+  "H6": "abx-footprints:ABX_H6_MountingHole_2.2mm_M2",
+  "J102": "abx-footprints:ABX_J102_TerminalBlock_Phoenix_MKDS-1_5-2-5.08_1x02_P5.08mm_Horizontal",
+  "J205": "abx-footprints:ABX_J205_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal",
+  "J207": "abx-footprints:ABX_J207_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal",
+  "J301": "abx-footprints:MKDS_2Pin_Motor_ABX",
+  "J401": "abx-footprints:MKDS_2Pin_Motor_ABX",
+  "J505": "abx-footprints:ABX_J505_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal",
+  "J506": "abx-footprints:ABX_J506_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal",
+  "TIM_ESP": "abx-footprints:TIM_GND_4x4_Bottom",
+  "TP_3V3_1": "abx-footprints:ABX_TP_3V3_1_TestPoint_Pad_D1.5mm",
+  "TP_5V1": "abx-footprints:ABX_TP_5V1_TestPoint_Pad_D1.5mm",
+  "TP_BATT1": "abx-footprints:ABX_TP_BATT1_TestPoint_Pad_D1.5mm",
+  "TP_CS1": "abx-footprints:TestPoint_PTH_2.5x3.6_D1.0_CS_ABX",
+  "TP_CS2": "abx-footprints:TestPoint_PTH_2.5x3.6_D1.0_CS_ABX",
+  "TP_GND1": "abx-footprints:ABX_TP_GND1_TestPoint_Pad_D1.5mm",
+  "TP_GND2": "abx-footprints:ABX_TP_GND2_TestPoint_Pad_D1.5mm",
+  "U3": "abx-footprints:ABX_U3_ESP32-S3-WROOM-1",
+  "U301": "abx-footprints:DRV8701_RGE_Thermal_ABX",
+  "U401": "abx-footprints:DRV8701_RGE_Thermal_ABX",
+  "Y801": "abx-footprints:ABX_Y801_Crystal_SMD_3225-4Pin_3.2x2.5mm"
+}

@@ -1,0 +1,153 @@
+(footprint "ABX_TP_GND1_TestPoint_Pad_D1.5mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SMD pad as test Point, diameter 1.5mm")
+	(tags "test point SMD pad")
+	(property "Reference" "TP_GND1"
+		(at 0 -1.648 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8c57903-db4c-43cf-b2ce-25079459950d")
+		(effects
+			(font
+				(size 0.65 0.65)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "TP_GND1"
+		(at 0 1.75 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91bfcc5f-8494-4f73-adad-41ea6f2a4620")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d43a9302-1970-40ea-853e-42fbd05b9bc3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3a78159-2782-46cf-a700-281023ad1147")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Pin* Test*")
+	(sheetname "/Power_Supply/")
+	(sheetfile "Power.kicad_sch")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.4 -1.9)
+		(end 1.4 -1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "84b9612e-6e4d-4245-81a6-8fe32e48ccc0")
+	)
+	(fp_line
+		(start -1.4 1.9)
+		(end -1.4 -1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "ee1c4ef5-459f-48f6-a35c-d86dea3eef71")
+	)
+	(fp_line
+		(start 1.4 -1.9)
+		(end 1.4 1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "b2fb00eb-391e-4c4b-a046-b618c05476b7")
+	)
+	(fp_line
+		(start 1.4 1.9)
+		(end -1.4 1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "25c7edba-172a-454a-a143-cd4daa88d248")
+	)
+	(fp_line
+		(start -1.4 -1.9)
+		(end 1.4 -1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "181d9c02-91cf-4159-b12b-621ee0c1d50a")
+	)
+	(fp_line
+		(start -1.4 1.9)
+		(end -1.4 -1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cbb7c1cb-98b5-42fe-8035-63725e6268ae")
+	)
+	(fp_line
+		(start 1.4 -1.9)
+		(end 1.4 1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "3e0894fe-931d-454a-b401-a3069883a542")
+	)
+	(fp_line
+		(start 1.4 1.9)
+		(end -1.4 1.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "eea90e53-9961-4254-8425-7d21cf3fc5ff")
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 2.5 3.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "d88a462d-b1be-487e-8f8f-aba020c2958e")
+	)
+	(embedded_fonts no)
+)

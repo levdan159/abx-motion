@@ -3637,7 +3637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias"
+		(property "Footprint" "abx-footprints:DRV8701_RGE_Thermal_ABX"
 			(at 76.2 78.74 0)
 			(effects
 				(font
@@ -5200,7 +5200,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "abx-footprints:TestPoint_PTH_2.5x3.6_D1.0_CS_ABX"
 			(at 228.6 124.46 0)
 			(effects
 				(font
@@ -7105,7 +7105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "abx-footprints:MKDS_2Pin_Motor_ABX"
 			(at 378.46 68.58 0)
 			(effects
 				(font

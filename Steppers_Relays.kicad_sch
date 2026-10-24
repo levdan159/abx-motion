@@ -24516,7 +24516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+		(property "Footprint" "abx-footprints:ABX_J505_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal"
 			(at 200.66 414.02 0)
 			(effects
 				(font
@@ -25257,7 +25257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+		(property "Footprint" "abx-footprints:ABX_J506_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal"
 			(at 383.54 414.02 0)
 			(effects
 				(font

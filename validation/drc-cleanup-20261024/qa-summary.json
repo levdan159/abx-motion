@@ -1,0 +1,23 @@
+{
+  "status": "Clean DRC/ERC for the currently integrated draft",
+  "baseline": "41f87bf",
+  "drc_violations": 0,
+  "schematic_parity_issues": 0,
+  "defined_net_opens": 0,
+  "erc_violations": 0,
+  "no_rules_relaxed_or_exclusions_added": true,
+  "original_pad_nets_geometry_and_connected_groups_preserved": true,
+  "all_component_positions_preserved": true,
+  "all_original_ground_vias_and_zone_boundaries_preserved": true,
+  "thermal_pad": {
+    "net": "GND",
+    "mask_mm": [
+      4,
+      4
+    ],
+    "paste": false
+  },
+  "unintegrated_board_only_ethernet_reserves": 49,
+  "manufacturing_ready": false,
+  "pcb_sha256": "edd9b254896146ed89395a91189dde32fdf7a32a9a4ec01fda7fd705ce37cd35"
+}

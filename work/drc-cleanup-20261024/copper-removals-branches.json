@@ -1,0 +1,177 @@
+{
+  "f9d972de-7c0d-4cdc-ae13-8843d2bc1a51": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "19289e0b-8a99-456b-a260-fe6fb3b673fd": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "511419c4-df75-49f4-ac00-df291b6c3319": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "9e843e30-0405-4e3c-a56d-3bef3761e3df": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "46c4acee-068d-46ea-9970-697d5d56dd88": {
+    "net": "+3V3_DRV_EN",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "58979560-a630-40b9-bb0e-49e0b7f26885": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "4b21ed46-3a5c-4c31-a65c-69554d3beef5": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "48287df4-5b3f-4100-bd77-ca1834458935": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "6e7083b1-b741-4698-b02a-300e5436469a": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "3192e6aa-b9aa-4dce-ad62-7930dadf8ba1": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "928cb16a-03f7-4d1d-a363-a301bc99d6e9": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "bb031dcf-91c9-4ab4-bf96-976f09692ad7": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "31f22078-717d-4294-ac40-73a156c56a35": {
+    "net": "STEP_SPI_MISO",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "cd8e151e-e98a-4de4-8da8-cb3f35fcf101": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "b5db1e65-056a-4c94-8811-7f8ca3384bfa": {
+    "net": "/MCU_and_Encoders/ESP_BOOT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "80f8f91f-8b4a-46f0-a57c-420eb0f58d6d": {
+    "net": "/Industrial_IO/X_MAX_RAW",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "b2f8262d-4276-41b4-b3a6-2fff290ef130": {
+    "net": "AX2_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "32eb7666-7b2a-4cc5-80d5-47755ffae6d4": {
+    "net": "STEP_ARM_Q",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "b0c8f873-f352-49eb-874f-c1b8004d4717": {
+    "net": "/Industrial_IO/M2_MAX_RAW",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "46936dae-4d4f-4ef5-873d-9e5a245bd8ed": {
+    "net": "/Industrial_IO/Y_MIN_RAW",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "2d3a11d7-0e3e-46b6-8c43-8590ff37ff91": {
+    "net": "STEP_WD_OK",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "4e25bac2-af6f-452a-b013-701a9476e9b1": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "85217ecf-7310-43fd-b2d2-04ec7bf1a95f": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "323e2ca3-6898-445f-8d4d-4b66a6a8ab73": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "a63f8097-1a1f-4a66-9515-8e9d94864649": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "6f4c08e3-4e27-483e-8cf1-35d6ba7942f8": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "f16eb675-3db0-401b-9ea3-ee78b5ab39c9": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "0ffa8bcb-9783-4682-a92c-b7244f482b38": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "d8ade209-84fc-495b-875b-1d393496703a": {
+    "net": "+3V3_DRV_EN",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "1f9c9255-8b50-4572-8cf5-2a8e15b6f59d": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "6e0d3423-f8bf-4318-aa12-1d4c8dc03083": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "02de0cbf-f40c-41bd-b45a-8f8b8ea23b58": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "b88e3c50-fb93-4323-94b4-23e1fc8792f7": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "eed739eb-e45f-40d5-8129-a4f3674e9a2d": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "047a94e6-d1e0-4424-9109-a7941ef2e633": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  }
+}

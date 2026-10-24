@@ -9976,7 +9976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "RF_Module:ESP32-S3-WROOM-1"
+		(property "Footprint" "abx-footprints:ABX_U3_ESP32-S3-WROOM-1"
 			(at 88.9 88.9 0)
 			(effects
 				(font
@@ -16525,7 +16525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+		(property "Footprint" "abx-footprints:ABX_J205_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal"
 			(at 119.38 218.44 0)
 			(effects
 				(font
@@ -17716,7 +17716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+		(property "Footprint" "abx-footprints:ABX_J207_TerminalBlock_Phoenix_MKDS-1_5-3-5.08_1x03_P5.08mm_Horizontal"
 			(at 269.24 215.9 0)
 			(effects
 				(font
@@ -20089,7 +20089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "abx-footprints:ABX_H5_MountingHole_2.2mm_M2"
 			(at 347.98 185.42 0)
 			(effects
 				(font
@@ -20143,7 +20143,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "abx-footprints:ABX_H6_MountingHole_2.2mm_M2"
 			(at 373.38 185.42 0)
 			(effects
 				(font

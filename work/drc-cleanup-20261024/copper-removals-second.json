@@ -1,0 +1,52 @@
+{
+  "feaee008-badf-441f-8ec1-1c3be6329b7d": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "88bad009-9d22-466a-bbba-9d0e3ed80841": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "f24d8eaf-4e20-4e87-b935-7dcbbf641668": {
+    "net": "I2C_SCL",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "974680ba-29de-44cd-a350-6f8bd7078106": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "699f9fba-0a7d-486b-857f-7825b35ab8e8": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "02f25b48-5754-4189-bd48-f83748132505": {
+    "net": "+3V3_DRV_EN",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "be714edf-cffb-4363-8df2-0ad0bff3c371": {
+    "net": "/Industrial_IO/Y_MAX_RAW",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "a763e438-8a48-4924-bd80-1c105fca353e": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "14441995-1265-4f66-b9a0-e99ef9bbae74": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "c79daeee-eacc-420f-b211-5faf81fea032": {
+    "net": "/Industrial_IO/M1_MAX_RAW",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  }
+}

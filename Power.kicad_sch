@@ -8798,7 +8798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "abx-footprints:ABX_J102_TerminalBlock_Phoenix_MKDS-1_5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 198.12 215.9 0)
 			(effects
 				(font
@@ -9046,7 +9046,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "abx-footprints:ABX_TP_GND1_TestPoint_Pad_D1.5mm"
 			(at 243.84 215.9 0)
 			(effects
 				(font
@@ -9162,7 +9162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "abx-footprints:ABX_TP_GND2_TestPoint_Pad_D1.5mm"
 			(at 264.16 215.9 0)
 			(effects
 				(font
@@ -9278,7 +9278,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "abx-footprints:ABX_TP_BATT1_TestPoint_Pad_D1.5mm"
 			(at 284.48 215.9 0)
 			(effects
 				(font
@@ -9394,7 +9394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "abx-footprints:ABX_TP_5V1_TestPoint_Pad_D1.5mm"
 			(at 304.8 215.9 0)
 			(effects
 				(font
@@ -9510,7 +9510,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "abx-footprints:ABX_TP_3V3_1_TestPoint_Pad_D1.5mm"
 			(at 325.12 215.9 0)
 			(effects
 				(font

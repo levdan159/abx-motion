@@ -2,13 +2,15 @@
 
 Open [abx-motion.kicad_pro](abx-motion.kicad_pro) in the project root. The root PCB and schematic hierarchy now contain the reviewed Ethernet development checkpoint, promoted from [ABX-Motion-ETH](variants/ABX-Motion-ETH/README.txt). Assembly option: **ABX-MOTION-ETH**. No PoE.
 
+Current [DRC cleanup verification](validation/drc-cleanup-20261024/README.txt): **0 DRC violations, 0 defined-net opens, 0 schematic-parity issues and 0 ERC violations**. No rules were relaxed or findings excluded. The 49 unwired Ethernet placement reserves are explicitly board-only and still excluded from BOM/CPL. A clean DRC does not make those reserves functional.
+
 The dedicated Ethernet 3.3 V converter is schematic-integrated and routed, and connections displaced by Ethernet placement are restored. The W5500, RJ45, clock, protection, reset and SPI interface still have **49 unintegrated draft footprints**. This is **not a manufacturing release**. Zero opens on defined nets does not establish complete Ethernet connectivity.
 
 The checkpoint retains the three onboard DRV8462 drivers, external stepper interfaces, eight-socket digital I/O bank, axis legends and thermal copper/TIM windows. The PCB is four layers; In1.Cu remains the ground plane. The audited project minimum clearance and track width are both 0.15 mm.
 
 See [root promotion QA](validation/root-ethernet-promotion-20261024/README.txt), [Ethernet routing preview](variants/ABX-Motion-ETH/layout-review/routing-overview.png), and [remaining circuit requirements](variants/ABX-Motion-ETH/layout-review/power-routing-plan.txt). The earlier Rev1.2a CAD is recoverable from Git commit `ce34a43`; its [JLCPCB prototype package](production/rev-1.2a-20261023/README.txt) is preserved and **does not describe this Rev1.2b draft**. Earlier exports and renders remain historical. Do not run legacy rebuild/router scripts over the active root project.
 
-The original local project settings were saved before promotion in `work/root-ethernet-promotion-20261024/before/`. Root schematic instance project names and library paths were adapted for `abx-motion`; the reviewed PCB geometry was copied unchanged. Ethernet 3D models are bundled under `abx-3dmodels/ethernet/`; see the [model-loading verification](validation/root-model-fix-20261024/README.txt).
+The original local project settings were saved before promotion in `work/root-ethernet-promotion-20261024/before/`. Root schematic instance project names and library paths were adapted for `abx-motion`; the reviewed PCB was promoted, then obsolete copper, thermal-aperture routing and silkscreen were cleaned up with connectivity checks. Ethernet 3D models are bundled under `abx-3dmodels/ethernet/`; see the [model-loading verification](validation/root-model-fix-20261024/README.txt).
 
 ## Historical Rev 1.1 documentation
 

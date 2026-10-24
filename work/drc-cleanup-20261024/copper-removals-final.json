@@ -1,0 +1,72 @@
+{
+  "bd6c7f54-1f87-492c-9630-c1ded5f94c0e": {
+    "net": "+BATT",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "6e2db856-d2c9-4fb8-a2e9-85ba9395ebb2": {
+    "net": "I2C_SDA",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "db26dec1-ca5b-4ba3-b8f4-74d6f13c1e2c": {
+    "net": "I2C_SDA",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "959f321c-703f-4d6e-a8a9-961af9c8e04a": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "220fcb1a-783e-4c34-b68d-69fc993ffaf5": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "91f291d8-5ff6-484c-95f9-381839ec358a": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "c2ad0925-ddd1-4d09-b6ac-060cd9d3881e": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "0375d9d3-03da-4e87-b4dc-1ceaca053106": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "66911634-90ae-402e-b920-b944283d1d61": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "a7659064-8b5e-4671-8de0-422e6e69fbdd": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "1411df36-d40a-469d-b201-e2b838858fa8": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "8705d5b5-9c6e-43b7-9ed4-9ece4c7bbe8a": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "19e5a4f9-6dd6-4297-a9f9-76a6aee1a6d8": {
+    "net": "+BATT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "6cfaf478-c59e-4605-8cb2-6c2f3079c637": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  }
+}

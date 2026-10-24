@@ -1,0 +1,322 @@
+{
+  "78e1f333-eab7-449e-8695-5776b804a99b": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "8011fe7f-fecd-4ccf-9451-bfa4856753a3": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "8f6001da-f9bf-4fc7-a479-758e7c265717": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "a8502c19-ef9c-45f4-980c-720b9c6c4e07": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "cb67b4f1-525b-463a-9f83-085a74ed55d7": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "18f6e41f-6ffd-44af-a7f9-3733553432de": {
+    "net": "GND",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "3bdbf95c-8c2e-417d-bcdd-595675d76d58": {
+    "net": "+BATT",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "ba2a5713-f346-43ef-93de-9cfaac23bf2f": {
+    "net": "+BATT",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "cccdd8f4-a4f6-46dc-9cdf-489283b8744c": {
+    "net": "AX2_A1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "10ddacb7-8714-4c7f-9300-9633f447c8c4": {
+    "net": "AX2_A2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "618fb973-0e8a-4851-a6e7-1f93ca9ecbba": {
+    "net": "AX2_A2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "176fa76c-61fd-4964-9635-62632184bde4": {
+    "net": "AX2_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "99fd4778-d334-46d8-8b78-56a14af30622": {
+    "net": "AX2_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "1c7776db-6bc6-403d-a37f-6c448dba8fe2": {
+    "net": "AX2_B1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "663f7ad2-5f44-43a6-8d09-ab22043a5bad": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "9fe42428-cb51-46ea-8109-a36ea2df2a10": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "a63a4b1e-c483-458a-8d58-a7cfc84a671f": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "0a727e94-821c-4578-af49-0db20ad6dfc8": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "0b9da693-898b-4713-88ed-c99f29270bae": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "4fd12912-20de-4367-9519-3ce4639d4b1c": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "5184cf91-01c5-4874-98e7-07890ae3681b": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "569920a8-d6a2-4e19-ab00-194a37366f94": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "713668b8-7a29-4e6c-8d0c-2aa17be4ff1e": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "82257eca-7199-4bef-a589-026b97ee111a": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "82fdf42c-c5b8-4dc3-8b90-c48b4792b517": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "98a279d1-afe1-4844-ad4a-d3fbb6e799da": {
+    "net": "+3V3",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "064e615a-7f80-42ff-b9ef-b2f3c32d0676": {
+    "net": "+3V3",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "413fb7ad-1f00-4361-8e89-d1a857bcb0a3": {
+    "net": "STEP2_PUL",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "c6bcc5a5-5767-4bae-81f8-fa57a71aa430": {
+    "net": "I2C_SCL",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "ddf50c7b-b2c2-46df-9b90-37482e3e38be": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "5a75e7f0-65f9-4d9e-92ec-ac812efbaa33": {
+    "net": "I2C_SDA",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "0fdac960-a246-4be3-b927-99ef63f5b6f3": {
+    "net": "/M2_nFAULT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "312cf976-b8eb-45ea-a028-16929a3298ae": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "5802b67f-b2ab-435d-9ccb-2b5acd93e765": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "93721385-7254-4915-bfc1-899d56b10c5c": {
+    "net": "+5V",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "ce9a079e-bc78-4e0b-91d5-afd440be82df": {
+    "net": "+5V",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "7cab7e2f-dca5-4261-bafc-b6ba80b7a084": {
+    "net": "STEP_ARM",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "2ea06f01-0643-4bae-8eb0-abc05a310c78": {
+    "net": "IO_INT_N",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "d1ef7578-0dd5-49dc-8ae0-986dd548fe52": {
+    "net": "STEP_PERMIT",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "218556d3-9042-4d67-9c44-1bff4c3e4cfa": {
+    "net": "AX2_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "200cb09e-c602-4af4-8111-925c77ab1666": {
+    "net": "AX3_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "b772a940-31b2-4a0b-9c8d-dce9042a4aa1": {
+    "net": "STEP_ARM_Q",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "21f090b0-8226-438c-8f49-06be954cd3c5": {
+    "net": "+3V3_DRV_EN",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "3ed36b8b-72c1-4a5f-8aa4-ef2b5567791f": {
+    "net": "+3V3_DRV_EN",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "72abdeb7-16ae-40ee-9069-ea7cc3ae0133": {
+    "net": "/Industrial_IO/M2_MAX_RAW",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "0cd4d543-2779-42d6-a1a9-fb2081f21f59": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "3923a05d-724b-4da5-9a65-2831f88b744f": {
+    "net": "RLY1_CMD",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "e8ce7ed5-a502-4aaa-961b-bdebc23c717c": {
+    "net": "AX1_EXT_STEP_OUT",
+    "kind": "PCB_TRACK",
+    "reason": "Native dangling segment; graph nonbridge; pad groups verified"
+  },
+  "867f980b-15ae-49a0-a3c0-ad35cc60c51d": {
+    "net": "/Industrial_IO/M1_MAX_RAW",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "41ba1431-4de9-4997-8e78-9d5cc4ec4a8c": {
+    "net": "AX3_A1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "84af80c1-9b3a-48fb-aa09-0c0868fc98db": {
+    "net": "AX3_A2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "7daf5c0d-b432-4c09-ab28-7d6e2efeb8ce": {
+    "net": "AX3_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "bf183696-6034-4ed8-96d2-db7665084cd8": {
+    "net": "AX3_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "c462fb83-43a3-4b36-94a1-604484a2b2df": {
+    "net": "AX3_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "4e2ba39b-d902-443c-b4f9-07b9c1291914": {
+    "net": "AX1_A1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "7ec29442-07c4-41eb-93f5-bd80b765eb50": {
+    "net": "AX1_A1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "082d36f9-9771-44ec-8862-9e80b635059a": {
+    "net": "AX1_A2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "16bb3466-7fc0-451e-8ef4-5477af4ec43d": {
+    "net": "AX1_A2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "3a3b8e58-a9b8-4d5e-bacd-090c1dd53ac9": {
+    "net": "AX1_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "ada3d413-e543-4876-9ee2-ba701b4054cb": {
+    "net": "AX1_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "e927f53a-2004-4321-853a-558d41572266": {
+    "net": "AX1_B2",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "296b199b-2c52-41e7-807f-deeba203794b": {
+    "net": "AX1_B1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "e158cba6-92a2-4385-a8f9-af14f835b237": {
+    "net": "AX1_B1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  },
+  "fb97242b-2d8b-452e-84e6-c26e93f00e24": {
+    "net": "AX1_B1",
+    "kind": "PCB_VIA",
+    "reason": "Native one-layer/unconnected via; graph nonbridge; pad groups verified"
+  }
+}
