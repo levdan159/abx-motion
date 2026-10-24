@@ -9,7 +9,9 @@ ROUTING IN PROGRESS, not a manufacturing release. The variant now has its own
 schematic hierarchy. The 12-part dedicated Ethernet 3.3V converter is electrically
 integrated and routed. The remaining 49 Ethernet footprints are placement drafts:
 the W5500, magnetics, clock, protection and SPI interface are not yet wired.
-Root Rev1.2a PCB, schematics and manufacturing exports remain unchanged.
+This reviewed snapshot was also promoted into the root abx-motion project on
+2026-10-24. Rev1.2a remains recoverable from Git; its manufacturing exports are
+preserved and are not exports of the Ethernet draft.
 
 PRODUCT IDENTIFICATION
 PCB hardware revision: Rev 1.2b, once the electrical design is finalized.
@@ -105,3 +107,6 @@ references. Current routing images and results are in layout-review/routing-*.
 Do not rerun historical placement generators: they overwrite routing progress.
 
 Fresh checkpoint QA: ../../validation/ethernet-checkpoint-20261024/README.txt
+
+The root abx-motion project is now the active working copy. This directory is
+the reviewed source snapshot of the initial Ethernet routing checkpoint.

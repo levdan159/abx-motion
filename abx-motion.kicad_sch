@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "ABX-Motion")
-		(rev "1.2a")
+		(rev "1.2b INTEGRATION DRAFT")
 	)
 	(lib_symbols)
 	(wire
@@ -1431,4 +1431,41 @@
 		)
 	)
 	(embedded_fonts no)
+	(sheet
+		(at 220.98 165.1)
+		(size 66.04 20.32)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "38cfa842-c9ae-51ea-9fc8-0a99dfd42263")
+		(property "Sheetname" "Ethernet_Power"
+			(at 220.98 164.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Ethernet_Power.kicad_sch"
+			(at 220.98 186.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "abx-motion"
+				(path "/f9149098-3f23-438d-bdc2-2e278b5ca35b"
+					(page "8")
+				)
+			)
+		)
+	)
 )

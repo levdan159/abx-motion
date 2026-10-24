@@ -1,0 +1,23 @@
+{
+  "status": "Root project matches reviewed Ethernet development draft",
+  "root_pcb_sha256": "9faf08cbfbc2d6bd6f0eda9db8df346772a88c3d867e618500bb68363d48f641",
+  "pcb_copied_unchanged": true,
+  "schematic_instances_renamed": true,
+  "project_metadata_renamed": true,
+  "all_mapped_pad_nets_match_fresh_netlist": true,
+  "missing_models": [],
+  "erc_violations": 0,
+  "defined_net_opens": 0,
+  "expected_draft_parity_warnings": 49,
+  "drc_counts": {
+    "solder_mask_bridge": 26,
+    "silk_overlap": 17,
+    "silk_over_copper": 13,
+    "lib_footprint_mismatch": 19,
+    "track_dangling": 37,
+    "via_dangling": 42
+  },
+  "manufacturing_ready": false,
+  "rollback_commit": "86024cc",
+  "local_settings_backup": "work/root-ethernet-promotion-20261024/before/"
+}

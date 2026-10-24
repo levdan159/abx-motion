@@ -1,0 +1,77 @@
+[
+  {
+    "file": "MCU.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/MCU.kicad_sch",
+    "sha256": "16ebfb89b6b1cb0e50027e013c48bef3a38a127a594dead3cf6cabac67bd9110"
+  },
+  {
+    "file": "Ethernet_Power.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/Ethernet_Power.kicad_sch",
+    "sha256": "5af8940faebe618d341058a99e91cffe6d07a89d0c3fbd9be00007e96cbf0cfc"
+  },
+  {
+    "file": "Power.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/Power.kicad_sch",
+    "sha256": "9c8760306a61163630b5891b03e62a08627005960fa5a0a741ba9bf471a02465"
+  },
+  {
+    "file": "Steppers_Relays.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/Steppers_Relays.kicad_sch",
+    "sha256": "8bc62b9f387c7239a709e37c5aef8e9bd9b1f6d4619d369ce4428e1f76183d77"
+  },
+  {
+    "file": "Industrial_IO.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/Industrial_IO.kicad_sch",
+    "sha256": "79e44972485eae774ea87adab63bf5ebb2ceabdc1732e0e00a360112ecb76a65"
+  },
+  {
+    "file": "Motor_Channel.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/Motor_Channel.kicad_sch",
+    "sha256": "52d17caa58a50f3e15ef25ad6c139cde152ccaca50fbfb49627edc85058764e2"
+  },
+  {
+    "file": "abx-motion.kicad_sch",
+    "source": "variants/ABX-Motion-ETH/abx-motion-eth-placement.kicad_sch",
+    "sha256": "53a60a1a1e1054b9c1a28b08a32ae18abf184e9282fc36a22eb148f0c0e0f951"
+  },
+  {
+    "file": "abx-motion.kicad_pcb",
+    "source": "variants/ABX-Motion-ETH/abx-motion-eth-placement.kicad_pcb",
+    "sha256": "9faf08cbfbc2d6bd6f0eda9db8df346772a88c3d867e618500bb68363d48f641"
+  },
+  {
+    "file": "abx-motion.kicad_pro",
+    "source": "variants/ABX-Motion-ETH/abx-motion-eth-placement.kicad_pro",
+    "sha256": "c4f43086d6a92e714a946f09124775cbd9c802299f18251ab17cc1709f2d4cf9"
+  },
+  {
+    "file": "ethernet-symbols.kicad_sym",
+    "source": "variants/ABX-Motion-ETH/ethernet-symbols.kicad_sym",
+    "sha256": "8a384b3384119615b5644a812ac20cff9a48174d86b71e0c3cd80bffca767bb5"
+  },
+  {
+    "file": "sym-lib-table",
+    "source": "variants/ABX-Motion-ETH/sym-lib-table",
+    "sha256": "486bd9a51a3b08ddbdd492db590a2a0680cefdb39fafbabc7e23c1f7470619e4"
+  },
+  {
+    "file": "fp-lib-table",
+    "source": "variants/ABX-Motion-ETH/fp-lib-table",
+    "sha256": "f078ce5169d075c5dfec955e8a7b1bb8105e752991cdba4a59cff1851985583c"
+  },
+  {
+    "file": "ethernet-footprints.pretty/LMR36506_RPE0009B.kicad_mod",
+    "source": "variants/ABX-Motion-ETH/ethernet-footprints.pretty/LMR36506_RPE0009B.kicad_mod",
+    "sha256": "5acea85ba0074c6a46df9384d5b34c75cdc30fa15c410a11e4a8bedbf9832afd"
+  },
+  {
+    "file": "models/LMR36506-RPE-envelope.wrl",
+    "source": "variants/ABX-Motion-ETH/models/LMR36506-RPE-envelope.wrl",
+    "sha256": "1ba167aa45640fbfa7ff716641869faa2363fa652924a985695e5c25c6731ad8"
+  },
+  {
+    "file": "models/HR911105A-envelope.wrl",
+    "source": "variants/ABX-Motion-ETH/models/HR911105A-envelope.wrl",
+    "sha256": "4972046aba266491b0552eb74642aade9fb48801e810b81aff7257011b4ad2f5"
+  }
+]

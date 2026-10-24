@@ -1,14 +1,18 @@
-# ABX-Motion Rev 1.2a
+# ABX-Motion Rev 1.2b — Ethernet routing draft
 
-The root KiCad project is the active three-axis development checkpoint. It includes three onboard DRV8462DDWR drivers, external control interfaces, an eight-socket digital I/O bank (M1/M2/X/Y/Z limits, two spare digital inputs and two auxiliary outputs), axis-based legends, updated package models and thermal copper/vias/TIM windows.
+Open [abx-motion.kicad_pro](abx-motion.kicad_pro) in the project root. The root PCB and schematic hierarchy now contain the reviewed Ethernet development checkpoint, promoted from [ABX-Motion-ETH](variants/ABX-Motion-ETH/README.txt). Assembly option: **ABX-MOTION-ETH**. No PoE.
 
-See [Rev 1.2a checkpoint](design/rev-1.2a-checkpoint.md), [digital I/O pin allocation](design/limit-inputs-rev1.2-20261023.txt) and [thermal review](design/thermal-rev1.2-20261023.md). Rev 1.2a is a saved CAD checkpoint, not a qualified manufacturing release. The matched [JLCPCB prototype package](production/rev-1.2a-20261023/README.txt) includes current Gerbers, drills, BOM, supplier-normalized CPL, assembly drawings and audit evidence. Earlier exports/renders are historical. Relay alignment still requires assembler review; J208 and mechanical items are separately sourced.
+The dedicated Ethernet 3.3 V converter is schematic-integrated and routed, and connections displaced by Ethernet placement are restored. The W5500, RJ45, clock, protection, reset and SPI interface still have **49 unintegrated draft footprints**. This is **not a manufacturing release**. Zero opens on defined nets does not establish complete Ethernet connectivity.
 
-The proposed **Rev 1.2b / ABX-MOTION-ETH** [Ethernet placement candidate](variants/ABX-Motion-ETH/README.txt) is a separate physical layout study. It adds proposed RJ45/W5500/support positions to a review copy, with a dedicated supply reservation; its Ethernet circuit is not schematic-integrated or routed. The root Rev 1.2a project and manufacturing package remain the saved baseline. No PoE circuitry has been added. Current cooling direction uses stock heatsinks without custom machining; archived machined-heatsink drawings are superseded.
+The checkpoint retains the three onboard DRV8462 drivers, external stepper interfaces, eight-socket digital I/O bank, axis legends and thermal copper/TIM windows. The PCB is four layers; In1.Cu remains the ground plane. The audited project minimum clearance and track width are both 0.15 mm.
+
+See [root promotion QA](validation/root-ethernet-promotion-20261024/README.txt), [Ethernet routing preview](variants/ABX-Motion-ETH/layout-review/routing-overview.png), and [remaining circuit requirements](variants/ABX-Motion-ETH/layout-review/power-routing-plan.txt). The earlier Rev1.2a CAD is recoverable from Git commit `ce34a43`; its [JLCPCB prototype package](production/rev-1.2a-20261023/README.txt) is preserved and **does not describe this Rev1.2b draft**. Earlier exports and renders remain historical. Do not run legacy rebuild/router scripts over the active root project.
+
+The original local project settings were saved before promotion in `work/root-ethernet-promotion-20261024/before/`. Root schematic instance project names and library paths were adapted for `abx-motion`; the reviewed PCB geometry was copied unchanged.
 
 ## Historical Rev 1.1 documentation
 
-The content below describes the preserved Rev 1.1 prototype and its exports. StepStick socket details, firmware allocations, component counts and images below do not describe the active Rev 1.2a board. The preserved Rev 1.1d manufacturing package is `production/rev-1.1d-20261020/`. Do not run legacy rebuild/router scripts over the active root placement.
+The content below describes the preserved Rev 1.1 prototype and its exports. StepStick socket details, firmware allocations, component counts and images below do not describe the active Rev 1.2b draft. The preserved Rev 1.1d manufacturing package is `production/rev-1.1d-20261020/`. Do not run legacy rebuild/router scripts over the active root placement.
 
 # ABX-Motion Rev 1.1c prototype controller
 
