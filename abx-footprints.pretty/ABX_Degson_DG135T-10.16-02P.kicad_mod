@@ -1,0 +1,256 @@
+(footprint "ABX_Degson_DG135T-10.16-02P"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Degson DG135T-10.16-02P-14-00A(H) screw terminal, 2 poles, 10.16 mm, 57 A IEC / 52 A UL, 4-10 mm2. Drawing DG135T-10.16-XXP-1Y-00A(H): 2 pins per pole, rows 10.16 apart, hole 2.40. Front row (y=0) = wire entry side; the wire-entry bump (y +2.2..+6.3, 4.5-17.5 mm above the board) may overhang the board edge. Verify hole spacing on a sample (STEP shows 9.66). Pads numbered from the far end so pad 1 is on +x.")
+	(tags "Degson DG135T screw terminal 10.16 high current")
+	(property "Reference" "REF**"
+		(at 5.08 -14 0)
+		(layer "F.SilkS")
+		(uuid "cc9c7170-8b7c-4b91-9e48-043334d570ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "ABX_Degson_DG135T-10.16-02P"
+		(at 5.08 -5.08 0)
+		(layer "F.Fab")
+		(uuid "26babe39-aa43-40da-9370-11c7cf60eff7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b9349e0-c6c3-427e-95c1-c8b8ea1885f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec6712cd-5295-4a1c-8fdd-dacdc5ba876d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.95 -12.52)
+		(end 15.36 -12.52)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "44fa8654-2cfa-4ce6-b5f8-90f3613a6f44")
+	)
+	(fp_line
+		(start -5.95 2.32)
+		(end -5.95 -12.52)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "defc0c58-0a07-4b2c-a848-7b381f6d84ae")
+	)
+	(fp_line
+		(start 15.36 -12.52)
+		(end 15.36 2.32)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "93d528c2-9bc1-4834-98e7-a22449fde104")
+	)
+	(fp_line
+		(start 15.36 2.32)
+		(end -5.95 2.32)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "80d65218-027e-43e9-a69a-ff3468009d61")
+	)
+	(fp_line
+		(start -6.1 -12.7)
+		(end 15.54 -12.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6fe2f078-f897-459c-8b5d-f2291bd9da84")
+	)
+	(fp_line
+		(start -6.1 2.5)
+		(end -6.1 -12.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6ce1556c-0ad8-4989-9097-839cf591e3a9")
+	)
+	(fp_line
+		(start 15.54 -12.7)
+		(end 15.54 2.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c2f21852-c6d1-42b6-bf25-34502fa84898")
+	)
+	(fp_line
+		(start 15.54 2.5)
+		(end -6.1 2.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "3581b4b5-af1e-4c6d-806c-c60ea4f00af9")
+	)
+	(fp_line
+		(start -5.83 -12.4)
+		(end 15.24 -12.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f73f1ab8-3846-4875-bd4d-442d6b940bb0")
+	)
+	(fp_line
+		(start -5.83 2.2)
+		(end -5.83 -12.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7a95d081-606b-4aa9-9e74-41437cfca2b0")
+	)
+	(fp_line
+		(start -5.08 2.2)
+		(end 15.24 2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "cb32e6f7-dd79-4b70-842b-a7763050557f")
+	)
+	(fp_line
+		(start -5.08 6.3)
+		(end -5.08 2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "51a80017-f371-4db5-b7ea-0f2e8baffb18")
+	)
+	(fp_line
+		(start 15.24 -12.4)
+		(end 15.24 2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a4407f08-3345-4762-8015-ad6911f239da")
+	)
+	(fp_line
+		(start 15.24 2.2)
+		(end -5.83 2.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "e32909ab-73e5-44a8-942a-69966bbd4dca")
+	)
+	(fp_line
+		(start 15.24 2.2)
+		(end 15.24 6.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8e97ced2-37d9-49ee-ad40-81e1fcf52e80")
+	)
+	(fp_line
+		(start 15.24 6.3)
+		(end -5.08 6.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "12d1cbc1-12af-48b8-9f43-25de3ecafba6")
+	)
+	(pad "1" thru_hole circle
+		(at 10.16 -10.16)
+		(size 4 4)
+		(drill 2.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5c139ef8-1257-4870-a04f-bda0eb412719")
+	)
+	(pad "1" thru_hole circle
+		(at 10.16 0)
+		(size 4 4)
+		(drill 2.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "276964c0-74ce-468d-9cca-5ecd1ebe96ec")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -10.16)
+		(size 4 4)
+		(drill 2.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "507e4201-6351-4fd0-83c0-93f233d1adf9")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 4 4)
+		(drill 2.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3e2d1262-1b53-49c5-82d9-0f26ce5fd97f")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Degson_DG135T-10.16-02P.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

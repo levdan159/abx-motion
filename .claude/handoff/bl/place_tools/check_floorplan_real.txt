@@ -1,0 +1,55 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+CMD: python -X utf8 py_tools/check_floorplan.py /tmp/claude-1000/-home-mark-Documents-VE-V3/412ee8fb-27c0-4acd-98aa-e7fcd601bdf3/scratchpad/place/run1/abx-motion-brushless.kicad_pcb --intent /tmp/claude-1000/-home-mark-Documents-VE-V3/412ee8fb-27c0-4acd-98aa-e7fcd601bdf3/scratchpad/place/intent_real.json
+ENV KNOBS: none
+check_floorplan: this board carries 2814 segment(s) and 985 via(s); proceeding with the copper left as it is.
+design brief: none beside this board (looked for abx-motion-brushless.design-brief.json). Every `edge` below is INFERRED from the part's current pose by _nearest_edge; nothing here declares design intent.
+grading at clearance 0.15 (board netclass), edge 0.3 (board constraint)
+  WARNING [placement]: 1 footprint(s) have no courtyard (F/B.CrtYd) and fall back to their pad bounding box, which carries no courtyard margin: F1
+Copper-to-hole 0.25mm for NPTH holes (from the board's own min_hole_clearance, above the 0.2mm fab floor); plated holes and vias: copper clearance
+  WARNING [placement]: 1 footprint(s) have no courtyard (F/B.CrtYd) and fall back to their pad bounding box, which carries no courtyard margin: F1
+  NOTE [placement]: 1 footprint(s) draw no courtyard and are seated on an ESTIMATED one, what they occupy (body and pads, #1300) -- silk: F1
+Floorplan: abx-motion-brushless.kicad_pcb vs intent_real.json
+  361 footprints, 7 block(s), 82 part(s) covered
+  outline: 0 ring(s), 0 cutout(s), 0 milled contour(s)
+  0 error(s), 3 warning(s) from 11 rule(s)
+    [warn ] intent_zone_overlap: zones 'u1_buck' and 'vbus_sense' overlap by 35.00mm2 on the same side; a member of either may be placed there -- declare `exclusive` on one of them if the area is not meant to be shared
+    [warn ] intent_zone_overlap: zones 'vbus_sense' and 'imu' overlap by 100.00mm2 on the same side; a member of either may be placed there -- declare `exclusive` on one of them if the area is not meant to be shared
+    [warn ] pins_to_edge: H4: 1 of 9 connected pads sit on a row facing the east edge (1.60mm) with no partner beyond -- their nets can only leave along the edge strip or under the part
+  pad stacks: 0 (two parts' pad copper overlapping, any net -- check_assembly's pad_intersection, exact; printed, not a floorplan rule)
+  keep-away /Power_Supply/U1_SW:/ESC_MCU/OSC_IN,/ESC_MCU/OSC_OUT,/ESC_MCU/I2C1_SCL,/ESC_MCU/I2C1_SDA,/ESC_MCU/USB_DP,/ESC_MCU/USB_DM:3: closest 28.65mm, U201 pad 4 (F.Cu) to D3 pad 1 (F.Cu), outside the 3.00mm band
+  keep-away /Power_Supply/U901_SW:/ESC_MCU/OSC_IN,/ESC_MCU/OSC_OUT,/ESC_MCU/I2C1_SCL,/ESC_MCU/I2C1_SDA,/ESC_MCU/USB_DP,/ESC_MCU/USB_DM:3: closest 42.22mm, U701 pad 71 (F.Cu) to D902 pad 1 (F.Cu), outside the 3.00mm band
+  keep-away is graded on pad copper in plan view; it cannot see tracks: route.py --keep-away prices and reports those once routed; coupling through planes or between faces: the distance is plan view, and each pad's side is named so a reader can judge; which nets are noisy or sensitive: the rule declares that, nothing on the board says it
+  along-edge seating (measured, not a verdict -- a violation needs a declared center_on_edge or along_edge_band):
+    J201 west: -45.50mm (-38.6% of the 118.00mm edge, bbox)
+    J511 west: +31.05mm (+26.3% of the 118.00mm edge, bbox)
+    J205 west: -30.91mm (-26.2% of the 118.00mm edge, bbox)
+    J704 north: -25.50mm (-15.1% of the 169.00mm edge, bbox)
+  edge connector overhang (measured; the band's own currency is named):
+    J511 west: overhang 0.0000mm [legacy_occupancy@margin=0] pass; pad copper 3.8000mm vs 0.3mm pass
+    J704 north: overhang 0.0000mm [legacy_occupancy@margin=0] pass; pad copper 2.0250mm vs 0.3mm pass
+    J201 west: overhang 0.0000mm [body:F.Fab] pass; pad copper 2.6500mm vs 0.3mm pass; facing west [courtyard+fab, weak] pass
+    J205 west: overhang 0.1000mm [legacy_occupancy@margin=0] pass; pad copper 3.7000mm vs 0.3mm pass
+  7 rule(s) did not run:
+    - array_formation: the intent declares no arrays
+    - decap_pin_distance: the intent declares no decaps.max_pin_distance_mm
+    - legality: the intent declares no legality_budget
+    - must_lock: the intent declares no must_lock patterns
+    - replicate: the intent declares no replicate copies
+    - template: the intent declares no templates
+    - zone_exclusive: no block is marked exclusive
+  rule roster: 11 armed, 7 not; 0 rule(s) owe a written answer
+    [policy] zone_exclusive: a policy about who may enter a zone; nothing on the board says that a zone is reserved
+    [dispositioned] decap_pin_distance: the new decaps are held by proximity rows (C726 C727 C811 C909 C910 C728); the rails of the parts placed before are outside this placement
+    [not applicable] must_lock: must_lock is a plan's choice, not a requirement no board fact can excuse: the design brief never compiles one, so leaving it dark owes nothing
+    [dispositioned] legality: graded by check_assembly + KiCad DRC on this already-routed board
+    [policy] array_formation: a design decision about which parts form one row; nothing on the board says which identical parts belong together
+    [policy] replicate: a design decision about which sheet instance is the template; the board says which instances are siblings, not that they must be laid out alike
+    [policy] template: an arrangement read from a part's datasheet; the board says which parts are wired to the chip, not where its datasheet puts them
+  WARNING keep_away: 2 keep_away rule(s) in this intent are graded on the placement but will NOT be priced by route.py, route_diff.py or the GUI: the routers read keep-away rules from the design brief beside the board, never from an intent, and no design brief sits beside the board (abx-motion-brushless.design-brief.json):
+    - keep_away[0] '/Power_Supply/U1_SW:/ESC_MCU/OSC_IN,/ESC_MCU/OSC_OUT,/ESC_MCU/I2C1_SCL,/ESC_MCU/I2C1_SDA,/ESC_MCU/USB_DP,/ESC_MCU/USB_DM:3'
+    - keep_away[1] '/Power_Supply/U901_SW:/ESC_MCU/OSC_IN,/ESC_MCU/OSC_OUT,/ESC_MCU/I2C1_SCL,/ESC_MCU/I2C1_SDA,/ESC_MCU/USB_DP,/ESC_MCU/USB_DM:3'
+    fix: declare each rule in the `keep_away` list of /tmp/claude-1000/-home-mark-Documents-VE-V3/412ee8fb-27c0-4acd-98aa-e7fcd601bdf3/scratchpad/place/run1/abx-motion-brushless.design-brief.json, the brief the route steps read beside this board, then re-run check_floorplan.py --emit-intent so the intent carries it from the brief
+JSON_SUMMARY: {"blocks": 7, "blocks_resolved": 7, "board": "abx-motion-brushless.kicad_pcb", "brief": null, "brief_absent": 0, "brief_declared": 0, "brief_drift": 0, "brief_unknown": 0, "brief_unknown_keys": [], "budget_abstained": 0, "budget_abstained_keys": [], "carried_facts": [], "clearance_used": {"source": "board netclass", "value": 0.15}, "complete": true, "contradiction_ids": [], "contradictions": 0, "contradictions_undispositioned": [], "cutouts": 0, "decap_pins_by_channel": {}, "decap_pins_graded": 0, "derived_default_clauses": [], "edge_clearance_used": {"source": "board constraint", "value": 0.3}, "edge_contours": 0, "edge_seating_abstained": 0, "edge_seating_declared": 0, "edge_seating_rows": 4, "edge_seating_worst_offset_pct": 38.56, "errors": 0, "hole_shortfall": 0.0, "hpwl": 8008.3433, "intent": "intent_real.json", "keep_away_unpriced": 2, "keepout_pad_amount": 0.0, "keepout_pad_parts": 0, "ledger_status": {"dispositioned": 2, "graded_pass": 15, "inapplicable": 1, "policy": 4}, "locked_contact_pairs": 0, "mechanical": null, "not_graded": {}, "oob_amount": 1.42, "oob_area": 21.5474, "oob_count": 4, "overlap_area": 3.2625, "pad_conflict_pairs": 0, "pad_intersection_pairs": 0, "pad_overlap_pairs": 0, "pad_shortfall": 0.0, "pad_stack_count": 0, "parts_covered": 82, "parts_total": 361, "pass": true, "rules_dark_undispositioned": [], "rules_run": 11, "rules_skipped": 7, "stale_dispositions": [], "state_duplicate_fraction": 0.0, "state_has_copper": true, "state_outside_fraction": 0.0084, "state_partially_unplaced": false, "state_spread_ratio": 0.955, "state_unplaced": false, "unmeasured_facts": [], "violations": 3, "violations_by_rule": {"intent_zone_overlap": 2, "pins_to_edge": 1}, "warnings": 3}
+EXIT=0

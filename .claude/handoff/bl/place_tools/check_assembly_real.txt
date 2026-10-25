@@ -1,0 +1,36 @@
+CMD: python -X utf8 py_tools/check_assembly.py /tmp/claude-1000/-home-mark-Documents-VE-V3/412ee8fb-27c0-4acd-98aa-e7fcd601bdf3/scratchpad/place/run1/abx-motion-brushless.kicad_pcb --baseline /tmp/claude-1000/-home-mark-Documents-VE-V3/412ee8fb-27c0-4acd-98aa-e7fcd601bdf3/scratchpad/place/orig/abx-motion-brushless.kicad_pcb
+ENV KNOBS: none
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+  grading at clearance 0.15mm  [board netclass]
+Copper-to-hole 0.25mm for NPTH holes (from the board's own min_hole_clearance, above the 0.2mm fab floor); plated holes and vias: copper clearance
+Assembly audit of /tmp/claude-1000/-home-mark-Documents-VE-V3/412ee8fb-27c0-4acd-98aa-e7fcd601bdf3/scratchpad/place/run1/abx-motion-brushless.kicad_pcb (clearance 0.15):
+  blocking 0  advisory 0  waived 0  contained 0  courtyard_blocking 0  new-vs-baseline 0
+  pad/hole/oob echo: 0 pad pair(s), 0 hole conflict(s), 0 part(s) with pad copper off-board
+    footprint copper NOT measured against the outline: LOGO1 (logo)
+  BODY COVERAGE: 351 of 361 part(s) draw a body the containment channel can judge (348 fab, 3 silk)
+    A silk body is the LAST resort and never gates: a library may draw an assembly outline there rather than the part (esp_prog's SOT89 draws corner brackets 5.2mm apart around a 4.5mm part). Such pairs are reported, with their source, and excluded from the blocking channels.
+    10 part(s) draw no usable body (no .Fab body, no usable silk), so the channel cannot judge them: H1, H2, H3, H4, LOGO1, LOGO2, TP_3V3_1, TP_5V1 ...
+  ASSEMBLY SIDES: F 359 / B 0 pad-bearing part(s) of 361 block(s); 1 reflow pass(es), 34 through-hole part(s)
+    1 F-side block(s) carry NO pads and are excluded from the verdict: LOGO1
+    1 B-side block(s) carry NO pads and are excluded from the verdict: LOGO2
+    Through-hole F 34 / B 0 (plated barrels only), counted and never folded in: a drilled part on the front needs wave, selective or hand soldering, not a second reflow pass.
+      (`sides_occupied` answers the OBSTRUCTION question instead, and would call this board two-sided.)
+    observed policy: sides=F -- counted per footprint BLOCK, verdict from the pad-bearing subset (parts_by_side_basis in --json has the rule in full)
+  BODY-TO-EDGE BAND: 12 of 349 part(s) have a body within 2.5mm of the board edge [derived_default: JLCPCB's assembly rule, one assembler's -- REPORT-ONLY; declare assembly.body_edge_mm in the intent to gate]  new_in_band 5
+    J1 0.0mm (fab, side F)
+    J301 0.0mm (fab, side F)
+    J401 0.0mm (fab, side F)
+    J205 0.4mm (fab, side F)
+    J501 0.44mm (fab, side F)
+    J510 0.44mm (fab, side F)
+    J511 0.5mm (fab, side F)  MOVED
+    J704 0.79mm (fab, side F)  MOVED
+    J102 1.3mm (fab, side F)
+    R820 1.95mm (fab, side F)  MOVED
+    R821 1.95mm (fab, side F)  MOVED
+    R822 1.95mm (fab, side F)  MOVED
+    in the band but belonging at the edge, never counted (edge class, marker, or an edge the intent declares): H4 0.55mm [mount_hole], J201 0.85mm [edge_receptacle], H1 1.05mm [mount_hole], H2 1.05mm [mount_hole], H3 1.05mm [mount_hole], TP_3V3_1 1.6mm [testpoint], TP_5V1 1.6mm [testpoint], TP_BATT1 1.6mm [testpoint] ...
+  VERDICT: buildable (blocking 0)
+EXIT=0

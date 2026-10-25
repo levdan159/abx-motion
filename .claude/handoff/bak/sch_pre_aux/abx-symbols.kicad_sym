@@ -1,0 +1,916 @@
+(kicad_symbol_lib
+	(version 20231120)
+	(generator "abx_generator")
+	(generator_version "10.0")
+	(symbol "DRV8701ERGER"
+		(pin_names (offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U" (at 0 16.51 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "DRV8701ERGER" (at 0 -21.59 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_DFN_QFN:Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm_ThermalVias" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8701.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "DRV8701ERGER_0_1"
+			(rectangle (start -12.7 15.24) (end 12.7 -20.32)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "DRV8701ERGER_1_1"
+				(pin power_in line
+					(at -15.24 12.70 0)
+					(length 2.54)
+					(name "VM" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -15.24 10.16 0)
+					(length 2.54)
+					(name "VCP" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "CPH" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))
+				)
+				(pin passive line
+					(at -15.24 5.08 0)
+					(length 2.54)
+					(name "CPL" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_out line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "AVDD" (effects (font (size 1.27 1.27))))
+					(number "7" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_out line
+					(at -15.24 0.00 0)
+					(length 2.54)
+					(name "DVDD" (effects (font (size 1.27 1.27))))
+					(number "8" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "VREF" (effects (font (size 1.27 1.27))))
+					(number "6" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at -15.24 -5.08 0)
+					(length 2.54)
+					(name "nSLEEP" (effects (font (size 1.27 1.27))))
+					(number "13" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "EN" (effects (font (size 1.27 1.27))))
+					(number "14" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "PH" (effects (font (size 1.27 1.27))))
+					(number "15" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at -15.24 -12.70 0)
+					(length 2.54)
+					(name "IDRIVE" (effects (font (size 1.27 1.27))))
+					(number "12" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_in line
+					(at -15.24 -15.24 0)
+					(length 2.54)
+					(name "AGND" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 12.70 180)
+					(length 2.54)
+					(name "GH1" (effects (font (size 1.27 1.27))))
+					(number "17" (effects (font (size 1.27 1.27))))
+				)
+				(pin bidirectional line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "SH1" (effects (font (size 1.27 1.27))))
+					(number "18" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "GL1" (effects (font (size 1.27 1.27))))
+					(number "19" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "GH2" (effects (font (size 1.27 1.27))))
+					(number "24" (effects (font (size 1.27 1.27))))
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "SH2" (effects (font (size 1.27 1.27))))
+					(number "23" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 0.00 180)
+					(length 2.54)
+					(name "GL2" (effects (font (size 1.27 1.27))))
+					(number "22" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "SP" (effects (font (size 1.27 1.27))))
+					(number "21" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "SN" (effects (font (size 1.27 1.27))))
+					(number "20" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "SO" (effects (font (size 1.27 1.27))))
+					(number "11" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "nFAULT" (effects (font (size 1.27 1.27))))
+					(number "9" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 15.24 -12.70 180)
+					(length 2.54)
+					(name "SNSOUT" (effects (font (size 1.27 1.27))))
+					(number "10" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_in line
+					(at 15.24 -15.24 180)
+					(length 2.54)
+					(name "PGND" (effects (font (size 1.27 1.27))))
+					(number "16" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_in line
+					(at 15.24 -17.78 180)
+					(length 2.54)
+					(name "EP" (effects (font (size 1.27 1.27))))
+					(number "25" (effects (font (size 1.27 1.27))))
+				)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "CSD18540Q5B"
+		(pin_names (offset 0) (hide yes))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q" (at 5.08 1.905 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "CSD18540Q5B" (at 5.08 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1" (at 5.08 -1.905 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/csd18540q5b.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "CSD18540Q5B_0_1"
+			(polyline (pts (xy 0.254 1.905) (xy 0.254 -1.905)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.254 0) (xy -2.54 0)) (stroke (width 0) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 2.286) (xy 0.762 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 0.508) (xy 0.762 -0.508)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 -1.27) (xy 0.762 -2.286)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)) (stroke (width 0) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)) (stroke (width 0) (type default)) (fill (type outline)))
+			(circle (center 1.651 0) (radius 2.794) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.54 2.54) (xy 2.54 1.778)) (stroke (width 0) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)) (stroke (width 0) (type default)) (fill (type none)))
+		)
+		(symbol "CSD18540Q5B_1_1"
+			(pin input line (at -5.08 0 0) (length 2.54) (name "G" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (hide yes) (name "S" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (hide yes) (name "S" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		)
+		(embedded_fonts no)
+	)
+	(symbol "AONS21357"
+		(pin_names (offset 0) (hide yes))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q" (at 5.08 1.905 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "AONS21357" (at 5.08 0 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Package_TO_SOT_SMD:TDSON-8-1" (at 5.08 -1.905 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "https://aosmd.com/res/data_sheets/AONS21357.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "AONS21357_0_1"
+			(polyline (pts (xy 0.254 1.905) (xy 0.254 -1.905)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.254 0) (xy -2.54 0)) (stroke (width 0) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 2.286) (xy 0.762 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 0.508) (xy 0.762 -0.508)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 -1.27) (xy 0.762 -2.286)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)) (stroke (width 0) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)) (stroke (width 0) (type default)) (fill (type outline)))
+			(circle (center 1.651 0) (radius 2.794) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.54 2.54) (xy 2.54 1.778)) (stroke (width 0) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)) (stroke (width 0) (type default)) (fill (type none)))
+		)
+		(symbol "AONS21357_1_1"
+			(pin input line (at -5.08 0 0) (length 2.54) (name "G" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 5.08 270) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (hide yes) (name "S" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+			(pin passive line (at 2.54 -5.08 90) (length 2.54) (hide yes) (name "S" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		)
+		(embedded_fonts no)
+	)
+	(symbol "ABX_Logo"
+		(pin_names (offset 1.016))
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "LOGO" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "ABX_Logo" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "abx-footprints:ABX_Logo_Gears_Gold" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(symbol "ABX_Logo_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54)
+				(stroke (width 0.254) (type default))
+				(fill (type background))
+			)
+		)
+		(symbol "ABX_Logo_1_1")
+		(embedded_fonts no)
+	)
+  (symbol "DRV8323SRTAR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "DRV8323SRTAR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "abx-footprints:Texas_RTA0040B_WQFN-40-1EP_6x6mm_P0.5mm_EP4.15x4.15mm"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8323.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "TI DRV8323S 60V three-phase smart gate driver, SPI, 3 CSA, WQFN-40 6x6 (RTA)"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "ki_keywords" "DRV8323 gate driver BLDC FOC VESC"
+      (at 0 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "DRV8323SRTAR_0_1"
+      (rectangle
+        (start -12.7 -25.4)
+        (end 12.7 25.4)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "DRV8323SRTAR_1_1"
+      (pin input line
+        (at -15.24 22.86 0)
+        (length 2.54)
+        (name "ENABLE"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "30"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 17.78 0)
+        (length 2.54)
+        (name "INHA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "34"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 15.24 0)
+        (length 2.54)
+        (name "INLA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "35"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 10.16 0)
+        (length 2.54)
+        (name "INHB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "36"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 7.62 0)
+        (length 2.54)
+        (name "INLB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "37"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 2.54 0)
+        (length 2.54)
+        (name "INHC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "38"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 0 0)
+        (length 2.54)
+        (name "INLC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "39"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 -5.08 0)
+        (length 2.54)
+        (name "nSCS"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "29"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 -7.62 0)
+        (length 2.54)
+        (name "SCLK"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "28"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 -10.16 0)
+        (length 2.54)
+        (name "SDI"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "27"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin open_collector line
+        (at -15.24 -12.7 0)
+        (length 2.54)
+        (name "SDO"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "26"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -15.24 -17.78 0)
+        (length 2.54)
+        (name "CAL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "31"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin open_collector line
+        (at -15.24 -22.86 0)
+        (length 2.54)
+        (name "nFAULT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "25"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 22.86 180)
+        (length 2.54)
+        (name "GHA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 15.24 20.32 180)
+        (length 2.54)
+        (name "SHA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 17.78 180)
+        (length 2.54)
+        (name "GLA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 15.24 15.24 180)
+        (length 2.54)
+        (name "SPA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 15.24 12.7 180)
+        (length 2.54)
+        (name "SNA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "10"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 7.62 180)
+        (length 2.54)
+        (name "GHB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "15"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 15.24 5.08 180)
+        (length 2.54)
+        (name "SHB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "14"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 2.54 180)
+        (length 2.54)
+        (name "GLB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "13"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 15.24 0 180)
+        (length 2.54)
+        (name "SPB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "12"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 15.24 -2.54 180)
+        (length 2.54)
+        (name "SNB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 -7.62 180)
+        (length 2.54)
+        (name "GHC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "16"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 15.24 -10.16 180)
+        (length 2.54)
+        (name "SHC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "17"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 -12.7 180)
+        (length 2.54)
+        (name "GLC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "18"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 15.24 -15.24 180)
+        (length 2.54)
+        (name "SPC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "19"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 15.24 -17.78 180)
+        (length 2.54)
+        (name "SNC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "20"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 -20.32 180)
+        (length 2.54)
+        (name "SOC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "21"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 -22.86 180)
+        (length 2.54)
+        (name "SOB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "22"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 15.24 -25.4 180)
+        (length 2.54)
+        (name "SOA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "23"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -5.08 27.94 270)
+        (length 2.54)
+        (name "CPL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -2.54 27.94 270)
+        (length 2.54)
+        (name "CPH"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 0 27.94 270)
+        (length 2.54)
+        (name "VCP"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 2.54 27.94 270)
+        (length 2.54)
+        (name "VM"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 5.08 27.94 270)
+        (length 2.54)
+        (name "VDRAIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -5.08 -27.94 90)
+        (length 2.54)
+        (name "AGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "32"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -2.54 -27.94 90)
+        (length 2.54)
+        (name "PGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "40"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_out line
+        (at 0 -27.94 90)
+        (length 2.54)
+        (name "DVDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "33"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 2.54 -27.94 90)
+        (length 2.54)
+        (name "VREF"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "24"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 5.08 -27.94 90)
+        (length 2.54)
+        (name "PAD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "41"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "TPS48111QDGXRQ1" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 19.05 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TPS48111QDGXRQ1" (at 0 -19.05 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "abx-footprints:TI_DGX0019A_VSSOP-19_3x5.1mm_P0.5mm" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://www.ti.com/lit/gpn/tps4811-q1" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Description" "TI TPS48111-Q1 100V smart high-side driver: back-to-back FETs, precharge driver (G), ISCP/IWRN protection, IMON, VSSOP-19 (DGX)" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "ki_keywords" "eFuse circuit breaker high-side driver" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (symbol "TPS48111QDGXRQ1_0_1"
+      (rectangle (start -12.7 17.78) (end 12.7 -17.78) (stroke (width 0.254) (type default)) (fill (type background)))
+    )
+    (symbol "TPS48111QDGXRQ1_1_1"
+      (pin power_in line (at -15.24 15.24 0) (length 2.54)
+        (name "VS" (effects (font (size 1.27 1.27))))
+        (number "20" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 12.7 0) (length 2.54)
+        (name "CS+" (effects (font (size 1.27 1.27))))
+        (number "18" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 10.16 0) (length 2.54)
+        (name "CS-" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 7.62 0) (length 2.54)
+        (name "ISCP" (effects (font (size 1.27 1.27))))
+        (number "19" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 2.54 0) (length 2.54)
+        (name "EN/UVLO" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 0 0) (length 2.54)
+        (name "INP" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 -2.54 0) (length 2.54)
+        (name "INP_G" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -15.24 -7.62 0) (length 2.54)
+        (name "IWRN" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -15.24 -10.16 0) (length 2.54)
+        (name "TMR" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -15.24 -12.7 0) (length 2.54)
+        (name "DIODE" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -15.24 -15.24 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 15.24 15.24 180) (length 2.54)
+        (name "BST" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 12.7 180) (length 2.54)
+        (name "PU" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 10.16 180) (length 2.54)
+        (name "PD" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 15.24 7.62 180) (length 2.54)
+        (name "SRC" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 5.08 180) (length 2.54)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin open_collector line (at 15.24 0 180) (length 2.54)
+        (name "FLT_I" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin open_collector line (at 15.24 -2.54 180) (length 2.54)
+        (name "FLT_T" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 -5.08 180) (length 2.54)
+        (name "IMON" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "TPS27S100APWPR" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 13.97 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "TPS27S100APWPR" (at 0 -13.97 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm_ThermalVias" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps27s100.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Description" "TI TPS27S100A 40V 4A protected high-side switch, adjustable current limit, open-drain FLT, HTSSOP-14 PowerPAD" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "ki_keywords" "high side switch protected" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (symbol "TPS27S100APWPR_0_1"
+      (rectangle (start -10.16 12.7) (end 10.16 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))
+    )
+    (symbol "TPS27S100APWPR_1_1"
+      (pin power_in line (at -12.7 10.16 0) (length 2.54)
+        (name "IN" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -12.7 7.62 0) (length 2.54)
+        (name "IN" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -12.7 5.08 0) (length 2.54)
+        (name "IN" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -12.7 0 0) (length 2.54)
+        (name "EN" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -12.7 -2.54 0) (length 2.54)
+        (name "DIAG_EN" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -12.7 -5.08 0) (length 2.54)
+        (name "ILIM" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -12.7 -7.62 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -12.7 -10.16 0) (length 2.54)
+        (name "PAD" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 12.7 10.16 180) (length 2.54)
+        (name "OUT" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 12.7 7.62 180) (length 2.54)
+        (name "OUT" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 12.7 5.08 180) (length 2.54)
+        (name "OUT" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin open_collector line (at 12.7 0 180) (length 2.54)
+        (name "FLT" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at 12.7 -5.08 180) (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at 12.7 -7.62 180) (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at 12.7 -10.16 180) (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "MIC2009YM6" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 7.62 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "MIC2009YM6" (at 0 -7.62 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MIC20XX-Fixed-and-Adjustable-Current-Limiting-Power-Distribution-Switches-DS20006486B.pdf" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Description" "Microchip MIC2009 2.5-5.5V adjustable current-limit power switch (0.2-2A, RSET=CLF/I, CLF~235), open-drain FAULT/, SOT-23-6" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (property "ki_keywords" "eFuse power switch current limit" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+    (symbol "MIC2009YM6_0_1"
+      (rectangle (start -7.62 6.35) (end 7.62 -6.35) (stroke (width 0.254) (type default)) (fill (type background)))
+    )
+    (symbol "MIC2009YM6_1_1"
+      (pin power_in line (at -10.16 3.81 0) (length 2.54)
+        (name "VIN" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -10.16 1.27 0) (length 2.54)
+        (name "EN" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -10.16 -1.27 0) (length 2.54)
+        (name "ILIMIT" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -10.16 -3.81 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 10.16 3.81 180) (length 2.54)
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin open_collector line (at 10.16 1.27 180) (length 2.54)
+        (name "FAULT" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)
